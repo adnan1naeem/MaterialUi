@@ -1,0 +1,1 @@
+{"version":3,"file":"bluerain-plugin-material-ui.es5.js","sources":["../src/bluerain-plugin-material-ui.ts"],"sourcesContent":["// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)\n  // import \"core-js/fn/array.find\"\n  // ...\nexport default  './index';"],"names":[],"mappings":"AAAA;;;AAGA,+BAAgB,SAAS,CAAC;;;;"}
