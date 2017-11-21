@@ -12,7 +12,7 @@ notifications:
 node_js:
   - node
 script:
-  - npm run build
+  - npm run test
 after_success:
   - npm run report-coverage
   - npm run deploy-docs
