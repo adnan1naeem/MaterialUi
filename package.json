@@ -12,7 +12,7 @@
   "author": "BlueEast Team <code@blueeast.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BlueEastCode/bluerain-plugin-material-ui"
   },
   "license": "MIT",
   "engines": {
@@ -25,13 +25,14 @@
     "start": "tsc -w & rollup -c rollup.config.ts -w",
     "test": "jest --coverage || true",
     "test:watch": "jest --watch",
-    "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
+    "test:prod": "npm run lint",
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "commit": "git-cz",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest -i"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -48,7 +49,13 @@
       "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
     }
   },
+  "moduleNameMapper": {
+    "^@fooBar/(.*)": "<rootDir>/src/redux/"
+  },
   "jest": {
+    "moduleNameMapper": {
+      "^@fooBar/(.*)": "<rootDir>/src/redux/"
+    },
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
@@ -74,6 +81,8 @@
     "mapCoverage": true
   },
   "devDependencies": {
+    "@blueeast/tslint-config-blueeast": "^0.3.0",
+    "@types/jasmine": "^2.6.2",
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
     "colors": "^1.1.2",
@@ -81,15 +90,18 @@
     "coveralls": "^3.0.0",
     "cross-env": "^5.0.1",
     "cz-conventional-changelog": "^2.0.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
     "husky": "^0.14.0",
-    "jest": "^21.0.0",
-    "lint-staged": "^5.0.0",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.0.0",
     "lodash.camelcase": "^4.3.0",
     "prettier": "^1.4.4",
     "prompt": "^1.0.0",
+    "react-redux": "^5.0.6",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
-    "rollup": "^0.51.0",
+    "rollup": "^0.50.0",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
@@ -98,18 +110,29 @@
     "ts-node": "^3.0.6",
     "tslint": "^5.4.3",
     "typedoc": "^0.9.0",
-    "typescript": "^2.3.4",
-    "validate-commit-msg": "^2.12.2"
+    "typescript": "2.6.1",
+    "validate-commit-msg": "^2.12.2",
+    "object-assign": "^4.0.1",
+    "rollup-pluginutils": "^1.1.0"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^0.5.0",
-    "enzyme": "^3.1.1",
-    "enzyme-adapter-react-16": "^1.0.4",
-    "material-ui": "^0.19.4",
-    "react": "^16.0.0",
-    "react-redux": "^5.0.6",
-    "react-router-redux": "^4.0.8",
-    "react-scripts-ts": "^2.8.0",
-    "redux": "^3.7.2"
+    "@blueeast/bluerain-os": "^0.4.0",
+    "enzyme-adapter-react-16": "1.0.2",
+    "jest": "21.2.1",
+    "material-ui": "0.19.4",
+    "react": "^16.0.0-alpha.12",
+    "react-intl": "2.4.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-npm": "^2.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.8.1",
+    "rtl-detect": "1.0.0",
+    "sinon": "^4.1.1",
+    "typescript": "2.6.1",
+    "ts-jest": "^21.1.3"
   }
 }
