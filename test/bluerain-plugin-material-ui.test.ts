@@ -11,7 +11,7 @@ describe('material-ui Plugin Test', () => {
 	it('should register plugin successfully', () => {
 		BR.Plugins.register(MaterialUiPlugin);
 		const plugin = BR.Plugins.get(MaterialUiPlugin.slug);
-		expect(plugin).toBeTruthy();
+		expect(plugin.slug).toEqual('material-ui');
 	});
 
 	it('should   return  undefined theme ', () => {
