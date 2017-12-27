@@ -16,6 +16,7 @@ import arLocaleData from 'react-intl/locale-data/ar';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 
 initializeRTL();
+setAddon();
 
 addLocaleData(enLocaleData);
 addLocaleData(arLocaleData);
