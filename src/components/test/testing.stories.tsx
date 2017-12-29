@@ -1,9 +1,4 @@
-/**
- * Created by waheed on 12/27/17.
- */
-
-
-import React from 'react';
+import * as React from 'react';
 import {List, ListItem} from 'material-ui/List';
 import { storiesOf } from '@storybook/react';
 
