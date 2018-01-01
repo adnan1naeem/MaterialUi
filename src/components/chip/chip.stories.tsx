@@ -4,12 +4,30 @@
 import * as React from 'react';
 import Chip from './chip';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import { emphasize } from 'material-ui/styles/colorManipulator';
+const color = emphasize('#fff', 0);
 
+const chipDefaultStyle = {'background-color':'green','color':color};
 const stories = storiesOf('Chip', module);
 stories.add('Chip with default value', () => {
-    return <Chip>9 % off</Chip>;
+    return <Chip>12 % off</Chip>;
 });
 
 stories.add('Chip with style', () => {
-    return <Chip style={{'root' : {'background-color':'green'}}} label={'testtte'}>9 % off</Chip>;
+   // const styleProps = {'background-color': backgroundColor};
+    const style = object('Style of Chip',chipDefaultStyle);
+    const content = text('Text', '10 % off');
+    return <Chip style={style}>{content}</Chip>;
+});
+
+stories.add('Chip Onclick', () => {
+    const style = object('Style of Chip', chipDefaultStyle);
+    const content = text('Text', '10 % off');
+    return <Chip style={style} onClick={action('Logo clicked')} >{content}</Chip>;
+});
+
+stories.add('Chip without knobs', () => {
+    return <Chip style={chipDefaultStyle}>10 % off</Chip>;
 });
