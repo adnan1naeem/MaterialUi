@@ -4,8 +4,13 @@ import BadgeUi from 'material-ui/Badge';
 import { FormattedMessage } from 'react-intl';
 import { IBadge } from '@blueeast/bluerain-ui-interfaces/Components/Badge';
 
-const Badge = (props: IBadge) => {
-    return (<BadgeUi badgeContent {...props}></BadgeUi>);
+export interface IBadgeProps {
+    children?: Node;
+    color?: any;
+    className?: any;
+}
+const Badge = (props: IBadge & IBadgeProps) => {
+    return (<BadgeUi badgeContent={props.badgeContent} classes={{...props.style}} {...props} color={props.color}>{props.children}</BadgeUi>);
 
 };
 
