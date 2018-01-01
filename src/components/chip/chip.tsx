@@ -10,10 +10,12 @@ import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
  * @param {Object} props.style Get the style object
  * @param {ReactNode} props.children Content of the Chip
  */
-
-const Chip = (props: IChip) => {
+export interface IChipProps {
+    label?: string;
+}
+const Chip = (props: IChip & IChipProps) => {
     return (
-        <ChipUi style={{...props.style}} {...props}>{props.children}</ChipUi>);
+        <ChipUi classes={{...props.style}} label={props.children} {...props}></ChipUi>);
 
 };
 

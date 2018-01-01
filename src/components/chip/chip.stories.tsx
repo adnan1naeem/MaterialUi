@@ -11,5 +11,5 @@ stories.add('Chip with default value', () => {
 });
 
 stories.add('Chip with style', () => {
-    return <Chip style={{'background-color':'green'}}>9 % off</Chip>;
+    return <Chip style={{'root' : {'background-color':'green'}}} label={'testtte'}>9 % off</Chip>;
 });
