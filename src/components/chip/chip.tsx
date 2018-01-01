@@ -21,9 +21,9 @@ export interface IChipProps {
     onDelete?: () => void;
     deleteIcon?: any;
 }
-
-const Chip = (props: IChip & IChipProps) => {
-    return (<ChipUi classes={{...props.style}} label={props.children} {...props}></ChipUi>);
-};
-
-export default Chip;
+class Chip extends React.Component<IChip & IChipProps, {}> {
+    render() {
+      return (<ChipUi classes={{...this.props.style}} label={this.props.children} {...this.props}></ChipUi>);
+    }
+}
+ export default Chip;
