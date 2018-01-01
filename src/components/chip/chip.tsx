@@ -9,7 +9,7 @@ import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
  * The universal props of Chip Component
  * @param {Object} props.style Get the style object
  * @param {ReactNode} props.children Content of the Chip
- * The universal props of Chip Component
+ * The specific library props of Chip Component
  * @param {string} props.label The content of the label.
  * @param {ReactNode} props.onDelete Callback function fired when the delete icon is clicked. If set, the delete icon will be shown.
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
