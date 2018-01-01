@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 import { IBadge } from '@blueeast/bluerain-ui-interfaces/Components/Badge';
 
 const Badge = (props: IBadge) => {
-    return (<BadgeUi {...props.style} badgeContent={props.badgeContent} {...props}></BadgeUi>);
+    return (<BadgeUi badgeContent {...props}></BadgeUi>);
 
 };
 
