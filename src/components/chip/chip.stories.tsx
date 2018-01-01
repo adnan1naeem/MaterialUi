@@ -25,7 +25,7 @@ stories.add('Chip with style', () => {
 stories.add('Chip Onclick', () => {
     const style = object('Style of Chip', chipDefaultStyle);
     const content = text('Text', '10 % off');
-    return <Chip style={style} onClick={action('Logo clicked')} >{content}</Chip>;
+    return <Chip style={style} onClick={action('Chip clicked')} >{content}</Chip>;
 });
 
 stories.add('Chip without knobs', () => {
