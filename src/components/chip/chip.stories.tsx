@@ -8,8 +8,8 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
 import { emphasize } from 'material-ui/styles/colorManipulator';
 const color = emphasize('#fff', 0);
-
-const chipDefaultStyle = {'background-color':'green','color':color};
+const backgroundColor = emphasize('#0f0', 0);
+const chipDefaultStyle = {'background-color':backgroundColor,'color':color};
 const stories = storiesOf('Chip', module);
 stories.add('Chip with default value', () => {
     return <Chip>12 % off</Chip>;
