@@ -1,7 +1,7 @@
 /**
  * Created by Ghazal Taimur on 12/29/17.
  */
-import * as React from 'react';
+import React from 'react';
 import ChipUi from 'material-ui/Chip';
 import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
 
@@ -21,9 +21,6 @@ export interface IChipProps {
     onDelete?: () => void;
     deleteIcon?: any;
 }
-class Chip extends React.Component<IChip & IChipProps, {}> {
-    render() {
-      return (<ChipUi classes={{...this.props.style}} label={this.props.children} {...this.props}></ChipUi>);
-    }
-}
- export default Chip;
+const Chip = (props: IChip & IChipProps) =>
+    (<ChipUi classes={{...props.style}} label={props.children} {...props}></ChipUi>);
+export default Chip;
