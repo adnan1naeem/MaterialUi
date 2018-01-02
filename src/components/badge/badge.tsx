@@ -6,9 +6,8 @@ import { IBadge } from '@blueeast/bluerain-ui-interfaces/Components/Badge';
 
 /**
  * The universal props of Badge Component
- * @param {Object} props.style Get the style object
- * @param {ReactNode} props.badgeContent Content of the Badge
- * The universal props of Badge Component
+ * @param {Object} props.style Get the style object.
+ * @param {ReactNode} props.badgeContent Content of the Badge.
  * @param {enum} props.color The enum color of Badge.
  * @param {ReactNode} props.className the className for styles.
  */
@@ -16,7 +15,6 @@ import { IBadge } from '@blueeast/bluerain-ui-interfaces/Components/Badge';
 export interface IBadgeProps {
     color?: 'default' | 'primary' | 'accent';
     children?: Node;
-    className?: string;
 }
 class Badge extends React.Component<IBadge & IBadgeProps, {}> {
     render() {

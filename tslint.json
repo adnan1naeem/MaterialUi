@@ -6,7 +6,8 @@
         "no-implicit-dependencies": [true, "dev"],
         "max-line-length": [true, 440],
         "no-submodule-imports":false,
-        "no-var-requires": false
+        "no-var-requires": false,
+        "jsx-self-close":false
         
     }
 }
