@@ -17,11 +17,10 @@
 
 ```JavaScript
 import React from 'react';
-import Badge from  'dukaan-ui/Badge';
+import Badge from  'bluerain-plugin-material-ui/Badge';
 
 const BadgeSample = () => (
-       return <Badge badgeContent = {'786'} color = {'primary'}></Badge>;
-);
+       return <Badge badgeContent = {'786'} color = {'primary'}/>;
 
 export default BadgeSample;
 ```
