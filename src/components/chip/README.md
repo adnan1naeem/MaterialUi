@@ -20,7 +20,7 @@
 
 ```JavaScript
 import React from 'react';
-import Chip from  'dukaan-ui/Chip';
+import Chip from  'bluerain-plugin-material-ui/Chip';
 
 const ChipSample = () => (
        <Chip style={{'background-color':'green'}}>10 % off</Chip>
