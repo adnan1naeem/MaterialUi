@@ -4,7 +4,7 @@ import  BR  from '@blueeast/bluerain-os';
 import Badge from '../src/components/badge/badge';
 BR.boot({renderApp:false});
 
-test('Badge component with default values', () => {
+test('Badge component with required fields', () => {
   const badge = create(
       <Badge badgeContent={'123'}></Badge>
   ).toJSON();
