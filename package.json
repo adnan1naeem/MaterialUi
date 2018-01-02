@@ -162,6 +162,6 @@
     "victory": "^0.22.2",
     "warning": "^3.0.0",
     "ws": "3.3.1",
-    "@blueeast/bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/chip-interfaces"
+    "@blueeast/bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git"
   }
 }
