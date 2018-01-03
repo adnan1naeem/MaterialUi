@@ -1,9 +1,7 @@
 import React from 'react';
-import RX from 'reactxp';
-import { withBlueRain } from '@blueeast/bluerain-os';
-import { FormattedMessage } from 'react-intl';
-import  { ILocation } from '@blueeast/bluerain-ui-interfaces/Components/Location';
 import { Gmaps, Marker } from 'react-gmaps';
+import  { ILocation } from 'bluerain-ui-interfaces/Components/Location';
+
 
 /**
  * The Map Component.
@@ -14,20 +12,28 @@ import { Gmaps, Marker } from 'react-gmaps';
  */
 
 interface ILocationReactGmaps {
-    enableHighAccuracy:boolean,
-    timeout: number,
-    maximumAge: number,
-    bluerain: object,
-    zoom: number
+    width?: string,
+    height: string,
+    id?: string,
+    zoom: number,
+    draggable?: boolean,
+    onDragEnd?: ()=> void,
+    params?: object,
 }
 
-const Location = (props: ILocation & ILocationReactGmaps) => {
-    return (
-        <Gmaps lat={props.region.lat} lng={props.region.lng} {...props}>
-            <Marker lat={props.region.lat} lng={props.region.lng} {...props} />
+const Location = (props: ILocationReactGmaps & ILocation  ) => (
+        <Gmaps
+            lat={props.region.latitude}
+            lng={props.region.longitude}
+            params={{ v: '3.exp', key: 'AIzaSyCgVYH02v3XYmCSIokoLOZzvUqJG6ZamMY'}}
+            {...props}
+        >
+            <Marker
+                lat={props.region.latitude}
+                lng={props.region.longitude}
+                {...props}
+            />
         </Gmaps>);
-
-};
 
 export default Location;
 // const style = {
