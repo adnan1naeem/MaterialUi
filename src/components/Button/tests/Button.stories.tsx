@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '../../Button';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
+import './styles.css';
 
 const background = '.background {background-color: red;}';
 
@@ -41,6 +42,6 @@ storiesOf('Button', module).add('Primary Button with fab prop and small prop', (
 
 storiesOf('Button', module).add('Accent Button with large prop true', () => <Button color="accent" large>Large</Button>);
 
-storiesOf('Button', module).add('Default Button with small prop true', () => <Button color="default" small>Small</Button>);
+storiesOf('Button', module).add('Default Button with small prop true', () => <Button color="default" small className="background">Small</Button>);
 
 
