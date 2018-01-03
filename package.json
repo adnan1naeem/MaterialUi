@@ -139,6 +139,7 @@
   },
   "dependencies": {
     "@blueeast/bluerain-os": "^0.5.0",
+    "bluerain-ui-interfaces": "git+ssh://https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/location-interface",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
@@ -149,6 +150,7 @@
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
     "enzyme": "^3.1.1",
+    "react-gmaps": "^1.5.0",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
     "lodash.pickby": "^4.6.0",
