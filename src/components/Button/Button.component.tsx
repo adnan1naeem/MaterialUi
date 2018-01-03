@@ -19,9 +19,20 @@ import { Button } from 'material-ui';
  * @param {Node} props.iconLeft icon prop to show icon on the left side of label.
  * @param {Node} props.iconRight icon prop to show icon on the right side of label.
  * @param {boolean} props.fab if true, fab button is generated.
- * @param {boolean} props.small if true and fab also true then small fab button is generated.
+ * @param {boolean} props.small if true, small button is generated (small also works when fab is true).
  */
-const BlueRainButton = (props: IButton) => {
+
+ export interface ButtonMUI {
+        dense?: boolean,
+        classes?: object,
+        className?: string,
+        disableRipple?: boolean,
+        disableFocusRipple?: boolean,
+        component: string | undefined,
+ }
+
+const BlueRainButton = (props: IButton & ButtonMUI) => {
+    const {...others} = props;
     if(props.iconLeft){
     return (
         <Button
@@ -32,7 +43,13 @@ const BlueRainButton = (props: IButton) => {
         href={props.href}
         fab={props.fab}
         mini={props.small}
+        dense={props.small}
         onClick={props.onClick}
+        classes={props.classes}
+        className={props.className}
+        disableRipple={props.disableRipple}
+        disableFocusRipple={props.disableFocusRipple}
+        component={props.component}
         >
         {props.iconLeft} {props.children}
         </Button>
@@ -48,7 +65,13 @@ const BlueRainButton = (props: IButton) => {
             href={props.href}
             fab={props.fab}
             mini={props.small}
+            dense={props.small}
             onClick={props.onClick}
+            classes={props.classes}
+            className={props.className}
+            disableRipple={props.disableRipple}
+            disableFocusRipple={props.disableFocusRipple}
+            component={props.component}
             >
             {props.children} {props.iconRight}
             </Button>
@@ -63,7 +86,13 @@ const BlueRainButton = (props: IButton) => {
         href={props.href}
         fab={props.fab}
         mini={props.small}
+        dense={props.small}
         onClick={props.onClick}
+        classes={props.classes}
+        className={props.className}
+        disableRipple={props.disableRipple}
+        disableFocusRipple={props.disableFocusRipple}
+        component={props.component}
         >
         {props.children}
         </Button>

@@ -3,6 +3,9 @@ import Button from '../../Button';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 
+const classes = {
+    backgroundColor: 'red',
+}
 BR.boot({renderApp:false})
 
 const Text = BR.Components.get('Text');
@@ -42,3 +45,10 @@ storiesOf('Button', module).add('Primary Button with fab prop and small prop', (
 storiesOf('Button', module).add('Accent Button with large prop true', () => <Button color="accent" large>Large</Button>);
 
 storiesOf('Button', module).add('Default Button with small prop true', () => <Button color="default" small>Small</Button>);
+
+
+
+storiesOf('Button', module).add('Default Button with dense true prop true', () => <Button dense className={classes}>
+Dense
+</Button>);
+
