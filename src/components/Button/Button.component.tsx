@@ -23,20 +23,21 @@ import { Button } from 'material-ui';
  */
 
  export interface ButtonMUI {
+        color?: 'default' | 'accent' | 'primary' | 'contrast' | 'inherit',
         dense?: boolean,
         classes?: object,
         className?: string,
         disableRipple?: boolean,
         disableFocusRipple?: boolean,
-        component: string | undefined,
+        component?: string | undefined,
+        raised?: boolean,
  }
 
 const BlueRainButton = (props: IButton & ButtonMUI) => {
-    const {...others} = props;
     if(props.iconLeft){
     return (
         <Button
-        raised={props.color === 'link' ? false: true}
+        raised={true || props.raised}
         color={ props.color ? (props.color ==='default'|| props.color ==='accent'|| props.color ==='primary'|| props.color ==='contrast'? props.color: 'default') : 'default'} 
         style={props.fullWidth ? (props.style, {width:'100%'}): props.style} 
         disabled={props.disabled}
@@ -45,11 +46,7 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
         mini={props.small}
         dense={props.small}
         onClick={props.onClick}
-        classes={props.classes}
-        className={props.className}
-        disableRipple={props.disableRipple}
-        disableFocusRipple={props.disableFocusRipple}
-        component={props.component}
+        {...props}
         >
         {props.iconLeft} {props.children}
         </Button>
@@ -58,7 +55,7 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
     else if(props.iconRight){
         return (
             <Button
-            raised={props.color==='link' ? false: true}
+            raised={true || props.raised}
             color={ props.color ? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'} 
             style={props.fullWidth? (props.style, {width:'100%'}): props.style} 
             disabled={props.disabled}
@@ -67,11 +64,7 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
             mini={props.small}
             dense={props.small}
             onClick={props.onClick}
-            classes={props.classes}
-            className={props.className}
-            disableRipple={props.disableRipple}
-            disableFocusRipple={props.disableFocusRipple}
-            component={props.component}
+            {...props}
             >
             {props.children} {props.iconRight}
             </Button>
@@ -79,7 +72,7 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
         }
     return (
         <Button
-        raised={props.color==='link' ? false: true}
+        raised={true || props.raised}
         color={ props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'} 
         style={props.fullWidth ? (props.style, {width:'100%'}): props.style} 
         disabled={props.disabled}
@@ -88,11 +81,7 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
         mini={props.small}
         dense={props.small}
         onClick={props.onClick}
-        classes={props.classes}
-        className={props.className}
-        disableRipple={props.disableRipple}
-        disableFocusRipple={props.disableFocusRipple}
-        component={props.component}
+        {...props}
         >
         {props.children}
         </Button>

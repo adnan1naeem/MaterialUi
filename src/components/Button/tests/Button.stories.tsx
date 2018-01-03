@@ -3,9 +3,8 @@ import Button from '../../Button';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 
-const classes = {
-    backgroundColor: 'red',
-}
+const background = '.background {background-color: red;}';
+
 BR.boot({renderApp:false})
 
 const Text = BR.Components.get('Text');
@@ -30,8 +29,6 @@ storiesOf('Button', module).add('Contrast Button with active prop true', () => <
 
 storiesOf('Button', module).add('Accent Button with bordered prop true', () => <Button color="accent" bordered>Bordered</Button>);
 
-storiesOf('Button', module).add('Link Button ', () => <Button color="link" >Link</Button>);
-
 storiesOf('Button', module).add('Accent Rounded Button ', () => <Button color="accent">Rounded</Button>);
 
 storiesOf('Button', module).add('Primary Button with iconLeft prop', () => <Button color="primary" iconLeft={<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="15" height="15"/>} >Icon Left</Button>);
@@ -46,9 +43,4 @@ storiesOf('Button', module).add('Accent Button with large prop true', () => <But
 
 storiesOf('Button', module).add('Default Button with small prop true', () => <Button color="default" small>Small</Button>);
 
-
-
-storiesOf('Button', module).add('Default Button with dense true prop true', () => <Button dense className={classes}>
-Dense
-</Button>);
 
