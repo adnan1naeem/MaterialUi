@@ -20,13 +20,13 @@ import { Button } from 'material-ui';
  * @param {Node} props.iconRight icon prop to show icon on the right side of label.
  * @param {boolean} props.fab if true, fab button is generated.
  * @param {boolean} props.small if true, small button is generated (small also works when fab is true).
+ * @param {string} props.className string name of styling css class.
  */
 
  export interface ButtonMUI {
         color?: 'default' | 'accent' | 'primary' | 'contrast' | 'inherit',
         dense?: boolean,
         classes?: object,
-        className?: string,
         disableRipple?: boolean,
         disableFocusRipple?: boolean,
         component?: string | undefined,
