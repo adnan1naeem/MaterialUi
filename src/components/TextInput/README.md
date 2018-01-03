@@ -34,6 +34,7 @@
 
 ```JavaScript
 import React from 'react';
+import { withBluerain } from "@blueeast/bluerain-os";
 
 function handleTextInputChange (value: any) {
    console.log('text input value', value.target.value);
