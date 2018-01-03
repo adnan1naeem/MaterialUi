@@ -7,7 +7,6 @@
 | selectedValue | any |  | value of selection |
 | onValueChange | ReactNode | | callback Function for handle change |
 
-
 ## Specific Library Props
 
 | Name | Type | Default | Description |
@@ -25,7 +24,7 @@
 
 ```JavaScript
 import React from 'react';
-import  { DropDown,DropdownItem } from  'bluerain-plugin-material-ui/DropDown';
+import  { DropDown, DropdownItem } from  'bluerain-plugin-material-ui/DropDown';
 
 const DropDown = () => (
        <DropDown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
@@ -39,5 +38,3 @@ const DropDown = () => (
 
 export default DropDown;
 ```
-
-
