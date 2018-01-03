@@ -1,7 +1,6 @@
 import React,{ReactNode} from 'react';
 import Select from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
-import Input, { InputLabel } from 'material-ui/Input';
 
 import  {IPicker} from '@blueeast/bluerain-ui-interfaces/Components/Picker';
 /**
@@ -22,7 +21,6 @@ interface IMaterialuiDropDown {
     displayEmpty?:boolean,
     input?:ReactNode,
     MenuProps?:object,
-    input:ReactNode,
     native?:boolean,
     renderValue?:Function,
     disabled?:boolean
