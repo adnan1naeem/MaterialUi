@@ -1,7 +1,6 @@
 import React,{ReactNode} from 'react';
 import Select from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
-
 import  {IPicker} from '@blueeast/bluerain-ui-interfaces/Components/Picker';
 /**
  * The props of DropDown Component
@@ -26,7 +25,7 @@ interface IMaterialuiDropDown {
     native?:boolean,
     renderValue?:()=>void,
     disabled?:boolean
-};
+}
  const DropDown =(props:IPicker & IMaterialuiDropDown) =>(
             <Select
                 onChange={props.onValueChange}
@@ -34,6 +33,5 @@ interface IMaterialuiDropDown {
                 {...props}
             />
 );
-
 const DropdownItem = (props:IPicker  & IMaterialuiDropDown) => (<MenuItem {...props} />);
 export { DropdownItem, DropDown };
