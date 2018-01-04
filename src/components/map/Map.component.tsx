@@ -1,6 +1,6 @@
 import React from 'react';
 import { Gmaps, Marker } from 'react-gmaps';
-import  { ILocation } from '@blueeast/bluerain-ui-interfaces/Components/Location';
+import  { IMap } from '@blueeast/bluerain-ui-interfaces/Components/Map';
 
 
 /**
@@ -22,7 +22,7 @@ export interface IGoogleMaps {
 }
 
 
-const MapComponent:React.StatelessComponent<ILocation & IGoogleMaps> = (props) =>(
+const MapComponent:React.StatelessComponent<IMap & IGoogleMaps> = (props) =>(
         <Gmaps
             lat={props.region.latitude}
             lng={props.region.longitude}
