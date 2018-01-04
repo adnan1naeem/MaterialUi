@@ -1,6 +1,6 @@
 import React from 'react';
 import { Gmaps, Marker } from 'react-gmaps';
-import  { ILocation } from 'bluerain-ui-interfaces/Components/Location';
+import  { ILocation } from '@blueeast/bluerain-ui-interfaces/Components/Location';
 
 
 /**

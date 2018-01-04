@@ -139,7 +139,6 @@
     "awesome-typescript-loader": "^3.4.1"
   },
   "dependencies": {
-    "bluerain-ui-interfaces": "git+ssh://https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/location",
     "@blueeast/bluerain-os": "^0.4.8",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
