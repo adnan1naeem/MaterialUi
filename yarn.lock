@@ -53,9 +53,9 @@
     react-redux "^5.0.6"
     redux "^3.7.2"
 
-"@blueeast/bluerain-ui-interfaces@https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/chip-interfaces":
+"@blueeast/bluerain-ui-interfaces@https://github.com/BlueEastCode/bluerain-ui-interfaces.git":
   version "1.0.0"
-  resolved "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#515edf7304cc2cf7aa8e77ae1f9ff8a18f71bda6"
+  resolved "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#8eded09896477b3e9a3a3ca14381040d0f8f9da9"
   dependencies:
     "@blueeast/tslint-config-blueeast" "^0.5.1"
     "@types/react" "^16.0.29"
@@ -10253,8 +10253,8 @@ rollup-pluginutils@^2.0.1:
     micromatch "^2.3.11"
 
 rollup@^0.53.2:
-  version "0.53.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.53.2.tgz#0de2e94d1676ccff58f7bb6c6b7ffa5ff5a1907e"
+  version "0.53.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.53.3.tgz#e7b6777623df912bd0ca30dc24be791d6ebc8e5a"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"
