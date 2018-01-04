@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Plugin ,bluerain} from '@blueeast/bluerain-os';
+import MapComponent from './components/map';
+import { Plugin ,bluerain } from '@blueeast/bluerain-os';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -36,6 +37,7 @@ class MaterialUiPlugin extends Plugin {
 			theme = {};
 		}
 
+		ctx.Components.register('MapComponent', MapComponent );
 		// Add Material UI Provider
 		ctx.Filters.add(
       'bluerain.redux.app',
