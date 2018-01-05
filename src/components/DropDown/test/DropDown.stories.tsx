@@ -36,7 +36,7 @@ stories.add('DropDown', () => {
             <DropdownItem value="abc">Item 4 </DropdownItem>
             <DropdownItem value="abc">Item 5 </DropdownItem>
         </DropDown>
-    </Paper>)}
+    </Paper>);}
 );
 stories.add('DropDown with autoWidth', () => {
     return(
@@ -48,7 +48,7 @@ stories.add('DropDown with autoWidth', () => {
                 <DropdownItem value="abc">Item 4 </DropdownItem>
                 <DropdownItem value="abc">Item 5 </DropdownItem>
             </DropDown>
-        </Paper>)}
+        </Paper>);}
 );stories.add('DropDown with Override styles', () => {
     return(
         <Paper style={style.root}>
@@ -59,7 +59,7 @@ stories.add('DropDown with autoWidth', () => {
                 <DropdownItem value="abc">Item 4 </DropdownItem>
                 <DropdownItem value="abc">Item 5 </DropdownItem>
             </DropDown>
-        </Paper>)}
+        </Paper>);}
 );stories.add('DropDown multiple select', () => {
     return(
         <Paper style={style.root}>
@@ -70,7 +70,7 @@ stories.add('DropDown with autoWidth', () => {
                 <DropdownItem value="abc">Item 4 </DropdownItem>
                 <DropdownItem value="abc">Item 5 </DropdownItem>
             </DropDown>
-        </Paper>)}
+        </Paper>);}
 );stories.add('DropDown with disabled', () => {
     return(
         <Paper style={style.root}>
@@ -81,5 +81,5 @@ stories.add('DropDown with autoWidth', () => {
                 <DropdownItem value="abc">Item 4 </DropdownItem>
                 <DropdownItem value="abc">Item 5 </DropdownItem>
             </DropDown>
-        </Paper>)}
+        </Paper>);}
 );
