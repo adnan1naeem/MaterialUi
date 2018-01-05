@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { ICardMedia } from '@blueeast/bluerain-ui-interfaces/Components/Card';
-import { CardImg } from 'reactstrap';
+import { ICardMedia } from 'bluerain-ui-interfaces/Components/Card';
+import { CardMedia } from 'material-ui/Card';
 
 /**
  * The props of CardMedia Component
@@ -16,23 +16,23 @@ import { CardImg } from 'reactstrap';
 
 
  /**
- * Platform specific props
- * @param {boolean} props.top use top prop to assign styles for image at top position.
- * @param {boolean} props.bottom use bottom prop to assign styles for image at bottom position.
- */
+  * Platform specific props
+  * @param {boolean} props.top use top prop to assign styles for image at top position.
+  * @param {boolean} props.bottom use bottom prop to assign styles for image at bottom position.
+  */
 
-export interface BSProps {
+export interface IBSProps {
     top ?: boolean,
     bottom ?: boolean,
     }
- 
-const BlueRainCardMedia = (props: ICardMedia & BSProps) => {
+
+const BlueRainCardMedia = (props: ICardMedia & IBSProps) => {
     return (
-        <CardImg
-        {...props}
+        <CardMedia
+            {...props}
         />
     );
 
-}
+};
 
 export default BlueRainCardMedia;
