@@ -8,7 +8,7 @@ import './styles.css';
 
 const background = '.background {background-color: red;}';
 
-BR.boot({renderApp:false})
+BR.boot({renderApp:false});
 
 const Text = BR.Components.get('Text');
 
@@ -18,23 +18,14 @@ const disabled = boolean('disabled', false);
 const fullWidth = boolean('fullWidth', false);
 const fab = boolean('fab', false);
 const small = boolean('small', false);
-storiesOf('Button', module).add('Primary Button with knobs', () => 
+storiesOf('Button', module).add('Primary Button with knobs', () =>
 
-<Button
-    color={'primary'}
-    onClick={action('I was clicked with knobs')}
-    disabled={disabled}
-    fullWidth={fullWidth}
-    fab={fab}
-    small={small}
-    >
-{label}
-</Button>);
+<Button color={'primary'} onClick={action('I was clicked with knobs')} disabled={disabled} fullWidth={fullWidth} fab={fab} small={small}>{label}</Button>);
 storiesOf('Button', module).add('Default Button without Text tag in Child', () => <Button color={'default'}>Default</Button>);
 
 storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{backgroundColor:'purple', borderColor:'purple'}} >Custom Purple</Button>);
 
-storiesOf('Button', module).add('Inherit Button with onClick prop', () => <Button color="inherit" onClick={()=>{console.log('I was clicked')}} >onClick</Button>);
+storiesOf('Button', module).add('Inherit Button with onClick prop', () => <Button color="inherit" onClick={()=>{console.log('I was clicked');}} >onClick</Button>);
 
 storiesOf('Button', module).add('Contrast Button with disabled prop true', () => <Button color="contrast" disabled >Disabled</Button>);
 

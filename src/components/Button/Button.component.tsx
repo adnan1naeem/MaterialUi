@@ -23,7 +23,7 @@ import { Button } from 'material-ui';
  * @param {string} props.className string name of styling css class.
  */
 
- export interface ButtonMUI {
+ export interface IButtonMUI {
         color?: 'default' | 'accent' | 'primary' | 'contrast' | 'inherit',
         dense?: boolean,
         classes?: object,
@@ -33,31 +33,13 @@ import { Button } from 'material-ui';
         raised?: boolean,
  }
 
-const BlueRainButton = (props: IButton & ButtonMUI) => {
+const BlueRainButton = (props: IButton & IButtonMUI) => {
     if(props.iconLeft){
     return (
         <Button
-        raised={true || props.raised}
-        color={ props.color ? (props.color ==='default'|| props.color ==='accent'|| props.color ==='primary'|| props.color ==='contrast'? props.color: 'default') : 'default'} 
-        style={props.fullWidth ? (props.style, {width:'100%'}): props.style} 
-        disabled={props.disabled}
-        href={props.href}
-        fab={props.fab}
-        mini={props.small}
-        dense={props.small}
-        onClick={props.onClick}
-        {...props}
-        >
-        {props.iconLeft} {props.children}
-        </Button>
-    );
-    }
-    else if(props.iconRight){
-        return (
-            <Button
             raised={true || props.raised}
-            color={ props.color ? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'} 
-            style={props.fullWidth? (props.style, {width:'100%'}): props.style} 
+            color={props.color ? (props.color ==='default'|| props.color ==='accent'|| props.color ==='primary'|| props.color ==='contrast'? props.color: 'default') : 'default'}
+            style={props.fullWidth ? (props.style && {width:'100%'}): props.style}
             disabled={props.disabled}
             href={props.href}
             fab={props.fab}
@@ -65,6 +47,23 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
             dense={props.small}
             onClick={props.onClick}
             {...props}
+        >{props.iconLeft} {props.children}
+        </Button>
+    );
+    }
+    else if(props.iconRight){
+        return (
+            <Button
+                raised={true || props.raised}
+                color={props.color ? (props.color==='default'|| props.color==='accent' || props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'}
+                style={props.fullWidth? (props.style && {width:'100%'}): props.style}
+                disabled={props.disabled}
+                href={props.href}
+                fab={props.fab}
+                mini={props.small}
+                dense={props.small}
+                onClick={props.onClick}
+                {...props}
             >
             {props.children} {props.iconRight}
             </Button>
@@ -72,21 +71,21 @@ const BlueRainButton = (props: IButton & ButtonMUI) => {
         }
     return (
         <Button
-        raised={true || props.raised}
-        color={ props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'} 
-        style={props.fullWidth ? (props.style, {width:'100%'}): props.style} 
-        disabled={props.disabled}
-        href={props.href}
-        fab={props.fab}
-        mini={props.small}
-        dense={props.small}
-        onClick={props.onClick}
-        {...props}
+            raised={true || props.raised}
+            color={props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'}
+            style={props.fullWidth ? (props.style && {width:'100%'}): props.style}
+            disabled={props.disabled}
+            href={props.href}
+            fab={props.fab}
+            mini={props.small}
+            dense={props.small}
+            onClick={props.onClick}
+            {...props}
         >
         {props.children}
         </Button>
     );
 
-}
+};
 
 export default BlueRainButton;
