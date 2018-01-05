@@ -1,6 +1,12 @@
 import * as React from 'react';
 import Card, { CardMedia, CardBody, CardFooter, CardHeader } from '../../Card';
 import Button from 'material-ui/Button';
+import Avatar from 'material-ui/Avatar';
+import IconButton from 'material-ui/IconButton';
+import Typography from 'material-ui/Typography';
+import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
+import PlayArrowIcon from 'material-ui-icons/PlayArrow';
+import SkipNextIcon from 'material-ui-icons/SkipNext';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
@@ -22,24 +28,78 @@ storiesOf('Card', module).add('Card and raised prop false', () =>
 storiesOf('Card', module).add('Card with inverse prop false tag Card', () =>
 <Card style={{maxWidth:100}}> Inverse turned text into White, tag is Card and Max width 100 in style prop </Card>);
 
-// storiesOf('BluerainCard', module).add('Reactstrap Card story', () =>
-// <Card style={{width:300}} raised>
-//     <CardMedia top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" />
-//     <CardBody>
-//         <h3>Card title</h3>
-//         <h5>Card subtitle</h5>
-//         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     <Button>Button</Button>
-//     </CardBody>
-// </Card>);
+storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
+<Card>
+<div>
+  <CardBody>
+    <h4>Live From Space</h4>
+    <h5 style={{color:'green'}}>
+      Mac Miller
+    </h5>
+  </CardBody>
+  <div>
+    <IconButton aria-label="Previous">
+      <SkipNextIcon />
+    </IconButton>
+    <IconButton aria-label="Play/pause">
+      <PlayArrowIcon/>
+    </IconButton>
+    <IconButton aria-label="Next">
+      <SkipPreviousIcon />
+    </IconButton>
+  </div>
+</div>
+<CardMedia
+  src="/static/images/cards/live-from-space.jpg"
+/>
+</Card>));
 
-// storiesOf('BluerainCard', module).add('Reactstrap Card story with header and footer', () =>
-// <Card style={{width:300}} raised>
-//     <CardHeader title="Header"/>
-//     <CardBody>
-//     <h3>Special Title Treatment</h3>
-//     <p>With supporting text below as a natural lead-in to additional content.</p>
-//     <Button color="success" >Go somewhere</Button>
-//     </CardBody>
-//     <CardFooter>Footer</CardFooter>
-// </Card>);
+storiesOf('BluerainCard', module).add('MaterialUI basic Card', () =>
+(
+<Card>
+        <CardBody>
+          <h1>Word of the Day</h1>
+          <h2>
+            benevolent
+          </h2>
+          <h4>adjective</h4>
+          <p >
+            well meaning and kindly.<br />
+            {'"a benevolent smile"'}
+          </p>
+        </CardBody>
+        <CardFooter>
+          <Button dense>Learn More</Button>
+        </CardFooter>
+      </Card>));
+
+storiesOf('BluerainCard', module).add('MaterialUI Card with all subcomponents', () =>
+(
+<Card style={{width:350}}>
+    <CardHeader
+            avatar={<Avatar aria-label="Recipe">R</Avatar>}
+            action={<IconButton><PlayArrowIcon /></IconButton>}
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+    />
+<CardMedia
+  src="material-ui-next.com/static/images/cards/contemplative-reptile.jpg"
+/>
+<CardBody>
+  <Typography type="headline" component="h2">
+    Lizard
+  </Typography>
+  <Typography component="p">
+    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+    across all continents except Antarctica
+  </Typography>
+</CardBody>
+<CardFooter>
+  <Button dense color="primary">
+    Share
+  </Button>
+  <Button dense color="primary">
+    Learn More
+  </Button>
+</CardFooter>
+</Card>));

@@ -35,7 +35,7 @@ const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
         <CardHeader
             style={props.style}
             title={props.title}
-            component={typeof props.tag==='string'? props.tag : CardContent}
+            component={typeof props.tag==='string'? props.tag : 'div'}
             subheader={props.children}
             {...props}
         >

@@ -29,6 +29,8 @@ export interface IBSProps {
 const BlueRainCardMedia = (props: ICardMedia & IBSProps) => {
     return (
         <CardMedia
+            image={props.src}
+            src={props.src}
             {...props}
         />
     );
