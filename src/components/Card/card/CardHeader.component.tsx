@@ -4,13 +4,13 @@
 
 import * as React from 'react';
 import { ICardHeader } from 'bluerain-ui-interfaces/Components/Card';
-import { CardHeader, CardContent } from 'material-ui/Card';
+import { CardHeader } from 'material-ui/Card';
 
 /**
  * The props of CardHeader Component
  * @param {Object} props.style style object for Card's style.
+ * @param {Node} props.children Children of the CardHeader.
  * @param {Node} props.title Title of the CardHeader.
- * @param {string or function} props.tag tag with which the Component will be rendered.
  * @param {string} props.className className for styling component with css.
  */
 
@@ -20,7 +20,7 @@ import { CardHeader, CardContent } from 'material-ui/Card';
   * @param {Node} props.action The action to display in the card header.
   * @param {Node} props.avatar The Avatar for the Card Header.
   * @param {Object} props.classes Useful to extend the style applied to components.
-  * @param {Node} props.subheader The content of the component.
+  * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
   export interface IMUIProps {
@@ -35,12 +35,9 @@ const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
         <CardHeader
             style={props.style}
             title={props.title}
-            component={typeof props.tag==='string'? props.tag : 'div'}
-            subheader={props.children}
+            subheader={props.subheader? props.subheader : props.children}
             {...props}
-        >
-        {props.children}
-        </CardHeader>
+        />
     );
 
 };

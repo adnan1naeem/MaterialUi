@@ -16,20 +16,24 @@ BR.boot({renderApp:false});
 
 const Text = BR.Components.get('Text');
 
-const Image = BR.Components.get('Image');
 
-const label = text('label as child', 'with knobs');
-storiesOf('Card', module).add('Card with style and raised props', () =>
-<Card raised style={{width:'100%', height:300}} className="bg-main"> Raised</Card>);
+const label = text('label as child', <Text>WithKnobs</Text>);
+
+storiesOf('Card', module).add('Card with style, className and raised props', () =>
+<Card raised style={{backgroundColor:'brown'}} className="bg-main">Raised</Card>);
 
 storiesOf('Card', module).add('Card and raised prop false', () =>
-<Card raised={false} style={{width:'100%', height:300}} className="bg-main"> UnRaised success </Card>);
+<Card raised={false} style={{backgroundColor:'orange'}} className="bg-main">UnRaised success </Card>);
 
-storiesOf('Card', module).add('Card with inverse prop false tag Card', () =>
-<Card style={{maxWidth:100}}> Inverse turned text into White, tag is Card and Max width 100 in style prop </Card>);
+storiesOf('Card', module).add('Card with children and tag props', () =>
+<Card style={{maxWidth:100}} tag={CardHeader}> {label} </Card>);
+
+storiesOf('Card', module).add('Card with square and elevation props', () =>
+<Card style={{maxWidth:100}} tag={CardHeader} square elevation={12}> {label} </Card>);
+
 
 storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
-<Card>
+<Card style={{width:350, display:'flex'}}>
 <div>
   <CardBody>
     <h4>Live From Space</h4>
@@ -50,28 +54,29 @@ storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
   </div>
 </div>
 <CardMedia
-  src="/static/images/cards/live-from-space.jpg"
+  src="https://material-ui-next.com/static/images/cards/live-from-space.jpg"
+  style={{height:200, width:200}}
 />
 </Card>));
 
 storiesOf('BluerainCard', module).add('MaterialUI basic Card', () =>
 (
-<Card>
-        <CardBody>
-          <h1>Word of the Day</h1>
-          <h2>
-            benevolent
-          </h2>
-          <h4>adjective</h4>
-          <p >
-            well meaning and kindly.<br />
-            {'"a benevolent smile"'}
-          </p>
-        </CardBody>
-        <CardFooter>
-          <Button dense>Learn More</Button>
-        </CardFooter>
-      </Card>));
+<Card style={{maxWidth:275}}>
+<CardBody>
+  <Typography style={{marginBottom: 16,fontSize: 14}}>Word of the Day</Typography>
+  <Typography type="headline" component="h2">
+    benevolent
+  </Typography>
+  <Typography style={{marginBottom: 12}}>adjective</Typography>
+  <Typography component="p">
+    well meaning and kindly.<br />
+    {'"a benevolent smile"'}
+  </Typography>
+</CardBody>
+<CardFooter>
+  <Button dense>Learn More</Button>
+</CardFooter>
+</Card>));
 
 storiesOf('BluerainCard', module).add('MaterialUI Card with all subcomponents', () =>
 (
@@ -83,7 +88,8 @@ storiesOf('BluerainCard', module).add('MaterialUI Card with all subcomponents', 
             subheader="September 14, 2016"
     />
 <CardMedia
-  src="material-ui-next.com/static/images/cards/contemplative-reptile.jpg"
+  src="https://material-ui-next.com/static/images/cards/contemplative-reptile.jpg"
+  style={{height:200}}
 />
 <CardBody>
   <Typography type="headline" component="h2">

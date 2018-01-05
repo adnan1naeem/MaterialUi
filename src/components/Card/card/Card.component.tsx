@@ -18,7 +18,7 @@ import Card from 'material-ui/Card';
  /**
   * Platform specific props
   * @param {number} props.elevation box-shadow of Card in range 0-24.
-  * @param {boolean} props.square If false, Card is generated in a circle.
+  * @param {boolean} props.square If true, rounded corners are degenerated.
   */
 
  export interface IMUIProps {
@@ -29,6 +29,7 @@ import Card from 'material-ui/Card';
 const BlueRainCard = (props: ICard & IMUIProps) => {
     return (
         <Card
+            {...props}
             raised={props.raised}
             style={props.style}
             component={typeof props.tag === 'string' ? props.tag : 'div'}

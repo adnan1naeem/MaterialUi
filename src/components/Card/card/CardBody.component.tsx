@@ -13,8 +13,16 @@ import  { CardContent } from 'material-ui/Card';
  * @param {string} props.className className for styling component with css.
  */
 
+ /**
+  * Platform specific props
+  * @param {Object} props.classes Usefull to extend the style for CardBody component.
+  */
 
-const BlueRainCardBody = (props: ICardBody) => {
+  export interface IMUIProps {
+    classes?: {},
+    }
+
+const BlueRainCardBody = (props: ICardBody & IMUIProps) => {
     return (
         <CardContent
             {...props}

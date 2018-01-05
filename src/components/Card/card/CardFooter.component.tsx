@@ -13,17 +13,18 @@ import { CardActions } from 'material-ui/Card';
  * @param {string} props.className className for styling component with css.
  */
 
- /**
-  * Platform specific props
-  * @param {boolean} props.disableActionSpacing If true, the card actions do not have additional margin.
-  */
+/**
+ * Platform specific props
+ * @param {boolean} props.disableActionSpacing If true, the card actions do not have additional margin.
+ * @param {Object} props.classes Useful to extend style for the component.
+ */
 
   export interface IMUIProps {
-    classes: {},
+    classes?: {},
     disableActionSpacing?: boolean,
     }
 
-const BlueRainCardFooter = (props: ICardFooter) => {
+const BlueRainCardFooter = (props: ICardFooter & IMUIProps) => {
     return (
         <CardActions
             {...props}

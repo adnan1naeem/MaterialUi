@@ -1,5 +1,8 @@
 import * as React from 'react';
 import {CardHeader} from '../../Card';
+import Avatar from 'material-ui/Avatar';
+import IconButton from 'material-ui/IconButton';
+import SkipNextIcon from 'material-ui-icons/SkipNext';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
@@ -9,22 +12,34 @@ BR.boot({renderApp:false});
 
 const Text = BR.Components.get('Text');
 
-const Image = BR.Components.get('Image');
-
-const label = text('label as child', 'with knobs');
-storiesOf('CardHeader', module).add('CardHeader with title prop', () =>
+const label = text('label as child', <Text>With knobs</Text>);
+storiesOf('CardHeader', module).add('CardHeader with title as Node and style props', () =>
+(
 <CardHeader
-title="Title"
-    />);
+    style={{width:300, backgroundColor:'white'}}
+    title={label}
+/>));
 
-storiesOf('CardHeader', module).add('CardHeader with tag and title props', () =>
+storiesOf('CardHeader', module).add('CardHeader with title prop as string', () =>
+(
 <CardHeader
-title="Title"
-tag={()=>'h2'}
-    />);
+    title="Title"
+/>));
 
-storiesOf('CardHeader', module).add('CardHeader with tag and Node as title props', () =>
+storiesOf('CardHeader', module).add('CardHeader with children and title prop ', () =>
+(
+<CardHeader title="Children">
+    <Avatar aria-label="Recipe" style={{backgroundColor:'red'}}>R</Avatar>
+    <IconButton><SkipNextIcon /></IconButton>
+    "Shrimp and Chorizo Paella"
+    "September 14, 2016"
+</CardHeader>));
+
+storiesOf('CardHeader', module).add('CardHeader with MUI props', () =>
+(
 <CardHeader
-title={<h1>Header</h1>}
-tag={()=>'h2'}
-    />);
+    avatar={<Avatar aria-label="Recipe" style={{backgroundColor:'red'}}>R</Avatar>}
+    action={<IconButton><SkipNextIcon /></IconButton>}
+    title="Shrimp and Chorizo Paella"
+    subheader="September 14, 2016"
+/>));
