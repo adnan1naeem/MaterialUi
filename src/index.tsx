@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
