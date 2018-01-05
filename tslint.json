@@ -8,7 +8,8 @@
         "no-submodule-imports":false,
         "no-var-requires": false,
         "jsx-self-close":false,
-        "jsx-boolean-value": [ "never" ]        
-
+        "jsx-boolean-value": [ "never" ],
+        "no-console": false,
+        "jsx-no-lambda": false
     }
 }

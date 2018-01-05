@@ -1,11 +1,12 @@
-
 import React from 'react';
 import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
+import TextInput from './components/textInput';
 import Chip from './components/chip';
+import MapComponent from './components/map';
 import Badge from './components/badge';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/withTheme';
+// import getMuiTheme from 'material-ui/styles/withTheme';
 
 // const withMUI = (App, theme, ctx) => (props: { intl: { rtl: string }}) => {
 
@@ -38,8 +39,10 @@ class MaterialUiPlugin extends Plugin {
             theme = {};
         }
 
+        BR.Components.register('TextInput', TextInput);
         BR.Components.register('Chip', Chip);
         BR.Components.register('Badge', Badge);
+        BR.Components.register('MapComponent', MapComponent);
 
         // Add Material UI Provider
         // 	ctx.Filters.add(
