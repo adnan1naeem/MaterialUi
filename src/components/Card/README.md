@@ -14,9 +14,8 @@
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| color | string | white | color of the background of Card component. |
-| inverse | bool | false | If true, turns text color of card into white. |
-| body | bool | false | If true, card is generated with body specific styling. |
+| elevation | number |  | For shadow of component, can be from 0-24 |
+| square | bool | false | If true, card has no rounded corners. |
 
 # CardHeader
 
@@ -27,8 +26,16 @@
 | style | Object | | style object for CardHeader. |
 | children | Node | | Children of CardHeader component. |
 | title | Node | | title of the CardHeader.|
-| tag | string or func | div | Tag with which the Component will be rendered i.e. h1,p and b etc. |
 | className | string |  | className for styling component with css. |
+
+## Specific Library Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| action | Node |  | The action to display in the card header. |
+| subheader | Node |  | The content of the component. |
+| classes | Object |  | Useful to extend the style applied to components. |
+| avatar | Node |  | The Avatar for the Card Header. |
 
 # CardMedia
 
@@ -38,15 +45,8 @@
 |:-----|:-----|:--------|:------------|
 | style | Object |  | style object for CardMedia. |
 | src | string |  | src for the CardMedia.|
-| tag | string or func | img | Tag with which the Component will be rendered. |
 | className | string |  | className for styling component with css. |
-
-## Specific Library Props
-
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| top | bool | false | use top prop to assign position of component at top. |
-| bottom | bool | false | use bottom prop to assign position of component at bottom. |
+| height | number | 200 | Height of the image to be given in 'px'. |
 
 # CardBody
 
@@ -58,6 +58,12 @@
 | children | Node | | Children of CardBody component. |
 | className | string |  | className for styling component with css. |
 
+## Specific Library Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| classes | Object |  | Useful to extend the style applied to components. |
+
 # CardFooter
 
 ## Universal Props
@@ -67,6 +73,13 @@
 | style | Object |  | style object for CardFooter. |
 | children | Node | | Children of CardFooter component. |
 | className | string |  | className for styling component with css. |
+
+## Specific Library Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| classes | Object |  | Useful to extend the style applied to components. |
+| disableActionSpacing | bool | false | If true, the card actions do not have additional margin. |
 
 ## How to use
 
@@ -80,9 +93,14 @@ const myCard = (props) => {
     const Card = BR.Components.get('Card');
     const CardMedia = BR.Components.get('CardMedia');
     const CardBody = BR.Components.get('CardBody');
+    const Button = BR.Components.get('Button');
     return (
     <Card style={{width:300}} >
-        <CardMedia top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" />
+        <CardHeader
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+        />
+        <CardMedia src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" height={400} />
         <CardBody>
           <h2>Card Title</CardTih2tle>
           <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -90,6 +108,9 @@ const myCard = (props) => {
             <small className="text-muted">Last updated 3 mins ago</small>
           </p>
         </CardBody>
+        <CardFooter disableActionSpacing>
+          <Button dense>Learn More</Button>
+        </CardFooter>
     </Card>
     );
 }
