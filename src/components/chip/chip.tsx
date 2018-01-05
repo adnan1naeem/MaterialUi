@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import ChipUi from 'material-ui/Chip';
-import { IChip } from 'bluerain-ui-interfaces/Components/Chip';
+import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
 
 /**
  * The universal props of Chip Component
