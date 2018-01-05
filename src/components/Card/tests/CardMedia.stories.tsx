@@ -28,5 +28,4 @@ storiesOf('CardMedia', module).add('CardMedia with style prop', () =>
 (
 <CardMedia
     src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-    height={300}
 />));
