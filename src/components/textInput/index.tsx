@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react';
-import {ITextInput} from '@blueeast/bluerain-ui-interfaces/Components/textInput';
+import {ITextInput} from 'bluerain-ui-interfaces/Components/TextInput';
 import {TextField} from 'material-ui';
 
 /**
