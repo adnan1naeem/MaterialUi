@@ -28,8 +28,8 @@ storiesOf('Card', module).add('Card and raised prop false', () =>
 storiesOf('Card', module).add('Card with children and tag props', () =>
 <Card style={{maxWidth:100}} tag={CardHeader}> {label} </Card>);
 
-storiesOf('Card', module).add('Card with square and elevation props', () =>
-<Card style={{maxWidth:100}} tag={CardHeader} square elevation={12}> {label} </Card>);
+storiesOf('Card', module).add('Card with square, tag as Text and elevation as 12 props', () =>
+<Card style={{maxWidth:100}} tag={Text} square elevation={12}> {label} </Card>);
 
 
 storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
@@ -55,7 +55,8 @@ storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
 </div>
 <CardMedia
   src="https://material-ui-next.com/static/images/cards/live-from-space.jpg"
-  style={{height:200, width:200}}
+  style={{width:200}}
+  height={200}
 />
 </Card>));
 
@@ -89,7 +90,7 @@ storiesOf('BluerainCard', module).add('MaterialUI Card with all subcomponents', 
     />
 <CardMedia
   src="https://material-ui-next.com/static/images/cards/contemplative-reptile.jpg"
-  style={{height:200}}
+  height={200}
 />
 <CardBody>
   <Typography type="headline" component="h2">
