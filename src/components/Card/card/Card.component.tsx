@@ -8,7 +8,7 @@ import Card from 'material-ui/Card';
 
 /**
  * The props of Card Component
- * @param {Node} props.children Label to be passed as child.
+ * @param {Node} props.children Children to be passed for card component.
  * @param {Object} props.style style object for Card's style.
  * @param {boolean} props.raised If true, card is generated with raised styling.
  * @param {string or function} props.tag tag with which the Component will be rendered.
@@ -23,7 +23,7 @@ import Card from 'material-ui/Card';
 
  export interface IMUIProps {
  elevation?: number,
- square?: boolean
+ square?: boolean,
  }
 
 const BlueRainCard = (props: ICard & IMUIProps) => {
@@ -31,7 +31,7 @@ const BlueRainCard = (props: ICard & IMUIProps) => {
         <Card
             raised={props.raised}
             style={props.style}
-            component={props.tag}
+            component={typeof props.tag === 'string' ? props.tag : 'div'}
             className={props.className}
         >
         {props.children}

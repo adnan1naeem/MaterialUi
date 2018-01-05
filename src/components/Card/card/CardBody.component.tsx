@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { ICardBody } from '@blueeast/bluerain-ui-interfaces/Components/Card';
-import { CardBody } from 'reactstrap';
+import  { CardContent } from 'material-ui/Card';
 
 /**
  * The props of CardBody Component
@@ -13,15 +13,16 @@ import { CardBody } from 'reactstrap';
  * @param {string} props.className className for styling component with css.
  */
 
- 
+
 const BlueRainCardBody = (props: ICardBody) => {
     return (
-        <CardBody 
-        {...props}>
+        <CardContent
+            {...props}
+        >
         {props.children}
-        </CardBody>
+        </CardContent>
     );
 
-}
+};
 
 export default BlueRainCardBody;

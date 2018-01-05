@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { ICardHeader } from '@blueeast/bluerain-ui-interfaces/Components/Card';
-import { CardHeader } from 'reactstrap';
+import { CardHeader } from 'material-ui/Card';
 
 /**
  * The props of CardHeader Component
@@ -15,16 +15,31 @@ import { CardHeader } from 'reactstrap';
  * @param {string} props.className className for styling component with css.
  */
 
- 
-const BlueRainCardHeader = (props: ICardHeader) => {
+
+ /**
+  * Platform specific props
+  * @param {number} props.elevation box-shadow of Card in range 0-24.
+  * @param {boolean} props.square If false, Card is generated in a circle.
+  */
+
+  export interface IMUIProps {
+    action?: number,
+    avatar?: boolean,
+    classes?: {},
+    component?: boolean,
+    subheader?: boolean,
+    title?: boolean,
+    }
+
+const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
     return (
         <CardHeader
-        {...props}
+            {...props}
         >
         {props.title} {props.children}
         </CardHeader>
     );
 
-}
+};
 
 export default BlueRainCardHeader;
