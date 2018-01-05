@@ -1,5 +1,5 @@
 import * as React from 'react';
-import TextInput from '../../TextInput';
+import TextInput from '../';
 import { storiesOf } from '@storybook/react';
 
 function handleTextInputChange (value: any) {
@@ -51,11 +51,11 @@ storiesOf('TextInput', module).add('with fullWidth',
 storiesOf('TextInput', module).add('with style object',
     () =>  <TextInput id="multiline-flexible" style={labelProps} editable={true} label="Full Width" placeholder="Placeholder"  onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
-// storiesOf('TextInput', module).add('with type number',
-//     () =>  <form ><TextInput id="number" value={'4'} type="number" InputLabelProps={labelProps} label="Number" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
+// storiesOf('textInput', module).add('with type number',
+//     () =>  <form ><textInput id="number" value={'4'} type="number" InputLabelProps={labelProps} label="Number" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
 
-// storiesOf('TextInput', module).add('with type search',
-//     () =>  <form ><TextInput id="search" type="search" label="Search" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
+// storiesOf('textInput', module).add('with type search',
+//     () =>  <form ><textInput id="search" type="search" label="Search" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
 
 
 

@@ -149,6 +149,7 @@
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
     "enzyme": "^3.1.1",
+    "react-gmaps": "^1.5.0",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
     "lodash.pickby": "^4.6.0",
@@ -171,6 +172,7 @@
     "victory": "^0.24.3",
     "warning": "^3.0.0",
     "ws": "3.3.3",
-    "@blueeast/bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master"
+    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master"
+
   }
 }

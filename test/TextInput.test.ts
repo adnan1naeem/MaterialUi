@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import BlueRainTextInput from '../src/components/TextInput/index';
+import BlueRainTextInput from '../src/components/textInput/index';
 
-test('TextInput component with default values', () => {
+test('textInput component with default values', () => {
 	const TextInputComponent = create().toJSON();
 });
