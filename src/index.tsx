@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
+import TextInput from './components/textInput';
 import Chip from './components/chip';
 import MapComponent from './components/map';
 import Badge from './components/badge';
@@ -39,6 +39,7 @@ class MaterialUiPlugin extends Plugin {
             theme = {};
         }
 
+        BR.Components.register('TextInput', TextInput);
         BR.Components.register('Chip', Chip);
         BR.Components.register('Badge', Badge);
         BR.Components.register('MapComponent', MapComponent);
