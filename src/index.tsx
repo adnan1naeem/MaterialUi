@@ -1,8 +1,7 @@
-
-
 import React from 'react';
 import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
+import TextInput from './components/TextInput';
 import Chip from './components/chip';
 import Badge from './components/badge';
 import DropDown from './components/DropDown/';
@@ -40,6 +39,7 @@ class MaterialUiPlugin extends Plugin {
             theme = {};
         }
 
+        BR.Components.register('TextInput', TextInput);
         BR.Components.register('Chip', Chip);
         BR.Components.register('Badge', Badge);
         BR.Components.register('Badge', Badge);
@@ -55,8 +55,6 @@ class MaterialUiPlugin extends Plugin {
 // 	if (ctx.Plugins.get('intl')) {
 // 		return ctx.Plugins.get('intl').withIntl(result);
 // 	}
-
-
 // 	return result;
 // }
         // );
