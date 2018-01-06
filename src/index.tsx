@@ -3,22 +3,23 @@ import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
 import TextInput from './components/textInput';
 import Chip from './components/chip';
-import MapComponent from './components/map';
+import GMap from './components/map';
 import Badge from './components/badge';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
 
 // const withMUI = (App, theme, ctx) => (props: { intl: { rtl: string }}) => {
-
+//
 // 	if (props.intl !== undefined && props.intl.rtl !== undefined) {
 // 		theme.isRtl = props.intl.rtl;
 // 	}
-
+//
 // 	theme = ctx.Filters.run('material-ui.theme', theme);
 // 	const muiTheme = getMuiTheme(theme);
-
+//
 // 	const style = { direction: theme.isRtl ? 'rtl' : 'ltr' };
-
+//
 // 	return (<MuiThemeProvider muiTheme={muiTheme}><App {...props} style={style} /></MuiThemeProvider>);
 // };
 
@@ -32,33 +33,33 @@ class MaterialUiPlugin extends Plugin {
     static pluginName = 'MaterialUiPlugin';
     static slug = 'material-ui';
 
-    static initialize(config:any = {}, BR:bluerainType) {
+    static initialize(config:any = {}, ctx:bluerainType) {
 
-        let theme = BR.Configs.get('theme');
+        let theme = ctx.Configs.get('theme');
         if (!theme) {
             theme = {};
         }
 
-        BR.Components.register('TextInput', TextInput);
-        BR.Components.register('Chip', Chip);
-        BR.Components.register('Badge', Badge);
-        BR.Components.register('MapComponent', MapComponent);
+        ctx.Components.register('TextInput', TextInput);
+        ctx.Components.register('Chip', Chip);
+        ctx.Components.register('Badge', Badge);
+        ctx.Components.register('GMap', GMap);
 
         // Add Material UI Provider
-        // 	ctx.Filters.add(
-        //   'bluerain.redux.app',
+//         	ctx.Filters.add(
+//           'bluerain.redux.app',
 //       function AddMUI(App) {
-
+//
 // 	// const result = withMUI(App, theme, ctx);
-
+//
 // 							// Wrap in Intl, if intl plugin is installed
 // 	if (ctx.Plugins.get('intl')) {
 // 		return ctx.Plugins.get('intl').withIntl(result);
 // 	}
-
+//
 // 	return result;
 // }
-        // );
+//         );
     }
 }
 
