@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {  text, number, boolean } from '@storybook/addon-knobs';
+import { text, number, boolean } from '@storybook/addon-knobs';
 import BR, { BlueRainProvider } from '@blueeast/bluerain-os';
 import { IntlProvider } from 'react-intl';
 import MapComponent from '../index';
