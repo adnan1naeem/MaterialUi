@@ -7,6 +7,7 @@ import MapComponent from './components/map';
 import Badge from './components/badge';
 import Button from './components/button';
 import Dropdown from './components/DropDown';
+import Avatar from './components/avatar';
 import Card, {CardBody, CardFooter, CardHeader, CardMedia} from './components/Card';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
@@ -47,6 +48,7 @@ class MaterialUiPlugin extends Plugin {
         BR.Components.register('Badge', Badge);
         BR.Components.register('MapComponent', MapComponent);
         BR.Components.register('Button', Button);
+        BR.Components.register('Avatar', Avatar);
         BR.Components.register('Dropdown', Dropdown);
         BR.Components.register('Card', Card);
         BR.Components.register('CardHeader', CardHeader);
