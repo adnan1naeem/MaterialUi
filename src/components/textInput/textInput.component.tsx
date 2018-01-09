@@ -1,6 +1,6 @@
 import React, {ReactNode} from 'react';
 import {ITextInput} from 'bluerain-ui-interfaces/Components/TextInput';
-import {TextField} from 'material-ui';
+import TextField from 'material-ui/TextField';
 
 /**
  * The props of IMaterialTextInput Component
