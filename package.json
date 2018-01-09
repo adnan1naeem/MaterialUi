@@ -155,7 +155,7 @@
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
     "lodash.pickby": "^4.6.0",
-    "material-ui": "^1.0.0-beta.26",
+    "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
     "material-ui-icons": "^1.0.0-beta.10",
     "rc-color-picker": "^1.2.2",
