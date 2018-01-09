@@ -6,7 +6,7 @@ import Chip from './components/chip';
 import GMap from './components/map';
 import Badge from './components/badge';
 import Button from './components/button';
-import Card, {CardHeader, CardBody, CardFooter, CardMedia} from './components/Card';
+import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
 
