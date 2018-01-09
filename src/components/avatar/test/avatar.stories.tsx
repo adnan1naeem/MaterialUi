@@ -5,12 +5,13 @@ import { action } from '@storybook/addon-actions';
 import FolderIcon from 'material-ui-icons/Folder';
 import PageviewIcon from 'material-ui-icons/Pageview';
 import AssignmentIcon from 'material-ui-icons/Assignment';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import { withKnobs, text, number} from '@storybook/addon-knobs';
 const stories = storiesOf('Avatar', module);
 stories.add('Avatar (with knobs)', () => {
-    const content = text('content', 'abc');
-    const colour = text('color', 'primary');
-    return <Avatar alt="Remy Sharp" src="https://material-ui-next.com/static/images/remy.jpg" style={{height:35, width:35}} />;
+    const content = text('content', 'Remy Sharp');
+    const colour = text('color', 'green');
+    const size = number('size', 400);
+    return <Avatar alt={content} src="https://material-ui-next.com/static/images/remy.jpg" size={size} style={{backgroundColor:colour}}/>;
 });
 stories.add('Avatar (withOut knobs)', () => {
     return  (

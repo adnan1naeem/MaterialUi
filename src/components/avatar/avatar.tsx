@@ -5,7 +5,7 @@ import Avatar from 'material-ui/Avatar';
 
 export interface IAvatar {
     children?: JSX.Element | string;
-    sizes?: string,
+    size?: number,
     src?: string,
     style?: {},
 }
@@ -33,8 +33,11 @@ export interface IAvatarProps {
     style?: {},
 }
 const BlueRainAvatar = (props: IAvatarProps & IAvatar) => {
+    const size = props.size? props.size: 70;
+    const avatarStyle = [{width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size}, {...props.style}];
     return (
         <Avatar
+            style={avatarStyle}
             {...props}
         >
         {props.children}
