@@ -16,15 +16,15 @@ export default {
   ],
   sourcemap: true,
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
-  external:  Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {}))
-      .concat(['material-ui/Chip','material-ui/Badge','material-ui']),
+  external: Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {}))
+    .concat(['material-ui/Chip', 'material-ui/Badge', 'material-ui/CardHeader', 'material-ui']),
   watch: {
     include: 'compiled/**',
   },
   plugins: [
     // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
     commonjs(),
-      sizes(),
+    sizes(),
     // Allow node_modules resolution, so you can use 'external' to control
     // which external modules to include in the bundle
     // https://github.com/rollup/rollup-plugin-node-resolve#usage
@@ -33,4 +33,4 @@ export default {
     // Resolve source maps to the original source
     sourceMaps(),
   ],
-}
+};
