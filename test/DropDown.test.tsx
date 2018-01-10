@@ -4,7 +4,7 @@ import { DropDown} from '../src/components/DropDown/DropDown';
 
 test('it should show normal dropDown', () => {
     const Dropdown = create(
-        <DropDown  value={'jsbha'}  />
+        <DropDown  value={'jsbha'}   />
     ).toJSON();
     expect(Dropdown.props.autoWidth).toEqual(undefined);
     expect(Dropdown).toMatchSnapshot();
@@ -14,6 +14,7 @@ test('with color prop', () => {
     const Dropdown = create(
         <DropDown  value={'jsbha'}  />
     ).toJSON();
+    console.log('props',Dropdown.props)
     expect(Dropdown.props.style).toEqual(undefined);
     expect(Dropdown).toMatchSnapshot();
 });
