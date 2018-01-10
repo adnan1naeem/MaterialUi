@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import IButton from 'bluerain-ui-interfaces/Components/Button';
-import { Button } from 'material-ui';
+import Button from 'material-ui/Button';
 
 
 const BlueRainButton = (props: IButton) => {
