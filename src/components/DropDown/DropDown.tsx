@@ -23,7 +23,7 @@ interface IMaterialuiDropDown {
     input?:ReactNode,
     MenuProps?:object,
     native?:boolean,
-    renderValue?:()=>void,
+    renderValue?:any,
     value?:any,
     onChange?:any,
     disabled?:boolean
