@@ -5,7 +5,7 @@ import TextInput from './components/textInput';
 import Chip from './components/chip';
 import GMap from './components/map';
 import Badge from './components/badge';
-import DropDown from './components/DropDown/';
+import {DropDown,DropdownItem} from './components/DropDown/DropDown';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from './components/button';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
@@ -54,6 +54,7 @@ class MaterialUiPlugin extends Plugin {
         ctx.Components.register('CardBody', CardBody);
         ctx.Components.register('CardMedia', CardMedia);
         ctx.Components.register('DropDown', DropDown);
+        ctx.Components.register('DropdownItem', DropdownItem);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
