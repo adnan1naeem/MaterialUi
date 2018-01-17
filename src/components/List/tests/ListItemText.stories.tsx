@@ -18,3 +18,10 @@ storiesOf('ListItemText', module).add('ListItemText with text as child', () =>(
     >
     Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
 </ListItemText>));
+
+storiesOf('ListItemText', module).add('ListItemText with primary as child and secondary in secondary prop', () =>(
+    <ListItemText
+        secondary="I Am Secondary Text"
+    >
+        Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+    </ListItemText>));

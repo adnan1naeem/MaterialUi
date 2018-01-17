@@ -13,13 +13,17 @@ import { ListItemText } from 'material-ui/List';
  * @param {string} props.className className for styling component with css.
  */
 
-const BlueRainListItemText = (props: IListItemText) => {
+ export interface IMUIProps {
+     primary?: any,
+     secondary?: any,
+ }
+
+const BlueRainListItemText = (props: IListItemText & IMUIProps) => {
     return (
         <ListItemText
             {...props}
-        >
-        {props.children}
-        </ListItemText>
+            primary={props.children}
+        />
     );
 
 };
