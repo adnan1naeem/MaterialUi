@@ -10,7 +10,7 @@ import { ListItemIcon } from 'material-ui/List';
 /**
  * The props of ListItemIcon Component
  * @param {Object} props.style style object for ListItemIcon's style.
- * @param {Node} props.children tag with which the Component will be rendered.
+ * @param {Node} props.children children of ListItemIcon.
  */
 
 const BlueRainListItemIcon = (props: IListItemIcon) => {

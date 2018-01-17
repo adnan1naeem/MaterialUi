@@ -14,7 +14,7 @@ import Avatar from '../../avatar';
  * @param {string} props.src src of the image.
  */
 export interface IMUIProps {
-    children?:any,
+    children?: any,
 }
 
 const BlueRainListItemAvatar = (props: IListItemAvatar & IMUIProps) => {

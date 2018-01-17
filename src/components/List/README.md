@@ -12,6 +12,9 @@
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | className | string |  | className to give css styling. |
+| subheader | Node |  |  subbheader of List. |
+| disablePadding | bool |  | If true, padding is disabled. |
+| dense | bool |  | If true, dense styling is used.. |
 
 # ListItem
 
@@ -28,10 +31,10 @@
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | className | string |  | className to extend styling of Listitem. |
-| color | enum |  | background color of ListItem. |
-| tag | string | li | tag with which ListItem will be rendered. |
+| button | bool |  | If true, ListItem will be a button. |
+| component | string | li | component with which ListItem will be rendered. |
 | href | string |  | src to which the ListItem will be directed. |
-| action | bool |  | ListItem if generated with action state if true and tag is button. |
+| onClick | function |  | If button/active, function to be called back when clicked. |
 | disabled | bool |  | If true, ListItem is rendered disabled. |
 
 # ListItemAvatar
@@ -44,6 +47,12 @@
 | src | string |  | src for the CardMedia.|
 | size | number | 70  | size of the ListItemAvatar (in px). |
 | className | string |  | className for styling component with css. |
+
+## Specific Library Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| children | Node |  | Children of ListItemAvatar. |
 
 # ListItemRightButton
 
@@ -73,6 +82,14 @@
 | children | Node | | Children of ListItemText component. |
 | className | string |  | className for styling component with css. |
 
+## Specific Library Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| primary | Node |  | Primary text for ListItemText. |
+| secondary | Node |  | Secondary text for ListItemText. |
+| inset | bool |  | If true, the children will be indented. This should be used if there is no left avatar or left icon. |
+
 # ListItemIcon
 
 ## Universal Props
@@ -100,30 +117,20 @@ const myList = (props) => {
     const ListItemIcon = BR.Components.get('ListItemIcon');
     const ListItemAvatar = BR.Components.get('ListItemAvatar');
     return (
-    <List>
-        <ListItem active>
-            <ListItemRightButton><Button color="dark">Dark</Button></ListItemRightButton>
-            <View style={{flexDirection:'row'}}>
-            <ListItemIcon><Favorite /></ListItemIcon>
-            <ListHeader>List group item heading</ListHeader>
-            </View>
-            <ListItemText>
-            Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-            </ListItemText>
-        </ListItem>
-        <ListItem>
-            <ListItemRightButton><Button color="danger">Danger</Button></ListItemRightButton>
-            <View style={{flexDirection:'row'}}>
-                <ListItemAvatar src="https://reactstrap.github.io/assets/logo.png" />
-                <View style={{marginLeft:15, marginTop:8}}>
-                    <ListHeader>List group item heading</ListHeader>
-                    <ListItemText>
-                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                    </ListItemText>
-                </View>
-            </View>
-        </ListItem>
-    </List>
+<List>
+    <ListItem button>
+    <Avatar size={40}>
+    <DraftsIcon />
+    </Avatar>
+    <ListItemText primary="Photos" secondary="Jan 9, 2016" />
+    </ListItem>
+    <ListItem button disabled>
+    <Avatar>
+        <DraftsIcon />
+    </Avatar>
+    <ListItemText primary="Work" secondary="Jan 7, 2016" />
+    </ListItem>
+</List>
     );
 }
 

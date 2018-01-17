@@ -15,6 +15,9 @@ import List from 'material-ui/List';
  /**
   * Platform specific props
   * @param {string} props.className className to give css styling.
+  * @param {Node} props.subheader subbheader of List.
+  * @param {bool} props.disablePadding If true, padding is disabled.
+  * @param {bool} props.dense if true, dense styling is used.
   */
 
  export interface IBSProps {

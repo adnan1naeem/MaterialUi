@@ -64,7 +64,7 @@ storiesOf('List', module).add('List of MUI-2', () =>(
   </Avatar>
   <ListItemText primary="Photos" secondary="Jan 9, 2016" />
 </ListItem>
-<ListItem button>
+<ListItem button disabled>
   <Avatar>
     <DraftsIcon />
   </Avatar>
