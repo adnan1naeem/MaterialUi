@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BR from '@blueeast/bluerain-os';
+import { withBlueRain, BlueRainType } from '@blueeast/bluerain-os';
 import Avatar from 'material-ui/Avatar';
 // import { IBadge } from 'bluerain-ui-interfaces/Components/Badge';
 
@@ -31,19 +31,20 @@ export interface IAvatarProps {
     sizes?: string,
     src?: string,
     style?: {},
+    bluerain?: BlueRainType,
 }
-const BlueRainAvatar = (props: IAvatarProps & IAvatar) => {
+
+const BlueRainAvatar = (props: IAvatar & IAvatarProps) => {
     const size = props.size? props.size: 70;
     const avatarStyle = [{width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size}, {...props.style}];
-    return (
-        <Avatar
-            style={avatarStyle}
-            {...props}
-        >
-        {props.children}
-        </Avatar>
-    );
+    const View = props.bluerain.Components.get('View');
+    const Text = props.bluerain.Components.get('Text');
+    const Image = props.bluerain.Components.get('Image');
+    if (props.children) {
+    return <View style={avatarStyle}><Text style={{display:'flex'}}>{props.children}</Text></View>;
+}
+ return <Image source={props.src} style={avatarStyle} />;
 
 };
 
-export default BlueRainAvatar;
+export default withBlueRain(BlueRainAvatar);
