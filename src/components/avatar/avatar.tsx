@@ -48,7 +48,7 @@ const BlueRainAvatar = (props: IAvatar & IAvatarProps) => {
     const Text = props.bluerain.Components.get('Text');
     const Image = props.bluerain.Components.get('Image');
     if (props.children) {
-    return <View style={avatarStyle}><Text style={{display:'flex'}}>{props.children}</Text></View>;
+    return <View style={avatarStyle}>{props.children}</View>;
 }
  return <Image source={props.src} style={avatarStyle} />;
 

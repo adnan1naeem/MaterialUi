@@ -9,4 +9,4 @@ BR.boot({renderApp:false});
 
 
 storiesOf('ListItem', module).add('ListItem with tag, href and action props', () =>
-<ListItem tag="a" href="#" action>Cras justo odio</ListItem>);
+<ListItem active>Cras justo odio</ListItem>);

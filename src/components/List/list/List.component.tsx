@@ -19,6 +19,9 @@ import List from 'material-ui/List';
 
  export interface IBSProps {
  className?: string,
+ subheader?: any,
+ disablePadding?:boolean,
+ dense?:boolean,
  }
 
 const BlueRainList = (props: IList & IBSProps) => {

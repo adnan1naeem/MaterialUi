@@ -16,7 +16,7 @@ import { ListItem } from 'material-ui/List';
  /**
   * Platform specific props
   * @param {string} props.className className to extend styling of Listitem.
-  * @param {enum} props.color background color of ListItem.
+  * @param {bool} props.button If true, ListItgem will be a button.
   * @param {string} props.tag tag with which ListItem will be rendered.
   * @param {string} props.href src to which the ListItem will be directed.
   * @param {boolean} props.action ListItem if generated with action state if true and tag is button.
@@ -25,16 +25,16 @@ import { ListItem } from 'material-ui/List';
 
   export interface IBSProps {
     className?: string,
-    color?: 'primary' | 'secondary' | 'warning' | 'info' | 'danger' | 'success' | 'light' | 'dark' | 'link',
-    tag?: string,
+    button?: boolean,
+    component?: string,
     href?: string,
-    action?: boolean,
-    disabled?: boolean,
+    onClick?: ()=> void,
     }
 
 const BlueRainListItem = (props: IListItem & IBSProps) => {
     return (
         <ListItem
+            button={props.active}
             {...props}
         >
         {props.children}

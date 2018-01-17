@@ -16,13 +16,14 @@ import { ListItemText } from 'material-ui/List';
  export interface IMUIProps {
      primary?: any,
      secondary?: any,
+     inset?: boolean,
  }
 
 const BlueRainListItemText = (props: IListItemText & IMUIProps) => {
     return (
         <ListItemText
-            {...props}
             primary={props.children}
+            {...props}
         />
     );
 
