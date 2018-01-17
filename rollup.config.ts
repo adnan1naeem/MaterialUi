@@ -17,7 +17,8 @@ export default {
   sourcemap: true,
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
   external: Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {}))
-    .concat(['material-ui/Chip', 'material-ui/Badge', 'material-ui/Card', 'material-ui']),
+    .concat(['material-ui/Chip', 'material-ui/Badge', 'material-ui/Card', 'material-ui/Menu','material-ui/Button',
+      'material-ui/Avatar','material-ui/Select','material-ui/Input','material-ui/Paper','material-ui/Typography','material-ui/IconButton','material-ui/TextField']),
   watch: {
     include: 'compiled/**',
   },

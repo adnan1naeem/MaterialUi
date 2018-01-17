@@ -5,6 +5,8 @@ import TextInput from './components/textInput';
 import Chip from './components/chip';
 import GMap from './components/map';
 import Badge from './components/badge';
+import {DropDown,DropdownItem} from './components/DropDown/DropDown';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from './components/button';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -51,6 +53,8 @@ class MaterialUiPlugin extends Plugin {
         ctx.Components.register('CardFooter', CardFooter);
         ctx.Components.register('CardBody', CardBody);
         ctx.Components.register('CardMedia', CardMedia);
+        ctx.Components.register('DropDown', DropDown);
+        ctx.Components.register('DropdownItem', DropdownItem);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
@@ -63,7 +67,6 @@ class MaterialUiPlugin extends Plugin {
 // 	if (ctx.Plugins.get('intl')) {
 // 		return ctx.Plugins.get('intl').withIntl(result);
 // 	}
-//
 // 	return result;
 // }
 //         );
