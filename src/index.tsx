@@ -9,6 +9,7 @@ import Button from './components/button';
 import Dropdown from './components/DropDown';
 import Avatar from './components/avatar';
 import Card, {CardBody, CardFooter, CardHeader, CardMedia} from './components/Card';
+import List, {ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText} from './components/List';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
 
@@ -55,6 +56,14 @@ class MaterialUiPlugin extends Plugin {
         BR.Components.register('CardBody', CardBody);
         BR.Components.register('CardMedia', CardMedia);
         BR.Components.register('CardFooter', CardFooter);
+		BR.Components.register('Avatar', Avatar);
+        BR.Components.register('List', List);
+        BR.Components.register('ListItem', ListItem);
+        BR.Components.register('ListHeader', ListHeader);
+        BR.Components.register('ListItemAvatar', ListItemAvatar);
+        BR.Components.register('ListItemIcon', ListItemIcon);
+        BR.Components.register('ListItemText', ListItemText);
+        BR.Components.register('ListItemRightButton', ListItemRightButton);
 
         // Add Material UI Provider
         // 	ctx.Filters.add(
