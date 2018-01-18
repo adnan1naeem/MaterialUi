@@ -16,7 +16,7 @@ import  {IPicker} from 'bluerain-ui-interfaces/Components/Picker';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-interface IMaterialuiDropDown {
+export interface IMaterialuiDropDown {
     autoWidth?:boolean,
     classes?:object,
     displayEmpty?:boolean,
@@ -26,14 +26,20 @@ interface IMaterialuiDropDown {
     renderValue?:any,
     value?:any,
     onChange?:any,
-    disabled?:boolean
 }
- const DropDown =(props:IPicker & IMaterialuiDropDown) =>(
+
+export interface IMaterialuiDropDownItem {
+    disabled?:boolean,
+    value?:any
+}
+const DropDown =(props:IPicker & IMaterialuiDropDown) =>(
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}
                 {...props}
             />
 );
-const DropdownItem = (props:IPicker  & IMaterialuiDropDown) => (<MenuItem {...props} />);
+
+const DropdownItem = (props:IMaterialuiDropDownItem) => (<MenuItem {...props} />);
+
 export { DropdownItem, DropDown };
