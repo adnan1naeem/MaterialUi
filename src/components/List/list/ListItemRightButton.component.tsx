@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { IListItemRightButton } from 'bluerain-ui-interfaces/Components/List';
-import { ListItemSecondaryAction } from 'material-ui/List';
+import { ListItemSecondaryAction } from 'material-ui';
 /**
  * The props of ListItemRightButton Component
  * @param {Object} props.style style object for ListItemRightButton's style.

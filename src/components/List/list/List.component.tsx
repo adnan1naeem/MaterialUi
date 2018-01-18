@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import IList from 'bluerain-ui-interfaces/Components/List';
-import List from 'material-ui/List';
+import { List } from 'material-ui';
 
 /**
  * The props of List Component

@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { IListItemIcon } from 'bluerain-ui-interfaces/Components/List';
-import { ListItemIcon } from 'material-ui/List';
+import { ListItemIcon } from 'material-ui';
 
 
 /**

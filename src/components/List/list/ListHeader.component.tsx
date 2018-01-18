@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { IListHeader } from 'bluerain-ui-interfaces/Components/List';
-import ListSubheader from 'material-ui/List/ListSubheader';
+import { ListSubheader } from 'material-ui';
 
 /**
  * The props of ListHeader Component
