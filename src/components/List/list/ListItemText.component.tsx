@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { IListItemText } from 'bluerain-ui-interfaces/Components/List';
-import { ListItemText } from 'material-ui/List';
+import { ListItemText } from 'material-ui';
 
 /**
  * The props of ListItemText Component
