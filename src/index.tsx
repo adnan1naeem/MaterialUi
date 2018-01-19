@@ -3,7 +3,6 @@ import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
 import TextInput from './components/textInput';
 import Chip from './components/chip';
-import GMap from './components/map';
 import Badge from './components/badge';
 import {DropDown,DropdownItem} from './components/DropDown/DropDown';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -46,7 +45,6 @@ class MaterialUiPlugin extends Plugin {
         ctx.Components.register('TextInput', TextInput);
         ctx.Components.register('Chip', Chip);
         ctx.Components.register('Badge', Badge);
-        ctx.Components.register('GMap', GMap);
         ctx.Components.register('Button', Button);
         ctx.Components.register('Card', Card);
         ctx.Components.register('CardHeader', CardHeader);
