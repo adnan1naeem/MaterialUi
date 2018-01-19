@@ -15,6 +15,7 @@
 |:-----|:-----|:--------|:------------|
 | checked | string or bool |  | Keeps the value unchanged. |
 | classes | object | | classes prop to override styling. |
+
 ## How to use
 
 ```JavaScript
