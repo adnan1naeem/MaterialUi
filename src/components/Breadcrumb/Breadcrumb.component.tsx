@@ -1,6 +1,7 @@
 import React from 'react';
 import { withBlueRain, BlueRainType } from '@blueeast/bluerain-os';
 import { Link, MemoryRouter } from 'react-router-dom';
+import IBreadcrumb from 'bluerain-ui-interfaces/Components/Breadcrumb';
 
 /**
  * The props of Breadcrumb Component
@@ -10,14 +11,9 @@ import { Link, MemoryRouter } from 'react-router-dom';
  * @param {string} props.colorPrev The color of the previous page(s)'s label(s)
  */
 
-type Props = {
-	label: string,
-    data: Array<{title:string,path:string}>,
-    colorActive: string,
-    colorPrev: string,
-	bluerain: BlueRainType,
-};
-
+export interface IMUIProps {
+	bluerain?: BlueRainType,
+}
 
 const styles = {
 
@@ -40,22 +36,21 @@ const styles = {
 	},
 };
 
-const Breadcrumb = ({ label, data, colorActive, colorPrev, bluerain }: Props) => {
+const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
 
-	const View = bluerain.Components.get('View');
-	const Text = bluerain.Components.get('Text');
+	const View = props.bluerain.Components.get('View');
+	const Text = props.bluerain.Components.get('Text');
+	const label = props.label ? props.label : 'Home';
 
-	if (data) {
-		const listItems = data.map(item =>
-  <MemoryRouter key={item.title}><View style={styles.root}> <Link style={colorPrev ? { color: colorPrev, textDecoration: 'none' } : styles.colorPrev} to={item.path}>{item.title}</Link><Text style={styles.black}> / </Text></View></MemoryRouter>
+	if (props.data) {
+		const listItems = props.data.map(item =>
+  <MemoryRouter key={item.title}><View style={styles.root}> <Link style={props.colorPrev ? { color: props.colorPrev, textDecoration: 'none' } : styles.colorPrev} to={item.path}>{item.title}</Link><Text style={styles.black}> / </Text></View></MemoryRouter>
 				);
 		return (
-  <View style={styles.root} >{listItems}<Text style={colorPrev ? { color: colorActive } : styles.colorActive}>{label}</Text></View>);
+  <View style={styles.root} >{listItems}<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text></View>);
 	}
-	return (<Text style={colorPrev ? { color: colorActive } : styles.colorActive}>{label}</Text>);
+	return (<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text>);
 
 };
-
-
 
 export default withBlueRain(Breadcrumb);

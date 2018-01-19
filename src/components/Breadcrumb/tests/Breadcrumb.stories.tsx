@@ -45,11 +45,11 @@ stories.add('Breadcrumb with multiple breadcrumb entries', () => (
 </Paper>));
 
 
-stories.add('Breadcrumb Bad data', () => (
-  <Breadcrumb
-    data={'{ title:\'CardView1\', path: \'www.facebook.com\' }, { title:\'CardView2\', path: \'www.linkedin.com\' }, { title:\'CardView3\', path: \'www.instagram.com\' }'}
-    colorActive={'8'}
-    colorPrev={'123'}
-    label={'12'}
-  />
-));
+// stories.add('Breadcrumb Bad data', () => (
+//   <Breadcrumb
+//     data={'{ title:\'CardView1\', path: \'www.facebook.com\' }, { title:\'CardView2\', path: \'www.linkedin.com\' }, { title:\'CardView3\', path: \'www.instagram.com\' }'}
+//     colorActive={'8'}
+//     colorPrev={'123'}
+//     label={'12'}
+//   />
+// ));
