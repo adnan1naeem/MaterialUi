@@ -36,6 +36,9 @@ const IconComponent = (props: IconProps) => {
     case 'settings':
       iconName = 'gear';
       break;
+    case 'bulb':
+      iconName = 'lightbulb-o';
+      break;
     case 'heart':
       if (borderColor){
         iconName='heart-o';
