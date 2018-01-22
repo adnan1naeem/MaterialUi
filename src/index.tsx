@@ -1,10 +1,11 @@
 import React from 'react';
-import { Plugin, bluerainType } from '@blueeast/bluerain-os';
+import { Plugin } from '@blueeast/bluerain-os';
 
 import TextInput from './components/textInput';
 import Chip from './components/chip';
 import GMap from './components/map';
 import Badge from './components/badge';
+import CarouselComponent from './components/carousel';
 import {DropDown,DropdownItem} from './components/DropDown/DropDown';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from './components/button';
@@ -36,7 +37,7 @@ class MaterialUiPlugin extends Plugin {
     static pluginName = 'MaterialUiPlugin';
     static slug = 'material-ui';
 
-    static initialize(config:any = {}, ctx:bluerainType) {
+    static initialize(config:any = {}, ctx:any) {
 
         let theme = ctx.Configs.get('theme');
         if (!theme) {
@@ -55,6 +56,7 @@ class MaterialUiPlugin extends Plugin {
         ctx.Components.register('CardMedia', CardMedia);
         ctx.Components.register('DropDown', DropDown);
         ctx.Components.register('DropdownItem', DropdownItem);
+        ctx.Components.register('CarouselComponent', CarouselComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(

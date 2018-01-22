@@ -79,6 +79,7 @@
   },
   "devDependencies": {
     "@blueeast/tslint-config-blueeast": "^0.5.1",
+    "@blueeast/bluerain-platform-react-native-web": "^1.0.9",
     "@storybook/addons": "^3.2.13",
     "@types/jest": "^22.0.0",
     "@types/node": "^8.0.0",

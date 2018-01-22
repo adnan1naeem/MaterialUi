@@ -2,8 +2,9 @@ import React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import { IntlProvider } from 'react-intl';
 import { initializeRTL } from 'storybook-addon-rtl';
-import { BlueRainProvider } from '@blueeast/bluerain-os';
+import BR,{ BlueRainProvider } from '@blueeast/bluerain-os';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import ReactNativeWebPlatform from '@blueeast/bluerain-platform-react-native-web';
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -14,6 +15,12 @@ import urLocaleData from 'react-intl/locale-data/ur';
 import zhLocaleData from 'react-intl/locale-data/zh';
 import arLocaleData from 'react-intl/locale-data/ar';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+
+// Add BlueRain
+const BluerainApp = BR.boot({
+  renderApp: false,
+  platform: [ReactNativeWebPlatform]
+});
 
 initializeRTL();
 setAddon();
