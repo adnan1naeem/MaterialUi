@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { CardMedia } from '../../Card';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
+import React from 'react';
 
-BR.boot({renderApp:false});
+BR.boot({ renderApp:false });
 
 
 storiesOf('CardMedia', module).add('CardMedia with src and height:400 prop', () =>

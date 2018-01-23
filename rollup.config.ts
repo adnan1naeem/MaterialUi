@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import sizes from 'rollup-plugin-sizes';
 import camelCase from 'lodash.camelcase';
+import postcss from 'rollup-plugin-postcss'
 
 const pkg = require('./package.json');
 
@@ -26,6 +27,9 @@ export default {
     // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
     commonjs(),
     sizes(),
+    postcss({
+      plugins: []
+    }),
     // Allow node_modules resolution, so you can use 'external' to control
     // which external modules to include in the bundle
     // https://github.com/rollup/rollup-plugin-node-resolve#usage

@@ -1,36 +1,36 @@
-import * as React from 'react';
-import CarouselComponent from './carousel';
-import { storiesOf } from '@storybook/react';
+import Card, { CardBody, CardFooter, CardHeader, CardMedia } from '../Card';
+import { array, boolean, number, object, text, withKnobs } from '@storybook/addon-knobs';
+
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, number, object, array } from '@storybook/addon-knobs';
-import BR from '@blueeast/bluerain-os';
-// import { Card, CardImg, CardText, CardBody,
-//   CardTitle, CardSubtitle, Button } from 'reactstrap';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
+import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
+import BR from '@blueeast/bluerain-os';
+import Button from 'material-ui/Button';
+import CarouselComponent from './carousel';
 import IconButton from 'material-ui/IconButton';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
-import Card, { CardMedia, CardBody, CardFooter, CardHeader } from '../Card';
+import React from 'react';
+import Typography from 'material-ui/Typography';
+
 
 const stories = storiesOf('Carousel', module);
 stories.addDecorator(withKnobs);
 
 
-BR.boot({renderApp:false});
+BR.boot({ renderApp:false});
 stories.add('Carousel of Images', () => {
-  const Image = BR.Components.get('Image');
-  const View = BR.Components.get('View');
-  const dots = boolean('Show Dots', true);
-  const infinite = boolean('Infinite Scroll', true);
-  const speed = number('Scroll Speed', 500);
-  const slidesToShow = number('Slides Shown', 1);
-  const slidesToScroll = number('Slides Scrolled', 1);
-  const imgStyle = {
-    width: '100%',
-    height: 500
-  };
-  const data = (
+	const Image = BR.Components.get('Image');
+	const View = BR.Components.get('View');
+	const dots = boolean('Show Dots', true);
+	const infinite = boolean('Infinite Scroll', true);
+	const speed = number('Scroll Speed', 500);
+	const slidesToShow = number('Slides Shown', 1);
+	const slidesToScroll = number('Slides Scrolled', 1);
+	const imgStyle = {
+		width: '100%',
+		height: 500
+	};
+	const data = (
     <View>
       <Image
         source={'https://s3.amazonaws.com/dukaan-ui/banner-01.png'}
@@ -52,7 +52,7 @@ stories.add('Carousel of Images', () => {
       />
     </View>
   );
-  return (
+	return (
     <CarouselComponent
       banners={data}
       dots={dots}
@@ -61,19 +61,19 @@ stories.add('Carousel of Images', () => {
       slidesToShow={slidesToShow}
       slidesToScroll={slidesToScroll}
     />
-  );
+	);
 });
 
 stories.add('Carousel of Cards', () => {
-  const View = BR.Components.get('View');
-  const dots = boolean('Show Dots', true);
-  const infinite = boolean('Infinite Scroll', true);
-  const speed = number('Scroll Speed', 500);
-  const slidesToShow = number('Slides Shown', 1);
-  const slidesToScroll = number('Slides Scrolled', 1);
-  const data = (
+	const View = BR.Components.get('View');
+	const dots = boolean('Show Dots', true);
+	const infinite = boolean('Infinite Scroll', true);
+	const speed = number('Scroll Speed', 500);
+	const slidesToShow = number('Slides Shown', 1);
+	const slidesToScroll = number('Slides Scrolled', 1);
+	const data = (
     <View>
-      <Card style={{width:1000, height:500}}>
+      <Card style={{ width:1000, height:500 }}>
         <CardHeader
           avatar={<Avatar aria-label="Recipe">R</Avatar>}
           action={<IconButton><PlayArrowIcon /></IconButton>}
@@ -102,7 +102,7 @@ stories.add('Carousel of Cards', () => {
           </Button>
         </CardFooter>
       </Card>
-      <Card style={{width:1000, height:500}}>
+      <Card style={{ width:1000, height:500 }}>
         <CardHeader
           avatar={<Avatar aria-label="Recipe">R</Avatar>}
           action={<IconButton><PlayArrowIcon /></IconButton>}
@@ -133,7 +133,7 @@ stories.add('Carousel of Cards', () => {
       </Card>
     </View>
   );
-  return (
+	return (
     <CarouselComponent
       banners={data}
       dots={dots}
@@ -142,7 +142,7 @@ stories.add('Carousel of Cards', () => {
       slidesToShow={slidesToShow}
       slidesToScroll={slidesToScroll}
     />
-  );
+	);
 });
 
 

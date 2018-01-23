@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
-import * as React from 'react';
-import { ICardBody } from 'bluerain-ui-interfaces/Components/Card';
 import  { CardContent } from 'material-ui/Card';
+import { ICardBody } from 'bluerain-ui-interfaces/Components/Card';
+import React from 'react';
 
 /**
  * The props of CardBody Component
@@ -18,18 +14,18 @@ import  { CardContent } from 'material-ui/Card';
   * @param {Object} props.classes Usefull to extend the style for CardBody component.
   */
 
-  export interface IMUIProps {
-    classes?: {},
-    }
+export interface IMUIProps {
+	classes?: {},
+}
 
 const BlueRainCardBody = (props: ICardBody & IMUIProps) => {
-    return (
+	return (
         <CardContent
             {...props}
         >
         {props.children}
         </CardContent>
-    );
+	);
 
 };
 

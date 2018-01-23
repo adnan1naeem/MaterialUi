@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
-import * as React from 'react';
-import ICard from 'bluerain-ui-interfaces/Components/Card';
 import Card from 'material-ui/Card';
+import ICard from 'bluerain-ui-interfaces/Components/Card';
+import React from 'react';
 
 /**
  * The props of Card Component
@@ -21,13 +17,13 @@ import Card from 'material-ui/Card';
   * @param {boolean} props.square If true, rounded corners are degenerated.
   */
 
- export interface IMUIProps {
- elevation?: number,
- square?: boolean,
- }
+export interface IMUIProps {
+	elevation?: number,
+	square?: boolean,
+}
 
 const BlueRainCard = (props: ICard & IMUIProps) => {
-    return (
+	return (
         <Card
             {...props}
             raised={props.raised}
@@ -37,7 +33,7 @@ const BlueRainCard = (props: ICard & IMUIProps) => {
         >
         {props.children}
         </Card>
-    );
+	);
 
 };
 

@@ -1,13 +1,13 @@
-import * as React from 'react';
-import Button from '../';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
+import Button from '../';
+import React from 'react';
 
 const background = '.background {background-color: red;}';
 
-BR.boot({renderApp:false});
+BR.boot({ renderApp:false });
 
 const Text = BR.Components.get('Text');
 
@@ -22,7 +22,7 @@ storiesOf('Button', module).add('Primary Button with knobs', () =>
 <Button color={'primary'} onClick={action('I was clicked with knobs')} disabled={disabled} fullWidth={fullWidth} fab={fab} small={small}>{label}</Button>);
 storiesOf('Button', module).add('Default Button without Text tag in Child', () => <Button color={'default'}>Default</Button>);
 
-storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{backgroundColor:'purple', borderColor:'purple'}} >Custom Purple</Button>);
+storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{ backgroundColor:'purple', borderColor:'purple' }} >Custom Purple</Button>);
 
 storiesOf('Button', module).add('Inherit button with onClick prop', () => <Button color="inherit" onClick={()=>{console.log('I was clicked');}} >onClick</Button>);
 

@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
-import * as React from 'react';
-import { ICardHeader } from 'bluerain-ui-interfaces/Components/Card';
 import { CardHeader } from 'material-ui/Card';
+import { ICardHeader } from 'bluerain-ui-interfaces/Components/Card';
+import React from 'react';
 
 /**
  * The props of CardHeader Component
@@ -23,22 +19,22 @@ import { CardHeader } from 'material-ui/Card';
   * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
-  export interface IMUIProps {
-    action?: React.ReactNode,
-    avatar?: React.ReactNode,
-    classes?: {},
-    subheader?: React.ReactNode,
-    }
+export interface IMUIProps {
+	action?: React.ReactNode,
+	avatar?: React.ReactNode,
+	classes?: {},
+	subheader?: React.ReactNode,
+}
 
 const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
-    return (
+	return (
         <CardHeader
             style={props.style}
             title={props.title}
             subheader={props.subheader? props.subheader : props.children}
             {...props}
         />
-    );
+	);
 
 };
 

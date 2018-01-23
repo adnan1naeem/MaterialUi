@@ -1,14 +1,15 @@
-import * as React from 'react';
-import TextInput from '../';
 import { storiesOf } from '@storybook/react';
+import React from 'react';
+import TextInput from '../';
+
 
 function handleTextInputChange (value: any) {
-   console.log('text input value', value.target.value);
+	console.log('text input value', value.target.value);
 }
 
 const labelProps = {
-    shrink: true,
-    background: 'red'
+	shrink: true,
+	background: 'red'
 };
 const textFieldClasses = 'margin-left: 100px; margin-right: 100px; width: 50px; background-color: red; padding:100px;';
 
@@ -37,7 +38,7 @@ storiesOf('TextInput', module).add('with multiline static',
 storiesOf('TextInput', module).add('with HelperText',
     () =>  <TextInput id="multiline-flexible" label="Helper Text" helperText="Some important text" onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
-    storiesOf('TextInput', module).add('with HelperText with node',
+storiesOf('TextInput', module).add('with HelperText with node',
     () =>  <TextInput id="multiline-flexible" label="Helper Text" helperText={<h1>Node Text</h1>} onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
 storiesOf('TextInput', module).add('with placeholder multiline',
