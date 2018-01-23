@@ -1,12 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import IconComponent from './Icon';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
 
-const stories = storiesOf('Footer Bar', module);
+const stories = storiesOf('Icons', module);
 
-stories.add('Footer Icons', () => {
+stories.add('Icon Component', () => {
     const name = text('Icon Name', 'heart');
     const color = text('Icon Color', 'black');
     const size = text('Icon Size', 200);

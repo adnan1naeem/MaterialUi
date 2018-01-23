@@ -8,6 +8,7 @@ import Badge from './components/badge';
 import {DropDown,DropdownItem} from './components/DropDown/DropDown';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from './components/button';
+import IconComponent from './components/Icon';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
@@ -55,6 +56,7 @@ class MaterialUiPlugin extends Plugin {
         ctx.Components.register('CardMedia', CardMedia);
         ctx.Components.register('DropDown', DropDown);
         ctx.Components.register('DropdownItem', DropdownItem);
+        ctx.Components.register('Icon', IconComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
