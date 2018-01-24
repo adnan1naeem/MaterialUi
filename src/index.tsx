@@ -3,12 +3,11 @@ import { Plugin, bluerainType } from '@blueeast/bluerain-os';
 
 import TextInput from './components/textInput';
 import Chip from './components/chip';
-import GMap from './components/map';
 import Badge from './components/badge';
 import Avatar from './components/avatar';
 import Switch from './components/switch';
 import { DropDown, DropdownItem } from './components/DropDown/DropDown';
-import List, {ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText} from './components/List';
+import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from './components/button';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
@@ -37,19 +36,19 @@ import Breadcrumb from './components/Breadcrumb';
  */
 class MaterialUiPlugin extends Plugin {
 
-    static pluginName = 'MaterialUiPlugin';
-    static slug = 'material-ui';
+	static pluginName = 'MaterialUiPlugin';
+	static slug = 'material-ui';
 
-    static initialize(config:any = {}, ctx:bluerainType) {
+	static initialize(config:any = {}, ctx:bluerainType) {
 
-        let theme = ctx.Configs.get('theme');
-        if (!theme) {
+	let theme = ctx.Configs.get('theme');
+	if (!theme) {
             theme = {};
         }
 
-        ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
+	ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
+
 	ctx.Components.set('Chip', Chip);
-	ctx.Components.set('GMap', GMap);
 	ctx.Components.set('Badge', Badge);
 	ctx.Components.set('Dropdown', DropDown);
 	ctx.Components.set('DropdownItem', DropdownItem);
