@@ -48,6 +48,7 @@ class MaterialUiPlugin extends Plugin {
 		}
 
 		ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
+
 		ctx.Components.set('Chip', Chip);
 		ctx.Components.set('Badge', Badge);
 		ctx.Components.set('Dropdown', DropDown);
@@ -68,7 +69,6 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.set('CardFooter', CardFooter);
 		ctx.Components.set('Breadcrumb', Breadcrumb);
 		ctx.Components.set('SwitchToggle', Switch);
-		ctx.Components.set('Icon', IconComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(

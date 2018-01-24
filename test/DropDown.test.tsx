@@ -14,7 +14,6 @@ test('with color prop', () => {
     const Dropdown = create(
         <DropDown  value={'jsbha'}  />
     ).toJSON();
-    console.log('props',Dropdown.props)
     expect(Dropdown.props.style).toEqual(undefined);
     expect(Dropdown).toMatchSnapshot();
 });
