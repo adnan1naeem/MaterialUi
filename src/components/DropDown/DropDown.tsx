@@ -20,25 +20,27 @@ export interface IMaterialuiDropDown {
     autoWidth?:boolean,
     classes?:object,
     displayEmpty?:boolean,
-    input?:ReactNode,
-    MenuProps?:object,
-    native?:boolean,
-    renderValue?:any,
-    value?:any,
-    onChange?:any,
-    disabled?:boolean,
+	input?:ReactNode,
+	MenuProps?:object,
+	native?:boolean,
+	renderValue?:any,
+	value?:any,
+	onChange?:any,
+	disabled?:boolean
 }
-export interface IMaterialuiDropDownItem {
-    disabled?:boolean,
-    value?:any
 
+export interface IMaterialuiDropDownItem {
+	disabled?:boolean,
+	value?:any
 }
-const DropDown =(props:IPicker & IMaterialuiDropDown) =>(
+const DropDown =(props:IPicker & IMaterialuiDropDown) => (
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}
                 {...props}
             />
 );
+
 const DropdownItem = (props:IMaterialuiDropDownItem) => (<MenuItem {...props} />);
+
 export { DropdownItem, DropDown };
