@@ -1,28 +1,39 @@
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
-import BR from '@blueeast/bluerain-os';
+import * as React from 'react';
 import Button from '../';
-import React from 'react';
+import BR from '@blueeast/bluerain-os';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { text, number, boolean } from '@storybook/addon-knobs';
 
 const background = '.background {background-color: red;}';
 
-BR.boot({ renderApp:false });
+BR.boot({renderApp:false});
 
 const Text = BR.Components.get('Text');
 
-const Image = BR.Components.get('Image');
-const label = text('label as child', 'with knobs');
-const disabled = boolean('disabled', false);
-const fullWidth = boolean('fullWidth', false);
-const fab = boolean('fab', false);
-const small = boolean('small', false);
-storiesOf('Button', module).add('Primary Button with knobs', () =>
+// storiesOf('Button', module).add('Primary Button with knobs', () =>{
 
-<Button color={'primary'} onClick={action('I was clicked with knobs')} disabled={disabled} fullWidth={fullWidth} fab={fab} small={small}>{label}</Button>);
+//     const Image = BR.Components.get('Image');
+//     const label = text('label as child', 'withknobs');
+//     const color = text('color', 'primary');
+//     const disabled = boolean('disabled', false);
+//     const fullWidth = boolean('fullWidth', false);
+//     const fab = boolean('fab', false);
+//     const small = boolean('small', false);
+// (
+// <Button
+//     color={color}
+//     onClick={action('I was clicked with knobs')}
+//     disabled={disabled}
+//     fullWidth={fullWidth}
+//     fab={fab}
+//     small={small}
+// >
+// </Button>);
+// });
 storiesOf('Button', module).add('Default Button without Text tag in Child', () => <Button color={'default'}>Default</Button>);
 
-storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{ backgroundColor:'purple', borderColor:'purple' }} >Custom Purple</Button>);
+storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{backgroundColor:'purple', borderColor:'purple'}} >Custom Purple</Button>);
 
 storiesOf('Button', module).add('Inherit button with onClick prop', () => <Button color="inherit" onClick={()=>{console.log('I was clicked');}} >onClick</Button>);
 
@@ -39,6 +50,8 @@ storiesOf('Button', module).add('Accent button with bordered prop true', () => <
 storiesOf('Button', module).add('Accent Rounded Button ', () => <Button color="accent">Rounded</Button>);
 
 storiesOf('Button', module).add('Primary button with iconLeft prop', () => <Button color="primary" iconLeft={<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="15" height="15"/>} >Icon Left</Button>);
+
+storiesOf('Button', module).add('Transparent Button with icon as child', () => <Button style={{backgroundColor:'transparent', boxShadow:'none', border:0}} ><img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="35" height="35"/></Button>);
 
 storiesOf('Button', module).add('Contrast button with iconRight prop', () => <Button color="contrast" iconRight={<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="15" height="15"/>} >Icon Right</Button>);
 

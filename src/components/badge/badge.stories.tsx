@@ -1,8 +1,8 @@
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
+import * as React from 'react';
 import Badge from './badge';
-import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 const stories = storiesOf('Badge', module);
 stories.add('Badge (with knobs)', () => {
 	const content = text('content', 'abc');
