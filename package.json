@@ -150,8 +150,8 @@
     "@storybook/react": "^3.2.8",
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
+    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/Breadcrumb",
     "enzyme": "^3.1.1",
-    "react-gmaps": "^1.5.0",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
     "lodash.pickby": "^4.6.0",
@@ -174,7 +174,6 @@
     "subscriptions-transport-ws": "^0.9.4",
     "victory": "^0.24.3",
     "warning": "^3.0.0",
-    "ws": "3.3.3",
-    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master"
+    "ws": "3.3.3"
   }
 }
