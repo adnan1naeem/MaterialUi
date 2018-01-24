@@ -1,7 +1,7 @@
 import * as React from 'react';
+import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
 import BR from '@blueeast/bluerain-os';
 import Switch from 'material-ui/Switch';
-import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
 
 /**
  * The universal props of Avatar Component
@@ -16,14 +16,14 @@ import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
  */
 
 export interface ISwitchProps {
-    checked?: string | undefined | boolean,
-    value?: string,
-    classes?: {},
-    onChange?: () => void,
+	checked?: string | undefined | boolean,
+	value?: string,
+	classes?: {},
+	onChange?: () => void,
 }
 
 const BlueRainSwitch = (props: ISwitchProps & ISwitch) => {
-   return (
+	return (
         <Switch
             onChange={props.onValueChange}
             {...props}
