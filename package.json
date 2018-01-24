@@ -150,7 +150,7 @@
     "@storybook/react": "^3.2.8",
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
-    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#feature/Breadcrumb",
+    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master",
     "enzyme": "^3.1.1",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
