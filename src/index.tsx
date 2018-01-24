@@ -46,43 +46,29 @@ class MaterialUiPlugin extends Plugin {
         if (!theme) {
             theme = {};
         }
-<<<<<<< HEAD
 
-        ctx.Components.register('TextInput', TextInput);
-        ctx.Components.register('Chip', Chip);
-        ctx.Components.register('Badge', Badge);
-        ctx.Components.register('GMap', GMap);
-	ctx.Components.register('Button', Button);
-	ctx.Components.register('Card', Card);
-	ctx.Components.register('CardHeader', CardHeader);
-	ctx.Components.register('CardFooter', CardFooter);
-	ctx.Components.register('CardBody', CardBody);
-	ctx.Components.register('CardMedia', CardMedia);
-	ctx.Components.register('DropDown', DropDown);
-	ctx.Components.register('DropdownItem', DropdownItem);
-=======
         ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
-        ctx.Components.set('Chip', Chip);
-        ctx.Components.set('GMap', GMap);
-        ctx.Components.set('Badge', Badge);
-        ctx.Components.set('Dropdown', DropDown);
-        ctx.Components.set('DropdownItem', DropdownItem);
-        ctx.Components.set('Avatar', Avatar);
-        ctx.Components.set('List', List);
-        ctx.Components.set('ListItem', ListItem);
-        ctx.Components.set('ListHeader', ListHeader);
-        ctx.Components.set('ListItemAvatar', ListItemAvatar);
-        ctx.Components.set('ListItemIcon', ListItemIcon);
-        ctx.Components.set('ListItemText', ListItemText);
-        ctx.Components.set('ListItemRightButton', ListItemRightButton);
-        ctx.Components.has('Button') ? ctx.Components.replace('Button', Button) : ctx.Components.set('Button', Button);
-        ctx.Components.set('Card', Card);
-        ctx.Components.set('CardHeader', CardHeader);
-        ctx.Components.set('CardBody', CardBody);
-        ctx.Components.set('CardMedia', CardMedia);
-        ctx.Components.set('CardFooter', CardFooter);
-        ctx.Components.set('Breadcrumb', Breadcrumb);
->>>>>>> 9a90f05a2f4f2f06ad4813996f380892a2801832
+	ctx.Components.set('Chip', Chip);
+	ctx.Components.set('GMap', GMap);
+	ctx.Components.set('Badge', Badge);
+	ctx.Components.set('Dropdown', DropDown);
+	ctx.Components.set('DropdownItem', DropdownItem);
+	ctx.Components.set('Avatar', Avatar);
+	ctx.Components.set('List', List);
+	ctx.Components.set('ListItem', ListItem);
+	ctx.Components.set('ListHeader', ListHeader);
+	ctx.Components.set('ListItemAvatar', ListItemAvatar);
+	ctx.Components.set('ListItemIcon', ListItemIcon);
+	ctx.Components.set('ListItemText', ListItemText);
+	ctx.Components.set('ListItemRightButton', ListItemRightButton);
+	ctx.Components.has('Button') ? ctx.Components.replace('Button', Button) : ctx.Components.set('Button', Button);
+	ctx.Components.set('Card', Card);
+	ctx.Components.set('CardHeader', CardHeader);
+	ctx.Components.set('CardBody', CardBody);
+	ctx.Components.set('CardMedia', CardMedia);
+	ctx.Components.set('CardFooter', CardFooter);
+	ctx.Components.set('Breadcrumb', Breadcrumb);
+	ctx.Components.set('SwitchToggle', Switch);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
