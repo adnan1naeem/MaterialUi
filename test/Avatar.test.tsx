@@ -44,7 +44,6 @@ test('Avatar component with children props', () => {
 	const avatar = create(
       <Avatar size={200}>hello</Avatar>
 	).toJSON();
-	console.log('chidlren:',avatar);
 	expect(avatar.props.children).toEqual(undefined);
 	expect(avatar).toMatchSnapshot();
 });

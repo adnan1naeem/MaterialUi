@@ -8,9 +8,9 @@ import Button from 'material-ui/Button';
 
 
 const BlueRainButton = (props: IButton) => {
-    const widthFull = {...props.style, width:'100%'};
-    if(props.iconLeft){
-    return (
+	const widthFull = { ...props.style, width:'100%' };
+	if(props.iconLeft){
+		return (
         <Button
             raised={props.color==='link' ? false: true}
             color={props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'}
@@ -24,10 +24,10 @@ const BlueRainButton = (props: IButton) => {
         >
         {props.iconLeft} {props.children}
         </Button>
-    );
-    }
-    else if(props.iconRight){
-        return (
+		);
+	}
+	else if(props.iconRight){
+		return (
             <Button
                 raised={props.color==='link' ? false: true}
                 color={props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'}
@@ -41,9 +41,9 @@ const BlueRainButton = (props: IButton) => {
             >
             {props.children} {props.iconRight}
             </Button>
-        );
-        }
-    return (
+		);
+	}
+	return (
         <Button
             raised={props.color==='link' ? false: true}
             color={props.color? (props.color==='default'|| props.color==='accent'|| props.color==='primary'|| props.color==='contrast'? props.color: 'default') : 'default'}
@@ -57,7 +57,7 @@ const BlueRainButton = (props: IButton) => {
         >
         {props.children}
         </Button>
-    );
+	);
 
 };
 
