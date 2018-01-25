@@ -1,7 +1,7 @@
 import * as React from 'react';
 import List, { ListItem, ListItemText, ListItemAvatar, ListItemIcon, ListItemRightButton, ListHeader } from '../../List';
-import Button from '../../button';
-import Avatar from '../../avatar';
+import Button from '../../Button';
+import Avatar from '../../Avatar';
 import BR from '@blueeast/bluerain-os';
 import Divider from 'material-ui/Divider';
 import IconButton from 'material-ui/IconButton';
@@ -18,7 +18,7 @@ const Image = BR.Components.get('Image');
 
 const View = BR.Components.get('View');
 
-storiesOf('List', module).add('List with style and raised props', () =>(
+storiesOf('List', module).add('List with style and raised props', () => (
 <List
     style={{ width:'100%', height:300 }}
     className="bg-main"

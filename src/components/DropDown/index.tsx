@@ -1,1 +1,2 @@
-export { default } from './DropDown.component';
+import { DropDown, DropdownItem } from './DropDown.component';
+export { DropDown, DropdownItem };
