@@ -9,7 +9,6 @@ test('Switch component with no props', () => {
 	const switchComponent = create(
 		<Switch />
 	).toJSON();
-	console.log('=========switch', switchComponent);
 	expect(switchComponent.props.style).toEqual(undefined);
 	expect(switchComponent).toMatchSnapshot();
 });
