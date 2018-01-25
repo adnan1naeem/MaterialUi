@@ -1,4 +1,4 @@
-# Switch
+# Slider
 
 ## Universal Props
 

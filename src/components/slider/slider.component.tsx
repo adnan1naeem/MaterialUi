@@ -25,7 +25,7 @@ const BlueRainSlider = (props: ISlider & ISliderProps) => {
 	const View = props.bluerain.Components.get('View');
 	return (
     <View>
-      <input type="range"/>
+      <input type="range" min={props.minimumValue} max={props.maximumValue} disabled={props.disabled} step={props.step}/>
     </View>
 	);
 };

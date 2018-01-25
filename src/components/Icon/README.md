@@ -6,7 +6,7 @@
 |:-----|:-----|:--------|:------------|
 | name | String |  | Name of the icon to be shown |
 | color | String | | Color of the icon |
-| size | String | | Size of the icon |
+| size | number | | Size of the icon |
 
 
 ## How to use
@@ -27,4 +27,3 @@ export default IconSample;
 ## Storybook
 
 - 1st story of the Icon component in Icon.stories.tsx file is written for Icon with knobs and props for icon name, color and size.
-

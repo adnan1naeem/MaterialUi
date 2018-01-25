@@ -52,7 +52,13 @@
       "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
     }
   },
+  "moduleNameMapper": {
+    "^@fooBar/(.*)": "<rootDir>/src/redux/"
+  },
   "jest": {
+    "moduleNameMapper": {
+      "^@fooBar/(.*)": "<rootDir>/src/redux/"
+    },
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
@@ -68,16 +74,17 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 90,
-        "functions": 75,
-        "lines": 95,
-        "statements": 75
+        "branches": 25,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
       }
     },
     "collectCoverage": true,
     "mapCoverage": true
   },
   "devDependencies": {
+    "@blueeast/bluerain-platform-reactxp": "1.1.2",
     "@blueeast/tslint-config-blueeast": "^0.5.1",
     "@storybook/addons": "^3.2.13",
     "@types/jest": "^22.0.0",
@@ -101,6 +108,7 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.9",
     "cz-conventional-changelog": "^2.0.0",
+    "enzyme": "^3.1.1",
     "documentation": "^5.2.1",
     "enzyme-adapter-react-16": "^1.0.4",
     "eslint": "^3.19.0",
@@ -120,6 +128,7 @@
     "lodash.camelcase": "^4.3.0",
     "prettier": "^1.4.4",
     "prompt": "^1.0.0",
+    "react-redux": "^5.0.6",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
     "rollup": "^0.53.2",
@@ -140,7 +149,8 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^0.4.8",
+    "@blueeast/bluerain-plugin-intl": "0.5.3",
+    "@blueeast/bluerain-os": "1.0.0-alpha-10",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
@@ -151,7 +161,6 @@
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
     "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master",
-    "enzyme": "^3.1.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "graphql-relay": "0.4.4",
