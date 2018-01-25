@@ -14,12 +14,12 @@ import { ListSubheader } from 'material-ui';
 
 
 const ListHeader = (props: IListHeader) => {
-    return (
+	return (
         <ListSubheader
             {...props}
         >{props.children}
         </ListSubheader>
-    );
+	);
 
 };
 

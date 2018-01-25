@@ -20,22 +20,22 @@ import { List } from 'material-ui';
   * @param {bool} props.dense if true, dense styling is used.
   */
 
- export interface IBSProps {
- className?: string,
- subheader?: any,
- disablePadding?:boolean,
- dense?:boolean,
- }
+export interface IBSProps {
+	className?: string,
+	subheader?: any,
+	disablePadding?:boolean,
+	dense?:boolean,
+}
 
 const BlueRainList = (props: IList & IBSProps) => {
-    return (
+	return (
         <List
             style={props.style}
             className={props.className}
         >
         {props.children}
         </List>
-    );
+	);
 
 };
 

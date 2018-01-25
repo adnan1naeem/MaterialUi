@@ -14,13 +14,13 @@ import { ListItemIcon } from 'material-ui';
  */
 
 const BlueRainListItemIcon = (props: IListItemIcon) => {
-    return (
+	return (
         <ListItemIcon
             {...props}
         >
         {props.children}
         </ListItemIcon>
-    );
+	);
 
 };
 
