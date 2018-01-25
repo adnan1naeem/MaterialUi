@@ -2,7 +2,7 @@
  * Created by Ghazal Taimur on 12/29/17.
  */
 import * as React from 'react';
-import Chip from './chip';
+import Chip from '../../Chip';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
@@ -18,16 +18,16 @@ stories.add('Chip with default value', () => {
 stories.add('Chip with style', () => {
    // const styleProps = {'background-color': backgroundColor};
     const style = object('Style of Chip',chipDefaultStyle);
-    const content = text('Text', '10 % off');
-    return <Chip style={style}>{content}</Chip>;
+	const content = text('Text', '10 % off');
+	return <Chip style={style}>{content}</Chip>;
 });
 
 stories.add('Chip Onclick', () => {
-    const style = object('Style of Chip', chipDefaultStyle);
-    const content = text('Text', '10 % off');
-    return <Chip style={style} onClick={action('Chip clicked')} >{content}</Chip>;
+	const style = object('Style of Chip', chipDefaultStyle);
+	const content = text('Text', '10 % off');
+	return <Chip style={style} onClick={action('Chip clicked')} >{content}</Chip>;
 });
 
 stories.add('Chip without knobs', () => {
-    return <Chip style={chipDefaultStyle}>10 % off</Chip>;
+	return <Chip style={chipDefaultStyle}>10 % off</Chip>;
 });

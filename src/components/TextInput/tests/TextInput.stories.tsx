@@ -1,14 +1,14 @@
 import * as React from 'react';
-import TextInput from '../index';
+import TextInput from '../../TextInput';
 import { storiesOf } from '@storybook/react';
 
 function handleTextInputChange (value: any) {
-   console.log('text input value', value.target.value);
+	console.log('text input value', value.target.value);
 }
 
 const labelProps = {
-    shrink: true,
-    background: 'red'
+	shrink: true,
+	background: 'red'
 };
 const textFieldClasses = 'margin-left: 100px; margin-right: 100px; width: 50px; background-color: red; padding:100px;';
 

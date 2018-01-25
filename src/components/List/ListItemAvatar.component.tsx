@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { IListItemAvatar } from 'bluerain-ui-interfaces/Components/List';
-import Avatar from '../../avatar';
+import Avatar from '../Avatar';
 
 /**
  * The props of ListItemAvatar Component
@@ -14,13 +14,13 @@ import Avatar from '../../avatar';
  * @param {string} props.src src of the image.
  */
 export interface IMUIProps {
-    children?: any,
+	children?: any,
 }
 
 const BlueRainListItemAvatar = (props: IListItemAvatar & IMUIProps) => {
-    return (
+	return (
         <Avatar {...props} size={props.size}>{props.children}</Avatar>
-    );
+	);
 
 };
 

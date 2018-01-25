@@ -3,7 +3,7 @@ import { number,  text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import AssignmentIcon from 'material-ui-icons/Assignment';
-import Avatar from '../../avatar';
+import Avatar from '../../Avatar';
 import FolderIcon from 'material-ui-icons/Folder';
 import PageviewIcon from 'material-ui-icons/Pageview';
 
