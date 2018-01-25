@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { BlueRainType, withBlueRain } from '@blueeast/bluerain-os';
 
-
 /**
  * The universal props of Avatar Component
  * @param {Object} props.style Get the style object.
