@@ -52,7 +52,7 @@ stories.add('DropDown with autoWidth', () => {
 );stories.add('DropDown with Override styles', () => {
     return(
         <Paper style={style.root}>
-            <DropDown onValueChange={onChange} value={'xyz'} style={{width:600, backgroundColor:'green'}} itemStyle={{backgroundColor:'balck'}}>
+            <DropDown onValueChange={onChange} value={'xyz'} style={{width:600, backgroundColor:'green'}} itemStyle={{backgroundColor:'black'}}>
                 <DropdownItem value="xyz">Item 1 </DropdownItem>
                 <DropdownItem value="abc">Item 2 </DropdownItem>
                 <DropdownItem value="abc">Item 3 </DropdownItem>

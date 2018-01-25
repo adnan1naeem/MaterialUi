@@ -24,17 +24,21 @@
 
 ```JavaScript
 import React from 'react';
-import  { DropDown, DropdownItem } from  'bluerain-plugin-material-ui/DropDown';
+import  { withBlueRain } from  '@blueeast/bluerain-os';
 
 const DropDown = () => (
-       <DropDown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
-                       <DropdownItem value="xyz">Item 1 </DropdownItem>
-                       <DropdownItem value="abc">Item 2 </DropdownItem>
-                       <DropdownItem value="abc">Item 3 </DropdownItem>
-                       <DropdownItem value="abc">Item 4 </DropdownItem>
-                       <DropdownItem value="abc">Item 5 </DropdownItem>
-                   </DropDown>
+    const BR = props.bluerain;
+    const DropDown = BR.Components.get('DropDown');
+    const DropdownItem = BR.Components.get('DropdownItem');
+
+    <DropDown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
+        <DropdownItem value="xyz">Item 1 </DropdownItem>
+        <DropdownItem value="abc">Item 2 </DropdownItem>
+        <DropdownItem value="abc">Item 3 </DropdownItem>
+        <DropdownItem value="abc">Item 4 </DropdownItem>
+        <DropdownItem value="abc">Item 5 </DropdownItem>
+    </DropDown>
 );
 
-export default DropDown;
+export default withBlueRain(DropDown);
 ```
