@@ -5,7 +5,7 @@ import TextInput from './components/TextInput';
 import Chip from './components/chip';
 import Badge from './components/badge';
 import Avatar from './components/avatar';
-import Switch from './components/switch';
+import Switch from './components/Switch';
 import { DropDown, DropdownItem } from './components/DropDown/DropDown';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
