@@ -1,19 +1,50 @@
 import * as React from 'react';
 import { create } from 'react-test-renderer';
 import Avatar from '../src/components/Avatar';
+import FolderIcon from 'material-ui-icons/Folder';
 
-test('Avatar component with required fields', () => {
+test('Avatar component with size props', () => {
 	const avatar = create(
       <Avatar size={100}></Avatar>
-  ).toJSON();
-	expect(Avatar.props.size).toEqual(100);
-	expect(Avatar).toMatchSnapshot();
+	).toJSON();
+	expect(avatar.props.style).toEqual([{ 'width':100, 'height':100, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*100 },{}]);
+	expect(avatar).toMatchSnapshot();
 });
 
-test('Badge component with style', () => {
+test('Avatar component with style', () => {
 	const avatar = create(
-      <Avatar style={{ 'background-color':'green' }}></Avatar>
+      <Avatar style={{ backgroundColor:'green' }}></Avatar>
   ).toJSON();
-	expect(Avatar.props.style).toEqual({ 'background-color':'green' });
-	expect(Avatar).toMatchSnapshot();
+	expect(avatar.props.style).toEqual([{ 'width':70, 'height':70, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*70 },{ backgroundColor:'green' }]);
+	expect(avatar).toMatchSnapshot();
+});
+
+test('Avatar component with src props', () => {
+	const avatar = create(
+      <Avatar src="https://material-ui-next.com/static/images/remy.jpg"></Avatar>
+  ).toJSON();
+	expect(avatar.props.source).toEqual('https://material-ui-next.com/static/images/remy.jpg');
+	expect(avatar).toMatchSnapshot();
+});
+
+
+test('Avatar component with src and size props', () => {
+	const avatar = create(
+      <Avatar src="https://material-ui-next.com/static/images/remy.jpg" size={200}></Avatar>
+  ).toJSON();
+	expect(avatar.props.style).toEqual([{ 'width':200, 'height':200, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*200 },{}]);
+	expect(avatar.props.source).toEqual('https://material-ui-next.com/static/images/remy.jpg');
+
+	expect(avatar).toMatchSnapshot();
+});
+
+
+
+test('Avatar component with children props', () => {
+	const avatar = create(
+      <Avatar size={200}>hello</Avatar>
+	).toJSON();
+	console.log('chidlren:',avatar);
+	expect(avatar.props.children).toEqual(undefined);
+	expect(avatar).toMatchSnapshot();
 });
