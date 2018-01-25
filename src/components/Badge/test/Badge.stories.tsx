@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Badge from './badge';
+import Badge from '../../Badge';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
