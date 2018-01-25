@@ -1,7 +1,7 @@
 import React from 'react';
 import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
 
-import TextInput from './components/textInput';
+import TextInput from './components/TextInput';
 import Chip from './components/chip';
 import Badge from './components/badge';
 import Avatar from './components/avatar';

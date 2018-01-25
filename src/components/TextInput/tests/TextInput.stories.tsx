@@ -1,5 +1,5 @@
 import * as React from 'react';
-import TextInput from '../';
+import TextInput from '../index';
 import { storiesOf } from '@storybook/react';
 
 function handleTextInputChange (value: any) {
@@ -37,7 +37,7 @@ storiesOf('TextInput', module).add('with multiline static',
 storiesOf('TextInput', module).add('with HelperText',
     () =>  <TextInput id="multiline-flexible" label="Helper Text" helperText="Some important text" onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
-    storiesOf('TextInput', module).add('with HelperText with node',
+storiesOf('TextInput', module).add('with HelperText with node',
     () =>  <TextInput id="multiline-flexible" label="Helper Text" helperText={<h1>Node Text</h1>} onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
 storiesOf('TextInput', module).add('with placeholder multiline',
