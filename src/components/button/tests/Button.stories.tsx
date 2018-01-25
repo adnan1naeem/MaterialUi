@@ -7,8 +7,6 @@ import { text, number, boolean } from '@storybook/addon-knobs';
 
 const background = '.background {background-color: red;}';
 
-BR.boot({renderApp:false});
-
 const Text = BR.Components.get('Text');
 
 // storiesOf('Button', module).add('Primary Button with knobs', () =>{
@@ -33,9 +31,9 @@ const Text = BR.Components.get('Text');
 // });
 storiesOf('Button', module).add('Default Button without Text tag in Child', () => <Button color={'default'}>Default</Button>);
 
-storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{backgroundColor:'purple', borderColor:'purple'}} >Custom Purple</Button>);
+storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{ backgroundColor:'purple', borderColor:'purple' }} >Custom Purple</Button>);
 
-storiesOf('Button', module).add('Inherit button with onClick prop', () => <Button color="inherit" onClick={()=>{console.log('I was clicked');}} >onClick</Button>);
+storiesOf('Button', module).add('Inherit button with onClick prop', () => <Button color="inherit" onClick={() => {console.log('I was clicked');}} >onClick</Button>);
 
 storiesOf('Button', module).add('Contrast button with disabled prop true', () => <Button color="contrast" disabled >Disabled</Button>);
 
@@ -51,7 +49,7 @@ storiesOf('Button', module).add('Accent Rounded Button ', () => <Button color="a
 
 storiesOf('Button', module).add('Primary button with iconLeft prop', () => <Button color="primary" iconLeft={<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="15" height="15"/>} >Icon Left</Button>);
 
-storiesOf('Button', module).add('Transparent Button with icon as child', () => <Button style={{backgroundColor:'transparent', boxShadow:'none', border:0}} ><img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="35" height="35"/></Button>);
+storiesOf('Button', module).add('Transparent Button with icon as child', () => <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }} ><img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="35" height="35"/></Button>);
 
 storiesOf('Button', module).add('Contrast button with iconRight prop', () => <Button color="contrast" iconRight={<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="15" height="15"/>} >Icon Right</Button>);
 

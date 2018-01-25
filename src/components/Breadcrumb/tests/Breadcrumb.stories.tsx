@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import { text, object } from '@storybook/addon-knobs';
 import Breadcrumb from '../../Breadcrumb';
-
+import BR from '@blueeast/bluerain-os';
 
 const stories = storiesOf('Breadcrumb', module);
 

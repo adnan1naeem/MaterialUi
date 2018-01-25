@@ -35,7 +35,7 @@ export interface IAvatarProps {
     children?: JSX.Element | string;
     classes?: {},
     component?: any,
-    imgProps?: {},
+	imgProps?: {},
     sizes?: string,
     src?: string,
     style?: {},
@@ -43,14 +43,14 @@ export interface IAvatarProps {
 }
 const BlueRainAvatar = (props: IAvatar & IAvatarProps) => {
     const size = props.size? props.size: 70;
-    const avatarStyle = [{width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size}, {...props.style}];
-    const View = props.bluerain.Components.get('View');
-    const Text = props.bluerain.Components.get('Text');
-    const Image = props.bluerain.Components.get('Image');
-    if (props.children) {
+    const avatarStyle = [{ width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size}, { ...props.style }];
+	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
+	const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
+	const Image = props.bluerain ? props.bluerain.Components.get('Image') : 'div';
+	if (props.children) {
     return <View style={avatarStyle}>{props.children}</View>;
 }
- return <Image source={props.src} style={avatarStyle} />;
+	return <Image source={props.src} style={avatarStyle} />;
 
 };
 

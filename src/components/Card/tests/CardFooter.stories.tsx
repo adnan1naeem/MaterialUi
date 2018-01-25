@@ -4,9 +4,7 @@ import Button from 'material-ui/Button';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
-
-BR.boot({renderApp:false});
+import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 
 const styles = {
     bg: {
@@ -18,7 +16,7 @@ storiesOf('CardFooter', module).add('CardFooter with className and style prop', 
 (
 <CardFooter
     className="bg-footer"
-    style={{width:200, height:200, backgroundColor:'grey'}}
+    style={{ width:200, height:200, backgroundColor:'grey' }}
 />));
 
 storiesOf('CardFooter', module).add('CardFooter with children prop (MUI specific)', () =>

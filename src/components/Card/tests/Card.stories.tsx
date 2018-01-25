@@ -12,10 +12,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
 
-BR.boot({renderApp:false});
-
 const Text = BR.Components.get('Text');
-
 
 const label = text('label as child', <Text>WithKnobs</Text>);
 
@@ -26,18 +23,18 @@ storiesOf('Card', module).add('Card and raised prop false', () =>
 <Card raised={false} style={{backgroundColor:'orange'}} className="bg-main">UnRaised success </Card>);
 
 storiesOf('Card', module).add('Card with children and tag props', () =>
-<Card style={{maxWidth:100}} tag={CardHeader}> {label} </Card>);
+<Card style={{maxWidth:100 }} tag={CardHeader}> {label} </Card>);
 
 storiesOf('Card', module).add('Card with square, tag as Text and elevation as 12 props', () =>
-<Card style={{maxWidth:100}} tag={Text} square elevation={12}> {label} </Card>);
+<Card style={{ maxWidth:100 }} tag={Text} square elevation={12}> {label} </Card>);
 
 
 storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
-<Card style={{width:350, display:'flex'}}>
+<Card style={{ width:350, display:'flex' }}>
 <div>
   <CardBody>
     <h4>Live From Space</h4>
-    <h5 style={{color:'green'}}>
+    <h5 style={{ color:'green' }}>
       Mac Miller
     </h5>
   </CardBody>
@@ -55,20 +52,20 @@ storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
 </div>
 <CardMedia
   src="https://material-ui-next.com/static/images/cards/live-from-space.jpg"
-  style={{width:200}}
+  style={{ width:200 }}
   height={200}
 />
 </Card>));
 
 storiesOf('BluerainCard', module).add('MaterialUI basic Card', () =>
 (
-<Card style={{maxWidth:275}}>
+<Card style={{ maxWidth:275 }}>
 <CardBody>
-  <Typography style={{marginBottom: 16,fontSize: 14}}>Word of the Day</Typography>
+  <Typography style={{ marginBottom: 16,fontSize: 14 }}>Word of the Day</Typography>
   <Typography type="headline" component="h2">
     benevolent
   </Typography>
-  <Typography style={{marginBottom: 12}}>adjective</Typography>
+  <Typography style={{ marginBottom: 12 }}>adjective</Typography>
   <Typography component="p">
     well meaning and kindly.<br />
     {'"a benevolent smile"'}
@@ -81,7 +78,7 @@ storiesOf('BluerainCard', module).add('MaterialUI basic Card', () =>
 
 storiesOf('BluerainCard', module).add('MaterialUI Card with all subcomponents', () =>
 (
-<Card style={{width:350}}>
+<Card style={{ width:350 }}>
     <CardHeader
             avatar={<Avatar aria-label="Recipe">R</Avatar>}
             action={<IconButton><PlayArrowIcon /></IconButton>}
