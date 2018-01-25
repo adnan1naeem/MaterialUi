@@ -1,6 +1,5 @@
+import { Icon } from 'react-fa';
 import React from 'react';
-// import { Icon } from '@blueeast/bluerain-ui-interfaces/Components/Icon';
-import {Icon} from 'react-fa';
 
 /**
  * The props of Icon
@@ -11,47 +10,47 @@ import {Icon} from 'react-fa';
  */
 
 export interface IconProps {
-    name?: string;
-    color?: string;
-    size?: string;
-    borderColor?: string;
+	name?: string;
+	color?: string;
+	size?: string;
+	borderColor?: string;
 }
 let iconName;
 let iconColor;
 const IconComponent = (props: IconProps) => {
-  const {
+	const {
     name,
     size,
     color,
     borderColor
   } = props;
-  iconColor = color;
-  switch(name) {
-    case 'cart':
-      iconName = 'shopping-cart';
-      break;
-    case 'menu':
-      iconName = 'bars';
-      break;
-    case 'settings':
-      iconName = 'gear';
-      break;
-    case 'bulb':
-      iconName = 'lightbulb-o';
-      break;
-    case 'heart':
-      if (borderColor){
-        iconName='heart-o';
-        iconColor= borderColor;
-      }else{
-        iconName=name;
-      }
-      break;
-    default:
-      iconName = name;
-  }
-  return (
-    <Icon name={iconName} style={{fontSize: size, color: iconColor}} />
-  );
+	iconColor = color;
+	switch(name) {
+	case 'cart':
+		iconName = 'shopping-cart';
+		break;
+	case 'menu':
+		iconName = 'bars';
+		break;
+	case 'settings':
+		iconName = 'gear';
+		break;
+	case 'bulb':
+		iconName = 'lightbulb-o';
+		break;
+	case 'heart':
+		if (borderColor){
+			iconName='heart-o';
+			iconColor= borderColor;
+		}else{
+			iconName=name;
+		}
+		break;
+	default:
+		iconName = name;
+	}
+	return (
+    <Icon name={iconName} style={{ fontSize: size, color: iconColor }} {...props}/>
+	);
 };
 export default IconComponent;

@@ -12,14 +12,14 @@ import { ListItemSecondaryAction } from 'material-ui';
  */
 
 const ListItemRightButton = (props: IListItemRightButton) => {
-    return (
+	return (
         <ListItemSecondaryAction
             {...props}
             style={props.style}
         >
         {props.children}
         </ListItemSecondaryAction>
-    );
+	);
 
 };
 

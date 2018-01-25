@@ -23,22 +23,22 @@ import { CardHeader } from 'material-ui/Card';
   * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
-  export interface IMUIProps {
-    action?: React.ReactNode,
-    avatar?: React.ReactNode,
-    classes?: {},
-    subheader?: React.ReactNode,
-    }
+export interface IMUIProps {
+	action?: React.ReactNode,
+	avatar?: React.ReactNode,
+	classes?: {},
+	subheader?: React.ReactNode,
+}
 
 const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
-    return (
+	return (
         <CardHeader
             style={props.style}
             title={props.title}
             subheader={props.subheader? props.subheader : props.children}
             {...props}
         />
-    );
+	);
 
 };
 

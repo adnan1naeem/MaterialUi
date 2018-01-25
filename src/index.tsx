@@ -68,6 +68,7 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.set('CardFooter', CardFooter);
 		ctx.Components.set('Breadcrumb', Breadcrumb);
 		ctx.Components.set('SwitchToggle', Switch);
+		ctx.Components.set('Icon', IconComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(

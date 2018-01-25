@@ -18,18 +18,18 @@ import  { CardContent } from 'material-ui/Card';
   * @param {Object} props.classes Usefull to extend the style for CardBody component.
   */
 
-  export interface IMUIProps {
-    classes?: {},
-    }
+export interface IMUIProps {
+	classes?: {},
+}
 
 const BlueRainCardBody = (props: ICardBody & IMUIProps) => {
-    return (
+	return (
         <CardContent
             {...props}
         >
         {props.children}
         </CardContent>
-    );
+	);
 
 };
 
