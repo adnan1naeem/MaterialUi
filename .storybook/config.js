@@ -14,6 +14,7 @@ import urLocaleData from 'react-intl/locale-data/ur';
 import zhLocaleData from 'react-intl/locale-data/zh';
 import arLocaleData from 'react-intl/locale-data/ar';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { MemoryRouter } from 'react-router-dom';
 
 initializeRTL();
 setAddon();
@@ -51,14 +52,16 @@ function loadStories() {
 
 addDecorator(story => (
   <IntlProvider locale={navigator.language}>
-      <ApolloProvider client={client}>
-          <BlueRainProvider>
-        <MuiThemeProvider>
-          {story()}
-        </MuiThemeProvider>
-          </BlueRainProvider>
-      </ApolloProvider>
-    </IntlProvider>
+    <ApolloProvider client={client}>
+      <MemoryRouter>
+        <BlueRainProvider>
+          <MuiThemeProvider>
+            {story()}
+          </MuiThemeProvider>
+        </BlueRainProvider>
+      </MemoryRouter>
+    </ApolloProvider>
+  </IntlProvider>
 ));
 
 addDecorator(withKnobs);

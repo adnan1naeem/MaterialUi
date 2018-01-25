@@ -1,6 +1,6 @@
 import React from 'react';
 import { withBlueRain, BlueRainType } from '@blueeast/bluerain-os';
-import { Link, MemoryRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import IBreadcrumb from 'bluerain-ui-interfaces/Components/Breadcrumb';
 
 /**
@@ -44,7 +44,7 @@ const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
 
 	if (props.data) {
 		const listItems = props.data.map(item =>
-  <MemoryRouter key={item.title}><View style={styles.root}> <Link style={props.colorPrev ? { color: props.colorPrev, textDecoration: 'none' } : styles.colorPrev} to={item.path}>{item.title}</Link><Text style={styles.black}> / </Text></View></MemoryRouter>
+  <View style={styles.root} key={item.title}> <Link style={props.colorPrev ? { color: props.colorPrev, textDecoration: 'none' } : styles.colorPrev} to={item.path}>{item.title}</Link><Text style={styles.black}> / </Text></View>
 				);
 		return (
   <View style={styles.root} >{listItems}<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text></View>);
