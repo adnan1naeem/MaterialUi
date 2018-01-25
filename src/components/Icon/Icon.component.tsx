@@ -1,6 +1,5 @@
 import { Icon } from 'react-fa';
 import React from 'react';
-// import { Icon } from '@blueeast/bluerain-ui-interfaces/Components/Icon';
 
 /**
  * The props of Icon
@@ -51,7 +50,7 @@ const IconComponent = (props: IconProps) => {
 		iconName = name;
 	}
 	return (
-    <Icon name={iconName} style={{ fontSize: size, color: iconColor }} />
+    <Icon name={iconName} style={{ fontSize: size, color: iconColor }} {...props}/>
 	);
 };
 export default IconComponent;
