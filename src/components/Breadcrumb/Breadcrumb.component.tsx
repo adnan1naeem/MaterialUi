@@ -49,7 +49,8 @@ const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
 		return (
   <View style={styles.root} >{listItems}<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text></View>);
 	}
-	return (<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text>);
+
+	return (<Text style={props.colorPrev ? { color:  props.colorActive ? props.colorActive : 'black'  } : styles.colorActive}>{label}</Text>);
 
 };
 
