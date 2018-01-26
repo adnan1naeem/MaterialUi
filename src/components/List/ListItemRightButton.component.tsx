@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListItemRightButton } from '@blueeast/bluerain-ui-interfaces/Components/List';
+import { IListItemRightButton } from 'bluerain-ui-interfaces/Components/List';
 import { ListItemSecondaryAction } from 'material-ui';
 /**
  * The props of ListItemRightButton Component

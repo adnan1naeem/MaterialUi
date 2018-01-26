@@ -13,7 +13,7 @@ import Button from './components/Button';
 import IconComponent from './components/Icon';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 import Breadcrumb from './components/Breadcrumb';
-import CarouselComponent from './components/carousel';
+import CarouselComponent from './components/Carousel';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
 

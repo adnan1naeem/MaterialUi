@@ -1,7 +1,7 @@
 // import './style.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { ICarousel } from '@blueeast/bluerain-ui-interfaces/Components/Carousel';
+import { ICarousel } from 'bluerain-ui-interfaces/Components/Carousel';
 import { withBlueRain } from '@blueeast/bluerain-os';
 import React from 'react';
 import Slider from 'react-slick';

@@ -1,5 +1,5 @@
 import  { CardContent } from 'material-ui/Card';
-import { ICardBody } from '@blueeast/bluerain-ui-interfaces/Components/Card';
+import { ICardBody } from 'bluerain-ui-interfaces/Components/Card';
 import React from 'react';
 
 /**
