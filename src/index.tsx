@@ -48,27 +48,27 @@ class MaterialUiPlugin extends Plugin {
 		}
 
 		ctx.Components.setOrReplace('TextInput', TextInput);
-		ctx.Components.set('Chip', Chip);
-		ctx.Components.set('Badge', Badge);
-		ctx.Components.set('Dropdown', DropDown);
-		ctx.Components.set('DropdownItem', DropdownItem);
-		ctx.Components.set('Avatar', Avatar);
-		ctx.Components.set('List', List);
-		ctx.Components.set('ListItem', ListItem);
-		ctx.Components.set('ListHeader', ListHeader);
-		ctx.Components.set('ListItemAvatar', ListItemAvatar);
-		ctx.Components.set('ListItemIcon', ListItemIcon);
-		ctx.Components.set('ListItemText', ListItemText);
-		ctx.Components.set('ListItemRightButton', ListItemRightButton);
+		ctx.Components.setOrReplace('Chip', Chip);
+		ctx.Components.setOrReplace('Badge', Badge);
+		ctx.Components.setOrReplace('Dropdown', DropDown);
+		ctx.Components.setOrReplace('DropdownItem', DropdownItem);
+		ctx.Components.setOrReplace('Avatar', Avatar);
+		ctx.Components.setOrReplace('List', List);
+		ctx.Components.setOrReplace('ListItem', ListItem);
+		ctx.Components.setOrReplace('ListHeader', ListHeader);
+		ctx.Components.setOrReplace('ListItemAvatar', ListItemAvatar);
+		ctx.Components.setOrReplace('ListItemIcon', ListItemIcon);
+		ctx.Components.setOrReplace('ListItemText', ListItemText);
+		ctx.Components.setOrReplace('ListItemRightButton', ListItemRightButton);
 		ctx.Components.setOrReplace('Button', Button);
-		ctx.Components.set('Card', Card);
-		ctx.Components.set('CardHeader', CardHeader);
-		ctx.Components.set('CardBody', CardBody);
-		ctx.Components.set('CardMedia', CardMedia);
-		ctx.Components.set('CardFooter', CardFooter);
-		ctx.Components.set('Breadcrumb', Breadcrumb);
-		ctx.Components.set('SwitchToggle', Switch);
-		ctx.Components.set('Icon', IconComponent);
+		ctx.Components.setOrReplace('Card', Card);
+		ctx.Components.setOrReplace('CardHeader', CardHeader);
+		ctx.Components.setOrReplace('CardBody', CardBody);
+		ctx.Components.setOrReplace('CardMedia', CardMedia);
+		ctx.Components.setOrReplace('CardFooter', CardFooter);
+		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
+		ctx.Components.setOrReplace('SwitchToggle', Switch);
+		ctx.Components.setOrReplace('Icon', IconComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
