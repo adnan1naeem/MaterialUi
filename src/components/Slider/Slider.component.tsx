@@ -44,6 +44,10 @@ class Slider extends React.Component<ISlider & IMUIProps, {value:number}>{
 		const Text = this.props.bluerain? this.props.bluerain.Components.get('Text') : 'span';
 		return (
       <View style={styles}>
+		<View style={{ display:'flex', justifyContent:'space-between', flexDirection:'row', marginBottom:10 }}>
+			<Text>Value</Text>
+			<Text>{this.state.value}</Text>
+		</View>
 		<Range
 			thumbSize={10}
 			thumbColor={{ r: 0,	g: 188,	b: 212,	a: 1, }}
@@ -57,10 +61,6 @@ class Slider extends React.Component<ISlider & IMUIProps, {value:number}>{
 			max={this.props.maximumValue}
 			{...this.props}
 		/>
-		<View style={{ display:'flex', justifyContent:'space-between', flexDirection:'row', marginTop:10 }}>
-			<Text>Value</Text>
-			<Text>{this.state.value}</Text>
-		</View>
       </View>
 		);
 	}
