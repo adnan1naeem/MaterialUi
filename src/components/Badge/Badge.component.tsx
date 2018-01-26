@@ -1,5 +1,5 @@
 import { FormattedMessage } from 'react-intl';
-import { IBadge } from 'bluerain-ui-interfaces/Components/Badge';
+import { IBadge } from '@blueeast/bluerain-ui-interfaces/Components/Badge';
 import BR from '@blueeast/bluerain-os';
 import BadgeUi from 'material-ui/Badge';
 import React from 'react';
