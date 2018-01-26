@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
+import { ISwitch } from '@blueeast/bluerain-ui-interfaces/Components/switch';
 import BR from '@blueeast/bluerain-os';
 import Switch from 'material-ui/Switch';
 

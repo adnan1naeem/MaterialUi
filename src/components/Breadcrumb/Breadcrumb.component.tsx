@@ -1,7 +1,7 @@
 import React from 'react';
 import { withBlueRain, BlueRainType } from '@blueeast/bluerain-os';
 import { Link, MemoryRouter } from 'react-router-dom';
-import IBreadcrumb from 'bluerain-ui-interfaces/Components/Breadcrumb';
+import IBreadcrumb from '@blueeast/bluerain-ui-interfaces/Components/Breadcrumb';
 
 /**
  * The props of Breadcrumb Component

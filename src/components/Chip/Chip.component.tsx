@@ -1,4 +1,4 @@
-import { IChip } from 'bluerain-ui-interfaces/Components/Chip';
+import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
 import ChipUi from 'material-ui/Chip';
 import React from 'react';
 

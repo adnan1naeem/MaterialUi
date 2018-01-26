@@ -1,5 +1,5 @@
 import Button from 'material-ui/Button';
-import IButton from 'bluerain-ui-interfaces/Components/Button';
+import IButton from '@blueeast/bluerain-ui-interfaces/Components/Button';
 import React from 'react';
 
 const BlueRainButton = (props: IButton) => {

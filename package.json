@@ -161,7 +161,7 @@
     "@storybook/react": "^3.2.8",
     "add-graphql-subscriptions": "^1.0.1",
     "apollo-client": "^1.0.4",
-    "bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master",
+    "@blueeast/bluerain-ui-interfaces":"1.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "graphql-relay": "0.4.4",
