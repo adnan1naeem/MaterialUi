@@ -28,7 +28,7 @@ const BlueRainSwitch = (props: ISwitchProps & ISwitch) => {
             onChange={props.onValueChange}
             {...props}
         />
-    );
+	);
 
 };
 

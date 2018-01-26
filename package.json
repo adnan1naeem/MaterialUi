@@ -108,8 +108,8 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.9",
     "cz-conventional-changelog": "^2.0.0",
-    "enzyme": "^3.1.1",
     "documentation": "^5.2.1",
+    "enzyme": "^3.1.1",
     "enzyme-adapter-react-16": "^1.0.4",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.1.0",
@@ -149,8 +149,8 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-plugin-intl": "0.5.3",
     "@blueeast/bluerain-os": "1.0.0-alpha-10",
+    "@blueeast/bluerain-plugin-intl": "0.5.3",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
@@ -178,6 +178,7 @@
     "react-fa": "^5.0.0",
     "react-intl": "^2.4.0",
     "react-loading-skeleton": "^0.3.1",
+    "react-range-progress": "^4.0.3",
     "react-slick": "^0.15.4",
     "react-test-renderer": "^16.0.0",
     "reactxp": "^0.42.0-rc.25",
