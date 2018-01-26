@@ -16,8 +16,6 @@ import Typography from 'material-ui/Typography';
 const stories = storiesOf('Carousel', module);
 stories.addDecorator(withKnobs);
 
-
-BR.boot({ renderApp:false});
 stories.add('Carousel of Images', () => {
 	const Image = BR.Components.get('Image');
 	const View = BR.Components.get('View');

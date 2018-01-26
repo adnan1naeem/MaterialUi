@@ -3,9 +3,7 @@ import { ListHeader } from '../../List';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
-
-BR.boot({renderApp:false});
+import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 
 const Text = BR.Components.get('Text');
 

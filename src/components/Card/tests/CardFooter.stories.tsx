@@ -1,21 +1,15 @@
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import * as React from 'react';
 import { CardFooter } from '../../Card';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
-import BR from '@blueeast/bluerain-os';
 import Button from 'material-ui/Button';
-
-
-
-
-import React from 'react';
-
-BR.boot({ renderApp:false });
+import BR from '@blueeast/bluerain-os';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 
 const styles = {
-	bg: {
-		backgroundColor:'white', width:'100%'
-	}
+    bg: {
+        backgroundColor:'white', width:'100%'
+    }
 };
 
 storiesOf('CardFooter', module).add('CardFooter with className and style prop', () =>

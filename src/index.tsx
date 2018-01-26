@@ -1,19 +1,19 @@
-
-import { DropDown,DropdownItem } from './components/DropDown/DropDown';
-import { Plugin, bluerainType } from '@blueeast/bluerain-os';
-import Badge from './components/badge';
-import Button from './components/button';
-import CarouselComponent from './components/carousel';
-import Chip from './components/chip';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import React from 'react';
-import TextInput from './components/textInput';
-import Avatar from './components/avatar';
-import Switch from './components/switch';
+import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
+
+import TextInput from './components/TextInput';
+import Chip from './components/Chip';
+import Badge from './components/Badge';
+import Avatar from './components/Avatar';
+import Switch from './components/Switch';
+import { DropDown, DropdownItem } from './components/DropDown';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Button from './components/Button';
 import IconComponent from './components/Icon';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 import Breadcrumb from './components/Breadcrumb';
+import CarouselComponent from './components/carousel';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/withTheme';
 
@@ -41,14 +41,14 @@ class MaterialUiPlugin extends Plugin {
 	static pluginName = 'MaterialUiPlugin';
 	static slug = 'material-ui';
 
-	static initialize(config:any = {}, ctx:bluerainType) {
+	static initialize(config:any = {}, ctx:BlueRainType) {
 
 		let theme = ctx.Configs.get('theme');
 		if (!theme) {
 			theme = {};
 		}
 
-		ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
+		ctx.Components.setOrReplace('TextInput', TextInput);
 		ctx.Components.set('Chip', Chip);
 		ctx.Components.set('Badge', Badge);
 		ctx.Components.set('Dropdown', DropDown);
@@ -61,7 +61,7 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.set('ListItemIcon', ListItemIcon);
 		ctx.Components.set('ListItemText', ListItemText);
 		ctx.Components.set('ListItemRightButton', ListItemRightButton);
-		ctx.Components.has('Button') ? ctx.Components.replace('Button', Button) : ctx.Components.set('Button', Button);
+		ctx.Components.setOrReplace('Button', Button);
 		ctx.Components.set('Card', Card);
 		ctx.Components.set('CardHeader', CardHeader);
 		ctx.Components.set('CardBody', CardBody);
@@ -69,7 +69,8 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.set('CardFooter', CardFooter);
 		ctx.Components.set('Breadcrumb', Breadcrumb);
 		ctx.Components.set('SwitchToggle', Switch);
-		ctx.Components.set('Carousel', CarouselComponent);
+		ctx.Components.set('Icon', IconComponent);
+    ctx.Components.set('Carousel', CarouselComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
