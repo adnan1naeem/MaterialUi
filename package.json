@@ -3,8 +3,8 @@
   "version": "0.6.3",
   "description": "A Bluerain plugin that integrates material-ui",
   "keywords": [],
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
+  "main": "index.js",
+  "module": "index.js",
   "typings": "dist/types/bluerain-plugin-material-ui.d.ts",
   "files": [
     "dist"
