@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { ICardMedia } from 'bluerain-ui-interfaces/Components/Card';
 import { CardMedia } from 'material-ui/Card';
+import { ICardMedia } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardMedia Component

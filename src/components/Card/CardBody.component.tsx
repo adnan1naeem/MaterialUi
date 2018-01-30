@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { ICardBody } from 'bluerain-ui-interfaces/Components/Card';
 import  { CardContent } from 'material-ui/Card';
+import { ICardBody } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardBody Component

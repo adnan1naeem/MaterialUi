@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
-import BR from '@blueeast/bluerain-os';
+import { ISwitch } from '@blueeast/bluerain-ui-interfaces';
 import Switch from 'material-ui/Switch';
 
 /**
@@ -28,7 +27,7 @@ const BlueRainSwitch = (props: ISwitchProps & ISwitch) => {
             onChange={props.onValueChange}
             {...props}
         />
-    );
+	);
 
 };
 

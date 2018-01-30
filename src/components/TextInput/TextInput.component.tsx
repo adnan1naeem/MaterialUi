@@ -1,5 +1,5 @@
-import React, {ReactNode} from 'react';
-import {ITextInput} from 'bluerain-ui-interfaces/Components/TextInput';
+import React, { ReactNode } from 'react';
+import { ITextInput } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
 
 /**
@@ -16,30 +16,30 @@ import TextField from 'material-ui/TextField';
  */
 
 export interface IMaterialTextInput {
-    autoComplete?: string,
-    autoCorrect?: string,
-    id?: string,
-    label?: string,
-    className?: any,
-    margin?: 'none' |
+	autoComplete?: string,
+	autoCorrect?: string,
+	id?: string,
+	label?: string,
+	className?: any,
+	margin?: 'none' |
     'dense' |
     'normal',
-    required?: boolean,
-    error?: boolean,
-    type?: string,
-    rowsMax?: string,
-    rows?: string,
-    helperText?: ReactNode,
-    InputLabelProps?: object,
-    fullWidth?: boolean
+	required?: boolean,
+	error?: boolean,
+	type?: string,
+	rowsMax?: string,
+	rows?: string,
+	helperText?: ReactNode,
+	InputLabelProps?: object,
+	fullWidth?: boolean
 }
 
 const BlueRainTextInput = (props: ITextInput & IMaterialTextInput) => {
-    let disabled = false;
-    if(props.editable !== undefined && !props.editable) {
-       disabled = true;
-    }
-    return (
+	let disabled = false;
+	if(props.editable !== undefined && !props.editable) {
+		disabled = true;
+	}
+	return (
         <TextField
             style={props.style}
             placeholder={props.placeholder}
@@ -49,7 +49,7 @@ const BlueRainTextInput = (props: ITextInput & IMaterialTextInput) => {
             disabled={disabled}
             {...props}
         />
-    );
+	);
 };
 
 export default BlueRainTextInput;

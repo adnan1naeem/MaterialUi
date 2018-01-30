@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListHeader } from 'bluerain-ui-interfaces/Components/List';
+import { IListHeader } from '@blueeast/bluerain-ui-interfaces';
 import { ListSubheader } from 'material-ui';
 
 /**

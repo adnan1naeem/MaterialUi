@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { ICardHeader } from 'bluerain-ui-interfaces/Components/Card';
 import { CardHeader } from 'material-ui/Card';
+import { ICardHeader } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardHeader Component
