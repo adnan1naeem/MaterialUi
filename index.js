@@ -1,2 +1,2 @@
-const plugin = require('./dist/bundle');
-module.exports = app.default;
+const plugin = require('./dist');
+module.exports = plugin.default;
