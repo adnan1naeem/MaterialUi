@@ -85,7 +85,6 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-cli": "0.2.3",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
