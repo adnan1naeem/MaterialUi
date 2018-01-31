@@ -21,9 +21,9 @@
   },
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist && bluerain build plugin",
+    "prebuild": "",
     "postinstall": "npm i -g @blueeast/bluerain-cli",
-    "build": "bluerain build plugin",
+    "build": "rimraf dist && bluerain build plugin",
     "start": "tsc -w",
     "test": "jest --u",
     "test:watch": "jest --watch",
