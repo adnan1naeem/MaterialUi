@@ -2,6 +2,7 @@ import * as React from 'react';
 import { IBadge } from '@blueeast/bluerain-ui-interfaces';
 import BadgeUi from 'material-ui/Badge';
 
+
 /**
  * The universal props of Badge Component
  * @param {Object} props.style Get the style object.

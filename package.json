@@ -3,8 +3,8 @@
   "version": "0.6.3",
   "description": "A Bluerain plugin that integrates material-ui",
   "keywords": [],
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "typings": "dist/types/bluerain-plugin-material-ui.d.ts",
   "files": [
     "dist"
@@ -22,7 +22,7 @@
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc && babel -D dist --out-dir dist && rimraf lib",
+    "build": "tsc && babel -D dist --out-dir dist && rimraf dist",
     "start": "tsc -w",
     "test": "jest --u",
     "test:watch": "jest --watch",
@@ -84,7 +84,16 @@
     "mapCoverage": true
   },
   "devDependencies": {
+    "@blueeast/bluerain-cli": "0.2.3",
+    "@storybook/addon-actions": "^3.2.6",
+    "@storybook/addon-graphql": "^3.2.0",
+    "@storybook/addon-info": "^3.2.9",
+    "@storybook/addon-knobs": "^3.2.16",
+    "@storybook/addon-links": "^3.2.6",
+    "@storybook/addon-storyshots": "^3.2.13",
+    "@storybook/react": "^3.2.8",
     "@blueeast/tslint-config-blueeast": "^0.5.1",
+    "@blueeast/bluerain-os": "1.0.0-alpha-10",
     "@storybook/addons": "^3.2.13",
     "@types/jest": "^22.0.0",
     "@types/node": "^8.0.0",
@@ -141,20 +150,9 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-cli": "0.2.2",
-    "@storybook/addon-actions": "^3.2.6",
-    "@storybook/addon-graphql": "^3.2.0",
-    "@storybook/addon-info": "^3.2.9",
-    "@storybook/addon-knobs": "^3.2.16",
-    "@storybook/addon-links": "^3.2.6",
-    "@storybook/addon-storyshots": "^3.2.13",
-    "@storybook/react": "^3.2.8",
-    "add-graphql-subscriptions": "^1.0.1",
     "enzyme": "^3.1.1",
-    "lodash.pickby": "^4.6.0",
     "@blueeast/bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces.git#master",
     "apollo-client": "^1.0.4",
-    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",

@@ -1,15 +1,15 @@
 import * as React from 'react';
+import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import Button from './components/Button';
 import Chip from './components/Chip';
+import { DropDown, DropdownItem } from './components/DropDown';
 import IconComponent from './components/Icon';
 import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
 import Switch from './components/Switch';
 import TextInput from './components/TextInput';
-import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
-import { DropDown, DropdownItem } from './components/DropDown';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
 

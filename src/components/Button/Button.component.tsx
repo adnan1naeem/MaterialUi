@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { IButton } from '@blueeast/bluerain-ui-interfaces';
 import Button from 'material-ui/Button';
+import { IButton } from '@blueeast/bluerain-ui-interfaces';
 
 
 const BlueRainButton = (props: IButton) => {
