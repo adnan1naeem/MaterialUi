@@ -22,7 +22,7 @@
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc && babel -D dist --out-dir dist && rimraf dist",
+    "build": "/usr/local/bin/bluerain build plugin ",
     "start": "tsc -w",
     "test": "jest --u",
     "test:watch": "jest --watch",
