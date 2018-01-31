@@ -1,3 +1,0 @@
-{
-  "extends":"/usr/local/lib/node_modules/@blueeast/bluerain-cli/src/plugin/.babelrc"
-}
