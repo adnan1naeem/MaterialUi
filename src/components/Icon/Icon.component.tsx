@@ -1,5 +1,5 @@
+import * as React from 'react';
 import { Icon } from 'react-fa';
-import React from 'react';
 
 /**
  * The props of Icon

@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListItemIcon } from 'bluerain-ui-interfaces/Components/List';
+import { IListItemIcon } from '@blueeast/bluerain-ui-interfaces';
 import { ListItemIcon } from 'material-ui';
 
 
