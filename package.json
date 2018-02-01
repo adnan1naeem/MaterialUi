@@ -84,7 +84,7 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-cli": "^0.2.7",
+    "@blueeast/bluerain-cli": "^0.2.8",
     "@blueeast/bluerain-os": "^1.0.2",
     "@blueeast/bluerain-platform-reactxp": "1.1.8",
     "@blueeast/tslint-config-blueeast": "^0.5.1",
