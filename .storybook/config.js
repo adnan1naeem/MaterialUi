@@ -2,7 +2,7 @@ import React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import { IntlProvider } from 'react-intl';
 import { initializeRTL } from 'storybook-addon-rtl';
-import { BlueRainProvider } from '@blueeast/bluerain-os';
+import BR, { BlueRainProvider } from '@blueeast/bluerain-os';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
@@ -48,6 +48,10 @@ const req = require.context('../src/', true, /.stories.tsx$/);
 function loadStories() {
 	req.keys().forEach((filename) => req(filename))
 }
+
+
+// Add BlueRain
+const BluerainApp = BR.boot({platform: [require('@blueeast/bluerain-platform-reactxp')], renderApp: false });
 
 addDecorator(story => (
   <IntlProvider locale={navigator.language}>

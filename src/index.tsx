@@ -1,34 +1,19 @@
-import React from 'react';
-import { Plugin, bluerainType } from '@blueeast/bluerain-os';
-
-import TextInput from './components/textInput';
-import Chip from './components/chip';
-import GMap from './components/map';
-import Badge from './components/badge';
-import Avatar from './components/avatar';
-import Switch from './components/switch';
-import { DropDown, DropdownItem } from './components/DropDown/DropDown';
-import List, {ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText} from './components/List';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Button from './components/button';
+import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import Avatar from './components/Avatar';
+import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
-// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import getMuiTheme from 'material-ui/styles/withTheme';
+import Button from './components/Button';
+import Chip from './components/Chip';
+import { DropDown, DropdownItem } from './components/DropDown';
+import IconComponent from './components/Icon';
+import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
+import Switch from './components/Switch';
+import TextInput from './components/TextInput';
+import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
-// const withMUI = (App, theme, ctx) => (props: { intl: { rtl: string }}) => {
-//
-// 	if (props.intl !== undefined && props.intl.rtl !== undefined) {
-// 		theme.isRtl = props.intl.rtl;
-// 	}
-//
-// 	theme = ctx.Filters.run('material-ui.theme', theme);
-// 	const muiTheme = getMuiTheme(theme);
-//
-// 	const style = { direction: theme.isRtl ? 'rtl' : 'ltr' };
-//
-// 	return (<MuiThemeProvider muiTheme={muiTheme}><App {...props} style={style} /></MuiThemeProvider>);
-// };
+
+
 
 /**
  * Material UI Plugin
@@ -37,38 +22,38 @@ import Breadcrumb from './components/Breadcrumb';
  */
 class MaterialUiPlugin extends Plugin {
 
-    static pluginName = 'MaterialUiPlugin';
-    static slug = 'material-ui';
+	static pluginName = 'MaterialUiPlugin';
+	static slug = 'material-ui';
 
-    static initialize(config:any = {}, ctx:bluerainType) {
+	static initialize(config:any = {}, ctx:BlueRainType) {
 
-        let theme = ctx.Configs.get('theme');
-        if (!theme) {
-            theme = {};
-        }
+		let theme = ctx.Configs.get('theme');
+		if (!theme) {
+			theme = {};
+		}
 
-        ctx.Components.has('TextInput') ? ctx.Components.replace('TextInput', TextInput) : ctx.Components.set('TextInput', TextInput);
-	ctx.Components.set('Chip', Chip);
-	ctx.Components.set('GMap', GMap);
-	ctx.Components.set('Badge', Badge);
-	ctx.Components.set('Dropdown', DropDown);
-	ctx.Components.set('DropdownItem', DropdownItem);
-	ctx.Components.set('Avatar', Avatar);
-	ctx.Components.set('List', List);
-	ctx.Components.set('ListItem', ListItem);
-	ctx.Components.set('ListHeader', ListHeader);
-	ctx.Components.set('ListItemAvatar', ListItemAvatar);
-	ctx.Components.set('ListItemIcon', ListItemIcon);
-	ctx.Components.set('ListItemText', ListItemText);
-	ctx.Components.set('ListItemRightButton', ListItemRightButton);
-	ctx.Components.has('Button') ? ctx.Components.replace('Button', Button) : ctx.Components.set('Button', Button);
-	ctx.Components.set('Card', Card);
-	ctx.Components.set('CardHeader', CardHeader);
-	ctx.Components.set('CardBody', CardBody);
-	ctx.Components.set('CardMedia', CardMedia);
-	ctx.Components.set('CardFooter', CardFooter);
-	ctx.Components.set('Breadcrumb', Breadcrumb);
-	ctx.Components.set('SwitchToggle', Switch);
+		ctx.Components.setOrReplace('TextInput', TextInput);
+		ctx.Components.setOrReplace('Chip', Chip);
+		ctx.Components.setOrReplace('Badge', Badge);
+		ctx.Components.setOrReplace('Dropdown', DropDown);
+		ctx.Components.setOrReplace('DropdownItem', DropdownItem);
+		ctx.Components.setOrReplace('Avatar', Avatar);
+		ctx.Components.setOrReplace('List', List);
+		ctx.Components.setOrReplace('ListItem', ListItem);
+		ctx.Components.setOrReplace('ListHeader', ListHeader);
+		ctx.Components.setOrReplace('ListItemAvatar', ListItemAvatar);
+		ctx.Components.setOrReplace('ListItemIcon', ListItemIcon);
+		ctx.Components.setOrReplace('ListItemText', ListItemText);
+		ctx.Components.setOrReplace('ListItemRightButton', ListItemRightButton);
+		ctx.Components.setOrReplace('Button', Button);
+		ctx.Components.setOrReplace('Card', Card);
+		ctx.Components.setOrReplace('CardHeader', CardHeader);
+		ctx.Components.setOrReplace('CardBody', CardBody);
+		ctx.Components.setOrReplace('CardMedia', CardMedia);
+		ctx.Components.setOrReplace('CardFooter', CardFooter);
+		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
+		ctx.Components.setOrReplace('SwitchToggle', Switch);
+		ctx.Components.setOrReplace('Icon', IconComponent);
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
@@ -84,7 +69,7 @@ class MaterialUiPlugin extends Plugin {
 // 	return result;
 // }
 //         );
-}
+	}
 }
 
 export default MaterialUiPlugin;

@@ -8,8 +8,6 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
 
-BR.boot({renderApp:false});
-
 const Text = BR.Components.get('Text');
 
 const label = text('label as child', <Text>With knobs</Text>);

@@ -1,20 +1,19 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import { DropDown} from '../src/components/DropDown/DropDown';
+import { DropDown } from '../src/components/DropDown';
 
 test('it should show normal dropDown', () => {
-    const Dropdown = create(
+	const Dropdown = create(
         <DropDown  value={'jsbha'}   />
     ).toJSON();
-    expect(Dropdown.props.autoWidth).toEqual(undefined);
-    expect(Dropdown).toMatchSnapshot();
+	expect(Dropdown.props.autoWidth).toEqual(undefined);
+	expect(Dropdown).toMatchSnapshot();
 });
 
 test('with color prop', () => {
-    const Dropdown = create(
+	const Dropdown = create(
         <DropDown  value={'jsbha'}  />
     ).toJSON();
-    console.log('props',Dropdown.props)
-    expect(Dropdown.props.style).toEqual(undefined);
-    expect(Dropdown).toMatchSnapshot();
+	expect(Dropdown.props.style).toEqual(undefined);
+	expect(Dropdown).toMatchSnapshot();
 });

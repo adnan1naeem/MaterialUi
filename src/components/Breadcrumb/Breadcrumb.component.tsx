@@ -1,7 +1,7 @@
-import React from 'react';
-import { withBlueRain, BlueRainType } from '@blueeast/bluerain-os';
+import * as React from 'react';
+import { BlueRainType ,withBlueRain,  } from '@blueeast/bluerain-os';
 import { Link, MemoryRouter } from 'react-router-dom';
-import IBreadcrumb from 'bluerain-ui-interfaces/Components/Breadcrumb';
+import { IBreadcrumb } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of Breadcrumb Component
@@ -38,8 +38,8 @@ const styles = {
 
 const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
 
-	const View = props.bluerain.Components.get('View');
-	const Text = props.bluerain.Components.get('Text');
+	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
+	const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
 	const label = props.label ? props.label : 'Home';
 
 	if (props.data) {
@@ -49,7 +49,8 @@ const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
 		return (
   <View style={styles.root} >{listItems}<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text></View>);
 	}
-	return (<Text style={props.colorPrev ? { color: props.colorActive } : styles.colorActive}>{label}</Text>);
+
+	return (<Text style={props.colorPrev ? { color:  props.colorActive ? props.colorActive : 'black'  } : styles.colorActive}>{label}</Text>);
 
 };
 
