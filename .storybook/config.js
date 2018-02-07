@@ -1,11 +1,9 @@
 import React from 'react';
-import { ApolloProvider } from 'react-apollo';
 import { IntlProvider } from 'react-intl';
 import { initializeRTL } from 'storybook-addon-rtl';
 import BR, { BlueRainProvider } from '@blueeast/bluerain-os';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { configure, setAddon, addDecorator } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
 import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';
