@@ -1,35 +1,20 @@
-import React from 'react';
-import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
-
-import TextInput from './components/TextInput';
-import Chip from './components/Chip';
-import Badge from './components/Badge';
-import Avatar from './components/Avatar';
-import Switch from './components/Switch';
-import { DropDown, DropdownItem } from './components/DropDown';
-import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Button from './components/Button';
-import IconComponent from './components/Icon';
+import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import Avatar from './components/Avatar';
+import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
-import CarouselComponent from './components/Carousel';
-// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import getMuiTheme from 'material-ui/styles/withTheme';
+import Button from './components/Button';
+import Chip from './components/Chip';
+import Carousel from './components/Carousel';
+import { DropDown, DropdownItem } from './components/DropDown';
+import IconComponent from './components/Icon';
+import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
+import Switch from './components/Switch';
+import TextInput from './components/TextInput';
+import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
-// const withMUI = (App, theme, ctx) => (props: { intl: { rtl: string }}) => {
-//
-// 	if (props.intl !== undefined && props.intl.rtl !== undefined) {
-// 		theme.isRtl = props.intl.rtl;
-// 	}
-//
-// 	theme = ctx.Filters.run('material-ui.theme', theme);
-// 	const muiTheme = getMuiTheme(theme);
-//
-// 	const style = { direction: theme.isRtl ? 'rtl' : 'ltr' };
-//
-// 	return (<MuiThemeProvider muiTheme={muiTheme}><App {...props} style={style} /></MuiThemeProvider>);
-// };
+
+
 
 /**
  * Material UI Plugin
@@ -62,7 +47,6 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.setOrReplace('ListItemText', ListItemText);
 		ctx.Components.setOrReplace('ListItemRightButton', ListItemRightButton);
 		ctx.Components.setOrReplace('Button', Button);
-		ctx.Components.setOrReplace('Carousel', CarouselComponent);
 		ctx.Components.setOrReplace('Card', Card);
 		ctx.Components.setOrReplace('CardHeader', CardHeader);
 		ctx.Components.setOrReplace('CardBody', CardBody);
@@ -71,6 +55,8 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
 		ctx.Components.setOrReplace('SwitchToggle', Switch);
 		ctx.Components.setOrReplace('Icon', IconComponent);
+        ctx.Components.setOrReplace('Carousel', Carousel);
+
 
         // Add Material UI Provider
 //         	ctx.Filters.add(

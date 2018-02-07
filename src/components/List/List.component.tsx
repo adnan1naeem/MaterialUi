@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import IList from '@blueeast/bluerain-ui-interfaces/Components/List';
 import { List } from 'material-ui';
+import IList from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of List Component

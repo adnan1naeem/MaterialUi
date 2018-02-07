@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListItemAvatar } from '@blueeast/bluerain-ui-interfaces/Components/List';
+import { IListItemAvatar } from '@blueeast/bluerain-ui-interfaces';
 import Avatar from '../Avatar';
 
 /**

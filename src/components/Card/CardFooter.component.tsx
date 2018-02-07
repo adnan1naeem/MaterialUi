@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { CardActions } from 'material-ui/Card';
-import { ICardFooter } from '@blueeast/bluerain-ui-interfaces/Components/Card';
+import { ICardFooter } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardFooter Component

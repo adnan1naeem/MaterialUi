@@ -1,6 +1,9 @@
-import { IChip } from '@blueeast/bluerain-ui-interfaces/Components/Chip';
+/**
+ * Created by Ghazal Taimur on 12/29/17.
+ */
+import * as React from 'react';
+import { IChip } from '@blueeast/bluerain-ui-interfaces';
 import ChipUi from 'material-ui/Chip';
-import React from 'react';
 
 /**
  * The universal props of Chip Component

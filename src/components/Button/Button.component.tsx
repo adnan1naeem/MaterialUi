@@ -1,6 +1,11 @@
+/**
+ * Created by M.GhazanfarAli on 12/27/17.
+ */
+
+import * as React from 'react';
 import Button from 'material-ui/Button';
-import IButton from '@blueeast/bluerain-ui-interfaces/Components/Button';
-import React from 'react';
+import { IButton } from '@blueeast/bluerain-ui-interfaces';
+
 
 const BlueRainButton = (props: IButton) => {
 	const widthFull = { ...props.style, width:'100%' };

@@ -1,6 +1,10 @@
+/**
+ * Created by M.GhazanfarAli on 01/04/18.
+ */
+
+import * as React from 'react';
 import { CardMedia } from 'material-ui/Card';
-import { ICardMedia } from '@blueeast/bluerain-ui-interfaces/Components/Card';
-import React from 'react';
+import { ICardMedia } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardMedia Component

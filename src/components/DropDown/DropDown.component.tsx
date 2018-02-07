@@ -1,7 +1,8 @@
-import React,{ReactNode} from 'react';
-import Select from 'material-ui/Select';
+import React,{ ReactNode } from 'react';
+import  { IPicker } from '@blueeast/bluerain-ui-interfaces';
 import { MenuItem } from 'material-ui/Menu';
-import  {IPicker} from '@blueeast/bluerain-ui-interfaces/Components/Picker';
+import Select from 'material-ui/Select';
+
 /**
  * The props of DropDown Component
  * @param {boolean} props.autoWidth for Auto width.
@@ -17,9 +18,9 @@ import  {IPicker} from '@blueeast/bluerain-ui-interfaces/Components/Picker';
  * @param {boolean} props.disabled disables the selection.
  */
 export interface IMaterialuiDropDown {
-    autoWidth?:boolean,
-    classes?:object,
-    displayEmpty?:boolean,
+	autoWidth?:boolean,
+	classes?:object,
+	displayEmpty?:boolean,
 	input?:ReactNode,
 	MenuProps?:object,
 	native?:boolean,

@@ -1,4 +1,4 @@
-import Card, { CardBody, CardFooter, CardHeader, CardMedia } from '../Card';
+import Card, { CardBody, CardFooter, CardHeader, CardMedia } from '../../Card';
 import { array, boolean, number, object, text, withKnobs } from '@storybook/addon-knobs';
 
 import { action } from '@storybook/addon-actions';
@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
 import BR from '@blueeast/bluerain-os';
 import Button from 'material-ui/Button';
-import CarouselComponent from './carousel';
+import CarouselComponent from '../carousel';
 import IconButton from 'material-ui/IconButton';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
 import React from 'react';
