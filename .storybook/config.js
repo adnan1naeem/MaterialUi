@@ -7,7 +7,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
-import client from '../dev/client';
 import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';
 import urLocaleData from 'react-intl/locale-data/ur';
@@ -55,14 +54,12 @@ const BluerainApp = BR.boot({platform: [require('@blueeast/bluerain-platform-rea
 
 addDecorator(story => (
   <IntlProvider locale={navigator.language}>
-      <ApolloProvider client={client}>
-          <BlueRainProvider>
-        <MuiThemeProvider>
+	  <BlueRainProvider>
+		  <MuiThemeProvider>
           {story()}
         </MuiThemeProvider>
-          </BlueRainProvider>
-      </ApolloProvider>
-    </IntlProvider>
+	  </BlueRainProvider>
+  </IntlProvider>
 ));
 
 addDecorator(withKnobs);
