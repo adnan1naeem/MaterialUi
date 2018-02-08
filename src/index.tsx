@@ -5,6 +5,7 @@ import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import Button from './components/Button';
 import Chip from './components/Chip';
+import Carousel from './components/Carousel';
 import { DropDown, DropdownItem } from './components/DropDown';
 import IconComponent from './components/Icon';
 import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
@@ -54,6 +55,8 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
 		ctx.Components.setOrReplace('SwitchToggle', Switch);
 		ctx.Components.setOrReplace('Icon', IconComponent);
+        ctx.Components.setOrReplace('Carousel', Carousel);
+
 
         // Add Material UI Provider
 //         	ctx.Filters.add(
