@@ -1,26 +1,27 @@
 import * as React from 'react';
-import { DividerProps } from '@blueeast/bluerain-ui-interfaces';
+import { DividerProp } from '@blueeast/bluerain-ui-interfaces';
 import Divider from 'material-ui/Divider';
 
 
 /**
- * The universal props of Badge Component
- * @param {Object} props.style Get the style object.
- * @param {ReactNode} props.badgeContent Content of the Badge.
- *  The specific libraray props of Badge Component
- * @param {enum} props.color The enum color of Badge.
- * @param {ReactNode} props.children the children on which the badge will append styles.
+ * The universal props of Divider Component
+ * @param {ReactNode} props.light If true, Divider is generated with light color.
+ *  The specific libraray props of Divider Component
+ * @param {ReactNode} props.component component to generate Divider with.
+ * @param {ReactNode} props.inset if true, Divider is generated indented.
  */
 
-// export interface IBadgeProps {
-// 	color?: 'default' | 'primary' | 'accent';
-// 	children?: Node;
-// }
-class BlueRainDivider extends React.Component<DividerProps, {}> {
-	render() {
-		return (<Divider badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color} />);
-	}
-
+export interface MUIProps {
+	component?: React.ReactNode;
+	inset?: boolean;
+	absolute?: boolean;
+	classes?: {};
 }
+const BlueRainDivider = (props: DividerProp & MUIProps) => {
+	return (
+        <Divider {...props} />
+	);
+
+};
 
 export default BlueRainDivider;
