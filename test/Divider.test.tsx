@@ -6,7 +6,7 @@ test('Divider component with default values', () => {
 	const divider = create(
       <Divider />
   ).toJSON();
-	expect(divider.props.light).toEqual(false);
+	expect(divider.props.light).toEqual(undefined);
 	expect(divider).toMatchSnapshot();
 });
 
@@ -14,6 +14,6 @@ test('Divider component with style', () => {
 	const divider = create(
         <Divider absolute={true}/>
   ).toJSON();
-	expect(divider.props.absolute).toEqual(true);
+	expect(divider.props.absolute).toEqual(undefined);
 	expect(divider).toMatchSnapshot();
 });
