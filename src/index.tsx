@@ -1,17 +1,18 @@
 import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import Button from './components/Button';
 import Chip from './components/Chip';
 import Carousel from './components/Carousel';
+import Divider from './components/Divider';
 import { DropDown, DropdownItem } from './components/DropDown';
 import IconComponent from './components/Icon';
 import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
 import Switch from './components/Switch';
 import TextInput from './components/TextInput';
-import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
 
 
@@ -55,7 +56,8 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
 		ctx.Components.setOrReplace('SwitchToggle', Switch);
 		ctx.Components.setOrReplace('Icon', IconComponent);
-        ctx.Components.setOrReplace('Carousel', Carousel);
+		ctx.Components.setOrReplace('Carousel', Carousel);
+		ctx.Components.setOrReplace('Divider', Divider);
 
 
         // Add Material UI Provider
