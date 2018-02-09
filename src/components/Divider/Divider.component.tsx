@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { IBadge } from '@blueeast/bluerain-ui-interfaces';
-import BadgeUi from 'material-ui/Badge';
+import { DividerProps } from '@blueeast/bluerain-ui-interfaces';
+import Divider from 'material-ui/Divider';
 
 
 /**
@@ -12,15 +12,15 @@ import BadgeUi from 'material-ui/Badge';
  * @param {ReactNode} props.children the children on which the badge will append styles.
  */
 
-export interface IBadgeProps {
-	color?: 'default' | 'primary' | 'accent';
-	children?: Node;
-}
-class Badge extends React.Component<IBadge & IBadgeProps, {}> {
+// export interface IBadgeProps {
+// 	color?: 'default' | 'primary' | 'accent';
+// 	children?: Node;
+// }
+class BlueRainDivider extends React.Component<DividerProps, {}> {
 	render() {
-		return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
+		return (<Divider badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color} />);
 	}
 
 }
 
-export default Badge;
+export default BlueRainDivider;

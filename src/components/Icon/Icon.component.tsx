@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Icon } from 'react-fa';
+import { IconProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of Icon
@@ -9,15 +10,13 @@ import { Icon } from 'react-fa';
  * Now, fonts have no border-color property, but you can simulate it using text-shadow
  */
 
-export interface IconProps {
-	name?: string;
-	color?: string;
-	size?: string;
+export interface MUIIconProps {
 	borderColor?: string;
 }
+
 let iconName;
 let iconColor;
-const IconComponent = (props: IconProps) => {
+const IconComponent = (props: IconProp & MUIIconProps) => {
 	const {
     name,
     size,

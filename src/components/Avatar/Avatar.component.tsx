@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { BlueRainType, withBlueRain } from '@blueeast/bluerain-os';
+import { AvatarProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The universal props of Avatar Component
@@ -8,12 +9,6 @@ import { BlueRainType, withBlueRain } from '@blueeast/bluerain-os';
  * @param {Node} props.children children of Avatar.
  */
 
-export interface IAvatar {
-	children?: React.ReactNode;
-	size?: number,
-	src?: string,
-	style?: {},
-}
 /**
  * The universal props of Avatar Component
  * @param {Object} props.style Get the style object.
@@ -27,7 +22,7 @@ export interface IAvatar {
  * @param {string} props.sizes The sizes of image.
  */
 
-export interface IAvatarProps {
+export interface AvatarMUIProps {
 	alt?: string,
 	children?: React.ReactNode;
 	classes?: {},
@@ -38,7 +33,7 @@ export interface IAvatarProps {
 	style?: {},
 	bluerain?: BlueRainType,
 }
-const BlueRainAvatar = (props: IAvatar & IAvatarProps) => {
+const BlueRainAvatar = (props: AvatarProp & AvatarMUIProps) => {
 	const size = props.size? props.size: 70;
 	const avatarStyle = [{ width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size }, { ...props.style }];
 	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';

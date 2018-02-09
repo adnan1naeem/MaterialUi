@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { CardHeader } from 'material-ui/Card';
-import { ICardHeader } from '@blueeast/bluerain-ui-interfaces';
+import { CardHeaderProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardHeader Component
@@ -23,14 +23,14 @@ import { ICardHeader } from '@blueeast/bluerain-ui-interfaces';
   * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
-export interface IMUIProps {
+export interface MUIProps {
 	action?: React.ReactNode,
 	avatar?: React.ReactNode,
 	classes?: {},
 	subheader?: React.ReactNode,
 }
 
-const BlueRainCardHeader = (props: ICardHeader & IMUIProps) => {
+const BlueRainCardHeader = (props: CardHeaderProp & MUIProps) => {
 	return (
         <CardHeader
             style={props.style}

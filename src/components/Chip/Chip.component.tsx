@@ -2,7 +2,7 @@
  * Created by Ghazal Taimur on 12/29/17.
  */
 import * as React from 'react';
-import { IChip } from '@blueeast/bluerain-ui-interfaces';
+import { ChipProp } from '@blueeast/bluerain-ui-interfaces';
 import ChipUi from 'material-ui/Chip';
 
 /**
@@ -15,12 +15,12 @@ import ChipUi from 'material-ui/Chip';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
-export interface IChipProps {
+export interface MUIChipProps {
 	label?: string;
 	onClick?: () => void;
 	onDelete?: () => void;
 	deleteIcon?: any;
 }
-const Chip = (props: IChip & IChipProps) =>
+const Chip = (props: ChipProp & MUIChipProps) =>
     (<ChipUi classes={{ ...props.style }} label={props.children} {...props}></ChipUi>);
 export default Chip;

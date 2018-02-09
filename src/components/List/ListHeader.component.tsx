@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListHeader } from '@blueeast/bluerain-ui-interfaces';
+import { ListHeaderProp } from '@blueeast/bluerain-ui-interfaces';
 import { ListSubheader } from 'material-ui';
 
 /**
@@ -13,7 +13,7 @@ import { ListSubheader } from 'material-ui';
  */
 
 
-const ListHeader = (props: IListHeader) => {
+const ListHeader = (props: ListHeaderProp) => {
 	return (
         <ListSubheader
             {...props}

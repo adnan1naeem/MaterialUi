@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IBadge } from '@blueeast/bluerain-ui-interfaces';
+import { BadgeProp } from '@blueeast/bluerain-ui-interfaces';
 import BadgeUi from 'material-ui/Badge';
 
 
@@ -12,11 +12,11 @@ import BadgeUi from 'material-ui/Badge';
  * @param {ReactNode} props.children the children on which the badge will append styles.
  */
 
-export interface IBadgeProps {
+export interface BadgeProps {
 	color?: 'default' | 'primary' | 'accent';
 	children?: Node;
 }
-class Badge extends React.Component<IBadge & IBadgeProps, {}> {
+class Badge extends React.Component<BadgeProp & BadgeProps, {}> {
 	render() {
 		return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
 	}

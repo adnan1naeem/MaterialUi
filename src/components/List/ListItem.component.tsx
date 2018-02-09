@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { IListItem } from '@blueeast/bluerain-ui-interfaces';
 import { ListItem } from 'material-ui';
+import { ListItemProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItem Component
@@ -22,24 +22,24 @@ import { ListItem } from 'material-ui';
   * @param {func} props.onClick If button/active, function to be called back when clicked.
   */
 
-  export interface IBSProps {
-    className?: string,
-    button?: boolean,
-    component?: string,
-    href?: string,
-    onClick?: ()=> void,
-    disabled?: boolean,
-    }
+export interface MUIProps {
+	className?: string,
+	button?: boolean,
+	component?: string,
+	href?: string,
+	onClick?: ()=> void,
+	disabled?: boolean,
+}
 
-const BlueRainListItem = (props: IListItem & IBSProps) => {
-    return (
+const BlueRainListItem = (props: ListItemProp & MUIProps) => {
+	return (
         <ListItem
             button={props.active}
             {...props}
         >
         {props.children}
         </ListItem>
-    );
+	);
 };
 
 export default BlueRainListItem;

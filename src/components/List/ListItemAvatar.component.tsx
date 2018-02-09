@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListItemAvatar } from '@blueeast/bluerain-ui-interfaces';
+import { ListItemAvatarProp } from '@blueeast/bluerain-ui-interfaces';
 import Avatar from '../Avatar';
 
 /**
@@ -13,11 +13,11 @@ import Avatar from '../Avatar';
  * @param {string} props.className className for styling component with css.
  * @param {string} props.src src of the image.
  */
-export interface IMUIProps {
+export interface MUIProps {
 	children?: any,
 }
 
-const BlueRainListItemAvatar = (props: IListItemAvatar & IMUIProps) => {
+const BlueRainListItemAvatar = (props: ListItemAvatarProp & MUIProps) => {
 	return (
         <Avatar {...props} size={props.size}>{props.children}</Avatar>
 	);

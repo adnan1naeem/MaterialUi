@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import { IListItemIcon } from '@blueeast/bluerain-ui-interfaces';
 import { ListItemIcon } from 'material-ui';
+import { ListItemIconProp } from '@blueeast/bluerain-ui-interfaces';
 
 
 /**
@@ -13,7 +13,7 @@ import { ListItemIcon } from 'material-ui';
  * @param {Node} props.children children of ListItemIcon.
  */
 
-const BlueRainListItemIcon = (props: IListItemIcon) => {
+const BlueRainListItemIcon = (props: ListItemIconProp) => {
 	return (
         <ListItemIcon
             {...props}

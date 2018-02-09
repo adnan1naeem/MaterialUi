@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Divider from '../../Divider';
-import { storiesOf } from '@storybook/react';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import Divider from '../../Divider';
 const stories = storiesOf('Badge', module);
 stories.add('Divider (with knobs)', () => {
 	const content = text('content', 'abc');
