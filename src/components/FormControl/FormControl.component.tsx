@@ -1,10 +1,10 @@
 /**
- * Created by M.GhazanfarAli on 13/03/18.
+ * Created by M.GhazanfarAli on 13/02/18.
  */
 
 import * as React from 'react';
+import { FormControl } from 'material-ui/Form';
 import { FormControlProp } from '@blueeast/bluerain-ui-interfaces';
-import { Form } from 'reactstrap';
 
 /**
  * The props of FormControl Component
@@ -14,17 +14,21 @@ import { Form } from 'reactstrap';
  * @param {Object} props.className className for FormControl's extended style.
  */
 
-export interface BSProps {
-    inline?: boolean,
-    innerRef?: React.ReactNode,
-    cssModule?: {},
+export interface MUIProps {
+	classes?: {},
+	disabled?: boolean,
+	error?: boolean,
+	fullWidth?: boolean,
+	margin?: 'none' | 'dense' | 'normal',
+	required?: boolean,
+	component?: string,
 
 }
-const FormControl = (props: FormControlProp & BSProps) => {
-    return (
-        <Form {...props} />
-    );
+const BlueRainFormControl = (props: FormControlProp & MUIProps) => {
+	return (
+        <FormControl {...props} />
+	);
 
 };
 
-export default FormControl;
+export default BlueRainFormControl;

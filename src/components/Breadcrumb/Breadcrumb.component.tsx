@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BlueRainType ,withBlueRain,  } from '@blueeast/bluerain-os';
+import { BlueRain, withBlueRain } from '@blueeast/bluerain-os';
 import { Link, MemoryRouter } from 'react-router-dom';
 import { BreadcrumbProp } from '@blueeast/bluerain-ui-interfaces';
 
@@ -12,7 +12,7 @@ import { BreadcrumbProp } from '@blueeast/bluerain-ui-interfaces';
  */
 
 export interface MUIProps {
-	bluerain?: BlueRainType,
+	bluerain?: BlueRain,
 }
 
 const styles = {

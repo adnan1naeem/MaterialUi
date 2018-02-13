@@ -31,7 +31,8 @@ export interface MaterialTextInput {
 	rows?: string,
 	helperText?: ReactNode,
 	InputLabelProps?: object,
-	fullWidth?: boolean
+	fullWidth?: boolean,
+	errorText?: ReactNode,
 }
 
 const BlueRainTextInput = (props: TextInputProp & MaterialTextInput) => {
