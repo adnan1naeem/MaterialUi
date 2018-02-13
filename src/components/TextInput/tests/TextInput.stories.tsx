@@ -21,8 +21,8 @@ storiesOf('TextInput', module).add('with id, label, className, onChange, margin'
 storiesOf('TextInput', module).add('with required',
     () =>  <TextInput required={true} id="required" label="Required" defaultValue="Hello World" className={textFieldClasses} margin="normal" />) ;
 
-storiesOf('TextInput', module).add('with error',
-    () =>  <TextInput error={true} id="error" label="Error" defaultValue="Hello World" className={textFieldClasses} margin="normal" />);
+storiesOf('TextInput', module).add('with error true and errorText props',
+    () =>  <TextInput error={true} id="error" label="Error" defaultValue="Hello World" className={textFieldClasses} margin="normal" errorText={'Oh Noes, Error!!!'}/>);
 
 storiesOf('TextInput', module).add('with type password',
     () =>  <TextInput id="password" label="Password" className={textFieldClasses} type="password" autoComplete="current-password" margin="normal" />);

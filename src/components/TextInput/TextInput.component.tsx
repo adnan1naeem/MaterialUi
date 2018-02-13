@@ -41,13 +41,14 @@ const BlueRainTextInput = (props: TextInputProp & MaterialTextInput) => {
 	}
 	return (
         <TextField
-            style={props.style}
-            placeholder={props.placeholder}
-            autoFocus={props.autoFocus}
-            onChange={props.onChange}
-            rows={props.numberOfLines}
-            disabled={disabled}
-            {...props}
+			style={props.style}
+			placeholder={props.placeholder}
+			autoFocus={props.autoFocus}
+			onChange={props.onChange}
+			rows={props.numberOfLines}
+			disabled={disabled}
+			helperText={props.errorText}
+			{...props}
         />
 	);
 };
