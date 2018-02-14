@@ -12,9 +12,6 @@ import Switch from './components/Switch';
 import TextInput from './components/TextInput';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
-
-
-
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -25,51 +22,54 @@ class MaterialUiPlugin extends Plugin {
 	static pluginName = 'MaterialUiPlugin';
 	static slug = 'material-ui';
 
-	static initialize(config:any = {}, ctx:BlueRainType) {
+	static components = {
+		'TextInput': TextInput,
+		'Chip': Chip,
+		'Badge': Badge,
+		'Dropdown': DropDown,
+		'DropdownItem': DropdownItem,
+		'Avatar': Avatar,
+		'List': List,
+		'ListItem': ListItem,
+		'ListHeader': ListHeader,
+		'ListItemAvatar': ListItemAvatar,
+		'ListItemIcon': ListItemIcon,
+		'ListItemText': ListItemText,
+		'ListItemRightButton': ListItemRightButton,
+		'Button': Button,
+		'Card': Card,
+		'CardHeader': CardHeader,
+		'CardBody': CardBody,
+		'CardMedia': CardMedia,
+		'CardFooter': CardFooter,
+		'Breadcrumb': Breadcrumb,
+		'SwitchToggle': Switch,
+		'Switch': Switch,
+		'Icon': IconComponent,
+	};
+	
+// 	static initialize(config:any = {}, ctx:BlueRainType) {
 
-		let theme = ctx.Configs.get('theme');
-		if (!theme) {
-			theme = {};
-		}
+// 		let theme = ctx.Configs.get('theme');
+// 		if (!theme) {
+// 			theme = {};
+// 		}
 
-		ctx.Components.setOrReplace('TextInput', TextInput);
-		ctx.Components.setOrReplace('Chip', Chip);
-		ctx.Components.setOrReplace('Badge', Badge);
-		ctx.Components.setOrReplace('Dropdown', DropDown);
-		ctx.Components.setOrReplace('DropdownItem', DropdownItem);
-		ctx.Components.setOrReplace('Avatar', Avatar);
-		ctx.Components.setOrReplace('List', List);
-		ctx.Components.setOrReplace('ListItem', ListItem);
-		ctx.Components.setOrReplace('ListHeader', ListHeader);
-		ctx.Components.setOrReplace('ListItemAvatar', ListItemAvatar);
-		ctx.Components.setOrReplace('ListItemIcon', ListItemIcon);
-		ctx.Components.setOrReplace('ListItemText', ListItemText);
-		ctx.Components.setOrReplace('ListItemRightButton', ListItemRightButton);
-		ctx.Components.setOrReplace('Button', Button);
-		ctx.Components.setOrReplace('Card', Card);
-		ctx.Components.setOrReplace('CardHeader', CardHeader);
-		ctx.Components.setOrReplace('CardBody', CardBody);
-		ctx.Components.setOrReplace('CardMedia', CardMedia);
-		ctx.Components.setOrReplace('CardFooter', CardFooter);
-		ctx.Components.setOrReplace('Breadcrumb', Breadcrumb);
-		ctx.Components.setOrReplace('SwitchToggle', Switch);
-		ctx.Components.setOrReplace('Icon', IconComponent);
-
-        // Add Material UI Provider
-//         	ctx.Filters.add(
-//           'bluerain.redux.app',
-//       function AddMUI(App) {
-//
-// 	// const result = withMUI(App, theme, ctx);
-//
-// 							// Wrap in Intl, if intl plugin is installed
-// 	if (ctx.Plugins.get('intl')) {
-// 		return ctx.Plugins.get('intl').withIntl(result);
+//         // Add Material UI Provider
+// //         	ctx.Filters.add(
+// //           'bluerain.redux.app',
+// //       function AddMUI(App) {
+// //
+// // 	// const result = withMUI(App, theme, ctx);
+// //
+// // 							// Wrap in Intl, if intl plugin is installed
+// // 	if (ctx.Plugins.get('intl')) {
+// // 		return ctx.Plugins.get('intl').withIntl(result);
+// // 	}
+// // 	return result;
+// // }
+// //         );
 // 	}
-// 	return result;
-// }
-//         );
-	}
 }
 
 export default MaterialUiPlugin;
