@@ -135,7 +135,7 @@
   },
   "dependencies": {
     "enzyme": "^3.1.1",
-    "@blueeast/bluerain-ui-interfaces": "^2.0.2",
+    "@blueeast/bluerain-ui-interfaces": "https://github.com/BlueEastCode/bluerain-ui-interfaces#feature/AppBar",
     "apollo-client": "^1.0.4",
     "file-loader": "^1.1.6",
     "graphql-relay": "0.4.4",
