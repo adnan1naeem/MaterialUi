@@ -21,7 +21,7 @@ const Text = BR.Components.get('Text');
 // (
 // <Button
 //     color={color}
-//     onClick={action('I was clicked with knobs')}
+//     onPress={action('I was clicked with knobs')}
 //     disabled={disabled}
 //     fullWidth={fullWidth}
 //     fab={fab}
@@ -33,13 +33,13 @@ storiesOf('Button', module).add('Default Button without Text tag in Child', () =
 
 storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{ backgroundColor:'purple', borderColor:'purple' }} >Custom Purple</Button>);
 
-storiesOf('Button', module).add('Inherit button with onClick prop', () => <Button color="inherit" onClick={() => {console.log('I was clicked');}} >onClick</Button>);
+storiesOf('Button', module).add('Inherit button with onPress prop', () => <Button color="inherit" onPress={() => {console.log('I was pressed');}} >onPress</Button>);
 
 storiesOf('Button', module).add('Contrast button with disabled prop true', () => <Button color="contrast" disabled >Disabled</Button>);
 
 storiesOf('Button', module).add('Accent button with href prop', () => <Button color="accent" href="https://www.facebook.com" >href</Button>);
 
-storiesOf('Button', module).add('Primary button with onClick prop', () => <Button color="primary" fullWidth>FullWidth</Button>);
+storiesOf('Button', module).add('Primary button with onPress prop', () => <Button color="primary" fullWidth>FullWidth</Button>);
 
 storiesOf('Button', module).add('Contrast button with active prop true', () => <Button color="contrast" active>Active</Button>);
 
