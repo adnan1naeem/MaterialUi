@@ -5,7 +5,7 @@
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | style | Object |  | Get the style object |
-| color | 'inherit' | 'primary' | 'accent' | 'default' | undefined | | Background color for AppBar. |
+| color | 'inherit', 'primary', 'accent', 'default', undefined | | Background color for AppBar. |
 | children | Node | | Children of AppBar. |
 | position | 'static' | 'fixed' | 'absolute' | undefined | | position of AppBar. |
 | className | string | | className props to extend styles through CSS for AppBar. |
