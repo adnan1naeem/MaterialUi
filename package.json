@@ -14,6 +14,11 @@
     "type": "git",
     "url": "https://github.com/BlueEastCode/bluerain-plugin-material-ui.git"
   },
+  "release": {
+    "branch": "master",
+    "dryRun": false,
+    "debug": true
+  },
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
