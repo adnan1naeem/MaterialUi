@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
+import AppBar from './components/AppBar';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
@@ -58,6 +59,7 @@ class MaterialUiPlugin extends Plugin {
 		ctx.Components.setOrReplace('Icon', IconComponent);
 		ctx.Components.setOrReplace('Carousel', Carousel);
 		ctx.Components.setOrReplace('Divider', Divider);
+		ctx.Components.setOrReplace('AppBar', AppBar);
 
 
         // Add Material UI Provider

@@ -1,22 +1,14 @@
-# Avatar
+# AppBar
 
 ## Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | style | Object |  | Get the style object |
-| src | string | | src of image. |
-| children | Node | | Children of avatar. |
-
-## Specific Library Props
-
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| alt | string |  | string to be shown if image was not rendered due to any error. |
-| classes | object | | classes prop to override styling. |
-| component | string or function | 'div' | Component with which the avatar will be rendered |
-| imgProps | Object |  | Props of image tag. |
-| sizes | string | | sizes of image. |
+| color | 'inherit' | 'primary' | 'accent' | 'default' | undefined | | Background color for AppBar. |
+| children | Node | | Children of AppBar. |
+| position | 'static' | 'fixed' | 'absolute' | undefined | | position of AppBar. |
+| className | string | | className props to extend styles through CSS for AppBar. |
 
 ## How to use
 
@@ -24,17 +16,27 @@
 import React from 'react';
 import { withBluerain } from '@blueeast/bluerain-os';
 
-const Avatar = (props) => (
+const AppBar = (props) => (
     const BR = props.bluerain;
-    const Avatar = BR.Components.get('Avatar');
-    return <Avatar alt="Remy Sharp" src="https://material-ui-next.com/static/images/remy.jpg" style={{height:35, width:35}} />;
+    const AppBar = BR.Components.get('AppBar');
+    const Button = BR.Components.get('Button');
+    const Text = BR.Components.get('Text');
+    return(<AppBar position="static" color="default">
+          <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }}>
+            <AssignmentIcon />
+          </Button>
+          <Text style={{ display:'flex', flex: 1 }}>
+            Title
+            </Text>
+          <Button color="default">Login</Button>
+      </AppBar>);
 
-export default withBluerain(Avatar);
+export default withBluerain(AppBar);
 ```
 
 ## Storybook
 
-- 1st story of the Avatar component in avatar.stories.tsx file is written for Avatar with Knobs.
+- All stories of the AppBar component in AppBar.stories.tsx file show variants of AppBar.
 
 ## Tests
 
