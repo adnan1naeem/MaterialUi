@@ -58,7 +58,6 @@ class MaterialUiPlugin extends Plugin {
 		'Divider': Divider
 	};
 
-
 // 		let theme = ctx.Configs.get('theme');
 // 		if (!theme) {
 // 			theme = {};
