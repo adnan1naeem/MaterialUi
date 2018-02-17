@@ -9,6 +9,7 @@ import Breadcrumb from './components/Breadcrumb';
 import Button from './components/Button';
 import Chip from './components/Chip';
 import Carousel from './components/Carousel';
+import Divider from './components/Divider';
 import DropDown, { DropdownItem } from './components/DropDown';
 import { MUIDropDownItem } from './components/DropDown/DropdownItem';
 import { MUIIconProps } from './components/Icon/Icon.component';
@@ -54,7 +55,8 @@ class MaterialUiPlugin extends Plugin {
 		'Switch': Switch,
 		'Icon': IconComponent,
 		'FormControl': FormControl,
-		'FormGroup': FormGroup
+		'FormGroup': FormGroup,
+		'Divider': Divider
 		
 	};
 
