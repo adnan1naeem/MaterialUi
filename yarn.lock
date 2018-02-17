@@ -247,21 +247,15 @@
     react "^16.2.0"
     react-redux "^5.0.6"
 
-"@blueeast/bluerain-ui-interfaces@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-1.0.4.tgz#3a6f80a3e27dbf436d27a7fcbeb5068c7b4063a8"
+"@blueeast/bluerain-ui-interfaces@2.0.4", "@blueeast/bluerain-ui-interfaces@^2.0.2":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-2.0.4.tgz#972f82916245360f23ea1b41f857a1ebf1dbe210"
   dependencies:
     react "^16.2.0"
 
 "@blueeast/bluerain-ui-interfaces@^1.0.2":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-1.0.5.tgz#98c26a168062799e8a8d5d2b9e4ad5eebcf144a5"
-  dependencies:
-    react "^16.2.0"
-
-"@blueeast/bluerain-ui-interfaces@^2.0.2":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-2.0.4.tgz#972f82916245360f23ea1b41f857a1ebf1dbe210"
   dependencies:
     react "^16.2.0"
 
