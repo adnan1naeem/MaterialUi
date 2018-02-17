@@ -51,13 +51,11 @@ class MaterialUiPlugin extends Plugin {
 		'CardFooter': CardFooter,
 		'Carousel': Carousel,
 		'Breadcrumb': Breadcrumb,
-		'SwitchToggle': Switch,
 		'Switch': Switch,
 		'Icon': IconComponent,
 		'FormControl': FormControl,
 		'FormGroup': FormGroup,
 		'Divider': Divider
-		
 	};
 
 
