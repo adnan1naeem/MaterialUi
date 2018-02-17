@@ -52,7 +52,9 @@ class MaterialUiPlugin extends Plugin {
 		'Breadcrumb': Breadcrumb,
 		'SwitchToggle': Switch,
 		'Switch': Switch,
-		'Icon': IconComponent
+		'Icon': IconComponent,
+		'FormControl': FormControl,
+		'FormGroup': FormGroup
 		
 	};
 
