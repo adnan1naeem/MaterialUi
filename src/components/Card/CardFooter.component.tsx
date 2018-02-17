@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { CardActions } from 'material-ui/Card';
-import { ICardFooter } from '@blueeast/bluerain-ui-interfaces';
+import { CardFooterProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardFooter Component
@@ -19,12 +19,12 @@ import { ICardFooter } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.classes Useful to extend style for the component.
  */
 
-export interface IMUIProps {
+export interface MUIProps {
 	classes?: {},
 	disableActionSpacing?: boolean,
 }
 
-const BlueRainCardFooter = (props: ICardFooter & IMUIProps) => {
+const BlueRainCardFooter = (props: CardFooterProp & MUIProps) => {
 	return (
         <CardActions
             {...props}

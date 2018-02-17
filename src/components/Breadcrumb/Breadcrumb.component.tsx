@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { BlueRainType ,withBlueRain,  } from '@blueeast/bluerain-os';
+import { BlueRain, withBlueRain } from '@blueeast/bluerain-os';
 import { Link, MemoryRouter } from 'react-router-dom';
-import { IBreadcrumb } from '@blueeast/bluerain-ui-interfaces';
+import { BreadcrumbProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of Breadcrumb Component
@@ -11,8 +11,8 @@ import { IBreadcrumb } from '@blueeast/bluerain-ui-interfaces';
  * @param {string} props.colorPrev The color of the previous page(s)'s label(s)
  */
 
-export interface IMUIProps {
-	bluerain?: BlueRainType,
+export interface MUIProps {
+	bluerain?: BlueRain,
 }
 
 const styles = {
@@ -36,7 +36,7 @@ const styles = {
 	},
 };
 
-const Breadcrumb = (props: IBreadcrumb & IMUIProps) => {
+const Breadcrumb = (props: BreadcrumbProp & MUIProps) => {
 
 	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
 	const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';

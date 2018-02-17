@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { ICard } from '@blueeast/bluerain-ui-interfaces';
+import { CardProp } from '@blueeast/bluerain-ui-interfaces';
 import Card from 'material-ui/Card';
 
 /**
@@ -21,12 +21,12 @@ import Card from 'material-ui/Card';
   * @param {boolean} props.square If true, rounded corners are degenerated.
   */
 
-export interface IMUIProps {
+export interface MUIProps {
 	elevation?: number,
 	square?: boolean,
 }
 
-const BlueRainCard = (props: ICard & IMUIProps) => {
+const BlueRainCard = (props: CardProp & MUIProps) => {
 	return (
         <Card
             {...props}

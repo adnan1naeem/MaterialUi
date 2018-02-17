@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import { DropDown } from '../src/components/DropDown';
+import DropDown from '../src/components/DropDown';
 
 test('it should show normal dropDown', () => {
 	const Dropdown = create(
