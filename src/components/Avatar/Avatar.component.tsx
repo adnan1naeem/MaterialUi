@@ -1,13 +1,6 @@
 import * as React from 'react';
-import { BlueRainType, withBlueRain } from '@blueeast/bluerain-os';
+import { BlueRain, withBlueRain } from '@blueeast/bluerain-os';
 import { AvatarProp } from '@blueeast/bluerain-ui-interfaces';
-
-/**
- * The universal props of Avatar Component
- * @param {Object} props.style Get the style object.
- * @param {string} props.src src for Avatar.
- * @param {Node} props.children children of Avatar.
- */
 
 /**
  * The universal props of Avatar Component
@@ -31,7 +24,7 @@ export interface AvatarMUIProps {
 	sizes?: string,
 	src?: string,
 	style?: {},
-	bluerain?: BlueRainType,
+	bluerain?: BlueRain,
 }
 const BlueRainAvatar = (props: AvatarProp & AvatarMUIProps) => {
 	const size = props.size? props.size: 70;

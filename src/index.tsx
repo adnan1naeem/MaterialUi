@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import { FormControl, FormGroup } from './components/FormControl';
 import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 import AppBar from './components/AppBar';
 import Avatar from './components/Avatar';
@@ -54,6 +55,7 @@ class MaterialUiPlugin extends Plugin {
 		'Icon': IconComponent
 		
 	};
+
 
 // 		let theme = ctx.Configs.get('theme');
 // 		if (!theme) {

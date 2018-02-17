@@ -19,7 +19,7 @@ const BlueRainButton = (props: ButtonProp) => {
             href={props.href}
             fab={props.fab}
             mini={props.small}
-            onClick={props.onClick}
+            onClick={props.onPress}
             dense={props.small}
         >
         {props.iconLeft} {props.children}
@@ -36,7 +36,7 @@ const BlueRainButton = (props: ButtonProp) => {
                 href={props.href}
                 fab={props.fab}
                 mini={props.small}
-                onClick={props.onClick}
+                onClick={props.onPress}
                 dense={props.small}
             >
             {props.children} {props.iconRight}
@@ -52,7 +52,7 @@ const BlueRainButton = (props: ButtonProp) => {
             href={props.href}
             fab={props.fab}
             mini={props.small}
-            onClick={props.onClick}
+            onClick={props.onPress}
             dense={props.small}
         >
         {props.children}
