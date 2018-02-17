@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { IListItemRightButton } from '@blueeast/bluerain-ui-interfaces';
+import { ListItemRightButtonProp } from '@blueeast/bluerain-ui-interfaces';
 import { ListItemSecondaryAction } from 'material-ui';
 /**
  * The props of ListItemRightButton Component
@@ -11,7 +11,7 @@ import { ListItemSecondaryAction } from 'material-ui';
  * @param {Node} props.children children of ListItemRightButton (expects a Button).
  */
 
-const ListItemRightButton = (props: IListItemRightButton) => {
+const ListItemRightButton = (props: ListItemRightButtonProp) => {
 	return (
         <ListItemSecondaryAction
             {...props}

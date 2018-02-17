@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
 import BR from '@blueeast/bluerain-os';
 import Button from 'material-ui/Button';
-import CarouselComponent from '../carousel';
+import CarouselComponent from '../../Carousel';
 import IconButton from 'material-ui/IconButton';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
 import React from 'react';

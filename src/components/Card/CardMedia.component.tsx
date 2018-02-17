@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { CardMedia } from 'material-ui/Card';
-import { ICardMedia } from '@blueeast/bluerain-ui-interfaces';
+import { CardMediaProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardMedia Component
@@ -15,7 +15,7 @@ import { ICardMedia } from '@blueeast/bluerain-ui-interfaces';
  */
 
 
-const BlueRainCardMedia = (props: ICardMedia) => {
+const BlueRainCardMedia = (props: CardMediaProp) => {
 	const heightedStyle = { ...props.style, height: props.height || 200 };
 	return (
         <CardMedia

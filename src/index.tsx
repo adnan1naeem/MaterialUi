@@ -1,5 +1,7 @@
 import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
+import AppBar from './components/AppBar';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
@@ -7,13 +9,12 @@ import Button from './components/Button';
 import Chip from './components/Chip';
 import Carousel from './components/Carousel';
 import DropDown, { DropdownItem } from './components/DropDown';
-import { IMaterialuiDropDownItem } from './components/DropDown/DropdownItem';
-import { IconProps } from './components/Icon/Icon.component';
+import { MUIDropDownItem } from './components/DropDown/DropdownItem';
+import { MUIIconProps } from './components/Icon/Icon.component';
 import IconComponent from './components/Icon';
 import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
 import Switch from './components/Switch';
 import TextInput from './components/TextInput';
-import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
 
 /**
  * Material UI Plugin
@@ -32,6 +33,7 @@ class MaterialUiPlugin extends Plugin {
 		'Dropdown': DropDown,
 		'DropdownItem': DropdownItem,
 		'Avatar': Avatar,
+		'AppBar': AppBar, 
 		'List': List,
 		'ListItem': ListItem,
 		'ListHeader': ListHeader,
@@ -45,13 +47,13 @@ class MaterialUiPlugin extends Plugin {
 		'CardBody': CardBody,
 		'CardMedia': CardMedia,
 		'CardFooter': CardFooter,
+		'Carousel': Carousel,
 		'Breadcrumb': Breadcrumb,
 		'SwitchToggle': Switch,
 		'Switch': Switch,
-		'Icon': IconComponent,
+		'Icon': IconComponent
+		
 	};
-	
-// 	static initialize(config:any = {}, ctx:BlueRainType) {
 
 // 		let theme = ctx.Configs.get('theme');
 // 		if (!theme) {

@@ -1,1 +1,1 @@
-export { default } from './avatar.component';
+export { default } from './Avatar.component';

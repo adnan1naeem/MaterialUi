@@ -3,11 +3,11 @@
  */
 
 import * as React from 'react';
+import { ButtonProp } from '@blueeast/bluerain-ui-interfaces';
 import Button from 'material-ui/Button';
-import { IButton } from '@blueeast/bluerain-ui-interfaces';
 
 
-const BlueRainButton = (props: IButton) => {
+const BlueRainButton = (props: ButtonProp) => {
 	const widthFull = { ...props.style, width:'100%' };
 	if(props.iconLeft){
 		return (

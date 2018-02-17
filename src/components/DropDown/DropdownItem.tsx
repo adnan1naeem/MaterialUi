@@ -1,11 +1,10 @@
 import { MenuItem } from 'material-ui/Menu';
 import React from 'react';
 
-export interface IMaterialuiDropDownItem {
+export interface MUIDropDownItem {
 	disabled?:boolean,
 	value?:any
 }
-
-const DropdownItem = (props:IMaterialuiDropDownItem) => (<MenuItem {...props} />);
+const DropdownItem = (props:MUIDropDownItem) => (<MenuItem {...props} />);
 
 export default DropdownItem;
