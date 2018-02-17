@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
+import { CardBodyProp } from '@blueeast/bluerain-ui-interfaces';
 import  { CardContent } from 'material-ui/Card';
-import { ICardBody } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardBody Component
@@ -18,11 +18,11 @@ import { ICardBody } from '@blueeast/bluerain-ui-interfaces';
   * @param {Object} props.classes Usefull to extend the style for CardBody component.
   */
 
-export interface IMUIProps {
+export interface MUIProps {
 	classes?: {},
 }
 
-const BlueRainCardBody = (props: ICardBody & IMUIProps) => {
+const BlueRainCardBody = (props: CardBodyProp & MUIProps) => {
 	return (
         <CardContent
             {...props}

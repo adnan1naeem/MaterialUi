@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import Input, { InputLabel } from 'material-ui/Input';
-import { DropDown, DropdownItem } from '../../DropDown';
+import DropDown, { DropdownItem } from '../../DropDown';
 const stories = storiesOf('DropDown', module);
 
 const onChange =(event) => {

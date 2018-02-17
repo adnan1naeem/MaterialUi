@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { ITextInput } from '@blueeast/bluerain-ui-interfaces';
+import { TextInputProp } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
 
 /**
@@ -15,7 +15,7 @@ import TextField from 'material-ui/TextField';
  * @param {string} props.type Type attribute of the Input element. It should be a valid HTML5 input type.
  */
 
-export interface IMaterialTextInput {
+export interface MaterialTextInput {
 	autoComplete?: string,
 	autoCorrect?: string,
 	id?: string,
@@ -31,23 +31,25 @@ export interface IMaterialTextInput {
 	rows?: string,
 	helperText?: ReactNode,
 	InputLabelProps?: object,
-	fullWidth?: boolean
+	fullWidth?: boolean,
+	errorText?: ReactNode,
 }
 
-const BlueRainTextInput = (props: ITextInput & IMaterialTextInput) => {
+const BlueRainTextInput = (props: TextInputProp & MaterialTextInput) => {
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;
 	}
 	return (
         <TextField
-            style={props.style}
-            placeholder={props.placeholder}
-            autoFocus={props.autoFocus}
-            onChange={props.onChange}
-            rows={props.numberOfLines}
-            disabled={disabled}
-            {...props}
+			style={props.style}
+			placeholder={props.placeholder}
+			autoFocus={props.autoFocus}
+			onChange={props.onChange}
+			rows={props.numberOfLines}
+			disabled={disabled}
+			helperText={props.errorText}
+			{...props}
         />
 	);
 };

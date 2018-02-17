@@ -3,11 +3,11 @@
  */
 
 import * as React from 'react';
+import { ButtonProp } from '@blueeast/bluerain-ui-interfaces';
 import Button from 'material-ui/Button';
-import { IButton } from '@blueeast/bluerain-ui-interfaces';
 
 
-const BlueRainButton = (props: IButton) => {
+const BlueRainButton = (props: ButtonProp) => {
 	const widthFull = { ...props.style, width:'100%' };
 	if(props.iconLeft){
 		return (
@@ -19,7 +19,7 @@ const BlueRainButton = (props: IButton) => {
             href={props.href}
             fab={props.fab}
             mini={props.small}
-            onClick={props.onClick}
+            onClick={props.onPress}
             dense={props.small}
         >
         {props.iconLeft} {props.children}
@@ -36,7 +36,7 @@ const BlueRainButton = (props: IButton) => {
                 href={props.href}
                 fab={props.fab}
                 mini={props.small}
-                onClick={props.onClick}
+                onClick={props.onPress}
                 dense={props.small}
             >
             {props.children} {props.iconRight}
@@ -52,7 +52,7 @@ const BlueRainButton = (props: IButton) => {
             href={props.href}
             fab={props.fab}
             mini={props.small}
-            onClick={props.onClick}
+            onClick={props.onPress}
             dense={props.small}
         >
         {props.children}

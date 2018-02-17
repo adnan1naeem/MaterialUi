@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { List } from 'material-ui';
-import IList from '@blueeast/bluerain-ui-interfaces';
+import { ListProp } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of List Component
@@ -20,14 +20,14 @@ import IList from '@blueeast/bluerain-ui-interfaces';
   * @param {bool} props.dense if true, dense styling is used.
   */
 
-export interface IBSProps {
+export interface MUIProps {
 	className?: string,
 	subheader?: any,
 	disablePadding?:boolean,
 	dense?:boolean,
 }
 
-const BlueRainList = (props: IList & IBSProps) => {
+const BlueRainList = (props: ListProp & MUIProps) => {
 	return (
         <List
             style={props.style}
