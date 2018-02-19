@@ -17,7 +17,7 @@ export interface MUIProps {
 	classes?: {},
 }
 
-const BlueRainFormGroup = (props: FormGroupProp & MUIProps) => {
+const BlueRainFormGroup: React.StatelessComponent = (props: FormGroupProp & MUIProps) => {
 	return (
         <FormGroup {...props} />
 	);

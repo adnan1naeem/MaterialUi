@@ -21,6 +21,6 @@ export interface MUIChipProps {
 	onDelete?: () => void;
 	deleteIcon?: any;
 }
-const Chip = (props: ChipProp & MUIChipProps) =>
+const Chip: React.StatelessComponent = (props: ChipProp & MUIChipProps) =>
     (<ChipUi classes={{ ...props.style }} label={props.children} {...props}></ChipUi>);
 export default Chip;

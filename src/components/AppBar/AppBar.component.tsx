@@ -16,10 +16,10 @@ import Toolbar from 'material-ui/Toolbar';
 
 export interface MUIProps {
 	color?: 'inherit' | 'primary' | 'accent' | 'default' | undefined,
-	position?: 'static' | 'fixed' | 'absolute' | undefined,
+	position?: 'static' | 'fixed' | 'absolute' | undefined
 }
 
-const BlueRainAppBar = (props: AppBarProp & MUIProps) => {
+const BlueRainAppBar: React.StatelessComponent = (props: AppBarProp & MUIProps) => {
 	return	(
 	<AppBar {...props}>
 		<Toolbar>

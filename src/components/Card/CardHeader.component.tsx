@@ -30,7 +30,7 @@ export interface MUIProps {
 	subheader?: React.ReactNode,
 }
 
-const BlueRainCardHeader = (props: CardHeaderProp & MUIProps) => {
+const BlueRainCardHeader: React.StatelessComponent = (props: CardHeaderProp & MUIProps) => {
 	return (
         <CardHeader
             style={props.style}

@@ -24,7 +24,7 @@ export interface MUIProps {
 	component?: string,
 
 }
-const BlueRainFormControl = (props: FormControlProp & MUIProps) => {
+const BlueRainFormControl: React.StatelessComponent = (props: FormControlProp & MUIProps) => {
 	return (
         <FormControl {...props} />
 	);

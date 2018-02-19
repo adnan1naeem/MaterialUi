@@ -13,7 +13,7 @@ import { ListSubheader } from 'material-ui';
  */
 
 
-const ListHeader = (props: ListHeaderProp) => {
+const ListHeader: React.StatelessComponent = (props: ListHeaderProp) => {
 	return (
         <ListSubheader
             {...props}

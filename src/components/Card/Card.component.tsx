@@ -26,7 +26,7 @@ export interface MUIProps {
 	square?: boolean,
 }
 
-const BlueRainCard = (props: CardProp & MUIProps) => {
+const BlueRainCard: React.StatelessComponent = (props: CardProp & MUIProps) => {
 	return (
         <Card
             {...props}

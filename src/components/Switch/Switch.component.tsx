@@ -21,7 +21,7 @@ export interface SwitchProps {
 	onChange?: () => void,
 }
 
-const BlueRainSwitch = (props: SwitchProps & SwitchProp) => {
+const BlueRainSwitch: React.StatelessComponent = (props: SwitchProps & SwitchProp) => {
 	return (
         <Switch
             onChange={props.onValueChange}

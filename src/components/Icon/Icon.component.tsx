@@ -16,7 +16,7 @@ export interface MUIIconProps {
 
 let iconName;
 let iconColor;
-const IconComponent = (props: IconProp & MUIIconProps) => {
+const IconComponent: React.StatelessComponent = (props: IconProp & MUIIconProps) => {
 	const {
     name,
     size,

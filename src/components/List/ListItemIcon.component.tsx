@@ -13,7 +13,7 @@ import { ListItemIconProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Node} props.children children of ListItemIcon.
  */
 
-const BlueRainListItemIcon = (props: ListItemIconProp) => {
+const BlueRainListItemIcon: React.StatelessComponent = (props: ListItemIconProp) => {
 	return (
         <ListItemIcon
             {...props}

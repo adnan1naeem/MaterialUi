@@ -27,7 +27,7 @@ export interface MUIProps {
 	dense?:boolean,
 }
 
-const BlueRainList = (props: ListProp & MUIProps) => {
+const BlueRainList: React.StatelessComponent = (props: ListProp & MUIProps) => {
 	return (
         <List
             style={props.style}

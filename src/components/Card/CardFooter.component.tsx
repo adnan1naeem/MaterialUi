@@ -24,7 +24,7 @@ export interface MUIProps {
 	disableActionSpacing?: boolean,
 }
 
-const BlueRainCardFooter = (props: CardFooterProp & MUIProps) => {
+const BlueRainCardFooter: React.StatelessComponent = (props: CardFooterProp & MUIProps) => {
 	return (
         <CardActions
             {...props}

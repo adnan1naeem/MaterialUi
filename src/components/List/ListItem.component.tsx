@@ -31,7 +31,7 @@ export interface MUIProps {
 	disabled?: boolean,
 }
 
-const BlueRainListItem = (props: ListItemProp & MUIProps) => {
+const BlueRainListItem: React.StatelessComponent = (props: ListItemProp & MUIProps) => {
 	return (
         <ListItem
             button={props.active}

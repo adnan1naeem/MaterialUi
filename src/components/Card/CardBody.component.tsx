@@ -22,7 +22,7 @@ export interface MUIProps {
 	classes?: {},
 }
 
-const BlueRainCardBody = (props: CardBodyProp & MUIProps) => {
+const BlueRainCardBody: React.StatelessComponent = (props: CardBodyProp & MUIProps) => {
 	return (
         <CardContent
             {...props}

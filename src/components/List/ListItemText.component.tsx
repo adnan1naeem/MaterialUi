@@ -23,7 +23,7 @@ export interface MUIProps {
 	inset?: boolean,
 }
 
-const BlueRainListItemText = (props: ListItemTextProp & MUIProps) => {
+const BlueRainListItemText: React.StatelessComponent = (props: ListItemTextProp & MUIProps) => {
 	return (
         <ListItemText
             primary={props.children}

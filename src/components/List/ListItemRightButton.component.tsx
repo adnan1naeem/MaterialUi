@@ -11,7 +11,7 @@ import { ListItemSecondaryAction } from 'material-ui';
  * @param {Node} props.children children of ListItemRightButton (expects a Button).
  */
 
-const ListItemRightButton = (props: ListItemRightButtonProp) => {
+const ListItemRightButton: React.StatelessComponent = (props: ListItemRightButtonProp) => {
 	return (
         <ListItemSecondaryAction
             {...props}

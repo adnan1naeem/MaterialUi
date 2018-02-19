@@ -7,7 +7,7 @@ import { ButtonProp } from '@blueeast/bluerain-ui-interfaces';
 import Button from 'material-ui/Button';
 
 
-const BlueRainButton = (props: ButtonProp) => {
+const BlueRainButton : React.StatelessComponent = (props: ButtonProp) => {
 	const widthFull = { ...props.style, width:'100%' };
 	if(props.iconLeft){
 		return (

@@ -30,7 +30,7 @@ export interface MUIDropDown {
 	disabled?:boolean
 }
 
-const DropDown =(props:PickerProp & MUIDropDown) => (
+const DropDown : React.StatelessComponent =(props:PickerProp & MUIDropDown) => (
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}

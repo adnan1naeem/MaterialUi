@@ -12,7 +12,7 @@ const stories = storiesOf('AppBar', module);
 
 stories.add('AppBar with primary color and position="fixed"', () => {
 	return  (
-    <AppBar position="fixed" color="primary">
+    <AppBar position="fixed" color="primary" style={{backgroundColor: 'red'}}>
           <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }}>
             <AssignmentIcon />
           </Button>

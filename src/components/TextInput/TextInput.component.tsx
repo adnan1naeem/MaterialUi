@@ -35,7 +35,7 @@ export interface MaterialTextInput {
 	errorText?: ReactNode,
 }
 
-const BlueRainTextInput = (props: TextInputProp & MaterialTextInput) => {
+const BlueRainTextInput: React.StatelessComponent = (props: TextInputProp & MaterialTextInput) => {
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;

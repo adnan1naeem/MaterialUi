@@ -17,7 +17,7 @@ export interface MUIProps {
 	children?: any,
 }
 
-const BlueRainListItemAvatar = (props: ListItemAvatarProp & MUIProps) => {
+const BlueRainListItemAvatar: React.StatelessComponent = (props: ListItemAvatarProp & MUIProps) => {
 	return (
         <Avatar {...props} size={props.size}>{props.children}</Avatar>
 	);

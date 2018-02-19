@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DividerProp } from '@blueeast/bluerain-ui-interfaces';
+import { DividerProp, DividerProperties } from '@blueeast/bluerain-ui-interfaces';
 import Divider from 'material-ui/Divider';
 
 
@@ -17,7 +17,7 @@ export interface MUIProps {
 	absolute?: boolean;
 	classes?: {};
 }
-const BlueRainDivider = (props: DividerProp & MUIProps) => {
+const BlueRainDivider: React.StatelessComponent = (props: DividerProp & MUIProps) => {
 	return (
         <Divider {...props} />
 	);
