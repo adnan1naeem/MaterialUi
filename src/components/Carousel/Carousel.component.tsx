@@ -29,6 +29,7 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
     slidesToScroll,
     bluerain: BR
 	} = props;
+
 	const myData = props.children.props.children;
 	const settings = {
 		dots: dots,
@@ -37,6 +38,7 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
 		slidesToShow: slidesToShow,
 		slidesToScroll: slidesToScroll
 	};
+	
 	return (
     <Slider {...settings}>
       {myData}
