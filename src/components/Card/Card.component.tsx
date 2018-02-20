@@ -2,7 +2,8 @@
  * Created by M.GhazanfarAli on 01/04/18.
  */
 
-import * as React from 'react';
+import React, { SFC } from 'react';
+// import * as React from 'react';
 import { CardProp } from '@blueeast/bluerain-ui-interfaces';
 import Card from 'material-ui/Card';
 
@@ -26,34 +27,34 @@ export interface MUIProps extends CardProp {
 	square?: boolean,
 }
 
-// class BlueRainCard extends React.Component<MUIProps, {}> {
-// 	render() {
+class BlueRainCard extends React.Component<MUIProps, {}> {
+	render() {
+		return (
+        <Card
+            {...this.props}
+            raised={this.props.raised}
+            style={this.props.style}
+            component={typeof this.props.tag === 'string' ? this.props.tag : 'div'}
+            className={this.props.className}
+        >
+        {this.props.children}
+        </Card>
+		);
+	}
+}
+
+// const BlueRainCard: SFC<MUIProps> = (props) => {
 // 	return (
 //         <Card
-//             {...this.props}
-//             raised={this.props.raised}
-//             style={this.props.style}
-//             component={typeof this.props.tag === 'string' ? this.props.tag : 'div'}
-//             className={this.props.className}
+//             {...props}
+//             raised={props.raised}
+//             style={props.style}
+//             component={typeof props.tag === 'string' ? props.tag : 'div'}
+//             className={props.className}
 //         >
-//         {this.props.children}
+//         {props.children}
 //         </Card>
 // 	);
-// 	}
-// }
-
-const BlueRainCard: React.StatelessComponent<MUIProps> = (props) => {
-	return (
-        <Card
-            {...props}
-            raised={props.raised}
-            style={props.style}
-            component={typeof props.tag === 'string' ? props.tag : 'div'}
-            className={props.className}
-        >
-        {props.children}
-        </Card>
-	);
-};
+// };
 
 export default BlueRainCard;

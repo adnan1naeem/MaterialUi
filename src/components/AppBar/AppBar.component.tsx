@@ -1,32 +1,29 @@
 import * as React from 'react';
-import { BlueRainType, withBlueRain } from '@blueeast/bluerain-os';
-import { AppBarProp } from '@blueeast/bluerain-ui-interfaces';
+import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
+import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 
 /**
- * The universal props of AppBar Component
- * @param {Object} props.style Get the style object.
- * @param {'inherit' | 'primary' | 'accent' | 'default' | undefined} props.color BackgroundColor for AppBar.
- * @param {Node} props.children children of AppBar.
- * @param {'static' | 'fixed' | 'absolute' | undefined} props.position position of AppBar.
- * @param {string} props.className className props to extend styles through CSS for AppBar.
+ * An interface that extends the AppBarProperties interface
+ *
+ * @export MUIAppBarProperties
+ * @interface MUIAppBarProperties
+ * @extends {AppBarProperties}
  */
-
-
-export interface MUIProps {
+export interface MUIAppBarProperties extends AppBarProperties {
 	color?: 'inherit' | 'primary' | 'accent' | 'default' | undefined,
 	position?: 'static' | 'fixed' | 'absolute' | undefined
 }
 
-const BlueRainAppBar: React.StatelessComponent = (props: AppBarProp & MUIProps) => {
-	return	(
-	<AppBar {...props}>
-		<Toolbar>
-			{props.children}
-		</Toolbar>
-	</AppBar>);
-
-};
-
-export default withBlueRain(BlueRainAppBar);
+export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (props) => (
+	<BlueRainConsumer>
+	{(BR: BlueRain) => (
+		<AppBar {...props}>
+			<Toolbar>
+				{props.children}
+			</Toolbar>
+		</AppBar>
+	)}
+	</BlueRainConsumer>
+);

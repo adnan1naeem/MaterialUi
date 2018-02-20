@@ -1,3 +1,4 @@
+import * as BRInterfaces from '@blueeast/bluerain-ui-interfaces';
 import * as React from 'react';
 import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
 import { FormControl, FormGroup } from './components/FormControl';
