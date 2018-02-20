@@ -1,8 +1,8 @@
-import React from 'react';
-import IconComponent from '../../Icon';
-import { storiesOf } from '@storybook/react';
+import { boolean, object, text , withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import IconComponent from '../../Icon';
+import React from 'react';
 
 const stories = storiesOf('Icons', module);
 

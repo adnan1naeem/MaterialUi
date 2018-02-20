@@ -41,7 +41,17 @@ const BlueRainTextInput: React.StatelessComponent<MaterialTextInput> = (props) =
 		disabled = true;
 	}
 	return (
-		<TextField style={props.style} placeholder={props.placeholder} autoFocus={props.autoFocus} onChange={props.onChange} rows={props.numberOfLines} disabled={disabled} helperText={props.errorText} {...props} />);
+	<TextField
+		style={props.style}
+		placeholder={props.placeholder}
+		autoFocus={props.autoFocus}
+		onChange={props.onChange}
+		rows={props.numberOfLines}
+		disabled={disabled}
+		helperText={props.errorText}
+		{...props}
+	/>
+	);
 };
 
 export default BlueRainTextInput;

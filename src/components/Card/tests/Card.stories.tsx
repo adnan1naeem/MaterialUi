@@ -1,16 +1,16 @@
 import * as React from 'react';
-import Card, { CardMedia, CardBody, CardFooter, CardHeader } from '../../Card';
-import Button from 'material-ui/Button';
+import Card, { CardBody, CardFooter, CardHeader, CardMedia  } from '../../Card';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
+import BR from '@blueeast/bluerain-os';
+import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
-import Typography from 'material-ui/Typography';
-import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
 import SkipNextIcon from 'material-ui-icons/SkipNext';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
+import Typography from 'material-ui/Typography';
 
 const Text = BR.Components.get('Text');
 

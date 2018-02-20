@@ -1,21 +1,21 @@
 import * as BRInterfaces from '@blueeast/bluerain-ui-interfaces';
 import * as React from 'react';
-import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
+import { BlueRainType , Plugin } from '@blueeast/bluerain-os';
+import Card, { CardBody, CardFooter, CardHeader, CardMedia } from './components/Card';
+import DropDown, { DropdownItem } from './components/DropDown';
 import { FormControl, FormGroup } from './components/FormControl';
-import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
+import List, { ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
+import { MUIDropDownItem } from './components/DropDown/DropdownItem';
+import { MUIIconProps } from './components/Icon/Icon.component';
 import AppBar from './components/AppBar';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import Button from './components/Button';
-import Chip from './components/Chip';
 import Carousel from './components/Carousel';
+import Chip from './components/Chip';
 import Divider from './components/Divider';
-import DropDown, { DropdownItem } from './components/DropDown';
-import { MUIDropDownItem } from './components/DropDown/DropdownItem';
-import { MUIIconProps } from './components/Icon/Icon.component';
 import IconComponent from './components/Icon';
-import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
 import Switch from './components/Switch';
 import TextInput from './components/TextInput';
 

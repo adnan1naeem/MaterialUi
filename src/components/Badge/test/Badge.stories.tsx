@@ -1,9 +1,11 @@
 import * as React from 'react';
-import Badge from '../../Badge';
-import { storiesOf } from '@storybook/react';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import Badge from '../../Badge';
+
 const stories = storiesOf('Badge', module);
+
 stories.add('Badge (with knobs)', () => {
 	const content = text('content', 'abc');
 	const colour = text('color', 'primary');

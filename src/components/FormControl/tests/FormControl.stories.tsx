@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { FormControl, FormGroup } from '../../FormControl';
-import Button from '../../Button';
-import Input from '../../TextInput';
-import Checkbox from 'material-ui/Checkbox';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { FormControlLabel } from 'material-ui/Form';
-import Paper from 'material-ui/Paper';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
+import Button from '../../Button';
+import Checkbox from 'material-ui/Checkbox';
+import Input from '../../TextInput';
+import Paper from 'material-ui/Paper';
 
 const Text = BR.Components.get('Text');
 
