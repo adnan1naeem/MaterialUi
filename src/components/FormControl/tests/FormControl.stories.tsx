@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { FormControl, FormGroup } from '../../FormControl';
-import Button from '../../Button';
-import Input from '../../TextInput';
-import Checkbox from 'material-ui/Checkbox';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { Button } from '../../Button';
 import { FormControlLabel } from 'material-ui/Form';
-import Paper from 'material-ui/Paper';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
+import { TextInput } from '../../TextInput';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
+import Checkbox from 'material-ui/Checkbox';
+import Paper from 'material-ui/Paper';
 
 const Text = BR.Components.get('Text');
 
@@ -28,7 +28,7 @@ storiesOf('FormControl', module).add('MaterialUI example 1', () =>
 (
   <Paper style={{ padding:20 }}>
 <FormControl fullWidth >
-<Input
+<TextInput
   label="amount"
   id="adornment-amount"
 />
@@ -40,11 +40,11 @@ storiesOf('FormControl', module).add('MaterialUI example 2', () =>
   <Paper style={{ padding:20 }}>
 <FormControl>
     <FormGroup>
-    <Input label="Input with success"/>
+    <TextInput label="Input with success"/>
     <Text>Example help text that remains unchanged.</Text>
     </FormGroup>
     <FormGroup>
-    <Input label="Input with danger" error={true} errorText={'Example help text that remains unchanged.'}/>
+    <TextInput label="Input with danger" error={true} errorText={'Example help text that remains unchanged.'}/>
     </FormGroup>
 </FormControl>
 </Paper>));

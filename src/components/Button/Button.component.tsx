@@ -1,13 +1,8 @@
-/**
- * Created by M.GhazanfarAli on 12/27/17.
- */
-
 import * as React from 'react';
-import { ButtonProp } from '@blueeast/bluerain-ui-interfaces';
+import { ButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import Button from 'material-ui/Button';
 
-
-const BlueRainButton = (props: ButtonProp) => {
+export const BlueRainButton : React.StatelessComponent<ButtonProperties> = (props) => {
 	const widthFull = { ...props.style, width:'100%' };
 	if(props.iconLeft){
 		return (
@@ -58,7 +53,6 @@ const BlueRainButton = (props: ButtonProp) => {
         {props.children}
         </Button>
 	);
-
 };
 
-export default BlueRainButton;
+// export default BlueRainButton;

@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { Button } from '../src/components/Button';
 import { create } from 'react-test-renderer';
-import Button from '../src/components/Button';
 
 test('Button with fab true', () => {
 	const button = create(

@@ -1,7 +1,7 @@
 // import './style.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { CarouselProp } from '@blueeast/bluerain-ui-interfaces';
+import { CarouselProperties } from '@blueeast/bluerain-ui-interfaces';
 import { withBlueRain } from '@blueeast/bluerain-os';
 import React from 'react';
 import Slider from 'react-slick';
@@ -17,12 +17,11 @@ import Slider from 'react-slick';
  * @name Home Banner Component
  */
 
-let slides;
-
-export interface Icaros {
-	bluerain:any
+export interface MUICarouselProperties extends CarouselProperties {
+	bluerain:any,
+	children?: any
 }
-const CarouselComponent = (props: CarouselProp & Icaros ) => {
+const Carousel: React.StatelessComponent<MUICarouselProperties> = (props) => {
 	const {
     dots,
     infinite,
@@ -30,9 +29,9 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
     slidesToShow,
     slidesToScroll,
     bluerain: BR
-  } = props;
-	const myData = props.banners ? props.banners : [];
-	const View = BR.Components.get('View');
+	} = props;
+
+	const myData = props.children.props.children;
 	const settings = {
 		dots: dots,
 		infinite: infinite,
@@ -40,30 +39,12 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
 		slidesToShow: slidesToShow,
 		slidesToScroll: slidesToScroll
 	};
-  // React Slick expects each item inside a div, after using View, UI was discturbed so
-  // I had to apply the styles on View
-	const viewStyle = {
-		width: '100%',
-		display: 'block',
-		float: 'left',
-		height: '100%'
-	};
-	if (myData && myData.props){
-		const carouselData = myData.props.children;
-		slides = carouselData.map((item, i) => {
-			return (
-        <View key={i} style={viewStyle}>
-          {item}
-        </View>
-			);
-		});
-	}
+
 	return (
     <Slider {...settings}>
-      {slides}
+      {myData}
     </Slider>
 	);
 };
 
-
-export default withBlueRain(CarouselComponent);
+export default withBlueRain(Carousel);

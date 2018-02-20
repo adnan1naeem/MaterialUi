@@ -24,7 +24,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx' 'test/**/*.ts'",
     "prebuild": "",
     "build": "rimraf dist && bluerain build plugin",
     "start": "tsc -w",
@@ -88,7 +88,7 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-cli": "^0.2.8",
+    "@blueeast/bluerain-cli": "^1.2.0",
     "@blueeast/bluerain-platform-reactxp": "1.1.8",
     "@blueeast/tslint-config-blueeast": "^0.5.5",
     "@storybook/addon-actions": "^3.2.6",
@@ -127,13 +127,13 @@
     "style-loader": "^0.18.2",
     "ts-jest": "^22.0.0",
     "ts-node": "^4.1.0",
-    "tslint": "^5.4.3",
+    "tslint": "^5.9.1",
     "typedoc": "^0.9.0",
-    "typescript": "^2.7.2"
+    "typescript": "2.6.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^3.3.0",
-    "@blueeast/bluerain-ui-interfaces": "2.0.4",
+    "@blueeast/bluerain-os": "^3.5.1",
+    "@blueeast/bluerain-ui-interfaces": "^3.1.2",
     "file-loader": "^1.1.6",
     "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
@@ -144,7 +144,8 @@
     "react-fa": "^5.0.0",
     "react-intl": "^2.4.0",
     "react-router-dom": "^4.2.2",
-    "warning": "^3.0.0",
-    "react-slick": "^0.15.4"
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.8.1",
+    "warning": "^3.0.0"
   }
 }

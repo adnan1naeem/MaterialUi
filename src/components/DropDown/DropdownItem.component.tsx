@@ -1,10 +1,10 @@
 import { MenuItem } from 'material-ui/Menu';
 import React from 'react';
 
-export interface MUIDropDownItem {
+export interface MUIDropdownItem {
 	disabled?:boolean,
 	value?:any
 }
-const DropdownItem = (props:MUIDropDownItem) => (<MenuItem {...props} />);
+const DropdownItem: React.StatelessComponent<MUIDropdownItem> = (props) => (<MenuItem {...props} />);
 
 export default DropdownItem;

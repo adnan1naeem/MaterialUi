@@ -1,23 +1,21 @@
 import * as React from 'react';
-import Card, { CardHeader, CardBody, CardFooter, CardMedia } from './components/Card';
-import { FormControl, FormGroup } from './components/FormControl';
-import List, { ListItem, ListHeader, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from './components/List';
-import AppBar from './components/AppBar';
-import Avatar from './components/Avatar';
-import Badge from './components/Badge';
-import Breadcrumb from './components/Breadcrumb';
-import Button from './components/Button';
-import Chip from './components/Chip';
-import Carousel from './components/Carousel';
-import Divider from './components/Divider';
-import DropDown, { DropdownItem } from './components/DropDown';
-import { MUIDropDownItem } from './components/DropDown/DropdownItem';
-import { MUIIconProps } from './components/Icon/Icon.component';
-import IconComponent from './components/Icon';
-import { Plugin, BlueRainType } from '@blueeast/bluerain-os';
-import Switch from './components/Switch';
-import TextInput from './components/TextInput';
-
+import { AppBar, MUIAppBarProperties } from './components/AppBar';
+import { BlueRainType , Plugin } from '@blueeast/bluerain-os';
+import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
+import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
+import { Chip, MUIChipProperties } from './components/Chip';
+import { Divider, MUIDividerProperties } from './components/Divider';
+import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
+import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
+import { Icon, MUIIconProperties } from './components/Icon';
+import { List, ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
+import { MUISwitchProperties, Switch } from './components/Switch';
+import { MUITextInputProperties, TextInput } from './components/TextInput';
+import { Avatar } from './components/Avatar';
+import { Badge } from './components/Badge';
+import { Breadcrumb } from './components/Breadcrumb';
+import { Button } from './components/Button';
+import { Carousel } from './components/Carousel';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -32,10 +30,10 @@ class MaterialUiPlugin extends Plugin {
 		'TextInput': TextInput,
 		'Chip': Chip,
 		'Badge': Badge,
-		'Dropdown': DropDown,
+		'Dropdown': Dropdown,
 		'DropdownItem': DropdownItem,
 		'Avatar': Avatar,
-		'AppBar': AppBar, 
+		'AppBar': AppBar,
 		'List': List,
 		'ListItem': ListItem,
 		'ListHeader': ListHeader,
@@ -52,7 +50,7 @@ class MaterialUiPlugin extends Plugin {
 		'Carousel': Carousel,
 		'Breadcrumb': Breadcrumb,
 		'Switch': Switch,
-		'Icon': IconComponent,
+		'Icon': Icon,
 		'FormControl': FormControl,
 		'FormGroup': FormGroup,
 		'Divider': Divider

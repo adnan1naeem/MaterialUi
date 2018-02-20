@@ -1,3 +1,2 @@
-export {default}  from './DropDown.component';
-import DropdownItem from './DropdownItem';
-export { DropdownItem };
+export { default as Dropdown, MUIPickerProperties }  from './Dropdown.component';
+export { default as DropdownItem, MUIDropdownItem } from './DropdownItem.component';

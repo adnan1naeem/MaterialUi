@@ -1,6 +1,6 @@
+import { Switch } from '../src/components/Switch';
 import { create } from 'react-test-renderer';
 import React from 'react';
-import Switch from '../src/components/Switch';
 
 function handleTextInputChange () {
 	console.log('I am clicked');

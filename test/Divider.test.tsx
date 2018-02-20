@@ -1,5 +1,5 @@
+import { Divider } from '../src/components/Divider';
 import { create } from 'react-test-renderer';
-import Divider from '../src/components/Divider';
 import React from 'react';
 
 test('Divider component with default values', () => {

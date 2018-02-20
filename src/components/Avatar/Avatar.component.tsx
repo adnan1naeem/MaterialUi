@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { BlueRain, withBlueRain } from '@blueeast/bluerain-os';
-import { AvatarProp } from '@blueeast/bluerain-ui-interfaces';
+import { BlueRain, BlueRainConsumer, withBlueRain } from '@blueeast/bluerain-os';
+import { AvatarProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The universal props of Avatar Component
@@ -15,28 +15,49 @@ import { AvatarProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {string} props.sizes The sizes of image.
  */
 
-export interface AvatarMUIProps {
-	alt?: string,
+export interface MUIAvatarProperties extends AvatarProperties {
+	alt?: string;
 	children?: React.ReactNode;
-	classes?: {},
-	component?: any,
-	imgProps?: {},
-	sizes?: string,
-	src?: string,
-	style?: {},
-	bluerain?: BlueRain,
+	classes?: {};
+	component?: any;
+	imgProps?: {};
+	sizes?: string;
+	src?: string;
+	style?: {};
+	bluerain?: BlueRain;
 }
-const BlueRainAvatar = (props: AvatarProp & AvatarMUIProps) => {
-	const size = props.size? props.size: 70;
-	const avatarStyle = [{ width:size, height:size, backgroundColor:'lightgrey', borderRadius:1000, display:'flex', justifyContent:'center', alignItems:'center', fontSize:.5*size }, { ...props.style }];
+const BlueRainAvatar = (props: MUIAvatarProperties) => {
+	const size = props.size ? props.size : 70;
+	const avatarStyle = [
+		{
+			width: size,
+			height: size,
+			backgroundColor: 'lightgrey',
+			borderRadius: 1000,
+			display: 'flex',
+			justifyContent: 'center',
+			alignItems: 'center',
+			fontSize: 0.5 * size
+		},
+    { ...props.style }
+	];
 	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
-	const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
+	// const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
 	const Image = props.bluerain ? props.bluerain.Components.get('Image') : 'img';
 	if (props.children) {
 		return <View style={avatarStyle}>{props.children}</View>;
 	}
 	return <Image source={props.src} style={avatarStyle} />;
-
 };
 
 export default withBlueRain(BlueRainAvatar);
+
+// export const BlueRainAvatar: React.StatelessComponent<MUIAvatarProperties> = props => (
+//  <BlueRainConsumer>
+// 	 {(BR: BlueRain) => (
+// 		 <Avatar {...props}>
+// 		 </Avatar>
+// 	 )}
+//  </BlueRainConsumer>
+// );
+

@@ -247,9 +247,9 @@
     react "^16.2.0"
     react-redux "^5.0.6"
 
-"@blueeast/bluerain-ui-interfaces@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-1.0.4.tgz#3a6f80a3e27dbf436d27a7fcbeb5068c7b4063a8"
+"@blueeast/bluerain-ui-interfaces@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-2.0.5.tgz#6c80868ba5900aade90fe6de265e50be46e03dfa"
   dependencies:
     react "^16.2.0"
 

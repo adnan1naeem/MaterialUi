@@ -1,11 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/15/18.
- */
-
 import * as React from 'react';
 import { ListItemIcon } from 'material-ui';
-import { ListItemIconProp } from '@blueeast/bluerain-ui-interfaces';
-
+import { ListItemIconProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItemIcon Component
@@ -13,7 +8,7 @@ import { ListItemIconProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Node} props.children children of ListItemIcon.
  */
 
-const BlueRainListItemIcon = (props: ListItemIconProp) => {
+const BlueRainListItemIcon: React.StatelessComponent<ListItemIconProperties> = (props) => {
 	return (
         <ListItemIcon
             {...props}

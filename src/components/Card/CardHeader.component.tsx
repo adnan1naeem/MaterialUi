@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
 import { CardHeader } from 'material-ui/Card';
-import { CardHeaderProp } from '@blueeast/bluerain-ui-interfaces';
+import { CardHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of CardHeader Component
@@ -23,14 +19,14 @@ import { CardHeaderProp } from '@blueeast/bluerain-ui-interfaces';
   * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
-export interface MUIProps {
+export interface MUICardHeaderProperties extends CardHeaderProperties{
 	action?: React.ReactNode,
 	avatar?: React.ReactNode,
 	classes?: {},
 	subheader?: React.ReactNode,
 }
 
-const BlueRainCardHeader = (props: CardHeaderProp & MUIProps) => {
+const BlueRainCardHeader: React.StatelessComponent<MUICardHeaderProperties> = (props) => {
 	return (
         <CardHeader
             style={props.style}
