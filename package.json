@@ -88,7 +88,7 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-cli": "^0.2.8",
+    "@blueeast/bluerain-cli": "^1.2.0",
     "@blueeast/bluerain-platform-reactxp": "1.1.8",
     "@blueeast/tslint-config-blueeast": "^0.5.5",
     "@storybook/addon-actions": "^3.2.6",
@@ -127,7 +127,7 @@
     "style-loader": "^0.18.2",
     "ts-jest": "^22.0.0",
     "ts-node": "^4.1.0",
-    "tslint": "5.8.0",
+    "tslint": "^5.9.1",
     "typedoc": "^0.9.0",
     "typescript": "2.6.2"
   },
