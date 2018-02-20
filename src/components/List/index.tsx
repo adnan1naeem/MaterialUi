@@ -1,8 +1,7 @@
-export { ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton,  ListItemText };
-export { default } from './List.component';
-import ListHeader from './ListHeader.component';
-import ListItem from './ListItem.component';
-import ListItemAvatar from './ListItemAvatar.component';
-import ListItemIcon from './ListItemIcon.component';
-import ListItemRightButton from './ListItemRightButton.component';
-import ListItemText from './ListItemText.component';
+export { MUIListItemProperties, default as ListItem } from './ListItem.component';
+export { default as List, MUIListProperties } from './List.component';
+export { default as ListHeader } from './ListHeader.component';
+export { MUIListItemAvatarProperties, default as ListItemAvatar } from './ListItemAvatar.component';
+export { default as ListItemIcon } from './ListItemIcon.component';
+export { default as ListItemRightButton } from './ListItemRightButton.component';
+export { default as ListItemText, MUIListItemTextProperties } from './ListItemText.component';

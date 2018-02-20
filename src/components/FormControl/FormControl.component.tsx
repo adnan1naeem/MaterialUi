@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FormControl } from 'material-ui/Form';
-import { FormControlProp } from '@blueeast/bluerain-ui-interfaces';
+import { FormControlProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of FormControl Component
@@ -10,7 +10,7 @@ import { FormControlProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.className className for FormControl's extended style.
  */
 
-export interface MUIProps extends FormControlProp {
+export interface MUIFormControlProperties extends FormControlProperties {
 	classes?: {},
 	disabled?: boolean,
 	error?: boolean,
@@ -20,7 +20,7 @@ export interface MUIProps extends FormControlProp {
 	component?: string,
 
 }
-const BlueRainFormControl: React.StatelessComponent<MUIProps> = (props) => {
+const BlueRainFormControl: React.StatelessComponent<MUIFormControlProperties> = (props) => {
 	return (
         <FormControl {...props} />
 	);

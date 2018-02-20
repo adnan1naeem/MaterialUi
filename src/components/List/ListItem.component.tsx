@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ListItem } from 'material-ui';
-import { ListItemProp } from '@blueeast/bluerain-ui-interfaces';
+import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItem Component
@@ -18,7 +18,7 @@ import { ListItemProp } from '@blueeast/bluerain-ui-interfaces';
   * @param {func} props.onClick If button/active, function to be called back when clicked.
   */
 
-export interface MUIProps extends ListItemProp {
+export interface MUIListItemProperties extends ListItemProperties {
 	className?: string,
 	button?: boolean,
 	component?: string,
@@ -27,7 +27,7 @@ export interface MUIProps extends ListItemProp {
 	disabled?: boolean,
 }
 
-const BlueRainListItem: React.StatelessComponent<MUIProps> = (props) => {
+const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props) => {
 	return (
         <ListItem
             button={props.active}

@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 13/02/18.
- */
-
 import * as React from 'react';
 import { FormGroup } from 'material-ui/Form';
-import { FormGroupProp } from '@blueeast/bluerain-ui-interfaces';
+import { FormGroupProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListHeader Component
@@ -13,11 +9,11 @@ import { FormGroupProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.style style object for FormGroup's style.
  * @param {Object} props.className className for FormGroup's extended style.
  */
-export interface MUIProps extends FormGroupProp {
+export interface MUIFormGroupProperties extends FormGroupProperties {
 	classes?: {},
 }
 
-const BlueRainFormGroup: React.StatelessComponent<MUIProps> = (props) => {
+const BlueRainFormGroup: React.StatelessComponent<MUIFormGroupProperties> = (props) => {
 	return (
         <FormGroup {...props} />
 	);

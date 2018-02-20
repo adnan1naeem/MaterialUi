@@ -1,11 +1,11 @@
 import * as React from 'react';
-import List, { ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from '../../List';
+import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from '../../List';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { Avatar } from '../../Avatar';
+import { Button } from '../../Button';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import Avatar from '../../Avatar';
 import BR from '@blueeast/bluerain-os';
-import Button from '../../Button';
 import Divider from 'material-ui/Divider';
 import DraftsIcon from 'material-ui-icons/Drafts';
 import IconButton from 'material-ui/IconButton';

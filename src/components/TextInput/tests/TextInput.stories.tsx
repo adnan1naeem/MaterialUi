@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { TextInput } from '../../TextInput';
 import { storiesOf } from '@storybook/react';
-import TextInput from '../../TextInput';
 
 function handleTextInputChange (value: any) {
 	console.log('text input value', value.target.value);

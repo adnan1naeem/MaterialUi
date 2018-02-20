@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { boolean, number , withKnobs } from '@storybook/addon-knobs';
+import { Switch } from '../../Switch';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import Switch from '../../Switch';
 
 const stories = storiesOf('Switch', module);
 

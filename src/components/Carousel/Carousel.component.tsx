@@ -1,7 +1,7 @@
 // import './style.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { CarouselProp } from '@blueeast/bluerain-ui-interfaces';
+import { CarouselProperties } from '@blueeast/bluerain-ui-interfaces';
 import { withBlueRain } from '@blueeast/bluerain-os';
 import React from 'react';
 import Slider from 'react-slick';
@@ -17,11 +17,11 @@ import Slider from 'react-slick';
  * @name Home Banner Component
  */
 
-export interface Icaros {
+export interface MUICarouselProperties extends CarouselProperties {
 	bluerain:any,
 	children?: any
 }
-const Carousel = (props: CarouselProp & Icaros ) => {
+const Carousel: React.StatelessComponent<MUICarouselProperties> = (props) => {
 	const {
     dots,
     infinite,

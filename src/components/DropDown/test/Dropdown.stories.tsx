@@ -1,10 +1,10 @@
-import DropDown, { DropdownItem } from '../../DropDown';
+import { Dropdown, DropdownItem } from '../index';
 import Input, { InputLabel } from 'material-ui/Input';
 import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import React from 'react';
 
-const stories = storiesOf('DropDown', module);
+const stories = storiesOf('Dropdown', module);
 
 const onChange =(event) => {
 	const value=event.target.value;
@@ -23,67 +23,67 @@ const multiItems=[
 	'Kelly Snyder'
 ];
 
-stories.add('DropDown', () => {
+stories.add('Dropdown', () => {
 	return(
 		<Paper style={style.root}>
-				<DropDown onValueChange={onChange} value={'xyz'}  style={style.dropdown}>
+				<Dropdown onValueChange={onChange} value={'xyz'}  style={style.dropdown}>
 					<DropdownItem value="xyz">Item 1 </DropdownItem>
 						<DropdownItem value="abc">Item 2 </DropdownItem>
 						<DropdownItem value="abc">Item 3 </DropdownItem>
 						<DropdownItem value="abc">Item 4 </DropdownItem>
 						<DropdownItem value="abc">Item 5 </DropdownItem>
-				</DropDown>
+				</Dropdown>
 		</Paper>);}
 );
 
-stories.add('DropDown with autoWidth', () => {
+stories.add('Dropdown with autoWidth', () => {
 	return(
 		<Paper style={style.root}>
-			<DropDown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
+			<Dropdown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
 				<DropdownItem value="xyz">Item 1 </DropdownItem>
 				<DropdownItem value="abc">Item 2 </DropdownItem>
 				<DropdownItem value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>
 				<DropdownItem value="abc">Item 5 </DropdownItem>
-			</DropDown>
+			</Dropdown>
 	</Paper>);}
 );
 
-stories.add('DropDown with Override styles', () => {
+stories.add('Dropdown with Override styles', () => {
 	return(
 		<Paper style={style.root}>
-			<DropDown onValueChange={onChange} value={'xyz'} style={{ width:600, backgroundColor:'green' }} itemStyle={{ backgroundColor:'black' }}>
+			<Dropdown onValueChange={onChange} value={'xyz'} style={{ width:600, backgroundColor:'green' }} itemStyle={{ backgroundColor:'black' }}>
 				<DropdownItem value="xyz">Item 1 </DropdownItem>
 				<DropdownItem value="abc">Item 2 </DropdownItem>
 				<DropdownItem value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>
 				<DropdownItem value="abc">Item 5 </DropdownItem>
-			</DropDown>
+			</Dropdown>
 		</Paper>);}
 );
 
-stories.add('DropDown multiple select', () => {
+stories.add('Dropdown multiple select', () => {
 	return(
 		<Paper style={style.root}>
-			<DropDown onValueChange={onChange} value={multiItems} autoWidth={true} multiple style={style.dropdown} >
+			<Dropdown onValueChange={onChange} value={multiItems} autoWidth={true} multiple style={style.dropdown} >
 				<DropdownItem value="xyz">Item 1 </DropdownItem>
 				<DropdownItem value="abc">Item 2 </DropdownItem>
 				<DropdownItem value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>
 				<DropdownItem value="abc">Item 5 </DropdownItem>
-			</DropDown>
+			</Dropdown>
 		</Paper>);}
 );
 
-stories.add('DropDown with disabled', () => {
+stories.add('Dropdown with disabled', () => {
 	return(
 		<Paper style={style.root}>
-			<DropDown onValueChange={onChange} value={'xyz'}  input={<Input id="name-native-disabled" />} style={style.dropdown} displayEmpty>
+			<Dropdown onValueChange={onChange} value={'xyz'}  input={<Input id="name-native-disabled" />} style={style.dropdown} displayEmpty>
 				<DropdownItem value="xyz">Item 1 </DropdownItem>
 				<DropdownItem disabled value="abc">Item 2</DropdownItem>
 				<DropdownItem disabled value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>
 				<DropdownItem value="abc">Item 5 </DropdownItem>
-			</DropDown>
+			</Dropdown>
 	</Paper>);}
 );

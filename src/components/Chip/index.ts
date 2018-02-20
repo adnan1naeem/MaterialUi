@@ -1,4 +1,1 @@
-/**
- * Created by Ghazal Taimur on 12/29/17.
- */
-export { default } from './Chip.component';
+export { default as Chip, MUIChipProperties } from './Chip.component';

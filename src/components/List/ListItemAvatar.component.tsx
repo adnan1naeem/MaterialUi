@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ListItemAvatarProp } from '@blueeast/bluerain-ui-interfaces';
-import Avatar from '../Avatar';
+import { Avatar } from '../Avatar';
+import { ListItemAvatarProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItemAvatar Component
@@ -9,11 +9,11 @@ import Avatar from '../Avatar';
  * @param {string} props.className className for styling component with css.
  * @param {string} props.src src of the image.
  */
-export interface MUIListItemAvatarProp extends ListItemAvatarProp {
+export interface MUIListItemAvatarProperties extends ListItemAvatarProperties {
 	children?: any,
 }
 
-const BlueRainListItemAvatar: React.StatelessComponent<MUIListItemAvatarProp> = (props) => {
+const BlueRainListItemAvatar: React.StatelessComponent<MUIListItemAvatarProperties> = (props) => {
 	return (
         <Avatar {...props} size={props.size}>{props.children}</Avatar>
 	);

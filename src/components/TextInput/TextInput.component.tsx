@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { TextInputProp } from '@blueeast/bluerain-ui-interfaces';
+import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
 
 /**
@@ -15,7 +15,7 @@ import TextField from 'material-ui/TextField';
  * @param {string} props.type Type attribute of the Input element. It should be a valid HTML5 input type.
  */
 
-export interface MaterialTextInput extends TextInputProp {
+export interface MUITextInputProperties extends TextInputProperties {
 	autoComplete?: string,
 	autoCorrect?: string,
 	id?: string,
@@ -35,7 +35,7 @@ export interface MaterialTextInput extends TextInputProp {
 	errorText?: ReactNode,
 }
 
-const BlueRainTextInput: React.StatelessComponent<MaterialTextInput> = (props) => {
+const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (props) => {
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;

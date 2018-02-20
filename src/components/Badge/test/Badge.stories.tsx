@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { Badge } from '../../Badge';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import Badge from '../../Badge';
 
 const stories = storiesOf('Badge', module);
 

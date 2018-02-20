@@ -1,12 +1,9 @@
-/**
- * Created by Ghazal Taimur on 12/29/17.
- */
 import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { Chip } from '../../Chip';
 import { action } from '@storybook/addon-actions';
 import { emphasize } from 'material-ui/styles/colorManipulator';
 import { storiesOf } from '@storybook/react';
-import Chip from '../../Chip';
 
 const color = emphasize('#fff', 0);
 const backgroundColor = emphasize('#0f0', 0);

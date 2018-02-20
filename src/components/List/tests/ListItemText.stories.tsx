@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import  { ListItemText } from '../../List';
+import { Button } from '../../Button';
+import { ListItemText } from '../../List';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
-import Button from '../../Button';
 
 const Text = BR.Components.get('Text');
 

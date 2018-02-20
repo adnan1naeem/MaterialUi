@@ -1,7 +1,7 @@
 import { object, text } from '@storybook/addon-knobs';
+import { Breadcrumb } from '../../Breadcrumb';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
-import Breadcrumb from '../../Breadcrumb';
 import Paper from 'material-ui/Paper';
 import React from 'react';
 

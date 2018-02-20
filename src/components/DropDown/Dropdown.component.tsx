@@ -1,6 +1,6 @@
 import React,{ ReactNode } from 'react';
 import { MenuItem } from 'material-ui/Menu';
-import  { PickerProp } from '@blueeast/bluerain-ui-interfaces';
+import  { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import Select from 'material-ui/Select';
 
 /**
@@ -17,7 +17,7 @@ import Select from 'material-ui/Select';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-export interface MUIDropDown extends PickerProp {
+export interface MUIPickerProperties extends PickerProperties {
 	autoWidth?:boolean,
 	classes?:object,
 	displayEmpty?:boolean,
@@ -30,7 +30,7 @@ export interface MUIDropDown extends PickerProp {
 	disabled?:boolean
 }
 
-const DropDown : React.StatelessComponent<MUIDropDown> =(props) => (
+const DropDown : React.StatelessComponent<MUIPickerProperties> =(props) => (
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}

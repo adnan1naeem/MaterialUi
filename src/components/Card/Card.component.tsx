@@ -1,11 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
-import React, { SFC } from 'react';
-// import * as React from 'react';
-import { CardProp } from '@blueeast/bluerain-ui-interfaces';
+import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 import Card from 'material-ui/Card';
+import React from 'react';
 
 /**
  * The props of Card Component
@@ -16,45 +11,29 @@ import Card from 'material-ui/Card';
  * @param {string} props.className className for styling component with css.
  */
 
- /**
-  * Platform specific props
-  * @param {number} props.elevation box-shadow of Card in range 0-24.
-  * @param {boolean} props.square If true, rounded corners are degenerated.
-  */
+/**
+ * Platform specific props
+ * @param {number} props.elevation box-shadow of Card in range 0-24.
+ * @param {boolean} props.square If true, rounded corners are degenerated.
+ */
 
-export interface MUIProps extends CardProp {
-	elevation?: number,
-	square?: boolean,
+export interface MUICardProperties extends CardProperties {
+	elevation?: number;
+	square?: boolean;
 }
 
-class BlueRainCard extends React.Component<MUIProps, {}> {
-	render() {
-		return (
-        <Card
-            {...this.props}
-            raised={this.props.raised}
-            style={this.props.style}
-            component={typeof this.props.tag === 'string' ? this.props.tag : 'div'}
-            className={this.props.className}
-        >
-        {this.props.children}
-        </Card>
-		);
-	}
-}
-
-// const BlueRainCard: SFC<MUIProps> = (props) => {
-// 	return (
-//         <Card
-//             {...props}
-//             raised={props.raised}
-//             style={props.style}
-//             component={typeof props.tag === 'string' ? props.tag : 'div'}
-//             className={props.className}
-//         >
-//         {props.children}
-//         </Card>
-// 	);
-// };
+const BlueRainCard: React.StatelessComponent<MUICardProperties> = props => {
+	return (
+    <Card
+      {...props}
+      raised={props.raised}
+      style={props.style}
+      component={typeof props.tag === 'string' ? props.tag : 'div'}
+      className={props.className}
+    >
+      {props.children}
+    </Card>
+	);
+};
 
 export default BlueRainCard;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card, { CardBody, CardFooter, CardHeader, CardMedia  } from '../../Card';
+import { Card, CardBody, CardFooter, CardHeader, CardMedia  } from '../../Card';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';

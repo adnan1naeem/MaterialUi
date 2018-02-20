@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { number,  text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+import { Avatar } from '../../Avatar';
 import { storiesOf } from '@storybook/react';
 import AssignmentIcon from 'material-ui-icons/Assignment';
-import Avatar from '../../Avatar';
 import FolderIcon from 'material-ui-icons/Folder';
 import PageviewIcon from 'material-ui-icons/Pageview';
 

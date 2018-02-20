@@ -1,1 +1,4 @@
-export { default } from './Carousel.component';
+export {
+	default as Carousel,
+	MUICarouselProperties
+} from './Carousel.component';
