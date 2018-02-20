@@ -46,7 +46,13 @@ function loadStories() {
 	req.keys().forEach((filename) => req(filename))
 }
 
-
+const ReactRouterConfig={
+	androidBackButton: true,
+	deepLinking: true,
+	forceMemoryHistory:false,
+	historyConfigs: {},
+	}
+BR.Configs.set('plugins.router',ReactRouterConfig);
 // Add BlueRain
 const BluerainApp = BR.boot({platform: [require('@blueeast/bluerain-platform-reactxp')], renderApp: false });
 
