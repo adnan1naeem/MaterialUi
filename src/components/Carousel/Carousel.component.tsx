@@ -18,7 +18,8 @@ import Slider from 'react-slick';
  */
 
 export interface Icaros {
-	bluerain:any
+	bluerain:any,
+	children?: any
 }
 const CarouselComponent = (props: CarouselProp & Icaros ) => {
 	const {
