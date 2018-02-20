@@ -21,7 +21,7 @@ export interface Icaros {
 	bluerain:any,
 	children?: any
 }
-const CarouselComponent = (props: CarouselProp & Icaros ) => {
+const Carousel = (props: CarouselProp & Icaros ) => {
 	const {
     dots,
     infinite,
@@ -39,7 +39,7 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
 		slidesToShow: slidesToShow,
 		slidesToScroll: slidesToScroll
 	};
-	
+
 	return (
     <Slider {...settings}>
       {myData}
@@ -47,4 +47,4 @@ const CarouselComponent = (props: CarouselProp & Icaros ) => {
 	);
 };
 
-export default withBlueRain(CarouselComponent);
+export default withBlueRain(Carousel);

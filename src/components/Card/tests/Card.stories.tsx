@@ -1,35 +1,35 @@
 import * as React from 'react';
-import Card, { CardMedia, CardBody, CardFooter, CardHeader } from '../../Card';
-import Button from 'material-ui/Button';
+import Card, { CardBody, CardFooter, CardHeader, CardMedia  } from '../../Card';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
+import BR from '@blueeast/bluerain-os';
+import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
-import Typography from 'material-ui/Typography';
-import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
 import SkipNextIcon from 'material-ui-icons/SkipNext';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
+import Typography from 'material-ui/Typography';
 
 const Text = BR.Components.get('Text');
 
 const label = text('label as child', <Text>WithKnobs</Text>);
 
 storiesOf('Card', module).add('Card with style, className and raised props', () =>
-<Card raised style={{backgroundColor:'brown'}} className="bg-main">Raised</Card>);
+<Card raised style={{ backgroundColor:'brown' }} className="bg-main">Raised</Card>);
 
 storiesOf('Card', module).add('Card and raised prop false', () =>
-<Card raised={false} style={{backgroundColor:'orange'}} className="bg-main">UnRaised success </Card>);
+<Card raised={false} style={{ backgroundColor:'orange' }} className="bg-main">UnRaised success </Card>);
 
 storiesOf('Card', module).add('Card with children and tag props', () =>
-<Card style={{maxWidth:100 }} tag={CardHeader}> {label} </Card>);
+<Card style={{ maxWidth:100 }} tag={CardHeader}> {label} </Card>);
 
 storiesOf('Card', module).add('Card with square, tag as Text and elevation as 12 props', () =>
 <Card style={{ maxWidth:100 }} tag={Text} square elevation={12}> {label} </Card>);
 
 
-storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
+storiesOf('BluerainCard', module).add('MaterialUI story for music card', () => (
 <Card style={{ width:350, display:'flex' }}>
 <div>
   <CardBody>

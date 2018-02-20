@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Button from '../../Button';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
+import { boolean, number, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { text, number, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
+import Button from '../../Button';
 
 const background = '.background {background-color: red;}';
 
