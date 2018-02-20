@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DividerProp, DividerProperties } from '@blueeast/bluerain-ui-interfaces';
+import { DividerProp } from '@blueeast/bluerain-ui-interfaces';
 import Divider from 'material-ui/Divider';
 
 
@@ -11,17 +11,16 @@ import Divider from 'material-ui/Divider';
  * @param {ReactNode} props.inset if true, Divider is generated indented.
  */
 
-export interface MUIProps {
+export interface MUIProps extends DividerProp {
 	component?: React.ReactNode;
 	inset?: boolean;
 	absolute?: boolean;
 	classes?: {};
 }
-const BlueRainDivider: React.StatelessComponent = (props: DividerProp & MUIProps) => {
+const BlueRainDivider: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <Divider {...props} />
 	);
-
 };
 
 export default BlueRainDivider;

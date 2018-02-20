@@ -1,7 +1,3 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
 import { ListItemRightButtonProp } from '@blueeast/bluerain-ui-interfaces';
 import { ListItemSecondaryAction } from 'material-ui';
@@ -11,7 +7,7 @@ import { ListItemSecondaryAction } from 'material-ui';
  * @param {Node} props.children children of ListItemRightButton (expects a Button).
  */
 
-const ListItemRightButton: React.StatelessComponent = (props: ListItemRightButtonProp) => {
+const ListItemRightButton: React.StatelessComponent<ListItemRightButtonProp> = (props) => {
 	return (
         <ListItemSecondaryAction
             {...props}
@@ -20,7 +16,6 @@ const ListItemRightButton: React.StatelessComponent = (props: ListItemRightButto
         {props.children}
         </ListItemSecondaryAction>
 	);
-
 };
 
 export default ListItemRightButton;

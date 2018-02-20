@@ -13,15 +13,14 @@ import { FormGroupProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.style style object for FormGroup's style.
  * @param {Object} props.className className for FormGroup's extended style.
  */
-export interface MUIProps {
+export interface MUIProps extends FormGroupProp {
 	classes?: {},
 }
 
-const BlueRainFormGroup: React.StatelessComponent = (props: FormGroupProp & MUIProps) => {
+const BlueRainFormGroup: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <FormGroup {...props} />
 	);
-
 };
 
 export default BlueRainFormGroup;

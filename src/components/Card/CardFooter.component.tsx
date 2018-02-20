@@ -19,12 +19,12 @@ import { CardFooterProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.classes Useful to extend style for the component.
  */
 
-export interface MUIProps {
+export interface MUIProps extends CardFooterProp{
 	classes?: {},
 	disableActionSpacing?: boolean,
 }
 
-const BlueRainCardFooter: React.StatelessComponent = (props: CardFooterProp & MUIProps) => {
+const BlueRainCardFooter: React.StatelessComponent<MUIProps> = (props: MUIProps) => {
 	return (
         <CardActions
             {...props}
@@ -32,7 +32,6 @@ const BlueRainCardFooter: React.StatelessComponent = (props: CardFooterProp & MU
         {props.children}
         </CardActions>
 	);
-
 };
 
 export default BlueRainCardFooter;

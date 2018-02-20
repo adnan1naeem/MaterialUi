@@ -21,12 +21,28 @@ import Card from 'material-ui/Card';
   * @param {boolean} props.square If true, rounded corners are degenerated.
   */
 
-export interface MUIProps {
+export interface MUIProps extends CardProp {
 	elevation?: number,
 	square?: boolean,
 }
 
-const BlueRainCard: React.StatelessComponent = (props: CardProp & MUIProps) => {
+// class BlueRainCard extends React.Component<MUIProps, {}> {
+// 	render() {
+// 	return (
+//         <Card
+//             {...this.props}
+//             raised={this.props.raised}
+//             style={this.props.style}
+//             component={typeof this.props.tag === 'string' ? this.props.tag : 'div'}
+//             className={this.props.className}
+//         >
+//         {this.props.children}
+//         </Card>
+// 	);
+// 	}
+// }
+
+const BlueRainCard: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <Card
             {...props}
@@ -38,7 +54,6 @@ const BlueRainCard: React.StatelessComponent = (props: CardProp & MUIProps) => {
         {props.children}
         </Card>
 	);
-
 };
 
 export default BlueRainCard;

@@ -18,15 +18,13 @@ import  { CardContent } from 'material-ui/Card';
   * @param {Object} props.classes Usefull to extend the style for CardBody component.
   */
 
-export interface MUIProps {
+export interface MUIProps extends CardBodyProp {
 	classes?: {},
 }
 
-const BlueRainCardBody: React.StatelessComponent = (props: CardBodyProp & MUIProps) => {
+const BlueRainCardBody: React.StatelessComponent<MUIProps> = (props: MUIProps) => {
 	return (
-        <CardContent
-            {...props}
-        >
+        <CardContent {...props}>
         {props.children}
         </CardContent>
 	);

@@ -20,14 +20,14 @@ import { ListProp } from '@blueeast/bluerain-ui-interfaces';
   * @param {bool} props.dense if true, dense styling is used.
   */
 
-export interface MUIProps {
+export interface MUIProps extends ListProp{
 	className?: string,
 	subheader?: any,
 	disablePadding?:boolean,
 	dense?:boolean,
 }
 
-const BlueRainList: React.StatelessComponent = (props: ListProp & MUIProps) => {
+const BlueRainList: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <List
             style={props.style}
@@ -36,7 +36,6 @@ const BlueRainList: React.StatelessComponent = (props: ListProp & MUIProps) => {
         {props.children}
         </List>
 	);
-
 };
 
 export default BlueRainList;

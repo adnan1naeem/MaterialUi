@@ -15,7 +15,7 @@ import TextField from 'material-ui/TextField';
  * @param {string} props.type Type attribute of the Input element. It should be a valid HTML5 input type.
  */
 
-export interface MaterialTextInput {
+export interface MaterialTextInput extends TextInputProp {
 	autoComplete?: string,
 	autoCorrect?: string,
 	id?: string,
@@ -35,23 +35,13 @@ export interface MaterialTextInput {
 	errorText?: ReactNode,
 }
 
-const BlueRainTextInput: React.StatelessComponent = (props: TextInputProp & MaterialTextInput) => {
+const BlueRainTextInput: React.StatelessComponent<MaterialTextInput> = (props) => {
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;
 	}
 	return (
-        <TextField
-			style={props.style}
-			placeholder={props.placeholder}
-			autoFocus={props.autoFocus}
-			onChange={props.onChange}
-			rows={props.numberOfLines}
-			disabled={disabled}
-			helperText={props.errorText}
-			{...props}
-        />
-	);
+		<TextField style={props.style} placeholder={props.placeholder} autoFocus={props.autoFocus} onChange={props.onChange} rows={props.numberOfLines} disabled={disabled} helperText={props.errorText} {...props} />);
 };
 
 export default BlueRainTextInput;

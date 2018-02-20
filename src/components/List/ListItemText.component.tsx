@@ -17,20 +17,19 @@ import { ListItemTextProp } from '@blueeast/bluerain-ui-interfaces';
  * @param {bool} props.inset If true, the children will be indented. This should be used if there is no left avatar or left icon.
  */
 
-export interface MUIProps {
+export interface MUIProps extends ListItemTextProp {
 	primary?: any,
 	secondary?: any,
 	inset?: boolean,
 }
 
-const BlueRainListItemText: React.StatelessComponent = (props: ListItemTextProp & MUIProps) => {
+const BlueRainListItemText: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <ListItemText
             primary={props.children}
             {...props}
         />
 	);
-
 };
 
 export default BlueRainListItemText;

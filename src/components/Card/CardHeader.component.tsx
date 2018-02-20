@@ -23,14 +23,14 @@ import { CardHeaderProp } from '@blueeast/bluerain-ui-interfaces';
   * @param {Node} props.subheader The content of the component. Subheader overrides children
   */
 
-export interface MUIProps {
+export interface MUIProps extends CardHeaderProp{
 	action?: React.ReactNode,
 	avatar?: React.ReactNode,
 	classes?: {},
 	subheader?: React.ReactNode,
 }
 
-const BlueRainCardHeader: React.StatelessComponent = (props: CardHeaderProp & MUIProps) => {
+const BlueRainCardHeader: React.StatelessComponent<MUIProps> = (props) => {
 	return (
         <CardHeader
             style={props.style}

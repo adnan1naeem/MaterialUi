@@ -7,9 +7,9 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 
 const styles = {
-    bg: {
-        backgroundColor:'white', width:'100%'
-    }
+	bg: {
+		backgroundColor:'white', width:'100%'
+	}
 };
 
 storiesOf('CardFooter', module).add('CardFooter with className and style prop', () =>
@@ -21,6 +21,6 @@ storiesOf('CardFooter', module).add('CardFooter with className and style prop', 
 
 storiesOf('CardFooter', module).add('CardFooter with children prop (MUI specific)', () =>
 (
-<CardFooter disableActionSpacing style={styles.bg}>
+<CardFooter disableActionSpacing={false} style={styles.bg}>
   <Button dense>Learn More</Button>
 </CardFooter>));

@@ -17,7 +17,7 @@ import Select from 'material-ui/Select';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-export interface MUIDropDown {
+export interface MUIDropDown extends PickerProp {
 	autoWidth?:boolean,
 	classes?:object,
 	displayEmpty?:boolean,
@@ -30,7 +30,7 @@ export interface MUIDropDown {
 	disabled?:boolean
 }
 
-const DropDown : React.StatelessComponent =(props:PickerProp & MUIDropDown) => (
+const DropDown : React.StatelessComponent<MUIDropDown> =(props) => (
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}

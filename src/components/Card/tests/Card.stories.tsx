@@ -10,26 +10,26 @@ import SkipNextIcon from 'material-ui-icons/SkipNext';
 import BR from '@blueeast/bluerain-os';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object} from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
 
 const Text = BR.Components.get('Text');
 
 const label = text('label as child', <Text>WithKnobs</Text>);
 
 storiesOf('Card', module).add('Card with style, className and raised props', () =>
-<Card raised style={{backgroundColor:'brown'}} className="bg-main">Raised</Card>);
+<Card raised style={{ backgroundColor:'brown' }} className="bg-main">Raised</Card>);
 
 storiesOf('Card', module).add('Card and raised prop false', () =>
-<Card raised={false} style={{backgroundColor:'orange'}} className="bg-main">UnRaised success </Card>);
+<Card raised={false} style={{ backgroundColor:'orange' }} className="bg-main">UnRaised success </Card>);
 
 storiesOf('Card', module).add('Card with children and tag props', () =>
-<Card style={{maxWidth:100 }} tag={CardHeader}> {label} </Card>);
+<Card style={{ maxWidth:100 }} tag={CardHeader}> {label} </Card>);
 
 storiesOf('Card', module).add('Card with square, tag as Text and elevation as 12 props', () =>
 <Card style={{ maxWidth:100 }} tag={Text} square elevation={12}> {label} </Card>);
 
 
-storiesOf('BluerainCard', module).add('MaterialUI story for music card', () =>(
+storiesOf('BluerainCard', module).add('MaterialUI story for music card', () => (
 <Card style={{ width:350, display:'flex' }}>
 <div>
   <CardBody>

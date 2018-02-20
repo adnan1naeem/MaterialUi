@@ -15,12 +15,12 @@ import ChipUi from 'material-ui/Chip';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
-export interface MUIChipProps {
+export interface MUIChipProps extends ChipProp{
 	label?: string;
 	onClick?: () => void;
 	onDelete?: () => void;
 	deleteIcon?: any;
 }
-const Chip: React.StatelessComponent = (props: ChipProp & MUIChipProps) =>
+const Chip: React.StatelessComponent<MUIChipProps> = (props) =>
     (<ChipUi classes={{ ...props.style }} label={props.children} {...props}></ChipUi>);
 export default Chip;

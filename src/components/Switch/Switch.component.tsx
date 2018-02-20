@@ -14,21 +14,20 @@ import Switch from 'material-ui/Switch';
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
 
-export interface SwitchProps {
+export interface MUISwitchProps extends SwitchProp {
 	checked?: string | undefined | boolean,
 	value?: string,
 	classes?: {},
 	onChange?: () => void,
 }
 
-const BlueRainSwitch: React.StatelessComponent = (props: SwitchProps & SwitchProp) => {
+const BlueRainSwitch: React.StatelessComponent<MUISwitchProps> = (props) => {
 	return (
         <Switch
             onChange={props.onValueChange}
             {...props}
         />
 	);
-
 };
 
 export default BlueRainSwitch;

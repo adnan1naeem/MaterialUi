@@ -35,7 +35,7 @@ class MaterialUiPlugin extends Plugin {
 		'Dropdown': DropDown,
 		'DropdownItem': DropdownItem,
 		'Avatar': Avatar,
-		'AppBar': AppBar, 
+		'AppBar': AppBar,
 		'List': List,
 		'ListItem': ListItem,
 		'ListHeader': ListHeader,
