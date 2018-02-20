@@ -1,1 +1,1 @@
-export { default } from './Switch.component';
+export { default as Switch, MUISwitchProperties } from './Switch.component';

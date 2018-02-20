@@ -1,4 +1,4 @@
-import Card, { CardBody, CardFooter, CardHeader, CardMedia } from '../src/components/Card';
+import { Card, CardBody, CardFooter, CardHeader, CardMedia } from '../src/components/Card';
 import { create } from 'react-test-renderer';
 import React from 'react';
 

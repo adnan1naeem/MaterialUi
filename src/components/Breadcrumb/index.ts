@@ -1,1 +1,4 @@
-export { default } from './Breadcrumb.component';
+export {
+	default as Breadcrumb,
+	MUIBreadcrumbProperties
+} from './Breadcrumb.component';

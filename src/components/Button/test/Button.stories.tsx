@@ -1,12 +1,9 @@
 import * as React from 'react';
-import Button from '../../Button';
-import BR from '@blueeast/bluerain-os';
+import { Button } from '../../Button';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { text, number, boolean } from '@storybook/addon-knobs';
+import BR from '@blueeast/bluerain-os';
 
 const background = '.background {background-color: red;}';
-
 const Text = BR.Components.get('Text');
 
 // storiesOf('Button', module).add('Primary Button with knobs', () =>{

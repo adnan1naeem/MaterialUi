@@ -1,9 +1,9 @@
 import * as React from 'react';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { ListItemAvatar } from '../../List';
-import BR from '@blueeast/bluerain-os';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean, object } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
 
 storiesOf('ListItemAvatar', module).add('ListItemAvatar with size 800 and src props', () => (
 <ListItemAvatar

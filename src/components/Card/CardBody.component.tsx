@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
-import { CardBodyProp } from '@blueeast/bluerain-ui-interfaces';
-import  { CardContent } from 'material-ui/Card';
+import { CardBodyProperties } from '@blueeast/bluerain-ui-interfaces';
+import { CardContent } from 'material-ui/Card';
 
 /**
  * The props of CardBody Component
@@ -13,24 +9,17 @@ import  { CardContent } from 'material-ui/Card';
  * @param {string} props.className className for styling component with css.
  */
 
- /**
-  * Platform specific props
-  * @param {Object} props.classes Usefull to extend the style for CardBody component.
-  */
+/**
+ * Platform specific props
+ * @param {Object} props.classes Usefull to extend the style for CardBody component.
+ */
 
-export interface MUIProps {
-	classes?: {},
+export interface MUICardBodyProperties extends CardBodyProperties {
+	classes?: {};
 }
 
-const BlueRainCardBody = (props: CardBodyProp & MUIProps) => {
-	return (
-        <CardContent
-            {...props}
-        >
-        {props.children}
-        </CardContent>
-	);
-
+const BlueRainCardBody: React.StatelessComponent<MUICardBodyProperties> = props => {
+	return <CardContent {...props}>{props.children}</CardContent>;
 };
 
 export default BlueRainCardBody;

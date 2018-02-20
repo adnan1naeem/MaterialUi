@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { Avatar } from '../src/components/Avatar';
 import { create } from 'react-test-renderer';
-import Avatar from '../src/components/Avatar';
 import FolderIcon from 'material-ui-icons/Folder';
 
 test('Avatar component with size props', () => {

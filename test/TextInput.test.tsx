@@ -1,6 +1,6 @@
+import { TextInput } from '../src/components/TextInput';
 import { create } from 'react-test-renderer';
 import React from 'react';
-import TextInput from '../src/components/TextInput';
 
 function handleTextInputChange () {
 	console.log('I am clicked');

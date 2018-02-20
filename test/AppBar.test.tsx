@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { AppBar } from '../src/components/AppBar';
 import { create } from 'react-test-renderer';
-import AppBar from '../src/components/AppBar';
 
 test('AppBar component with position prop', () => {
 	const appBar = create(

@@ -1,1 +1,1 @@
-export { default } from './TextInput.component';
+export { default as TextInput, MUITextInputProperties } from './TextInput.component';

@@ -1,1 +1,1 @@
-export { default } from './Icon.component';
+export { default as Icon, MUIIconProperties } from './Icon.component';

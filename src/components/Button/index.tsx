@@ -1,1 +1,1 @@
-export { default } from  './Button.component';
+export { BlueRainButton as Button } from  './Button.component';
