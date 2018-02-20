@@ -1,7 +1,7 @@
-import * as BRInterfaces from '@blueeast/bluerain-ui-interfaces';
 import * as React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { BlueRainType , Plugin } from '@blueeast/bluerain-os';
+import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
 import { Divider, MUIDividerProperties } from './components/Divider';
