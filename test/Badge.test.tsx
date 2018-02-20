@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { Badge } from '../src/components/Badge';
 import { create } from 'react-test-renderer';
-import Badge from '../src/components/Badge';
 
 test('Badge component with required fields', () => {
 	const badge = create(

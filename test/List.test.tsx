@@ -1,4 +1,4 @@
-import List, { ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from '../src/components/List';
+import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText } from '../src/components/List';
 import { create } from 'react-test-renderer';
 import Button from 'material-ui/Button';
 import FolderIcon from 'material-ui-icons/Folder';

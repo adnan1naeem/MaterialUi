@@ -1,5 +1,5 @@
+import { Breadcrumb } from '../src/components/Breadcrumb';
 import { create } from 'react-test-renderer';
-import Breadcrumb from '../src/components/Breadcrumb';
 import React from 'react';
 
 
