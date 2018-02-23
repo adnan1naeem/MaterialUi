@@ -7,7 +7,6 @@ import { Chip, MUIChipProperties } from './components/Chip';
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-import { Icon, MUIIconProperties } from './components/Icon';
 import { List, ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
@@ -15,7 +14,7 @@ import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
-import { Carousel } from './components/Carousel';
+
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
