@@ -27,33 +27,40 @@ class MaterialUiPlugin extends Plugin {
 	static slug = 'material-ui';
 
 	static components = {
-		'TextInput': TextInput,
-		'Chip': Chip,
-		'Badge': Badge,
-		'Dropdown': Dropdown,
-		'DropdownItem': DropdownItem,
-		'Avatar': Avatar,
-		'AppBar': AppBar,
-		'List': List,
-		'ListItem': ListItem,
-		'ListHeader': ListHeader,
-		'ListItemAvatar': ListItemAvatar,
-		'ListItemIcon': ListItemIcon,
-		'ListItemText': ListItemText,
-		'ListItemRightButton': ListItemRightButton,
-		'Button': Button,
-		'Card': Card,
-		'CardHeader': CardHeader,
-		'CardBody': CardBody,
-		'CardMedia': CardMedia,
-		'CardFooter': CardFooter,
-		'Carousel': Carousel,
-		'Breadcrumb': Breadcrumb,
-		'Switch': Switch,
-		'Icon': Icon,
-		'FormControl': FormControl,
-		'FormGroup': FormGroup,
-		'Divider': Divider
+		AppBar,
+		Avatar,
+		Badge,
+		Button,
+
+		Card,
+		CardHeader,
+		CardBody,
+		CardMedia,
+		CardFooter,
+
+		Chip,
+		Divider,
+		
+		Dropdown,
+		DropdownItem,
+
+		List,
+		ListHeader,
+		ListItem,
+		ListItemAvatar,
+		ListItemIcon,
+		ListItemRightButton,
+		ListItemText,
+
+		Switch,
+
+		FormControl,
+		FormGroup,
+		TextInput,
+
+		'Carousel': Carousel, // Deprecated, remove in next semver major version
+		'Breadcrumb': Breadcrumb, // Deprecated, remove in next semver major version
+		'Icon': Icon, // Deprecated, remove in next semver major version
 	};
 
 // 		let theme = ctx.Configs.get('theme');
