@@ -58,9 +58,7 @@ class MaterialUiPlugin extends Plugin {
 		FormGroup,
 		TextInput,
 
-		'Carousel': Carousel, // Deprecated, remove in next semver major version
-		'Breadcrumb': Breadcrumb, // Deprecated, remove in next semver major version
-		'Icon': Icon, // Deprecated, remove in next semver major version
+		Breadcrumb, // Deprecated, remove in next semver major version
 	};
 
 // 		let theme = ctx.Configs.get('theme');
