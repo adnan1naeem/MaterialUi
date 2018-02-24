@@ -1,6 +1,7 @@
-import * as React from 'react';
 import { Button } from '../src/components/Button';
+import { ButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { create } from 'react-test-renderer';
+import React from 'react';
 
 test('Button with fab true', () => {
 	const button = create(
@@ -29,7 +30,7 @@ test('Button component with color accent', () => {
 
 test('Button component with onClick', () => {
 	const button = create(
-      <Button onClick={console.log('Heelloo')}></Button>
+      <Button onPress={console.log('Heelloo')}></Button>
   ).toJSON();
 	expect(button.props.onClick).toEqual(console.log('Heelloo'));
 	expect(button).toMatchSnapshot();
