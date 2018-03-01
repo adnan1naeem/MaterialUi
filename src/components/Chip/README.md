@@ -32,10 +32,10 @@ export default withBluerain(ChipSample);
 
 ## Storybook
 
-- 1st story of the Chip component in chip.stories.tsx file is written for Chip with default value.
-- 2nd story of the Chip component in chip.stories.tsx file is written for Chip with knobs and prop "style".
-- 3rd story of the Chip component in chip.stories.tsx file is written for Chip with knobs and prop "style" , "onClick".
-- 4th story of the Chip component in chip.stories.tsx file is written for Chip without knobs and prop "style" , "onClick".
+- 1st story of the Chip component in Chip.stories.tsx file is written for Chip with default value.
+- 2nd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style".
+- 3rd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style" , "onClick".
+- 4th story of the Chip component in Chip.stories.tsx file is written for Chip without knobs and prop "style" , "onClick".
 
 ## Tests
 
