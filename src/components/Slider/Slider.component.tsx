@@ -17,14 +17,13 @@ const styles = {
  * @param {function} props.onValueChange Invoked when the value changes.
  */
 
-export interface IMUIProps {
-	bluerain?:any,
-	onValueChange: (e:any)=>void
+export interface IMUIProps extends SliderProperties {
+	bluerain?:any
 }
 
 const DEFAULT_VALUE = 0;
 
-class Slider extends React.Component<SliderProperties & IMUIProps, {value:number}>{
+class Slider extends React.Component<IMUIProps, {value:number}>{
 
 	constructor (props:SliderProperties & IMUIProps) {
 		super(props);
@@ -36,7 +35,9 @@ class Slider extends React.Component<SliderProperties & IMUIProps, {value:number
 
 	onValueChange = (value) => {
 		this.setState({ value });
-		this.props.onValueChange(value);
+		if(this.props.onValueChange ) {
+			this.props.onValueChange(value);
+		}
 	}
 
 	render() {
