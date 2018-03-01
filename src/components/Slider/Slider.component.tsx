@@ -1,4 +1,4 @@
-import { ISlider } from 'bluerain-ui-interfaces/Components/Slider';
+import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
 import { withBlueRain } from '@blueeast/bluerain-os';
 import Range from 'react-range-progress';
 import React from 'react';
@@ -24,9 +24,9 @@ export interface IMUIProps {
 
 const DEFAULT_VALUE = 0;
 
-class Slider extends React.Component<ISlider & IMUIProps, {value:number}>{
+class Slider extends React.Component<SliderProperties & IMUIProps, {value:number}>{
 
-	constructor (props:ISlider & IMUIProps) {
+	constructor (props:SliderProperties & IMUIProps) {
 		super(props);
 		this.onValueChange= this.onValueChange.bind(this);
 		this.state= {

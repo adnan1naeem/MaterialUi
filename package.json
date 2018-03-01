@@ -170,6 +170,6 @@
     "victory": "^0.24.3",
     "warning": "^3.0.0",
     "ws": "3.3.3",
-    "@blueeast/bluerain-ui-interfaces": "^3.1.2"
+    "@blueeast/bluerain-ui-interfaces": "^3.1.3"
   }
 }
