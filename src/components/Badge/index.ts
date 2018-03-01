@@ -1,1 +1,1 @@
-export { default } from './Badge.component';
+export { default as Badge, MUIBadgeProperties } from './Badge.component';

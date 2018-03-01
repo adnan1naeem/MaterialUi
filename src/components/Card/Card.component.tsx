@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
-import * as React from 'react';
+import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 import Card from 'material-ui/Card';
-import ICard from 'bluerain-ui-interfaces/Components/Card';
+import React from 'react';
 
 /**
  * The props of Card Component
@@ -15,30 +11,29 @@ import ICard from 'bluerain-ui-interfaces/Components/Card';
  * @param {string} props.className className for styling component with css.
  */
 
- /**
-  * Platform specific props
-  * @param {number} props.elevation box-shadow of Card in range 0-24.
-  * @param {boolean} props.square If true, rounded corners are degenerated.
-  */
+/**
+ * Platform specific props
+ * @param {number} props.elevation box-shadow of Card in range 0-24.
+ * @param {boolean} props.square If true, rounded corners are degenerated.
+ */
 
-export interface IMUIProps {
-	elevation?: number,
-	square?: boolean,
+export interface MUICardProperties extends CardProperties {
+	elevation?: number;
+	square?: boolean;
 }
 
-const BlueRainCard = (props: ICard & IMUIProps) => {
+const BlueRainCard: React.StatelessComponent<MUICardProperties> = props => {
 	return (
-        <Card
-            {...props}
-            raised={props.raised}
-            style={props.style}
-            component={typeof props.tag === 'string' ? props.tag : 'div'}
-            className={props.className}
-        >
-        {props.children}
-        </Card>
+    <Card
+      {...props}
+      raised={props.raised}
+      style={props.style}
+      component={typeof props.tag === 'string' ? props.tag : 'div'}
+      className={props.className}
+    >
+      {props.children}
+    </Card>
 	);
-
 };
 
 export default BlueRainCard;

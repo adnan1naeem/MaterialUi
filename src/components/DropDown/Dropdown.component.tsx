@@ -1,7 +1,8 @@
-import React,{ReactNode} from 'react';
-import Select from 'material-ui/Select';
+import React,{ ReactNode } from 'react';
 import { MenuItem } from 'material-ui/Menu';
-import  {IPicker} from 'bluerain-ui-interfaces/Components/Picker';
+import  { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
+import Select from 'material-ui/Select';
+
 /**
  * The props of DropDown Component
  * @param {boolean} props.autoWidth for Auto width.
@@ -16,10 +17,10 @@ import  {IPicker} from 'bluerain-ui-interfaces/Components/Picker';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-export interface IMaterialuiDropDown {
-    autoWidth?:boolean,
-    classes?:object,
-    displayEmpty?:boolean,
+export interface MUIPickerProperties extends PickerProperties {
+	autoWidth?:boolean,
+	classes?:object,
+	displayEmpty?:boolean,
 	input?:ReactNode,
 	MenuProps?:object,
 	native?:boolean,
@@ -29,11 +30,7 @@ export interface IMaterialuiDropDown {
 	disabled?:boolean
 }
 
-export interface IMaterialuiDropDownItem {
-	disabled?:boolean,
-	value?:any
-}
-const DropDown =(props:IPicker & IMaterialuiDropDown) => (
+const DropDown : React.StatelessComponent<MUIPickerProperties> =(props) => (
             <Select
                 onChange={props.onValueChange}
                 value={props.selectedValue}
@@ -41,6 +38,4 @@ const DropDown =(props:IPicker & IMaterialuiDropDown) => (
             />
 );
 
-const DropdownItem = (props:IMaterialuiDropDownItem) => (<MenuItem {...props} />);
-
-export { DropdownItem, DropDown };
+export default DropDown;

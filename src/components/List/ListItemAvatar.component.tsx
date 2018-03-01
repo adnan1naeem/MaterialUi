@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
-import { IListItemAvatar } from 'bluerain-ui-interfaces/Components/List';
-import Avatar from '../Avatar';
+import { Avatar } from '../Avatar';
+import { ListItemAvatarProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItemAvatar Component
@@ -13,15 +9,14 @@ import Avatar from '../Avatar';
  * @param {string} props.className className for styling component with css.
  * @param {string} props.src src of the image.
  */
-export interface IMUIProps {
+export interface MUIListItemAvatarProperties extends ListItemAvatarProperties {
 	children?: any,
 }
 
-const BlueRainListItemAvatar = (props: IListItemAvatar & IMUIProps) => {
+const BlueRainListItemAvatar: React.StatelessComponent<MUIListItemAvatarProperties> = (props) => {
 	return (
         <Avatar {...props} size={props.size}>{props.children}</Avatar>
 	);
-
 };
 
 export default BlueRainListItemAvatar;

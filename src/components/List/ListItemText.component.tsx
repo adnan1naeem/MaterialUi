@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
-import { IListItemText } from 'bluerain-ui-interfaces/Components/List';
 import { ListItemText } from 'material-ui';
+import { ListItemTextProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItemText Component
@@ -17,20 +13,19 @@ import { ListItemText } from 'material-ui';
  * @param {bool} props.inset If true, the children will be indented. This should be used if there is no left avatar or left icon.
  */
 
- export interface IMUIProps {
-     primary?: any,
-     secondary?: any,
-     inset?: boolean,
- }
+export interface MUIListItemTextProperties extends ListItemTextProperties {
+	primary?: any,
+	secondary?: any,
+	inset?: boolean,
+}
 
-const BlueRainListItemText = (props: IListItemText & IMUIProps) => {
-    return (
+const BlueRainListItemText: React.StatelessComponent<MUIListItemTextProperties> = (props) => {
+	return (
         <ListItemText
             primary={props.children}
             {...props}
         />
-    );
-
+	);
 };
 
 export default BlueRainListItemText;

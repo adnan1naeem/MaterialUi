@@ -1,9 +1,6 @@
-/**
- * Created by Ghazal Taimur on 12/29/17.
- */
-import React from 'react';
+import * as React from 'react';
+import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
 import ChipUi from 'material-ui/Chip';
-import { IChip } from 'bluerain-ui-interfaces/Components/Chip';
 
 /**
  * The universal props of Chip Component
@@ -15,12 +12,12 @@ import { IChip } from 'bluerain-ui-interfaces/Components/Chip';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
-export interface IChipProps {
-    label?: string;
-    onClick?: () => void;
-    onDelete?: () => void;
-    deleteIcon?: any;
+export interface MUIChipProperties extends ChipProperties{
+	label?: string;
+	onClick?: () => void;
+	onDelete?: () => void;
+	deleteIcon?: any;
 }
-const Chip = (props: IChip & IChipProps) =>
-    (<ChipUi classes={{...props.style}} label={props.children} {...props}></ChipUi>);
+const Chip: React.StatelessComponent<MUIChipProperties> = (props) =>
+    (<ChipUi classes={{ ...props.style }} label={props.children} {...props}></ChipUi>);
 export default Chip;

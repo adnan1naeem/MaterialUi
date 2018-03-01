@@ -1,5 +1,5 @@
-import React, {ReactNode} from 'react';
-import {ITextInput} from 'bluerain-ui-interfaces/Components/TextInput';
+import React, { ReactNode } from 'react';
+import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
 
 /**
@@ -15,41 +15,43 @@ import TextField from 'material-ui/TextField';
  * @param {string} props.type Type attribute of the Input element. It should be a valid HTML5 input type.
  */
 
-export interface IMaterialTextInput {
-    autoComplete?: string,
-    autoCorrect?: string,
-    id?: string,
-    label?: string,
-    className?: any,
-    margin?: 'none' |
+export interface MUITextInputProperties extends TextInputProperties {
+	autoComplete?: string,
+	autoCorrect?: string,
+	id?: string,
+	label?: string,
+	className?: any,
+	margin?: 'none' |
     'dense' |
     'normal',
-    required?: boolean,
-    error?: boolean,
-    type?: string,
-    rowsMax?: string,
-    rows?: string,
-    helperText?: ReactNode,
-    InputLabelProps?: object,
-    fullWidth?: boolean
+	required?: boolean,
+	error?: boolean,
+	type?: string,
+	rowsMax?: string,
+	rows?: string,
+	helperText?: ReactNode,
+	InputLabelProps?: object,
+	fullWidth?: boolean,
+	errorText?: ReactNode,
 }
 
-const BlueRainTextInput = (props: ITextInput & IMaterialTextInput) => {
-    let disabled = false;
-    if(props.editable !== undefined && !props.editable) {
-       disabled = true;
-    }
-    return (
-        <TextField
-            style={props.style}
-            placeholder={props.placeholder}
-            autoFocus={props.autoFocus}
-            onChange={props.onChange}
-            rows={props.numberOfLines}
-            disabled={disabled}
-            {...props}
-        />
-    );
+const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (props) => {
+	let disabled = false;
+	if(props.editable !== undefined && !props.editable) {
+		disabled = true;
+	}
+	return (
+	<TextField
+		style={props.style}
+		placeholder={props.placeholder}
+		autoFocus={props.autoFocus}
+		onChange={props.onChange}
+		rows={props.numberOfLines}
+		disabled={disabled}
+		helperText={props.errorText}
+		{...props}
+	/>
+	);
 };
 
 export default BlueRainTextInput;

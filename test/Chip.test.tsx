@@ -1,6 +1,6 @@
-import React from 'react';
+import { Chip } from '../src/components/Chip';
 import { create } from 'react-test-renderer';
-import Chip from '../src/components/Chip';
+import React from 'react';
 
 test('Chip component with default values', () => {
 	const chip = create(

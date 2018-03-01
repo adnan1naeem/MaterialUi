@@ -1,9 +1,5 @@
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-
 import * as React from 'react';
-import { IListHeader } from 'bluerain-ui-interfaces/Components/List';
+import { ListHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
 import { ListSubheader } from 'material-ui';
 
 /**
@@ -13,7 +9,7 @@ import { ListSubheader } from 'material-ui';
  */
 
 
-const ListHeader = (props: IListHeader) => {
+const ListHeader: React.StatelessComponent<ListHeaderProperties> = (props) => {
 	return (
         <ListSubheader
             {...props}

@@ -1,8 +1,7 @@
 import * as React from 'react';
-import BR from '@blueeast/bluerain-os';
+import { BadgeProperties } from '@blueeast/bluerain-ui-interfaces';
 import BadgeUi from 'material-ui/Badge';
-import { FormattedMessage } from 'react-intl';
-import { IBadge } from 'bluerain-ui-interfaces/Components/Badge';
+
 
 /**
  * The universal props of Badge Component
@@ -13,14 +12,15 @@ import { IBadge } from 'bluerain-ui-interfaces/Components/Badge';
  * @param {ReactNode} props.children the children on which the badge will append styles.
  */
 
-export interface IBadgeProps {
-    color?: 'default' | 'primary' | 'accent';
-    children?: Node;
+export interface MUIBadgeProperties extends BadgeProperties {
+	color?: 'default' | 'primary' | 'accent';
+	children?: Node;
 }
-class Badge extends React.Component<IBadge & IBadgeProps, {}> {
-    render() {
-        return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
-    }
+
+class Badge extends React.Component<MUIBadgeProperties, {}> {
+	render() {
+		return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
+	}
 
 }
 

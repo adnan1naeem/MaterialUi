@@ -1,10 +1,6 @@
-/**
- * Created by M.GhazanfarAli on 15/01/18.
- */
-
 import * as React from 'react';
-import IList from 'bluerain-ui-interfaces/Components/List';
 import { List } from 'material-ui';
+import { ListProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of List Component
@@ -20,14 +16,14 @@ import { List } from 'material-ui';
   * @param {bool} props.dense if true, dense styling is used.
   */
 
-export interface IBSProps {
+export interface MUIListProperties extends ListProperties{
 	className?: string,
 	subheader?: any,
 	disablePadding?:boolean,
 	dense?:boolean,
 }
 
-const BlueRainList = (props: IList & IBSProps) => {
+const BlueRainList: React.StatelessComponent<MUIListProperties> = (props) => {
 	return (
         <List
             style={props.style}
@@ -36,7 +32,6 @@ const BlueRainList = (props: IList & IBSProps) => {
         {props.children}
         </List>
 	);
-
 };
 
 export default BlueRainList;

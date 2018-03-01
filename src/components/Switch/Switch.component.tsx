@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { ISwitch } from 'bluerain-ui-interfaces/Components/switch';
-import BR from '@blueeast/bluerain-os';
+import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
 import Switch from 'material-ui/Switch';
 
 /**
@@ -15,21 +14,20 @@ import Switch from 'material-ui/Switch';
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
 
-export interface ISwitchProps {
+export interface MUISwitchProperties extends SwitchProperties {
 	checked?: string | undefined | boolean,
 	value?: string,
 	classes?: {},
 	onChange?: () => void,
 }
 
-const BlueRainSwitch = (props: ISwitchProps & ISwitch) => {
+const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
 	return (
         <Switch
             onChange={props.onValueChange}
             {...props}
         />
 	);
-
 };
 
 export default BlueRainSwitch;
