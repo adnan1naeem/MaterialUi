@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Checkbox from '../../Checkbox';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
+import Checkbox from '../../Checkbox';
 
 const Text = BR.Components.get('Text');
 
