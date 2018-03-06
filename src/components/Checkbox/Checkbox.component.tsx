@@ -7,7 +7,7 @@ import React, { ReactNode } from 'react';
 import { CheckboxProperties } from '@blueeast/bluerain-ui-interfaces';
 import Checkbox from 'material-ui/Checkbox';
 
-export interface MUIProps {
+export interface MUIProps extends CheckboxProperties{
   color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined,
   value?: string,
   type?: string,
@@ -23,8 +23,8 @@ export interface MUIProps {
   checkedIcon?: ReactNode,
   }
 
-class BlueRainCheckbox extends React.Component<CheckboxProperties & MUIProps, {checked:boolean}> {
-    constructor (props:CheckboxProperties & MUIProps) {
+class BlueRainCheckbox extends React.Component<MUIProps, {checked:boolean}> {
+    constructor (props:MUIProps) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
       this.state= {
