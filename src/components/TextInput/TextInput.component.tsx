@@ -36,9 +36,9 @@ export interface MUITextInputProperties extends TextInputProperties {
 }
 
 const customOnChange = (props) => (event) => {
-	props.onChange && props.onChange(event);
-	props.onChangeText && props.onChangeText(event.target.value);
-}
+	props.onChange(event);
+	props.onChangeText(event.target.value);
+};
 
 const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (props) => {
 	let disabled = false;
@@ -50,7 +50,7 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (pro
 		style={props.style}
 		placeholder={props.placeholder}
 		autoFocus={props.autoFocus}
-		onChange={customOnChange}
+		onChange={(props.onChange || props.onChangeText) ? customOnChange : () => {return null;}}
 		rows={props.numberOfLines}
 		disabled={disabled}
 		helperText={props.errorText}
