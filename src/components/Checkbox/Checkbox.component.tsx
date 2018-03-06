@@ -20,6 +20,7 @@ export interface MUIProps extends CheckboxProperties{
   disableRipple?: boolean,
   classes?: {},
   checkedIcon?: ReactNode,
+  label?: ReactNode,
   }
 
 class BlueRainCheckbox extends React.Component<MUIProps, {checked:boolean | string}> {
