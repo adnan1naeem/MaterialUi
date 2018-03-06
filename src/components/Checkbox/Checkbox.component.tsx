@@ -37,7 +37,7 @@ class BlueRainCheckbox extends React.Component<MUIProps, {checked:boolean | stri
   }
 
   render() {
-const {value, ...others} = this.props;
+const { value, ...others } = this.props;
     return (
       <FormGroup row>
         <FormControlLabel
