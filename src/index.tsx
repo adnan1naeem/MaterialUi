@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
-import { BlueRainType , Plugin } from '@blueeast/bluerain-os';
+import { BlueRain, BlueRainType , Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
@@ -14,7 +14,7 @@ import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
-
+import { withReboot } from './withReboot';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -51,6 +51,12 @@ class MaterialUiPlugin extends Plugin {
 		FormGroup,
 		TextInput,
 		Breadcrumb, // Deprecated, remove in next semver major version
+	};
+
+	static hooks = {
+		'bluerain.system.initialized': (BR: BlueRain) => {
+			BR.Components.addHocs('SystemLayout', withReboot);
+		},
 	};
 }
 
