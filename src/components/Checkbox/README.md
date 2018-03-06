@@ -9,6 +9,7 @@
 | color | string | | color of checkbox. (not supported for Web). |
 | label | Node |  | label to show with checkbox. |
 | checked | boolean | | The value of the checkbox. If true the checkbox will be turned on. Default value is false. |
+| testID | string | | Used to locate this view in end-to-end tests. Substitute of value prop for MUI Checkbox. |
 
 ## All Material-UI Props are also supported
 

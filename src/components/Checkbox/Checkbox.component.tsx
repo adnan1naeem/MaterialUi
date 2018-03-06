@@ -9,7 +9,6 @@ import Checkbox from 'material-ui/Checkbox';
 
 export interface MUIProps extends CheckboxProperties{
   color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined,
-  value?: string,
   type?: string,
   onChange?: () => {},
   inputRef?: () => {},
@@ -23,29 +22,30 @@ export interface MUIProps extends CheckboxProperties{
   checkedIcon?: ReactNode,
   }
 
-class BlueRainCheckbox extends React.Component<MUIProps, {checked:boolean}> {
+class BlueRainCheckbox extends React.Component<MUIProps, {checked:boolean | string}> {
     constructor (props:MUIProps) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
       this.state= {
-        checked: props.checked? props.checked : false,
+        checked: props.value? props.value : false,
 		};
 	}
 
   handleChange = name => event => {
+    this.props.onChange? this.props.onChange() : this.setState({ [name]: event.target.checked });
     this.setState({ [name]: event.target.checked });
   }
 
   render() {
-
+const {value, ...others} = this.props;
     return (
       <FormGroup row>
         <FormControlLabel
           control={
             <Checkbox
+              {...others}
               onChange={this.handleChange('checked')}
-              value="checked"
-              {...this.props}
+              value={this.props.testID}
               checked={this.state.checked}
             />
           }

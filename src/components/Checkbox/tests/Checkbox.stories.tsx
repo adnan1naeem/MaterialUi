@@ -11,15 +11,15 @@ function handleTextInputChange (value: any) {
 }
 
 storiesOf('Checkbox', module).add('disabled',
-    () => <Checkbox label="disabled" color="default" disabled={true} checked /> ) ;
+    () => <Checkbox label="disabled" color="default" disabled={true} value /> ) ;
 
 
 storiesOf('Checkbox', module).add('with onPress',
-() => <Checkbox label="with onPress" onPress={action('I was pressed')} color="contrast" checked/> ) ;
+() => <Checkbox label="with onPress" onChange={action('I was pressed')} color="contrast" value /> ) ;
 
 
 storiesOf('Checkbox', module).add('with label as Node',
-() => <Checkbox label={<Text>I am a text in Node</Text>} onPress={action('I was pressed')} color="accent" /> ) ;
+() => <Checkbox label={<Text>I am a text in Node</Text>} onChange={action('I was pressed')} color="accent" /> ) ;
 
 storiesOf('Checkbox', module).add('with indeterminate',
-() => <Checkbox label={<Text>I am a text in Node</Text>} onPress={action('I was pressed')} color="primary" indeterminate/> ) ;
+() => <Checkbox label={<Text>I am a text in Node</Text>} onChange={action('I was pressed')} color="primary" indeterminate/> ) ;
