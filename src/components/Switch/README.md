@@ -32,7 +32,7 @@ export default withBluerain(Switch);
 
 ## Storybook
 
-- 1st story of the Switch component in avatar.stories.tsx file is written for Switch with Knobs.
+- 1st story of the Switch component in Switch.stories.tsx file is written for Switch with Knobs.
 
 ## Tests
 

@@ -11,6 +11,7 @@ import urLocaleData from 'react-intl/locale-data/ur';
 import zhLocaleData from 'react-intl/locale-data/zh';
 import arLocaleData from 'react-intl/locale-data/ar';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { MemoryRouter } from 'react-router-dom';
 
 initializeRTL();
 setAddon();

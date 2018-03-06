@@ -42,3 +42,7 @@ const DropDown = () => (
 
 export default withBlueRain(DropDown);
 ```
+
+## Tests
+
+Unit tests are passed and storyshot tests are also passed.

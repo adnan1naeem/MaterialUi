@@ -29,7 +29,6 @@
 | InputLabelProps | object | | Properties applied to the InputLabel element. |
 | fullWidth | boolean | | If true, the input will take up the full width of its container. |
 
-
 ## How to use
 
 ```JavaScript
@@ -53,3 +52,4 @@ export default withBluerain(appPage);
 
 ## Tests
 
+Unit tests are passed and storyshot tests are also passed.
