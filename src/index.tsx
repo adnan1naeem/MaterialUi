@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
-import { BlueRainType , Plugin, BlueRain } from '@blueeast/bluerain-os';
+import { BlueRain, BlueRainType , Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
@@ -57,7 +57,7 @@ class MaterialUiPlugin extends Plugin {
 		'bluerain.system.initialized': (BR: BlueRain) => {
 			BR.Components.addHocs('SystemLayout', withReboot);
 		},
-	}
+	};
 }
 
 export default MaterialUiPlugin;
