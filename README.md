@@ -23,7 +23,30 @@ BR.boot({
 
 ## Components
 
-None.
+- AppBar
+- Avatar
+- Badge
+- Button
+- Card
+- CardHeader
+- CardBody
+- CardMedia
+- CardFooter
+- Chip
+- Divider
+- Dropdown
+- DropdownItem
+- FormControl
+- FormGroup
+- List
+- ListHeader
+- ListItem
+- ListItemAvatar
+- ListItemIcon
+- ListItemRightButton
+- ListItemText
+- Switch
+- TextInput
 
 ## Filters
 
@@ -70,11 +93,11 @@ BR.Filters.add(
 
 ### MaterialUiPlugin
 
-**Extends Plugin**
+### **Extends Plugin**
 
 Material UI Plugin
 
-**Properties**
+### **Properties**
 
--   `pluginName` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "MaterialUiPlugin"
--   `slug` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "material-ui"
+- `pluginName` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "MaterialUiPlugin"
+- `slug` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "material-ui"
