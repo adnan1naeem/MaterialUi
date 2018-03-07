@@ -28,6 +28,7 @@ const BlueRainList: React.StatelessComponent<MUIListProperties> = (props) => {
         <List
             style={props.style}
             className={props.className}
+            {...props}
         >
         {props.children}
         </List>
