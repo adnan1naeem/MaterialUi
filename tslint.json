@@ -10,6 +10,7 @@
         "jsx-self-close":false,
         "jsx-boolean-value": [ "never" ],
         "no-console": false,
-        "jsx-no-lambda": false
+        "jsx-no-lambda": false,
+        "ter-indent" : false
     }
 }

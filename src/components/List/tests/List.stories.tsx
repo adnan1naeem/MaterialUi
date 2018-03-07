@@ -74,22 +74,22 @@ storiesOf('List', module).add('List of MUI-2', () => (
 
 storiesOf('List', module).add('List of MUI-4', () => (
 <Paper>
-<List dense={true}>
-  <ListItem button>
-    <ListItemAvatar>
-      <Avatar>
-        <DraftsIcon />
-      </Avatar>
-    </ListItemAvatar>
-    <ListItemText
-      primary="Single-line item"
-      secondary="Secondary text"
-    />
-    <ListItemRightButton>
-      <IconButton aria-label="Delete">
-        <DraftsIcon />
-      </IconButton>
-    </ListItemRightButton>
-  </ListItem>
-</List>
+  <List dense={true} subheader={<ListHeader>Heading1</ListHeader>}>
+    <ListItem button>
+      <ListItemAvatar>
+        <Avatar>
+          <DraftsIcon />
+        </Avatar>
+      </ListItemAvatar>
+      <ListItemText
+        primary="Single-line item"
+        secondary="Secondary text"
+      />
+      <ListItemRightButton>
+        <IconButton aria-label="Delete">
+          <DraftsIcon />
+        </IconButton>
+      </ListItemRightButton>
+    </ListItem>
+  </List>
 </Paper>));
