@@ -36,7 +36,7 @@ export interface MUITextInputProperties extends TextInputProperties {
 }
 
 const customOnChange = (props) => (event) => {
-	if(props.onChange) { props.onChange(event) };
+	if(props.onChange) { props.onChange(event); }
 	if(props.onChangeText) { props.onChangeText(event.target.value); }
 };
 
