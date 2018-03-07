@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
 
 const okay = () => {
-    console.log('helo');
-}
+	console.log('helo');
+};
 storiesOf('ListItem', module).add('ListItem with tag, href and action props', () =>
 <ListItem active onPress={okay}>Cras justo odio</ListItem>);
