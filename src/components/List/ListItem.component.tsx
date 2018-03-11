@@ -15,7 +15,7 @@ import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
   * @param {bool} props.button If true, ListItem will be a button.
   * @param {string} props.component component with which ListItem will be rendered.
   * @param {string} props.href src to which the ListItem will be directed.
-  * @param {func} props.onClick If button/active, function to be called back when clicked.
+  * @param {func} props.onPress If button/active, function to be called back when clicked.
   */
 
 export interface MUIListItemProperties extends ListItemProperties {
@@ -23,7 +23,7 @@ export interface MUIListItemProperties extends ListItemProperties {
 	button?: boolean,
 	component?: string,
 	href?: string,
-	onClick?: ()=> void,
+	onPress?: ()=> void,
 	disabled?: boolean,
 }
 
@@ -31,6 +31,7 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
 	return (
         <ListItem
             button={props.active}
+            onClick={props.onPress}
             {...props}
         >
         {props.children}
