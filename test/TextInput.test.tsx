@@ -19,3 +19,10 @@ test('TextInput component with editable true', () => {
 	expect(textInput.props.style).toEqual(undefined);
 	expect(textInput).toMatchSnapshot();
 });
+test('TextInput component with onChangeText', () => {
+	const textInput = create(
+		<TextInput placeholder="hello" editable={false} defaultValue="nooo" onChangeText={handleTextInputChange} autoComplete="Hello World !!" autoFocus={true} />
+	).toJSON();
+	expect(textInput.props.style).toEqual(undefined);
+	expect(textInput).toMatchSnapshot();
+});
