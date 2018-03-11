@@ -41,7 +41,7 @@ const customOnChange = (props) => (event) => {
 };
 
 const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (rawProps) => {
-	const { onChangeText , ...props} = rawProps;
+	const { onChangeText , ...props } = rawProps;
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;
