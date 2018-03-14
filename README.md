@@ -1,6 +1,7 @@
 # Material UI Plugin
 
 Adds [Material UI](http://www.material-ui.com/#/) theme Provider to BlueRain.
+Components of material-ui have been developed using a common interface.
 
 ## Usage
 
@@ -23,7 +24,30 @@ BR.boot({
 
 ## Components
 
-None.
+- AppBar
+- Avatar
+- Badge
+- Button
+- Card
+- CardHeader
+- CardBody
+- CardMedia
+- CardFooter
+- Chip
+- Divider
+- Dropdown
+- DropdownItem
+- FormControl
+- FormGroup
+- List
+- ListHeader
+- ListItem
+- ListItemAvatar
+- ListItemIcon
+- ListItemRightButton
+- ListItemText
+- Switch
+- TextInput
 
 ## Filters
 
@@ -53,14 +77,14 @@ This example customizes the theme to make the AppBar color red.
 import BR from '@blueeast/bluerain-os';
 
 BR.Filters.add(
-	'material-ui.theme',
-	function CustomTheme(theme) {
-		return Object.assign({}, theme, {
-			appBar: {
-				color: 'red'
-			}
-		})
-	}
+'material-ui.theme',
+    function CustomTheme(theme) {
+        return Object.assign({}, theme, {
+            appBar: {
+                color: 'red'
+            }
+        })
+    }
 );
 ```
 
@@ -70,11 +94,20 @@ BR.Filters.add(
 
 ### MaterialUiPlugin
 
-**Extends Plugin**
+### **Extends Plugin**
 
 Material UI Plugin
 
-**Properties**
+### **Properties**
 
--   `pluginName` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "MaterialUiPlugin"
--   `slug` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "material-ui"
+- `pluginName` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "MaterialUiPlugin"
+- `slug` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** "material-ui"
+
+### **Internationalization**
+
+Components provide support for following languages:
+
+- Urdu (ur)
+- English (en)
+- Arabic (ar)
+- Chinese (zh)
