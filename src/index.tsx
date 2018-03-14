@@ -14,7 +14,7 @@ import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
-import { withReboot } from './withReboot';
+// import { withReboot } from './withReboot';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -53,11 +53,11 @@ class MaterialUiPlugin extends Plugin {
 		Breadcrumb, // Deprecated, remove in next semver major version
 	};
 
-	static hooks = {
-		'bluerain.system.initialized': (BR: BlueRain) => {
-			BR.Components.addHocs('SystemLayout', withReboot);
-		},
-	};
+	// static hooks = {
+	// 	'bluerain.system.initialized': (BR: BlueRain) => {
+	// 		BR.Components.addHocs('SystemLayout', withReboot);
+	// 	},
+	// };
 }
 
 export default MaterialUiPlugin;
