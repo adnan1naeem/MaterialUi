@@ -14,6 +14,7 @@ import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
+import { Dialog } from './components/Dialog';
 // import { withReboot } from './withReboot';
 /**
  * Material UI Plugin
@@ -37,6 +38,7 @@ class MaterialUiPlugin extends Plugin {
 		CardFooter,
 		Chip,
 		Divider,
+    Dialog,
 		Dropdown,
 		DropdownItem,
 		List,
