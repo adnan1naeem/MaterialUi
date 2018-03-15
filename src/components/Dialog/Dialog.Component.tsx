@@ -1,8 +1,5 @@
-/**
- * Created by M.Ghaznfar on 3/3/18.
- */
 
-import React, { ReactNode,Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
 import Dialog from 'material-ui/Dialog';
 
@@ -35,12 +32,12 @@ class DialogComponent extends React.Component<MUIModalProperties > {
   render(){
 
       return(
-
         <Dialog
           open={this.props.open}
           onClose={this.props.onClose}
           fullWidth={this.props.fullWidth}
           fullScreen={this.props.fullScreen}
+          onEscapeKeyDown={this.props.onRequestClose}
         >
           {this.props.children}
         </Dialog>

@@ -1,46 +1,24 @@
-/**
- * Created by M.Ghaznfar on 3/3/18.
- */
-
-import React, { ReactNode,Component } from 'react';
+import React, { Component, ReactNode } from 'react';
+import { Button } from '../Button';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
+import  Dialog from   './Dialog.Component';
 import DialogBody from  './DialogBody.Component';
 import   DialogFooter from './DialogFooter.Component';
 import DialogHeader from  './DialogHeader.Component';
-import  Dialog from   './Dialog.Component';
 
-import { Button } from '../Button';
 
 export interface States{
-
-  open:boolean
-
-}
-
-export interface MUIModalProperties extends ModalProperties{
-  classes?:object,
-  disableBackdropClick?:boolean,
-  disableEscapeKeyDown?:boolean,
-  fullScreen?:boolean,
-  fullWidth?:boolean,
-  maxWidth?:'xs'|'sm'|'md'
-  onBackdropClick?:()=>void,
-  onClose?:()=>void,
-  onEnter?:()=>void,
-  onEntered?:()=>void,
-  onEntering?:()=>void,
-  onEscapeKeyDown?:()=>void,
-  onExit?:()=>void,
-  onExited?:()=>void,
-  onExiting?:()=>void,
-  open?:boolean,
-  PaperProps?:object,
-  transition?:'sting',
-  transitionDuration?:'string'
+  open:boolean;
 
 }
 
-class DialogStoryComponent extends React.Component<MUIModalProperties,States > {
+export interface Props {
+  onClose?: ()=> void;
+  fullWidth?: boolean;
+  fullScreen?: boolean;
+
+  }
+class DialogStoryComponent extends React.Component<Props,States > {
     constructor (props:any) {
       super(props);
       this.props=props;
@@ -66,7 +44,7 @@ class DialogStoryComponent extends React.Component<MUIModalProperties,States > {
         <Button
            onPress={this.handleClickOpen}
         >
-       Open DIalog
+       Open Dialog
         </Button>
         <Dialog
           open={this.state.open}
