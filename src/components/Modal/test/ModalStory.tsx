@@ -36,7 +36,6 @@ class ModalStoryComponent extends React.Component<Props,States > {
 
       return(
         <div>
-
         <Button
            onPress={this.handleClickOpen}
         >
