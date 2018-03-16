@@ -1,9 +1,9 @@
-import React from 'react';
 import { Button } from '../../Button';
 import Modal from '../Modal.Component';
 import ModalBody from '../ModalBody.Component';
 import ModalFooter from '../ModalFooter.Component';
 import ModalHeader from '../ModalHeader.Component';
+import React from 'react';
 
 export interface States{
   open:boolean;
