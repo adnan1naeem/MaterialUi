@@ -8,7 +8,6 @@ const  ModalBody =(props:ModalBodyProperties) => {
     <DialogContent>
         {props.children}
     </DialogContent>
-
   );
 };
 export default ModalBody;
