@@ -1,24 +1,20 @@
-import React, { Component, ReactNode } from 'react';
+import React,{ ReactNode } from 'react';
 import { Button } from '../Button';
-import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
-import  Dialog from   './Dialog.Component';
-import DialogBody from  './DialogBody.Component';
-import   DialogFooter from './DialogFooter.Component';
-import DialogHeader from  './DialogHeader.Component';
-
+import Modal from './Modal.Component';
+import ModalBody from './ModalBody.Component';
+import ModalFooter from './ModalFooter.Component';
+import ModalHeader from './ModalHeader.Component';
 
 export interface States{
   open:boolean;
-
 }
-
 export interface Props {
   onClose?: ()=> void;
   fullWidth?: boolean;
   fullScreen?: boolean;
+}
 
-  }
-class DialogStoryComponent extends React.Component<Props,States > {
+class ModalStoryComponent extends React.Component<Props,States > {
     constructor (props:any) {
       super(props);
       this.props=props;
@@ -46,25 +42,23 @@ class DialogStoryComponent extends React.Component<Props,States > {
         >
        Open Dialog
         </Button>
-        <Dialog
+        <Modal
           open={this.state.open}
           onClose={this.handleClose}
           fullWidth={this.props.fullWidth}
           fullScreen={this.props.fullScreen}
 
         >
-          <DialogHeader>
+          <ModalHeader>
           UserLocation Service
-          </DialogHeader>
+          </ModalHeader>
 
-         <DialogBody>
+         <ModalBody>
 
          Let Google help apps determine location. This means sending anonymous location data to
          Google, even when no apps are running.
-          </DialogBody>
-
-
-          <DialogFooter>
+          </ModalBody>
+          <ModalFooter>
 
           <Button onPress={this.handleClose} color="primary">
               Disagree
@@ -78,10 +72,10 @@ class DialogStoryComponent extends React.Component<Props,States > {
             <Button onPress={this.handleClose} color="primary" >
               Agree
             </Button>
-          </DialogFooter>
+          </ModalFooter>
 
 
-        </Dialog>
+        </Modal>
       </div>
       );
     }
@@ -90,4 +84,4 @@ class DialogStoryComponent extends React.Component<Props,States > {
 
 
 
-export default DialogStoryComponent;
+export default ModalStoryComponent;

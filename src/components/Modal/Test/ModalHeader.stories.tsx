@@ -2,15 +2,15 @@ import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import  DialogHeader from '../DialogHeader.Component';
-const stories = storiesOf('DialogComponent', module);
+import  ModalHeader from '../ModalHeader.Component';
 
+const stories = storiesOf('ModalComponent', module);
 
-	stories.add('DialogHeader', () => {
+  stories.add('ModalHeader', () => {
 		return(
-			<DialogHeader>
+			<ModalHeader>
           UserLocation Service
-      </DialogHeader>
+      </ModalHeader>
 
 		);
 	});

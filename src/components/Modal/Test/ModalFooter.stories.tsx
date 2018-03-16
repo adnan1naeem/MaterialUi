@@ -3,25 +3,23 @@ import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { Button } from '../../Button';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
+import  ModalFooter from '../ModalFooter.Component';
 
-import DialogComponent from '../Dialog Story';
-import  DialogFooter from '../DialogFooter.Component';
+const stories = storiesOf('ModalComponent', module);
 
-const stories = storiesOf('DialogComponent', module);
-
-stories.add('DialogFooter', () => {
+stories.add('ModalFooter', () => {
   const Handler =() => {
 	alert('clicked');
 	};
 	return(
-   	<DialogFooter>
+   	<ModalFooter>
 				<Button onPress={Handler} color="primary" >
 					Agree
 				</Button>
 				<Button onPress={Handler} color="primary">
 					Disagree
 				</Button>
-		</DialogFooter>
+		</ModalFooter>
 
 	);
 

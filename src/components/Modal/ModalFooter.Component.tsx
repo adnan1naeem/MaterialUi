@@ -1,9 +1,9 @@
-
 import React, { ReactNode } from 'react';
 import { Button } from '../Button';
 import { DialogActions } from 'material-ui/Dialog';
 import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
-class DialogFooter extends React.Component<ModalFooterProperties> {
+
+class ModalFooter extends React.Component<ModalFooterProperties> {
     constructor (props:any) {
       super(props);
       this.props=props;
@@ -16,4 +16,4 @@ class DialogFooter extends React.Component<ModalFooterProperties> {
     );
 
 }}
-export default DialogFooter;
+export default ModalFooter;

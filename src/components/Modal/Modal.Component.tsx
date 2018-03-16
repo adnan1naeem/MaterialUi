@@ -27,7 +27,7 @@ export interface MUIModalProperties extends ModalProperties{
 
 }
 
-class DialogComponent extends React.Component<MUIModalProperties > {
+class ModalComponent extends React.Component<MUIModalProperties > {
 
   render(){
 
@@ -49,4 +49,4 @@ class DialogComponent extends React.Component<MUIModalProperties > {
 
 
 
-export default DialogComponent;
+export default ModalComponent;

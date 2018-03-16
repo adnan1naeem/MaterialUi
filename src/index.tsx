@@ -4,13 +4,13 @@ import { BlueRain, BlueRainType , Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
-import { Dialog,DialogBody,DialogFooter,DialogHeader } from './components/Dialog';
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 import { List, ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
+import { Modal,ModalBody,ModalFooter,ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
@@ -38,10 +38,10 @@ class MaterialUiPlugin extends Plugin {
 		CardFooter,
 		Chip,
 		Divider,
-		Dialog,
-		DialogHeader,
-		DialogBody,
-		DialogFooter,
+		Modal,
+		ModalHeader,
+		ModalBody,
+		ModalFooter,
 		Dropdown,
 		DropdownItem,
 		List,

@@ -2,16 +2,15 @@ import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import DialogBody from '../DialogBody.Component';
-import  DialogHeader from '../DialogHeader.Component';
-const stories = storiesOf('DialogComponent', module);
+import ModalBody from '../ModalBody.Component';
+const stories = storiesOf('ModalComponent', module);
 
-stories.add('DialogBody', () => {
+stories.add('ModalBody', () => {
 	return(
-		<DialogBody>
+		<ModalBody>
 				 Let Google help apps determine location. This means sending anonymous location data to
 						 Google, even when no apps are running.
-		</DialogBody>
+		</ModalBody>
 
 	);
 });
