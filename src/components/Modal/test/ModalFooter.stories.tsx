@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import { Button } from '../../Button';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import  ModalFooter from '../ModalFooter.Component';
 
-const stories = storiesOf('ModalComponent', module);
+const stories = storiesOf('Modal', module);
 
 stories.add('ModalFooter', () => {
   const Handler =() => {
@@ -24,6 +22,3 @@ stories.add('ModalFooter', () => {
 	);
 
 });
-
-
-

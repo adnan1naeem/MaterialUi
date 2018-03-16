@@ -1,20 +1,14 @@
 
-import { DialogContent,DialogContentText } from 'material-ui/Dialog';
-import React, { Children, ReactNode } from 'react';
+import { DialogContent } from 'material-ui/Dialog';
 import { ModalBodyProperties } from '@blueeast/bluerain-ui-interfaces';
-import Button from 'material-ui/Button';
+import React from 'react';
 
-class ModalBody extends React.Component<ModalBodyProperties> {
-    constructor (props:any) {
-      super(props);
-      this.props=props;
-		}
-    render(){
-      return(
-        <DialogContent>
-        {this.props.children}
-        </DialogContent>
-      );
-  }
-}
+const  ModalBody =(props:ModalBodyProperties) => {
+  return(
+    <DialogContent>
+        {props.children}
+    </DialogContent>
+
+  );
+};
 export default ModalBody;

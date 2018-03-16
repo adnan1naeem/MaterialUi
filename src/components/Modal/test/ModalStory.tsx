@@ -1,9 +1,9 @@
 import React,{ ReactNode } from 'react';
-import { Button } from '../Button';
-import Modal from './Modal.Component';
-import ModalBody from './ModalBody.Component';
-import ModalFooter from './ModalFooter.Component';
-import ModalHeader from './ModalHeader.Component';
+import { Button } from '../../Button';
+import Modal from '../Modal.Component';
+import ModalBody from '../ModalBody.Component';
+import ModalFooter from '../ModalFooter.Component';
+import ModalHeader from '../ModalHeader.Component';
 
 export interface States{
   open:boolean;
@@ -47,16 +47,13 @@ class ModalStoryComponent extends React.Component<Props,States > {
           onClose={this.handleClose}
           fullWidth={this.props.fullWidth}
           fullScreen={this.props.fullScreen}
-
         >
           <ModalHeader>
           UserLocation Service
           </ModalHeader>
-
-         <ModalBody>
-
-         Let Google help apps determine location. This means sending anonymous location data to
-         Google, even when no apps are running.
+          <ModalBody>
+            Let Google help apps determine location. This means sending anonymous location data to
+            Google, even when no apps are running.
           </ModalBody>
           <ModalFooter>
 
@@ -73,15 +70,9 @@ class ModalStoryComponent extends React.Component<Props,States > {
               Agree
             </Button>
           </ModalFooter>
-
-
         </Modal>
       </div>
       );
     }
 	}
-
-
-
-
 export default ModalStoryComponent;
