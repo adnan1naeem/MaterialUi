@@ -1,4 +1,4 @@
-import React,{ ReactNode } from 'react';
+import React from 'react';
 import { Button } from '../../Button';
 import Modal from '../Modal.Component';
 import ModalBody from '../ModalBody.Component';
