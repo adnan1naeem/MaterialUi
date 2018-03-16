@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import DialogBody from '../DialogBody.Component';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
+import DialogBody from '../DialogBody.Component';
 import  DialogHeader from '../DialogHeader.Component';
 const stories = storiesOf('DialogComponent', module);
 

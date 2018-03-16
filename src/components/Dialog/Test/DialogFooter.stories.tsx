@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import DialogComponent from '../Dialog Story';
+import { Button } from '../../Button';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
+
+import DialogComponent from '../Dialog Story';
 import  DialogFooter from '../DialogFooter.Component';
-import { Button } from '../../Button';
 
 const stories = storiesOf('DialogComponent', module);
 
