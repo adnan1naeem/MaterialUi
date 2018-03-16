@@ -10,7 +10,7 @@ import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupPropertie
 import { List, ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
-import { Modal,ModalBody,ModalFooter,ModalHeader } from './components/Modal';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
