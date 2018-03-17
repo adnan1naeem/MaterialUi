@@ -18,7 +18,6 @@ const  Modal =(props:MUIModalProperties) => {
         >
           {props.children}
         </Dialog>
-
-      );
-    };
+    );
+};
 export default Modal as React.ComponentType<any>;
