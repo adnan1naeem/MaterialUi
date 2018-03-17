@@ -2,11 +2,12 @@ import { DialogActions } from 'material-ui/Dialog';
 import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 
-const  ModalFooter =(props:ModalFooterProperties) => {
+const ModalFooter: React.StatelessComponent<ModalFooterProperties> = (props) => {
+
   return(
     <DialogActions>
         {props.children}
     </DialogActions>
     );
   };
-  export default ModalFooter;
+  export default ModalFooter as React.ComponentType<any>;

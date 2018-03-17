@@ -10,7 +10,7 @@ export interface MUIModalProperties extends ModalProperties{
   open:boolean,
   children:ReactNode
 }
-const  ModalComponent =(props:MUIModalProperties) => {
+const  Modal =(props:MUIModalProperties) => {
     return(
         <Dialog
           onEscapeKeyDown={props.onRequestClose}
@@ -21,4 +21,4 @@ const  ModalComponent =(props:MUIModalProperties) => {
 
       );
     };
-export default ModalComponent;
+export default Modal as React.ComponentType<any>;
