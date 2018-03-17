@@ -318,9 +318,9 @@
   dependencies:
     react "^16.2.0"
 
-"@blueeast/bluerain-ui-interfaces@^3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-3.1.4.tgz#ad9456436903ac7e4ba09e02588ea1e06dc2e5f4"
+"@blueeast/bluerain-ui-interfaces@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-3.2.1.tgz#80d4b153f6789b3b0cb82b48864c35136e04d870"
   dependencies:
     react "^16.2.0"
 
