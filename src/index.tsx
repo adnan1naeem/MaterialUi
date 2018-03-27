@@ -15,6 +15,7 @@ import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
+import Slider from  './components/Slider';
 // import { withReboot } from './withReboot';
 /**
  * Material UI Plugin
@@ -52,6 +53,7 @@ class MaterialUiPlugin extends Plugin {
 		ListItemRightButton,
 		ListItemText,
 		Switch,
+		Slider,
 		FormControl,
 		FormGroup,
 		TextInput,

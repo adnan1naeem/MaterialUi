@@ -23,7 +23,7 @@ export interface MUIProps extends SliderProperties {
 
 const DEFAULT_VALUE = 0;
 
-class Slider extends React.Component<MUIProps, {value:number}>{
+class Slider extends React.Component<MUIProps,{value:any}>{
 
 	constructor (props:MUIProps) {
 		super(props);
