@@ -33,6 +33,7 @@ export interface MUITextInputProperties extends TextInputProperties {
 	InputLabelProps?: object,
 	fullWidth?: boolean,
 	errorText?: ReactNode,
+	defaultValue?:string |number
 }
 
 const customOnChange = (props) => (event) => {
@@ -55,6 +56,7 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 		rows={props.numberOfLines}
 		disabled={disabled}
 		helperText={props.errorText}
+		defaultValue={props.defaultValue}
 		{...props}
 	/>
 	);
