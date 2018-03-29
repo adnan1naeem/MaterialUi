@@ -33,7 +33,7 @@ export interface MUITextInputProperties extends TextInputProperties {
 	InputLabelProps?: object,
 	fullWidth?: boolean,
 	errorText?: ReactNode,
-	defaultValue?:string |number
+	defaultValue?:string
 }
 
 const customOnChange = (props) => (event) => {
