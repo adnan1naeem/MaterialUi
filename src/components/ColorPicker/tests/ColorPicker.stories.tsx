@@ -1,7 +1,7 @@
 import * as React from 'react';
+import { ColorPicker } from '../../ColorPicker';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
-import ColorPicker from '../../ColorPicker';
 const Text = BR.Components.get('Text');
 const rgbaAndHsl = { r:255, g:247, b: 109, a:100, h: 180, s: 0.5, l: 0.5 };
 const hsl = { h: 180, s: 0.5, l: 0.5 };

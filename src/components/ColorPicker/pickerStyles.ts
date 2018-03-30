@@ -14,6 +14,7 @@ export const styles = {
 		cursor: 'pointer'
 	},
 	popover: {
+		overflow: 'visible',
 		position: 'absolute',
 		zIndex: '2',
 		marginTop: 4.5

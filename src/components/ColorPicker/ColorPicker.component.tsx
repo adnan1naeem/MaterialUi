@@ -99,4 +99,4 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 	}
 }
 
-export default ColorPicker;
+export { ColorPicker };
