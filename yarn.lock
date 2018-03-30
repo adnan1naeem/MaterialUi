@@ -12634,9 +12634,9 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
-react-range-progress@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/react-range-progress/-/react-range-progress-4.0.3.tgz#65eec92f948597fe9afa1f71fcb82f838ea70944"
+"react-range-progress@https://github.com/BlueEastCode/react-range-progress#fix/code":
+  version "0.0.0-semantically-released"
+  resolved "https://github.com/BlueEastCode/react-range-progress#595133304a45f760f3432b832704c9a7946e0dfa"
   dependencies:
     react "15.3.1"
     react-dom "15.3.1"
