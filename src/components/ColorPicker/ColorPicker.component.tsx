@@ -16,10 +16,6 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 
 	constructor (props:MUIProps) {
 		super(props);
-		// this.handleClick = this.handleClick.bind(this);
-		// this.handleClose = this.handleClose.bind(this);
-		// this.handleChangeHsl = this.handleChangeHsl.bind(this);
-		// this.handleChangeRgb = this.handleChangeRgb.bind(this);
 		this.state= {
 			displayColorPicker: false,
 			color: this.props.value || 'red',
@@ -84,7 +80,7 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 						<Paper elevation={2} style={styles.padding5}>
 							<Button
 									raised={true}
-									style={{ display:'flex', justifyContent:'center', backgroundColor, minWidth:'36px', height: 14, width: 36 }}
+									style={{ display:'flex', justifyContent:'center', backgroundColor, minHeight: 14, minWidth: 36 }}
 									onClick={this.handleClick}
 							/>
 							{ this.state.displayColorPicker ? <Paper elevation={2}>
@@ -103,120 +99,4 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 	}
 }
 
-export default ColorPicker ;
-
-
-
-
-// export default withBlueRain(withStateful(ColorControl, {
-// 	checkData: (props, dataProp) => {
-// 		const {
-// 			label,
-// 			onChange,
-// 			value,
-// 			hs,
-// 			} = props;
-// 		if (label && typeof label !== 'string') {
-// 			return false;
-// 		} else if (onChange && typeof onChange !== 'function') {
-// 			return false;
-// 		} else if (value && typeof value !== 'object') {
-// 			if (typeof value !== 'string') {
-// 				return false;
-// 			}
-// 		} else if (hs && typeof hs !== 'boolean') {
-// 			return false;
-// 		}
-// 		return true;
-// 	},
-// }));
-
-
-
-// import * as React from 'react';
-// import { BlueRain, BlueRainConsumer, withBlueRain } from '@blueeast/bluerain-os';
-// // import { AssetInfo } from '../../../mocks/AssetInfo.mock';
-// import { AssetInfoItem } from '../AssetInfoListItem';
-// import { formatDeviceInfo } from '../../utils/FormatDeviceInfo';
-// import Query from './query.graphql';
-
-// // this component will be wrapped with graphql and then return data
-// export interface AssetInfoListProperties {
-
-// 	type?: string,
-// 	brand?: string,
-
-// }
-
-
-// const isLoading = (props:any) => props.data.loading;
-// const isEmpty = (props:any) => props.data ? false : true;
-// const checkError = (props:any) => props.data.erorr;
-
-// const getData = (props:any) => {
-// 	try {
-// 		return props.data.node.devices.edges.map((item:any) => item.node);
-// 	}
-// 	catch(e) {
-// 		// return AssetInfo.data.node.devices.edges.map((item:any) => item.node);
-// 		return {
-// 			loading: props.loading,
-// 			error: props.error,
-// 			data: props.data
-// 		};
-// 	}
-// };
-// export const AssetInfoList = ( props:any) => {
-// 	const { match } = props;
-// 	const assetId = match.params.id;
-// 	return (
-// <BlueRainConsumer>
-//         {(BR: BlueRain) => (
-//             <BR.Components.GraphqlQuery query={Query} variables={{ assetId }}>
-// 			{(response:any) => {
-// 				const data:any = getData(response);
-// 				const statefulProps = {
-// 					isEmpty,
-// 					isLoading,
-// 					checkError
-// 				};
-
-// 				const AssetInfo:any = {} ;
-
-// 				if(data.length) {
-// 					    data.map((item:any) => {
-// 						AssetInfo.macId = item.meta.macId;
-// 						AssetInfo.firmware = item.meta.version ? item.meta.version.firmware : '';
-// 						AssetInfo.hardware = item.meta.version ? item.meta.version.hardware : '';
-
-// 						return AssetInfo;
-// 					});
-
-// 				}
-//                 // // Build Component
-// 				const items = formatDeviceInfo(AssetInfo).map((item:any) => {
-// 					item.id = item.name;
-// 					return item;
-// 				});
-
-// 				return (
-// 			<BR.Components.StatefulComponent data={getData(response)} {...statefulProps}>
-// 					<BR.Components.View style={{ overflow:'visible' }}>
-//                 <BR.Components.Card {...props}>
-//                     <BR.Components.List style={{ padding: 8 }}>
-//                     {
-// 			items.map(({ id, icon, label, value }, index) => {
-// 				const key = id || index;
-// 				const Divide = (index < items.length - 1) ? <BR.Components.Divider key={`${key}_divider`} /> : null;
-// 				return [<AssetInfoItem key={key} icon={icon} label={label} value={value} />, Divide];
-// 			})}
-//                     </BR.Components.List>
-//                 </BR.Components.Card>
-//            </BR.Components.View>
-// 			</BR.Components.StatefulComponent>
-// 				);
-// 			}}
-// 			</BR.Components.GraphqlQuery>
-//         )}
-// </BlueRainConsumer>);
-// };
+export default ColorPicker;
