@@ -1,1 +1,1 @@
-export { default } from './Checkbox.component';
+export { default } from './ColorPicker.component';
