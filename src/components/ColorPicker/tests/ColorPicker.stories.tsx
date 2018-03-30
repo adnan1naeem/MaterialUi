@@ -11,15 +11,18 @@ function handleTextInputChange () {
 }
 
 storiesOf('ColorPicker', module).add('all Props',
-    () => <ColorPicker value={rgbaAndHsl} hs={true} onChange={handleTextInputChange} label={'Picker'}  /> ) ;
+    () => <ColorPicker value={rgbaAndHsl} hs={false} onChange={handleTextInputChange} label="Picker"  /> ) ;
 
 
-storiesOf('Checkbox', module).add('with hsl value',
-() => <ColorPicker value={hsl} hs /> ) ;
+storiesOf('ColorPicker', module).add('with hsl value',
+() => <ColorPicker value={hsl} hs label="HSL" /> ) ;
 
 
-storiesOf('Checkbox', module).add('with # code',
-() => <ColorPicker value="#2AF795" hs={false}/>) ;
+storiesOf('ColorPicker', module).add('with # code',
+() => <ColorPicker value="#2AF795" hs={false} label="#Code"/>) ;
 
-storiesOf('Checkbox', module).add('with violet as value',
-() => <ColorPicker value="violet" hs={false}/> ) ;
+storiesOf('ColorPicker', module).add('with violet as value',
+() => <ColorPicker value="violet" hs={false} label="string"/> ) ;
+
+storiesOf('ColorPicker', module).add('with no value',
+() => <ColorPicker hs={false} label="no value given"/> ) ;
