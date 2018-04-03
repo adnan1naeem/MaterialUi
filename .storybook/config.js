@@ -60,9 +60,9 @@ const BluerainApp = BR.boot({platform: [require('@blueeast/bluerain-platform-rea
 addDecorator(story => (
   <IntlProvider locale={navigator.language}>
 	  <BlueRainProvider>
-		  <MuiThemeProvider>
+		<MuiThemeProvider>
           {story()}
-        </MuiThemeProvider>
+		</MuiThemeProvider>
 	  </BlueRainProvider>
   </IntlProvider>
 ));
