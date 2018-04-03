@@ -4,6 +4,7 @@ import { BlueRain, BlueRainType , Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
+import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
@@ -38,6 +39,7 @@ class MaterialUiPlugin extends Plugin {
 		CardMedia,
 		CardFooter,
 		Chip,
+		ColorPicker,
 		Divider,
 		Modal,
 		ModalHeader,
