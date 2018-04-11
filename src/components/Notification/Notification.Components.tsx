@@ -3,13 +3,13 @@ import React from 'react';
 import Snackbar from 'material-ui/Snackbar';
 
 export interface NotificationProps  extends NotificationProperties  {
-  open:any;
-  onClose:()=>void;
+  open: any;
+  onClose: () => void;
   transition:any;
   SnackbarContentProps:any;
-  message?:any;
-  children?:any,
-  position:any,
+  message?: any;
+  children?: any,
+  position: any,
   action?: any;
   anchorOrigin?: any;
   autoHideDuration?: number;
@@ -18,10 +18,10 @@ export interface NotificationProps  extends NotificationProperties  {
   resumeHideDuration?: number;
 }
 
-export const Notification : React.StatelessComponent<any> = (props:NotificationProps) => {
+export const Notification : React.StatelessComponent<NotificationProps> = (props) => {
 
   return (
-  <Snackbar  message={props.text}  autoHideDuration={props.duration}   {...props}/>
+  <Snackbar  message={props.text}  autoHideDuration={props.duration}   {...props} />
   );
 };
 

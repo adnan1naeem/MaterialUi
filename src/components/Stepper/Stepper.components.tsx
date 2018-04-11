@@ -6,9 +6,9 @@ export interface StepperProps  extends StepperProperties {
   type:any;
   backButton:any;
   nextButton:any;
-  posiotn:'top'|'bottom'
+  position:'top'|'bottom'
 }
-export const Stepper : React.StatelessComponent<any> = (props:StepperProps) => {
+export const Stepper : React.StatelessComponent<StepperProps> = (props) => {
 
   return (
         <MobileStepper  {...props} />
