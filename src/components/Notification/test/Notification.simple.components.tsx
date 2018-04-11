@@ -5,6 +5,7 @@ import Button from 'material-ui/Button';
 import Snackbar from 'material-ui/Snackbar';
 import IconButton from 'material-ui/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import { Notification } from  '../Notification.Components';
 
 const styles = theme => ({
   close: {
@@ -32,7 +33,7 @@ export class SimpleSnackbar extends React.Component {
     return (
       <div>
         <Button onClick={this.handleClick}>Open simple snackbar</Button>
-        <Snackbar
+        <Notification
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'left',
