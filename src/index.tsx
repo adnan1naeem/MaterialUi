@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
-import { BlueRain, BlueRainType , Plugin } from '@blueeast/bluerain-os';
+import { BlueRain, BlueRainType, Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
@@ -8,15 +8,16 @@ import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-import { List, ListHeader , ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
+import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
-import { Breadcrumb } from './components/Breadcrumb';
 import { Button } from './components/Button';
-import Slider from  './components/Slider';
+import { Notification } from './components/Notification';
+import { Stepper } from './components/Stepper';
+import Slider from './components/Slider';
 // import { withReboot } from './withReboot';
 /**
  * Material UI Plugin
@@ -56,10 +57,11 @@ class MaterialUiPlugin extends Plugin {
 		ListItemText,
 		Switch,
 		Slider,
+		Stepper,
+		Notification,
 		FormControl,
 		FormGroup,
 		TextInput,
-		Breadcrumb, // Deprecated, remove in next semver major version
 	};
 
 	// static hooks = {
