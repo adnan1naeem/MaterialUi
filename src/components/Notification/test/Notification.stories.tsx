@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Notification } from '../index';
-import Button from 'material-ui/Button';
-import IconButton from 'material-ui/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
-import  PositionedSnackbar  from  './Notification.state.component';
 import  { SimpleSnackbar } from './Notification.simple.components';
+import { storiesOf } from '@storybook/react';
+import Button from 'material-ui/Button';
+import CloseIcon from '@material-ui/icons/Close';
+import IconButton from 'material-ui/IconButton';
+import  PositionedSnackbar  from  './Notification.state.component';
 
 const stories = storiesOf('Notification', module);
 
@@ -33,8 +33,6 @@ stories.add('Postioned snackbar', () => {
   );
 
 });
-
-
 stories.add(' SimpleSnackbar ', () => {
 
     return (

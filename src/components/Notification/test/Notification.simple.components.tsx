@@ -1,11 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';
-import Snackbar from 'material-ui/Snackbar';
-import IconButton from 'material-ui/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
 import { Notification } from  '../Notification.Components';
+import Button from 'material-ui/Button';
+import CloseIcon from '@material-ui/icons/Close';
+import IconButton from 'material-ui/IconButton';
+import React from 'react';
 
 const styles = theme => ({
   close: {

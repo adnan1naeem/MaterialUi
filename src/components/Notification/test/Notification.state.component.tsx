@@ -1,6 +1,6 @@
-import React from 'react';
-import Button from 'material-ui/Button';
 import { Notification } from  '../Notification.Components';
+import Button from 'material-ui/Button';
+import React from 'react';
 import Snackbar from 'material-ui/Snackbar';
 
 class PositionedSnackbar extends React.Component {
