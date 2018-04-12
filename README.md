@@ -48,6 +48,8 @@ BR.boot({
 - ListItemText
 - Switch
 - TextInput
+- Notification
+- Stepper
 
 ## Filters
 
