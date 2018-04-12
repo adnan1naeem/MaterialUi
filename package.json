@@ -114,6 +114,7 @@
     "jest-cli": "^20.0.4",
     "lint-staged": "^5.0.0",
     "material-ui-icons": "^1.0.0-beta.10",
+    "@material-ui/icons": "^1.0.0-beta.42",
     "prettier": "^1.4.4",
     "prompt": "^1.0.0",
     "react-addons-test-utils": "^15.6.2",
@@ -131,8 +132,9 @@
     "typescript": "2.7.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^3.5.1",
+    "@blueeast/bluerain-os": "3.7.1",
     "@blueeast/bluerain-plugin-intl": "0.5.3",
+    "@blueeast/bluerain-ui-interfaces": "^3.3.1",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
@@ -149,7 +151,6 @@
     "lodash.pickby": "^4.6.0",
     "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
-    "material-ui-icons": "^1.0.0-beta.10",
     "rc-color-picker": "^1.2.2",
     "react": "^16.0.0",
     "react-addons-test-utils": "^15.6.2",
@@ -168,7 +169,6 @@
     "subscriptions-transport-ws": "^0.9.4",
     "victory": "^0.24.3",
     "warning": "^3.0.0",
-    "ws": "3.3.3",
-    "@blueeast/bluerain-ui-interfaces": "^3.2.2"
+    "ws": "3.3.3"
   }
 }
