@@ -158,6 +158,28 @@
     webpack-node-externals "^1.6.0"
     yargs "^10.0.3"
 
+"@blueeast/bluerain-os@3.7.1":
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-os/-/bluerain-os-3.7.1.tgz#2314fef14e53c56a1052094336116490adbd127b"
+  dependencies:
+    "@blueeast/bluerain-ui-interfaces" "^2.0.2"
+    "@blueeast/proxy-polyfill" "^0.1.9"
+    deepmerge "^2.0.1"
+    eventemitter3 "^2.0.3"
+    harmony-reflect "^1.5.1"
+    immutable "^3.8.2"
+    lodash.flowright "^3.5.0"
+    lodash.get "^4.4.2"
+    lodash.isboolean "^3.0.3"
+    lodash.isnil "^4.0.0"
+    lodash.kebabcase "^4.1.1"
+    lodash.set "^4.3.2"
+    prop-types "^15.6.0"
+    react "^16.2.0"
+    react-dom-factories "^1.0.2"
+    react-native-browser-polyfill "^0.1.2"
+    recompose "^0.25.0"
+
 "@blueeast/bluerain-os@^0.4.0", "@blueeast/bluerain-os@^0.4.8":
   version "0.4.8"
   resolved "https://registry.yarnpkg.com/@blueeast/bluerain-os/-/bluerain-os-0.4.8.tgz#e389e3083aba46fc57ead203afe16c5ad4224683"
@@ -198,7 +220,7 @@
     react "^16.2.0"
     recompose "^0.25.0"
 
-"@blueeast/bluerain-os@^3.2.3", "@blueeast/bluerain-os@^3.5.1", "@blueeast/bluerain-os@^3.5.2", "@blueeast/bluerain-os@^3.5.3":
+"@blueeast/bluerain-os@^3.2.3", "@blueeast/bluerain-os@^3.5.2", "@blueeast/bluerain-os@^3.5.3":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/@blueeast/bluerain-os/-/bluerain-os-3.5.3.tgz#c358f8d4338ba19a22e32d269c51954a572f42dd"
   dependencies:
@@ -318,9 +340,9 @@
   dependencies:
     react "^16.2.0"
 
-"@blueeast/bluerain-ui-interfaces@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-3.2.2.tgz#1f5fb5defcd3c2ce08c1146e138f3361ce1bfdc9"
+"@blueeast/bluerain-ui-interfaces@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@blueeast/bluerain-ui-interfaces/-/bluerain-ui-interfaces-3.3.1.tgz#4b689136e5ab40fc0ef0302d5d448547f5aaa076"
   dependencies:
     react "^16.2.0"
 
@@ -412,6 +434,12 @@
   dependencies:
     lodash "^4.17.4"
     react-native-vector-icons "4.5.0"
+
+"@material-ui/icons@^1.0.0-beta.42":
+  version "1.0.0-beta.42"
+  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-1.0.0-beta.42.tgz#1e0e45e8f4de533071c7e4532508fa79bf1f29d9"
+  dependencies:
+    recompose "^0.26.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
