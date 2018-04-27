@@ -42,7 +42,7 @@ export class DrawerTest extends React.Component<MUIDrawerProperties, { open?: bo
               />
 
               <BR.Components.Text>
-                Hello
+                Hello World
               </BR.Components.Text>
 
               <Button
