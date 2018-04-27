@@ -6,6 +6,7 @@ import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyPropertie
 import { Chip, MUIChipProperties } from './components/Chip';
 import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Divider, MUIDividerProperties } from './components/Divider';
+import { Drawer, MUIDrawerProperties } from './components/Drawer';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
@@ -42,6 +43,7 @@ class MaterialUiPlugin extends Plugin {
 		Chip,
 		ColorPicker,
 		Divider,
+		Drawer,
 		Modal,
 		ModalHeader,
 		ModalBody,
