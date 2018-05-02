@@ -13,7 +13,7 @@ after_success:
   - npm run report-coverage
   - test $TRAVIS_BRANCH = "master" && npm run deploy-docs
   - npx semantic-release
-  - test $TRAVIS_BRANCH = "master" && npm run semantic-release
+  - test $TRAVIS_BRANCH = "master"
 install:
   - "npm install @blueeast/bluerain-os@3.10.0"
   - "npm install react@16.2.0"
