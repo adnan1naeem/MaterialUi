@@ -12,6 +12,7 @@ script:
 after_success:
   - npm run report-coverage
   - test $TRAVIS_BRANCH = "master" && npm run deploy-docs
+  - npx semantic-release
   - test $TRAVIS_BRANCH = "master" && npm run semantic-release
 install:
   - "npm install @blueeast/bluerain-os@3.10.0"
