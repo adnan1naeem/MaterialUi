@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx' 'test/**/*.ts'",
     "prebuild": "",
-    "build": "rimraf dist && bluerain build plugin",
+    "build": "rimraf dist && blue build plugin",
     "start": "tsc -w",
     "test": "jest --u",
     "test:watch": "jest --watch",
@@ -88,8 +88,9 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-cli": "^1.2.0",
-    "@blueeast/bluerain-platform-reactxp": "1.1.8",
+    "@blueeast/bluerain-cli-alpha": "0.1.1-alpha.0",
+    "@blueeast/bluerain-cli-plugin": "0.1.3",
+    "@blueeast/bluerain-platform-reactxp": "",
     "@blueeast/tslint-config-blueeast": "^0.5.5",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
@@ -132,9 +133,7 @@
     "typescript": "2.7.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "3.7.1",
-    "@blueeast/bluerain-plugin-intl": "0.5.3",
-    "@blueeast/bluerain-ui-interfaces": "^3.3.1",
+    "@blueeast/bluerain-ui-interfaces": "^3.2.5",
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-graphql": "^3.2.0",
     "@storybook/addon-info": "^3.2.9",
@@ -152,23 +151,25 @@
     "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
     "rc-color-picker": "^1.2.2",
-    "react": "^16.0.0",
     "react-addons-test-utils": "^15.6.2",
     "react-apollo": "^1.4.15",
     "react-color": "^2.13.8",
-    "react-dom": "^16.0.0",
     "react-fa": "^5.0.0",
     "react-intl": "^2.4.0",
     "react-loading-skeleton": "^0.3.1",
     "react-range-progress": "https://github.com/BlueEastCode/react-range-progress#fix/code",
-    "react-slick": "^0.15.4",
     "react-test-renderer": "^16.0.0",
     "reactxp": "^0.42.0-rc.25",
     "storybook-addon-intl": "^2.1.2",
     "storyshots": "^3.2.2",
     "subscriptions-transport-ws": "^0.9.4",
-    "victory": "^0.24.3",
     "warning": "^3.0.0",
     "ws": "3.3.3"
+  },
+  "peerDependencies": {
+    "@blueeast/bluerain-os": "3.x.x",
+    "@blueeast/bluerain-plugin-intl":"1.2.0",
+    "react":"16.x.x",
+    "react-dom":"16.x.x"
   }
 }
