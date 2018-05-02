@@ -137,6 +137,7 @@
     "typescript": "2.7.2"
   },
   "dependencies": {
+    "@blueeast/bluerain-os": "^3.10.0",
     "@blueeast/bluerain-ui-interfaces": "^3.2.5",
     "apollo-client": "^1.0.4",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -147,9 +148,11 @@
     "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
     "rc-color-picker": "^1.2.2",
+    "react": "^16.2.0",
     "react-addons-test-utils": "^15.6.2",
     "react-apollo": "^1.4.15",
     "react-color": "^2.13.8",
+    "react-dom": "^16.2.0",
     "react-intl": "^2.4.0",
     "react-loading-skeleton": "^0.3.1",
     "react-range-progress": "https://github.com/BlueEastCode/react-range-progress#fix/code",
@@ -159,8 +162,8 @@
   },
   "peerDependencies": {
     "@blueeast/bluerain-os": "3.x.x",
-    "@blueeast/bluerain-plugin-intl":"*",
-    "react":"16.x.x",
-    "react-dom":"16.x.x"
+    "@blueeast/bluerain-plugin-intl": "*",
+    "react": "16.x.x",
+    "react-dom": "16.x.x"
   }
 }
