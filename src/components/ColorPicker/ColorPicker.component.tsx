@@ -85,7 +85,7 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 							/>
 							{ this.state.displayColorPicker ? <Paper elevation={2}>
 								<BR.Components.View style={styles.popover}>
-									<BR.Components.View style={styles.cover} onPress={this.handleClose} />
+									<BR.Components.View style={styles.cover}  />
 									{this.getColorPicker(this.props.hs, backgroundColor)}
 								</BR.Components.View>
 							</Paper> : null}
