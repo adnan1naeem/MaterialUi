@@ -15,7 +15,7 @@ after_success:
   - npx semantic-release
   - test $TRAVIS_BRANCH = "master"
 install:
-  - "npm install @blueeast/bluerain-os@3.10.0"
-  - "npm install react@16.2.0"
-  - "npm install react-dom@16.2.0"
+  - "npm install @blueeast/bluerain-os"
+  - "npm install react"
+  - "npm install react-dom"
   - "npm install"
