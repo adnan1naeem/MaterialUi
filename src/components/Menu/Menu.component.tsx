@@ -31,6 +31,7 @@ import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
 
 const BRMenu: React.StatelessComponent<MenuProperties & { open: boolean }> = (props) => (
 	<Menu
+		open={props.open}
 		{...props}
 	>
 		{props.children}
