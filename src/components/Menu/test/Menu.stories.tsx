@@ -1,5 +1,7 @@
 import Input, { InputLabel } from 'material-ui/Input';
+import { ListItem, ListItemAvatar, ListItemIcon, ListItemText } from '../../List';
 import { Menu, MenuItem } from '../index';
+import { Button } from '../../Button';
 import { storiesOf } from '@storybook/react';
 import FadeMenu from './MenuTest1.component';
 import MenuPopper from '../MenuPopper.component';
@@ -94,12 +96,12 @@ const menuItems = [
 		onClick: () => console.log('Profile Clicked'),
 		style: {},
 		otherProps: {}
-	},{
+	}, {
 		title: 'My account',
 		onClick: () => console.log('My account Clicked'),
 		style: {},
 		otherProps: {}
-	},{
+	}, {
 		title: 'Logout',
 		onClick: () => console.log('Logout Clicked'),
 		style: {},
@@ -107,34 +109,87 @@ const menuItems = [
 	}
 ];
 
+// stories.add('Menu Popper Button Component', () => {
+// 	return (
+// 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
+// 			<MenuPopper
+// 				type="list-item"
+// 				label={
+// 					<div  style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+// 						<ListItemIcon style={{ marginLeft: 8, marginRight: 4 }}>
+// 							<ListItemAvatar
+// 								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
+// 								size={30}
+// 							/>
+// 						</ListItemIcon>
+// 						<ListItemText primary={'Hello'} />
+// 					</div>
+// 				}
+// 				buttonProps={{ style:{ width: 200, height: 100 } }}
+// 				menuItems={menuItems}
+// 			/>
+// 		</div>
+// 	);
+// });
+
+stories.add('Menu Popper List Component', () => {
+	return (
+		<div style={{ width: 200, height: 100, marginTop: 200 }}>
+			<MenuPopper
+				menuItems={menuItems}
+				component={
+					(handleOpen: any) => (
+						<ListItem
+							button
+							onClick={handleOpen}
+							style={{ width: 200, height: 100 }}
+						>
+							<ListItemIcon style={{ marginLeft: 8, marginRight: 4 }}>
+								<ListItemAvatar
+									src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
+									size={30}
+								/>
+							</ListItemIcon>
+							<ListItemText primary={'Hello'} />
+						</ListItem>
+					)
+				}
+			/>
+		</div>
+	);
+});
+
 stories.add('Menu Popper Button Component', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type="button" label="Click Me" buttonProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
+			<MenuPopper
+				menuItems={menuItems}
+				component={
+					(handleOpen: any) => (
+						<Button onPress={handleOpen} style={{ width: 200, height: 100 }}>
+							Click Me
+						</Button>
+					)
+				}
+			/>
 		</div>
 	);
 });
 
-stories.add('Menu Popper list-item Component', () => {
+stories.add('Menu Popper Button Component placement right', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
-		</div>
-	);
-});
-
-stories.add('Menu Popper list-item Component with placement', () => {
-	return (
-		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement="top-end" />
-		</div>
-	);
-});
-
-stories.add('Menu Popper list-item Component with desired placement', () => {
-	return (
-		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement="right-end" />
+			<MenuPopper
+				menuItems={menuItems}
+				placement="right"
+				component={
+					(handleOpen: any) => (
+						<Button onPress={handleOpen} style={{ width: 200, height: 100 }}>
+							Click Me
+						</Button>
+					)
+				}
+			/>
 		</div>
 	);
 });

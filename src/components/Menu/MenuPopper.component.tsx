@@ -12,10 +12,6 @@ import React from 'react';
 // import Fade from 'material-ui/transitions/Fade';
 
 export interface MenuPopperProperties {
-  type: 'button' | 'list-item';
-  buttonProps?: any;
-  listItemProps?: any;
-  label?: string | React.ReactNode;
   menuListProps?: any;
   paperProps?: any;
   menuItems?: any;
@@ -32,6 +28,7 @@ export interface MenuPopperProperties {
     'bottom' |
     'bottom-end' |
     'bottom-start' ;
+  component?: (props: any) => (React.ReactNode);
 }
 
 class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }> {
@@ -63,19 +60,7 @@ class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }
               this.target1 = node;
             }}
           >
-            {
-              this.props.type === 'button' ?
-                <Button onClick={this.handleOpen} {...this.props.buttonProps}>
-                  {this.props.label}
-                </Button> :
-                <ListItem
-                  button
-                  onClick={this.handleOpen}
-                  {...this.props.listItemProps}
-                >
-                  {this.props.label}
-                </ListItem>
-            }
+            {this.props.component ? this.props.component(this.handleOpen) : null}
           </div>
         </Target>
 
