@@ -16,19 +16,20 @@ export interface MenuPopperProperties {
   paperProps?: any;
   menuItems?: any;
   placement?:
-    'right' |
-    'right-end' |
-    'right-start' |
-    'left' |
-    'left-end' |
-    'left-start' |
-    'top' |
-    'top-end' |
-    'top-start' |
-    'bottom' |
-    'bottom-end' |
-    'bottom-start' ;
+  'right' |
+  'right-end' |
+  'right-start' |
+  'left' |
+  'left-end' |
+  'left-start' |
+  'top' |
+  'top-end' |
+  'top-start' |
+  'bottom' |
+  'bottom-end' |
+  'bottom-start';
   component?: (props: any) => (React.ReactNode);
+  style?: any;
 }
 
 class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }> {
@@ -45,7 +46,7 @@ class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }
     if (this.target1.contains(event.target)) {
       return;
     }
-    onClick ? onClick() : console.log('No Click functionality passed') ;
+    onClick ? onClick() : console.log('No Click functionality passed');
     this.setState({ anchorEl: null });
   }
 
@@ -53,41 +54,43 @@ class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }
     const { anchorEl } = this.state;
 
     return (
-      <Manager>
-        <Target>
-          <div
-            ref={node => {
-              this.target1 = node;
-            }}
-          >
-            {this.props.component ? this.props.component(this.handleOpen) : null}
-          </div>
-        </Target>
+      <div style={this.props.style}>
+        <Manager>
+          <Target>
+            <div
+              ref={node => {
+                this.target1 = node;
+              }}
+            >
+              {this.props.component ? this.props.component(this.handleOpen) : null}
+            </div>
+          </Target>
 
-        <Popper
-          placement={this.props.placement}
-          eventsEnabled={Boolean(anchorEl)}
-        >
-          <ClickAwayListener onClickAway={this.handleClose}>
-            <Grow in={Boolean(anchorEl)} style={{ transformOrigin: '0 0 0' }}>
-              <Paper {...this.props.paperProps}>
-                <MenuList
-                  role="menu"
-                  {...this.props.menuListProps}
-                >
-                  {
-                    this.props.menuItems ? this.props.menuItems.map((each) => (
-                      <MenuItem onClick={(e) => this.handleClose(e, each.onClick)} style={each.style} {...each.otherProps}>
-                        {each.title}
-                      </MenuItem>
-                    )) : null
-                  }
-                </MenuList>
-              </Paper>
-            </Grow>
-          </ClickAwayListener>
-        </Popper>
-      </Manager>
+          <Popper
+            placement={this.props.placement}
+            eventsEnabled={Boolean(anchorEl)}
+          >
+            <ClickAwayListener onClickAway={this.handleClose}>
+              <Grow in={Boolean(anchorEl)} style={{ transformOrigin: '0 0 0' }}>
+                <Paper {...this.props.paperProps}>
+                  <MenuList
+                    role="menu"
+                    {...this.props.menuListProps}
+                  >
+                    {
+                      this.props.menuItems && Boolean(anchorEl) ? this.props.menuItems.map((each) => (
+                        <MenuItem onClick={(e) => this.handleClose(e, each.onClick)} style={each.style} {...each.otherProps}>
+                          {each.title}
+                        </MenuItem>
+                      )) : null
+                    }
+                  </MenuList>
+                </Paper>
+              </Grow>
+            </ClickAwayListener>
+          </Popper>
+        </Manager>
+      </div>
     );
   }
 }

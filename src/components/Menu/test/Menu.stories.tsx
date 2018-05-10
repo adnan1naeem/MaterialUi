@@ -134,22 +134,48 @@ const menuItems = [
 
 stories.add('Menu Popper List Component', () => {
 	return (
-		<div style={{ width: 200, height: 100, marginTop: 200 }}>
+		<div >
 			<MenuPopper
+				style={{ width: 200 }}
 				menuItems={menuItems}
 				component={
 					(handleOpen: any) => (
 						<ListItem
 							button
 							onClick={handleOpen}
-							style={{ width: 200, height: 100 }}
 						>
-							<ListItemIcon style={{ marginLeft: 8, marginRight: 4 }}>
-								<ListItemAvatar
-									src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
-									size={30}
-								/>
-							</ListItemIcon>
+							<ListItemAvatar
+								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
+								size={30}
+								style={{ marginLeft: 4, marginRight: 4 }}
+							/>
+							<ListItemText primary={'Hello'} />
+						</ListItem>
+					)
+				}
+			/>
+		</div>
+	);
+});
+
+stories.add('Menu Popper List Component placement right', () => {
+	return (
+		<div >
+			<MenuPopper
+				style={{ width: 200 }}
+				menuItems={menuItems}
+				placement="right-end"
+				component={
+					(handleOpen: any) => (
+						<ListItem
+							button
+							onClick={handleOpen}
+						>
+							<ListItemAvatar
+								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
+								size={30}
+								style={{ marginLeft: 4, marginRight: 4 }}
+							/>
 							<ListItemText primary={'Hello'} />
 						</ListItem>
 					)
@@ -163,6 +189,7 @@ stories.add('Menu Popper Button Component', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
 			<MenuPopper
+				style={{ width: 200 }}
 				menuItems={menuItems}
 				component={
 					(handleOpen: any) => (
@@ -180,6 +207,7 @@ stories.add('Menu Popper Button Component placement right', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
 			<MenuPopper
+				style={{ width: 200 }}
 				menuItems={menuItems}
 				placement="right"
 				component={
