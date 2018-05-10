@@ -110,7 +110,7 @@ const menuItems = [
 stories.add('Menu Popper Button Component', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type='button' label={"HII"} buttonProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
+			<MenuPopper type="button" label="Click Me" buttonProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
 		</div>
 	);
 });
@@ -118,7 +118,7 @@ stories.add('Menu Popper Button Component', () => {
 stories.add('Menu Popper list-item Component', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type='list-item' label={"HII"} listItemProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
+			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 100 } }} menuItems={menuItems} />
 		</div>
 	);
 });
@@ -126,7 +126,7 @@ stories.add('Menu Popper list-item Component', () => {
 stories.add('Menu Popper list-item Component with placement', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type='list-item' label={"HII"} listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement={'top-end'} />
+			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement="top-end" />
 		</div>
 	);
 });
@@ -134,7 +134,7 @@ stories.add('Menu Popper list-item Component with placement', () => {
 stories.add('Menu Popper list-item Component with desired placement', () => {
 	return (
 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-			<MenuPopper type='list-item' label={"HII"} listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement={'right-end'} />
+			<MenuPopper type="list-item" label="Click Me" listItemProps={{ style:{ width: 200, height: 50 } }} menuItems={menuItems} placement="right-end" />
 		</div>
 	);
 });
