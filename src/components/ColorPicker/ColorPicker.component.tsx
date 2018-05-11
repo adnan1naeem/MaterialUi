@@ -8,7 +8,7 @@ import Paper from 'material-ui/Paper';
 import React from 'react';
 
 export interface MUIProps extends ColorPickerProperties {
-	value?:{ h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string,
+	value?:{ h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string | any,
 	hs: boolean,
 }
 
@@ -85,7 +85,7 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 							/>
 							{ this.state.displayColorPicker ? <Paper elevation={2}>
 								<BR.Components.View style={styles.popover}>
-									<BR.Components.View style={styles.cover} onPress={this.handleClose} />
+									<BR.Components.View style={styles.cover}  />
 									{this.getColorPicker(this.props.hs, backgroundColor)}
 								</BR.Components.View>
 							</Paper> : null}

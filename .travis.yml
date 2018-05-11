@@ -13,3 +13,9 @@ after_success:
   - npm run report-coverage
   - test $TRAVIS_BRANCH = "master" && npm run deploy-docs
   - npx semantic-release
+  - test $TRAVIS_BRANCH = "master"
+install:
+  - "npm install @blueeast/bluerain-os"
+  - "npm install react"
+  - "npm install react-dom"
+  - "npm install"
