@@ -15,32 +15,31 @@ const AppBarStoriesStyle = {
 
 stories.add('Drawer open', () => {
 	return (
-    <Drawer
-      variant="persistent"
-      open={true}
-      tweenDuration={1000}
-      content={
-          <div>YOLO</div>
-      }
-      side="left"
-    />
+		<Drawer
+			variant="persistent"
+			open={true}
+			tweenDuration={1000}
+			side="left"
+		>
+			<div>YOLO</div>
+		</Drawer>
 	);
 });
 
 stories.add('Permanent Drawer StateFull with changable side', () => {
 	return (
-    <DrawerTest variant="permanent"/>
+		<DrawerTest variant="permanent" />
 	);
 });
 
 stories.add('Persistent Drawer StateFull with changable side aswell as open the drawer', () => {
 	return (
-    <DrawerTest variant="persistent"/>
+		<DrawerTest variant="persistent" />
 	);
 });
 
 stories.add('Temporary Drawer StateFull with changable side aswell as open the drawer', () => {
 	return (
-    <DrawerTest variant="temporary"/>
+		<DrawerTest variant="temporary" />
 	);
 });

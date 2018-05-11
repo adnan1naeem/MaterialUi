@@ -28,18 +28,17 @@ export class DrawerTest extends React.Component<MUIDrawerProperties, { open?: bo
                 variant={this.props.variant}
                 open={this.state.open}
                 tweenDuration={500}
-                content={
-                  <Button
-                    color={'primary'}
-                    onClick={() => { this.setState({ open: false }); }}
-                  >
-                    Click to Close
-                  </Button>
-                }
                 side={this.side}
                 onClose={() => { this.setState({ open: false }); }}
                 elevation={200}
-              />
+              >
+                <Button
+                  color={'primary'}
+                  onClick={() => { this.setState({ open: false }); }}
+                >
+                  Click to Close
+                </Button>
+              </Drawer>
 
               <BR.Components.Text>
                 Hello World
@@ -47,25 +46,25 @@ export class DrawerTest extends React.Component<MUIDrawerProperties, { open?: bo
 
               <Button
                 color={'primary'}
-                onClick={() => { this.side= 'left'; this.setState({ open: true }); }}
+                onClick={() => { this.side = 'left'; this.setState({ open: true }); }}
               >
                 Left
               </Button>
               <Button
                 color={'primary'}
-                onClick={() => { this.side= 'right'; this.setState({ open: true }); }}
+                onClick={() => { this.side = 'right'; this.setState({ open: true }); }}
               >
                 Right
               </Button>
               <Button
                 color={'primary'}
-                onClick={() => { this.side= 'top'; this.setState({ open: true }); }}
+                onClick={() => { this.side = 'top'; this.setState({ open: true }); }}
               >
                 Top
               </Button>
               <Button
                 color={'primary'}
-                onClick={() => { this.side= 'bottom'; this.setState({ open: true }); }}
+                onClick={() => { this.side = 'bottom'; this.setState({ open: true }); }}
               >
                 Bottom
               </Button>
