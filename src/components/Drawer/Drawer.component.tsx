@@ -18,9 +18,9 @@ export interface MUIDrawerProperties extends DrawerProperties {
 	classes?: any
 }
 
-export const BlueRainDrawer: React.StatelessComponent<MUIDrawerProperties> = (props) => (
-	<MUIDrawer children={props.content} {...props}/>
-);
+// export const BlueRainDrawer: React.StatelessComponent<MUIDrawerProperties> = (props) => (
+// 	<MUIDrawer children={props.content} {...props}/>
+// );
 
 export const MUIDrawer: React.StatelessComponent<MUIDrawerProperties & { children?: React.ReactNode }> = (props) => (
 	<BlueRainConsumer>
