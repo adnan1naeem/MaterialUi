@@ -12,6 +12,7 @@ import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupPropertie
 import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
+import { Menu, MenuItem, MenuItemProperties, MenuPopper, MenuPopperProperties, MenuProperties } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
@@ -44,6 +45,9 @@ class MaterialUiPlugin extends Plugin {
 		ColorPicker,
 		Divider,
 		Drawer,
+		Menu,
+		MenuItem,
+		MenuPopper,
 		Modal,
 		ModalHeader,
 		ModalBody,

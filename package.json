@@ -133,15 +133,13 @@
     "ts-node": "^4.1.0",
     "tslint": "^5.9.1",
     "typedoc": "^0.10.0",
-    "typescript": "2.7.2",
+    "typescript": "^2.7.2",
     "warning": "^3.0.0",
     "ws": "3.3.3"
   },
   "dependencies": {
-    "@blueeast/bluerain-ui-interfaces": "^3.2.7",
+    "@blueeast/bluerain-ui-interfaces": "^3.4.0",
     "apollo-client": "^1.0.4",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
     "lodash.pickby": "^4.6.0",
@@ -150,17 +148,15 @@
     "rc-color-picker": "^1.2.2",
     "react": "^16.3.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-apollo": "^1.4.15",
     "react-color": "^2.13.8",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.2.0",
+    "react-popper": "^0.10.4",
     "react-intl": "^2.4.0",
-    "react-loading-skeleton": "^0.3.1",
     "react-range-progress": "https://github.com/BlueEastCode/react-range-progress#fix/code",
-    "react-test-renderer": "^16.0.0",
-    "storybook-addon-intl": "^2.1.2",
-    "storyshots": "^3.2.2"
+    "react-router-dom": "^4.2.2"
   },
   "peerDependencies": {
+    "@blueeast/bluerain-os": "3.x.x",
     "@blueeast/bluerain-plugin-intl": "*",
     "react": "16.x.x",
     "react-dom": "16.x.x"

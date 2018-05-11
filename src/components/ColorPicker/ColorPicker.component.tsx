@@ -8,7 +8,7 @@ import Paper from 'material-ui/Paper';
 import React from 'react';
 
 export interface MUIProps extends ColorPickerProperties {
-	value?:{ h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string,
+	value?:{ h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string | any,
 	hs: boolean,
 }
 

@@ -1,4 +1,1 @@
-export {
-	BlueRainDrawer as Drawer,
-	MUIDrawerProperties
-} from './Drawer.component';
+export { MUIDrawer as Drawer, MUIDrawerProperties } from './Drawer.component';
