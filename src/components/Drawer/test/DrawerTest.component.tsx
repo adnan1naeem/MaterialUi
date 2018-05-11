@@ -39,37 +39,36 @@ export class DrawerTest extends React.Component<MUIDrawerProperties, { open?: bo
                   Click to Close
                 </Button>
               </Drawer>
-
-              <BR.Components.Text>
-                Hello World
-              </BR.Components.Text>
-
-              <Button
-                color={'primary'}
-                onClick={() => { this.side = 'left'; this.setState({ open: true }); }}
-              >
-                Left
-              </Button>
-              <Button
-                color={'primary'}
-                onClick={() => { this.side = 'right'; this.setState({ open: true }); }}
-              >
-                Right
-              </Button>
-              <Button
-                color={'primary'}
-                onClick={() => { this.side = 'top'; this.setState({ open: true }); }}
-              >
-                Top
-              </Button>
-              <Button
-                color={'primary'}
-                onClick={() => { this.side = 'bottom'; this.setState({ open: true }); }}
-              >
-                Bottom
-              </Button>
+              <BR.Components.View>
+                <BR.Components.Text>
+                  Hello World
+                </BR.Components.Text>
+                <Button
+                  color={'primary'}
+                  onClick={() => { this.side = 'left'; this.setState({ open: true }); }}
+                >
+                  Left
+                </Button>
+                <Button
+                  color={'primary'}
+                  onClick={() => { this.side = 'right'; this.setState({ open: true }); }}
+                >
+                  Right
+                </Button>
+                <Button
+                  color={'primary'}
+                  onClick={() => { this.side = 'top'; this.setState({ open: true }); }}
+                >
+                  Top
+                </Button>
+                <Button
+                  color={'primary'}
+                  onClick={() => { this.side = 'bottom'; this.setState({ open: true }); }}
+                >
+                  Bottom
+                </Button>
+              </BR.Components.View>
             </BR.Components.View>
-
           )
         }
       </BlueRainConsumer>
