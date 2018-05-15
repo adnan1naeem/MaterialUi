@@ -25,8 +25,8 @@
   },
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx' 'test/**/*.ts'",
-    "prebuild": "",
-    "build": "rimraf dist && bluerain build plugin",
+    "prebuild": "rimraf dist",
+    "build": "bluerain build plugin",
     "start": "tsc -w",
     "test": "jest --u",
     "test:watch": "jest --watch",
@@ -137,7 +137,6 @@
     "ws": "3.3.3"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^3.13.4",
     "@blueeast/bluerain-ui-interfaces": "^3.2.9",
     "apollo-client": "^1.0.4",
     "graphql-relay": "0.4.4",
@@ -146,10 +145,8 @@
     "material-ui": "1.0.0-beta.26",
     "material-ui-color-picker": "^1.0.1",
     "rc-color-picker": "^1.2.2",
-    "react": "^16.3.2",
     "react-addons-test-utils": "^15.6.2",
     "react-color": "^2.13.8",
-    "react-dom": "^16.3.2",
     "react-intl": "^2.4.0",
     "react-popper": "^0.10.4",
     "react-range-progress": "https://github.com/BlueEastCode/react-range-progress#fix/code",
