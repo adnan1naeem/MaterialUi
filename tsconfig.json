@@ -13,17 +13,17 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declarationDir": "dist/types",
-    "outDir": "compiled",
-    "jsx": "react", // process JSX
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "*": [ "./typings/*" ]
-    }
-  },
-  "include": [
-    "src"
-  ]
+			"outDir": "compiled",
+		    "jsx": "react", // process JSX
+			"typeRoots": [
+				"node_modules/@types"
+			],
+			"baseUrl": ".",
+			"paths": {
+				"*": [ "./typings/*" ]
+			}
+	},
+	"include": [
+			"src"
+	]
 }
