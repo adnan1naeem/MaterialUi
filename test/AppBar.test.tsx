@@ -6,7 +6,7 @@ test('AppBar component with position prop', () => {
 	const appBar = create(
       <AppBar position="static"></AppBar>
   ).toJSON();
-	expect(appBar.props.style).toEqual({ position: 'inherit' });
+	expect(appBar.props.style).toEqual({ position: 'absolute' });
 	expect(appBar).toMatchSnapshot();
 });
 
@@ -14,6 +14,6 @@ test('AppBar component with style', () => {
 	const appBar = create(
       <AppBar style={{ 'background-color':'green' }}></AppBar>
   ).toJSON();
-	expect(appBar.props.style).toEqual({ 'background-color':'green', position: 'inherit' });
+	expect(appBar.props.style).toEqual({ 'background-color':'green' });
 	expect(appBar).toMatchSnapshot();
 });
