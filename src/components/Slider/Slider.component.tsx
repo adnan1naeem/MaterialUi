@@ -33,10 +33,10 @@ class Slider extends React.Component<MUIProps,{value:any}>{
 		};
 	}
 
-	onValueChange = (value) => {
+	onValueChange = (value, name) => {
 		this.setState({ value });
 		if(this.props.onValueChange ) {
-			this.props.onValueChange(value);
+			this.props.onValueChange(value, name);
 		}
 	}
 
