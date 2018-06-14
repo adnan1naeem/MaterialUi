@@ -19,7 +19,7 @@ export interface MUIAppBarProperties extends AppBarProperties {
 export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (props) => (
 	<BlueRainConsumer>
 	{(BR: BlueRain) => (
-		<AppBar {...props} style={props.style ? props.style : { position: 'absolute' }}>
+		<AppBar {...props} style={props.style ? props.style : { position: 'sticky' }}>
 			<Toolbar>
 				{props.children}
 			</Toolbar>

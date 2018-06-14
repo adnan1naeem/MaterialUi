@@ -6,7 +6,7 @@ test('AppBar component with position prop', () => {
 	const appBar = create(
       <AppBar position="static"></AppBar>
   ).toJSON();
-	expect(appBar.props.style).toEqual({ position: 'absolute' });
+	expect(appBar.props.style).toEqual({ position: 'sticky' });
 	expect(appBar).toMatchSnapshot();
 });
 
