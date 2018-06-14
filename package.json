@@ -138,7 +138,7 @@
   },
   "dependencies": {
     "@blueeast/bluerain-os": "^3.13.4",
-    "@blueeast/bluerain-ui-interfaces": "^3.2.9",
+    "@blueeast/bluerain-ui-interfaces": "^3.2.10",
     "apollo-client": "^1.0.4",
     "graphql-relay": "0.4.4",
     "graphql-tag": "^0.1.16",
