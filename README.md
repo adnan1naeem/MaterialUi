@@ -1,7 +1,7 @@
 # Material UI Plugin
 
 Adds [Material UI](http://www.material-ui.com/#/) theme Provider to BlueRain.
-Components of material-ui have been developed using a common interface.
+Components of material-ui have been developed using a common interface. [https://blueeast.gitbook.io/bluerain-plugin-material-ui](https://blueeast.gitbook.io/bluerain-plugin-material-ui)
 
 | 🌏 Web             | 🖥 Electron        | 📱 React Native    |
 | :----------------: | :----------------: | :----------------: |
@@ -18,9 +18,6 @@ Run the following command in the plugin directoy:
 ```shell
 yarn add  @blueeast/bluerain-plugin-material-ui
 ```
-
-
-
 
 ## Components
 
@@ -51,7 +48,7 @@ yarn add  @blueeast/bluerain-plugin-material-ui
 - Notification[Web](https://material-ui.com/api/snackbar/)
 - Stepper[Web](https://material-ui.com/demos/steppers/)
 
-## Filters
+## Hooks
 
 This plugin provides complete flexibility to modify the material ui theme. This is done by providing various filter hooks.
 
@@ -89,6 +86,8 @@ BR.Filters.add(
     }
 );
 ```
+
+### [Demo](https://BlueEastCode.github.io/bluerain-plugin-material-ui/)
 
 ## API
 
