@@ -1,9 +1,9 @@
 import { Dropdown, DropdownItem } from '../index';
 import Input, { InputLabel } from 'material-ui/Input';
+import { MenuItem } from 'material-ui/Menu';
 import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import React from 'react';
-import { MenuItem } from 'material-ui/Menu';
 
 const stories = storiesOf('Dropdown', module);
 
