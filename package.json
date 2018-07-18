@@ -141,6 +141,7 @@
     "ws": "3.3.3"
   },
   "dependencies": {
+    "@blueeast/bluerain-os": "^3.13.4",
     "@blueeast/bluerain-ui-interfaces": "^3.2.11",
     "apollo-client": "^1.0.4",
     "graphql-relay": "0.4.4",
