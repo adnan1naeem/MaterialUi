@@ -1,5 +1,6 @@
 import { Dropdown, DropdownItem } from '../index';
 import Input, { InputLabel } from 'material-ui/Input';
+import { MenuItem } from 'material-ui/Menu';
 import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import React from 'react';
@@ -23,25 +24,13 @@ const multiItems=[
 	'Kelly Snyder'
 ];
 
-stories.add('Dropdown', () => {
-	return(
-		<Paper style={style.root}>
-				<Dropdown onValueChange={onChange} value={'xyz'}  style={style.dropdown}>
-					<DropdownItem value="xyz">Item 1 </DropdownItem>
-						<DropdownItem value="abc">Item 2 </DropdownItem>
-						<DropdownItem value="abc">Item 3 </DropdownItem>
-						<DropdownItem value="abc">Item 4 </DropdownItem>
-						<DropdownItem value="abc">Item 5 </DropdownItem>
-				</Dropdown>
-		</Paper>);}
-);
 
 stories.add('Dropdown with autoWidth', () => {
 	return(
 		<Paper style={style.root}>
 			<Dropdown onValueChange={onChange} value={'xyz'} autoWidth={true}  style={style.dropdown}>
-				<DropdownItem value="xyz">Item 1 </DropdownItem>
-				<DropdownItem value="abc">Item 2 </DropdownItem>
+				<DropdownItem value="abc">Item 1 </DropdownItem>
+				<DropdownItem value="xyz">Item 2 </DropdownItem>
 				<DropdownItem value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>
 				<DropdownItem value="abc">Item 5 </DropdownItem>
@@ -66,7 +55,7 @@ stories.add('Dropdown multiple select', () => {
 	return(
 		<Paper style={style.root}>
 			<Dropdown onValueChange={onChange} value={multiItems} autoWidth={true} multiple style={style.dropdown} >
-				<DropdownItem value="xyz">Item 1 </DropdownItem>
+				<DropdownItem  value="xyz">Item 1 </DropdownItem>
 				<DropdownItem value="abc">Item 2 </DropdownItem>
 				<DropdownItem value="abc">Item 3 </DropdownItem>
 				<DropdownItem value="abc">Item 4 </DropdownItem>

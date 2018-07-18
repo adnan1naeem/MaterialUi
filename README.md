@@ -1,57 +1,54 @@
 # Material UI Plugin
 
 Adds [Material UI](http://www.material-ui.com/#/) theme Provider to BlueRain.
-Components of material-ui have been developed using a common interface.
+Components of material-ui have been developed using a common interface. [https://blueeast.gitbook.io/bluerain-plugin-material-ui](https://blueeast.gitbook.io/bluerain-plugin-material-ui)
+
+| 🌏 Web             | 🖥 Electron        | 📱 React Native    |
+| :----------------: | :----------------: | :----------------: |
+| :heavy_check_mark: | :heavy_check_mark: | ✖️ |
+
+## Screenshots
+
+NA
 
 ## Usage
 
 Run the following command in the plugin directoy:
 
 ```shell
-npm i --save @blueeast/bluerain-plugin-material-ui
-```
-
-Then in your boot function, pass the plugin like this:
-
-```javascript
-import BR from '@blueeast/bluerain-os';
-import MaterialUiPlugin from '@blueeast/bluerain-plugin-material-ui';
-
-BR.boot({
-	plugins: [MaterialUiPlugin]
-})
+yarn add  @blueeast/bluerain-plugin-material-ui
 ```
 
 ## Components
 
-- AppBar
-- Avatar
-- Badge
-- Button
-- Card
-- CardHeader
-- CardBody
-- CardMedia
-- CardFooter
-- Chip
-- Divider
-- Dropdown
-- DropdownItem
-- FormControl
-- FormGroup
-- List
-- ListHeader
-- ListItem
-- ListItemAvatar
-- ListItemIcon
-- ListItemRightButton
-- ListItemText
-- Switch
-- TextInput
-- Notification
-- Stepper
+- AppBar [Web](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
+- Avatar[Web](https://material-ui.com/demos/avatars/)
+- Badge[Web](https://material-ui.com/demos/badges/)
+- Button[Web](https://material-ui.com/demos/buttons/)
+- Card[Web](https://material-ui.com/demos/cards/)
+- CardHeader[Web](https://material-ui.com/api/card-header/)
+- CardBody[Web](https://material-ui.com/api/card-content/)
+- CardMedia[Web](https://material-ui.com/api/card-media/)
+- CardFooter[Web](https://material-ui.com/api/card-actions/)
+- Chip[Web](https://material-ui.com/api/chip/)
+- Divider[Web](https://material-ui.com/api/divider/)
+- Dropdown[Web](https://material-ui.com/api/menu/)
+- DropdownItem[Web](https://material-ui.com/api/menu-item/)
+- FormControl[Web](https://material-ui.com/api/form-control/)
+- FormGroup[Web](https://material-ui.com/api/form-group/)
+- List[Web](https://material-ui.com/api/list/)
+- ListHeader[Web](https://material-ui.com/api/list-subheader/)
+- ListItem [Web](https://material-ui.com/api/list-item/)
+- ListItemAvatar[Web](https://material-ui.com/api/list-item-avatar/)
+- ListItemIcon[Web](https://material-ui.com/api/list-item-icon/)
+- ListItemRightButton[Web](https://material-ui.com/api/list-item-avatar/)
+- ListItemText[Web](https://material-ui.com/api/list-item-text/)
+- Switch[Web](https://material-ui.com/api/switch/)
+- TextInput[Web](https://material-ui.com/api/list-item-text/)
+- Notification[Web](https://material-ui.com/api/snackbar/)
+- Stepper[Web](https://material-ui.com/demos/steppers/)
 
-## Filters
+## Hooks
 
 This plugin provides complete flexibility to modify the material ui theme. This is done by providing various filter hooks.
 
@@ -89,6 +86,8 @@ BR.Filters.add(
     }
 );
 ```
+
+### [Demo](https://BlueEastCode.github.io/bluerain-plugin-material-ui/)
 
 ## API
 
