@@ -17,7 +17,7 @@ export interface Props {
 class ModalStoryComponent extends React.Component<Props,States > {
     constructor (props:any) {
       super(props);
-      this.props=props;
+      // this.props=props;
       this.state = {
         open: false,
       };
