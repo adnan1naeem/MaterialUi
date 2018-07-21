@@ -18,7 +18,7 @@ import TextField from '@material-ui/core/TextField';
 
 export interface MUITextInputProperties extends TextInputProperties {
 	autoComplete?: string, //
-	// autoCorrect?: string,
+	autoCorrect?: string,
 	id?: string, //
 	label?: ReactNode | string, //
 	className?: any,
@@ -49,7 +49,7 @@ const customOnChange = (props) => (event) => {
 	if(props.onChangeText) { props.onChangeText(event.target.value); }
 };
 
-const BlueRainTextInput: React.StatelessComponent<any> = (rawProps) => {
+const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (rawProps) => {
 	const { onChangeText , ...props } = rawProps;
 	let disabled = false;
 	if(props.editable !== undefined && !props.editable) {
