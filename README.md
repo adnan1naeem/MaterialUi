@@ -5,7 +5,7 @@ Components of material-ui have been developed using a common interface. [https:/
 
 | 🌏 Web             | 🖥 Electron        | 📱 React Native    |
 | :----------------: | :----------------: | :----------------: |
-| :heavy_check_mark: | :heavy_check_mark: | ✖️ |
+| ✔️ | ✔️ | ✖️ |
 
 ## Screenshots
 
