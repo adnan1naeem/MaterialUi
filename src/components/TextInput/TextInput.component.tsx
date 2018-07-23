@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
-import TextField from 'material-ui/TextField';
+// import TextField from 'material-ui/TextField';
+import TextField from '@material-ui/core/TextField';
 
 /**
  * The props of IMaterialTextInput Component
@@ -16,24 +17,31 @@ import TextField from 'material-ui/TextField';
  */
 
 export interface MUITextInputProperties extends TextInputProperties {
-	autoComplete?: string,
+	autoComplete?: string, //
 	autoCorrect?: string,
-	id?: string,
-	label?: string,
+	id?: string, //
+	label?: ReactNode | string, //
 	className?: any,
-	margin?: 'none' |
-    'dense' |
-    'normal',
-	required?: boolean,
-	error?: boolean,
-	type?: string,
-	rowsMax?: string,
-	rows?: string,
-	helperText?: ReactNode,
-	InputLabelProps?: object,
-	fullWidth?: boolean,
-	errorText?: ReactNode,
-	defaultValue?:string
+	margin?: 'none' | //
+    'dense' | //
+    'normal', //
+	required?: boolean, //
+	error?: boolean, //
+	type?: string, //
+	rowsMax?: string | number, //
+	rows?: string | number, //
+	helperText?: ReactNode, //
+	InputLabelProps?: object, //
+	fullWidth?: boolean, //
+	errorText?: ReactNode, //
+	defaultValue?:string //
+	FormHelperTextProps?: object, //
+	inputProps?: object, //
+	InputProps?: object, //
+	inputRef?: () => void | object; //
+	name?: string, //
+	select?: boolean, //
+	SelectProps?: object, //
 }
 
 const customOnChange = (props) => (event) => {
@@ -48,17 +56,17 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 		disabled = true;
 	}
 	return (
-	<TextField
-		style={props.style}
-		placeholder={props.placeholder}
-		autoFocus={props.autoFocus}
-		onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => {return null;}}
-		rows={props.numberOfLines}
-		disabled={disabled}
-		helperText={props.errorText}
-		defaultValue={props.defaultValue}
-		{...props}
-	/>
+		<TextField
+			style={props.style}
+			placeholder={props.placeholder}
+			autoFocus={props.autoFocus}
+			onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => {return null;}}
+			rows={props.numberOfLines}
+			disabled={disabled}
+			helperText={props.errorText}
+			defaultValue={props.defaultValue}
+			{...props}
+		/>
 	);
 };
 
