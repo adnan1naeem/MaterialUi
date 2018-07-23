@@ -141,7 +141,7 @@
     "ws": "3.3.3"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^3.13.4",
+    "@blueeast/bluerain-os": "^3.13.6",
     "@blueeast/bluerain-ui-interfaces": "^3.2.11",
     "@material-ui/core": "^1.4.0",
     "apollo-client": "^1.0.4",
@@ -152,7 +152,7 @@
     "material-ui-color-picker": "^1.0.1",
     "parse-domain": "github:pvdlg/parse-domain#overwrite-tries",
     "rc-color-picker": "^1.2.2",
-    "react": "16.x.x",
+    "react": "^16.4.1",
     "react-addons-test-utils": "^15.6.2",
     "react-color": "^2.13.8",
     "react-dom": "^16.4.1",
