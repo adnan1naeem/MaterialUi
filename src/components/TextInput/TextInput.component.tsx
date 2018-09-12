@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
-// import TextField from 'material-ui/TextField';
-import TextField from '@material-ui/core/TextField';
+import TextField from 'material-ui/TextField';
+// 
+// import TextField from '@material-ui/core/TextField';
 
 /**
  * The props of IMaterialTextInput Component
@@ -44,7 +45,7 @@ export interface MUITextInputProperties extends TextInputProperties {
 	SelectProps?: object, //
 }
 
-const customOnChange = (props) => (event) => {
+const customOnChange = (props:any) => (event:any) => {
 	if(props.onChange) { props.onChange(event); }
 	if(props.onChangeText) { props.onChangeText(event.target.value); }
 };

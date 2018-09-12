@@ -1,5 +1,5 @@
 import React,{ ReactNode } from 'react';
-import { MenuItem } from 'material-ui/Menu';
+// import { MenuItem } from 'material-ui/Menu';
 import  { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import Select from 'material-ui/Select';
 
@@ -33,7 +33,8 @@ export interface MUIPickerProperties extends PickerProperties {
 const DropDown : React.StatelessComponent<MUIPickerProperties> =(props) => (
             <Select
                 onChange={props.onValueChange}
-                value={props.selectedValue}
+								value={props.selectedValue}
+								onSelect={props.selectedValue}
                 {...props}
             />
 );

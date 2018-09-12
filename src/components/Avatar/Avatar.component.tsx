@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BlueRain, BlueRainConsumer, withBlueRain } from '@blueeast/bluerain-os';
+import { BlueRain, withBlueRain } from '@blueeast/bluerain-os';
 import { AvatarProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**

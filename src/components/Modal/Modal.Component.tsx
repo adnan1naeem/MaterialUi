@@ -1,5 +1,5 @@
 
-import React, { Component, ReactNode } from 'react';
+import React, {ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
 import Dialog from 'material-ui/Dialog';
 export interface MUIModalProperties extends ModalProperties{

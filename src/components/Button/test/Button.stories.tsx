@@ -1,32 +1,32 @@
 import * as React from 'react';
 import { Button } from '../../Button';
 import { storiesOf } from '@storybook/react';
-import BR from '@blueeast/bluerain-os';
+import { action } from '@storybook/addon-actions';
+import { boolean,text,withKnobs } from '@storybook/addon-knobs';
 
-const background = '.background {background-color: red;}';
-const Text = BR.Components.get('Text');
 
-// storiesOf('Button', module).add('Primary Button with knobs', () =>{
+storiesOf('Button', module).addDecorator(withKnobs).add('Primary Button with knobs', 
+() =>{
 
-//     const Image = BR.Components.get('Image');
-//     const label = text('label as child', 'withknobs');
-//     const color = text('color', 'primary');
-//     const disabled = boolean('disabled', false);
-//     const fullWidth = boolean('fullWidth', false);
-//     const fab = boolean('fab', false);
-//     const small = boolean('small', false);
-// (
-// <Button
-//     color={color}
-//     onPress={action('I was clicked with knobs')}
-//     disabled={disabled}
-//     fullWidth={fullWidth}
-//     fab={fab}
-//     small={small}
-// >
-// </Button>);
-// });
+    const label = text('label as child', 'withknobs');
+    const color = text('color', 'primary');
+    const disabled = boolean('disabled', false);
+    const fullWidth = boolean('fullWidth', false);
+    const fab = boolean('fab', false);
+    const small = boolean('small', false);
+return (
+<Button
+    color={color}
+    onPress={action('I was clicked with knobs')}
+    disabled={disabled}
+    fullWidth={fullWidth}
+    fab={fab}
+    small={small}
+>{label}
+</Button>);
+});
 storiesOf('Button', module).add('Default Button without Text tag in Child', () => <Button color={'default'}>Default</Button>);
+storiesOf('Button', module).add('Default Button with title prop', () => <Button color={'default'} title="hero"/>);
 
 storiesOf('Button', module).add('Accent Button with style prop', () => <Button color="accent" style={{ backgroundColor:'purple', borderColor:'purple' }} >Custom Purple</Button>);
 

@@ -1,8 +1,9 @@
-import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
-import { List, ListItem, ListItemText } from '../List';
+// import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
+// import { List, ListItem, ListItemText } from '../List';
 import { Manager, Popper, Target } from 'react-popper';
-import { Menu, MenuItem } from '../Menu';
-import { Button } from '../Button';
+// import { Menu, MenuItem } from '../Menu';
+import { MenuItem } from '../Menu';
+// import { Button } from '../Button';
 import { MenuList } from 'material-ui/Menu';
 import ClickAwayListener from 'material-ui/utils/ClickAwayListener';
 import Grow from 'material-ui/transitions/Grow';
@@ -38,11 +39,11 @@ class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }
     anchorEl: null,
   };
 
-  handleOpen = event => {
+  handleOpen = (event: any) => {
     this.setState({ anchorEl: event.currentTarget });
   }
 
-  handleClose = (event, onClick?: () => void) => {
+  handleClose = (event: any, onClick?: () => void) => {
     if (this.target1.contains(event.target)) {
       return;
     }
@@ -78,8 +79,8 @@ class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }
                     {...this.props.menuListProps}
                   >
                     {
-                      this.props.menuItems && Boolean(anchorEl) ? this.props.menuItems.map((each) => (
-                        <MenuItem onClick={(e) => this.handleClose(e, each.onClick)} style={each.style} {...each.otherProps}>
+                      this.props.menuItems && Boolean(anchorEl) ? this.props.menuItems.map((each:any) => (
+                        <MenuItem onClick={(e:any) => this.handleClose(e, each.onClick)} style={each.style} {...each.otherProps}>
                           {each.title}
                         </MenuItem>
                       )) : null

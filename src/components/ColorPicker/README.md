@@ -1,5 +1,7 @@
-## ColorPicker
-### Props
+
+# ColorPicker
+
+## Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -8,11 +10,12 @@
 | hs | bool | false | If passed true, ColorPicker component is generated with HSA colors support and expects h,s,l attributes in value prop. |
 | onChange | Function | () => {} | Callback function for when the ColorPicker component changes the color. |
 
+## Component Usages
 
-### Component Usages
-1. If 'value' prop is not provided, "transparent" is used as it is set as defaultColor.
+ If 'value' prop is not provided, "transparent" is used as it is set as defaultColor.
 
-### How to use
+## How to use
+
 Below is the sample code to use the component:
 
 ```JavaScript
@@ -27,25 +30,25 @@ const ColorPickerSample = (props) => (
     <ColorPicker
   value={hsl}
   hs
-	/>
+ />
     <ColorPicker
   value="#2AF795"
     />
     <ColorPicker
   value={{
-	h: '180',
-	s: '0.5',
-	l: '0.5',
-	r: '255',
-	g: '112',
-	b: '19',
-	a: '1',
+ h: '180',
+ s: '0.5',
+ l: '0.5',
+ r: '255',
+ g: '112',
+ b: '19',
+ a: '1',
     }}
     />
   </View>);
 
 export default withBluerain(ColorPickerSample);
-```
+
 ### Behaviors
 1. Normal state with "hs" prop false: Normal state of the component shows a button in which default value of color is being shown and when this button is clicked, Color Picker is shown in which it shows the default color that was set by using the prop "value". Changing the color behaves as the prop "onChange" demands.  
 <img src='ColorPicker.png'/>

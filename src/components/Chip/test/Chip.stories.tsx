@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { object, text, withKnobs } from '@storybook/addon-knobs';
+// import {  object, text } from '@storybook/addon-knobs';
 import { Chip } from '../../Chip';
 import { action } from '@storybook/addon-actions';
 import { emphasize } from 'material-ui/styles/colorManipulator';
 import { storiesOf } from '@storybook/react';
+import BR from '@blueeast/bluerain-os';
 
 const color = emphasize('#fff', 0);
 const backgroundColor = emphasize('#0f0', 0);
@@ -14,14 +16,13 @@ stories.add('Chip with default value', () => {
 	return <Chip>12 % off</Chip>;
 });
 
-stories.add('Chip with style', () => {
-	 // const styleProps = {'background-color': backgroundColor};
+stories.addDecorator(withKnobs).add('Chip with style', () => {
 	 const style = object('Style of Chip',chipDefaultStyle);
 	 const content = text('Text', '10 % off');
-	 return <Chip style={style}>{content}</Chip>;
+	 return <Chip style={style}><BR.Components.Text>{content}</BR.Components.Text></Chip>;
 });
 
-stories.add('Chip Onclick', () => {
+stories.addDecorator(withKnobs).add('Chip Onclick', () => {
 	const style = object('Style of Chip', chipDefaultStyle);
 	const content = text('Text', '10 % off');
 	return <Chip style={style} onClick={action('Chip clicked')} >{content}</Chip>;

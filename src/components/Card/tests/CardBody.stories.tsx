@@ -1,10 +1,7 @@
 import * as React from 'react';
-import { CardBody, CardHeader } from '../../Card';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+import { CardBody, CardHeader } from '../../Card';;
 import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
-import BR from '@blueeast/bluerain-os';
 import Typography from 'material-ui/Typography';
 
 storiesOf('CardBody', module).add('CardBody with style and children props', () =>

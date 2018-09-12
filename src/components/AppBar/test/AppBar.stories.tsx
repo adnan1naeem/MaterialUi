@@ -13,48 +13,43 @@ const AppBarStoriesStyle = {
 
 stories.add('AppBar with primary color and position="fixed"', () => {
 	return (
-    <AppBar position="fixed" color="primary" style={{ backgroundColor: 'red' }}>
-      <Button style={AppBarStoriesStyle}>
-        <AssignmentIcon />
-      </Button>
-      <h3 style={{ display: 'flex', flex: 1 }}>Title</h3>
-      <Button color="primary">Login</Button>
-    </AppBar>
-	);
-});
-
-stories.add('AppBar with position static and default color', () => {
-	return (
-    <AppBar position="static" color="default">
-      <Button style={AppBarStoriesStyle}>
-        <AssignmentIcon />
-      </Button>
-      <h3 style={{ display: 'flex', flex: 1 }}>Title</h3>
-      <Button color="default">Login</Button>
+    <AppBar left={<Button fab={true}  style={AppBarStoriesStyle}>
+    <AssignmentIcon />
+  </Button>} title={'Title'} right={<Button color="primary">Login</Button>} position="fixed" color="primary" style={{ backgroundColor: 'red' }}>    
     </AppBar>
 	);
 });
 
 stories.add('AppBar with primary color and  position="absolute"', () => {
 	return (
-    <AppBar position="absolute" color="primary">
-      <Button style={AppBarStoriesStyle}>
-        <AssignmentIcon />
-      </Button>
-      <h3 style={{ display: 'flex', flex: 1 }}>Title</h3>
-      <Button color="secondary">Login</Button>
-    </AppBar>
+    <AppBar position="absolute" left={<Button fab={true} style={AppBarStoriesStyle}>
+		<AssignmentIcon />
+	</Button>} title={'Title'} right={<Button color="secondary">Login</Button>} color="primary"/>
+
 	);
 });
 
 stories.add('AppBar with accent color', () => {
 	return (
-    <AppBar color="accent">
-      <Button style={AppBarStoriesStyle}>
-        <AssignmentIcon />
-      </Button>
-      <h3 style={{ display: 'flex', flex: 1 }}>Title</h3>
-      <Button color="accent">Login</Button>
-    </AppBar>
+    <AppBar color="accent" left={<Button fab={true} style={AppBarStoriesStyle}><AssignmentIcon /></Button>} title={'Title'} right={ <Button color="primary">Login</Button>}/>
+  
+	);
+});
+
+stories.add('AppBar without right prop', () => {
+	return (
+    <AppBar color="accent" left={<Button fab={true} style={AppBarStoriesStyle}><AssignmentIcon /></Button>} title={'Title'} />
+	);
+});
+
+stories.add('AppBar without  left prop', () => {
+	return (
+    <AppBar color="accent"   title={'Title'} right={ <Button color="primary">Login</Button>}/>
+ 
+	);
+});
+stories.add('AppBar without title', () => {
+	return (
+    <AppBar color="accent" left={<Button fab={true} style={AppBarStoriesStyle}><AssignmentIcon /></Button>} right={ <Button color="primary">Login</Button>}/>
 	);
 });

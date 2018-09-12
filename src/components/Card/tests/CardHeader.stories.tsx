@@ -1,27 +1,22 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { CardHeader } from '../../Card';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
+import { storiesOf} from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
-import BR from '@blueeast/bluerain-os';
 import IconButton from 'material-ui/IconButton';
 import SkipNextIcon from 'material-ui-icons/SkipNext';
 
-const Text = BR.Components.get('Text');
-
-const label = text('label as child', <Text>With knobs</Text>);
 storiesOf('CardHeader', module).add('CardHeader with title as Node and style props', () =>
 (
 <CardHeader
 		style={{ width:300, backgroundColor:'white' }}
-		title={label}
-/>));
+		title="Title"
+		/>));
 
-storiesOf('CardHeader', module).add('CardHeader with title prop as string', () =>
+storiesOf('CardHeader', module).addDecorator(withKnobs).add('CardHeader with title prop as string', () =>
 (
 <CardHeader
-		title="Title"
+		title={text('Title','Title')}
 />));
 
 storiesOf('CardHeader', module).add('CardHeader with children and title prop ', () =>

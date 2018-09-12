@@ -20,7 +20,7 @@ const AppBar = (props) => (
     const BR = props.bluerain;
     const AppBar = BR.Components.get('AppBar');
     const Button = BR.Components.get('Button');
-    const Text = BR.Components.get('Text');
+    // const Text = BR.Components.get('Text');
     return(<AppBar position="static" color="default">
           <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }}>
             <AssignmentIcon />

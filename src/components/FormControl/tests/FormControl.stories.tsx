@@ -1,20 +1,12 @@
 import * as React from 'react';
 import { FormControl, FormGroup } from '../../FormControl';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import { Button } from '../../Button';
 import { FormControlLabel } from 'material-ui/Form';
 import { TextInput } from '../../TextInput';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
 import Checkbox from 'material-ui/Checkbox';
 import Paper from 'material-ui/Paper';
 
-const Text = BR.Components.get('Text');
-
-const Image = BR.Components.get('Image');
-
-const View = BR.Components.get('View');
 
 storiesOf('FormControl', module).add('FormControl with style and raised props', () => (
 <FormControl
@@ -41,7 +33,7 @@ storiesOf('FormControl', module).add('MaterialUI example 2', () =>
 <FormControl>
     <FormGroup>
     <TextInput label="Input with success"/>
-    <Text>Example help text that remains unchanged.</Text>
+    <BR.Components.Text>Example help text that remains unchanged.</BR.Components.Text>
     </FormGroup>
     <FormGroup>
     <TextInput label="Input with danger" error={true} errorText={'Example help text that remains unchanged.'}/>

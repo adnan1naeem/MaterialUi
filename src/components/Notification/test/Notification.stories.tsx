@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Notification } from '../index';
 import  { SimpleSnackbar } from './Notification.simple.components';
 import { storiesOf } from '@storybook/react';
-import Button from 'material-ui/Button';
-import CloseIcon from '@material-ui/icons/Close';
-import IconButton from 'material-ui/IconButton';
+// import Button from 'material-ui/Button';
+// import CloseIcon from '@material-ui/icons/Close';
+// import IconButton from 'material-ui/IconButton';
 import  PositionedSnackbar  from  './Notification.state.component';
 
 const stories = storiesOf('Notification', module);

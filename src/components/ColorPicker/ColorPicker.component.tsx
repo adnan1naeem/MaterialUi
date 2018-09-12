@@ -3,7 +3,6 @@ import { ChromePicker, SketchPicker } from 'react-color';
 import { ColorPickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import { styles } from './pickerStyles';
 import Button from 'material-ui/Button';
-import Card from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 import React from 'react';
 
@@ -30,11 +29,11 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 		this.setState({ displayColorPicker: false });
 	}
 
-	handleChangeHsl = (color) => {
+	handleChangeHsl = (color:any) => {
 		this.setState({ color: color.hsl });
 	}
 
-	handleChangeRgb= (color) => {
+	handleChangeRgb= (color:any) => {
 		this.setState({ color: color.rgb });
 	}
 

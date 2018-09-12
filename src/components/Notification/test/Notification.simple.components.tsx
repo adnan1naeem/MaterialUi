@@ -4,12 +4,12 @@ import CloseIcon from '@material-ui/icons/Close';
 import IconButton from 'material-ui/IconButton';
 import React from 'react';
 
-const styles = theme => ({
-  close: {
-    width: theme.spacing.unit * 4,
-    height: theme.spacing.unit * 4,
-  },
-});
+// const styles = (theme:any) => ({
+//   close: {
+//     width: theme.spacing.unit * 4,
+//     height: theme.spacing.unit * 4,
+//   },
+// });
 
 export class SimpleSnackbar extends React.Component {
   state = {

@@ -1,9 +1,6 @@
 import * as React from 'react';
-import { AppBar } from '../../AppBar';
-import { Button } from '../../Button';
 import { Drawer } from '../../Drawer';
 import { storiesOf } from '@storybook/react';
-import AssignmentIcon from 'material-ui-icons/Assignment';
 import DrawerTest from './DrawerTest.component';
 
 const stories = storiesOf('Drawer', module);
@@ -20,6 +17,7 @@ stories.add('Drawer open', () => {
 			open={true}
 			tweenDuration={1000}
 			side="left"
+			style={AppBarStoriesStyle}
 		>
 			<div>YOLO</div>
 		</Drawer>

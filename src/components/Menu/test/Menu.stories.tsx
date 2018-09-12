@@ -1,5 +1,5 @@
 import Input, { InputLabel } from 'material-ui/Input';
-import { ListItem, ListItemAvatar, ListItemIcon, ListItemText } from '../../List';
+import { ListItem } from '../../List';
 import { Menu, MenuItem } from '../index';
 import { Button } from '../../Button';
 import { storiesOf } from '@storybook/react';
@@ -10,7 +10,7 @@ import React from 'react';
 
 const stories = storiesOf('Menu', module);
 
-const onChange = (event) => {
+const onChange = (event:any) => {
 	const value = event.target.value;
 };
 const style = { root: { padding: 20 }, dropdown: { width: 400 } };
@@ -109,29 +109,6 @@ const menuItems = [
 	}
 ];
 
-// stories.add('Menu Popper Button Component', () => {
-// 	return (
-// 		<div style={{ width: 200, height: 100, marginTop: 200 }}>
-// 			<MenuPopper
-// 				type="list-item"
-// 				label={
-// 					<div  style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-// 						<ListItemIcon style={{ marginLeft: 8, marginRight: 4 }}>
-// 							<ListItemAvatar
-// 								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
-// 								size={30}
-// 							/>
-// 						</ListItemIcon>
-// 						<ListItemText primary={'Hello'} />
-// 					</div>
-// 				}
-// 				buttonProps={{ style:{ width: 200, height: 100 } }}
-// 				menuItems={menuItems}
-// 			/>
-// 		</div>
-// 	);
-// });
-
 stories.add('Menu Popper List Component', () => {
 	return (
 		<div >
@@ -142,15 +119,11 @@ stories.add('Menu Popper List Component', () => {
 					(handleOpen: any) => (
 						<ListItem
 							button
-							onClick={handleOpen}
-						>
-							<ListItemAvatar
-								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
-								size={30}
-								style={{ marginLeft: 4, marginRight: 4 }}
-							/>
-							<ListItemText primary={'Hello'} />
-						</ListItem>
+              onClick={handleOpen}
+              avatar='https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'
+              avatarSize={30}
+              primary='hello'
+						/>
 					)
 				}
 			/>
@@ -169,15 +142,11 @@ stories.add('Menu Popper List Component placement right', () => {
 					(handleOpen: any) => (
 						<ListItem
 							button
-							onClick={handleOpen}
-						>
-							<ListItemAvatar
-								src={'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'}
-								size={30}
-								style={{ marginLeft: 4, marginRight: 4 }}
-							/>
-							<ListItemText primary={'Hello'} />
-						</ListItem>
+              onClick={handleOpen}
+              avatar='https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'
+              avatarSize={30}
+              primary='hello'
+						/>
 					)
 				}
 			/>

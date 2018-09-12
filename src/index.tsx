@@ -1,6 +1,11 @@
+// import * as React from 'react';
+// import { Plugin } from '@blueeast/bluerain-os';
+// import { withReboot } from './withReboot';
+// import * Compo as from '@blueeast/bluerain-ui-interfaces';
+
 import * as React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
-import { BlueRain, BlueRainType, Plugin } from '@blueeast/bluerain-os';
+import { Plugin } from '@blueeast/bluerain-os';
 import { ButtonProperties, CardMediaProperties, ListHeaderProperties, ListItemIconProperties, ListItemRightButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Card, CardBody, CardFooter, CardHeader, CardMedia, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
 import { Chip, MUIChipProperties } from './components/Chip';
@@ -9,18 +14,19 @@ import { Divider, MUIDividerProperties } from './components/Divider';
 import { Drawer, MUIDrawerProperties } from './components/Drawer';
 import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-import { List, ListHeader, ListItem, ListItemAvatar, ListItemIcon, ListItemRightButton, ListItemText, MUIListItemAvatarProperties, MUIListItemProperties, MUIListItemTextProperties, MUIListProperties } from './components/List';
+import { List, ListSubheader, ListItem, MUIListItemProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
-import { Menu, MenuItem, MenuItemProperties, MenuPopper, MenuPopperProperties, MenuProperties } from './components/Menu';
+import { Menu, MenuItem, MenuItemProperties, MenuProperties } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
 import { Button } from './components/Button';
 import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
-import Slider from './components/Slider';
-// import { withReboot } from './withReboot';
+
+// import Slider from './components/Slider';
+
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -30,8 +36,8 @@ import Slider from './components/Slider';
 class MaterialUiPlugin extends Plugin {
 	static pluginName = 'MaterialUiPlugin';
 	static slug = 'material-ui';
-
 	static components = {
+
 		AppBar,
 		Avatar,
 		Badge,
@@ -47,27 +53,23 @@ class MaterialUiPlugin extends Plugin {
 		Drawer,
 		Menu,
 		MenuItem,
-		MenuPopper,
 		Modal,
 		ModalHeader,
 		ModalBody,
 		ModalFooter,
-		Dropdown,
-		DropdownItem,
+		'DropDown':Dropdown,
+		'DropDownItem':DropdownItem,
 		List,
-		ListHeader,
+		ListSubheader,
 		ListItem,
-		ListItemAvatar,
-		ListItemIcon,
-		ListItemRightButton,
-		ListItemText,
 		Switch,
-		Slider,
+		// Slider,
 		Stepper,
 		Notification,
 		FormControl,
 		FormGroup,
 		TextInput,
+
 	};
 
 	// static hooks = {

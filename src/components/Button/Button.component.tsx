@@ -51,8 +51,8 @@ export const BlueRainButton : React.StatelessComponent<ButtonProperties> = (prop
             dense={props.small}
         >
         {props.children}
+        {props.title}
         </Button>
 	);
 };
 
-// export default BlueRainButton;

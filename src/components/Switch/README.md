@@ -29,11 +29,3 @@ const Switch = (props) => (
 
 export default withBluerain(Switch);
 ```
-
-## Storybook
-
-- 1st story of the Switch component in Switch.stories.tsx file is written for Switch with Knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

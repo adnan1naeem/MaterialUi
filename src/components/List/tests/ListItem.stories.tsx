@@ -1,12 +1,69 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { Button, Input } from 'material-ui';
 import { ListItem } from '../../List';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
+import { Drafts } from 'material-ui-icons'
 import BR from '@blueeast/bluerain-os';
+import { action } from '@storybook/addon-actions';
 
-const okay = () => {
-	console.log('helo');
-};
-storiesOf('ListItem', module).add('ListItem with tag, href and action props', () =>
-<ListItem active onPress={okay}>Cras justo odio</ListItem>);
+
+
+storiesOf('ListItem', module).add(
+	'ListItem with  style,active , primary , secondary ,action , avatar and onPress props',
+	() => (
+		<ListItem
+			active={true}
+			onPress={action('cllicked')}
+			avatar="https://facebook.github.io/react-native/img/header_logo.png"
+			primary="Muhammad Aqeel khan"
+			style={{ backgroundColor: '#D3D3D3' }}
+			secondary="Reat Js Developer"
+			action={<Button style={{ backgroundColor: 'blue', color: 'white' }}>Add</Button>}
+		/>
+	)
+).add('ListItem with children prop',
+	() => (
+		<ListItem
+			active={true}
+			onPress={action('listitem is clicked')}
+			style={{ backgroundColor: '#D3D3D3' }}
+			avatar="https://facebook.github.io/react-native/img/header_logo.png"
+			action={<Button style={{ backgroundColor: 'blue', color: 'white' }}>Add</Button>}
+		>
+			Muhamma Aqeel
+    </ListItem>
+	)
+).add('ListItem without avatar prop',
+	() => (
+		<ListItem
+			active={true}
+			onPress={action('listitem is clicked')}
+			style={{ backgroundColor: '#D3D3D3' }}
+			primary="Aqeel khan"
+			secondary="Reat Js Developer"
+			action={<Button style={{ backgroundColor: 'blue', color: 'white' }}>Add</Button>}
+		/>
+	)
+).add('ListItem without action prop',
+	() => (
+		<ListItem
+			active={true}
+			onPress={action('listitem is clicked')}
+			style={{ backgroundColor: '#D3D3D3' }}
+			avatar="https://facebook.github.io/react-native/img/header_logo.png"
+			primary="Aqeel khan"
+			secondary="Reat Js Developer"
+		/>
+	)
+).add('ListItem for inputfrom  component',
+	() => (
+		<ListItem
+			active={true}
+			onPress={action('listitem is clicked')}
+			style={{ backgroundColor: '#D3D3D3' }}
+			avatar={<Drafts />}
+			primary="Please Enter Name"
+			secondary={<Input fullWidth={true} />}
+		/>
+	)
+);
