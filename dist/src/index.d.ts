@@ -14,6 +14,7 @@ import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuProperties } from './components/Menu';
 import { Badge } from './components/Badge';
+import { ScrollViewProperties } from './components/ScrollView';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -52,6 +53,7 @@ declare class MaterialUiPlugin extends Plugin {
         ListSubheader: React.StatelessComponent<ListHeaderProperties>;
         ListItem: React.StatelessComponent<MUIListItemProperties>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
+        ScrollView: (props: ScrollViewProperties) => JSX.Element;
         Stepper: React.StatelessComponent<any>;
         Notification: React.StatelessComponent<any>;
         FormControl: React.StatelessComponent<MUIFormControlProperties>;

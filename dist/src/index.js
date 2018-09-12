@@ -23,6 +23,7 @@ const Badge_1 = require("./components/Badge");
 const Button_1 = require("./components/Button");
 const Notification_1 = require("./components/Notification");
 const Stepper_1 = require("./components/Stepper");
+const ScrollView_1 = require("./components/ScrollView");
 // import Slider from './components/Slider';
 /**
  * Material UI Plugin
@@ -59,6 +60,7 @@ MaterialUiPlugin.components = {
     ListSubheader: List_1.ListSubheader,
     ListItem: List_1.ListItem,
     Switch: Switch_1.Switch,
+    ScrollView: ScrollView_1.ScrollView,
     // Slider,
     Stepper: Stepper_1.Stepper,
     Notification: Notification_1.Notification,

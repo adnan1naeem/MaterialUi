@@ -24,6 +24,7 @@ import { Badge } from './components/Badge';
 import { Button } from './components/Button';
 import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
+import {ScrollView,ScrollViewProperties} from './components/ScrollView';
 
 // import Slider from './components/Slider';
 
@@ -63,6 +64,7 @@ class MaterialUiPlugin extends Plugin {
 		ListSubheader,
 		ListItem,
 		Switch,
+		ScrollView,
 		// Slider,
 		Stepper,
 		Notification,
