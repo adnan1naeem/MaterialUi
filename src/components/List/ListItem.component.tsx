@@ -24,7 +24,6 @@ export interface MUIListItemProperties extends ListItemProperties {
     button?: boolean,
     component?: string,
     href?: string,
-    onPress?: () => void,
     disabled?: boolean,
     avatarSize?:number,
 }

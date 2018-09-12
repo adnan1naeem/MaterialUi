@@ -47,8 +47,9 @@ storiesOf('ListItem', module).add(
 ).add('ListItem without action prop',
 	() => (
 		<ListItem
-			active={true}
-			onPress={action('listitem is clicked')}
+			active={false}
+			button={true}
+			// onPress={action('listitem is clicked')}
 			style={{ backgroundColor: '#D3D3D3' }}
 			avatar="https://facebook.github.io/react-native/img/header_logo.png"
 			primary="Aqeel khan"
@@ -58,7 +59,7 @@ storiesOf('ListItem', module).add(
 ).add('ListItem for inputfrom  component',
 	() => (
 		<ListItem
-			active={true}
+			active={false}
 			onPress={action('listitem is clicked')}
 			style={{ backgroundColor: '#D3D3D3' }}
 			avatar={<Drafts />}
