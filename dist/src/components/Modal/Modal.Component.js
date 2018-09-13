@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const Dialog_1 = __importDefault(require("material-ui/Dialog"));
 const Modal = (props) => {
-    return (react_1.default.createElement(Dialog_1.default, Object.assign({ onEscapeKeyDown: props.onRequestClose }, props), props.children));
+    return (react_1.default.createElement(Dialog_1.default, Object.assign({ open: props.visible, onClose: props.handleClose, onEscapeKeyDown: props.onRequestClose }, props), props.children));
 };
 exports.default = Modal;
 //# sourceMappingURL=Modal.Component.js.map

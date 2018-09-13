@@ -1,8 +1,4 @@
 "use strict";
-// import * as React from 'react';
-// import { Plugin } from '@blueeast/bluerain-os';
-// import { withReboot } from './withReboot';
-// import * Compo as from '@blueeast/bluerain-ui-interfaces';
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -39,6 +35,7 @@ const Body1_component_1 = __importDefault(require("./components/Body1/Body1.comp
 const Body2_component_1 = __importDefault(require("./components/Body2/Body2.component"));
 const Overline_component_1 = __importDefault(require("./components/Overline/Overline.component"));
 const Caption_component_1 = __importDefault(require("./components/Caption/Caption.component"));
+const Checkbox_1 = __importDefault(require("./components/Checkbox"));
 // import Slider from './components/Slider';
 /**
  * Material UI Plugin
@@ -60,6 +57,7 @@ MaterialUiPlugin.components = {
     CardMedia: Card_1.CardMedia,
     CardFooter: Card_1.CardFooter,
     Chip: Chip_1.Chip,
+    Checkbox: Checkbox_1.default,
     ColorPicker: ColorPicker_1.ColorPicker,
     Divider: Divider_1.Divider,
     Drawer: Drawer_1.Drawer,

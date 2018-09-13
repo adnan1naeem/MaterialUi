@@ -22,7 +22,7 @@ class BlueRainCheckbox extends react_1.default.Component {
     constructor(props) {
         super(props);
         this.handleChange = (name) => (event) => {
-            this.props.onChange ? this.props.onChange() : this.setState({ checked: event.target.checked });
+            this.props.onChange ? this.props.onChange(event) : this.setState({ checked: event.target.checked });
             this.setState({ checked: event.target.checked });
         };
         this.handleChange = this.handleChange.bind(this);

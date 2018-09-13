@@ -5,7 +5,7 @@ export interface MUIModalProperties extends ModalProperties {
     fullWidth?: boolean;
     maxWidth?: 'xs' | 'sm' | 'md';
     onClose: () => void;
-    open: boolean;
+    visible: boolean;
     children: ReactNode;
 }
 declare const _default: React.ComponentType<any>;
