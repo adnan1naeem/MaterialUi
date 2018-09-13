@@ -1,8 +1,7 @@
 "use strict";
-// import * as React from 'react';
-// import { Plugin } from '@blueeast/bluerain-os';
-// import { withReboot } from './withReboot';
-// import * Compo as from '@blueeast/bluerain-ui-interfaces';
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const AppBar_1 = require("./components/AppBar");
 const bluerain_os_1 = require("@blueeast/bluerain-os");
@@ -24,6 +23,18 @@ const Button_1 = require("./components/Button");
 const Notification_1 = require("./components/Notification");
 const Stepper_1 = require("./components/Stepper");
 const ScrollView_1 = require("./components/ScrollView");
+const H1_component_1 = __importDefault(require("./components/H1/H1.component"));
+const H2_component_1 = __importDefault(require("./components/H2/H2.component"));
+const H3_component_1 = __importDefault(require("./components/H3/H3.component"));
+const H4_component_1 = __importDefault(require("./components/H4/H4.component"));
+const H5_component_1 = __importDefault(require("./components/H5/H5.component"));
+const H6_component_1 = __importDefault(require("./components/H6/H6.component"));
+const Subtitle1_component_1 = __importDefault(require("./components/Subtitle1/Subtitle1.component"));
+const Subtitle2_component_1 = __importDefault(require("./components/Subtitle2/Subtitle2.component"));
+const Body1_component_1 = __importDefault(require("./components/Body1/Body1.component"));
+const Body2_component_1 = __importDefault(require("./components/Body2/Body2.component"));
+const Overline_component_1 = __importDefault(require("./components/Overline/Overline.component"));
+const Caption_component_1 = __importDefault(require("./components/Caption/Caption.component"));
 // import Slider from './components/Slider';
 /**
  * Material UI Plugin
@@ -67,6 +78,18 @@ MaterialUiPlugin.components = {
     FormControl: FormControl_1.FormControl,
     FormGroup: FormControl_1.FormGroup,
     TextInput: TextInput_1.TextInput,
+    H1: H1_component_1.default,
+    H2: H2_component_1.default,
+    H3: H3_component_1.default,
+    H4: H4_component_1.default,
+    H5: H5_component_1.default,
+    H6: H6_component_1.default,
+    Subtitle1: Subtitle1_component_1.default,
+    Subtitle2: Subtitle2_component_1.default,
+    Body1: Body1_component_1.default,
+    Body2: Body2_component_1.default,
+    Caption: Caption_component_1.default,
+    Overline: Overline_component_1.default,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
