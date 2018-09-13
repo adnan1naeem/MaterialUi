@@ -1,18 +1,31 @@
 # List
 
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+|  ✔️       | ✖            |✖            |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+|   ![web image](./screenshots/List.png)  |    TBD   |  TBD |
+|   ![web image](./screenshots/ListItem.png)  |    TBD   |  TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | style | Object | | style object for List. |
-| children | Node | | Children of List component. |
+| children | ReactNode | | Children of List component. |
 
 ## Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | className | string |  | className to give css styling. |
-| subheader | Node |  |  subbheader of List. |
+| subheader | ReactNode |  |  subbheader of List. |
 | disablePadding | bool |  | If true, padding is disabled. |
 | dense | bool |  | If true, dense styling is used.. |
 
@@ -53,10 +66,7 @@ const ListItem = BR.Components.get('ListItem');
 
 const ListView = () =>{
  return(
-    <List style={{ width:'100%' }}>
-      <ListItem>
-        <ListSubheader >SubHeading</ListSubheader>
-      </ListItem>
+    <List style={{ width:'100%' }} subheader={ <ListSubheader >SubHeading</ListSubheader>}>
       <ListItem
         avatar={<Thumbnail source={{ uri: 'https://facebook.github.io/react-native/img/header_logo.png' }} style={{ backgroundColor: 'black' }} square />}
         style={{ width: '100%' }}

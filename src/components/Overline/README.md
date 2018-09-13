@@ -9,7 +9,7 @@ Typography component for Overline text. It applies following styles. Styles are 
     'fontWeight':500,
     'fontSize':10,
     'letterSpacing': 1.5,
-    'textTransform':'Capitalize' 
+    'textTransform':'Capitalize'
  }
 ```
 
@@ -17,7 +17,7 @@ Typography component for Overline text. It applies following styles. Styles are 
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|✔️       | ✔️           | ✔️   ✖            |
+|✔️       | ✔️           |  ✖            |
 
 ## Overline
 

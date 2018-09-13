@@ -1,6 +1,20 @@
 # AppBar
 
-## Universal Props
+The top App Bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/AppBar.png) |    TBD   | TBD |
+
+## Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -14,30 +28,21 @@
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
-const AppBar = (props) => (
-    const BR = props.bluerain;
+const AppBarSample = (props) => (
     const AppBar = BR.Components.get('AppBar');
     const Button = BR.Components.get('Button');
-    // const Text = BR.Components.get('Text');
-    return(<AppBar position="static" color="default">
-          <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }}>
-            <AssignmentIcon />
-          </Button>
-          <Text style={{ display:'flex', flex: 1 }}>
-            Title
-            </Text>
-          <Button color="default">Login</Button>
-      </AppBar>);
+    const Icon = BR.Components.get('Icon');
+   return (
+    <AppBar
+     left={<Button fab={true} style={AppBarStoriesStyle}><Icon name="assignment"/></Button>}
+     title={'Title'}
+     right={<Button color="primary">Login</Button>}
+     position="fixed"
+     color="primary"
+     style={{ backgroundColor: 'red' }}/>
+     );
 
-export default withBluerain(AppBar);
+export default AppBarSample;
 ```
-
-## Storybook
-
-- All stories of the AppBar component in AppBar.stories.tsx file show variants of AppBar.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

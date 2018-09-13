@@ -1,5 +1,19 @@
 # DropDown
 
+DropDown components are used for collecting user provided information from a list of options.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/DropDown.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -24,10 +38,9 @@
 
 ```JavaScript
 import React from 'react';
-import  { withBlueRain } from  '@blueeast/bluerain-os';
+import  BR from  '@blueeast/bluerain-os';
 
-const DropDown = () => (
-    const BR = props.bluerain;
+const DropDownSample = () => (
     const DropDown = BR.Components.get('DropDown');
     const DropdownItem = BR.Components.get('DropdownItem');
 
@@ -40,9 +53,5 @@ const DropDown = () => (
     </DropDown>
 );
 
-export default withBlueRain(DropDown);
+export default DropDownSample;
 ```
-
-## Tests
-
-Unit tests are passed and storyshot tests are also passed.

@@ -1,6 +1,20 @@
-# TextInput
+# Checkbox
 
-## Universal Props
+Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️     | ✖           | ✖             |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Checkbox.png)  |    TBD   |  TBD |
+
+## Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -17,14 +31,14 @@
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from "@blueeast/bluerain-os";
+import  BR from "@blueeast/bluerain-os";
 
-const Checkbox = (props) => {
-    const BR = props.bluerain;
+const CheckboxSample = (props) => {
+
     return (
         <BR.Components.Checkbox label="disabled" color="red" disabled={true} value={false}  />
     )
 }
 
-export default withBluerain(Checkbox);
+export default CheckboxSample;
 ```

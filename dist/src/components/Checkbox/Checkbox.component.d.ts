@@ -6,7 +6,7 @@ import { CheckboxProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIProps extends CheckboxProperties {
     color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined;
     type?: string;
-    onChange?: () => {};
+    onChange?: (e: any) => {};
     inputRef?: () => {};
     inputProps?: {};
     indeterminateIcon?: ReactNode;

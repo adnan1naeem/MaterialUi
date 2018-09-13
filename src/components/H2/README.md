@@ -1,7 +1,7 @@
 
 # H2 Component
 
-Typography component for headings. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for h2 headings. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -16,33 +16,31 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|  ✔️       | ✔️            |✖            |
-
-## H2
-
-### Props
-
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with H2 heading style
+|  ✔️       | ✖            |✖            |
 
 ## Screenshots
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/H2.png)|
+|   ![web image](./screenshots/H2.png)  |    TBD   |  TBD |
+
+### Props
+
+| Name     | Type      | Default | Description                |
+| :------- | :-------- | :------ | :------------------------- |
+| children | string |         | The text to show with H2 heading style|
+| style | object |         | style object for H2 |
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const H2 = BR.Components.get('H2');
 
-
-const component = (props) => {
-        <H2>H2 Typography</H2>
+const H2Sample = (props) => (
+       <H2>H2 Typography</H2>
     );
-}
-
+export default H2Sample;
 ```

@@ -1,7 +1,7 @@
 
 # H6 Component
 
-Typography component for headings. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for h6 headings. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -16,33 +16,31 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-| ✔️      | ✔️            | ✖                |
-
-## H6
-
-### Props
-
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with H6 heading style
+|  ✔️       | ✖            |✖            |
 
 ## Screenshots
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/H6.png)|
+|   ![web image](./screenshots/H6.png)  |    TBD   |  TBD |
+
+### Props
+
+| Name     | Type      | Default | Description                |
+| :------- | :-------- | :------ | :------------------------- |
+| children | string |         | The text to show with H6 heading style|
+| style | object |         | style object for H6 |
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const H6 = BR.Components.get('H6');
 
-
-const component = (props) => {
-        <H6>H6 Typography</H6>
+const H6Sample = (props) => (
+       <H6>H6 Typography</H6>
     );
-}
-
+export default H6Sample;
 ```

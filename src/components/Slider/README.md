@@ -26,11 +26,3 @@ const Slider = (props) => (
 
 export default withBluerain(Slider);
 ```
-
-## Storybook
-
-- 1st story of the Slider component in Slider.stories.tsx file is written for Slider with Knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

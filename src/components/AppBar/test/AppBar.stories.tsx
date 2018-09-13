@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { AppBar } from '../../AppBar';
 import { Button } from '../../Button';
+import {text,withKnobs} from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import AssignmentIcon from 'material-ui-icons/Assignment';
 
@@ -11,11 +12,16 @@ const AppBarStoriesStyle = {
 	border: 0
 };
 
-stories.add('AppBar with primary color and position="fixed"', () => {
+stories.addDecorator(withKnobs).add('AppBar with primary color and position="fixed"', () => {
 	return (
     <AppBar left={<Button fab={true}  style={AppBarStoriesStyle}>
     <AssignmentIcon />
-  </Button>} title={'Title'} right={<Button color="primary">Login</Button>} position="fixed" color="primary" style={{ backgroundColor: 'red' }}>    
+	</Button>} 
+	title={text('Title','title')} 
+	right={<Button color="primary">Login</Button>} 
+	position="fixed" 
+	color="primary" 
+	style={{ backgroundColor: 'red' }}>    
     </AppBar>
 	);
 });

@@ -1,7 +1,7 @@
 
 # H4 Component
 
-Typography component for headings. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for h4 headings. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -16,33 +16,31 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-| ✔️     | ✔️         |  ✖             |
-
-## H4
-
-### Props
-
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with H4 heading style
+|  ✔️       | ✖            |✖            |
 
 ## Screenshots
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/H4.png)|
+|   ![web image](./screenshots/H4.png)  |    TBD   |  TBD |
+
+### Props
+
+| Name     | Type      | Default | Description                |
+| :------- | :-------- | :------ | :------------------------- |
+| children | string |         | The text to show with H4 heading style|
+| style | object |         | style object for H4 |
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const H4 = BR.Components.get('H4');
 
-
-const component = (props) => {
-        <H4>H4 Typography</H4>
+const H4Sample = (props) => (
+       <H4>H4 Typography</H4>
     );
-}
-
+export default H4Sample;
 ```

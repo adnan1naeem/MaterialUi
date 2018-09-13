@@ -30,7 +30,7 @@ Typography component for subtitle. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native                             |
 | :----: | :---------: | :-----------------------------------------: |
-| TBD    | TBD         | ![Mobile Image](./screenshots/Subtitle1.png)|
+| ![Mobile Image](./screenshots/Subtitle1.png)  | TBD         | TBD |
 
 ## How to use
 
