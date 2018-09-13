@@ -18,19 +18,19 @@ Steppers display progress through a sequence of logical and numbered steps. They
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| left | ReactNode |  | left prop for AppBar component |
-| title | string | | title prop for AppBar component. |
-| right | ReactNode | |right prop for   AppBar component. |
+| activeStep |number|  | Set the active step (zero based index).Defines which dot is highlighted when the variant is 'dots'. |
+| classes | object | | Useful to extend the style applied to components. |
+| style| object | |Useful to extend the style applied to components. |
+| steps | number | | The total steps for stepper |
 
 ## Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| style | Object |  | Get the style object |
-| color | enum: 'inherit', 'primary', 'accent', 'default', undefined | | Background color for AppBar. |
-| children | Node | | Children of AppBar. |
-| position | enum: 'static', 'fixed', 'absolute', undefined | | Position of AppBar. |
-| className | string | | className props to extend styles through CSS for AppBar. |
+| backButton | ReactNode| | backButton prop for Stepper. |
+| nextButton  |ReactNode| | nextButton prop for Stepper. |
+| position | enum | 'top','bottom'| position for Stepper|
+| type | enum | 'dot','text'| type prop for Stepper|
 
 ## How to use
 
@@ -38,19 +38,20 @@ Steppers display progress through a sequence of logical and numbered steps. They
 import React from 'react';
 import BR from '@blueeast/bluerain-os';
 
-const AppBarSample = (props) => (
-    const AppBar = BR.Components.get('AppBar');
+const StepperSample = (props) => (
+    const Stepper = BR.Components.get('Stepper');
     const Button = BR.Components.get('Button');
-    const Icon = BR.Components.get('Icon');
+    const backButton =<Button>back</Button>;
+    const nextButton =<Button>next</Button>;
    return (
-    <AppBar
-     left={<Button fab={true} style={AppBarStoriesStyle}><Icon name="assignment"/></Button>}
-     title={'Title'}
-     right={<Button color="primary">Login</Button>}
-     position="fixed"
-     color="primary"
-     style={{ backgroundColor: 'red' }}/>
+     <Stepper
+      type="progress"
+       activeStep={3}
+       backButton={backButton}
+       nextButton={nextButton}
+       steps={6}  
+        />
      );
 
-export default AppBarSample;
+export default StepperSample;
 ```

@@ -1,5 +1,19 @@
 # TextInput
 
+TextInput allow users to enter text into a UI. They typically appear in forms and dialogs
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/TextInput.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -49,7 +63,3 @@ const appPage = (props) => {
 
 export default withBluerain(appPage);
 ```
-
-## Tests
-
-Unit tests are passed and storyshot tests are also passed.

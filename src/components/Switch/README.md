@@ -1,5 +1,17 @@
 # Switch
 
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Switch.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -20,12 +32,17 @@
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
-const Switch = (props) => (
-    const BR = props.bluerain;
+const Switch = (props) => {
     const Switch = BR.Components.get('Switch');
-    return <Switch disabled={false} value={true} onValueChange={console.log('Value is changed!')} />;
-
-export default withBluerain(Switch);
+    return (
+        <Switch
+            disabled={false}
+            value={true}
+            onValueChange={console.log('Value changed!')}
+             />
+    );
+}
+export default Switch;
 ```
