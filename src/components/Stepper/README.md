@@ -1,6 +1,6 @@
-# AppBar
+# Stepper
 
-The top App Bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+Steppers display progress through a sequence of logical and numbered steps. They may also be used for navigation. Steppers may display a transient feedback message after a step is saved
 
 ## Compatibility
 
@@ -12,7 +12,7 @@ The top App Bar provides content and actions related to the current screen. It�
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-| ![web image](./screenshots/AppBar.png) |    TBD   | TBD |
+| ![web image](./screenshots/Stepper.png) |    TBD   | TBD |
 
 ## Universal Props
 
