@@ -55,7 +55,7 @@ import Body1 from './components/Body1/Body1.component';
 import Body2 from './components/Body2/Body2.component';
 import Overline from './components/Overline/Overline.component';
 import Caption from './components/Caption/Caption.component';
-
+import Checkbox from './components/Checkbox';
 
 // import Slider from './components/Slider';
 
@@ -80,6 +80,7 @@ class MaterialUiPlugin extends Plugin {
 		CardMedia,
 		CardFooter,
 		Chip,
+		Checkbox,
 		ColorPicker,
 		Divider,
 		Drawer,
