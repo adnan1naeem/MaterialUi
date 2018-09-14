@@ -21,7 +21,7 @@ exports.BlueRainButton = (props) => {
             props.children));
     }
     else if (props.iconRight) {
-        return (React.createElement(Button_1.default, { raised: props.color === 'link' ? false : true, color: props.color ? (props.color === 'default' || props.color === 'accent' || props.color === 'primary' || props.color === 'contrast' ? props.color : 'default') : 'default', style: props.fullWidth ? widthFull : props.style, disabled: props.disabled, href: props.href, fab: props.fab, mini: props.small, onClick: props.onPress, dense: props.small },
+        return (React.createElement(Button_1.default, { raised: props.color === 'link' ? false : true, color: props.color ? (props.color === 'default' || props.color === 'accent' || props.color === 'primary' || props.color === 'contrast' ? props.color : 'default') : 'default', style: props.fullWidth ? widthFull : props.style, disabled: props.disabled, href: props.href, fab: props.rounded, mini: props.small, onClick: props.onPress, dense: props.small },
             props.children,
             " ",
             props.iconRight));

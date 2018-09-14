@@ -4,8 +4,8 @@ declare class FadeMenu extends React.Component<any, {
     anchorEl2: any;
 }> {
     state: {
-        anchorEl: null;
-        anchorEl2: null;
+        anchorEl: {};
+        anchorEl2: {};
     };
     handleClick: (event: any) => void;
     handleClose: () => void;

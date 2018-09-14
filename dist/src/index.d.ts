@@ -62,40 +62,40 @@ declare class MaterialUiPlugin extends Plugin {
         FormGroup: React.StatelessComponent<MUIFormGroupProperties>;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
         H1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H3: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H4: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H5: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H6: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Subtitle1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Subtitle2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Body1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Body2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Caption: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Overline: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
     };
 }

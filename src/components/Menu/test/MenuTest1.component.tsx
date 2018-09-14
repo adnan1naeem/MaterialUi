@@ -9,8 +9,8 @@ import React from 'react';
 
 class FadeMenu extends React.Component<any, { anchorEl: any, anchorEl2: any }> {
   state = {
-    anchorEl: null,
-    anchorEl2: null,
+    anchorEl: {},
+    anchorEl2: {},
   };
 
   handleClick = (event:any) => {

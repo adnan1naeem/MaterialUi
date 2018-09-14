@@ -8,14 +8,14 @@ export interface MenuPopperProperties {
     style?: any;
 }
 declare class MenuPopper extends React.Component<MenuPopperProperties, {
-    anchorEl: any;
+    anchorEl: object;
 }> {
     target1: any;
     state: {
-        anchorEl: null;
+        anchorEl: {};
     };
     handleOpen: (event: any) => void;
-    handleClose: (event: any, onClick?: (() => void) | undefined) => void;
+    handleClose: (event: any, onClick?: () => void) => void;
     render(): JSX.Element;
 }
 export default MenuPopper;
