@@ -14,11 +14,6 @@ const AppBarStoriesStyle = {
 	border: 0
 };
 
-// const View = BR.Components.get('View');
-// const Button = BR.Components.get('Button');
-// const Text = BR.Components.get('Text');
-// const Icon = BR.Components.get('Icon');
-
 stories.addDecorator(withKnobs).add('AppBar with primary color and position="fixed"', () => {
 	return (
 		<AppBar left={<Button fab={true} style={AppBarStoriesStyle}>

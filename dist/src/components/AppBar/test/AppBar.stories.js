@@ -23,10 +23,6 @@ const AppBarStoriesStyle = {
     boxShadow: 'none',
     border: 0
 };
-// const View = BR.Components.get('View');
-// const Button = BR.Components.get('Button');
-// const Text = BR.Components.get('Text');
-// const Icon = BR.Components.get('Icon');
 stories.addDecorator(addon_knobs_1.withKnobs).add('AppBar with primary color and position="fixed"', () => {
     return (React.createElement(AppBar_1.AppBar, { left: React.createElement(Button_1.Button, { fab: true, style: AppBarStoriesStyle },
             React.createElement(Assignment_1.default, null)), title: addon_knobs_1.text('Title', 'title'), right: React.createElement(Button_1.Button, { color: "primary" }, "Login"), position: "fixed", color: "primary", style: { backgroundColor: 'red' } }));

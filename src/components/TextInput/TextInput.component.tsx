@@ -56,10 +56,12 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 	if(props.editable !== undefined && !props.editable) {
 		disabled = true;
 	}
+  
 	return (
 		<TextField
+		  type={props.secureTextEntry?"password":"text"}
 			style={props.style}
-			label={props.placeholder}
+			label={props.label}
 			placeholder={props.placeholder}
 			autoFocus={props.autoFocus}
 			onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => {return null;}}
