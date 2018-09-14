@@ -59,6 +59,7 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 	return (
 		<TextField
 			style={props.style}
+			label={props.placeholder}
 			placeholder={props.placeholder}
 			autoFocus={props.autoFocus}
 			onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => {return null;}}
