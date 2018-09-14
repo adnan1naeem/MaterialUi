@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { Badge } from '../src/components/Badge';
-import { create } from 'react-test-renderer';
+import { Badge } from '../';
+import renderer from 'react-test-renderer';
 
 test('Badge component with required fields', () => {
-	const badge = create(
-      <Badge badgeContent={'123'}></Badge>
+	const badge = renderer.create(
+      <Badge badgeContent={'123'}>Hello</Badge>
   ).toJSON();
 	expect(badge.props.style).toEqual(undefined);
 	expect(badge).toMatchSnapshot();
 });
 
 test('Badge component with style', () => {
-	const badge = create(
-      <Badge badgeContent={'123'} style={{ 'background-color':'green' }}></Badge>
+	const badge = renderer.create(
+      <Badge badgeContent={'123'} style={{ 'background-color':'green' }}>hello</Badge>
   ).toJSON();
 	expect(badge.props.style).toEqual({ 'background-color':'green' });
 	expect(badge).toMatchSnapshot();

@@ -1,9 +1,9 @@
-import { Divider } from '../src/components/Divider';
-import { create } from 'react-test-renderer';
+import { Divider } from '../';
+import renderer  from 'react-test-renderer';
 import React from 'react';
 
 test('Divider component with default values', () => {
-	const divider = create(
+	const divider =renderer.create(
       <Divider />
   ).toJSON();
 	expect(divider.props.light).toEqual(undefined);
@@ -11,7 +11,7 @@ test('Divider component with default values', () => {
 });
 
 test('Divider component with style', () => {
-	const divider = create(
+	const divider =renderer.create(
         <Divider absolute={true}/>
   ).toJSON();
 	expect(divider.props.absolute).toEqual(undefined);

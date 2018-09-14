@@ -1,9 +1,9 @@
-import { Chip } from '../src/components/Chip';
-import { create } from 'react-test-renderer';
+import { Chip } from '../';
+import renderer from 'react-test-renderer';
 import React from 'react';
 
 test('Chip component with default values', () => {
-	const chip = create(
+	const chip = renderer.create(
       <Chip>10 % off</Chip>
   ).toJSON();
 	expect(chip.props.style).toEqual(undefined);
@@ -11,7 +11,7 @@ test('Chip component with default values', () => {
 });
 
 test('Chip component with style', () => {
-	const chip = create(
+	const chip = renderer.create(
       <Chip style={{ 'background-color':'green' }}>10 % off</Chip>
   ).toJSON();
 	expect(chip.props.style).toEqual({ 'background-color':'green' });
