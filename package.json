@@ -65,13 +65,6 @@
       "/node_modules/",
       "/test/"
     ],
-    "coverageThreshold": {
-      "global": {
-        "functions": 50,
-        "lines": 70,
-        "statements": 50
-      }
-    },
     "collectCoverage": true,
     "mapCoverage": true
   },

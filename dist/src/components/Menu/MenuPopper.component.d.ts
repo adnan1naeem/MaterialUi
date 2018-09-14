@@ -8,7 +8,7 @@ export interface MenuPopperProperties {
     style?: any;
 }
 declare class MenuPopper extends React.Component<MenuPopperProperties, {
-    anchorEl: object;
+    anchorEl: any;
 }> {
     target1: any;
     state: {

@@ -33,7 +33,7 @@ export interface MenuPopperProperties {
   style?: any;
 }
 
-class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl:object }> {
+class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl:any }> {
   target1: any = '';
   state = {
     anchorEl: {},

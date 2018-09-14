@@ -21,20 +21,4 @@ test('with onSelelct prop', () => {
     expect(DropdownList.props.onSelelct).toEqual(undefined);
     expect(DropdownList).toMatchSnapshot();
 });
-// test('with DropDownItem ', () => {
-// 	const DropdownListItem = renderer.create(
-//         <Dropdown  value={'jsbha'}   >
-// 	<DropdownItem value={'jsbha'}>Hello</DropdownItem>
-// 	</Dropdown>
-// 	).toJSON();
-// 	console.log(DropdownListItem.props);
-// 	expect(DropdownListItem.style).toEqual(undefined);
-// 	expect(DropdownListItem).toMatchSnapshot();
-// });
-test('with onfocus ', () => {
-    const DropdownListItem = react_test_renderer_1.default.create(react_1.default.createElement(__1.Dropdown, { value: 'jsbha' })).toJSON();
-    console.log(DropdownListItem.props);
-    expect(DropdownListItem).toEqual(undefined);
-    expect(DropdownListItem).toMatchSnapshot();
-});
 //# sourceMappingURL=DropDown.test.js.map
