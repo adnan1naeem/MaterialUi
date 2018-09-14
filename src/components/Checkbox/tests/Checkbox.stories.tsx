@@ -1,23 +1,29 @@
 import * as React from 'react';
-import { boolean ,text, withKnobs} from'@storybook/addon-knobs';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import BR from '@blueeast/bluerain-os';
 import Checkbox from '../../Checkbox';
 
 storiesOf('Checkbox', module).addDecorator(withKnobs).add('label disabled value props with knobs',
-    () => <Checkbox label={text('Label','Label Chekbox')} color="default" disabled={boolean('Disable',false)} value={true} onChange={()=> action('i was presse')} /> ) ;
-
+    () => <Checkbox label={text('Label', 'Label Chekbox')} color="default" disabled={boolean('Disable', false)} value={true} onChange={() => action('i was presse')} />);
 
 storiesOf('Checkbox', module).add('with onPress',
-() => <Checkbox label="with onPress" color="contrast" value={true}
+    () => <Checkbox label="with onPress" color="contrast" value={true}
         onChange={(event: any) => {
-             console.log(event.target.checked);
-             return action('i was presse')}} /> ) ;
+            console.log(event.target.checked);
+            return action('i was presse');
+        }} />);
 
 
 storiesOf('Checkbox', module).add('with label as Node',
-() => <Checkbox label={<BR.Components.Text>I am a text in Node</BR.Components.Text>} color="accent" /> ) ;
+    () => <Checkbox label={<BR.Components.Link to={'/'} target="_blank"
+        style={{ textDecoration: 'none', color: '#868686', fontWeight: 'bold' }}
+    >
+        <BR.Components.Text>
+            Hello
+    </BR.Components.Text>
+    </BR.Components.Link>} color="accent" />);
 
 storiesOf('Checkbox', module).add('with indeterminate',
-() => <Checkbox label={<BR.Components.Text>I am a text in Node</BR.Components.Text>}  color="primary" indeterminate/> ) ;
+    () => <Checkbox label={<BR.Components.Text>I am a text in Node</BR.Components.Text>} color="primary" indeterminate />);

@@ -25,7 +25,7 @@ test('AppBar component with style', () => {
 
 test('AppBar component with children', () => {
 	const appBar = shallow(
-      <AppBar style={{ 'background-color':'green' }} left={"Hello"}>Hello</AppBar>
+      <AppBar style={{ 'background-color':'green' }} left="Hello" >Hello</AppBar>
   );
 	expect(appBar.props().left).toBeUndefined();
 	expect(appBar).toMatchSnapshot();

@@ -4,7 +4,7 @@ import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import BR from '@blueeast/bluerain-os';
-import {style} from './style';
+import { style } from './style';
 
 /**
  * An interface that extends the AppBarProperties interface

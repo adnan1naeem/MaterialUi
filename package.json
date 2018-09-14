@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest --u",
     "build": "tsc",
-    "storybook:start": "bluerain storybook:start"
+    "storybook:start": "bluerain storybook:start",
+    "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx'"
   },
   "repository": {
     "type": "git",

@@ -4,7 +4,6 @@ import { CardFooter } from '../../Card';
 import { storiesOf } from '@storybook/react';
 import Button from 'material-ui/Button';
 
-
 const styles = {
 	bg: {
 		backgroundColor:'white', width:'100%'
@@ -15,7 +14,7 @@ const footerStyle ={
 	width:200,
 	height:200,
   backgroundColor:'grey',
-}
+};
 
 storiesOf('CardFooter', module).addDecorator(withKnobs).add('CardFooter with className and style prop', () =>
 {

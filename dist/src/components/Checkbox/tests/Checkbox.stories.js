@@ -21,6 +21,7 @@ react_1.storiesOf('Checkbox', module).add('with onPress', () => React.createElem
         console.log(event.target.checked);
         return addon_actions_1.action('i was presse');
     } }));
-react_1.storiesOf('Checkbox', module).add('with label as Node', () => React.createElement(Checkbox_1.default, { label: React.createElement(bluerain_os_1.default.Components.Text, null, "I am a text in Node"), color: "accent" }));
+react_1.storiesOf('Checkbox', module).add('with label as Node', () => React.createElement(Checkbox_1.default, { label: React.createElement(bluerain_os_1.default.Components.Link, { to: '/', target: "_blank", style: { textDecoration: 'none', color: '#868686', fontWeight: 'bold' } },
+        React.createElement(bluerain_os_1.default.Components.Text, null, "Hello")), color: "accent" }));
 react_1.storiesOf('Checkbox', module).add('with indeterminate', () => React.createElement(Checkbox_1.default, { label: React.createElement(bluerain_os_1.default.Components.Text, null, "I am a text in Node"), color: "primary", indeterminate: true }));
 //# sourceMappingURL=Checkbox.stories.js.map

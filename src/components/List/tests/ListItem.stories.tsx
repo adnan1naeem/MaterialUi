@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, Input } from 'material-ui';
 import { ListItem } from '../../List';
 import { storiesOf } from '@storybook/react';
-import { Drafts } from 'material-ui-icons'
+import { Drafts } from 'material-ui-icons';
 import BR from '@blueeast/bluerain-os';
 import { action } from '@storybook/addon-actions';
 

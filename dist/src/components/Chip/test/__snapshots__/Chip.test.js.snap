@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip component with default values 1`] = `
+<div
+  className="MuiChip-root-1"
+  onClick={undefined}
+  onKeyDown={[Function]}
+  role="button"
+  tabIndex={-1}
+>
+  <span
+    className="MuiChip-label-6"
+  >
+    10 % off
+  </span>
+</div>
+`;
+
+exports[`Chip component with style 1`] = `
+<div
+  className="MuiChip-root-1"
+  onClick={undefined}
+  onKeyDown={[Function]}
+  role="button"
+  style={
+    Object {
+      "background-color": "green",
+    }
+  }
+  tabIndex={-1}
+>
+  <span
+    className="MuiChip-label-6"
+  >
+    10 % off
+  </span>
+</div>
+`;

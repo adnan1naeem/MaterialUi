@@ -4,10 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean,text,withKnobs } from '@storybook/addon-knobs';
 
-
-storiesOf('Button', module).addDecorator(withKnobs).add('Primary Button with knobs', 
-() =>{
-
+storiesOf('Button', module).addDecorator(withKnobs).add('Primary Button with knobs',() => {
     const label = text('label as child', 'withknobs');
     const color = text('color', 'primary');
     const disabled = boolean('disabled', false);

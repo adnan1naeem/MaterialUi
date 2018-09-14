@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
-// 
-// import TextField from '@material-ui/core/TextField';
 
+// import TextField from '@material-ui/core/TextField';
 /**
  * The props of IMaterialTextInput Component
  * @param {string} props.autoComplete for auto complete
@@ -24,8 +23,8 @@ export interface MUITextInputProperties extends TextInputProperties {
 	label?: ReactNode | string, //
 	className?: any,
 	margin?: 'none' | //
-    'dense' | //
-    'normal', //
+	'dense' | //
+	'normal', //
 	required?: boolean, //
 	error?: boolean, //
 	type?: string, //
@@ -35,7 +34,7 @@ export interface MUITextInputProperties extends TextInputProperties {
 	InputLabelProps?: object, //
 	fullWidth?: boolean, //
 	errorText?: ReactNode, //
-	defaultValue?:string //
+	defaultValue?: string //
 	FormHelperTextProps?: object, //
 	inputProps?: object, //
 	InputProps?: object, //
@@ -45,26 +44,26 @@ export interface MUITextInputProperties extends TextInputProperties {
 	SelectProps?: object, //
 }
 
-const customOnChange = (props:any) => (event:any) => {
-	if(props.onChange) { props.onChange(event); }
-	if(props.onChangeText) { props.onChangeText(event.target.value); }
+const customOnChange = (props: any) => (event: any) => {
+	if (props.onChange) { props.onChange(event); }
+	if (props.onChangeText) { props.onChangeText(event.target.value); }
 };
 
 const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (rawProps) => {
-	const { onChangeText , ...props } = rawProps;
+	const { onChangeText, ...props } = rawProps;
 	let disabled = false;
-	if(props.editable !== undefined && !props.editable) {
+	if (props.editable !== undefined && !props.editable) {
 		disabled = true;
 	}
-  
+
 	return (
 		<TextField
-		  type={props.secureTextEntry?"password":"text"}
+			type={props.secureTextEntry ? 'password' : 'text'}
 			style={props.style}
 			label={props.label}
 			placeholder={props.placeholder}
 			autoFocus={props.autoFocus}
-			onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => {return null;}}
+			onChange={(props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }}
 			rows={props.numberOfLines}
 			disabled={disabled}
 			helperText={props.errorText}

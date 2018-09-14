@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ListItem , ListItemSecondaryAction, ListItemText,} from 'material-ui';
+import { ListItem , ListItemSecondaryAction, ListItemText } from 'material-ui';
 import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Avatar } from '../Avatar';
 

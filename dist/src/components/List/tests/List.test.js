@@ -43,13 +43,13 @@ test('ListItem with avatar props', () => {
 test('ListItem with primary props', () => {
     const listitem = react_test_renderer_1.default.create(react_1.default.createElement(__1.ListItem, { primary: "hello" },
         react_1.default.createElement(Folder_1.default, null))).toJSON();
-    expect(listitem.props.primary).toEqual("hello");
+    expect(listitem.props.primary).toEqual('hello');
     expect(listitem).toMatchSnapshot();
 });
 test('ListItem with secondary props', () => {
     const listitem = react_test_renderer_1.default.create(react_1.default.createElement(__1.ListItem, { secondary: "Hi" },
         react_1.default.createElement(Folder_1.default, null))).toJSON();
-    expect(listitem.props.secondary).toEqual("Hi");
+    expect(listitem.props.secondary).toEqual('Hi');
     expect(listitem).toMatchSnapshot();
 });
 test('ListItem with action props', () => {
