@@ -8,7 +8,7 @@ notifications:
 node_js:
   - lts/*
 script:
-  - yarn test:prod && yarn build
+  - yarn build
 after_success:
   - yarn report-coverage
   - test $TRAVIS_BRANCH = "master" && yarn deploy-docs
