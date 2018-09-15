@@ -1,6 +1,6 @@
 language: node_js
 cache:
-  yarn: false
+  yarn: true
   directories:
     - node_modules
 notifications:
@@ -8,13 +8,13 @@ notifications:
 node_js:
   - lts/*
 script:
-  - npm run test:prod && npm run build
+  - yarn test:prod && yarn build
 after_success:
-  - npm run report-coverage
-  - test $TRAVIS_BRANCH = "master" && npm run deploy-docs
-  - npm run semantic-release
+  - yarn report-coverage
+  - test $TRAVIS_BRANCH = "master" && yarn deploy-docs
+  - yarn semantic-release
 install:
-  - "npm install @blueeast/bluerain-os"
-  - "npm install react"
-  - "npm install react-dom"
-  - "npm install"
+  - yarn add @blueeast/bluerain-os
+  - yarn add react
+  - yarn add react-dom
+  - yarn
