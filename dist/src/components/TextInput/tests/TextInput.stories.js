@@ -18,7 +18,7 @@ const labelProps = {
     background: 'red'
 };
 const textFieldClasses = 'margin-left: 100px; margin-right: 100px; width: 50px; background-color: red; padding:100px;';
-react_1.storiesOf('TextInput', module).add('with placeholder, default value, onChange, autoComplete, autoFocus', () => React.createElement(TextInput_1.TextInput, { label: "haris", placeholder: "hello", defaultValue: "nooo", onChange: handleTextInputChange, autoComplete: "Hello World !!", autoFocus: true }));
+react_1.storiesOf('TextInput', module).add('with placeholder, default value, onChange, autoComplete, autoFocus', () => React.createElement(TextInput_1.TextInput, { label: "haris", placeholder: "hello", onChange: handleTextInputChange, autoComplete: "Hello World !!", autoFocus: true }));
 react_1.storiesOf('TextInput', module).add('with id, label, className, onChange, margin', () => React.createElement(TextInput_1.TextInput, { id: "name", label: "Name", className: textFieldClasses, onChange: handleTextInputChange, margin: "dense" }));
 react_1.storiesOf('TextInput', module).add('with required', () => React.createElement(TextInput_1.TextInput, { required: true, id: "required", label: "Required", defaultValue: "Hello World", className: textFieldClasses, margin: "normal" }));
 react_1.storiesOf('TextInput', module).add('with error true and errorText props', () => React.createElement(TextInput_1.TextInput, { error: true, id: "error", label: "Error", defaultValue: "Hello World", className: textFieldClasses, margin: "normal", errorText: 'Oh Noes, Error!!!' }));
