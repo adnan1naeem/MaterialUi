@@ -26,16 +26,13 @@ export interface MUIProps extends CheckboxProperties {
 class BlueRainCheckbox extends React.Component<MUIProps, { checked: boolean | string }> {
   constructor(props: MUIProps) {
     super(props);
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
     this.state = {
       checked: props.value ? props.value : false,
     };
   }
 
-  handleChange = (name:any) => (event:any ) => {
-    this.props.onChange ? this.props.onChange(event) : this.setState({ checked: event.target.checked });
-    this.setState({ checked: event.target.checked });
-  }
+ 
 
   // handleChange =( event:any) => {
   //   this.props.onChange ? this.props.onChange() : this.setState({ checked: event.target.checked });
@@ -50,7 +47,7 @@ class BlueRainCheckbox extends React.Component<MUIProps, { checked: boolean | st
           control={
             <Checkbox
               {...others}
-              onChange={this.handleChange('checked')}
+              onChange={this.props.onPress}
               value={this.props.testID}
               checked={this.state.checked}
             />

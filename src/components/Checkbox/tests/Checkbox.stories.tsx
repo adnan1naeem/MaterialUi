@@ -9,11 +9,8 @@ storiesOf('Checkbox', module).addDecorator(withKnobs).add('label disabled value 
     () => <Checkbox label={text('Label', 'Label Chekbox')} color="default" disabled={boolean('Disable', false)} value={true} onChange={() => action('i was presse')} />);
 
 storiesOf('Checkbox', module).add('with onPress',
-    () => <Checkbox label="with onPress" color="contrast" value={true}
-        onChange={(event: any) => {
-            console.log(event.target.checked);
-            return action('i was presse');
-        }} />);
+    () => <Checkbox label="with onPress" color="contrast" 
+        onPress={action('check changed')} />);
 
 
 storiesOf('Checkbox', module).add('with label as Node',

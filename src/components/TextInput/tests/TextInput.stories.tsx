@@ -13,7 +13,7 @@ const labelProps = {
 const textFieldClasses = 'margin-left: 100px; margin-right: 100px; width: 50px; background-color: red; padding:100px;';
 
 storiesOf('TextInput', module).add('with placeholder, default value, onChange, autoComplete, autoFocus',
-    () => <TextInput label="haris" placeholder="hello" defaultValue="nooo" onChange={handleTextInputChange} autoComplete="Hello World !!" autoFocus={true} />) ;
+    () => <TextInput label="haris" placeholder="hello" onChange={handleTextInputChange} autoComplete="Hello World !!" autoFocus={true} />) ;
 
 storiesOf('TextInput', module).add('with id, label, className, onChange, margin',
     () =>  <TextInput id="name" label="Name" className={textFieldClasses}  onChange={handleTextInputChange} margin="dense"/>) ;

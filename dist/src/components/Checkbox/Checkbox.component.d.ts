@@ -22,7 +22,6 @@ declare class BlueRainCheckbox extends React.Component<MUIProps, {
     checked: boolean | string;
 }> {
     constructor(props: MUIProps);
-    handleChange: (name: any) => (event: any) => void;
     render(): JSX.Element;
 }
 export default BlueRainCheckbox;
