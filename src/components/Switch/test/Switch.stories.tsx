@@ -22,9 +22,10 @@ stories.add('Switch (MUI specific props)', () => {
 <div style={{ display:'flex', }}>
 <Switch aria-label="checkedD" />
         <Switch
-          checked={true}
+          value={true}
           onChange={action('Value is changed!')}
           aria-label="checkedD"
+          muValue="Switch"
         />
 </div>);
 });

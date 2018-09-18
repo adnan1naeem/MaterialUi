@@ -15,8 +15,8 @@ import Switch from 'material-ui/Switch';
  */
 
 export interface MUISwitchProperties extends SwitchProperties {
-	checked?: string | undefined | boolean,
-	value?: string,
+	// checked?: string | undefined | boolean,
+	muValue?: string,
 	classes?: {},
 	onChange?: () => void,
 }
@@ -24,8 +24,11 @@ export interface MUISwitchProperties extends SwitchProperties {
 const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
 	return (
         <Switch
+						{...props}
+						checked={props.value}
+		        value={props.muValue}		    
             onChange={props.onValueChange}
-            {...props}
+           
         />
 	);
 };

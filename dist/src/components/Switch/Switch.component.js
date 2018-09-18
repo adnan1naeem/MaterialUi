@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const Switch_1 = __importDefault(require("material-ui/Switch"));
 const BlueRainSwitch = (props) => {
-    return (React.createElement(Switch_1.default, Object.assign({ onChange: props.onValueChange }, props)));
+    return (React.createElement(Switch_1.default, Object.assign({}, props, { checked: props.value, value: props.muValue, onChange: props.onValueChange })));
 };
 exports.default = BlueRainSwitch;
 //# sourceMappingURL=Switch.component.js.map

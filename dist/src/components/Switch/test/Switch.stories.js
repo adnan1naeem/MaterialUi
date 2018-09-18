@@ -24,6 +24,6 @@ stories.add('Switch (default)', () => {
 stories.add('Switch (MUI specific props)', () => {
     return (React.createElement("div", { style: { display: 'flex', } },
         React.createElement(Switch_1.Switch, { "aria-label": "checkedD" }),
-        React.createElement(Switch_1.Switch, { checked: true, onChange: addon_actions_1.action('Value is changed!'), "aria-label": "checkedD" })));
+        React.createElement(Switch_1.Switch, { value: true, onChange: addon_actions_1.action('Value is changed!'), "aria-label": "checkedD", muValue: "Switch" })));
 });
 //# sourceMappingURL=Switch.stories.js.map
