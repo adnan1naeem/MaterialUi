@@ -60,9 +60,9 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
             {
                 props.action
                     ?
-                    <ListItemSecondaryAction>
+                    <div >
                         {props.action}
-                    </ListItemSecondaryAction>
+                    </div>
                     : null
             }
         </ListItem>
