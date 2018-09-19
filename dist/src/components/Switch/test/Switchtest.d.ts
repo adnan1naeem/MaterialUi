@@ -1,7 +1,4 @@
 import * as React from 'react';
-import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
-import Switch from 'material-ui/Switch';
-
 /**
  * The universal props of Avatar Component
  * @param {boolean} props.disabled if true, switch is rendered in disabled form.
@@ -13,23 +10,9 @@ import Switch from 'material-ui/Switch';
  * @param {Object} props.classes the children on which the switch will append styles.
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
-
-export interface MUISwitchProperties extends SwitchProperties {
-	// checked?: string | undefined | boolean,
-	muValue?: string,
-	classes?: {},
-	onChange?: () => void,
+declare class BlueRainSwitch extends React.Component<{}, {
+    value: boolean;
+}> {
+    render(): JSX.Element;
 }
-
-const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
-	return (
-		<Switch
-			{...props}
-			checked={props.value}
-			value={props.muValue}
-			onChange={props.onValueChange}
-		/>
-	);
-};
-
 export default BlueRainSwitch;

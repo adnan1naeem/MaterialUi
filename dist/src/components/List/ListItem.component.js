@@ -24,7 +24,7 @@ const BlueRainListItem = (props) => {
             : null,
         props.action
             ?
-                React.createElement(material_ui_1.ListItemSecondaryAction, null, props.action)
+                React.createElement("div", null, props.action)
             : null));
 };
 exports.default = BlueRainListItem;

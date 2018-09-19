@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
-import {Switch} from '../';
+import { Switch } from '../';
 import { Props } from '../../Modal/test/ModalStory';
 
 /**
@@ -16,17 +16,16 @@ import { Props } from '../../Modal/test/ModalStory';
  */
 
 
-class BlueRainSwitch extends React.Component<{},{value:boolean}> {
-  render(){
-  return (
-        <Switch
-						value={this.state.value}
-		        // value={props.muValue}		    
-            onChange={()=>this.setState({value:this.state.value})}
-           
-        />
-  );
+class BlueRainSwitch extends React.Component<{}, { value: boolean }> {
+  render() {
+    return (
+      <Switch
+        value={this.state.value}
+        // value={props.muValue}
+        onChange={() => this.setState({ value: this.state.value })}
+      />
+    );
+  }
 }
-};
 
 export default BlueRainSwitch;

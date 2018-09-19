@@ -9,7 +9,7 @@ storiesOf('Checkbox', module).addDecorator(withKnobs).add('label disabled value 
     () => <Checkbox label={text('Label', 'Label Chekbox')} color="default" disabled={boolean('Disable', false)} value={true} onChange={() => action('i was presse')} />);
 
 storiesOf('Checkbox', module).add('with onPress',
-    () => <Checkbox label="with onPress" color="contrast" 
+    () => <Checkbox label="with onPress" color="contrast"
         onPress={action('check changed')} />);
 
 
