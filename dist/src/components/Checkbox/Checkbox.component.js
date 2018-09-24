@@ -2,34 +2,15 @@
 /**
  * Created by M.Ghaznfar on 3/3/18.
  */
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-            t[p[i]] = s[p[i]];
-    return t;
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Form_1 = require("material-ui/Form");
+// import { FormControlLabel, FormGroup } from 'material-ui/Form';
 const react_1 = __importDefault(require("react"));
 const Checkbox_1 = __importDefault(require("material-ui/Checkbox"));
-class BlueRainCheckbox extends react_1.default.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            checked: props.value ? props.value : false,
-        };
-    }
-    render() {
-        const _a = this.props, { value } = _a, others = __rest(_a, ["value"]);
-        return (react_1.default.createElement(Form_1.FormGroup, { row: true },
-            react_1.default.createElement(Form_1.FormControlLabel, { control: react_1.default.createElement(Checkbox_1.default, Object.assign({}, others, { onChange: this.props.onPress, value: this.props.testID, checked: this.state.checked })), label: this.props.label })));
-    }
-}
+const BlueRainCheckbox = (props) => {
+    return (react_1.default.createElement(Checkbox_1.default, Object.assign({}, props, { onChange: props.onPress, value: props.testID, checked: props.value })));
+};
 exports.default = BlueRainCheckbox;
 //# sourceMappingURL=Checkbox.component.js.map

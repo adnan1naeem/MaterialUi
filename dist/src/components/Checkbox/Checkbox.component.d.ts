@@ -1,7 +1,7 @@
 /**
  * Created by M.Ghaznfar on 3/3/18.
  */
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { CheckboxProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIProps extends CheckboxProperties {
     color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined;
@@ -18,10 +18,5 @@ export interface MUIProps extends CheckboxProperties {
     checkedIcon?: ReactNode;
     label?: ReactNode;
 }
-declare class BlueRainCheckbox extends React.Component<MUIProps, {
-    checked: boolean | string;
-}> {
-    constructor(props: MUIProps);
-    render(): JSX.Element;
-}
+declare const BlueRainCheckbox: (props: MUIProps) => JSX.Element;
 export default BlueRainCheckbox;

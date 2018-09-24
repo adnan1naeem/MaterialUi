@@ -13,8 +13,8 @@ test('when title prop is passed', () => {
     expect(checkbox.props().label).toBeUndefined();
 });
 test('when checked prop is passed', () => {
-    const checkbox = enzyme_1.shallow(react_1.default.createElement(__1.default, { checked: false }));
-    expect(checkbox.props().checked).toBeFalsy();
+    const checkbox = enzyme_1.shallow(react_1.default.createElement(__1.default, { value: false }));
+    expect(checkbox.props().value).toBeFalsy();
     expect(checkbox).toMatchSnapshot();
 });
 //# sourceMappingURL=Checkbox.test.js.map

@@ -2,10 +2,11 @@
  * Created by M.Ghaznfar on 3/3/18.
  */
 
-import { FormControlLabel, FormGroup } from 'material-ui/Form';
+// import { FormControlLabel, FormGroup } from 'material-ui/Form';
 import React, { ReactNode } from 'react';
 import { CheckboxProperties } from '@blueeast/bluerain-ui-interfaces';
 import Checkbox from 'material-ui/Checkbox';
+import { MuiThemeProvider } from 'material-ui';
 
 export interface MUIProps extends CheckboxProperties {
   color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined,
@@ -23,33 +24,16 @@ export interface MUIProps extends CheckboxProperties {
   label?: ReactNode,
 }
 
-class BlueRainCheckbox extends React.Component<MUIProps, { checked: boolean | string }> {
-  constructor(props: MUIProps) {
-    super(props);
-    this.state = {
-      checked: props.value ? props.value : false,
-    };
-  }
+const BlueRainCheckbox = (props:MUIProps) => {
 
-  render() {
-    const { value, ...others } = this.props;
     return (
-      <FormGroup row>
-        <FormControlLabel
-          control={
             <Checkbox
-              {...others}
-              onChange={this.props.onPress}
-              value={this.props.testID}
-              checked={this.state.checked}
+              {...props}
+              onChange={props.onPress}
+              value={props.testID}
+              checked={props.value}
             />
-          }
-          label={this.props.label}
-        />
-      </FormGroup>
     );
-  }
-}
-
+};
 
 export default BlueRainCheckbox;

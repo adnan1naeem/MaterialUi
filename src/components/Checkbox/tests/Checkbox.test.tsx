@@ -13,8 +13,8 @@ test('when title prop is passed', () => {
 });
 test('when checked prop is passed', () => {
     const checkbox = shallow(
-        <Checkbox checked={false} />
+        <Checkbox value={false} />
     );
-    expect(checkbox.props().checked).toBeFalsy();
+    expect(checkbox.props().value).toBeFalsy();
     expect(checkbox).toMatchSnapshot();
 });

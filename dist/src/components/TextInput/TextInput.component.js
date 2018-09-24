@@ -31,7 +31,9 @@ const BlueRainTextInput = (rawProps) => {
     // const label = (props.placeholder && props.label) ? props.placeholder : props.label;
     const label = props.placeholder ? props.placeholder : props.label;
     console.log('Label', label);
-    return (react_1.default.createElement(TextField_1.default, Object.assign({}, props, { type: props.secureTextEntry ? 'password' : 'text', style: props.style, label: label, placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue })));
+    return (react_1.default.createElement(TextField_1.default, Object.assign({}, props, { type: props.secureTextEntry ? 'password' : 'text', style: props.style, label: label, 
+        // placeholder={props.placeholder}
+        autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue })));
 };
 exports.default = BlueRainTextInput;
 //# sourceMappingURL=TextInput.component.js.map
