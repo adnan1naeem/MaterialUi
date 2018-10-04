@@ -51,6 +51,8 @@ storiesOf('TextInput', module).add('with fullWidth',
 storiesOf('TextInput', module).add('with style object',
     () =>  <TextInput id="multiline-flexible" style={labelProps} editable={true} label="Full Width" placeholder="Placeholder"  onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
+    storiesOf('TextInput', module).add('with type date',
+    () =>  <TextInput id="multiline-flexible" style={labelProps} type="date" editable={true} label="Full Width" placeholder="Placeholder"  onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);    
 // storiesOf('textInput', module).add('with type number',
 //     () =>  <form ><textInput id="number" value={'4'} type="number" InputLabelProps={labelProps} label="Number" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
 

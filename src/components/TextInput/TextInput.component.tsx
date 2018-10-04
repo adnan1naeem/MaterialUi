@@ -62,7 +62,7 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 	return (
 		<TextField
 			{...props}
-			type={props.secureTextEntry ? 'password' : 'text'}
+			type={props.secureTextEntry ? 'password' : props.type}
 			style={props.style}
 			label={label}
 			// placeholder={props.placeholder}
