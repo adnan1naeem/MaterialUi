@@ -1,12 +1,12 @@
 /**
  * Created by M.Ghaznfar on 3/3/18.
  */
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { CheckboxProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIProps extends CheckboxProperties {
     color?: 'default' | 'inherit' | 'primary' | 'accent' | 'contrast' | undefined;
     type?: string;
-    onChange?: (e: any) => {};
+    onChange?: () => {};
     inputRef?: () => {};
     inputProps?: {};
     indeterminateIcon?: ReactNode;
@@ -18,5 +18,11 @@ export interface MUIProps extends CheckboxProperties {
     checkedIcon?: ReactNode;
     label?: ReactNode;
 }
-declare const BlueRainCheckbox: (props: MUIProps) => JSX.Element;
+declare class BlueRainCheckbox extends React.Component<MUIProps, {
+    checked: boolean | string;
+}> {
+    constructor(props: MUIProps);
+    handleChange: (name: any) => (event: any) => void;
+    render(): JSX.Element;
+}
 export default BlueRainCheckbox;

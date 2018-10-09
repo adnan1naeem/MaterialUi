@@ -1,11 +1,6 @@
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
-<<<<<<< HEAD
-//
-// import TextField from '@material-ui/core/TextField';
-=======
->>>>>>> 2f5cd9ad455e613494855e1402f97245f8d8255a
 
 // import TextField from '@material-ui/core/TextField';
 /**

@@ -15,6 +15,7 @@ import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuProperties } from './components/Menu';
 import { Badge } from './components/Badge';
 import { ScrollViewProperties } from './components/ScrollView';
+import Checkbox from './components/Checkbox';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -34,7 +35,7 @@ declare class MaterialUiPlugin extends Plugin {
         CardMedia: React.StatelessComponent<CardMediaProperties>;
         CardFooter: React.StatelessComponent<MUICardFooterProperties>;
         Chip: React.StatelessComponent<MUIChipProperties>;
-        Checkbox: (props: import("./components/Checkbox/Checkbox.component").MUIProps) => JSX.Element;
+        Checkbox: typeof Checkbox;
         ColorPicker: typeof ColorPicker;
         Divider: React.StatelessComponent<MUIDividerProperties>;
         Drawer: React.StatelessComponent<MUIDrawerProperties & {
