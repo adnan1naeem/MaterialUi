@@ -37,9 +37,9 @@ const BlueRainAvatar = (props: MUIAvatarProperties) => {
 			display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center',
-			fontSize: 0.5 * size
+			// 	fontSize: 0.5 * size
 		},
-    { ...props.style }
+		{ ...props.style }
 	];
 	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
 	// const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';

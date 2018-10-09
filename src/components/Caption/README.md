@@ -15,21 +15,21 @@ Typography component for Caption. It applies following styles. Styles are fixed,
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|  ✔️     | ✖           |  ✖               |
+| ✔️     | ✖           | ✖               |
 
 ## Caption
 
 ### Props
 
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with Caption heading style
+| Name     | Type   | Default | Description                                 |
+| :------- | :----- | :------ | :------------------------------------------ |
+| children | string |         | The text to show with Caption heading style |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native |
-| :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/Caption.png)|
+| 🌏 Web | 🖥 Electron | 📱 React Native                            |
+| :----: | :---------: | :----------------------------------------: |
+| TBD    | TBD         | ![mobile image](./screenshots/Caption.png) |
 
 ## How to use
 

@@ -1,4 +1,4 @@
-export const style: object  = {
+export const style: object = {
     'fontFamily': 'Roboto',
     'fontWeight': '400',
     'fontSize': 20,

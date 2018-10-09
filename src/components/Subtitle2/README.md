@@ -16,21 +16,21 @@ Typography component for subtitle. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-| ✔️      | ✔️          |    ✖          |
+| ✔️     | ✔️          | ✖               |
 
 ## Subtitle2
 
 ### Props
 
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with Subtitle2 heading style|
+| Name     | Type   | Default | Description                                   |
+| :------- | :----- | :------ | :-------------------------------------------- |
+| children | string |         | The text to show with Subtitle2 heading style |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native                             |
-| :----: | :---------: | :-----------------------------------------: |
-| ![Mobile Image](./screenshots/Subtitle2.png)   | TBD         | TBD |
+| 🌏 Web                                       | 🖥 Electron | 📱 React Native |
+| :------------------------------------------: | :---------: | :-------------: |
+| ![Mobile Image](./screenshots/Subtitle2.png) | TBD         | TBD             |
 
 ## How to use
 

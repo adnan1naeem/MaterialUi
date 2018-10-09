@@ -20,7 +20,6 @@ const BlueRainAvatar = (props) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            fontSize: 0.5 * size
         },
         Object.assign({}, props.style)
     ];

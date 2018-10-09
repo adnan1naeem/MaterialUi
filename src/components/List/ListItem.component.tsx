@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ListItem , ListItemSecondaryAction, ListItemText,} from 'material-ui';
+import { ListItem , ListItemSecondaryAction, ListItemText } from 'material-ui';
 import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 import { Avatar } from '../Avatar';
 
@@ -29,11 +29,13 @@ export interface MUIListItemProperties extends ListItemProperties {
 }
 
 const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props) => {
+    const { active, onPress, ...others } = props;
+
     return (
         <ListItem
-            button={props.active}
-            onClick={props.onPress}
-            {...props}
+            button={active}
+            onClick={onPress}
+            {...others}
         >
             {
                 typeof props.avatar === 'string'
@@ -60,9 +62,9 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
             {
                 props.action
                     ?
-                    <ListItemSecondaryAction>
+                    <div >
                         {props.action}
-                    </ListItemSecondaryAction>
+                    </div>
                     : null
             }
         </ListItem>

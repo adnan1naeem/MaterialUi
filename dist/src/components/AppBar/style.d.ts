@@ -12,7 +12,7 @@ export declare const style: {
     };
     title: {
         paddingLeft: number;
-        fontWeight: number;
+        fontWeight: string;
         fontSize: number;
         letterSpacing: number;
         alignSelf: string;

@@ -6,7 +6,7 @@ Typography component for headings. It applies following styles. Styles are fixed
 ```javascript
 {
     'fontFamily':'Roboto',
-    'fontWeight':400,
+    'fontWeight':'400',
     'fontSize':24,
     'letterSpacing': 0
  }
@@ -16,19 +16,19 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|  ✔️      |  ✔️        | ✖              |
+| ✔️     | ✔️          | ✖               |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native |
-| :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/H5.png)|
+| 🌏 Web | 🖥 Electron | 📱 React Native                       |
+| :----: | :---------: | :-----------------------------------: |
+| TBD    | TBD         | ![mobile image](./screenshots/H5.png) |
 
 ### Props
 
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with H5 heading style
+| Name     | Type   | Default | Description                            |
+| :------- | :----- | :------ | :------------------------------------- |
+| children | string |         | The text to show with H5 heading style |
 
 ## How to use
 

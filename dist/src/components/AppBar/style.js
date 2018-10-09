@@ -14,7 +14,7 @@ exports.style = {
     },
     title: {
         paddingLeft: 24,
-        fontWeight: 500,
+        fontWeight: '500',
         fontSize: 20,
         letterSpacing: 0.15,
         alignSelf: 'center'

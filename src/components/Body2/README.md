@@ -22,15 +22,15 @@ Typography component for Body. It applies following styles. Styles are fixed, ca
 
 ### Props
 
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with Body2 heading style
+| Name     | Type   | Default | Description                               |
+| :------- | :----- | :------ | :---------------------------------------- |
+| children | string |         | The text to show with Body2 heading style |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native |
-| :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/Body2.png)|
+| 🌏 Web | 🖥 Electron | 📱 React Native                          |
+| :----: | :---------: | :--------------------------------------: |
+| TBD    | TBD         | ![mobile image](./screenshots/Body2.png) |
 
 ## How to use
 

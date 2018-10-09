@@ -6,7 +6,7 @@ Typography component for headings. It applies following styles. Styles are fixed
 ```javascript
 {
     'fontFamily':'Roboto',
-    'fontWeight':400,
+    'fontWeight':'400',
     'fontSize':48,
     'letterSpacing': 0
  };
@@ -16,21 +16,21 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|  ✔️    |  ✔         | ✖             |
+| ✔️     | ✔           | ✖               |
 
 ## H3
 
 ### Props
 
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with H3 heading style
+| Name     | Type   | Default | Description                            |
+| :------- | :----- | :------ | :------------------------------------- |
+| children | string |         | The text to show with H3 heading style |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native |
-| :---: | :--------: | :------------: |
-|   TBD  |    TBD   |  ![mobile image](./screenshots/H3.png)|
+| 🌏 Web | 🖥 Electron | 📱 React Native                       |
+| :----: | :---------: | :-----------------------------------: |
+| TBD    | TBD         | ![mobile image](./screenshots/H3.png) |
 
 ## How to use
 
