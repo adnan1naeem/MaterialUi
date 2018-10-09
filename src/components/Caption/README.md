@@ -17,6 +17,12 @@ Typography component for Caption. It applies following styles. Styles are fixed,
 | :----: | :---------: | :-------------: |
 | ✔️     | ✖           | ✖               |
 
+## Screenshots
+
+| 🌏 Web                                  | 🖥 Electron | 📱 React Native |
+| :-------------------------------------: | :---------: | :-------------: |
+| ![web image](./screenshots/Caption.png) | TBD         | TBD             |
+
 ## Caption
 
 ### Props
@@ -33,15 +39,16 @@ Typography component for Caption. It applies following styles. Styles are fixed,
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
 import BR from "@blueeast/bluerain-os"
 const Caption = BR.Components.get('Caption');
 
-
-const component = () => {
+const CaptionSample = () => {
         <Caption>This is Caption typography</Caption>
     );
 }
+
+export default CaptionSample
 
 ```

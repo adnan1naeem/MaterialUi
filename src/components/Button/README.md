@@ -1,5 +1,19 @@
 # Button
 
+Buttons allow users to take actions, and make choices, with a single tap.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Button.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -35,11 +49,3 @@ const buttonSample = () => (
 
 export default buttonSample;
 ```
-
-## Storybook
-
-- 1st story of the Button component in Button.stories.tsx file is written with knobs to visualize the effects when different props are changed.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

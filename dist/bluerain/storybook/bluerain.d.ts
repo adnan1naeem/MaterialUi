@@ -1,6 +1,6 @@
 import { BootOptions } from '@blueeast/bluerain-os';
 declare const _default: {
-    apps: never[];
+    apps: any[];
     platform: any[];
     plugins: any[];
 } & BootOptions;

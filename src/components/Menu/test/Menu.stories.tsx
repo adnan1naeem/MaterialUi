@@ -120,9 +120,9 @@ stories.add('Menu Popper List Component', () => {
 						<ListItem
 							button
               onClick={handleOpen}
-              avatar='https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'
+              avatar="https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg"
               avatarSize={30}
-              primary='hello'
+              primary="hello"
 						/>
 					)
 				}
@@ -143,9 +143,9 @@ stories.add('Menu Popper List Component placement right', () => {
 						<ListItem
 							button
               onClick={handleOpen}
-              avatar='https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg'
+              avatar="https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg"
               avatarSize={30}
-              primary='hello'
+              primary="hello"
 						/>
 					)
 				}

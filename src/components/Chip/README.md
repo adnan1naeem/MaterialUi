@@ -1,5 +1,20 @@
 # Chip
 
+Chips are compact elements that represent an input, attribute, or action.
+Chips allow users to enter information, make selections, filter content, or trigger actions
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Chips.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -29,14 +44,3 @@ const ChipSample = (props) => (
 
 export default withBluerain(ChipSample);
 ```
-
-## Storybook
-
-- 1st story of the Chip component in Chip.stories.tsx file is written for Chip with default value.
-- 2nd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style".
-- 3rd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style" , "onClick".
-- 4th story of the Chip component in Chip.stories.tsx file is written for Chip without knobs and prop "style" , "onClick".
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

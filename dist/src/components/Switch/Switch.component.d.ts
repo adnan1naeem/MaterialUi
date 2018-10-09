@@ -12,8 +12,7 @@ import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
 export interface MUISwitchProperties extends SwitchProperties {
-    checked?: string | undefined | boolean;
-    value?: string;
+    muValue?: string;
     classes?: {};
     onChange?: () => void;
 }

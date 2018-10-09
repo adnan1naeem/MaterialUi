@@ -3,5 +3,5 @@ export const style: object  = {
     'fontWeight':500,
     'fontSize':10,
     'letterSpacing': 1.5,
-    'textTransform':'Capitalize' 
+    'textTransform':'Capitalize'
  };

@@ -15,8 +15,8 @@ class FadeMenu extends react_1.default.Component {
     constructor() {
         super(...arguments);
         this.state = {
-            anchorEl: null,
-            anchorEl2: null,
+            anchorEl: {},
+            anchorEl2: {},
         };
         this.handleClick = (event) => {
             this.setState({ anchorEl: event.currentTarget });

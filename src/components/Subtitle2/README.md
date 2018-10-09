@@ -1,7 +1,7 @@
 
 # Subtitle2 Component
 
-Typography component for subtitle. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for subtitle2. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -34,15 +34,16 @@ Typography component for subtitle. It applies following styles. Styles are fixed
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import Br from '@blueeast/bluerain-os';
 
 const Subtitle2 = BR.Components.get('Subtitle2');
 
-
-const component = (props) => {
+const Subtitle2Sample = (props) => ()
         <Subtitle2>Subtitle2 Typography</Subtitle2>
     );
-}
+
+export default Subtitle2Sample;
 
 ```

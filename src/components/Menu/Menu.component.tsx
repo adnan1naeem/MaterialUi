@@ -1,5 +1,5 @@
 // import Menu, { MenuItem } from 'material-ui/Menu';
-import {Menu} from 'material-ui';
+import { Menu } from 'material-ui';
 // import React, { ReactNode } from 'react';
 import React from 'react';
 import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';

@@ -87,11 +87,11 @@ const menuItems = [
 ];
 stories.add('Menu Popper List Component', () => {
     return (react_2.default.createElement("div", null,
-        react_2.default.createElement(MenuPopper_component_1.default, { style: { width: 200 }, menuItems: menuItems, component: (handleOpen) => (react_2.default.createElement(List_1.ListItem, { button: true, onClick: handleOpen, avatar: 'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg', avatarSize: 30, primary: 'hello' })) })));
+        react_2.default.createElement(MenuPopper_component_1.default, { style: { width: 200 }, menuItems: menuItems, component: (handleOpen) => (react_2.default.createElement(List_1.ListItem, { button: true, onClick: handleOpen, avatar: "https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg", avatarSize: 30, primary: "hello" })) })));
 });
 stories.add('Menu Popper List Component placement right', () => {
     return (react_2.default.createElement("div", null,
-        react_2.default.createElement(MenuPopper_component_1.default, { style: { width: 200 }, menuItems: menuItems, placement: "right-end", component: (handleOpen) => (react_2.default.createElement(List_1.ListItem, { button: true, onClick: handleOpen, avatar: 'https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg', avatarSize: 30, primary: 'hello' })) })));
+        react_2.default.createElement(MenuPopper_component_1.default, { style: { width: 200 }, menuItems: menuItems, placement: "right-end", component: (handleOpen) => (react_2.default.createElement(List_1.ListItem, { button: true, onClick: handleOpen, avatar: "https://lh3.googleusercontent.com/-XSLXxx7YjLs/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT4iEH_45OgsOLVCGU8YKIKqLuVtcQ/s32-c-mo/photo.jpg", avatarSize: 30, primary: "hello" })) })));
 });
 stories.add('Menu Popper Button Component', () => {
     return (react_2.default.createElement("div", { style: { width: 200, height: 100, marginTop: 200 } },

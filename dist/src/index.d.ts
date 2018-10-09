@@ -15,7 +15,6 @@ import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuProperties } from './components/Menu';
 import { Badge } from './components/Badge';
 import { ScrollViewProperties } from './components/ScrollView';
-import Checkbox from './components/Checkbox';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -35,7 +34,7 @@ declare class MaterialUiPlugin extends Plugin {
         CardMedia: React.StatelessComponent<CardMediaProperties>;
         CardFooter: React.StatelessComponent<MUICardFooterProperties>;
         Chip: React.StatelessComponent<MUIChipProperties>;
-        Checkbox: typeof Checkbox;
+        Checkbox: (props: import("./components/Checkbox/Checkbox.component").MUIProps) => JSX.Element;
         ColorPicker: typeof ColorPicker;
         Divider: React.StatelessComponent<MUIDividerProperties>;
         Drawer: React.StatelessComponent<MUIDrawerProperties & {
@@ -62,40 +61,40 @@ declare class MaterialUiPlugin extends Plugin {
         FormGroup: React.StatelessComponent<MUIFormGroupProperties>;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
         H1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H3: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H4: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H5: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         H6: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Subtitle1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Subtitle2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Body1: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Body2: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Caption: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
         Overline: React.StatelessComponent<{
-            style?: object | undefined;
+            style?: object;
         }>;
     };
 }

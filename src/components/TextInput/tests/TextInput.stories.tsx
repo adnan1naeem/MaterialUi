@@ -13,7 +13,7 @@ const labelProps = {
 const textFieldClasses = 'margin-left: 100px; margin-right: 100px; width: 50px; background-color: red; padding:100px;';
 
 storiesOf('TextInput', module).add('with placeholder, default value, onChange, autoComplete, autoFocus',
-    () => <TextInput placeholder="hello" defaultValue="nooo" onChange={handleTextInputChange} autoComplete="Hello World !!" autoFocus={true} />) ;
+    () => <TextInput label="haris" placeholder="hello" onChange={handleTextInputChange} autoComplete="Hello World !!" autoFocus={true} />) ;
 
 storiesOf('TextInput', module).add('with id, label, className, onChange, margin',
     () =>  <TextInput id="name" label="Name" className={textFieldClasses}  onChange={handleTextInputChange} margin="dense"/>) ;
@@ -25,7 +25,7 @@ storiesOf('TextInput', module).add('with error true and errorText props',
     () =>  <TextInput error={true} id="error" label="Error" defaultValue="Hello World" className={textFieldClasses} margin="normal" errorText={'Oh Noes, Error!!!'}/>);
 
 storiesOf('TextInput', module).add('with type password',
-    () =>  <TextInput id="password" label="Password" className={textFieldClasses} type="password" autoComplete="current-password" margin="normal" />);
+    () =>  <TextInput id="password" label="Password" className={textFieldClasses} secureTextEntry={true} autoComplete="current-password" margin="normal" />);
 
 
 storiesOf('TextInput', module).add('with multiline flexible',
@@ -51,6 +51,8 @@ storiesOf('TextInput', module).add('with fullWidth',
 storiesOf('TextInput', module).add('with style object',
     () =>  <TextInput id="multiline-flexible" style={labelProps} editable={true} label="Full Width" placeholder="Placeholder"  onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);
 
+    storiesOf('TextInput', module).add('with type date',
+    () =>  <TextInput id="multiline-flexible" style={labelProps} type="date" editable={true} label="Full Width" placeholder="Placeholder"  onChange={handleTextInputChange} className={textFieldClasses} margin="normal" />);    
 // storiesOf('textInput', module).add('with type number',
 //     () =>  <form ><textInput id="number" value={'4'} type="number" InputLabelProps={labelProps} label="Number" placeholder="Placeholder" multiline onChange={handleTextInputChange} className={textFieldClasses} margin="normal" /></form>);
 

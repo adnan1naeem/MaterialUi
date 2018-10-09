@@ -1,9 +1,13 @@
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 import TextField from 'material-ui/TextField';
+<<<<<<< HEAD
 //
 // import TextField from '@material-ui/core/TextField';
+=======
+>>>>>>> 2f5cd9ad455e613494855e1402f97245f8d8255a
 
+// import TextField from '@material-ui/core/TextField';
 /**
  * The props of IMaterialTextInput Component
  * @param {string} props.autoComplete for auto complete
@@ -56,8 +60,14 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 	if (props.editable !== undefined && !props.editable) {
 		disabled = true;
 	}
+
+	// const label = (props.placeholder && props.label) ? props.placeholder : props.label;
+	const label = props.placeholder ? props.placeholder : props.label;
+	console.log('Label', label);
 	return (
 		<TextField
+			{...props}
+			type={props.secureTextEntry ? 'password' : props.type}
 			style={props.style}
 			type={secureTextEntry ? 'password' : 'text'}
 			placeholder={props.placeholder}
@@ -67,7 +77,6 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 			disabled={disabled}
 			helperText={props.errorText}
 			defaultValue={props.defaultValue}
-			{...props}
 		/>
 	);
 };

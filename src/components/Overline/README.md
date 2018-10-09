@@ -9,7 +9,7 @@ Typography component for Overline text. It applies following styles. Styles are 
     'fontWeight':500,
     'fontSize':10,
     'letterSpacing': 1.5,
-    'textTransform':'Capitalize' 
+    'textTransform':'Capitalize'
  }
 ```
 
@@ -17,15 +17,9 @@ Typography component for Overline text. It applies following styles. Styles are 
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|✔️       | ✔️           | ✔️   ✖            |
+|✔️       |✖           |  ✖            |
 
 ## Overline
-
-### Props
-
-| Name     | Type      | Default | Description                |
-| :------- | :-------- | :------ | :------------------------- |
-| children | string |         | The text to show with Overline heading style
 
 ## Screenshots
 
@@ -33,17 +27,24 @@ Typography component for Overline text. It applies following styles. Styles are 
 | :----: | :---------: | :-----------------------------------------: |
 |  ![Mobile iMage](./screenshots/Overline.png)  | TBD         |TBD      |
 
+### Props
+
+| Name     | Type      | Default | Description                |
+| :------- | :-------- | :------ | :------------------------- |
+| children | string |         | The text to show with Overline heading style
+| style | object |         | style object for Overline |
+
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const Overline = BR.Components.get('Overline');
 
-
-const component = (props) => {
+const OverlineSample = (props) => (
         <Overline>Overline Typography</Overline>
     );
-}
+export default OverlineSample;
 
 ```

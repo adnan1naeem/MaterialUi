@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CardBody, CardHeader } from '../../Card';;
+import { CardBody, CardHeader } from '../../Card';
 import { storiesOf } from '@storybook/react';
 import Avatar from 'material-ui/Avatar';
 import Typography from 'material-ui/Typography';

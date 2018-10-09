@@ -28,7 +28,16 @@ const BlueRainTextInput = (rawProps) => {
     if (props.editable !== undefined && !props.editable) {
         disabled = true;
     }
+<<<<<<< HEAD
     return (react_1.default.createElement(TextField_1.default, Object.assign({ style: props.style, type: secureTextEntry ? 'password' : 'text', placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue }, props)));
+=======
+    // const label = (props.placeholder && props.label) ? props.placeholder : props.label;
+    const label = props.placeholder ? props.placeholder : props.label;
+    console.log('Label', label);
+    return (react_1.default.createElement(TextField_1.default, Object.assign({}, props, { type: props.secureTextEntry ? 'password' : props.type, style: props.style, label: label, 
+        // placeholder={props.placeholder}
+        autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue })));
+>>>>>>> 2f5cd9ad455e613494855e1402f97245f8d8255a
 };
 exports.default = BlueRainTextInput;
 //# sourceMappingURL=TextInput.component.js.map

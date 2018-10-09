@@ -1,6 +1,6 @@
 import { Dropdown, DropdownItem } from '../index';
 import Input from 'material-ui/Input';
-import { storiesOf } from '@storybook/react'
+import { storiesOf } from '@storybook/react';
 import Paper from 'material-ui/Paper';
 import React from 'react';
 

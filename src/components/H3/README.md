@@ -1,7 +1,7 @@
 
 # H3 Component
 
-Typography component for headings. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for h3 headings. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -18,7 +18,11 @@ Typography component for headings. It applies following styles. Styles are fixed
 | :----: | :---------: | :-------------: |
 | ✔️     | ✔           | ✖               |
 
-## H3
+## Screenshots
+
+| 🌏 Web                             | 🖥 Electron | 📱 React Native |
+| :--------------------------------: | :---------: | :-------------: |
+| ![web image](./screenshots/H3.png) | TBD         | TBD             |
 
 ### Props
 
@@ -34,15 +38,15 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const H3 = BR.Components.get('H3');
 
-
-const component = (props) => {
-        <H3>H3 Typography</H3>
+const H3Sample = (props) => (
+       <H3>H33 Typography</H3>
     );
-}
+export default H3Sample;
 
 ```

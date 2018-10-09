@@ -1,7 +1,7 @@
 
 # H5 Component
 
-Typography component for headings. It applies following styles. Styles are fixed, cannot be overriden.
+Typography component for h5 headings. It applies following styles. Styles are fixed, cannot be overriden.
 
 ```javascript
 {
@@ -32,15 +32,14 @@ Typography component for headings. It applies following styles. Styles are fixed
 
 ## How to use
 
-```react
+```javascript
 import React from 'react';
+import BR from '@blueeast/bluerain-os';
 
 const H5 = BR.Components.get('H5');
 
-
-const component = (props) => {
-        <H5>H5 Typography</H5>
+const H5Sample = (props) => (
+       <H5>H5 Typography</H5>
     );
-}
-
+export default H5Sample;
 ```

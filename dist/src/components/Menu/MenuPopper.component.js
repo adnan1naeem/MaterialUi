@@ -19,7 +19,7 @@ class MenuPopper extends react_1.default.Component {
         super(...arguments);
         this.target1 = '';
         this.state = {
-            anchorEl: null,
+            anchorEl: {},
         };
         this.handleOpen = (event) => {
             this.setState({ anchorEl: event.currentTarget });

@@ -1,6 +1,6 @@
 // import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 // import { List, ListItem, ListItemText } from '../../List';
-import {ListItem} from '../../List';
+import { ListItem } from '../../List';
 import { Menu, MenuItem } from '../../Menu';
 // import { Button } from '../../Button';
 import React from 'react';
@@ -9,11 +9,11 @@ import React from 'react';
 
 class FadeMenu extends React.Component<any, { anchorEl: any, anchorEl2: any }> {
   state = {
-    anchorEl: null,
-    anchorEl2: null,
+    anchorEl: {},
+    anchorEl2: {},
   };
 
-  handleClick = (event:any) => {
+  handleClick = (event: any) => {
     this.setState({ anchorEl: event.currentTarget });
     this.setState({ anchorEl2: event.currentTarget });
   }

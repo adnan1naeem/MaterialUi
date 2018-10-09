@@ -1,5 +1,16 @@
-
 # ColorPicker
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️     | ✖           | ✖             |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/ColorPicker.png)  |    TBD   |  TBD |
 
 ## Props
 
@@ -60,6 +71,3 @@ export default withBluerain(ColorPickerSample);
 5. Error Handling: If "hs" prop is true and value is not given in hsl format, then a message is shown to the user as can be seen in the below.  
 <img src='HSLError.png'/>
 
-### Storybook
-- First story of the ColorPicker component in ColorPicker.stories.js file is written with prop "label" and "hs" to visualize the effects of the changes and onChange to see action in actionLogger.
-- All the tests through storyshots are passed.

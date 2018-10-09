@@ -14,7 +14,7 @@ import BadgeUi from 'material-ui/Badge';
 
 export interface MUIBadgeProperties extends BadgeProperties {
 	color?: 'default' | 'primary' | 'accent';
-	children?: Node;
+	children?: React.ReactNode;
 }
 
 class Badge extends React.Component<MUIBadgeProperties, {}> {

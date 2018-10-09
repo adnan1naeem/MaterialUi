@@ -1,5 +1,19 @@
 # Divider
 
+A divider is a thin line that groups content in lists and layouts.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️     | ✖           | ✖             |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Divider.png)  |    TBD   |  TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -18,21 +32,12 @@
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
 const DividerSample = (props) => (
-    const BR = props.bluerain;
+
     const Divider = BR.Components.get('Divider');
     return <Divider light={false} />;
 
-export default withBluerain(DividerSample);
+export default DividerSample;
 ```
-
-## Storybook
-
-- 1st story of the Divider component in Divider.stories.tsx file is written for Divider with Knobs.
-- 2nd story of the Divider component in DividerBadge.stories.tsx file is written for Divider MUI Props.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

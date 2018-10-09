@@ -35,7 +35,7 @@ import {
 } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
-import { Menu, MenuItem, MenuItemProperties, MenuProperties } from './components/Menu';
+import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
