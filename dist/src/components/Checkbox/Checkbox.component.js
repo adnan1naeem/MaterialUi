@@ -35,7 +35,7 @@ class BlueRainCheckbox extends react_1.default.Component {
     //   this.setState({ checked: event.target.checked });
     // }
     render() {
-        const _a = this.props, { value } = _a, others = __rest(_a, ["value"]);
+        const _a = this.props, { value, onPress } = _a, others = __rest(_a, ["value", "onPress"]);
         return (react_1.default.createElement(Form_1.FormGroup, { row: true },
             react_1.default.createElement(Form_1.FormControlLabel, { control: react_1.default.createElement(Checkbox_1.default, Object.assign({}, others, { onChange: this.handleChange('checked'), value: this.props.testID, checked: this.state.checked })), label: this.props.label })));
     }

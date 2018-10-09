@@ -32,7 +32,7 @@ class BlueRainCheckbox extends React.Component<MUIProps, { checked: boolean | st
     };
   }
 
-  handleChange = (name:any) => (event:any )=> {
+  handleChange = (name: any) => (event: any) => {
     this.props.onChange ? this.props.onChange() : this.setState({ checked: event.target.checked });
     this.setState({ checked: event.target.checked });
   }
@@ -43,7 +43,7 @@ class BlueRainCheckbox extends React.Component<MUIProps, { checked: boolean | st
   // }
 
   render() {
-    const { value, ...others } = this.props;
+    const { value, onPress, ...others } = this.props;
     return (
       <FormGroup row>
         <FormControlLabel

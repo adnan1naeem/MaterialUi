@@ -11,15 +11,15 @@ import { CardMediaProperties } from '@blueeast/bluerain-ui-interfaces';
  */
 
 const BlueRainCardMedia: React.StatelessComponent<CardMediaProperties> = props => {
-	const heightedStyle = { ...props.style, height: props.height || 200 };
-	return (
+  const heightedStyle = { ...props.style, height: props.height || 200 };
+  return (
     <CardMedia
       style={heightedStyle}
-      image={props.src}
+      //  image={props.src}
       src={props.src}
       {...props}
     />
-	);
+  );
 };
 
 export default BlueRainCardMedia;

@@ -23,12 +23,12 @@ const customOnChange = (props) => (event) => {
     }
 };
 const BlueRainTextInput = (rawProps) => {
-    const { onChangeText } = rawProps, props = __rest(rawProps, ["onChangeText"]);
+    const { onChangeText, secureTextEntry, keyboardType } = rawProps, props = __rest(rawProps, ["onChangeText", "secureTextEntry", "keyboardType"]);
     let disabled = false;
     if (props.editable !== undefined && !props.editable) {
         disabled = true;
     }
-    return (react_1.default.createElement(TextField_1.default, Object.assign({ style: props.style, placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue }, props)));
+    return (react_1.default.createElement(TextField_1.default, Object.assign({ style: props.style, type: secureTextEntry ? 'password' : 'text', placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue }, props)));
 };
 exports.default = BlueRainTextInput;
 //# sourceMappingURL=TextInput.component.js.map
