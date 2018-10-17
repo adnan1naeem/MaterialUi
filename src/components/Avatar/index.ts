@@ -1,1 +1,1 @@
-export { default as Avatar, MUIAvatarProperties } from './Avatar.component';
+// export { default as Avatar, MUIAvatarProperties } from './Avatar.component';

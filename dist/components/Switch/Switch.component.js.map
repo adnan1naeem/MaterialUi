@@ -1,0 +1,1 @@
+{"version":3,"file":"Switch.component.js","sourceRoot":"","sources":["../../../src/components/Switch/Switch.component.tsx"],"names":[],"mappings":";;;;;;;;AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAE/B,OAAO,MAAM,MAAM,oBAAoB,CAAC;AAqBxC,IAAM,cAAc,GAAkD,UAAC,KAAK;IAC3E,OAAO,CACA,oBAAC,MAAM,aACH,QAAQ,EAAE,KAAK,CAAC,aAAa,IACzB,KAAK,EACX,CACR,CAAC;AACH,CAAC,CAAC;AAEF,eAAe,cAAc,CAAC"}
