@@ -1,12 +1,26 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
-const Dialog_1 = __importDefault(require("material-ui/Dialog"));
-const Modal = (props) => {
-    return (react_1.default.createElement(Dialog_1.default, Object.assign({ open: props.visible, onClose: props.handleClose, onEscapeKeyDown: props.onRequestClose }, props), props.children));
-};
-exports.default = Modal;
+// import React, { ReactNode } from 'react';
+// import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
+// import Dialog from 'material-ui/Dialog';
+// export interface MUIModalProperties extends ModalProperties {
+//   fullScreen?: boolean,
+//   fullWidth?: boolean,
+//   maxWidth?: 'xs' | 'sm' | 'md'
+//   onClose: () => void,
+//   visible: boolean,
+//   children: ReactNode
+// }
+// const Modal = (props: MUIModalProperties) => {
+//   return (
+//     <Dialog
+//       open={props.visible}
+//       onClose={props.handleClose}
+//       onEscapeKeyDown={props.onRequestClose}
+//       {...props}
+//     >
+//       {props.children}
+//     </Dialog>
+//   );
+// };
+// export default Modal as React.ComponentType<any>;
 //# sourceMappingURL=Modal.Component.js.map

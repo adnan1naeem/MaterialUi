@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 /**
  * The universal props of Avatar Component
@@ -10,9 +11,13 @@ import * as React from 'react';
  * @param {Object} props.classes the children on which the switch will append styles.
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
-declare class BlueRainSwitch extends React.Component<{}, {
+declare class BlueRainSwitch extends React.Component<{
+    muValue: string;
+}, {
     value: boolean;
 }> {
+    constructor(props: any);
+    onChange(value1: any, value: any): void;
     render(): JSX.Element;
 }
 export default BlueRainSwitch;

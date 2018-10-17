@@ -1,24 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render correctly 1`] = `
+exports[`Switch component with no props 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
-    SnackbarContentProps={
-        Object {
-            "aria-describedby": "message-id",
-          }
-    }
-    onClose={[Function]}
-    open={[Function]}
-    text={
-        <span
-            id="message-id"
-        >
-            I love snacks
-        </span>
-    }
-    transition=""
+  Symbol(enzyme.__unrendered__): <BlueRainSwitch
+    checked={true}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -33,23 +19,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "SnackbarContentProps": Object {
-        "aria-describedby": "message-id",
-      },
-      "autoHideDuration": undefined,
-      "message": <span
-        id="message-id"
->
-        I love snacks
-</span>,
-      "onClose": [Function],
-      "open": [Function],
-      "text": <span
-        id="message-id"
->
-        I love snacks
-</span>,
-      "transition": "",
+      "checked": true,
+      "classes": undefined,
+      "onChange": undefined,
+      "value": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -61,23 +34,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "SnackbarContentProps": Object {
-          "aria-describedby": "message-id",
-        },
-        "autoHideDuration": undefined,
-        "message": <span
-          id="message-id"
->
-          I love snacks
-</span>,
-        "onClose": [Function],
-        "open": [Function],
-        "text": <span
-          id="message-id"
->
-          I love snacks
-</span>,
-        "transition": "",
+        "checked": true,
+        "classes": undefined,
+        "onChange": undefined,
+        "value": undefined,
       },
       "ref": null,
       "rendered": null,

@@ -8,7 +8,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const __1 = require("../");
+const _1 = require("../");
 /**
  * The universal props of Avatar Component
  * @param {boolean} props.disabled if true, switch is rendered in disabled form.
@@ -21,10 +21,20 @@ const __1 = require("../");
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
 class BlueRainSwitch extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: false
+        };
+        this.onChange = this.onChange.bind(this);
+    }
+    onChange(value1, value) {
+        this.setState({
+            value
+        });
+    }
     render() {
-        return (React.createElement(__1.Switch, { value: this.state.value, 
-            // value={props.muValue}
-            onChange: () => this.setState({ value: this.state.value }) }));
+        return (React.createElement(_1.Switch, { value: this.state.value, onValueChange: this.onChange }));
     }
 }
 exports.default = BlueRainSwitch;

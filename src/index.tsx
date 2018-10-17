@@ -33,7 +33,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // 	MUIListItemProperties,
 // 	MUIListProperties
 // } from './components/List';
-// import { MUISwitchProperties, Switch } from './components/Switch';
+import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 // import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
@@ -89,13 +89,13 @@ class MaterialUiPlugin extends Plugin {
 		// Modal,
 		// ModalHeader,
 		// ModalBody,
-		// ModalFooter,
-		// 'DropDown': Dropdown,
-		// 'DropDownItem': DropdownItem,
-		// List,
-		// ListSubheader,
+		// ModalFooter,Switch
+		// 'DropDown': SwitchDropdown,
+		// 'DropDownIteSwitchm': DropdownItem,
+		// List,Switch
+		// ListSubheadeSwitchr,
 		// ListItem,
-		// Switch,
+		Switch,
 		// ScrollView,
 		// // Slider,
 		// Stepper,

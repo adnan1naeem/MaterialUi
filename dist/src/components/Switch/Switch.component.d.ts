@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -12,9 +13,15 @@ import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.onChange  Invoked with the new value when the value changes.
  */
 export interface MUISwitchProperties extends SwitchProperties {
-    muValue?: string;
-    classes?: {};
-    onChange?: () => void;
+    mvalue?: string | number | boolean;
+    classes?: object;
+    disableRipple?: boolean;
+    icon?: React.ReactNode;
+    checkedIcon?: React.ReactNode;
+    inputProps?: object;
+    inputRef?: () => void | object;
+    type?: string;
+    color?: 'primary' | 'secondary' | 'default';
 }
 declare const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties>;
 export default BlueRainSwitch;

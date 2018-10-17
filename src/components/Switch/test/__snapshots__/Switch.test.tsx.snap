@@ -20,7 +20,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "checked": true,
+      "classes": undefined,
       "onChange": undefined,
+      "value": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -33,7 +35,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "checked": true,
+        "classes": undefined,
         "onChange": undefined,
+        "value": undefined,
       },
       "ref": null,
       "rendered": null,
