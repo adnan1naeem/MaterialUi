@@ -24,7 +24,13 @@ export interface MUIPickerProperties extends PickerProperties {
     renderValue?: any;
     value?: any;
     onChange?: any;
+    IconComponent?: string;
+    inputprops?: object;
     disabled?: boolean;
+    onOpen?: (event: object) => void;
+    open?: boolean;
+    SelectDisplayProps?: object;
+    variant?: 'standard' | 'outlined' | 'filled';
 }
 declare const DropDown: React.StatelessComponent<MUIPickerProperties>;
 export default DropDown;
