@@ -20,7 +20,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // 	MUICardHeaderProperties,
 // 	MUICardProperties
 // } from './components/Card';
-// import { Chip, MUIChipProperties } from './components/Chip';
+import { Chip, ChipProperties  } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 // import { Divider, MUIDividerProperties } from './components/Divider';
 // import { Drawer, MUIDrawerProperties } from './components/Drawer';
@@ -79,7 +79,7 @@ class MaterialUiPlugin extends Plugin {
 		// CardBody,
 		// CardMedia,
 		// CardFooter,
-		// Chip,
+		Chip,
 		// Checkbox,
 		// ColorPicker,
 		// Divider,

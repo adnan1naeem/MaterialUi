@@ -1,21 +1,23 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Badge_1 = __importDefault(require("material-ui/Badge"));
-class Badge extends React.Component {
-    render() {
-        return (React.createElement(Badge_1.default, Object.assign({ badgeContent: this.props.badgeContent, classes: Object.assign({}, this.props.style) }, this.props, { color: this.props.color }), this.props.children));
-    }
-}
-exports.default = Badge;
+// import * as React from 'react';
+// import { BadgeProperties } from '@blueeast/bluerain-ui-interfaces';
+// import BadgeUi from 'material-ui/Badge';
+// /**
+//  * The universal props of Badge Component
+//  * @param {Object} props.style Get the style object.
+//  * @param {ReactNode} props.badgeContent Content of the Badge.
+//  *  The specific libraray props of Badge Component
+//  * @param {enum} props.color The enum color of Badge.
+//  * @param {ReactNode} props.children the children on which the badge will append styles.
+//  */
+// export interface MUIBadgeProperties extends BadgeProperties {
+// 	color?: 'default' | 'primary' | 'accent';
+// 	children?: React.ReactNode;
+// }
+// class Badge extends React.Component<MUIBadgeProperties, {}> {
+// 	render() {
+// 		return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
+// 	}
+// }
+// export default Badge;
 //# sourceMappingURL=Badge.component.js.map

@@ -1,19 +1,33 @@
 "use strict";
-/**
- * Created by M.GhazanfarAli on 01/04/18.
- */
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Card_1 = require("material-ui/Card");
-const BlueRainCardFooter = (props) => {
-    return (React.createElement(Card_1.CardActions, Object.assign({}, props), props.children));
-};
-exports.default = BlueRainCardFooter;
+// /**
+//  * Created by M.GhazanfarAli on 01/04/18.
+//  */
+// import * as React from 'react';
+// import { CardActions } from 'material-ui/Card';
+// import { CardFooterProperties } from '@blueeast/bluerain-ui-interfaces';
+// /**
+//  * The props of CardFooter Component
+//  * @param {Object} props.style style object for Card's style.
+//  * @param {Node} props.children tag with which the Component will be rendered.
+//  * @param {string} props.className className for styling component with css.
+//  */
+// /**
+//  * Platform specific props
+//  * @param {boolean} props.disableActionSpacing If true, the card actions do not have additional margin.
+//  * @param {Object} props.classes Useful to extend style for the component.
+//  */
+// export interface MUICardFooterProperties extends CardFooterProperties{
+// 	classes?: {},
+// 	disableActionSpacing?: boolean,
+// }
+// const BlueRainCardFooter: React.StatelessComponent<MUICardFooterProperties> = (props) => {
+// 	return (
+//         <CardActions
+//             {...props}
+//         >
+//         {props.children}
+//         </CardActions>
+// 	);
+// };
+// export default BlueRainCardFooter;
 //# sourceMappingURL=CardFooter.component.js.map

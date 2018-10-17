@@ -1,9 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Menu_component_1 = require("./Menu.component");
-exports.Menu = Menu_component_1.default;
-var MenuItem_component_1 = require("./MenuItem.component");
-exports.MenuItem = MenuItem_component_1.default;
-var MenuPopper_component_1 = require("./MenuPopper.component");
-exports.MenuPopper = MenuPopper_component_1.default;
+// export { default as Menu, MenuProperties }  from './Menu.component';
+// export { default as MenuItem, MenuItemProperties } from './MenuItem.component';
+// export { default as MenuPopper, MenuPopperProperties } from './MenuPopper.component';
 //# sourceMappingURL=index.js.map
