@@ -1,1 +1,1 @@
-export { default as Chip, MUIChipProperties } from './Chip.component';
+// export { default as Chip, MUIChipProperties } from './Chip.component';

@@ -1,1 +1,1 @@
-// export { default as Divider, MUIDividerProperties } from './Divider.component';
+export { default as Divider, MUIDividerProperties } from './Divider.component';

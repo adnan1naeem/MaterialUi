@@ -8,10 +8,11 @@ import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.inset if true, Divider is generated indented.
  */
 export interface MUIDividerProperties extends DividerProperties {
-    component?: React.ReactNode;
+    component?: string;
     inset?: boolean;
     absolute?: boolean;
     classes?: {};
+    light?: boolean;
 }
 declare const BlueRainDivider: React.StatelessComponent<MUIDividerProperties>;
 export default BlueRainDivider;
