@@ -11,7 +11,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const Button_1 = require("../../Button");
+const Button_1 = __importDefault(require("@material-ui/core/Button"));
 const react_1 = require("@storybook/react");
 const ModalFooter_Component_1 = __importDefault(require("../ModalFooter.Component"));
 const stories = react_1.storiesOf('Modal', module);
@@ -20,7 +20,7 @@ stories.add('ModalFooter', () => {
         alert('clicked');
     };
     return (React.createElement(ModalFooter_Component_1.default, null,
-        React.createElement(Button_1.Button, { onPress: Handler, color: "primary" }, "Agree"),
-        React.createElement(Button_1.Button, { onPress: Handler, color: "primary" }, "Disagree")));
+        React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Agree"),
+        React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Disagree")));
 });
 //# sourceMappingURL=ModalFooter.stories.js.map

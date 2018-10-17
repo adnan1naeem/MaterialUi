@@ -1,35 +1,73 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const material_ui_1 = require("material-ui");
-const material_ui_icons_1 = require("material-ui-icons");
-const List_1 = require("../../List");
-const react_1 = require("@storybook/react");
-react_1.storiesOf('List', module).add('List with style and raised props', () => (React.createElement(List_1.List, { style: { width: '100%', height: 300 }, className: "bg-main" }, "Raised")));
-react_1.storiesOf('List', module).add('List of MUI-1', () => (React.createElement(material_ui_1.Paper, null,
-    React.createElement(List_1.List, null,
-        React.createElement(List_1.ListItem, { active: true, avatar: React.createElement(material_ui_1.ListItemIcon, null,
-                React.createElement(material_ui_icons_1.Inbox, null)), primary: "Inbox" }),
-        React.createElement(List_1.ListItem, { active: true, avatar: React.createElement(material_ui_1.ListItemIcon, null,
-                React.createElement(material_ui_icons_1.Drafts, null)), primary: "Drafts" })),
-    React.createElement(material_ui_1.Divider, null),
-    React.createElement(List_1.ListItem, { active: true, primary: "Trash", inset: true }),
-    React.createElement(List_1.ListItem, { active: true, primary: "Spam", inset: true }))));
-react_1.storiesOf('List', module).add('List of MUI-2', () => (React.createElement(material_ui_1.Paper, null,
-    React.createElement(List_1.List, null,
-        React.createElement(List_1.ListItem, { active: true, avatar: React.createElement(material_ui_1.ListItemIcon, null,
-                React.createElement(material_ui_icons_1.Drafts, null)), primary: "Photos", secondary: "Sep 7 ,2018" }),
-        React.createElement(List_1.ListItem, { active: true, disabled: true, avatar: React.createElement(material_ui_1.ListItemIcon, null,
-                React.createElement(material_ui_icons_1.Drafts, null)), primary: "Work", secondary: "Sep 7 ,2018" })))));
-react_1.storiesOf('List', module).add('List of MUI-4', () => (React.createElement(material_ui_1.Paper, null,
-    React.createElement(List_1.List, { dense: true, subheader: React.createElement(List_1.ListSubheader, null, "Heading1") },
-        React.createElement(List_1.ListItem, { active: true, avatar: React.createElement(material_ui_1.ListItemIcon, null,
-                React.createElement(material_ui_icons_1.Drafts, null)), primary: "single-line item", secondary: "Secondary text", action: React.createElement(material_ui_icons_1.Drafts, null) })))));
+// import * as React from 'react';
+// import { Divider,ListItemIcon, Paper } from 'material-ui';
+// import { Drafts, Inbox  } from 'material-ui-icons';
+// import {
+//   List,
+//   ListSubheader,
+//   ListItem
+// } from '../../List';
+// import { storiesOf } from '@storybook/react';
+// storiesOf('List', module).add('List with style and raised props', () => (
+//   <List
+//     style={{ width: '100%', height: 300 }}
+//     className="bg-main"
+//   >
+//     Raised
+//   </List>));
+// storiesOf('List', module).add('List of MUI-1', () => (
+//   <Paper>
+//     <List>
+//     <ListItem
+// 			active={true}
+// 			avatar={<ListItemIcon><Inbox/></ListItemIcon>}
+// 			primary="Inbox"
+// 		/>
+//       <ListItem
+// 			active={true}
+// 			avatar={<ListItemIcon><Drafts/></ListItemIcon>}
+// 			primary="Drafts"
+// 		/>
+//     </List>
+//     <Divider />
+//       <ListItem
+// 			active={true}
+//       primary="Trash"
+//       inset={true}
+// 		/>
+//     <ListItem
+// 			active={true}
+//       primary="Spam"
+//       inset={true}
+// 		/>
+//   </Paper>));
+// storiesOf('List', module).add('List of MUI-2', () => (
+//   <Paper>
+//     <List>
+//     <ListItem
+// 			active={true}
+// 			avatar={<ListItemIcon><Drafts/></ListItemIcon>}
+// 			primary="Photos"
+// 			secondary="Sep 7 ,2018"
+// 		/>
+//     <ListItem
+//       active={true}
+//       disabled={true}
+// 			avatar={<ListItemIcon><Drafts/></ListItemIcon>}
+// 			primary="Work"
+// 			secondary="Sep 7 ,2018"
+// 		/>
+//     </List>
+//   </Paper>));
+// storiesOf('List', module).add('List of MUI-4', () => (
+//   <Paper>
+//     <List dense={true} subheader={<ListSubheader>Heading1</ListSubheader>}>
+//     <ListItem
+//       active={true}
+// 			avatar={<ListItemIcon><Drafts/></ListItemIcon>}
+//       primary="single-line item"
+//       secondary="Secondary text"
+// 		  action={<Drafts/>}		/>
+//     </List>
+//   </Paper>));
 //# sourceMappingURL=List.stories.js.map

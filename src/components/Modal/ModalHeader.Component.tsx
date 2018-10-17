@@ -1,13 +1,18 @@
-// import { DialogTitle } from 'material-ui/Dialog';
-// import { ModalHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
-// import React from 'react';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import { ModalHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
+import React from 'react';
 
-// const ModalHeader: React.StatelessComponent<ModalHeaderProperties> = (props) => {
+export interface ModalHeaderProps extends ModalHeaderProperties {
+  disableTypography?: boolean
 
-//   return(
-//       <DialogTitle>
-//         {props.children}
-//       </DialogTitle>
-//     );
-//   };
-// export default ModalHeader as React.ComponentType<any>;
+}
+
+const ModalHeader: React.StatelessComponent<ModalHeaderProps> = (props) => {
+
+  return (
+    <DialogTitle {...props}>
+      {props.children}
+    </DialogTitle>
+  );
+};
+export default ModalHeader as React.ComponentType<any>;

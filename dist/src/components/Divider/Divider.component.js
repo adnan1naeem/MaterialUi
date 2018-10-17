@@ -1,19 +1,24 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Divider_1 = __importDefault(require("material-ui/Divider"));
-const BlueRainDivider = (props) => {
-    return (React.createElement(Divider_1.default, Object.assign({}, props)));
-};
-exports.default = BlueRainDivider;
+// import * as React from 'react';
+// import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
+// import Divider from 'material-ui/Divider';
+// /**
+//  * The universal props of Divider Component
+//  * @param {ReactNode} props.light If true, Divider is generated with light color.
+//  *  The specific libraray props of Divider Component
+//  * @param {ReactNode} props.component component to generate Divider with.
+//  * @param {ReactNode} props.inset if true, Divider is generated indented.
+//  */
+// export interface MUIDividerProperties extends DividerProperties {
+// 	component?: React.ReactNode;
+// 	inset?: boolean;
+// 	absolute?: boolean;
+// 	classes?: {};
+// }
+// const BlueRainDivider: React.StatelessComponent<MUIDividerProperties> = (props) => {
+// 	return (
+//         <Divider {...props} />
+// 	);
+// };
+// export default BlueRainDivider;
 //# sourceMappingURL=Divider.component.js.map

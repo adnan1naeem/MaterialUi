@@ -11,4 +11,6 @@ const ModalFooter_Component_1 = __importDefault(require("./ModalFooter.Component
 exports.ModalFooter = ModalFooter_Component_1.default;
 const ModalHeader_Component_1 = __importDefault(require("./ModalHeader.Component"));
 exports.ModalHeader = ModalHeader_Component_1.default;
+const ModalBodyText_component_1 = __importDefault(require("./ModalBodyText.component"));
+exports.ModalBodyText = ModalBodyText_component_1.default;
 //# sourceMappingURL=index.js.map

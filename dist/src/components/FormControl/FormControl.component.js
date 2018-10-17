@@ -1,16 +1,27 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Form_1 = require("material-ui/Form");
-const BlueRainFormControl = (props) => {
-    return (React.createElement(Form_1.FormControl, Object.assign({}, props)));
-};
-exports.default = BlueRainFormControl;
+// import * as React from 'react';
+// import { FormControl } from 'material-ui/Form';
+// import { FormControlProperties } from '@blueeast/bluerain-ui-interfaces';
+// /**
+//  * The props of FormControl Component
+//  * @param {Node} props.children Children of FormControl component.
+//  * @param {Object} props.style style object for FormControl's style.
+//  * @param {Object} props.component component to generate FormControl component with.
+//  * @param {Object} props.className className for FormControl's extended style.
+//  */
+// export interface MUIFormControlProperties extends FormControlProperties {
+// 	classes?: {},
+// 	disabled?: boolean,
+// 	error?: boolean,
+// 	fullWidth?: boolean,
+// 	margin?: 'none' | 'dense' | 'normal',
+// 	required?: boolean,
+// 	component?: string,
+// }
+// const BlueRainFormControl: React.StatelessComponent<MUIFormControlProperties> = (props) => {
+// 	return (
+//         <FormControl {...props} />
+// 	);
+// };
+// export default BlueRainFormControl;
 //# sourceMappingURL=FormControl.component.js.map
