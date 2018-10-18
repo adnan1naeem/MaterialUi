@@ -3,7 +3,7 @@
 exports[`It should return true when drawer is close.  1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <WithStyles(MUIDrawer)
     anchor="right"
     open={false}
 />,
@@ -20,10 +20,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": [Function],
+      "anchor": "right",
+      "classes": Object {
+        "paparBorder": "MUIDrawer-paparBorder-1",
+      },
+      "open": false,
     },
     "ref": null,
-    "rendered": [Function],
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -32,10 +36,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": [Function],
+        "anchor": "right",
+        "classes": Object {
+          "paparBorder": "MUIDrawer-paparBorder-1",
+        },
+        "open": false,
       },
       "ref": null,
-      "rendered": [Function],
+      "rendered": null,
       "type": [Function],
     },
   ],
