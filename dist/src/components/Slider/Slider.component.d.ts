@@ -7,7 +7,7 @@ import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.component component to generate Divider with.
  * @param {ReactNode} props.inset if true, Divider is generated indented.
  */
-export interface MUIDividerProperties extends SliderProperties {
+export interface MUISliderProperties extends SliderProperties {
     classes?: object;
     max?: number;
     min?: number;
@@ -17,7 +17,8 @@ export interface MUIDividerProperties extends SliderProperties {
     step?: number;
     thumb?: Node;
     value?: number;
-    vertcal?: boolean;
+    vertical?: boolean;
+    defaultValue?: any;
 }
-declare const BlueRainSlider: React.StatelessComponent<MUIDividerProperties>;
+declare const BlueRainSlider: React.StatelessComponent<MUISliderProperties>;
 export default BlueRainSlider;

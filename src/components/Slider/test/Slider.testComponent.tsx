@@ -35,7 +35,7 @@ class SimpleSlider extends React.Component<any, any> {
         <Slider
           min={0}
           max={100}
-
+          defaultValue={6}
           value={value}
           aria-labelledby="label"
           onChange={this.handleChange}

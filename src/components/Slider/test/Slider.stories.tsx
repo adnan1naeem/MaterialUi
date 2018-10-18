@@ -6,13 +6,13 @@ import Typography from '@material-ui/core/Typography';
 
 storiesOf('Slider', module).addDecorator(withKnobs)
   .add('SliderComponent', () =>
-    <Slider />);
+    <Slider defaultValue={'6'} />);
 storiesOf('Slider', module).addDecorator(withKnobs)
   .add('SliderComponent disabled', () =>
-    <Slider disabled={true} />);
+    <Slider defaultValue={'6'} disabled={true} />);
 
 
 storiesOf('Slider', module).addDecorator(withKnobs)
   .add('SliderComponent vertical', () =>
-    <Slider vertical={true} />);
+    <Slider vertical={true} defaultValue={'6'} />);
 
