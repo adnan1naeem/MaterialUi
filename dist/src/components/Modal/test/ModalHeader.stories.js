@@ -13,8 +13,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const react_1 = require("@storybook/react");
 const ModalHeader_Component_1 = __importDefault(require("../ModalHeader.Component"));
-const stories = react_1.storiesOf('Modal', module);
-stories.add('ModalHeader', () => {
+const stories = react_1.storiesOf('ModalHeader', module);
+stories.add('ModalHeader taking text as children prop', () => {
     return (React.createElement(ModalHeader_Component_1.default, null, "UserLocation Service"));
+});
+stories.add('ModalHeader  disableTypography prop', () => {
+    return (React.createElement(ModalHeader_Component_1.default, { disableTypography: true }, "UserLocation Service"));
 });
 //# sourceMappingURL=ModalHeader.stories.js.map

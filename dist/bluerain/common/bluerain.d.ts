@@ -1,5 +1,5 @@
 declare const _default: {
-    apps: any[];
+    apps: never[];
     platform: any[];
     plugins: any[];
 };

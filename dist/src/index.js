@@ -9,17 +9,7 @@ const bluerain_os_1 = require("@blueeast/bluerain-os");
 // 	ListItemIconProperties,
 // 	ListItemRightButtonProperties
 // } from '@blueeast/bluerain-ui-interfaces';
-// import {
-// 	Card,
-// 	CardBody,
-// 	CardFooter,
-// 	CardHeader,
-// 	CardMedia,
-// 	MUICardBodyProperties,
-// 	MUICardFooterProperties,
-// 	MUICardHeaderProperties,
-// 	MUICardProperties
-// } from './components/Card';
+const Card_1 = require("./components/Card");
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 // import { Divider, MUIDividerProperties } from './components/Divider';
@@ -35,7 +25,7 @@ const bluerain_os_1 = require("@blueeast/bluerain-os");
 // } from './components/List';
 // import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
+const Menu_1 = require("./components/Menu");
 const Modal_1 = require("./components/Modal");
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
@@ -71,18 +61,22 @@ MaterialUiPlugin.components = {
     // Avatar,
     // Badge,
     // Button,
-    // Card,
-    // CardHeader,
-    // CardBody,
-    // CardMedia,
-    // CardFooter,
+    Card: Card_1.Card,
+    CardHeader: Card_1.CardHeader,
+    CardBody: Card_1.CardBody,
+    CardMedia: Card_1.CardMedia,
+    CardFooter: Card_1.CardFooter,
+    CardActionArea: Card_1.CardActionArea,
+    CardAction: Card_1.CardAction,
     // Chip,
     // Checkbox,
     // ColorPicker,
     // Divider,
     // Drawer,
-    // Menu,
-    // MenuItem,
+    Menu: Menu_1.Menu,
+    MenuItem: Menu_1.MenuItem,
+    MenuList: Menu_1.MenuList,
+    MenuPopper: Menu_1.MenuPopper,
     Modal: Modal_1.Modal,
     ModalHeader: Modal_1.ModalHeader,
     ModalBody: Modal_1.ModalBody,

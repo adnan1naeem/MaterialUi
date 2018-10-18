@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const DialogContentText_1 = __importDefault(require("@material-ui/core/DialogContentText"));
 const react_1 = __importDefault(require("react"));
 const ModalBodyText = (props) => {
-    return (react_1.default.createElement(DialogContentText_1.default, null, props.children));
+    return (react_1.default.createElement(DialogContentText_1.default, Object.assign({}, props), props.children));
 };
 exports.default = ModalBodyText;
 //# sourceMappingURL=ModalBodyText.component.js.map

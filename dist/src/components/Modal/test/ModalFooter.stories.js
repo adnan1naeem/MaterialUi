@@ -14,12 +14,17 @@ const React = __importStar(require("react"));
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
 const react_1 = require("@storybook/react");
 const ModalFooter_Component_1 = __importDefault(require("../ModalFooter.Component"));
-const stories = react_1.storiesOf('Modal', module);
-stories.add('ModalFooter', () => {
-    const Handler = () => {
-        alert('clicked');
-    };
+const stories = react_1.storiesOf('ModalFooter', module);
+const Handler = () => {
+    alert('clicked');
+};
+stories.add('ModalFooter taking as a children prop', () => {
     return (React.createElement(ModalFooter_Component_1.default, null,
+        React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Agree"),
+        React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Disagree")));
+});
+stories.add('ModalFooter  disableTypography prop', () => {
+    return (React.createElement(ModalFooter_Component_1.default, { disableTypography: true },
         React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Agree"),
         React.createElement(Button_1.default, { onClick: Handler, color: "primary" }, "Disagree")));
 });
