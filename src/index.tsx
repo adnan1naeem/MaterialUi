@@ -20,7 +20,8 @@ import {
 	MUICardBodyProperties,
 	MUICardFooterProperties,
 	MUICardHeaderProperties,
-	MUICardProperties
+	MUICardProperties,
+	ActionProperties
 } from './components/Card';
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';

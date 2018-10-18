@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Plugin } from '@blueeast/bluerain-os';
-import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
+import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
 import { MenuItemProperties, MenuProperties, MenuPopperprops } from './components/Menu';
 /**
  * Material UI Plugin
@@ -16,8 +16,8 @@ declare class MaterialUiPlugin extends Plugin {
         CardBody: React.StatelessComponent<MUICardBodyProperties>;
         CardMedia: React.StatelessComponent<import("@blueeast/bluerain-ui-interfaces/src/components/Card").CardMediaProperties>;
         CardFooter: React.StatelessComponent<MUICardFooterProperties>;
-        CardActionArea: React.StatelessComponent<import("src/components/Card/CardActionArea.component").MUICardBodyProperties>;
-        CardAction: React.StatelessComponent<import("src/components/Card/CardAction.component").MUICardBodyProperties>;
+        CardActionArea: React.StatelessComponent<{}>;
+        CardAction: React.StatelessComponent<ActionProperties>;
         Menu: React.StatelessComponent<MenuProperties & {
             open: boolean;
         }>;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { CardBodyProperties } from '@blueeast/bluerain-ui-interfaces';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
 /**
@@ -14,12 +13,10 @@ import CardActionArea from '@material-ui/core/CardActionArea';
  * @param {Object} props.classes Usefull to extend the style for CardBody component.
  */
 
-export interface MUICardBodyProperties extends CardBodyProperties {
-  classes?: {};
-}
 
-const BlueRainCardActionArea: React.StatelessComponent<MUICardBodyProperties> = props => {
+const BlueRainCardActionArea: React.StatelessComponent = props => {
   return <CardActionArea {...props}>{props.children}</CardActionArea>;
 };
 
 export default BlueRainCardActionArea;
+
