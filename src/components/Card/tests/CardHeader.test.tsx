@@ -32,13 +32,6 @@ test('CardHeader component with content props', () => {
 });
 
 
-test('CardHeader component with avatar props', () => {
-  const wrapper = shallow(
-    <CardHeader avatar="" />
-  );
-  expect(wrapper.props().content).toEqual('');
-});
-
 
 test('CardHeader component with avatar props', () => {
   const wrapper = shallow(
