@@ -1,5 +1,6 @@
-import Popper from '@material-ui/core/Popper';
+import MenuList from '@material-ui/core/MenuList';
 import React, { ReactNode } from 'react';
+import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of DropDown Component
@@ -17,24 +18,14 @@ import React, { ReactNode } from 'react';
  */
 
 
-export interface MenuPopperprops {
-  children?: ReactNode,
-  open: boolean,
-  anchorEl?: any,
-  container?: any,
-  disablePortal?: boolean,
-  keepMounted?: boolean,
-  modifiers?: object,
-  placement?: 'bottom-end' | 'bottom-start' | 'bottom' | 'left-end' | 'left-start' | 'left' | 'right-end' | 'right-start' | 'right' | 'top-end' | 'top-start' | 'top'
-  popperOptions?: object,
-  transition?: boolean
-
+export interface MenuListprops {
+  children?: ReactNode
 }
 
-const BRMenuPopper: React.StatelessComponent<MenuPopperprops> = (props) => (
-  <Popper {...props}>
+const BRMenuList: React.StatelessComponent<MenuListprops> = (props) => (
+  <MenuList>
     {props.children}
-  </Popper>
+  </MenuList>
 );
 
-export default BRMenuPopper;
+export default BRMenuList;

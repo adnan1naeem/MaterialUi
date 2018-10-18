@@ -35,7 +35,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // } from './components/List';
 // import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
+import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
@@ -84,8 +84,10 @@ class MaterialUiPlugin extends Plugin {
 		// ColorPicker,
 		// Divider,
 		// Drawer,
-		// Menu,
-		// MenuItem,
+		Menu,
+		MenuItem,
+		MenuList,
+		MenuPopper,
 		Modal,
 		ModalHeader,
 		ModalBody,

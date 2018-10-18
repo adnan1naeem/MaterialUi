@@ -1,6 +1,4 @@
-import Popper from '@material-ui/core/Popper';
 import React, { ReactNode } from 'react';
-
 /**
  * The props of DropDown Component
  * @param {boolean} props.autoWidth for Auto width.
@@ -15,26 +13,8 @@ import React, { ReactNode } from 'react';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-
-
-export interface MenuPopperprops {
-  children?: ReactNode,
-  open: boolean,
-  anchorEl?: any,
-  container?: any,
-  disablePortal?: boolean,
-  keepMounted?: boolean,
-  modifiers?: object,
-  placement?: 'bottom-end' | 'bottom-start' | 'bottom' | 'left-end' | 'left-start' | 'left' | 'right-end' | 'right-start' | 'right' | 'top-end' | 'top-start' | 'top'
-  popperOptions?: object,
-  transition?: boolean
-
+export interface MenuListprops {
+    children?: ReactNode;
 }
-
-const BRMenuPopper: React.StatelessComponent<MenuPopperprops> = (props) => (
-  <Popper {...props}>
-    {props.children}
-  </Popper>
-);
-
-export default BRMenuPopper;
+declare const BRMenuList: React.StatelessComponent<MenuListprops>;
+export default BRMenuList;
