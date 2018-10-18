@@ -1,1 +1,1 @@
-export  { default as Drawer, MUIDrawerProperties } from './Drawer.component';
+export  { default as Drawer , MUIDrawerProperties } from './Drawer.component';

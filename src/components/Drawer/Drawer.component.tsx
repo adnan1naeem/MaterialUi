@@ -27,7 +27,7 @@ const styles = (theme: any) => ({
 		border: 0,
 	}
 });
-const MUIDrawer: React.StatelessComponent<MUIDrawerProperties & { children?: React.ReactNode }> = (props) => {
+const MUIDrawer = (props: MUIDrawerProperties & { children?: React.ReactNode }) => {
 	const { side, tweenDuration, variant, ...others } = props;
 	return (
 		<Drawer
@@ -46,5 +46,5 @@ const MUIDrawer: React.StatelessComponent<MUIDrawerProperties & { children?: Rea
 	);
 };
 
-export default withStyles(styles)(MUIDrawer);
+export default withStyles(styles)(MUIDrawer) as React.StatelessComponent<any>;
 

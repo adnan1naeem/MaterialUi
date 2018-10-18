@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { DrawerProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -15,9 +16,5 @@ export interface MUIDrawerProperties extends DrawerProperties {
     classes?: any;
     elevation?: number;
 }
-declare const _default: React.ComponentType<Pick<MUIDrawerProperties & {
-    children?: React.ReactNode;
-} & {
-    children?: React.ReactNode;
-}, React.ReactText> & import("@material-ui/core/styles/withStyles").StyledComponentProps<"paparBorder">>;
+declare const _default: React.StatelessComponent<any>;
 export default _default;

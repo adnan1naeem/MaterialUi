@@ -23,7 +23,7 @@ const bluerain_os_1 = require("@blueeast/bluerain-os");
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 // import { Divider, MUIDividerProperties } from './components/Divider';
-// import { Drawer, MUIDrawerProperties } from './components/Drawer';
+const Drawer_1 = require("./components/Drawer");
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 // import {
@@ -67,51 +67,20 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
-// AppBar,
-// Avatar,
-// Badge,
-// Button,
-// Card,
-// CardHeader,
-// CardBody,
-// CardMedia,
-// CardFooter,
-// Chip,
-// Checkbox,
-// ColorPicker,
-// Divider,
-// Drawer,
-// Menu,
-// MenuItem,
-// Modal,
-// ModalHeader,
-// ModalBody,
-// ModalFooter,
-// 'DropDown': Dropdown,
-// 'DropDownItem': DropdownItem,
-// List,
-// ListSubheader,
-// ListItem,
-// Switch,
-// ScrollView,
-// // Slider,
-// Stepper,
-// Notification,
-// FormControl,
-// FormGroup,
-// TextInput,
-// H1,
-// H2,
-// H3,
-// H4,
-// H5,
-// H6,
-// Subtitle1,
-// Subtitle2,
-// Body1,
-// Body2,
-// Caption,
-// Overline,
+    // AppBar,
+    // Avatar,
+    // Badge,
+    // Button,
+    // Card,
+    // CardHeader,
+    // CardBody,
+    // CardMedia,
+    // CardFooter,
+    // Chip,
+    // Checkbox,
+    // ColorPicker,
+    // Divider,
+    Drawer: Drawer_1.Drawer,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
