@@ -59,7 +59,7 @@ import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './com
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
 
-// import Slider from './components/Slider';
+import { Slider } from './components/Slider';
 
 /**
  * Material UI Plugin
@@ -104,7 +104,7 @@ class MaterialUiPlugin extends Plugin {
 		// ListItem,
 		// Switch,
 		// ScrollView,
-		// // Slider,
+		Slider,
 		// Stepper,
 		// Notification,
 		// FormControl,

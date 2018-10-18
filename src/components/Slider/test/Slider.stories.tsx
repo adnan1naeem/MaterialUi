@@ -1,13 +1,18 @@
-// import * as React from 'react';
-// // import { boolean, withKnobs } from '@storybook/addon-knobs';
-// // import { Switch } from '../../Switch';
-// // import { action } from '@storybook/addon-actions';
+import * as React from 'react';
+import { text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import Slider from './Slider.testComponent';
+import Typography from '@material-ui/core/Typography';
 
-// import { storiesOf } from '@storybook/react';
+storiesOf('Slider', module).addDecorator(withKnobs)
+  .add('SliderComponent', () =>
+    <Slider />);
+storiesOf('Slider', module).addDecorator(withKnobs)
+  .add('SliderComponent disabled', () =>
+    <Slider disabled={true} />);
 
-// const stories = storiesOf('Slider', module);
 
-// stories.add('Switch (with knobs)', () => {
+storiesOf('Slider', module).addDecorator(withKnobs)
+  .add('SliderComponent vertical', () =>
+    <Slider vertical={true} />);
 
-// 	return ();
-// });
