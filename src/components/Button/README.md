@@ -43,7 +43,6 @@ Buttons allow users to take actions, and make choices, with a single tap.
 ```JavaScript
 import React from 'react';
 import Button from  'bluerain-plugin-bootstrap-ui/Button';
-
 const buttonSample = () => (
        <Button fullWidth color='primary'>Click me!</Button>
 );
