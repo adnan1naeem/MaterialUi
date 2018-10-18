@@ -34,7 +34,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // 	MUIListProperties
 // } from './components/List';
 // import { MUISwitchProperties, Switch } from './components/Switch';
-// import { MUITextInputProperties, TextInput } from './components/TextInput';
+import { MUITextInputProperties, TextInput } from './components/TextInput';
 // import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 // import { Avatar } from './components/Avatar';
@@ -102,7 +102,7 @@ class MaterialUiPlugin extends Plugin {
 		// Notification,
 		// FormControl,
 		// FormGroup,
-		// TextInput,
+		TextInput,
 		// H1,
 		// H2,
 		// H3,

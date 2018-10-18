@@ -1,5 +1,3 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Switch_component_1 = require("./Switch.component");
-exports.Switch = Switch_component_1.default;
+// export { default as Switch, MUISwitchProperties } from './Switch.component';
 //# sourceMappingURL=index.js.map

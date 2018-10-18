@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
-const TextField_1 = __importDefault(require("material-ui/TextField"));
+const TextField_1 = __importDefault(require("@material-ui/core/TextField"));
 const customOnChange = (props) => (event) => {
     if (props.onChange) {
         props.onChange(event);
@@ -23,15 +23,13 @@ const customOnChange = (props) => (event) => {
     }
 };
 const BlueRainTextInput = (rawProps) => {
-    const { onChangeText, secureTextEntry, keyboardType } = rawProps, props = __rest(rawProps, ["onChangeText", "secureTextEntry", "keyboardType"]);
+    const { onChangeText, secureTextEntry, keyboardType, variant } = rawProps, props = __rest(rawProps, ["onChangeText", "secureTextEntry", "keyboardType", "variant"]);
     let disabled = false;
     if (props.editable !== undefined && !props.editable) {
         disabled = true;
     }
-    // const label = (props.placeholder && props.label) ? props.placeholder : props.label;
-    const label = props.placeholder ? props.placeholder : props.label;
-    console.log('Label', label);
-    return (react_1.default.createElement(TextField_1.default, Object.assign({}, props, { type: props.secureTextEntry ? 'password' : props.type, style: props.style, type: secureTextEntry ? 'password' : 'text', placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : () => { return null; }, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue })));
+    // const label = props.placeholder ? props.placeholder : props.label;
+    return (react_1.default.createElement(TextField_1.default, Object.assign({}, props, { type: props.secureTextEntry ? 'password' : props.type, style: props.style, placeholder: props.placeholder, autoFocus: props.autoFocus, onChange: (props.onChange || onChangeText) ? customOnChange(rawProps) : undefined, rows: props.numberOfLines, disabled: disabled, helperText: props.errorText, defaultValue: props.defaultValue, variant: variant })));
 };
 exports.default = BlueRainTextInput;
 //# sourceMappingURL=TextInput.component.js.map
