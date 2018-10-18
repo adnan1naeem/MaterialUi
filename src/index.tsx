@@ -38,7 +38,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 // import { Avatar } from './components/Avatar';
-// import { Badge } from './components/Badge';
+import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
@@ -72,7 +72,7 @@ class MaterialUiPlugin extends Plugin {
 
 		// AppBar,
 		// Avatar,
-		// Badge,
+		Badge,
 		// Button,
 		// Card,
 		// CardHeader,

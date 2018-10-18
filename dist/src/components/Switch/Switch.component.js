@@ -1,19 +1,33 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Switch_1 = __importDefault(require("material-ui/Switch"));
-const BlueRainSwitch = (props) => {
-    return (React.createElement(Switch_1.default, Object.assign({}, props, { checked: props.value, value: props.muValue, onChange: props.onValueChange })));
-};
-exports.default = BlueRainSwitch;
+// import * as React from 'react';
+// import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
+// import Switch from 'material-ui/Switch';
+// /**
+//  * The universal props of Avatar Component
+//  * @param {boolean} props.disabled if true, switch is rendered in disabled form.
+//  * @param {boolean} props.value value of the switch.
+//  * @param {function} props.onValueChange Invoked with the new value when the value changes.
+//  * @param {Object} props.style Style object for switch component.
+//  *  The specific libraray props of Badge Component
+//  * @param {string or boolean} props.checked Keeps the value unchanged.
+//  * @param {Object} props.classes the children on which the switch will append styles.
+//  * @param {Object} props.onChange  Invoked with the new value when the value changes.
+//  */
+// export interface MUISwitchProperties extends SwitchProperties {
+// 	// checked?: string | undefined | boolean,
+// 	muValue?: string,
+// 	classes?: {},
+// 	onChange?: () => void,
+// }
+// const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
+// 	return (
+// 		<Switch
+// 			{...props}
+// 			checked={props.value}
+// 			value={props.muValue}
+// 			onChange={props.onValueChange}
+// 		/>
+// 	);
+// };
+// export default BlueRainSwitch;
 //# sourceMappingURL=Switch.component.js.map

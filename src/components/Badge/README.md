@@ -25,7 +25,8 @@
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| color | string |  | The color of the Badge. |
+| color | enum:default , primary ,secondary,error  | default | The color of the Badge. |
+| children | ReactNode |  | The children the Badge. |
 
 ## How to use
 
@@ -35,7 +36,7 @@ import BR from '@blueeast/bluerain-os';
 
 const BadgeSample = (props) => (
     const Badge = BR.Components.get('Badge');
-    return <Badge badgeContent = {'786'} color = {'primary'}/>;
+    return <Badge badgeContent = {786} color = {'primary'}/>;
 
 export default BadgeSample;
 ```

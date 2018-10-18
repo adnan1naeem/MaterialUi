@@ -9,7 +9,7 @@ import { BadgeProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.children the children on which the badge will append styles.
  */
 export interface MUIBadgeProperties extends BadgeProperties {
-    color?: 'default' | 'primary' | 'accent';
+    color?: 'default' | 'primary' | 'secondary' | 'error';
     children?: React.ReactNode;
 }
 declare class Badge extends React.Component<MUIBadgeProperties, {}> {
