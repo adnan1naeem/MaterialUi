@@ -7,36 +7,51 @@ A Menu displays a list of choices on a temporary surface. They appear when users
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :----: | :---------: | :-------------: |
-|  ✔️       | ✖            |✖            |
+| ✔️     | ✖           | ✖               |
 
 ## Screenshots
 
-| 🌏 Web | 🖥 Electron | 📱 React Native |
-| :---: | :--------: | :------------: |
-|   ![web image](./screenshots/Menu.png)  |    TBD   |  TBD |
+| 🌏 Web                               | 🖥 Electron | 📱 React Native |
+| :----------------------------------: | :---------: | :-------------: |
+| ![web image](./screenshots/Menu.png) | TBD         | TBD             |
 
-## Universal Props
+## Menu Universal Props
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| style | Object | | style object for Menu Component. |
-| children | ReactNode | | Children of Menu component. |
+| Name     | Type      | Default | Description                      |
+| :------- | :-------- | :------ | :------------------------------- |
+| style    | Object    |         | style object for Menu Component. |
+| children | ReactNode |         | Children of Menu component.      |
 
 ## MenuItem
 
 ## MenuItem Universal Props
 
-| Name     | Type   | Default | Description                 |
-| :------- | :----- | :------ | :-------------------------- |
-| disabled    | bool |         | disabled the MenuItem Component.      |
-| value | string   |         | key value of of MenuItem Component. |
+| Name     | Type   | Default | Description                         |
+| :------- | :----- | :------ | :---------------------------------- |
+| disabled | bool   |         | disabled the MenuItem Component.    |
+| value    | string |         | key value of of MenuItem Component. |
 
 ## MenuItem Specific Library Props
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| classes | object |  | classes to extend styling of MenuItem component. |
-| children | ReactNode |  | Children of MenuItem component. |
+| Name     | Type      | Default | Description                                      |
+| :------- | :-------- | :------ | :----------------------------------------------- |
+| classes  | object    |         | classes to extend styling of MenuItem component. |
+| children | ReactNode |         | Children of MenuItem component.                  |
+
+## MenuList Specific Library Props
+
+| Name     | Type      | Default | Description                                      |
+| :------- | :-------- | :------ | :----------------------------------------------- |
+| classes  | object    |         | classes to extend styling of MenuItem component. |
+| children | ReactNode |         | Children of MenuItem component.                  |
+| open     | boolean   |         | used to open Popper.                             |
+
+## MenuPopper Specific Library Props
+
+| Name     | Type      | Default | Description                                      |
+| :------- | :-------- | :------ | :----------------------------------------------- |
+| classes  | object    |         | classes to extend styling of MenuItem component. |
+| children | ReactNode |         | Children of MenuItem component.                  | open | boolean |  | used to open Popper. |
 
 ## How to use
 

@@ -11,30 +11,30 @@ ShallowWrapper {
         Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
     </ModalBody>
     <ModalFooter>
-        <Unknown
+        <WithStyles(Button)
             color="primary"
-            onPress={[Function]}
+            onClick={[Function]}
         >
             Disagree
-        </Unknown>
-        <Unknown
+        </WithStyles(Button)>
+        <WithStyles(Button)
             color="primary"
-            onPress={[Function]}
+            onClick={[Function]}
         >
             Agree
-        </Unknown>
-        <Unknown
+        </WithStyles(Button)>
+        <WithStyles(Button)
             color="primary"
-            onPress={[Function]}
+            onClick={[Function]}
         >
             Disagree
-        </Unknown>
-        <Unknown
+        </WithStyles(Button)>
+        <WithStyles(Button)
             color="primary"
-            onPress={[Function]}
+            onClick={[Function]}
         >
             Agree
-        </Unknown>
+        </WithStyles(Button)>
     </ModalFooter>
 </Modal>,
   Symbol(enzyme.__renderer__): Object {
@@ -58,30 +58,30 @@ ShallowWrapper {
           Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
 </ModalBody>,
         <ModalFooter>
-          <Unknown
+          <WithStyles(Button)
                     color="primary"
-                    onPress={[Function]}
+                    onClick={[Function]}
           >
                     Disagree
-          </Unknown>
-          <Unknown
+          </WithStyles(Button)>
+          <WithStyles(Button)
                     color="primary"
-                    onPress={[Function]}
+                    onClick={[Function]}
           >
                     Agree
-          </Unknown>
-          <Unknown
+          </WithStyles(Button)>
+          <WithStyles(Button)
                     color="primary"
-                    onPress={[Function]}
+                    onClick={[Function]}
           >
                     Disagree
-          </Unknown>
-          <Unknown
+          </WithStyles(Button)>
+          <WithStyles(Button)
                     color="primary"
-                    onPress={[Function]}
+                    onClick={[Function]}
           >
                     Agree
-          </Unknown>
+          </WithStyles(Button)>
 </ModalFooter>,
       ],
       "onClose": undefined,
@@ -118,30 +118,30 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <Unknown
+            <WithStyles(Button)
               color="primary"
-              onPress={[Function]}
+              onClick={[Function]}
 >
               Disagree
-</Unknown>,
-            <Unknown
+</WithStyles(Button)>,
+            <WithStyles(Button)
               color="primary"
-              onPress={[Function]}
+              onClick={[Function]}
 >
               Agree
-</Unknown>,
-            <Unknown
+</WithStyles(Button)>,
+            <WithStyles(Button)
               color="primary"
-              onPress={[Function]}
+              onClick={[Function]}
 >
               Disagree
-</Unknown>,
-            <Unknown
+</WithStyles(Button)>,
+            <WithStyles(Button)
               color="primary"
-              onPress={[Function]}
+              onClick={[Function]}
 >
               Agree
-</Unknown>,
+</WithStyles(Button)>,
           ],
         },
         "ref": null,
@@ -149,11 +149,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "children": "Disagree",
               "color": "primary",
-              "onPress": [Function],
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Disagree",
@@ -162,11 +162,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "children": "Agree",
               "color": "primary",
-              "onPress": [Function],
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Agree",
@@ -175,11 +175,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "children": "Disagree",
               "color": "primary",
-              "onPress": [Function],
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Disagree",
@@ -188,11 +188,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "children": "Agree",
               "color": "primary",
-              "onPress": [Function],
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Agree",
@@ -218,30 +218,30 @@ ShallowWrapper {
             Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
 </ModalBody>,
           <ModalFooter>
-            <Unknown
+            <WithStyles(Button)
                         color="primary"
-                        onPress={[Function]}
+                        onClick={[Function]}
             >
                         Disagree
-            </Unknown>
-            <Unknown
+            </WithStyles(Button)>
+            <WithStyles(Button)
                         color="primary"
-                        onPress={[Function]}
+                        onClick={[Function]}
             >
                         Agree
-            </Unknown>
-            <Unknown
+            </WithStyles(Button)>
+            <WithStyles(Button)
                         color="primary"
-                        onPress={[Function]}
+                        onClick={[Function]}
             >
                         Disagree
-            </Unknown>
-            <Unknown
+            </WithStyles(Button)>
+            <WithStyles(Button)
                         color="primary"
-                        onPress={[Function]}
+                        onClick={[Function]}
             >
                         Agree
-            </Unknown>
+            </WithStyles(Button)>
 </ModalFooter>,
         ],
         "onClose": undefined,
@@ -278,30 +278,30 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <Unknown
+              <WithStyles(Button)
                 color="primary"
-                onPress={[Function]}
+                onClick={[Function]}
 >
                 Disagree
-</Unknown>,
-              <Unknown
+</WithStyles(Button)>,
+              <WithStyles(Button)
                 color="primary"
-                onPress={[Function]}
+                onClick={[Function]}
 >
                 Agree
-</Unknown>,
-              <Unknown
+</WithStyles(Button)>,
+              <WithStyles(Button)
                 color="primary"
-                onPress={[Function]}
+                onClick={[Function]}
 >
                 Disagree
-</Unknown>,
-              <Unknown
+</WithStyles(Button)>,
+              <WithStyles(Button)
                 color="primary"
-                onPress={[Function]}
+                onClick={[Function]}
 >
                 Agree
-</Unknown>,
+</WithStyles(Button)>,
             ],
           },
           "ref": null,
@@ -309,11 +309,11 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "children": "Disagree",
                 "color": "primary",
-                "onPress": [Function],
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Disagree",
@@ -322,11 +322,11 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "children": "Agree",
                 "color": "primary",
-                "onPress": [Function],
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Agree",
@@ -335,11 +335,11 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "children": "Disagree",
                 "color": "primary",
-                "onPress": [Function],
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Disagree",
@@ -348,11 +348,398 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "children": "Agree",
                 "color": "primary",
-                "onPress": [Function],
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Agree",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`render correctly 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Modal>
+    <ModalHeader>
+        UserLocation Service
+    </ModalHeader>
+    <ModalBody>
+        Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </ModalBody>
+    <ModalFooter>
+        <WithStyles(Button)
+            color="primary"
+            onClick={[Function]}
+        >
+            Disagree
+        </WithStyles(Button)>
+        <WithStyles(Button)
+            color="primary"
+            onClick={[Function]}
+        >
+            Agree
+        </WithStyles(Button)>
+        <WithStyles(Button)
+            color="primary"
+            onClick={[Function]}
+        >
+            Disagree
+        </WithStyles(Button)>
+        <WithStyles(Button)
+            color="primary"
+            onClick={[Function]}
+        >
+            Agree
+        </WithStyles(Button)>
+    </ModalFooter>
+</Modal>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <ModalHeader>
+          UserLocation Service
+</ModalHeader>,
+        <ModalBody>
+          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+</ModalBody>,
+        <ModalFooter>
+          <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Disagree
+          </WithStyles(Button)>
+          <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Agree
+          </WithStyles(Button)>
+          <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Disagree
+          </WithStyles(Button)>
+          <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+          >
+                    Agree
+          </WithStyles(Button)>
+</ModalFooter>,
+      ],
+      "onClose": undefined,
+      "onEscapeKeyDown": undefined,
+      "open": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "UserLocation Service",
+        },
+        "ref": null,
+        "rendered": "UserLocation Service",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.",
+        },
+        "ref": null,
+        "rendered": "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Button)
+              color="primary"
+              onClick={[Function]}
+>
+              Disagree
+</WithStyles(Button)>,
+            <WithStyles(Button)
+              color="primary"
+              onClick={[Function]}
+>
+              Agree
+</WithStyles(Button)>,
+            <WithStyles(Button)
+              color="primary"
+              onClick={[Function]}
+>
+              Disagree
+</WithStyles(Button)>,
+            <WithStyles(Button)
+              color="primary"
+              onClick={[Function]}
+>
+              Agree
+</WithStyles(Button)>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Disagree",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Disagree",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Agree",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Agree",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Disagree",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Disagree",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Agree",
+              "color": "primary",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Agree",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <ModalHeader>
+            UserLocation Service
+</ModalHeader>,
+          <ModalBody>
+            Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+</ModalBody>,
+          <ModalFooter>
+            <WithStyles(Button)
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Disagree
+            </WithStyles(Button)>
+            <WithStyles(Button)
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Agree
+            </WithStyles(Button)>
+            <WithStyles(Button)
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Disagree
+            </WithStyles(Button)>
+            <WithStyles(Button)
+                        color="primary"
+                        onClick={[Function]}
+            >
+                        Agree
+            </WithStyles(Button)>
+</ModalFooter>,
+        ],
+        "onClose": undefined,
+        "onEscapeKeyDown": undefined,
+        "open": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "UserLocation Service",
+          },
+          "ref": null,
+          "rendered": "UserLocation Service",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.",
+          },
+          "ref": null,
+          "rendered": "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                color="primary"
+                onClick={[Function]}
+>
+                Disagree
+</WithStyles(Button)>,
+              <WithStyles(Button)
+                color="primary"
+                onClick={[Function]}
+>
+                Agree
+</WithStyles(Button)>,
+              <WithStyles(Button)
+                color="primary"
+                onClick={[Function]}
+>
+                Disagree
+</WithStyles(Button)>,
+              <WithStyles(Button)
+                color="primary"
+                onClick={[Function]}
+>
+                Agree
+</WithStyles(Button)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Disagree",
+                "color": "primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Disagree",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Agree",
+                "color": "primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Agree",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Disagree",
+                "color": "primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Disagree",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Agree",
+                "color": "primary",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Agree",

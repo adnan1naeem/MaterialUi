@@ -1,13 +1,12 @@
 "use strict";
-// import { DialogActions } from 'material-ui/Dialog';
-// import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
-// import React from 'react';
-// const ModalFooter: React.StatelessComponent<ModalFooterProperties> = (props) => {
-//   return(
-//     <DialogActions>
-//         {props.children}
-//     </DialogActions>
-//     );
-//   };
-//   export default ModalFooter as React.ComponentType<any>;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const DialogActions_1 = __importDefault(require("@material-ui/core/DialogActions"));
+const react_1 = __importDefault(require("react"));
+const ModalFooter = (props) => {
+    return (react_1.default.createElement(DialogActions_1.default, Object.assign({}, props), props.children));
+};
+exports.default = ModalFooter;
 //# sourceMappingURL=ModalFooter.Component.js.map

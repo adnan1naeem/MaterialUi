@@ -9,17 +9,19 @@ import { Plugin } from '@blueeast/bluerain-os';
 // 	ListItemIconProperties,
 // 	ListItemRightButtonProperties
 // } from '@blueeast/bluerain-ui-interfaces';
-// import {
-// 	Card,
-// 	CardBody,
-// 	CardFooter,
-// 	CardHeader,
-// 	CardMedia,
-// 	MUICardBodyProperties,
-// 	MUICardFooterProperties,
-// 	MUICardHeaderProperties,
-// 	MUICardProperties
-// } from './components/Card';
+import {
+	Card,
+	CardBody,
+	CardFooter,
+	CardHeader,
+	CardMedia,
+	CardActionArea,
+	CardAction,
+	MUICardBodyProperties,
+	MUICardFooterProperties,
+	MUICardHeaderProperties,
+	MUICardProperties
+} from './components/Card';
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 // import { Divider, MUIDividerProperties } from './components/Divider';
@@ -35,8 +37,8 @@ import { Plugin } from '@blueeast/bluerain-os';
 // } from './components/List';
 // import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
-// import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
+import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
+import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
@@ -74,22 +76,27 @@ class MaterialUiPlugin extends Plugin {
 		// Avatar,
 		// Badge,
 		// Button,
-		// Card,
-		// CardHeader,
-		// CardBody,
-		// CardMedia,
-		// CardFooter,
+		Card,
+		CardHeader,
+		CardBody,
+		CardMedia,
+		CardFooter,
+		CardActionArea,
+		CardAction,
 		// Chip,
 		// Checkbox,
 		// ColorPicker,
 		// Divider,
 		// Drawer,
-		// Menu,
-		// MenuItem,
-		// Modal,
-		// ModalHeader,
-		// ModalBody,
-		// ModalFooter,
+		Menu,
+		MenuItem,
+		MenuList,
+		MenuPopper,
+		Modal,
+		ModalHeader,
+		ModalBody,
+		ModalFooter,
+		ModalBodyText,
 		// 'DropDown': Dropdown,
 		// 'DropDownItem': DropdownItem,
 		// List,
