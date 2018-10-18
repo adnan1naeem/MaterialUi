@@ -38,6 +38,9 @@
     "react-dom": "16.3.1"
   },
   "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!transpile-me|transpile-me-too).+(js|jsx)$"
+    ],
     "moduleNameMapper": {
       "^@fooBar/(.*)": "<rootDir>/src/redux/"
     },

@@ -3,7 +3,7 @@ import { Menu, MenuItem } from '../index';
 import Button from '@material-ui/core/Button';
 import { storiesOf } from '@storybook/react';
 import FadeMenu from './MenuTest1.component';
-import MenuPopper from './MenuPopper.test.component';
+import MenuPopper from './MenuPopperSample.component';
 import Paper from '@material-ui/core/Paper';
 import React from 'react';
 
