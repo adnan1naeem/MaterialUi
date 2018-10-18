@@ -42,7 +42,6 @@ import { Plugin } from '@blueeast/bluerain-os';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
-// import { ScrollView, ScrollViewProperties } from './components/ScrollView';
 // import H1 from './components/H1/H1.component';
 // import H2 from './components/H2/H2.component';
 // import H3 from './components/H3/H3.component';
@@ -96,8 +95,7 @@ class MaterialUiPlugin extends Plugin {
 		// ListSubheader,
 		// ListItem,
 		// Switch,
-		// ScrollView,
-		// // Slider,
+		// Slider,
 		// Stepper,
 		// Notification,
 		// FormControl,
