@@ -1,25 +1,39 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const bluerain_os_1 = require("@blueeast/bluerain-os");
-const AppBar_1 = __importDefault(require("material-ui/AppBar"));
-const Toolbar_1 = __importDefault(require("material-ui/Toolbar"));
-const style_1 = require("./style");
-exports.BlueRainAppBar = (props) => (React.createElement(bluerain_os_1.BlueRainConsumer, null, (BR) => (React.createElement(AppBar_1.default, Object.assign({}, props, { style: props.style ? props.style : { position: 'sticky' } }),
-    React.createElement(Toolbar_1.default, null,
-        React.createElement(BR.Components.View, { style: style_1.style.container },
-            React.createElement(BR.Components.View, { style: style_1.style.titleContainer },
-                props.left,
-                React.createElement(BR.Components.Text, { style: style_1.style.title }, props.title)),
-            React.createElement(BR.Components.View, null, props.right)))))));
+// import * as React from 'react';
+// import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
+// import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
+// import AppBar from 'material-ui/AppBar';
+// import Toolbar from 'material-ui/Toolbar';
+// import BR from '@blueeast/bluerain-os';
+// import { style } from './style';
+// /**
+//  * An interface that extends the AppBarProperties interface
+//  *
+//  * @export MUIAppBarProperties
+//  * @interface MUIAppBarProperties
+//  * @extends {AppBarProperties}
+//  */
+// export interface MUIAppBarProperties extends AppBarProperties {
+// 	color?: 'inherit' | 'primary' | 'accent' | 'default' | undefined,
+// 	position?: 'static' | 'fixed' | 'absolute' | undefined
+// }
+// export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (props) => (
+// 	<BlueRainConsumer>
+// 		{(BR: BlueRain) => (
+// 			<AppBar {...props} style={props.style ? props.style : { position: 'sticky' }}>
+// 				<Toolbar>
+// 					<BR.Components.View style={style.container}>
+// 						<BR.Components.View style={style.titleContainer}>
+// 							{props.left}
+// 							<BR.Components.Text style={style.title}>{props.title}</BR.Components.Text>
+// 						</BR.Components.View>
+// 						<BR.Components.View >
+// 							{props.right}
+// 						</BR.Components.View>
+// 					</BR.Components.View>
+// 				</Toolbar>
+// 			</AppBar>
+// 		)}
+// 	</BlueRainConsumer>
+// );
 //# sourceMappingURL=AppBar.component.js.map

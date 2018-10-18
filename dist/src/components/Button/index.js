@@ -1,5 +1,3 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Button_component_1 = require("./Button.component");
-exports.Button = Button_component_1.BlueRainButton;
+// export { BlueRainButton as Button } from  './Button.component';
 //# sourceMappingURL=index.js.map

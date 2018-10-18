@@ -1,5 +1,3 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Stepper_components_1 = require("./Stepper.components");
-exports.Stepper = Stepper_components_1.Stepper;
+// export  { Stepper } from  './Stepper.components' ;
 //# sourceMappingURL=index.js.map

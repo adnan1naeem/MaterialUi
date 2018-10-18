@@ -1,11 +1,23 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
-const Snackbar_1 = __importDefault(require("material-ui/Snackbar"));
-exports.Notification = (props) => {
-    return (react_1.default.createElement(Snackbar_1.default, Object.assign({ message: props.text, autoHideDuration: props.duration }, props)));
-};
+// import { NotificationProperties }  from  '@blueeast/bluerain-ui-interfaces';
+// import React from 'react';
+// import Snackbar from 'material-ui/Snackbar';
+// export interface NotificationProps  extends NotificationProperties  {
+//   open: boolean;
+//   onClose: () => void;
+//   transition:any;
+//   SnackbarContentProps:any;
+//   message?: any;
+//   children?: any,
+//   position: any,
+//   action?: any;
+//   anchorOrigin?:object;
+//   autoHideDuration?: number;
+//   resumeHideDuration?: number;
+// }
+// export const Notification : React.StatelessComponent<any> = (props:NotificationProps) => {
+//   return (
+//   <Snackbar  message={props.text}  autoHideDuration={props.duration}   {...props} />
+//   );
+// };
 //# sourceMappingURL=Notification.Components.js.map
