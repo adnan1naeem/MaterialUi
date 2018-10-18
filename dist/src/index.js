@@ -37,7 +37,7 @@ const bluerain_os_1 = require("@blueeast/bluerain-os");
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 // import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
-// import { Avatar } from './components/Avatar';
+const Avatar_1 = require("./components/Avatar");
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
@@ -67,51 +67,8 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
-// AppBar,
-// Avatar,
-// Badge,
-// Button,
-// Card,
-// CardHeader,
-// CardBody,
-// CardMedia,
-// CardFooter,
-// Chip,
-// Checkbox,
-// ColorPicker,
-// Divider,
-// Drawer,
-// Menu,
-// MenuItem,
-// Modal,
-// ModalHeader,
-// ModalBody,
-// ModalFooter,
-// 'DropDown': Dropdown,
-// 'DropDownItem': DropdownItem,
-// List,
-// ListSubheader,
-// ListItem,
-// Switch,
-// ScrollView,
-// // Slider,
-// Stepper,
-// Notification,
-// FormControl,
-// FormGroup,
-// TextInput,
-// H1,
-// H2,
-// H3,
-// H4,
-// H5,
-// H6,
-// Subtitle1,
-// Subtitle2,
-// Body1,
-// Body2,
-// Caption,
-// Overline,
+    // AppBar,
+    Avatar: Avatar_1.Avatar,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
