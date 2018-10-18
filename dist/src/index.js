@@ -26,7 +26,7 @@ const Card_1 = require("./components/Card");
 // import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 const Menu_1 = require("./components/Menu");
-const Modal_1 = require("./components/Modal");
+// import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
@@ -77,11 +77,6 @@ MaterialUiPlugin.components = {
     MenuItem: Menu_1.MenuItem,
     MenuList: Menu_1.MenuList,
     MenuPopper: Menu_1.MenuPopper,
-    Modal: Modal_1.Modal,
-    ModalHeader: Modal_1.ModalHeader,
-    ModalBody: Modal_1.ModalBody,
-    ModalFooter: Modal_1.ModalFooter,
-    ModalBodyText: Modal_1.ModalBodyText,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

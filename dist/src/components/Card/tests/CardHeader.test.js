@@ -21,10 +21,6 @@ test('CardHeader component with content props', () => {
     expect(wrapper.props().content).toEqual('Card');
 });
 test('CardHeader component with avatar props', () => {
-    const wrapper = enzyme_1.shallow(react_1.default.createElement(_1.CardHeader, { avatar: "" }));
-    expect(wrapper.props().content).toEqual('');
-});
-test('CardHeader component with avatar props', () => {
     const wrapper = enzyme_1.shallow(react_1.default.createElement(_1.CardHeader, { title: "CardHeader" }));
     expect(wrapper.props().title).toEqual('CardHeader');
 });

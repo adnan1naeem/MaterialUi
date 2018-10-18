@@ -1,5 +1,5 @@
 
-import * as React from 'react';
+import React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
 // import {
@@ -38,7 +38,7 @@ import {
 // import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
-import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
+// import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
@@ -92,11 +92,11 @@ class MaterialUiPlugin extends Plugin {
 		MenuItem,
 		MenuList,
 		MenuPopper,
-		Modal,
-		ModalHeader,
-		ModalBody,
-		ModalFooter,
-		ModalBodyText,
+		// Modal,
+		// ModalHeader,
+		// ModalBody,
+		// ModalFooter,
+		// ModalBodyText,
 		// 'DropDown': Dropdown,
 		// 'DropDownItem': DropdownItem,
 		// List,

@@ -4,12 +4,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
+// import PropTypes from 'prop-types';
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
 const ClickAwayListener_1 = __importDefault(require("@material-ui/core/ClickAwayListener"));
 const Grow_1 = __importDefault(require("@material-ui/core/Grow"));
 const Paper_1 = __importDefault(require("@material-ui/core/Paper"));
 const Popper_1 = __importDefault(require("@material-ui/core/Popper"));
 const index_1 = require("../index");
+// import { withStyles } from '@material-ui/core/styles';
 const styles = (theme) => ({
     root: {
         display: 'flex',
@@ -31,7 +33,7 @@ class MenuListComposition extends react_1.default.Component {
             //  if (this.state.anchorEl.contains(event.target)) {
             return;
             //  }
-            this.setState({ open: false });
+            // this.setState({ open: false });
         };
     }
     render() {
@@ -46,7 +48,7 @@ class MenuListComposition extends react_1.default.Component {
             react_1.default.createElement("div", null,
                 react_1.default.createElement(Button_1.default, { buttonRef: node => {
                         // this.anchorEl = node;
-                    }, "aria-owns": open ? 'menu-list-grow' : null, "aria-haspopup": "true", onClick: this.handleToggle }, "Toggle Menu Grow"),
+                    }, "aria-haspopup": "true", onClick: this.handleToggle }, "Toggle Menu Grow"),
                 react_1.default.createElement(Popper_1.default, { open: open, transition: true, disablePortal: true }, ({ TransitionProps, placement }) => (react_1.default.createElement(Grow_1.default, Object.assign({}, TransitionProps, { 
                     //  id="menu-list-grow"
                     style: { transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' } }),

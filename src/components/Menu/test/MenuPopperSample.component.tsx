@@ -59,4 +59,4 @@ class SimplePopper extends React.Component<any, any>{
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default withStyles(styles)(SimplePopper);
+export default withStyles(styles)(SimplePopper) as any;

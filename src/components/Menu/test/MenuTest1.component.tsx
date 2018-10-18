@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import { MenuList, MenuItem } from '../index';
-import { withStyles } from '@material-ui/core/styles';
+// import { withStyles } from '@material-ui/core/styles';
 
 const styles = (theme: any) => ({
   root: {
@@ -32,7 +32,7 @@ class MenuListComposition extends React.Component<any, any> {
     return;
     //  }
 
-    this.setState({ open: false });
+    // this.setState({ open: false });
   }
 
   render() {
@@ -53,7 +53,7 @@ class MenuListComposition extends React.Component<any, any> {
             buttonRef={node => {
               // this.anchorEl = node;
             }}
-            aria-owns={open ? 'menu-list-grow' : null}
+           // aria-owns={open ? 'menu-list-grow' : null}
             aria-haspopup="true"
             onClick={this.handleToggle}
           >

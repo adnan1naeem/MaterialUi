@@ -1,6 +1,5 @@
 import MenuList from '@material-ui/core/MenuList';
 import React, { ReactNode } from 'react';
-import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of DropDown Component

@@ -2,7 +2,6 @@
 import React, { ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
 import Dialog from '@material-ui/core/Dialog';
-import Slide from '@material-ui/core/Slide';
 
 export interface MUIModalProperties extends ModalProperties {
   fullScreen?: boolean,
