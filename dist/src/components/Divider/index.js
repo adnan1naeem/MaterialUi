@@ -1,5 +1,3 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Divider_component_1 = require("./Divider.component");
-exports.Divider = Divider_component_1.default;
+// export { default as Divider, MUIDividerProperties } from './Divider.component';
 //# sourceMappingURL=index.js.map

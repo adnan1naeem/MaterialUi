@@ -1,12 +1,13 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const Dialog_1 = require("material-ui/Dialog");
-const react_1 = __importDefault(require("react"));
-const ModalHeader = (props) => {
-    return (react_1.default.createElement(Dialog_1.DialogTitle, null, props.children));
-};
-exports.default = ModalHeader;
+// import { DialogTitle } from 'material-ui/Dialog';
+// import { ModalHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
+// import React from 'react';
+// const ModalHeader: React.StatelessComponent<ModalHeaderProperties> = (props) => {
+//   return(
+//       <DialogTitle>
+//         {props.children}
+//       </DialogTitle>
+//     );
+//   };
+// export default ModalHeader as React.ComponentType<any>;
 //# sourceMappingURL=ModalHeader.Component.js.map

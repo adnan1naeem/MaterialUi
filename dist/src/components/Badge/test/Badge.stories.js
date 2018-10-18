@@ -1,22 +1,14 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const addon_knobs_1 = require("@storybook/addon-knobs");
-const Badge_1 = require("../../Badge");
-const react_1 = require("@storybook/react");
-const stories = react_1.storiesOf('Badge', module);
-stories.addDecorator(addon_knobs_1.withKnobs).add('Badge (with knobs)', () => {
-    const content = addon_knobs_1.text('content', 'abc');
-    return React.createElement(Badge_1.Badge, { badgeContent: content, color: "primary" });
-});
-stories.add('Badge (withOut knobs)', () => {
-    return React.createElement(Badge_1.Badge, { badgeContent: 123, color: 'accent' });
-});
+// import * as React from 'react';
+// import { text, withKnobs } from '@storybook/addon-knobs';
+// import { Badge } from '../../Badge';
+// import { storiesOf } from '@storybook/react';
+// const stories = storiesOf('Badge', module);
+// stories.addDecorator(withKnobs).add('Badge (with knobs)', () => {
+// 	const content = text('content', 'abc');
+// 	return <Badge badgeContent={content} color="primary"></Badge>;
+// });
+// stories.add('Badge (withOut knobs)', () => {
+// 	return <Badge badgeContent={123} color={'accent'}></Badge>;
+// });
 //# sourceMappingURL=Badge.stories.js.map

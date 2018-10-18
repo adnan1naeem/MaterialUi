@@ -14,7 +14,7 @@ ShallowWrapper {
             "width": 100,
           }
     }
-    variant="secondary"
+    variant="outlined"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,17 +30,18 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        null,
+        null,
         undefined,
-        undefined,
+        null,
       ],
-      "color": "default",
-      "dense": undefined,
+      "color": undefined,
       "disabled": undefined,
-      "fab": undefined,
+      "fullWidth": undefined,
       "href": undefined,
       "mini": undefined,
       "onClick": undefined,
-      "raised": true,
+      "size": undefined,
       "style": Object {
         "backgroundColor": "purple",
         "borderColor": "black",
@@ -49,11 +50,14 @@ ShallowWrapper {
         "marginLeft": 150,
         "width": 100,
       },
+      "variant": "outlined",
     },
     "ref": null,
     "rendered": Array [
+      null,
+      null,
       undefined,
-      undefined,
+      null,
     ],
     "type": [Function],
   },
@@ -64,17 +68,18 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          null,
+          null,
           undefined,
-          undefined,
+          null,
         ],
-        "color": "default",
-        "dense": undefined,
+        "color": undefined,
         "disabled": undefined,
-        "fab": undefined,
+        "fullWidth": undefined,
         "href": undefined,
         "mini": undefined,
         "onClick": undefined,
-        "raised": true,
+        "size": undefined,
         "style": Object {
           "backgroundColor": "purple",
           "borderColor": "black",
@@ -83,11 +88,14 @@ ShallowWrapper {
           "marginLeft": 150,
           "width": 100,
         },
+        "variant": "outlined",
       },
       "ref": null,
       "rendered": Array [
+        null,
+        null,
         undefined,
-        undefined,
+        null,
       ],
       "type": [Function],
     },
