@@ -9,17 +9,19 @@ import { Plugin } from '@blueeast/bluerain-os';
 // 	ListItemIconProperties,
 // 	ListItemRightButtonProperties
 // } from '@blueeast/bluerain-ui-interfaces';
-// import {
-// 	Card,
-// 	CardBody,
-// 	CardFooter,
-// 	CardHeader,
-// 	CardMedia,
-// 	MUICardBodyProperties,
-// 	MUICardFooterProperties,
-// 	MUICardHeaderProperties,
-// 	MUICardProperties
-// } from './components/Card';
+import {
+	Card,
+	CardBody,
+	CardFooter,
+	CardHeader,
+	CardMedia,
+	CardActionArea,
+	CardAction,
+	MUICardBodyProperties,
+	MUICardFooterProperties,
+	MUICardHeaderProperties,
+	MUICardProperties
+} from './components/Card';
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 // import { Divider, MUIDividerProperties } from './components/Divider';
@@ -74,11 +76,13 @@ class MaterialUiPlugin extends Plugin {
 		// Avatar,
 		// Badge,
 		// Button,
-		// Card,
-		// CardHeader,
-		// CardBody,
-		// CardMedia,
-		// CardFooter,
+		Card,
+		CardHeader,
+		CardBody,
+		CardMedia,
+		CardFooter,
+		CardActionArea,
+		CardAction,
 		// Chip,
 		// Checkbox,
 		// ColorPicker,

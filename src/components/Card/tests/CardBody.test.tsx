@@ -7,17 +7,17 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 
-test('Card component with children props', () => {
+test('CardBody component with children props', () => {
   const wrapper = shallow(
-    <Card><CardBody>Card</CardBody></Card>
+    <CardBody>Card</CardBody>
   );
   expect(wrapper.props().children).toBeDefined();
 });
 
 
-test('Card component with children props', () => {
+test('CardBody component with children props', () => {
   const wrapper = shallow(
-    <Card style={{ color: 'red' }} />
+    <CardBody style={{ color: 'red' }} />
   );
   expect(wrapper.props().style).toBeDefined();
 });

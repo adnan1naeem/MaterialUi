@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CardBodyProperties } from '@blueeast/bluerain-ui-interfaces';
-import CardContent from '@material-ui/core/CardContent';
+import CardAction from '@material-ui/core/CardActions';
 
 /**
  * The props of CardBody Component
@@ -18,8 +18,8 @@ export interface MUICardBodyProperties extends CardBodyProperties {
   classes?: {};
 }
 
-const BlueRainCardBody: React.StatelessComponent<MUICardBodyProperties> = props => {
-  return <CardContent {...props}>{props.children}</CardContent>;
+const BlueRainCardAction: React.StatelessComponent<MUICardBodyProperties> = props => {
+  return <CardAction {...props}>{props.children}</CardAction>;
 };
 
-export default BlueRainCardBody;
+export default BlueRainCardAction;

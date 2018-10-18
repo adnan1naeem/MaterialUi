@@ -62,9 +62,10 @@ Cards are surfaces that display content and actions on a single topic.
 | className | string |  | className for styling component with css. |
 | height | number | 200 | Height of the image to be given in 'px'. |
 
-## CardBody
+## CardAction Component
 
-## CardBody Universal Props
+
+## CardAction Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -72,13 +73,25 @@ Cards are surfaces that display content and actions on a single topic.
 | children | Node | | Children of CardBody component. |
 | className | string |  | className for styling component with css. |
 
+## CardActionArea Component
+
+## CardActionArea Universal Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| style | Object |  | style object for CardBody. |
+| children | Node | | Children of CardBody component. |
+| className | string |  | className for styling component with css. |
+
+## CardBody Component
+
 ## CardBody Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | classes | Object |  | Useful to extend the style applied to components. |
 
-## CardFooter
+## CardFooter Component
 
 ## CardFooter Universal Props
 
