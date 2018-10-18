@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-// import { AppBar, MUIAppBarProperties } from './components/AppBar';
+import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
 // import {
 // 	ButtonProperties,
@@ -70,7 +70,7 @@ class MaterialUiPlugin extends Plugin {
 	static slug = 'material-ui';
 	static components = {
 
-		// AppBar,
+		AppBar,
 		// Avatar,
 		// Badge,
 		// Button,

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// import { AppBar, MUIAppBarProperties } from './components/AppBar';
+const AppBar_1 = require("./components/AppBar");
 const bluerain_os_1 = require("@blueeast/bluerain-os");
 // import {
 // 	ButtonProperties,
@@ -67,51 +67,7 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
-// AppBar,
-// Avatar,
-// Badge,
-// Button,
-// Card,
-// CardHeader,
-// CardBody,
-// CardMedia,
-// CardFooter,
-// Chip,
-// Checkbox,
-// ColorPicker,
-// Divider,
-// Drawer,
-// Menu,
-// MenuItem,
-// Modal,
-// ModalHeader,
-// ModalBody,
-// ModalFooter,
-// 'DropDown': Dropdown,
-// 'DropDownItem': DropdownItem,
-// List,
-// ListSubheader,
-// ListItem,
-// Switch,
-// ScrollView,
-// // Slider,
-// Stepper,
-// Notification,
-// FormControl,
-// FormGroup,
-// TextInput,
-// H1,
-// H2,
-// H3,
-// H4,
-// H5,
-// H6,
-// Subtitle1,
-// Subtitle2,
-// Body1,
-// Body2,
-// Caption,
-// Overline,
+    AppBar: AppBar_1.AppBar,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

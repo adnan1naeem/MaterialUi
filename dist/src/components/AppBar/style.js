@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.style = {
+exports.styles = {
     container: {
         display: 'flex',
         flex: 1,

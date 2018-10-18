@@ -1,4 +1,4 @@
-export const style = {
+export const styles = {
   container: {
     display: 'flex',
     flex: 1,
