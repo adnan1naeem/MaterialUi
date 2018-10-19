@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 declare class MenuListComposition extends React.Component<any, any> {
     state: {

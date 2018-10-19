@@ -12,7 +12,7 @@ const bluerain_os_1 = require("@blueeast/bluerain-os");
 const Card_1 = require("./components/Card");
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
-// import { Divider, MUIDividerProperties } from './components/Divider';
+const Divider_1 = require("./components/Divider");
 // import { Drawer, MUIDrawerProperties } from './components/Drawer';
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
@@ -71,7 +71,7 @@ MaterialUiPlugin.components = {
     // Chip,
     // Checkbox,
     // ColorPicker,
-    // Divider,
+    Divider: Divider_1.Divider,
     // Drawer,
     Menu: Menu_1.Menu,
     MenuItem: Menu_1.MenuItem,
