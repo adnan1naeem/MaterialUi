@@ -1,16 +1,11 @@
 "use strict";
-// import { StepperProperties }  from  '@blueeast/bluerain-ui-interfaces';
-// import MobileStepper from 'material-ui/MobileStepper';
-// import React from 'react';
-// export interface StepperProps  extends StepperProperties {
-//   type:any;
-//   backButton:any;
-//   nextButton:any;
-//   position:'top'|'bottom'
-// }
-// export const Stepper : React.StatelessComponent<any> = (props:StepperProps) => {
-//   return (
-//         <MobileStepper   {...props} />
-// 	);
-// };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const MobileStepper_1 = __importDefault(require("@material-ui/core/MobileStepper"));
+const react_1 = __importDefault(require("react"));
+exports.Stepper = (props) => {
+    return (react_1.default.createElement(MobileStepper_1.default, Object.assign({}, props)));
+};
 //# sourceMappingURL=Stepper.components.js.map

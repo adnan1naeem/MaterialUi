@@ -31,6 +31,7 @@ declare class MaterialUiPlugin extends Plugin {
         ListItem: React.StatelessComponent<MUIListItemProperties>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
         Slider: any;
+        Stepper: React.StatelessComponent<any>;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
     };
 }

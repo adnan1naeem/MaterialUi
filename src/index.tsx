@@ -45,7 +45,8 @@ import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuLis
 import { Avatar } from './components/Avatar';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
-// import { Stepper } from './components/Stepper';
+import { Stepper } from './components/Stepper';
+// import { ScrollView, ScrollViewProperties } from './components/ScrollView';
 // import H1 from './components/H1/H1.component';
 // import H2 from './components/H2/H2.component';
 // import H3 from './components/H3/H3.component';
@@ -60,7 +61,7 @@ import { Avatar } from './components/Avatar';
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
 
- import { Slider } from './components/Slider';
+import { Slider } from './components/Slider';
 
 /**
  * Material UI Plugin
@@ -105,7 +106,7 @@ class MaterialUiPlugin extends Plugin {
 		ListItem,
 		Switch,
 		Slider,
-		// Stepper,
+		Stepper,
 		// Notification,
 		// FormControl,
 		// FormGroup,
