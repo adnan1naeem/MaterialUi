@@ -25,9 +25,15 @@ const Divider_1 = require("./components/Divider");
 // } from './components/List';
 const Switch_1 = require("./components/Switch");
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
+<<<<<<< HEAD
 const Menu_1 = require("./components/Menu");
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 // import { Avatar } from './components/Avatar';
+=======
+// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
+// import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
+const Avatar_1 = require("./components/Avatar");
+>>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
@@ -57,6 +63,7 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
+<<<<<<< HEAD
     AppBar: AppBar_1.AppBar,
     // Avatar,
     // Badge,
@@ -90,6 +97,10 @@ MaterialUiPlugin.components = {
     Switch: Switch_1.Switch,
     // ScrollView,
     Slider: Slider_1.Slider,
+=======
+    // AppBar,
+    Avatar: Avatar_1.Avatar,
+>>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
