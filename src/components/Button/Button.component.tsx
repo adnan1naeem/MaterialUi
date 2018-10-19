@@ -4,12 +4,13 @@ import Button from '@material-ui/core/Button';;
 
 export interface MuiButtonProperties extends ButtonProperties {
 
-  size:'small' |'medium' |'large',
+  size?:'small' |'medium' |'large';
 
 }
 
-export const BlueRainButton : React.StatelessComponent<ButtonProperties> = (props) => {	
-		return (
+export const BlueRainButton : React.StatelessComponent<MuiButtonProperties> = (props) => {	
+  
+   return (
             <Button
                 color={props.color}
                 style={props.style}

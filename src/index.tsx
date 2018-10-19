@@ -39,7 +39,7 @@ import { Plugin } from '@blueeast/bluerain-os';
 // import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 // import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
-import { Button } from './components/Button';
+import { Button ,MuiButtonProperties} from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
 // import { ScrollView, ScrollViewProperties } from './components/ScrollView';

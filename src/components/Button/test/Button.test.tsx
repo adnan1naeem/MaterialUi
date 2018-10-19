@@ -8,7 +8,7 @@ import { Button } from '../';
 configure({ adapter: new Adapter() });
 
 it('renders correctly', () => {
-    const tree = shallow(<Button variant="outlined" style={{ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' }} />);
+    const tree = shallow(<Button muiVariant="outlined" style={{ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' }} />);
     expect(tree).toMatchSnapshot();
 });
 test('if Button renders correctly ', () => {
@@ -20,21 +20,21 @@ test('Dark Button with label in Child should have child count > 0 ', () => {
     expect(wrapper.props().children).toBeDefined();
 });
 test('Secondary Button with style prop should be rendered correctly', () => {
-    const wrapper = shallow(<Button variant="contained" style={{ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' }} >Custom</Button>);
+    const wrapper = shallow(<Button muiVariant="contained" style={{ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' }} >Custom</Button>);
     expect(wrapper.props().style).toEqual({ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' });
 });
 
 test(' Warning Button with disabled prop true should properly render', () => {
-    const wrapper = shallow(<Button variant="contained" disabled={true} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}> Disabled</Button>);
+    const wrapper = shallow(<Button muiVariant="contained" disabled={true} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}> Disabled</Button>);
     expect(wrapper.props().disabled).toBeTruthy();
 });
 
 test(' Danger Button with onPress prop', () => {
-    const wrapper = shallow(<Button variant="contained" fullWidth={true} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}>FullWidth</Button>);
+    const wrapper = shallow(<Button muiVariant="contained" fullWidth={true} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}>FullWidth</Button>);
     expect(wrapper).toBeDefined();
 });
 test('Success Button with active prop true', () => {
-    const wrapper = shallow(<Button variant="contained" style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }} active={true}>Active</Button>);
+    const wrapper = shallow(<Button muiVariant="contained" style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }} active={true}>Active</Button>);
     expect(wrapper.props().active).toBeUndefined();
 });
 test(' Default Button with bordered prop true', () => {

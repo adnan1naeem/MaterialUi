@@ -4,6 +4,7 @@ exports[`renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    muiVariant="outlined"
     style={
         Object {
             "backgroundColor": "purple",
@@ -14,7 +15,6 @@ ShallowWrapper {
             "width": 100,
           }
     }
-    variant="outlined"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -50,7 +50,7 @@ ShallowWrapper {
         "marginLeft": 150,
         "width": 100,
       },
-      "variant": "outlined",
+      "variant": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -88,7 +88,7 @@ ShallowWrapper {
           "marginLeft": 150,
           "width": 100,
         },
-        "variant": "outlined",
+        "variant": undefined,
       },
       "ref": null,
       "rendered": Array [
