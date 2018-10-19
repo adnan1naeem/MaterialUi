@@ -31,7 +31,6 @@ const Avatar_1 = require("./components/Avatar");
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
-// import { ScrollView, ScrollViewProperties } from './components/ScrollView';
 // import H1 from './components/H1/H1.component';
 // import H2 from './components/H2/H2.component';
 // import H3 from './components/H3/H3.component';
@@ -56,6 +55,7 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
+<<<<<<< HEAD
     AppBar: AppBar_1.AppBar,
     Avatar: Avatar_1.Avatar,
     // Badge,
@@ -89,6 +89,52 @@ MaterialUiPlugin.components = {
     Switch: Switch_1.Switch,
     // ScrollView,
     Slider: Slider_1.Slider,
+=======
+// AppBar,
+// Avatar,
+// Badge,
+// Button,
+// Card,
+// CardHeader,
+// CardBody,
+// CardMedia,
+// CardFooter,
+// Chip,
+// Checkbox,
+// ColorPicker,
+// Divider,
+// Drawer,
+// Menu,
+// MenuItem,
+// Modal,
+// ModalHeader,
+// ModalBody,
+// ModalFooter,
+// 'DropDown': Dropdown,
+// 'DropDownItem': DropdownItem,
+// List,
+// ListSubheader,
+// ListItem,
+// Switch,
+// Slider,
+// Stepper,
+// Notification,
+// FormControl,
+// FormGroup,
+// TextInput,
+// H1,
+// H2,
+// H3,
+// H4,
+// H5,
+// H6,
+// Subtitle1,
+// Subtitle2,
+// Body1,
+// Body2,
+// Caption,
+// Overline,
+>>>>>>> a231d20ac49b05305b23afdd238c42bb47dd6948
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
