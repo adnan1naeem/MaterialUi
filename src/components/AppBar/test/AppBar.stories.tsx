@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { AppBar } from '../../AppBar';
 // import { Button } from '../../Button';
-import Button  from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
-// import { ArrowBack } from 'material-ui-icons';
-// import BR from '@blueeast/bluerain-os';
 
 const stories = storiesOf('AppBar', module);
 const AppBarStoriesStyle = {
@@ -38,11 +36,11 @@ stories.addDecorator(withKnobs).add('AppBar with primary color, position fixed a
 		</Button>}
 			title={text('Title', 'title')}
 			right={
-		<IconButton color="inherit">
-			<Badge badgeContent={17} color="secondary">
-				<NotificationsIcon />
-			</Badge>
-		</IconButton>}
+				<IconButton color="inherit">
+					<Badge badgeContent={17} color="secondary">
+						<NotificationsIcon />
+					</Badge>
+				</IconButton>}
 			position="fixed"
 			color="primary"
 			style={{ backgroundColor: 'red' }}>
@@ -53,7 +51,7 @@ stories.addDecorator(withKnobs).add('AppBar with primary color, position fixed a
 stories.add('AppBar with primary color and  position="absolute"', () => {
 	return (
 		<AppBar position="absolute" left={<Button style={AppBarStoriesStyle}>
-				<MenuIcon />
+			<MenuIcon />
 		</Button>} title={'Title'} right={<Button color="secondary">Login</Button>} color="primary" />
 
 	);
@@ -61,7 +59,7 @@ stories.add('AppBar with primary color and  position="absolute"', () => {
 stories.add('AppBar with positiion="sticky"', () => {
 	return (
 		<AppBar position="sticky" left={<Button style={AppBarStoriesStyle}>
-				<MenuIcon />
+			<MenuIcon />
 		</Button>} title={'Title'} right={<Button color="secondary">Login</Button>} color="primary" />
 
 	);

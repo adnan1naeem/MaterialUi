@@ -1,7 +1,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Switch } from '../';
+import Switch from '../Switch.component';
 import Adapter from 'enzyme-adapter-react-16';
 
 import { configure, mount, shallow, } from 'enzyme';

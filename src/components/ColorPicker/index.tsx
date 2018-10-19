@@ -1,1 +1,1 @@
-// export { ColorPicker, MUIProps as ColorPickerProperties } from './ColorPicker.component';
+export { ColorPicker, MUIProps as ColorPickerProperties } from './ColorPicker.component';

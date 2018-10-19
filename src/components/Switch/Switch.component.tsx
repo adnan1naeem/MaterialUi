@@ -24,7 +24,7 @@ export interface MUISwitchProperties extends SwitchProperties {
 	inputProps?: object,
 	inputRef?: () => void | object,
 	type?: string,
-	color?: 'primary' | 'secondary' |'default'
+	color?: 'primary' | 'secondary' | 'default'
 }
 
 const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
@@ -39,5 +39,4 @@ const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) =>
 		/>
 	);
 };
-
 export default BlueRainSwitch;

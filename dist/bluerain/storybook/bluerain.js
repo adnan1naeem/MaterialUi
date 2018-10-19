@@ -7,6 +7,7 @@ const bluerain_1 = __importDefault(require("../common/bluerain"));
 const deepmerge_1 = __importDefault(require("deepmerge"));
 // TODO: Only for evaluation, remove this
 const sample_1 = __importDefault(require("./sample"));
+const src_1 = __importDefault(require("../../src"));
 /**
  * Add your platform specific configs here.
  * We keep all the universal (cross platform) configs in
@@ -15,7 +16,8 @@ const sample_1 = __importDefault(require("./sample"));
 const bootOptions = {
     plugins: [
         // TODO: Only for evaluation, remove this
-        sample_1.default
+        sample_1.default,
+        src_1.default
     ],
     config: {
         wallpaper: {

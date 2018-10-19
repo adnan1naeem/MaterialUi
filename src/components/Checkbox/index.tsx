@@ -1,1 +1,1 @@
-// export { default } from './Checkbox.component';
+export { default as Checkbox, MUIProps } from './Checkbox.component';

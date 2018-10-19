@@ -20,8 +20,6 @@ const Menu_1 = __importDefault(require("@material-ui/icons/Menu"));
 const Notifications_1 = __importDefault(require("@material-ui/icons/Notifications"));
 const IconButton_1 = __importDefault(require("@material-ui/core/IconButton"));
 const Badge_1 = __importDefault(require("@material-ui/core/Badge"));
-// import { ArrowBack } from 'material-ui-icons';
-// import BR from '@blueeast/bluerain-os';
 const stories = react_1.storiesOf('AppBar', module);
 const AppBarStoriesStyle = {
     backgroundColor: 'transparent',
