@@ -4,13 +4,6 @@ import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
 import interfaces from '@blueeast/bluerain-ui-interfaces';
 
-// import {
-// 	ButtonProperties,
-// 	CardMediaProperties,
-// 	ListHeaderProperties,
-// 	ListItemIconProperties,
-// 	ListItemRightButtonProperties
-// } from '@blueeast/bluerain-ui-interfaces';
 import {
 	Card,
 	CardBody,
@@ -25,7 +18,7 @@ import {
 	MUICardProperties,
 	ActionProperties
 } from './components/Card';
-import { Chip, MUIChipProperties } from './components/Chip';
+import { Chip, ChipProperties } from './components/Chip';
 import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Badge } from './components/Badge';
 
@@ -45,7 +38,7 @@ import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 import { Avatar } from './components/Avatar';
-//import { Button } from './components/Button';
+// import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
 
@@ -76,10 +69,10 @@ class MaterialUiPlugin extends Plugin {
 	static slug = 'material-ui';
 	static components = {
 
-		// AppBar,
-		// Avatar,
+		AppBar,
+		Avatar,
 		Badge,
-		// Button,
+		//Button,
 		Card,
 		CardHeader,
 		CardBody,
@@ -87,22 +80,22 @@ class MaterialUiPlugin extends Plugin {
 		CardFooter,
 		CardActionArea,
 		CardAction,
-		// Chip,
-		// Checkbox,
-		// ColorPicker,
+		Chip,
+		Checkbox,
+		ColorPicker,
 		Divider,
-		// Drawer,
-		// Menu,
-		// MenuItem,
-		// MenuList,
-		// MenuPopper,
-		// Modal,
-		// ModalHeader,
-		// ModalBody,
-		// ModalFooter,
-		// ModalBodyText,
-		// 'DropDown': Dropdown,
-		// 'DropDownItem': DropdownItem,
+		Drawer,
+		Menu,
+		MenuItem,
+		MenuList,
+		MenuPopper,
+		Modal,
+		ModalHeader,
+		ModalBody,
+		ModalFooter,
+		ModalBodyText,
+		'DropDown': Dropdown,
+		'DropDownItem': DropdownItem,
 		List,
 		ListSubheader,
 		ListItem,
@@ -110,21 +103,21 @@ class MaterialUiPlugin extends Plugin {
 		Slider,
 		Stepper,
 		// Notification,
-		// FormControl,
-		// FormGroup,
+		FormControl,
+		FormGroup,
 		TextInput,
-		// H1,
-		// H2,
-		// H3,
-		// H4,
-		// H5,
-		// H6,
-		// Subtitle1,
-		// Subtitle2,
-		// Body1,
-		// Body2,
-		// Caption,
-		// Overline,
+		H1,
+		H2,
+		H3,
+		H4,
+		H5,
+		H6,
+		Subtitle1,
+		Subtitle2,
+		Body1,
+		Body2,
+		Caption,
+		Overline,
 
 
 	};

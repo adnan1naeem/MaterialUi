@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-7hGhzlcmg01CvH1EHdSPVXYX1aJ8KCEyz6I9xYIi/asDtzBPMyMhVibhM/K6g/5qnKBwjZtp10bNZIEFTRW1MA==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -42,6 +43,8 @@
 =======
   integrity sha512-7hGhzlcmg01CvH1EHdSPVXYX1aJ8KCEyz6I9xYIi/asDtzBPMyMhVibhM/K6g/5qnKBwjZtp10bNZIEFTRW1MA==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     regenerator-runtime "^0.12.0"
 
@@ -52,6 +55,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-Y3SCjmhSupzFB6wcv1KmmFucH6gDVnI30WjOcicV10ju0cZjak3Jcs67YLIXBrmZYw1xCrVeJPbycFwrqNyxpg==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -64,6 +68,8 @@
 =======
   integrity sha512-Y3SCjmhSupzFB6wcv1KmmFucH6gDVnI30WjOcicV10ju0cZjak3Jcs67YLIXBrmZYw1xCrVeJPbycFwrqNyxpg==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     regenerator-runtime "^0.12.0"
 
@@ -97,6 +103,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-5ZtDONySdK/jRPitQRhkGEvGlFBgrgvTPIyqViEmKDPzLEiweVPvyFSBbWjMF3p4YhwfsQko+ZCiymfiHzHPzQ==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -109,6 +116,8 @@
 =======
   integrity sha512-5ZtDONySdK/jRPitQRhkGEvGlFBgrgvTPIyqViEmKDPzLEiweVPvyFSBbWjMF3p4YhwfsQko+ZCiymfiHzHPzQ==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     "@blueeast/bluerain-ui-interfaces" "^3.2.12"
     "@blueeast/proxy-polyfill" "^0.1.9"
@@ -134,6 +143,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-kmeC2kAKe35DN9zfglgRBam2q6iAlRgTjmnFMkiQtuQwQqlT3SIp4xyByJ4Ryh0FInkXgZX5EMacOHbOjZhT3w==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -146,6 +156,8 @@
 =======
   integrity sha512-kmeC2kAKe35DN9zfglgRBam2q6iAlRgTjmnFMkiQtuQwQqlT3SIp4xyByJ4Ryh0FInkXgZX5EMacOHbOjZhT3w==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     "@blueeast/bluerain-ui-interfaces" "^3.2.12"
     "@blueeast/proxy-polyfill" "^0.1.9"
@@ -285,6 +297,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-wDTJyR76+OBdlltiPs3lc1gD6zR+dSA6nITtgkBeLf1NvWfNotMWdvldIDnF3bu24ySAX9imfzDfkBu4Edtqww==
   dependencies:
@@ -374,6 +387,9 @@
   integrity sha512-wDTJyR76+OBdlltiPs3lc1gD6zR+dSA6nITtgkBeLf1NvWfNotMWdvldIDnF3bu24ySAX9imfzDfkBu4Edtqww==
   dependencies:
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+  dependencies:
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
     "@babel/runtime" "7.1.2"
     "@types/jss" "^9.5.6"
     "@types/react-transition-group" "^2.0.8"
@@ -404,6 +420,7 @@
 "@material-ui/icons@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-3.0.1.tgz#671fb3d04dcaf9351dbbd2bf82ae2ae72e3d93cd"
+<<<<<<< HEAD
   integrity sha512-1kNcxYiIT1x8iDPEAlgmKrfRTIV8UyK6fLVcZ9kMHIKGWft9I451V5mvSrbCjbf7MX1TbLWzZjph0aVCRf9MqQ==
   dependencies:
     "@babel/runtime" "7.0.0"
@@ -412,6 +429,11 @@
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    recompose "^0.29.0"
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -994,6 +1016,13 @@
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
 
+"@types/jss@^9.5.6":
+  version "9.5.6"
+  resolved "https://registry.yarnpkg.com/@types/jss/-/jss-9.5.6.tgz#96e1d246ddfbccc4867494077c714773cf29acde"
+  dependencies:
+    csstype "^2.0.0"
+    indefinite-observable "^1.0.1"
+
 "@types/lodash@4.14.99":
   version "4.14.99"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.99.tgz#e6e10c0a4cc16c7409b3181f1e66880d2fb7d4dc"
@@ -1057,6 +1086,7 @@
 "@types/react-transition-group@^2.0.8":
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-2.0.14.tgz#afd0cd785a97f070b55765e9f9d76ff568269001"
+<<<<<<< HEAD
 =======
 >>>>>>> 3a08ef984080876c9f38f4760a97050c25d8bcc8
 =======
@@ -1065,6 +1095,12 @@
     "@types/react" "*"
 
 "@types/react@*":
+=======
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.4.13":
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   version "16.4.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.14.tgz#47c604c8e46ed674bbdf4aabf82b34b9041c6a04"
   integrity sha512-Gh8irag2dbZ2K6vPn+S8+LNrULuG3zlCgJjVUrvuiUK7waw9d9CFk2A/tZFyGhcMDUyO7tznbx1ZasqlAGjHxA==
@@ -2943,6 +2979,7 @@ babylon@^6.18.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -2955,6 +2992,8 @@ babylon@^6.18.0:
 =======
   integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 bail@^1.0.0:
   version "1.0.3"
@@ -5351,6 +5390,7 @@ eventemitter3@^2.0.3:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -5363,6 +5403,8 @@ eventemitter3@^2.0.3:
 =======
   integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 events@^1.0.0:
   version "1.1.1"
@@ -6974,6 +7016,12 @@ indefinite-observable@^1.0.1:
 >>>>>>> 3a08ef984080876c9f38f4760a97050c25d8bcc8
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+
+indefinite-observable@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/indefinite-observable/-/indefinite-observable-1.0.1.tgz#09915423cc8d6f7eb1cb7882ad134633c9a6edc3"
+  dependencies:
+    symbol-observable "1.0.4"
 
 indent-string@^2.1.0:
   version "2.1.0"
@@ -8641,6 +8689,7 @@ jss-default-unit@^8.0.2:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-WxNHrF/18CdoAGw2H0FqOEvJdREXVXLazn7PQYU7V6/BWkCV0GkmWsppNiExdw8dP4TU1ma1dT9zBNJ95feLmg==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -8653,6 +8702,8 @@ jss-default-unit@^8.0.2:
 =======
   integrity sha512-WxNHrF/18CdoAGw2H0FqOEvJdREXVXLazn7PQYU7V6/BWkCV0GkmWsppNiExdw8dP4TU1ma1dT9zBNJ95feLmg==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 jss-global@^3.0.0:
   version "3.0.0"
@@ -8673,6 +8724,7 @@ jss-props-sort@^6.0.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-E89UDcrphmI0LzmvYk25Hp4aE5ZBsXqMWlkFXS0EtPkunJkRr+WXdCNYbXbksIPnKlBenGB9OxzQY+mVc70S+g==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -8685,6 +8737,8 @@ jss-props-sort@^6.0.0:
 =======
   integrity sha512-E89UDcrphmI0LzmvYk25Hp4aE5ZBsXqMWlkFXS0EtPkunJkRr+WXdCNYbXbksIPnKlBenGB9OxzQY+mVc70S+g==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 jss-vendor-prefixer@^7.0.0:
   version "7.0.0"
@@ -9345,11 +9399,14 @@ material-ui-icons@^1.0.0-beta.10:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
 =======
 >>>>>>> 3a08ef984080876c9f38f4760a97050c25d8bcc8
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -11551,6 +11608,7 @@ react-dom-factories@^1.0.2:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha1-63cFxNs2+1AbOqOP91lhaqD/luA=
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -11563,6 +11621,8 @@ react-dom-factories@^1.0.2:
 =======
   integrity sha1-63cFxNs2+1AbOqOP91lhaqD/luA=
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 react-dom@16.3.1:
   version "16.3.1"
@@ -11587,11 +11647,15 @@ react-dom@^16.3.2:
 react-error-overlay@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
+<<<<<<< HEAD
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 react-event-listener@^0.6.2:
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/react-event-listener/-/react-event-listener-0.6.4.tgz#d0ea5ed897da1a796616c44b5a8758898140f203"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11608,6 +11672,8 @@ react-event-listener@^0.6.2:
 =======
   integrity sha512-t7VSjIuUFmN+GeyKb+wm025YLeojVB85kJL6sSs0wEBJddfmKBEQz+CNBZ2zBLKVWkPy/fZXM6U5yvojjYBVYQ==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     "@babel/runtime" "7.0.0"
     prop-types "^15.6.0"
@@ -11668,6 +11734,7 @@ react-is@^16.4.2, react-is@^16.5.1:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-Q7S+9y2lJA9oJCMqLt045f+kLRhsMLA1wW2DAGXA6b7wcTQRHnUDMc5oR49tn0Z4swvnfV+/t8iZFXY74IQmpA==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -11680,6 +11747,8 @@ react-is@^16.4.2, react-is@^16.5.1:
 =======
   integrity sha512-Q7S+9y2lJA9oJCMqLt045f+kLRhsMLA1wW2DAGXA6b7wcTQRHnUDMc5oR49tn0Z4swvnfV+/t8iZFXY74IQmpA==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -11719,6 +11788,7 @@ react-onclickoutside@^6.5.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-p84kBqGaMoa7VYT0vZ/aOYRfJB+gw34yjpda1Z5KeLflg70HipZOT+MXQenEhdkPAABuE2Astq4zEPdMqUQxcg==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -11731,6 +11801,8 @@ react-onclickoutside@^6.5.0:
 =======
   integrity sha512-p84kBqGaMoa7VYT0vZ/aOYRfJB+gw34yjpda1Z5KeLflg70HipZOT+MXQenEhdkPAABuE2Astq4zEPdMqUQxcg==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 react-redux@^5.0.6:
   version "5.0.7"
@@ -12085,6 +12157,7 @@ rechoir@^0.6.2:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -12097,6 +12170,8 @@ rechoir@^0.6.2:
 =======
   integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
   dependencies:
     "@babel/runtime" "^7.0.0"
     change-emitter "^0.1.2"
@@ -12186,6 +12261,17 @@ recompose@^0.29.0:
   version "0.29.0"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.29.0.tgz#f1a4e20d5f24d6ef1440f83924e821de0b1bccef"
   integrity sha512-J/qLXNU4W+AeHCDR70ajW8eMd1uroqZaECTj6qqDLPMILz3y0EzpYlvrnxKB9DnqcngWrtGwjXY9JeXaW9kS1A==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    change-emitter "^0.1.2"
+    fbjs "^0.8.1"
+    hoist-non-react-statics "^2.3.1"
+    react-lifecycles-compat "^3.0.2"
+    symbol-observable "^1.0.4"
+
+recompose@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.29.0.tgz#f1a4e20d5f24d6ef1440f83924e821de0b1bccef"
   dependencies:
     "@babel/runtime" "^7.0.0"
     change-emitter "^0.1.2"
@@ -12291,6 +12377,10 @@ regenerator-runtime@^0.12.0:
 >>>>>>> 2bcea3db55d677214949b4634160e41217376718
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -13280,6 +13370,7 @@ stealthy-require@^1.1.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -13292,6 +13383,8 @@ stealthy-require@^1.1.0:
 =======
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 storybook-addon-intl@^2.1.2:
   version "2.3.0"
@@ -13648,6 +13741,10 @@ symbol-observable@1.0.4:
 =======
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
 
+symbol-observable@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
+
 symbol-observable@^0.2.2:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-0.2.4.tgz#95a83db26186d6af7e7a18dbd9760a2f86d08f40"
@@ -13721,6 +13818,7 @@ text-table@0.2.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -13733,6 +13831,8 @@ text-table@0.2.0:
 =======
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72
 
 throat@^3.0.0:
   version "3.2.0"
@@ -15168,6 +15268,7 @@ yn@^2.0.0:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
 >>>>>>> 58fc24206b74740b1ccc7e37d425ab829468da57
@@ -15180,3 +15281,5 @@ yn@^2.0.0:
 =======
   integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
 >>>>>>> 6d680df3efe378b9bc011d3748e0ed6c1b93cab1
+=======
+>>>>>>> e90af250739d1e0976ea420fa2cab5972ca3cf72

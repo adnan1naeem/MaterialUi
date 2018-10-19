@@ -39,5 +39,4 @@ const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) =>
 		/>
 	);
 };
-
 export default BlueRainSwitch;

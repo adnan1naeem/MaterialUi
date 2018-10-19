@@ -13,34 +13,40 @@ Chips allow users to enter information, make selections, filter content, or trig
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-| ![web image](./screenshots/Chips.png) |    TBD   | TBD |
-
-## Universal Props
-
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| style | Object |  | Get the style object |
-| children | ReactNode | | Content of the Chip |
+| ![web image](./screenshots/chip-screen-shot.png) |    TBD   | TBD |
 
 ## Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| label | string |  | The content of the label. |
-| onDelete | ReactNode | | Callback function fired when the delete icon is clicked. If set, the delete icon will be shown. |
-| deleteIcon | ReactNode | | Custom delete icon element. Will be shown only if onDelete is set. |
-| onClick | ReactNode | | Function when clicked on chip. |
+| variant | 'outlined' | 'default' |  | The content of the label. |
+| onDelete | () => void | | Callback function fired when the delete icon is clicked. If set, the delete icon will be shown. |
+| deleteIcon | React.ReactElement | | Custom delete icon element. Will be shown only if onDelete is set. |
+| onClick | () => void | | Function when clicked on chip. |
+| label | ReactNode | | label for chip. |
+| component | React.ReactType | | component for chip. |
+| avatar | React.ReactElement | | avatar for chip. |
+| icon | React.ReactElement | | icon for chip. |
+| clickable | boolean | | Clickable enable/disable for chip. |
+| style | object | | style object for chip. |
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import { BlueRainConsumer, BlueRain } from '@blueeast/bluerain-os';
 
 const ChipSample = (props) => (
-    const BR = props.bluerain;
-    const Chip = BR.Components.get('Chip');
-    <Chip style={{'background-color':'green'}}>10 % off</Chip>);
+    <BlueRainConsumer>
+    {(BR:BlueRain)=>
+      (<BR.Components.Chip
+            style={{'background-color':'red'}}
+            label="Basic Chip"
+            color="secondary"
+            onDelete={() => 'Dummy'}
+     />)  }
+    </BlueRainConsumer>
+    );
 
-export default withBluerain(ChipSample);
+export default ChipSample;
 ```

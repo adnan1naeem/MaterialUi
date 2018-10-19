@@ -10,11 +10,6 @@ import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
-export interface MUIChipProperties extends ChipProperties {
-    label?: string;
-    onClick?: () => void;
-    onDelete?: () => void;
-    deleteIcon?: any;
-}
-declare const Chip: React.StatelessComponent<MUIChipProperties>;
+declare const Chip: React.StatelessComponent<ChipProperties>;
 export default Chip;
+export { ChipProperties };
