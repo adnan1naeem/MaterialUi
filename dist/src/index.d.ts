@@ -31,6 +31,7 @@ declare class MaterialUiPlugin extends Plugin {
         MenuList: React.StatelessComponent<MenuListprops>;
         MenuPopper: React.StatelessComponent<MenuPopperprops>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
+        Slider: React.StatelessComponent<import("src/components/Slider/Slider.component").MUISliderProperties>;
     };
 }
 export default MaterialUiPlugin;

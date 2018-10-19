@@ -62,7 +62,7 @@ import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuLis
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
 
-// import Slider from './components/Slider';
+import { Slider } from './components/Slider';
 
 /**
  * Material UI Plugin
@@ -107,7 +107,7 @@ class MaterialUiPlugin extends Plugin {
 		// ListItem,
 		Switch,
 		// ScrollView,
-		// // Slider,
+		Slider,
 		// Stepper,
 		// Notification,
 		// FormControl,
