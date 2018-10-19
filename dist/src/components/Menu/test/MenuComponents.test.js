@@ -1,36 +1,59 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
-const enzyme_adapter_react_16_1 = __importDefault(require("enzyme-adapter-react-16"));
-require("jest");
-const index_1 = require("../index");
-const enzyme_1 = require("enzyme");
-enzyme_1.configure({ adapter: new enzyme_adapter_react_16_1.default() });
-test('Menu has  children prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.Menu, { open: true }, "\"Hello\""));
-    expect(notification.props().children).toBeDefined();
-});
-test('Menu has  open prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.Menu, { open: true }, "\"Hello\""));
-    expect(notification.props().open).toEqual(true);
-});
-test('MenuItem should be disabled prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.MenuItem, { disabled: true }, "\"Hello\""));
-    expect(notification.props().disabled).toEqual(true);
-});
-test('MenuItem should be disabled prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.MenuList, null, "\"Hello\""));
-    expect(notification.props().children).toBeDefined();
-});
-test('MenuPopper should be children prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.MenuPopper, { open: true }, "\"Hello\""));
-    expect(notification.props().open).toEqual(true);
-});
-test('MenuPopper should be children prop', () => {
-    const notification = enzyme_1.shallow(react_1.default.createElement(index_1.MenuPopper, { open: true }, "\"Hello\""));
-    expect(notification.props().children).toBeDefined();
-});
+// import React from 'react';
+// import Adapter from 'enzyme-adapter-react-16';
+// import renderer from 'react-test-renderer';
+// import 'jest';
+// import { Menu, MenuItem, MenuPopper, MenuList } from '../index';
+// import Button from '@material-ui/core/Button';
+// import { configure, mount, shallow, } from 'enzyme';
+// configure({ adapter: new Adapter() });
+// // 
+// test('Menu has  children prop', () => {
+//   const notification = shallow(
+//     <Menu open={true}>
+//       "Hello"
+//       </Menu>
+//   );
+//   expect(notification.props().children).toBeDefined();
+// });
+// test('Menu has  open prop', () => {
+//   const notification = shallow(
+//     <Menu open={true}>
+//       "Hello"
+//       </Menu>
+//   );
+//   expect(notification.props().open).toEqual(true);
+// });
+// test('MenuItem should be disabled prop', () => {
+//   const notification = shallow(
+//     <MenuItem disabled={true}>
+//       "Hello"
+//       </MenuItem>
+//   );
+//   expect(notification.props().disabled).toEqual(true);
+// });
+// test('MenuItem should be disabled prop', () => {
+//   const notification = shallow(
+//     <MenuList >
+//       "Hello"
+//       </MenuList>
+//   );
+//   expect(notification.props().children).toBeDefined();
+// });
+// test('MenuPopper should be children prop', () => {
+//   const notification = shallow(
+//     <MenuPopper open={true} >
+//       "Hello"
+//       </MenuPopper>
+//   );
+//   expect(notification.props().open).toEqual(true);
+// });
+// test('MenuPopper should be children prop', () => {
+//   const notification = shallow(
+//     <MenuPopper open={true} >
+//       "Hello"
+//       </MenuPopper>
+//   );
+//   expect(notification.props().children).toBeDefined();
+// });
 //# sourceMappingURL=MenuComponents.test.js.map

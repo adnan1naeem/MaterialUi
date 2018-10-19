@@ -31,16 +31,16 @@ import { Divider, MUIDividerProperties } from './components/Divider';
 // import { Drawer, MUIDrawerProperties } from './components/Drawer';
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-// import {
-// 	List,
-// 	ListSubheader,
-// 	ListItem,
-// 	MUIListItemProperties,
-// 	MUIListProperties
-// } from './components/List';
+import {
+	List,
+	ListSubheader,
+	ListItem,
+	MUIListItemProperties,
+	MUIListProperties
+} from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
+// import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
@@ -62,7 +62,7 @@ import { Avatar } from './components/Avatar';
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
 
-import { Slider } from './components/Slider';
+// import { Slider } from './components/Slider';
 
 /**
  * Material UI Plugin
@@ -91,10 +91,10 @@ class MaterialUiPlugin extends Plugin {
 		// ColorPicker,
 		Divider,
 		// Drawer,
-		Menu,
-		MenuItem,
-		MenuList,
-		MenuPopper,
+		// Menu,
+		// MenuItem,
+		// MenuList,
+		// MenuPopper,
 		// Modal,
 		// ModalHeader,
 		// ModalBody,
@@ -102,12 +102,12 @@ class MaterialUiPlugin extends Plugin {
 		// ModalBodyText,
 		// 'DropDown': Dropdown,
 		// 'DropDownItem': DropdownItem,
-		// List,
-		// ListSubheader,
-		// ListItem,
+		List,
+		ListSubheader,
+		ListItem,
 		Switch,
 		// ScrollView,
-		Slider,
+		// Slider,
 		// Stepper,
 		// Notification,
 		// FormControl,

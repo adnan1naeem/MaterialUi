@@ -16,24 +16,12 @@ const Divider_1 = require("./components/Divider");
 // import { Drawer, MUIDrawerProperties } from './components/Drawer';
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-// import {
-// 	List,
-// 	ListSubheader,
-// 	ListItem,
-// 	MUIListItemProperties,
-// 	MUIListProperties
-// } from './components/List';
+const List_1 = require("./components/List");
 const Switch_1 = require("./components/Switch");
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-<<<<<<< HEAD
-const Menu_1 = require("./components/Menu");
+// import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
-// import { Avatar } from './components/Avatar';
-=======
-// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
-// import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 const Avatar_1 = require("./components/Avatar");
->>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
@@ -52,7 +40,7 @@ const Avatar_1 = require("./components/Avatar");
 // import Overline from './components/Overline/Overline.component';
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
-const Slider_1 = require("./components/Slider");
+// import { Slider } from './components/Slider';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -63,9 +51,8 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
-<<<<<<< HEAD
     AppBar: AppBar_1.AppBar,
-    // Avatar,
+    Avatar: Avatar_1.Avatar,
     // Badge,
     // Button,
     Card: Card_1.Card,
@@ -80,10 +67,10 @@ MaterialUiPlugin.components = {
     // ColorPicker,
     Divider: Divider_1.Divider,
     // Drawer,
-    Menu: Menu_1.Menu,
-    MenuItem: Menu_1.MenuItem,
-    MenuList: Menu_1.MenuList,
-    MenuPopper: Menu_1.MenuPopper,
+    // Menu,
+    // MenuItem,
+    // MenuList,
+    // MenuPopper,
     // Modal,
     // ModalHeader,
     // ModalBody,
@@ -91,16 +78,10 @@ MaterialUiPlugin.components = {
     // ModalBodyText,
     // 'DropDown': Dropdown,
     // 'DropDownItem': DropdownItem,
-    // List,
-    // ListSubheader,
-    // ListItem,
+    List: List_1.List,
+    ListSubheader: List_1.ListSubheader,
+    ListItem: List_1.ListItem,
     Switch: Switch_1.Switch,
-    // ScrollView,
-    Slider: Slider_1.Slider,
-=======
-    // AppBar,
-    Avatar: Avatar_1.Avatar,
->>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
