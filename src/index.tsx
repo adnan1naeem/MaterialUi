@@ -2,6 +2,8 @@
 import React from 'react';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
+import  Pslugin  from '@blueeast/bluerain-ui-interfaces';
+
 // import {
 // 	ButtonProperties,
 // 	CardMediaProperties,
@@ -20,7 +22,8 @@ import {
 	MUICardBodyProperties,
 	MUICardFooterProperties,
 	MUICardHeaderProperties,
-	MUICardProperties
+	MUICardProperties,
+	ActionProperties
 } from './components/Card';
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
