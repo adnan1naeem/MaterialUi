@@ -38,7 +38,7 @@ import {
 // 	MUIListItemProperties,
 // 	MUIListProperties
 // } from './components/List';
-// import { MUISwitchProperties, Switch } from './components/Switch';
+import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
@@ -105,7 +105,7 @@ class MaterialUiPlugin extends Plugin {
 		// List,
 		// ListSubheader,
 		// ListItem,
-		// Switch,
+		Switch,
 		// ScrollView,
 		// // Slider,
 		// Stepper,

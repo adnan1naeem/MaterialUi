@@ -4,6 +4,7 @@ import { MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
 import Pslugin from '@blueeast/bluerain-ui-interfaces';
 import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
+import { MUISwitchProperties } from './components/Switch';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 /**
  * Material UI Plugin
@@ -28,6 +29,7 @@ declare class MaterialUiPlugin extends Plugin {
         MenuItem: React.StatelessComponent<MenuItemProperties>;
         MenuList: React.StatelessComponent<MenuListprops>;
         MenuPopper: React.StatelessComponent<MenuPopperprops>;
+        Switch: React.StatelessComponent<MUISwitchProperties>;
     };
 }
 export default MaterialUiPlugin;

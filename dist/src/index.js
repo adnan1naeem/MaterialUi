@@ -23,7 +23,7 @@ const Card_1 = require("./components/Card");
 // 	MUIListItemProperties,
 // 	MUIListProperties
 // } from './components/List';
-// import { MUISwitchProperties, Switch } from './components/Switch';
+const Switch_1 = require("./components/Switch");
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 const Menu_1 = require("./components/Menu");
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
@@ -77,6 +77,17 @@ MaterialUiPlugin.components = {
     MenuItem: Menu_1.MenuItem,
     MenuList: Menu_1.MenuList,
     MenuPopper: Menu_1.MenuPopper,
+    // Modal,
+    // ModalHeader,
+    // ModalBody,
+    // ModalFooter,
+    // ModalBodyText,
+    // 'DropDown': Dropdown,
+    // 'DropDownItem': DropdownItem,
+    // List,
+    // ListSubheader,
+    // ListItem,
+    Switch: Switch_1.Switch,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
