@@ -4,9 +4,9 @@ import { Plugin } from '@blueeast/bluerain-os';
 import interfaces from '@blueeast/bluerain-ui-interfaces';
 import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
 import { MUIDividerProperties } from './components/Divider';
+import { MUIListItemProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
-import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -26,14 +26,11 @@ declare class MaterialUiPlugin extends Plugin {
         CardActionArea: React.StatelessComponent<{}>;
         CardAction: React.StatelessComponent<ActionProperties>;
         Divider: React.StatelessComponent<MUIDividerProperties>;
-        Menu: React.StatelessComponent<interfaces.MenuProperties & {
-            open: boolean;
-        }>;
-        MenuItem: React.StatelessComponent<MenuItemProperties>;
-        MenuList: React.StatelessComponent<MenuListprops>;
-        MenuPopper: React.StatelessComponent<MenuPopperprops>;
+        List: React.StatelessComponent<MUIListProperties>;
+        ListSubheader: React.StatelessComponent<interfaces.ListHeaderProperties>;
+        ListItem: React.StatelessComponent<MUIListItemProperties>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
-        Slider: React.StatelessComponent<import("src/components/Slider/Slider.component").MUISliderProperties>;
+        Slider: any;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
     };
 }

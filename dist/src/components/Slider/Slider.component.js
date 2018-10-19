@@ -1,19 +1,31 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Slider_1 = __importDefault(require("@material-ui/lab/Slider"));
-const BlueRainSlider = (props) => {
-    return (React.createElement(Slider_1.default, Object.assign({ value: props.defaultValue }, props)));
-};
-exports.default = BlueRainSlider;
+// import * as React from 'react';
+// import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
+// import Slider from '@material-ui/lab/Slider';
+// /**
+//  * The universal props of Divider Component
+//  * @param {ReactNode} props.light If true, Divider is generated with light color.
+//  *  The specific libraray props of Divider Component
+//  * @param {ReactNode} props.component component to generate Divider with.
+//  * @param {ReactNode} props.inset if true, Divider is generated indented.
+//  */
+// export interface MUISliderProperties extends SliderProperties {
+//   classes?: object,
+//   max?: number,
+//   min?: number,
+//   onChange?: (event: any, value: any) => void,
+//   onDragEnd?: () => void,
+//   onDragStart?: () => void,
+//   step?: number,
+//   thumb?: Node,
+//   value?: number,
+//   vertical?: boolean,
+//   defaultValue?: any
+// }
+// const BlueRainSlider: React.StatelessComponent<MUISliderProperties> = (props) => {
+//   return (
+//     <Slider value={props.defaultValue} {...props} />
+//   );
+// };
+// export default BlueRainSlider;
 //# sourceMappingURL=Slider.component.js.map

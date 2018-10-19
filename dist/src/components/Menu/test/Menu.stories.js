@@ -1,97 +1,127 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("../index");
-const react_1 = require("@storybook/react");
-const MenuTest1_component_1 = __importDefault(require("./MenuTest1.component"));
-const MenuPopperSample_component_1 = __importDefault(require("./MenuPopperSample.component"));
-const Paper_1 = __importDefault(require("@material-ui/core/Paper"));
-const react_2 = __importDefault(require("react"));
-const stories = react_1.storiesOf('Menu', module);
-const onChange = (event) => {
-    const value = event.target.value;
-};
-const style = { root: { padding: 20 }, dropdown: { width: 400 } };
-const multiItems = [
-    'Oliver Hansen',
-    'Van Henry',
-    'April Tucker',
-    'Ralph Hubbard',
-    'Omar Alexander',
-    'Carlos Abbott',
-    'Miriam Wagner',
-    'Bradley Wilkerson',
-    'Virginia Andrews',
-    'Kelly Snyder'
-];
-stories.add('Menu Closed', () => {
-    return (react_2.default.createElement(Paper_1.default, { style: style.root },
-        react_2.default.createElement(index_1.Menu, { open: false, style: style.dropdown },
-            react_2.default.createElement(index_1.MenuItem, { value: "xyz" }, "Item 1 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 2 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 3 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 4 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 5 "))));
-});
-stories.add('Dropdown with autoWidth', () => {
-    return (react_2.default.createElement(Paper_1.default, { style: style.root },
-        react_2.default.createElement(index_1.Menu, { open: true, style: style.dropdown },
-            react_2.default.createElement(index_1.MenuItem, { value: "xyz" }, "Item 1 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 2 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 3 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 4 "),
-            react_2.default.createElement(index_1.MenuItem, { value: "abc" }, "Item 5 "))));
-});
-stories.add('Dropdown with Override styles', () => {
-    return (react_2.default.createElement(Paper_1.default, { style: style.root },
-        react_2.default.createElement(index_1.Menu, { style: { width: 600, backgroundColor: 'green' }, open: true },
-            react_2.default.createElement(index_1.MenuItem, null, "Item 1 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 2 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 3 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 4 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 5 "))));
-});
-stories.add('Menu with disabled', () => {
-    return (react_2.default.createElement(Paper_1.default, { style: style.root },
-        react_2.default.createElement(index_1.Menu, { style: style.dropdown, open: true },
-            react_2.default.createElement(index_1.MenuItem, null, "Item 1 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 2 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 3 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 4 "),
-            react_2.default.createElement(index_1.MenuItem, null, "Item 5 "))));
-});
-stories.add('MenuList Component', () => {
-    return (react_2.default.createElement(MenuTest1_component_1.default, null));
-});
-const menuItems = [
-    {
-        title: 'Profile',
-        onClick: () => console.log('Profile Clicked'),
-        style: {},
-        otherProps: {}
-    }, {
-        title: 'My account',
-        onClick: () => console.log('My account Clicked'),
-        style: {},
-        otherProps: {}
-    }, {
-        title: 'Logout',
-        onClick: () => console.log('Logout Clicked'),
-        style: {},
-        otherProps: {}
-    }
-];
-stories.add('Menu Popper List Component', () => {
-    return (react_2.default.createElement(MenuPopperSample_component_1.default, { open: false }));
-});
-stories.add('Menu Popper List Component placement right', () => {
-    return (react_2.default.createElement("div", null,
-        react_2.default.createElement(MenuPopperSample_component_1.default, { open: false })));
-});
-stories.add('Menu Popper Button Component placement right', () => {
-    return (react_2.default.createElement("div", { style: { width: 200, height: 100, marginTop: 200 } },
-        react_2.default.createElement(MenuPopperSample_component_1.default, { open: true })));
-});
+// import ListItem from '@material-ui/core/ListItem';
+// import { Menu, MenuItem } from '../index';
+// import Button from '@material-ui/core/Button';
+// import { storiesOf } from '@storybook/react';
+// import FadeMenu from './MenuTest1.component';
+// import MenuPopper from './MenuPopperSample.component';
+// import Paper from '@material-ui/core/Paper';
+// import React from 'react';
+// const stories = storiesOf('Menu', module);
+// const onChange = (event: any) => {
+//   const value = event.target.value;
+// };
+// const style = { root: { padding: 20 }, dropdown: { width: 400 } };
+// const multiItems = [
+//   'Oliver Hansen',
+//   'Van Henry',
+//   'April Tucker',
+//   'Ralph Hubbard',
+//   'Omar Alexander',
+//   'Carlos Abbott',
+//   'Miriam Wagner',
+//   'Bradley Wilkerson',
+//   'Virginia Andrews',
+//   'Kelly Snyder'
+// ];
+// stories.add('Menu Closed', () => {
+//   return (
+//     <Paper style={style.root}>
+//       <Menu open={false} style={style.dropdown}>
+//         <MenuItem value="xyz">Item 1 </MenuItem>
+//         <MenuItem value="abc">Item 2 </MenuItem>
+//         <MenuItem value="abc">Item 3 </MenuItem>
+//         <MenuItem value="abc">Item 4 </MenuItem>
+//         <MenuItem value="abc">Item 5 </MenuItem>
+//       </Menu>
+//     </Paper>);
+// }
+// );
+// stories.add('Dropdown with autoWidth', () => {
+//   return (
+//     <Paper style={style.root}>
+//       <Menu open={true} style={style.dropdown}>
+//         <MenuItem value="xyz">Item 1 </MenuItem>
+//         <MenuItem value="abc">Item 2 </MenuItem>
+//         <MenuItem value="abc">Item 3 </MenuItem>
+//         <MenuItem value="abc">Item 4 </MenuItem>
+//         <MenuItem value="abc">Item 5 </MenuItem>
+//       </Menu>
+//     </Paper>);
+// }
+// );
+// stories.add('Dropdown with Override styles', () => {
+//   return (
+//     <Paper style={style.root}>
+//       <Menu style={{ width: 600, backgroundColor: 'green' }} open={true}>
+//         <MenuItem >Item 1 </MenuItem>
+//         <MenuItem >Item 2 </MenuItem>
+//         <MenuItem >Item 3 </MenuItem>
+//         <MenuItem >Item 4 </MenuItem>
+//         <MenuItem >Item 5 </MenuItem>
+//       </Menu>
+//     </Paper>);
+// }
+// );
+// stories.add('Menu with disabled', () => {
+//   return (
+//     <Paper style={style.root}>
+//       <Menu style={style.dropdown} open={true}>
+//         <MenuItem >Item 1 </MenuItem>
+//         <MenuItem >Item 2 </MenuItem>
+//         <MenuItem >Item 3 </MenuItem>
+//         <MenuItem >Item 4 </MenuItem>
+//         <MenuItem >Item 5 </MenuItem>
+//       </Menu>
+//     </Paper>);
+// }
+// );
+// stories.add('MenuList Component', () => {
+//   return (
+//     <FadeMenu />
+//   );
+// }
+// );
+// const menuItems = [
+//   {
+//     title: 'Profile',
+//     onClick: () => console.log('Profile Clicked'),
+//     style: {},
+//     otherProps: {}
+//   }, {
+//     title: 'My account',
+//     onClick: () => console.log('My account Clicked'),
+//     style: {},
+//     otherProps: {}
+//   }, {
+//     title: 'Logout',
+//     onClick: () => console.log('Logout Clicked'),
+//     style: {},
+//     otherProps: {}
+//   }
+// ];
+// stories.add('Menu Popper List Component', () => {
+//   return (
+//     <MenuPopper
+//       open={false} />
+//   );
+// });
+// stories.add('Menu Popper List Component placement right', () => {
+//   return (
+//     <div >
+//       <MenuPopper
+//         open={false}
+//       />
+//     </div>
+//   );
+// });
+// stories.add('Menu Popper Button Component placement right', () => {
+//   return (
+//     <div style={{ width: 200, height: 100, marginTop: 200 }}>
+//       <MenuPopper
+//         open={true}
+//       />
+//     </div>
+//   );
+// });
 //# sourceMappingURL=Menu.stories.js.map

@@ -15,16 +15,9 @@ const Card_1 = require("./components/Card");
 const Divider_1 = require("./components/Divider");
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
-// import {
-// 	List,
-// 	ListSubheader,
-// 	ListItem,
-// 	MUIListItemProperties,
-// 	MUIListProperties
-// } from './components/List';
+const List_1 = require("./components/List");
 const Switch_1 = require("./components/Switch");
 const TextInput_1 = require("./components/TextInput");
-const Menu_1 = require("./components/Menu");
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 const Avatar_1 = require("./components/Avatar");
 // import { Button } from './components/Button';
@@ -70,10 +63,10 @@ MaterialUiPlugin.components = {
     // ColorPicker,
     Divider: Divider_1.Divider,
     // Drawer,
-    Menu: Menu_1.Menu,
-    MenuItem: Menu_1.MenuItem,
-    MenuList: Menu_1.MenuList,
-    MenuPopper: Menu_1.MenuPopper,
+    // Menu,
+    // MenuItem,
+    // MenuList,
+    // MenuPopper,
     // Modal,
     // ModalHeader,
     // ModalBody,
@@ -81,9 +74,9 @@ MaterialUiPlugin.components = {
     // ModalBodyText,
     // 'DropDown': Dropdown,
     // 'DropDownItem': DropdownItem,
-    // List,
-    // ListSubheader,
-    // ListItem,
+    List: List_1.List,
+    ListSubheader: List_1.ListSubheader,
+    ListItem: List_1.ListItem,
     Switch: Switch_1.Switch,
     Slider: Slider_1.Slider,
     // Stepper,
