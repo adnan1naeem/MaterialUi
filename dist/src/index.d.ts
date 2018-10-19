@@ -1,8 +1,8 @@
 import React from 'react';
-import { MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
 import interfaces from '@blueeast/bluerain-ui-interfaces';
 import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
+import { Badge } from './components/Badge';
 import { MUIDividerProperties } from './components/Divider';
 import { MUIListItemProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties } from './components/Switch';
@@ -16,8 +16,7 @@ declare class MaterialUiPlugin extends Plugin {
     static pluginName: string;
     static slug: string;
     static components: {
-        AppBar: React.StatelessComponent<MUIAppBarProperties>;
-        Avatar: React.ComponentType<any>;
+        Badge: typeof Badge;
         Card: React.StatelessComponent<MUICardProperties>;
         CardHeader: React.StatelessComponent<MUICardHeaderProperties>;
         CardBody: React.StatelessComponent<MUICardBodyProperties>;
@@ -30,7 +29,7 @@ declare class MaterialUiPlugin extends Plugin {
         ListSubheader: React.StatelessComponent<interfaces.ListHeaderProperties>;
         ListItem: React.StatelessComponent<MUIListItemProperties>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
-        Slider: any;
+        Slider: React.StatelessComponent<import("src/components/Slider/Slider.component").MUISliderProperties>;
         Stepper: React.StatelessComponent<any>;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
     };

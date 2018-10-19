@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Switch } from '../';
+import Switch from '../Switch.component';
 import console = require('console');
 
 /**
@@ -15,16 +15,16 @@ import console = require('console');
  */
 
 
-class BlueRainSwitch extends React.Component<{muValue: string}, { value: boolean }> {
-  constructor (props:any) {
-  super(props);
-  this.state = {
-    value: false
-  };
-  this.onChange = this.onChange.bind(this);
+class BlueRainSwitch extends React.Component<{ muValue: string }, { value: boolean }> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      value: false
+    };
+    this.onChange = this.onChange.bind(this);
   }
-  onChange(value1:any, value:any) {
-    this.setState( {
+  onChange(value1: any, value: any) {
+    this.setState({
       value
     });
   }

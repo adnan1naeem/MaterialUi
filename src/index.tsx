@@ -25,12 +25,14 @@ import {
 	MUICardProperties,
 	ActionProperties
 } from './components/Card';
-// import { Chip, MUIChipProperties } from './components/Chip';
-// import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
+import { Chip, MUIChipProperties } from './components/Chip';
+import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
+import { Badge } from './components/Badge';
+
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Drawer, MUIDrawerProperties } from './components/Drawer';
-// import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
-// import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
+import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
+import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 import {
 	List,
 	ListSubheader,
@@ -41,25 +43,25 @@ import {
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
-// import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
+import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 import { Avatar } from './components/Avatar';
-// import { Button } from './components/Button';
+//import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
-// import { ScrollView, ScrollViewProperties } from './components/ScrollView';
-// import H1 from './components/H1/H1.component';
-// import H2 from './components/H2/H2.component';
-// import H3 from './components/H3/H3.component';
-// import H4 from './components/H4/H4.component';
-// import H5 from './components/H5/H5.component';
-// import H6 from './components/H6/H6.component';
-// import Subtitle1 from './components/Subtitle1/Subtitle1.component';
-// import Subtitle2 from './components/Subtitle2/Subtitle2.component';
-// import Body1 from './components/Body1/Body1.component';
-// import Body2 from './components/Body2/Body2.component';
-// import Overline from './components/Overline/Overline.component';
-// import Caption from './components/Caption/Caption.component';
-// import Checkbox from './components/Checkbox';
+
+import H1 from './components/H1/H1.component';
+import H2 from './components/H2/H2.component';
+import H3 from './components/H3/H3.component';
+import H4 from './components/H4/H4.component';
+import H5 from './components/H5/H5.component';
+import H6 from './components/H6/H6.component';
+import Subtitle1 from './components/Subtitle1/Subtitle1.component';
+import Subtitle2 from './components/Subtitle2/Subtitle2.component';
+import Body1 from './components/Body1/Body1.component';
+import Body2 from './components/Body2/Body2.component';
+import Overline from './components/Overline/Overline.component';
+import Caption from './components/Caption/Caption.component';
+import Checkbox from './components/Checkbox';
 
 import { Slider } from './components/Slider';
 
@@ -74,9 +76,9 @@ class MaterialUiPlugin extends Plugin {
 	static slug = 'material-ui';
 	static components = {
 
-		AppBar,
-		Avatar,
-		// Badge,
+		// AppBar,
+		// Avatar,
+		Badge,
 		// Button,
 		Card,
 		CardHeader,

@@ -1,2 +1,2 @@
-// import Slider from './Slider.component';
-// export { Slider };
+import Slider from './Slider.component';
+export { Slider };
