@@ -39,11 +39,10 @@ import { Drawer, MUIDrawerProperties } from './components/Drawer';
 // 	MUIListProperties
 // } from './components/List';
 import { MUISwitchProperties, Switch } from './components/Switch';
-// import { MUITextInputProperties, TextInput } from './components/TextInput';
+ import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 import { Avatar } from './components/Avatar';
-// import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
@@ -110,7 +109,7 @@ class MaterialUiPlugin extends Plugin {
 		// Notification,
 		// FormControl,
 		// FormGroup,
-		// TextInput,
+		TextInput,
 		// H1,
 		// H2,
 		// H3,

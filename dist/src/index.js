@@ -23,11 +23,10 @@ const Divider_1 = require("./components/Divider");
 // 	MUIListProperties
 // } from './components/List';
 const Switch_1 = require("./components/Switch");
-// import { MUITextInputProperties, TextInput } from './components/TextInput';
+const TextInput_1 = require("./components/TextInput");
 const Menu_1 = require("./components/Menu");
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 const Avatar_1 = require("./components/Avatar");
-// import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
 // import { Stepper } from './components/Stepper';
@@ -87,6 +86,11 @@ MaterialUiPlugin.components = {
     // ListItem,
     Switch: Switch_1.Switch,
     Slider: Slider_1.Slider,
+    // Stepper,
+    // Notification,
+    // FormControl,
+    // FormGroup,
+    TextInput: TextInput_1.TextInput,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

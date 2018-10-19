@@ -5,6 +5,7 @@ import interfaces from '@blueeast/bluerain-ui-interfaces';
 import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
 import { MUIDividerProperties } from './components/Divider';
 import { MUISwitchProperties } from './components/Switch';
+import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 /**
  * Material UI Plugin
@@ -33,6 +34,7 @@ declare class MaterialUiPlugin extends Plugin {
         MenuPopper: React.StatelessComponent<MenuPopperprops>;
         Switch: React.StatelessComponent<MUISwitchProperties>;
         Slider: React.StatelessComponent<import("src/components/Slider/Slider.component").MUISliderProperties>;
+        TextInput: React.StatelessComponent<MUITextInputProperties>;
     };
 }
 export default MaterialUiPlugin;
