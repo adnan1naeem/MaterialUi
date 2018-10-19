@@ -46,7 +46,7 @@ const Menu_1 = require("./components/Menu");
 // import Overline from './components/Overline/Overline.component';
 // import Caption from './components/Caption/Caption.component';
 // import Checkbox from './components/Checkbox';
-// import Slider from './components/Slider';
+const Slider_1 = require("./components/Slider");
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -88,6 +88,8 @@ MaterialUiPlugin.components = {
     // ListSubheader,
     // ListItem,
     Switch: Switch_1.Switch,
+    // ScrollView,
+    Slider: Slider_1.Slider,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
