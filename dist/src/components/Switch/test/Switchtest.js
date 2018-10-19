@@ -8,7 +8,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const _1 = require("../");
+const __1 = require("../");
 /**
  * The universal props of Avatar Component
  * @param {boolean} props.disabled if true, switch is rendered in disabled form.
@@ -34,7 +34,7 @@ class BlueRainSwitch extends React.Component {
         });
     }
     render() {
-        return (React.createElement(_1.Switch, { value: this.state.value, onValueChange: this.onChange }));
+        return (React.createElement(__1.Switch, { value: this.state.value, onValueChange: this.onChange }));
     }
 }
 exports.default = BlueRainSwitch;
