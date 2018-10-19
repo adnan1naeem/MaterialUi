@@ -42,7 +42,7 @@ import { MUISwitchProperties, Switch } from './components/Switch';
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
-// import { Avatar } from './components/Avatar';
+import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
@@ -76,7 +76,7 @@ class MaterialUiPlugin extends Plugin {
 	static components = {
 
 		AppBar,
-		// Avatar,
+		Avatar,
 		// Badge,
 		// Button,
 		Card,

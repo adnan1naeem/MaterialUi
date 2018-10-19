@@ -16,6 +16,7 @@ declare class MaterialUiPlugin extends Plugin {
     static slug: string;
     static components: {
         AppBar: React.StatelessComponent<MUIAppBarProperties>;
+        Avatar: React.ComponentType<any>;
         Card: React.StatelessComponent<MUICardProperties>;
         CardHeader: React.StatelessComponent<MUICardHeaderProperties>;
         CardBody: React.StatelessComponent<MUICardBodyProperties>;
