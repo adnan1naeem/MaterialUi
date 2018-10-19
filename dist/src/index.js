@@ -25,19 +25,13 @@ const Divider_1 = require("./components/Divider");
 // } from './components/List';
 const Switch_1 = require("./components/Switch");
 // import { MUITextInputProperties, TextInput } from './components/TextInput';
-<<<<<<< HEAD
 const Menu_1 = require("./components/Menu");
 // import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
-// import { Avatar } from './components/Avatar';
-=======
-// import { Menu, MenuItem, MenuItemProperties, MenuProperties,MenuPopper,MenuPopperProperties } from './components/Menu';
-// import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 const Avatar_1 = require("./components/Avatar");
->>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
-// import { Stepper } from './components/Stepper';
+const Stepper_1 = require("./components/Stepper");
 // import { ScrollView, ScrollViewProperties } from './components/ScrollView';
 // import H1 from './components/H1/H1.component';
 // import H2 from './components/H2/H2.component';
@@ -63,9 +57,8 @@ class MaterialUiPlugin extends bluerain_os_1.Plugin {
 MaterialUiPlugin.pluginName = 'MaterialUiPlugin';
 MaterialUiPlugin.slug = 'material-ui';
 MaterialUiPlugin.components = {
-<<<<<<< HEAD
     AppBar: AppBar_1.AppBar,
-    // Avatar,
+    Avatar: Avatar_1.Avatar,
     // Badge,
     // Button,
     Card: Card_1.Card,
@@ -97,10 +90,7 @@ MaterialUiPlugin.components = {
     Switch: Switch_1.Switch,
     // ScrollView,
     Slider: Slider_1.Slider,
-=======
-    // AppBar,
-    Avatar: Avatar_1.Avatar,
->>>>>>> 513566cac0beddbc7ae1e26eaf76f815557eedb2
+    Stepper: Stepper_1.Stepper,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

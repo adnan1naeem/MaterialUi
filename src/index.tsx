@@ -46,7 +46,7 @@ import { Avatar } from './components/Avatar';
 // import { Badge } from './components/Badge';
 // import { Button } from './components/Button';
 // import { Notification } from './components/Notification';
-// import { Stepper } from './components/Stepper';
+import { Stepper } from './components/Stepper';
 // import { ScrollView, ScrollViewProperties } from './components/ScrollView';
 // import H1 from './components/H1/H1.component';
 // import H2 from './components/H2/H2.component';
@@ -108,7 +108,7 @@ class MaterialUiPlugin extends Plugin {
 		Switch,
 		// ScrollView,
 		Slider,
-		// Stepper,
+		Stepper,
 		// Notification,
 		// FormControl,
 		// FormGroup,
