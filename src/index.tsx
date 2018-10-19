@@ -28,7 +28,7 @@ import {
 // import { Chip, MUIChipProperties } from './components/Chip';
 // import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Divider, MUIDividerProperties } from './components/Divider';
-// import { Drawer, MUIDrawerProperties } from './components/Drawer';
+import { Drawer, MUIDrawerProperties } from './components/Drawer';
 // import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 // import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 // import {
