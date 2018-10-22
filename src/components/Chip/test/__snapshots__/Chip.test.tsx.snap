@@ -5,11 +5,12 @@ exports[`Chip component with default values 1`] = `
   className="MuiChip-root-1"
   onClick={undefined}
   onKeyDown={[Function]}
+  onKeyUp={[Function]}
   role="button"
   tabIndex={-1}
 >
   <span
-    className="MuiChip-label-6"
+    className="MuiChip-label-20"
   >
     10 % off
   </span>
@@ -21,6 +22,7 @@ exports[`Chip component with style 1`] = `
   className="MuiChip-root-1"
   onClick={undefined}
   onKeyDown={[Function]}
+  onKeyUp={[Function]}
   role="button"
   style={
     Object {
@@ -30,7 +32,7 @@ exports[`Chip component with style 1`] = `
   tabIndex={-1}
 >
   <span
-    className="MuiChip-label-6"
+    className="MuiChip-label-20"
   >
     10 % off
   </span>

@@ -1,4 +1,4 @@
-export declare const style: {
+export declare const styles: {
     container: {
         display: string;
         flex: number;

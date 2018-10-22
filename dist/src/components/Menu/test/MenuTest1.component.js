@@ -1,72 +1,80 @@
 "use strict";
-// // import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
-// // import { List, ListItem, ListItemText } from '../../List';
-// import { ListItem } from '../../List';
-// import { Menu, MenuItem } from '../../Menu';
-// // import { Button } from '../../Button';
 // import React from 'react';
-// // import Button from 'material-ui/Button';
-// // import Fade from 'material-ui/transitions/Fade';
-// class FadeMenu extends React.Component<any, { anchorEl: any, anchorEl2: any }> {
+// // import PropTypes from 'prop-types';
+// import Button from '@material-ui/core/Button';
+// import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+// import Grow from '@material-ui/core/Grow';
+// import Paper from '@material-ui/core/Paper';
+// import Popper from '@material-ui/core/Popper';
+// import { MenuList, MenuItem } from '../index';
+// // import { withStyles } from '@material-ui/core/styles';
+// const styles = (theme: any) => ({
+//   root: {
+//     display: 'flex',
+//   },
+//   paper: {
+//     marginRight: theme.spacing.unit * 2,
+//   },
+// });
+// class MenuListComposition extends React.Component<any, any> {
 //   state = {
-//     anchorEl: {},
-//     anchorEl2: {},
+//     open: false,
 //   };
-//   handleClick = (event: any) => {
-//     this.setState({ anchorEl: event.currentTarget });
-//     this.setState({ anchorEl2: event.currentTarget });
+//   handleToggle = () => {
+//     this.setState({ open: !this.state.open });
 //   }
-//   handleClose = () => {
-//     this.setState({ anchorEl: null });
-//     this.setState({ anchorEl2: null });
+//   handleClose = (event: any) => {
+//     //  if (this.state.anchorEl.contains(event.target)) {
+//     return;
+//     //  }
+//     // this.setState({ open: false });
 //   }
 //   render() {
-//     const { anchorEl, anchorEl2 } = this.state;
+//     const { classes } = this.props;
+//     const { open } = this.state;
 //     return (
-//       <div>
+//       <div >
+//         <Paper >
+//           <MenuList>
+//             <MenuItem>Profile</MenuItem>
+//             <MenuItem>My account</MenuItem>
+//             <MenuItem>Logout</MenuItem>
+//           </MenuList>
+//         </Paper>
 //         <div>
-//           <ListItem
-//             button
-//             onClick={this.handleClick}
-//             style={{ width: 150 }}
-//             aria-controls="fade-menu"
+//           <Button
+//             buttonRef={node => {
+//               // this.anchorEl = node;
+//             }}
+//            // aria-owns={open ? 'menu-list-grow' : null}
+//             aria-haspopup="true"
+//             onClick={this.handleToggle}
 //           >
-//             Hello
-//           </ListItem>
-//           <Menu
-//             id="fade-menu"
-//             anchorEl={anchorEl !== null ? anchorEl : undefined}
-//             open={Boolean(anchorEl)}
-//             onClose={this.handleClose}
-//           >
-//             <MenuItem onClick={this.handleClose}>wow</MenuItem>
-//             <MenuItem onClick={this.handleClose}>My account</MenuItem>
-//             <MenuItem onClick={this.handleClose}>Logout</MenuItem>
-//           </Menu>
-//         </div>
-//         <div>
-//           <ListItem
-//             button
-//             onClick={this.handleClick}
-//             style={{ width: 150 }}
-//             aria-controls="fade-menu2"
-//           >
-//             Hello
-//           </ListItem>
-//           <Menu
-//             id="fade-menu2"
-//             anchorEl={anchorEl2 !== null ? anchorEl2 : undefined}
-//             open={Boolean(anchorEl2)}
-//             onClose={this.handleClose}
-//           >
-//             <MenuItem onClick={this.handleClose}>Profdasile</MenuItem>
-//             <MenuItem onClick={this.handleClose}>My account</MenuItem>
-//             <MenuItem onClick={this.handleClose}>Logout</MenuItem>
-//           </Menu>
+//             Toggle Menu Grow
+//           </Button>
+//           <Popper open={open} transition disablePortal>
+//             {({ TransitionProps, placement }) => (
+//               <Grow
+//                 {...TransitionProps}
+//                 //  id="menu-list-grow"
+//                 style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+//               >
+//                 <Paper>
+//                   <ClickAwayListener onClickAway={this.handleClose}>
+//                     <MenuList>
+//                       <MenuItem onClick={this.handleClose}>Profile</MenuItem>
+//                       <MenuItem onClick={this.handleClose}>My account</MenuItem>
+//                       <MenuItem onClick={this.handleClose}>Logout</MenuItem>
+//                     </MenuList>
+//                   </ClickAwayListener>
+//                 </Paper>
+//               </Grow>
+//             )}
+//           </Popper>
 //         </div>
 //       </div>
 //     );
 //   }
 // }
-// export default FadeMenu;
+// export default MenuListComposition;
 //# sourceMappingURL=MenuTest1.component.js.map

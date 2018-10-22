@@ -1,6 +1,6 @@
-// import * as React from 'react';
-// import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
-// import Switch from 'material-ui/Switch';
+import * as React from 'react';
+import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
+import Switch from '@material-ui/core/Switch';
 
 // /**
 //  * The universal props of Avatar Component
@@ -14,22 +14,29 @@
 //  * @param {Object} props.onChange  Invoked with the new value when the value changes.
 //  */
 
-// export interface MUISwitchProperties extends SwitchProperties {
-// 	// checked?: string | undefined | boolean,
-// 	muValue?: string,
-// 	classes?: {},
-// 	onChange?: () => void,
-// }
+export interface MUISwitchProperties extends SwitchProperties {
+	// checked?: string | undefined | boolean,
+	mvalue?: string | number | boolean,
+	classes?: object,
+	disableRipple?: boolean,
+	icon?: React.ReactNode,
+	checkedIcon?: React.ReactNode,
+	inputProps?: object,
+	inputRef?: () => void | object,
+	type?: string,
+	color?: 'primary' | 'secondary' | 'default'
+}
 
-// const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
-// 	return (
-// 		<Switch
-// 			{...props}
-// 			checked={props.value}
-// 			value={props.muValue}
-// 			onChange={props.onValueChange}
-// 		/>
-// 	);
-// };
-
-// export default BlueRainSwitch;
+const BlueRainSwitch: React.StatelessComponent<MUISwitchProperties> = (props) => {
+	const { value, style, mvalue, onValueChange, ...others } = props;
+	return (
+		<Switch
+			checked={value}
+			classes={style}
+			value={mvalue}
+			onChange={onValueChange}
+			{...others}
+		/>
+	);
+};
+export default BlueRainSwitch;

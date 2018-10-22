@@ -1,13 +1,16 @@
-// import { DialogActions } from 'material-ui/Dialog';
-// import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
-// import React from 'react';
+import DialogActions from '@material-ui/core/DialogActions';
+import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
+import React from 'react';
 
-// const ModalFooter: React.StatelessComponent<ModalFooterProperties> = (props) => {
+export interface ModalFooterProps extends ModalFooterProperties {
+  disableActionSpacing?: boolean
+}
+const ModalFooter: React.StatelessComponent<ModalFooterProps> = (props) => {
 
-//   return(
-//     <DialogActions>
-//         {props.children}
-//     </DialogActions>
-//     );
-//   };
-//   export default ModalFooter as React.ComponentType<any>;
+  return (
+    <DialogActions {...props}>
+      {props.children}
+    </DialogActions>
+  );
+};
+export default ModalFooter as React.ComponentType<any>;

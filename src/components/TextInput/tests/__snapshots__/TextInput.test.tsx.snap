@@ -4,32 +4,29 @@ exports[`TextInput component with default values 1`] = `
 <div
   aria-describedby={undefined}
   className="MuiFormControl-root-1"
-  onBlur={[Function]}
-  onFocus={[Function]}
-  required={false}
   style={undefined}
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-inkbar-7 MuiInput-underline-11"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      aria-required={false}
       autoComplete="Hello World !!"
       autoFocus={true}
-      className="MuiInput-input-14 MuiInput-inputSingleline-17"
+      className="MuiInputBase-input-28 MuiInput-input-13"
       defaultValue="nooo"
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder="hello"
       readOnly={undefined}
-      required={undefined}
+      required={false}
       rows={undefined}
       type="text"
       value={undefined}
@@ -43,32 +40,29 @@ exports[`TextInput component with editable true 1`] = `
   aria-describedby={undefined}
   className="MuiFormControl-root-1"
   editable={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  required={false}
   style={undefined}
 >
   <div
-    className="MuiInput-root-5 MuiInput-disabled-10 MuiInput-formControl-6 MuiInput-inkbar-7 MuiInput-underline-11"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-disabled-21 MuiInput-disabled-8 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      aria-required={false}
       autoComplete="Hello World !!"
       autoFocus={true}
-      className="MuiInput-input-14 MuiInput-inputDisabled-16 MuiInput-inputSingleline-17"
+      className="MuiInputBase-input-28 MuiInput-input-13 MuiInputBase-disabled-21 MuiInput-disabled-8"
       defaultValue="nooo"
       disabled={true}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder="hello"
       readOnly={undefined}
-      required={undefined}
+      required={false}
       rows={undefined}
       type="text"
       value={undefined}
@@ -82,32 +76,29 @@ exports[`TextInput component with onChangeText 1`] = `
   aria-describedby={undefined}
   className="MuiFormControl-root-1"
   editable={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  required={false}
   style={undefined}
 >
   <div
-    className="MuiInput-root-5 MuiInput-disabled-10 MuiInput-formControl-6 MuiInput-inkbar-7 MuiInput-underline-11"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-disabled-21 MuiInput-disabled-8 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      aria-required={false}
       autoComplete="Hello World !!"
       autoFocus={true}
-      className="MuiInput-input-14 MuiInput-inputDisabled-16 MuiInput-inputSingleline-17"
+      className="MuiInputBase-input-28 MuiInput-input-13 MuiInputBase-disabled-21 MuiInput-disabled-8"
       defaultValue="nooo"
       disabled={true}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder="hello"
       readOnly={undefined}
-      required={undefined}
+      required={false}
       rows={undefined}
       type="text"
       value={undefined}

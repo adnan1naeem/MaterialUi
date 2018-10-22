@@ -2,24 +2,30 @@
 
 exports[`render correctly 1`] = `
 <div
-  className="MuiPaper-root-9 MuiPaper-shadow0-11 MuiMobileStepper-root-1 MuiMobileStepper-positionBottom-2"
+  className="MuiPaper-root-9 MuiPaper-elevation0-11 MuiMobileStepper-root-1 MuiMobileStepper-positionBottom-2"
+  type="progress"
 >
   <div
-    className="MuiMobileStepper-progress-8"
+    className="MuiMobileStepper-dots-5"
   >
     <div
-      aria-valuenow={60}
-      className="MuiLinearProgress-root-36 MuiLinearProgress-primaryColor-37"
-    >
-      <div
-        className="MuiLinearProgress-bar-43 MuiLinearProgress-primaryColorBar-38 MuiLinearProgress-determinateBar1-50"
-        style={
-          Object {
-            "transform": "scaleX(0.6)",
-          }
-        }
-      />
-    </div>
+      className="MuiMobileStepper-dot-6"
+    />
+    <div
+      className="MuiMobileStepper-dot-6"
+    />
+    <div
+      className="MuiMobileStepper-dot-6"
+    />
+    <div
+      className="MuiMobileStepper-dot-6 MuiMobileStepper-dotActive-7"
+    />
+    <div
+      className="MuiMobileStepper-dot-6"
+    />
+    <div
+      className="MuiMobileStepper-dot-6"
+    />
   </div>
 </div>
 `;
