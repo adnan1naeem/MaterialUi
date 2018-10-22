@@ -12,6 +12,7 @@ import { MUIListItemProperties, MUIListProperties } from './components/List';
 import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
+import { MuiButtonProperties } from './components/Button';
 import { MUIProps } from './components/Checkbox';
 import { MUISliderProperties } from './components/Slider';
 /**
@@ -26,6 +27,7 @@ declare class MaterialUiPlugin extends Plugin {
         AppBar: React.StatelessComponent<MUIAppBarProperties>;
         Avatar: React.ComponentType<any>;
         Badge: typeof Badge;
+        Button: React.StatelessComponent<MuiButtonProperties>;
         Card: React.StatelessComponent<MUICardProperties>;
         CardHeader: React.StatelessComponent<MUICardHeaderProperties>;
         CardBody: React.StatelessComponent<MUICardBodyProperties>;
