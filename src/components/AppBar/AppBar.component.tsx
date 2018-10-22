@@ -23,7 +23,7 @@ export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (pr
     <BlueRainConsumer>
       {(BR: BlueRain) => (
         <AppBar
-          // position={position}
+          position={position}
           {...others}
           style={style ? style : { position: 'sticky' }}>
           <Toolbar>
