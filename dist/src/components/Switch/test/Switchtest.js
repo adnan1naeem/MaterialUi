@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const Switch_component_1 = __importDefault(require("../Switch.component"));
+// import console = require('console');
 /**
  * The universal props of Avatar Component
  * @param {boolean} props.disabled if true, switch is rendered in disabled form.

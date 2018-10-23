@@ -19,7 +19,7 @@ const TextInput_1 = require("./components/TextInput");
 const Menu_1 = require("./components/Menu");
 const Modal_1 = require("./components/Modal");
 const Avatar_1 = require("./components/Avatar");
-// import { Button } from './components/Button';
+const Button_1 = require("./components/Button");
 // import { Notification } from './components/Notification';
 const Stepper_1 = require("./components/Stepper");
 const H1_component_1 = __importDefault(require("./components/H1/H1.component"));
@@ -49,7 +49,7 @@ MaterialUiPlugin.components = {
     AppBar: AppBar_1.AppBar,
     Avatar: Avatar_1.Avatar,
     Badge: Badge_1.Badge,
-    // Button,
+    Button: Button_1.Button,
     Card: Card_1.Card,
     CardHeader: Card_1.CardHeader,
     CardBody: Card_1.CardBody,

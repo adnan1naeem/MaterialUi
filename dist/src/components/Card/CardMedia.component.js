@@ -21,9 +21,7 @@ const CardMedia_1 = __importDefault(require("@material-ui/core/CardMedia"));
  */
 const BlueRainCardMedia = props => {
     const heightedStyle = Object.assign({}, props.style, { height: props.height || 200 });
-    return (React.createElement(CardMedia_1.default, Object.assign({ style: heightedStyle, 
-        //  image={props.src}
-        src: props.src }, props)));
+    return (React.createElement(CardMedia_1.default, Object.assign({ style: heightedStyle, image: props.src }, props)));
 };
 exports.default = BlueRainCardMedia;
 //# sourceMappingURL=CardMedia.component.js.map

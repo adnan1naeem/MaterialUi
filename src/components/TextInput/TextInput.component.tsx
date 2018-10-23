@@ -40,9 +40,9 @@ export interface MUITextInputProperties extends TextInputProperties {
 	inputRef?: () => void | object; //
 	name?: string, //
 	select?: boolean, //
-  SelectProps?: object, //
-  variant ?: 'standard' | 'outlined' | 'filled' | any,
-  // variant: 
+	SelectProps?: object, //
+	variant?: 'standard' | 'outlined' | 'filled' | any,
+	// variant:
 }
 
 const customOnChange = (props: any) => (event: any) => {
@@ -51,7 +51,7 @@ const customOnChange = (props: any) => (event: any) => {
 };
 
 const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (rawProps) => {
-  const { onChangeText, secureTextEntry, keyboardType,variant, ...props } = rawProps;
+	const { onChangeText, secureTextEntry, keyboardType, variant, ...props } = rawProps;
 	let disabled = false;
 	if (props.editable !== undefined && !props.editable) {
 		disabled = true;
@@ -68,9 +68,9 @@ const BlueRainTextInput: React.StatelessComponent<MUITextInputProperties> = (raw
 			rows={props.numberOfLines}
 			disabled={disabled}
 			helperText={props.errorText}
-      defaultValue={props.defaultValue}
-      variant={variant}
-		/> 
+			defaultValue={props.defaultValue}
+			variant={variant}
+		/>
 	);
 };
 

@@ -1,1 +1,1 @@
-// export { BlueRainButton as Button } from  './Button.component';
+export { BlueRainButton as Button, MuiButtonProperties } from  './Button.component';

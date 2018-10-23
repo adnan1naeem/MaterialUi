@@ -38,7 +38,7 @@ import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
 import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
 import { Avatar } from './components/Avatar';
-// import { Button } from './components/Button';
+import { Button, MuiButtonProperties } from './components/Button';
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
 
@@ -72,7 +72,7 @@ class MaterialUiPlugin extends Plugin {
 		AppBar,
 		Avatar,
 		Badge,
-		// Button,
+		Button,
 		Card,
 		CardHeader,
 		CardBody,

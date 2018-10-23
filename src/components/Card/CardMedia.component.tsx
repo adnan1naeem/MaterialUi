@@ -15,8 +15,8 @@ const BlueRainCardMedia: React.StatelessComponent<CardMediaProperties> = props =
   return (
     <CardMedia
       style={heightedStyle}
-      //  image={props.src}
-      src={props.src}
+      image={props.src}
+      // src={props.src}
       {...props}
     />
   );
