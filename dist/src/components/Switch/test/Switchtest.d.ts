@@ -16,7 +16,7 @@ declare class BlueRainSwitch extends React.Component<{
     value: boolean;
 }> {
     constructor(props: any);
-    onChange(value1: any, value: any): void;
+    onChange(): void;
     render(): JSX.Element;
 }
 export default BlueRainSwitch;
