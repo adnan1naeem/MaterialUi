@@ -32,9 +32,9 @@ class BlueRainSwitch extends React.Component {
         };
         this.onChange = this.onChange.bind(this);
     }
-    onChange(value1, value) {
+    onChange() {
         this.setState({
-            value
+            value: this.state.value
         });
     }
     render() {
