@@ -22,6 +22,7 @@ const Avatar_1 = require("./components/Avatar");
 const Button_1 = require("./components/Button");
 // import { Notification } from './components/Notification';
 const Stepper_1 = require("./components/Stepper");
+const WebStepper_1 = require("./components/WebStepper");
 const H1_component_1 = __importDefault(require("./components/H1/H1.component"));
 const H2_component_1 = __importDefault(require("./components/H2/H2.component"));
 const H3_component_1 = __importDefault(require("./components/H3/H3.component"));
@@ -95,6 +96,7 @@ MaterialUiPlugin.components = {
     Body2: Body2_component_1.default,
     Caption: Caption_component_1.default,
     Overline: Overline_component_1.default,
+    WebStepper: WebStepper_1.WebStepper,
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map
