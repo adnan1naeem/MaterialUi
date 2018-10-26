@@ -12,6 +12,7 @@ export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (pr
 
   return (
     <Button
+      {...props}
       color={props.color}
       style={props.style}
       disabled={props.disabled}

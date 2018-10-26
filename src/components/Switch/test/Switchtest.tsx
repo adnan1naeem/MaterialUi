@@ -23,9 +23,9 @@ class BlueRainSwitch extends React.Component<{ muValue: string }, { value: boole
     };
     this.onChange = this.onChange.bind(this);
   }
-  onChange(value1: any, value: any) {
+  onChange() {
     this.setState({
-      value
+      value: this.state.value
     });
   }
   render() {

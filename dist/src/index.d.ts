@@ -98,6 +98,7 @@ declare class MaterialUiPlugin extends Plugin {
         Overline: React.StatelessComponent<{
             style?: object;
         }>;
+        WebStepper: React.StatelessComponent<any>;
     };
 }
 export default MaterialUiPlugin;
