@@ -9,21 +9,21 @@ export interface MuiButtonProperties extends ButtonProperties {
 }
 
 export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (props) => {
-
+  const { iconLeft, onPress, ...others } = props;
   return (
     <Button
-      {...props}
+      {...others}
       color={props.color}
       style={props.style}
       disabled={props.disabled}
       href={props.href}
       mini={props.small}
-      onClick={props.onPress}
+      onClick={onPress}
       fullWidth={props.fullWidth}
       variant={props.rounded ? 'fab' : props.bordered ? 'outlined' : props.variant}
       size={props.small ? 'small' : props.large ? 'large' : props.size}
     >
-      {props.iconLeft ? props.iconLeft : null}{props.title ? props.title : null}{props.children}{props.iconRight ? props.iconRight : null}
+      {iconLeft ? iconLeft : null}{props.title ? props.title : null}{props.children}{props.iconRight ? props.iconRight : null}
     </Button>
   );
 };
