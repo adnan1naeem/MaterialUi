@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 /**

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 /**
  * Created by M.Ghaznfar on 3/3/18.
  */

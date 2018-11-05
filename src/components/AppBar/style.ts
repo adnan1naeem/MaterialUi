@@ -14,6 +14,7 @@ export const styles = {
     paddingLeft: 24,
     fontWeight: '500',
     fontSize: 20,
+    color:'white',
     letterSpacing: 0.15,
     alignSelf: 'center'
   }

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ModalFooterProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 export interface ModalFooterProps extends ModalFooterProperties {
