@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { SwitchProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUISwitchProperties extends SwitchProperties {

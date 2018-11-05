@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React from 'react';
 import { MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';
@@ -13,6 +14,7 @@ import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 import { MuiButtonProperties } from './components/Button';
+import { MUITypographyProperties } from './components/Text';
 import { MUIProps } from './components/Checkbox';
 import { MUISliderProperties } from './components/Slider';
 /**
@@ -62,42 +64,21 @@ declare class MaterialUiPlugin extends Plugin {
         FormControl: React.StatelessComponent<MUIFormControlProperties>;
         FormGroup: React.StatelessComponent<MUIFormGroupProperties>;
         TextInput: React.StatelessComponent<MUITextInputProperties>;
-        H1: React.StatelessComponent<{
-            style?: object;
-        }>;
-        H2: React.StatelessComponent<{
-            style?: object;
-        }>;
-        H3: React.StatelessComponent<{
-            style?: object;
-        }>;
-        H4: React.StatelessComponent<{
-            style?: object;
-        }>;
-        H5: React.StatelessComponent<{
-            style?: object;
-        }>;
-        H6: React.StatelessComponent<{
-            style?: object;
-        }>;
-        Subtitle1: React.StatelessComponent<{
-            style?: object;
-        }>;
-        Subtitle2: React.StatelessComponent<{
-            style?: object;
-        }>;
+        Text: React.StatelessComponent<MUITypographyProperties>;
+        H1: React.StatelessComponent<interfaces.TextProperties>;
+        H2: React.StatelessComponent<interfaces.TextProperties>;
+        H3: React.StatelessComponent<interfaces.TextProperties>;
+        H4: React.StatelessComponent<interfaces.TextProperties>;
+        H5: React.StatelessComponent<interfaces.TextProperties>;
+        H6: React.StatelessComponent<interfaces.TextProperties>;
+        Subtitle1: React.StatelessComponent<interfaces.TextProperties>;
+        Subtitle2: React.StatelessComponent<interfaces.TextProperties>;
         Body1: React.StatelessComponent<{
             style?: object;
         }>;
-        Body2: React.StatelessComponent<{
-            style?: object;
-        }>;
-        Caption: React.StatelessComponent<{
-            style?: object;
-        }>;
-        Overline: React.StatelessComponent<{
-            style?: object;
-        }>;
+        Body2: React.StatelessComponent<interfaces.TextProperties>;
+        Caption: React.StatelessComponent<interfaces.TextProperties>;
+        Overline: React.StatelessComponent<interfaces.TextProperties>;
         WebStepper: React.StatelessComponent<any>;
     };
 }

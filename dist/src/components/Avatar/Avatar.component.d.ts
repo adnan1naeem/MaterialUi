@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { BlueRain } from '@blueeast/bluerain-os';
 import { AvatarProperties } from '@blueeast/bluerain-ui-interfaces';

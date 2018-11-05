@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { ListProperties } from '@blueeast/bluerain-ui-interfaces';
 /**

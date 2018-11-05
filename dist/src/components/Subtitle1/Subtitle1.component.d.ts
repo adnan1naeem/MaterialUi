@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import * as React from 'react';
-declare const Subtitle1: React.StatelessComponent<{
-    style?: object;
-}>;
+import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
+declare const Subtitle1: React.StatelessComponent<TextProperties>;
 export default Subtitle1;

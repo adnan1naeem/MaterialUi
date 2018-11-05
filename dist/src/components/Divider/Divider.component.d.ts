@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
 /**

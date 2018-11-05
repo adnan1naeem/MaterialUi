@@ -5,20 +5,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const enzyme_adapter_react_16_1 = __importDefault(require("enzyme-adapter-react-16"));
-const __1 = require("../");
+const _1 = require("../");
 const enzyme_1 = require("enzyme");
 enzyme_1.configure({ adapter: new enzyme_adapter_react_16_1.default() });
 test('when title prop is passed', () => {
-    const checkbox = enzyme_1.shallow(react_1.default.createElement(__1.Checkbox, { label: "hello" }));
+    const checkbox = enzyme_1.shallow(react_1.default.createElement(_1.Checkbox, { label: "hello" }));
     expect(checkbox.props().label).toBeUndefined();
 });
 test('when value prop is passed false', () => {
-    const checkbox = enzyme_1.shallow(react_1.default.createElement(__1.Checkbox, { value: false }));
+    const checkbox = enzyme_1.shallow(react_1.default.createElement(_1.Checkbox, { value: false }));
     expect(checkbox.props().value).toBeFalsy();
     expect(checkbox).toMatchSnapshot();
 });
 test('when indeterminate prop is passed true', () => {
-    const checkbox = enzyme_1.shallow(react_1.default.createElement(__1.Checkbox, { indeterminate: false }));
+    const checkbox = enzyme_1.shallow(react_1.default.createElement(_1.Checkbox, { indeterminate: false }));
     expect(checkbox.props().indeterminate).toBeFalsy();
     expect(checkbox).toMatchSnapshot();
 });

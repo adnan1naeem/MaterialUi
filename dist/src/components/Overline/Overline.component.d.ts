@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import * as React from 'react';
-declare const Overline: React.StatelessComponent<{
-    style?: object;
-}>;
+import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
+declare const Overline: React.StatelessComponent<TextProperties>;
 export default Overline;

@@ -11,10 +11,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const style_1 = require("./style");
-const bluerain_os_1 = __importDefault(require("@blueeast/bluerain-os"));
+const Typography_1 = __importDefault(require("@material-ui/core/Typography"));
 const Caption = props => {
-    return (React.createElement(bluerain_os_1.default.Components.Text, { style: Object.assign({}, style_1.style, props.style) }, props.children));
+    return (React.createElement(Typography_1.default, { style: props.style, variant: "caption" }));
 };
 exports.default = Caption;
 //# sourceMappingURL=Caption.component.js.map

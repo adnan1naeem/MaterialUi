@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { ColorPickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 export interface MUIProps extends ColorPickerProperties {

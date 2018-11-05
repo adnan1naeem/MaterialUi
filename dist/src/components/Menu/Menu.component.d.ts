@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
 /**

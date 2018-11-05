@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIModalProperties extends ModalProperties {
