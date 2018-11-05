@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { style } from './style';
-import BR from '@blueeast/bluerain-os';
+import Typography from '@material-ui/core/Typography';
 const Body1: React.StatelessComponent<{ style?: object }> = props => {
+  const { style, ...others } = props;
   return (
-    <BR.Components.Text style={{ ...style, ...props.style }}>{props.children}</BR.Components.Text>
+    <Typography style={style} variant="body1" {...others} />
   );
 };
 
