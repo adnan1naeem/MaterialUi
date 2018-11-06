@@ -22,7 +22,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
 exports.BlueRainButton = (props) => {
-    const { iconLeft, onPress } = props, others = __rest(props, ["iconLeft", "onPress"]);
+    const { iconLeft, onPress, transparent } = props, others = __rest(props, ["iconLeft", "onPress", "transparent"]);
     return (React.createElement(Button_1.default, Object.assign({}, others, { color: props.color, style: props.style, disabled: props.disabled, href: props.href, mini: props.small, onClick: onPress, fullWidth: props.fullWidth, variant: props.rounded ? 'fab' : props.bordered ? 'outlined' : props.variant, size: props.small ? 'small' : props.large ? 'large' : props.size }),
         iconLeft ? iconLeft : null,
         props.title ? props.title : null,

@@ -9,7 +9,7 @@ export interface MuiButtonProperties extends ButtonProperties {
 }
 
 export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (props) => {
-  const { iconLeft, onPress, ...others } = props;
+  const { iconLeft, onPress, transparent, ...others } = props;
   return (
     <Button
       {...others}
