@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { StepperProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 export interface StepperProps extends StepperProperties {

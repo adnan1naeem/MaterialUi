@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 export interface MUITypographyProperties extends TextProperties {

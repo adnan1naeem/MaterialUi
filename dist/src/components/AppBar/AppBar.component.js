@@ -23,15 +23,16 @@ const React = __importStar(require("react"));
 const bluerain_os_1 = require("@blueeast/bluerain-os");
 const AppBar_1 = __importDefault(require("@material-ui/core/AppBar"));
 const Toolbar_1 = __importDefault(require("@material-ui/core/Toolbar"));
+const Typography_1 = __importDefault(require("@material-ui/core/Typography"));
 const style_1 = require("./style");
 exports.BlueRainAppBar = (props) => {
-    const { position, style } = props, others = __rest(props, ["position", "style"]);
+    const { position, style, titleStyle } = props, others = __rest(props, ["position", "style", "titleStyle"]);
     return (React.createElement(bluerain_os_1.BlueRainConsumer, null, (BR) => (React.createElement(AppBar_1.default, Object.assign({ position: position }, others, { style: style ? style : { position: 'sticky' } }),
         React.createElement(Toolbar_1.default, null,
             React.createElement(BR.Components.View, { style: style_1.styles.container },
                 React.createElement(BR.Components.View, { style: style_1.styles.titleContainer },
                     props.left,
-                    React.createElement(BR.Components.Text, { style: style_1.styles.title }, props.title)),
+                    React.createElement(Typography_1.default, { variant: "h6", style: titleStyle }, props.title)),
                 React.createElement(BR.Components.View, null, props.right)))))));
 };
 //# sourceMappingURL=AppBar.component.js.map

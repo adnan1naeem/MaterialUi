@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 import { MUIAppBarProperties } from './components/AppBar';
 import { Plugin } from '@blueeast/bluerain-os';

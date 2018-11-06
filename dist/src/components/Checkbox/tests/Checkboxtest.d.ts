@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 declare class BlueRainCheckbox extends React.Component<{}, {
     checked: boolean;
