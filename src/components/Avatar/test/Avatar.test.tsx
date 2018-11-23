@@ -15,8 +15,6 @@ test('Avatar component with size props', () => {
 	const avatar = renderer.create(
       <BlueRainProvider><Avatar size={100} style={{width: 100, height: 100}} /></BlueRainProvider>
 	).toJSON();
-	console.log('Avatarrrrr===>1', avatar);
-	console.log('Avatarrrrr===>2', avatar.props.children);
 	expect(avatar? avatar.props.style : {}).toEqual({ width:100, height:100 });
 	expect(avatar).toMatchSnapshot();
 });
