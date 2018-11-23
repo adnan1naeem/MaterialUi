@@ -10,7 +10,7 @@ const stories = storiesOf('Badge', module);
 
 stories.addDecorator(withKnobs).add('Badgse (with knobs)', () => {
   const content = text('content', 'abc');
-  const Style = object('Style of Badge', DefaultStyle)
+  const Style = object('Style of Badge', DefaultStyle);
   return <Badge badgeContent={content} style={Style} color="primary"><MailIcon /></Badge>;
 });
 

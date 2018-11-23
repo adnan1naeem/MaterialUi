@@ -1,10 +1,14 @@
-import { WebStepper } from '../';
-import renderer from 'react-test-renderer';
+import { WebStepper } from '../Stepper.components';
+import { configure, shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+
 import React from 'react';
+
 test('render correctly', () => {
-	const Steppertest = renderer.create(
-		<WebStepper type="progress" activeStep={3} steps={[{label: 6}]} />
-	).toJSON();
-	expect(Steppertest).toBeDefined();
-	expect(Steppertest).toMatchSnapshot();
+	const wrapper = mount(
+		<WebStepper type="progress" activeStep={3} steps={['label']} />
+	);
+	expect(wrapper.props().type).toEqual('progress');
 });

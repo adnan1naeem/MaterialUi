@@ -3,37 +3,43 @@ import { Avatar } from '../';
 import renderer from 'react-test-renderer';
 import BR, { BlueRainProvider } from '@blueeast/bluerain-os';
 import 'jest';
-// import FolderIcon from '@material-ui/icons/Folder';
+import Adapter from 'enzyme-adapter-react-16';
+
 import { BluerainBoot } from '../../../utils/testBootConfig';
-import console = require('console');
+import { configure, shallow, mount } from 'enzyme';
+
+configure({ adapter: new Adapter() });
 
 beforeEach(() => {
-  return BluerainBoot();
+	return BluerainBoot();
 });
 
 test('Avatar component with size props', () => {
-	const avatar = renderer.create(
-      <BlueRainProvider><Avatar size={100} style={{width: 100, height: 100}} /></BlueRainProvider>
-	).toJSON();
-	expect(avatar? avatar.props.style : {}).toEqual({ width:100, height:100 });
-	expect(avatar).toMatchSnapshot();
+
+	const wrapper = mount(
+		<BlueRainProvider><Avatar size={100} style={{ width: 100, height: 100 }} /></BlueRainProvider>
+	);
+
+	expect(wrapper.props().children.props.style).toEqual({ width: 100, height: 100 });
 });
 
 test('Avatar component with style', () => {
-	const avatar = renderer.create(
-	<BlueRainProvider><Avatar style={{ backgroundColor:'green' }}></Avatar></BlueRainProvider>
-  ).toJSON();
-	expect(avatar?avatar.props.style:{}).toEqual({ backgroundColor:'green' });
-	expect(avatar).toMatchSnapshot();
+	const wrapper = mount(
+		<BlueRainProvider>
+			<Avatar size={100} style={{ backgroundColor: 'green' }} /></BlueRainProvider>
+	);
+	expect(wrapper.props().children.props.style).toEqual({ backgroundColor: 'green' });
 });
 
 test('Avatar component with src props', () => {
-	const avatar = renderer.create(
-		<BlueRainProvider><Avatar src="https://material-ui-next.com/static/images/remy.jpg"></Avatar></BlueRainProvider>
-  ).toJSON();
-	expect(avatar ? avatar.props.src : {}).toBe('https://material-ui-next.com/static/images/remy.jpg');
-	expect(avatar).toMatchSnapshot();
+
+	const wrapper = mount(
+		<BlueRainProvider><Avatar src="https://material-ui-next.com/static/images/remy.jpg" /></BlueRainProvider>
+	);
+	expect(wrapper.props().children.props.src).toEqual('https://material-ui-next.com/static/images/remy.jpg');
+
 });
+
 
 
 // test('Avatar component with src and size props', () => {

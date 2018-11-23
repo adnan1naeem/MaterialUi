@@ -44,7 +44,7 @@ react_1.storiesOf('Button', module).add('Accent button with bordered prop true',
 react_1.storiesOf('Button', module).add('Primary button with iconLeft prop', () => React.createElement(Button_1.Button, { color: "primary", iconLeft: React.createElement(Add_1.default, null) }, "Icon Left"));
 react_1.storiesOf('Button', module).add('Transparent Button with icon as child', () => React.createElement(Button_1.Button, { style: { backgroundColor: 'transparent', boxShadow: 'none', border: 0 } },
     React.createElement(Add_1.default, null)));
-react_1.storiesOf('Button', module).add('Contrast button with iconRight prop', () => React.createElement(Button_1.Button, { color: 'primary', iconRight: React.createElement(Add_1.default, null) }, "Icon Right"));
+react_1.storiesOf('Button', module).add('Contrast button with iconRight prop', () => React.createElement(Button_1.Button, { color: "primary", iconRight: React.createElement(Add_1.default, null) }, "Icon Right"));
 react_1.storiesOf('Button', module).add('Primary button with round prop and small prop', () => React.createElement(Button_1.Button, { color: "primary", rounded: true, small: true }, "sm"));
 react_1.storiesOf('Button', module).add('Accent button with large prop true', () => React.createElement(Button_1.Button, { color: "primary", variant: 'contained', large: true }, "Large"));
 react_1.storiesOf('Button', module).add('Text Buttons', () => {

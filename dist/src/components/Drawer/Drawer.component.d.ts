@@ -15,5 +15,5 @@ export interface MUIDrawerProperties extends DrawerProperties {
     classes?: any;
     elevation?: number;
 }
-declare const _default: React.FunctionComponent<any>;
+declare const _default: React.StatelessComponent<any>;
 export default _default;

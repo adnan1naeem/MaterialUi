@@ -3,7 +3,7 @@
     "@blueeast/tslint-config-blueeast/react"
   ],
   "rules": {
-    "class-name":false,
+    "class-name": false,
     "no-implicit-dependencies": [
       true,
       "dev"
@@ -12,7 +12,7 @@
       true,
       440
     ],
-    "max-classes-per-file":false,
+    "max-classes-per-file": false,
     "no-var-requires": false,
     "no-submodule-imports": false,
     "jsx-boolean-value": false,
@@ -21,6 +21,7 @@
     "no-shadowed-variable": false,
     "ter-indent": false,
     "sort-imports": false,
-    "pascal-case": false
+    "pascal-case": false,
+    "prefer-const": false
   }
 }
