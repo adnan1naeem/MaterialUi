@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component with children props 1`] = `
+<ul
+  className="MuiList-root-1 MuiList-padding-2"
+  style={undefined}
+>
+  <div>
+    Hello
+  </div>
+</ul>
+`;
+
+exports[`List component with style props 1`] = `
+<ul
+  className="MuiList-root-1 MuiList-padding-2"
+  style={
+    Object {
+      "width": 100,
+    }
+  }
+/>
+`;
+
+exports[`ListItem  with children props 1`] = `
+<li
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  disabled={false}
+  onClick={undefined}
+>
+  <div
+    className="MuiListItemText-root-22"
+  >
+    <span
+      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+    >
+      Hello
+    </span>
+  </div>
+</li>
+`;
+
+exports[`ListItem with   style props 1`] = `
+<li
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  disabled={false}
+  onClick={undefined}
+  style={
+    Object {
+      "width": 100,
+    }
+  }
+/>
+`;
+
+exports[`ListItem with primary props 1`] = `
+<li
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  disabled={false}
+  onClick={undefined}
+  primary="hello"
+>
+  <div
+    className="MuiListItemText-root-22"
+  >
+    <span
+      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+    >
+      hello
+    </span>
+    <p
+      className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-colorTextSecondary-61 MuiListItemText-secondary-26"
+    >
+      
+    </p>
+  </div>
+  <div
+    className="MuiListItemText-root-22"
+  >
+    <span
+      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+    >
+      Hello
+    </span>
+  </div>
+</li>
+`;
+
+exports[`ListItem with secondary props 1`] = `
+<li
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  disabled={false}
+  onClick={undefined}
+  secondary="Hi"
+>
+  <div
+    className="MuiListItemText-root-22"
+  >
+    <span
+      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+    >
+      
+    </span>
+    <p
+      className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-colorTextSecondary-61 MuiListItemText-secondary-26"
+    >
+      Hi
+    </p>
+  </div>
+  <div
+    className="MuiListItemText-root-22"
+  >
+    <span
+      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+    >
+      Hello
+    </span>
+  </div>
+</li>
+`;
+
+exports[`ListSuheader with children props 1`] = `
+<li
+  className="MuiListSubheader-root-5 MuiListSubheader-sticky-10 MuiListSubheader-gutters-8"
+>
+  I am Header of list
+</li>
+`;
