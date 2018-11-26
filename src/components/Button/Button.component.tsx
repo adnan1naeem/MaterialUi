@@ -13,17 +13,25 @@ export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (pr
   return (
     <Button
       {...others}
-      color={props.color}
-      style={props.style}
+      color={props.primary ? 'secondary' : props.color}
+      style={props.success
+        ?
+        { backgroundColor: 'green', ...props.style } : props.dark
+          ?
+          { backgroundColor: 'black', ...props.style } : props.warning
+            ?
+            { backgroundColor: 'yellow', ...props.style } : props.danger
+              ?
+              { backgroundColor: 'red', ...props.style } : props.style}
       disabled={props.disabled}
       href={props.href}
       mini={props.small}
       onClick={onPress}
       fullWidth={props.fullWidth}
-      variant={props.rounded ? 'fab' : props.bordered ? 'outlined' : props.variant}
+      variant={props.rounded ? 'fab' : props.bordered ? 'outlined' : props.primary || props.light ? 'contained' : props.variant}
       size={props.small ? 'small' : props.large ? 'large' : props.size}
     >
-      {iconLeft ? iconLeft : null}{props.title ? props.title : null}{props.children}{props.iconRight ? props.iconRight : null}
+      {iconLeft ? iconLeft : null} {props.title ? props.title : null} {props.children}{props.iconRight ? props.iconRight : null}
     </Button>
   );
 };

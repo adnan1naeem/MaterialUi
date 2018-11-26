@@ -31,7 +31,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         null,
+        " ",
         null,
+        " ",
         undefined,
         null,
       ],
@@ -56,7 +58,9 @@ ShallowWrapper {
     "ref": null,
     "rendered": Array [
       null,
+      " ",
       null,
+      " ",
       undefined,
       null,
     ],
@@ -70,7 +74,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           null,
+          " ",
           null,
+          " ",
           undefined,
           null,
         ],
@@ -95,7 +101,9 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         null,
+        " ",
         null,
+        " ",
         undefined,
         null,
       ],

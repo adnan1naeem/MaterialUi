@@ -23,9 +23,15 @@ const React = __importStar(require("react"));
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
 exports.BlueRainButton = (props) => {
     const { iconLeft, onPress, transparent } = props, others = __rest(props, ["iconLeft", "onPress", "transparent"]);
-    return (React.createElement(Button_1.default, Object.assign({}, others, { color: props.color, style: props.style, disabled: props.disabled, href: props.href, mini: props.small, onClick: onPress, fullWidth: props.fullWidth, variant: props.rounded ? 'fab' : props.bordered ? 'outlined' : props.variant, size: props.small ? 'small' : props.large ? 'large' : props.size }),
+    return (React.createElement(Button_1.default, Object.assign({}, others, { color: props.primary ? 'secondary' : props.color, style: props.success
+            ? Object.assign({ backgroundColor: 'green' }, props.style) : props.dark
+            ? Object.assign({ backgroundColor: 'black' }, props.style) : props.warning
+            ? Object.assign({ backgroundColor: 'yellow' }, props.style) : props.danger
+            ? Object.assign({ backgroundColor: 'red' }, props.style) : props.style, disabled: props.disabled, href: props.href, mini: props.small, onClick: onPress, fullWidth: props.fullWidth, variant: props.rounded ? 'fab' : props.bordered ? 'outlined' : props.primary || props.light ? 'contained' : props.variant, size: props.small ? 'small' : props.large ? 'large' : props.size }),
         iconLeft ? iconLeft : null,
+        " ",
         props.title ? props.title : null,
+        " ",
         props.children,
         props.iconRight ? props.iconRight : null));
 };
