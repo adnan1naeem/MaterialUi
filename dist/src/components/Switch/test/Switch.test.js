@@ -14,27 +14,22 @@ function handleTextInputChange() {
 }
 test('Switch component with checked props', () => {
     const switchComponent = enzyme_1.shallow(react_1.default.createElement(Switch_component_1.default, { checked: true }));
-    console.log(switchComponent.props, 'checked');
     expect(switchComponent.props().checked).toBe(true);
 });
 test('Switch component with color props', () => {
     const switchComponent = enzyme_1.shallow(react_1.default.createElement(Switch_component_1.default, { color: "primary" }));
-    console.log(switchComponent.props, 'checked');
     expect(switchComponent.props().color).toEqual('primary');
 });
 test('Switch component with disabled props', () => {
     const switchComponent = enzyme_1.shallow(react_1.default.createElement(Switch_component_1.default, { disabled: true }));
-    console.log(switchComponent.props, 'checked');
     expect(switchComponent.props().disabled).toEqual(true);
 });
 test('Switch component with disableRipple props', () => {
     const switchComponent = enzyme_1.shallow(react_1.default.createElement(Switch_component_1.default, { disableRipple: false }));
-    console.log(switchComponent.props, 'checked');
     expect(switchComponent.props().disableRipple).toEqual(false);
 });
 test('Switch component with checked props', () => {
     const switchComponent = enzyme_1.shallow(react_1.default.createElement(Switch_component_1.default, { checkedIcon: true }));
-    console.log(switchComponent.props, 'checked');
     expect(switchComponent.props().checkedIcon).toEqual(true);
 });
 //# sourceMappingURL=Switch.test.js.map

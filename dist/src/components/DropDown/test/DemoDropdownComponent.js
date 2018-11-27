@@ -15,7 +15,6 @@ class SimpleSelect extends react_1.default.Component {
         this.onChange = this.onChange.bind(this);
     }
     onChange(event) {
-        console.log(event.target.value);
         this.setState({ value: event.target.value });
     }
     render() {

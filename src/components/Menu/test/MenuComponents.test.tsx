@@ -1,9 +1,7 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
-import renderer from 'react-test-renderer';
 import 'jest';
 import { Menu, MenuItem, MenuPopper, MenuList } from '../index';
-import Button from '@material-ui/core/Button';
 import { configure, mount, shallow, } from 'enzyme';
 configure({ adapter: new Adapter() });
 

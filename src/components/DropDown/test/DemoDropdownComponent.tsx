@@ -16,7 +16,6 @@ class SimpleSelect extends React.Component<any, any> {
   }
 
   onChange(event: any) {
-    console.log(event.target.value);
     this.setState({ value: event.target.value });
   }
 

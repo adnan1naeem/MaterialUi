@@ -8,7 +8,6 @@ const stories = storiesOf('Dropdown', module);
 let values: any;
 
 const onChange = (event: any) => {
-  console.log(event.target.value);
   values = event.target.value;
 };
 const style = { root: { padding: 20 }, dropdown: { width: 400 } };
@@ -29,7 +28,6 @@ const multiItems = [
 
 
 stories.add(' Dropdown with onchange', () => {
-  console.log('value', values);
   return (
     <Paper style={style.root}>
       <DropdownExample />
@@ -39,7 +37,6 @@ stories.add(' Dropdown with onchange', () => {
 
 
 stories.add('Dropdown with auoWidth', () => {
-  console.log('value', values);
   return (
     <Paper style={style.root}>
       <Dropdown onValueChange={onChange} value={values ? values : '1'} autoWidth={true} style={style.dropdown}>
