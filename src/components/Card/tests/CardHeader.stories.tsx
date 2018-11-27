@@ -1,43 +1,37 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { CardHeader } from '../../Card';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import Avatar from 'material-ui/Avatar';
-import BR from '@blueeast/bluerain-os';
-import IconButton from 'material-ui/IconButton';
-import SkipNextIcon from 'material-ui-icons/SkipNext';
+import Avatar from '@material-ui/core/Avatar';
+// import IconButton from '@material-ui/core/IconButton';
+// import SkipNextIcon from '@material-ui/icons/SkipNext';
 
-const Text = BR.Components.get('Text');
-
-const label = text('label as child', <Text>With knobs</Text>);
 storiesOf('CardHeader', module).add('CardHeader with title as Node and style props', () =>
-(
-<CardHeader
-		style={{ width:300, backgroundColor:'white' }}
-		title={label}
-/>));
+  (
+    <CardHeader
+      style={{ width: 300, backgroundColor: 'white' }}
+      title="Title"
+    />));
 
-storiesOf('CardHeader', module).add('CardHeader with title prop as string', () =>
-(
-<CardHeader
-		title="Title"
-/>));
+storiesOf('CardHeader', module).addDecorator(withKnobs).add('CardHeader with title prop as string', () =>
+  (
+    <CardHeader
+      title={text('Title', 'Title')}
+    />));
 
 storiesOf('CardHeader', module).add('CardHeader with children and title prop ', () =>
-(
-<CardHeader title="Children">
-		<Avatar aria-label="Recipe" style={{ backgroundColor:'red' }}>R</Avatar>
-		<IconButton><SkipNextIcon /></IconButton>
-		"Shrimp and Chorizo Paella"
-		"September 14, 2016"
+  (
+    <CardHeader title="Children">
+      <Avatar aria-label="Recipe" style={{ backgroundColor: 'red' }}>R</Avatar>
+      "Shrimp and Chorizo Paella"
+			"September 14, 2016"
 </CardHeader>));
 
 storiesOf('CardHeader', module).add('CardHeader with MUI props', () =>
-(
-<CardHeader
-		avatar={<Avatar aria-label="Recipe" style={{ backgroundColor:'red' }}>R</Avatar>}
-		action={<IconButton><SkipNextIcon /></IconButton>}
-		title="Shrimp and Chorizo Paella"
-		subheader="September 14, 2016"
-/>));
+  (
+    <CardHeader
+      avatar={<Avatar aria-label="Recipe" style={{ backgroundColor: 'red' }}>R</Avatar>}
+      //  action={<IconButton><SkipNextIcon /></IconButton>}
+      title="Shrimp and Chorizo Paella"
+      subheader="September 14, 2016"
+    />));

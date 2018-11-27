@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CardHeader } from 'material-ui/Card';
+import CardHeader from '@material-ui/core/CardHeader';
 import { CardHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
@@ -11,30 +11,30 @@ import { CardHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
  */
 
 
- /**
-  * Platform specific props
-  * @param {Node} props.action The action to display in the card header.
-  * @param {Node} props.avatar The Avatar for the Card Header.
-  * @param {Object} props.classes Useful to extend the style applied to components.
-  * @param {Node} props.subheader The content of the component. Subheader overrides children
-  */
+/**
+ * Platform specific props
+ * @param {Node} props.action The action to display in the card header.
+ * @param {Node} props.avatar The Avatar for the Card Header.
+ * @param {Object} props.classes Useful to extend the style applied to components.
+ * @param {Node} props.subheader The content of the component. Subheader overrides children
+ */
 
-export interface MUICardHeaderProperties extends CardHeaderProperties{
-	action?: React.ReactNode,
-	avatar?: React.ReactNode,
-	classes?: {},
-	subheader?: React.ReactNode,
+export interface MUICardHeaderProperties extends CardHeaderProperties {
+  action?: React.ReactNode,
+  avatar?: React.ReactNode,
+  classes?: {},
+  subheader?: React.ReactNode,
 }
 
 const BlueRainCardHeader: React.StatelessComponent<MUICardHeaderProperties> = (props) => {
-	return (
-        <CardHeader
-            style={props.style}
-            title={props.title}
-            subheader={props.subheader? props.subheader : props.children}
-            {...props}
-        />
-	);
+  return (
+    <CardHeader
+      style={props.style}
+      title={props.title}
+      subheader={props.subheader ? props.subheader : props.children}
+      {...props}
+    />
+  );
 
 };
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FormGroup } from 'material-ui/Form';
+import FormGroup from '@material-ui/core/FormGroup';
 import { FormGroupProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
@@ -10,13 +10,13 @@ import { FormGroupProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.className className for FormGroup's extended style.
  */
 export interface MUIFormGroupProperties extends FormGroupProperties {
-	classes?: {},
+  classes?: {},
 }
 
 const BlueRainFormGroup: React.StatelessComponent<MUIFormGroupProperties> = (props) => {
-	return (
-        <FormGroup {...props} />
-	);
+  return (
+    <FormGroup {...props} />
+  );
 };
 
 export default BlueRainFormGroup;

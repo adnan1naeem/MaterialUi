@@ -1,42 +1,52 @@
 # Chip
 
-## Universal Props
+Chips are compact elements that represent an input, attribute, or action.
+Chips allow users to enter information, make selections, filter content, or trigger actions
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| style | Object |  | Get the style object |
-| children | ReactNode | | Content of the Chip |
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/chip-screen-shot.png) |    TBD   | TBD |
 
 ## Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| label | string |  | The content of the label. |
-| onDelete | ReactNode | | Callback function fired when the delete icon is clicked. If set, the delete icon will be shown. |
-| deleteIcon | ReactNode | | Custom delete icon element. Will be shown only if onDelete is set. |
-| onClick | ReactNode | | Function when clicked on chip. |
+| variant | 'outlined' | 'default' |  | The content of the label. |
+| onDelete | () => void | | Callback function fired when the delete icon is clicked. If set, the delete icon will be shown. |
+| deleteIcon | React.ReactElement | | Custom delete icon element. Will be shown only if onDelete is set. |
+| onClick | () => void | | Function when clicked on chip. |
+| label | ReactNode | | label for chip. |
+| component | React.ReactType | | component for chip. |
+| avatar | React.ReactElement | | avatar for chip. |
+| icon | React.ReactElement | | icon for chip. |
+| clickable | boolean | | Clickable enable/disable for chip. |
+| style | object | | style object for chip. |
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import { BlueRainConsumer, BlueRain } from '@blueeast/bluerain-os';
 
 const ChipSample = (props) => (
-    const BR = props.bluerain;
-    const Chip = BR.Components.get('Chip');
-    <Chip style={{'background-color':'green'}}>10 % off</Chip>);
+    <BlueRainConsumer>
+    {(BR:BlueRain)=>
+      (<BR.Components.Chip
+            style={{'background-color':'red'}}
+            label="Basic Chip"
+            color="secondary"
+            onDelete={() => 'Dummy'}
+     />)  }
+    </BlueRainConsumer>
+    );
 
-export default withBluerain(ChipSample);
+export default ChipSample;
 ```
-
-## Storybook
-
-- 1st story of the Chip component in Chip.stories.tsx file is written for Chip with default value.
-- 2nd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style".
-- 3rd story of the Chip component in Chip.stories.tsx file is written for Chip with knobs and prop "style" , "onClick".
-- 4th story of the Chip component in Chip.stories.tsx file is written for Chip without knobs and prop "style" , "onClick".
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

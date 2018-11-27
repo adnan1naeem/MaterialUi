@@ -1,98 +1,40 @@
-import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
-import { List, ListItem, ListItemText } from '../List';
-import { Manager, Popper, Target } from 'react-popper';
-import { Menu, MenuItem } from '../Menu';
-import { Button } from '../Button';
-import { MenuList } from 'material-ui/Menu';
-import ClickAwayListener from 'material-ui/utils/ClickAwayListener';
-import Grow from 'material-ui/transitions/Grow';
-import Paper from 'material-ui/Paper';
-import React from 'react';
-// import Button from 'material-ui/Button';
-// import Fade from 'material-ui/transitions/Fade';
+import Popper from '@material-ui/core/Popper';
+import React, { ReactNode } from 'react';
 
-export interface MenuPopperProperties {
-  menuListProps?: any;
-  paperProps?: any;
-  menuItems?: any;
-  placement?:
-  'right' |
-  'right-end' |
-  'right-start' |
-  'left' |
-  'left-end' |
-  'left-start' |
-  'top' |
-  'top-end' |
-  'top-start' |
-  'bottom' |
-  'bottom-end' |
-  'bottom-start';
-  component?: (props: any) => (React.ReactNode);
-  style?: any;
+/**
+ * The props of DropDown Component
+ * @param {boolean} props.autoWidth for Auto width.
+ * @param {Object} props.classes style object for DopDown style.
+ * @param {boolean} props.displayEmpty If true, the selected item is displayed even if its value is empty.
+ * You can only use it when the native property is false (default)..
+ * @param {ReactNode} props.input An Input element; does not have to be a material-ui specific Input.
+ * @param {Object} props.MenuProps Properties applied to the Menu element.
+ * @param {boolean} props.native If true, the component will be using a native select element.
+ * @param {Node} props.renderValue Render the selected value.
+ * You can only use it when the native property is false (default).
+ * @param {Node} props.value The input value, required for a controlled component.
+ * @param {boolean} props.disabled disables the selection.
+ */
+
+
+export interface MenuPopperprops {
+  children?: ReactNode,
+  open: boolean,
+  anchorEl?: any,
+  container?: any,
+  disablePortal?: boolean,
+  keepMounted?: boolean,
+  modifiers?: object,
+  placement?: 'bottom-end' | 'bottom-start' | 'bottom' | 'left-end' | 'left-start' | 'left' | 'right-end' | 'right-start' | 'right' | 'top-end' | 'top-start' | 'top'
+  popperOptions?: object,
+  transition?: boolean
+
 }
 
-class MenuPopper extends React.Component<MenuPopperProperties, { anchorEl: any }> {
-  target1: any = '';
-  state = {
-    anchorEl: null,
-  };
+const BRMenuPopper: React.StatelessComponent<MenuPopperprops> = (props) => (
+  <Popper {...props}>
+    {props.children}
+  </Popper>
+);
 
-  handleOpen = event => {
-    this.setState({ anchorEl: event.currentTarget });
-  }
-
-  handleClose = (event, onClick?: () => void) => {
-    if (this.target1.contains(event.target)) {
-      return;
-    }
-    onClick ? onClick() : console.log('No Click functionality passed');
-    this.setState({ anchorEl: null });
-  }
-
-  render() {
-    const { anchorEl } = this.state;
-
-    return (
-      <div style={this.props.style}>
-        <Manager>
-          <Target>
-            <div
-              ref={node => {
-                this.target1 = node;
-              }}
-            >
-              {this.props.component ? this.props.component(this.handleOpen) : null}
-            </div>
-          </Target>
-
-          <Popper
-            placement={this.props.placement}
-            eventsEnabled={Boolean(anchorEl)}
-          >
-            <ClickAwayListener onClickAway={this.handleClose}>
-              <Grow in={Boolean(anchorEl)} style={{ transformOrigin: '0 0 0' }}>
-                <Paper {...this.props.paperProps}>
-                  <MenuList
-                    role="menu"
-                    {...this.props.menuListProps}
-                  >
-                    {
-                      this.props.menuItems && Boolean(anchorEl) ? this.props.menuItems.map((each) => (
-                        <MenuItem onClick={(e) => this.handleClose(e, each.onClick)} style={each.style} {...each.otherProps}>
-                          {each.title}
-                        </MenuItem>
-                      )) : null
-                    }
-                  </MenuList>
-                </Paper>
-              </Grow>
-            </ClickAwayListener>
-          </Popper>
-        </Manager>
-      </div>
-    );
-  }
-}
-
-export default MenuPopper;
+export default BRMenuPopper;

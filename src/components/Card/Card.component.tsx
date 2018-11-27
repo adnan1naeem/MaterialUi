@@ -1,5 +1,5 @@
 import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
-import Card from 'material-ui/Card';
+import Card from '@material-ui/core/Card';
 import React from 'react';
 
 /**
@@ -18,12 +18,12 @@ import React from 'react';
  */
 
 export interface MUICardProperties extends CardProperties {
-	elevation?: number;
-	square?: boolean;
+  elevation?: number;
+  square?: boolean;
 }
 
 const BlueRainCard: React.StatelessComponent<MUICardProperties> = props => {
-	return (
+  return (
     <Card
       {...props}
       raised={props.raised}
@@ -33,7 +33,7 @@ const BlueRainCard: React.StatelessComponent<MUICardProperties> = props => {
     >
       {props.children}
     </Card>
-	);
+  );
 };
 
 export default BlueRainCard;

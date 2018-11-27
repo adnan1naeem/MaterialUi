@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { CardActions } from 'material-ui/Card';
+import CardActions from '@material-ui/core/CardActions';
 import { CardFooterProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
@@ -19,19 +19,19 @@ import { CardFooterProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {Object} props.classes Useful to extend style for the component.
  */
 
-export interface MUICardFooterProperties extends CardFooterProperties{
-	classes?: {},
-	disableActionSpacing?: boolean,
+export interface MUICardFooterProperties extends CardFooterProperties {
+  classes?: {},
+  disableActionSpacing?: boolean,
 }
 
 const BlueRainCardFooter: React.StatelessComponent<MUICardFooterProperties> = (props) => {
-	return (
-        <CardActions
-            {...props}
-        >
-        {props.children}
-        </CardActions>
-	);
+  return (
+    <CardActions
+      {...props}
+    >
+      {props.children}
+    </CardActions>
+  );
 };
 
 export default BlueRainCardFooter;

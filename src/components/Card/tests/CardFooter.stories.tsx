@@ -1,26 +1,32 @@
 import * as React from 'react';
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { object, withKnobs } from '@storybook/addon-knobs';
 import { CardFooter } from '../../Card';
-import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import BR from '@blueeast/bluerain-os';
-import Button from 'material-ui/Button';
+import Button from '@material-ui/core/Button';
 
 const styles = {
-	bg: {
-		backgroundColor:'white', width:'100%'
-	}
+  bg: {
+    backgroundColor: 'white', width: '100%'
+  }
 };
 
-storiesOf('CardFooter', module).add('CardFooter with className and style prop', () =>
-(
-<CardFooter
-		className="bg-footer"
-		style={{ width:200, height:200, backgroundColor:'grey' }}
-/>));
+const footerStyle = {
+  width: 200,
+  height: 200,
+  backgroundColor: 'grey',
+};
+
+storiesOf('CardFooter', module).addDecorator(withKnobs).add('CardFooter with className and style prop', () => {
+  const style = object('component style', footerStyle);
+  return (
+    <CardFooter
+      className="bg-footer"
+      style={style}
+    />);
+});
 
 storiesOf('CardFooter', module).add('CardFooter with children prop (MUI specific)', () =>
-(
-<CardFooter disableActionSpacing style={styles.bg}>
-	<Button dense>Learn More</Button>
-</CardFooter>));
+  (
+    <CardFooter disableActionSpacing style={styles.bg}>
+      <Button >Learn More</Button>
+    </CardFooter>));

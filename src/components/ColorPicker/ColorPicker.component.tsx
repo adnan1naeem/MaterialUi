@@ -2,25 +2,24 @@ import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 import { ChromePicker, SketchPicker } from 'react-color';
 import { ColorPickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import { styles } from './pickerStyles';
-import Button from 'material-ui/Button';
-import Card from 'material-ui/Card';
-import Paper from 'material-ui/Paper';
+import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 import React from 'react';
 
 export interface MUIProps extends ColorPickerProperties {
-	value?:{ h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string | any,
+	value?: { h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string | any,
 	hs: boolean,
 }
 
-class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string, displayColorPicker: boolean}> {
+class ColorPicker extends React.Component<MUIProps, { color?: { h?: number, s?: number, l?: number, r?: number, g?: number, b?: number, a?: number } | string, displayColorPicker: boolean }> {
 
-	constructor (props:MUIProps) {
+	constructor(props: MUIProps) {
 		super(props);
-		this.state= {
+		this.state = {
 			displayColorPicker: false,
 			color: this.props.value || 'red',
-	};
-}
+		};
+	}
 
 	handleClick = () => {
 		this.setState({ displayColorPicker: !this.state.displayColorPicker });
@@ -30,15 +29,15 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 		this.setState({ displayColorPicker: false });
 	}
 
-	handleChangeHsl = (color) => {
+	handleChangeHsl = (color: any) => {
 		this.setState({ color: color.hsl });
 	}
 
-	handleChangeRgb= (color) => {
+	handleChangeRgb = (color: any) => {
 		this.setState({ color: color.rgb });
 	}
 
-	getColorPicker(hs:boolean, backgroundColor:string) {
+	getColorPicker(hs: boolean, backgroundColor: string) {
 		if (hs) {
 			return <ChromePicker color={backgroundColor} onChange={this.handleChangeHsl} onChangeComplete={this.props.onChange} />;
 		}
@@ -57,11 +56,11 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 				else {
 					if (!(this.state.color.h)) {
 						return (
-						<BlueRainConsumer>{(BR:BlueRain) => (
-							<Paper elevation={2}>
-								<BR.Components.Text style={styles.handleError}>{'"Error: Pass prop "value" in hsl format as prop "hs" is true, demanding hsl values."'}</BR.Components.Text>
-							</Paper>)}
-						</BlueRainConsumer>);
+							<BlueRainConsumer>{(BR: BlueRain) => (
+								<Paper elevation={2}>
+									<BR.Components.Text style={styles.handleError}>{'"Error: Pass prop "value" in hsl format as prop "hs" is true, demanding hsl values."'}</BR.Components.Text>
+								</Paper>)}
+							</BlueRainConsumer>);
 					}
 					const bgS = (this.state.color.s || 0.5) * 100;
 					const bgL = (this.state.color.l || 0.5) * 100;
@@ -69,31 +68,31 @@ class ColorPicker extends React.Component<MUIProps, {color?:{h?: number, s?: num
 				}
 			}
 		} else if (this.state.color) {
-				backgroundColor = typeof this.state.color === 'string' ? this.state.color : `rgba(${this.state.color.r}, ${this.state.color.g}, ${this.state.color.b}, ${this.state.color.a})`;
+			backgroundColor = typeof this.state.color === 'string' ? this.state.color : `rgba(${this.state.color.r}, ${this.state.color.g}, ${this.state.color.b}, ${this.state.color.a})`;
 		}
 
 		return (
-			<BlueRainConsumer>{(BR:BlueRain) => (
+			<BlueRainConsumer>{(BR: BlueRain) => (
 				<BR.Components.View style={styles.colorControl}>
 					<BR.Components.Text>{this.props.label}</BR.Components.Text>
 					<BR.Components.View style={styles.onLeft}>
 						<Paper elevation={2} style={styles.padding5}>
 							<Button
-									raised={true}
-									style={{ display:'flex', justifyContent:'center', backgroundColor, minHeight: 14, minWidth: 36 }}
-									onClick={this.handleClick}
+								// raised={true}
+								style={{ display: 'flex', justifyContent: 'center', backgroundColor, minHeight: 14, minWidth: 36 }}
+								onClick={this.handleClick}
 							/>
-							{ this.state.displayColorPicker ? <Paper elevation={2}>
+							{this.state.displayColorPicker ? <Paper elevation={2}>
 								<BR.Components.View style={styles.popover}>
-									<BR.Components.View style={styles.cover}  />
+									<BR.Components.View style={styles.cover} />
 									{this.getColorPicker(this.props.hs, backgroundColor)}
 								</BR.Components.View>
 							</Paper> : null}
 						</Paper>
+					</BR.Components.View>
 				</BR.Components.View>
-			</BR.Components.View>
-)}
-  </BlueRainConsumer>
+			)}
+			</BlueRainConsumer>
 		);
 
 	}

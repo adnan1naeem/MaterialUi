@@ -1,36 +1,54 @@
 # Slider
 
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✖      | ✖           | ✔️              |
+
+## Screenshots
+
+| 🌏 Web                                    | 🖥 Electron | 📱 React Native |
+| :---------------------------------------: | :---------: | :-------------: |
+| ![mobile image](./screenshots/Slider.png) |             | TBD             |
+
 ## Universal Props
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| defaultValue | number | 0 | Initial value of the slider. |
-| maximumValue | number | 100 | Maximum value of slider. |
-| mininimumValue | number | 0 | Minimum value of slider.. |
-| onValueChange | function | | Invoked with the new value when the value changes. |
-
-## NOTES
-
-For the time being, We are providing only 4 props for MuiTheme, described above. They will surely increase to enhance performance of our Slider component.
-
+| Name              | Type     | Default | Description                                                                                     |
+| :---------------- | :------- | :------ | :---------------------------------------------------------------------------------------------- |
+| style             | Object   |         | Get the style object                                                                            |
+| disabled          | bool     |         | if true, slider is rendered in disabled form..                                                  |
+| value             | number   |         | value of the slider.                                                                            |
+| onChange          | function |         | Invoked with the new value when the value changes.                                              |
+| onSlidingComplete | function |         | Invoked with when Sliding is completed.                                                         |
+| max               | number   |         | minimium value for slider.                                                                      |
+| min               | number   |         | maximium value for slider.                                                                      |
+| steps             | number   |         | number of steps for slider.                                                                     |
+| onDragEnd         | ()=>void |         | Callback function that is fired when the slide has stopped moving.                              |
+| onDragStart       | ()=>void |         | Callback function that is fired when the slider has begun to move.                              |
+| step              | number   |         | The granularity the slider can step through values.                                             |
+| thumb             | number   |         | The component used for the slider icon. This is optional, if provided should be a react element | value | number |  | The value of the slider. |
+| Vertical          | number   |         | If true, the slider will be vertical.                                                           |
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
-const Slider = (props) => (
-    const BR = props.bluerain;
+const SliderSample = (props) => {
     const Slider = BR.Components.get('Slider');
-    return <Slider maximumValue={200} minimumValue={0} defaultValue={8} onValueChange={console.log('Value is changed!')} />;
-
-export default withBluerain(Slider);
+    return (
+      <Slider
+          min={0}
+          max={100}
+          defaultValue={6}
+          value={value}
+          aria-labelledby="label"
+          onChange={this.handleChange}
+          {...this.props}
+          step={5}
+        />
+    );
+}
+export default SliderSample;
 ```
-
-## Storybook
-
-- 1st story of the Slider component in Slider.stories.tsx file is written for Slider with Knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

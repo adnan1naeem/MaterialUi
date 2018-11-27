@@ -1,4 +1,4 @@
-import Menu, { MenuItem } from 'material-ui/Menu';
+import Menu from '@material-ui/core/Menu';
 import React, { ReactNode } from 'react';
 import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
 
@@ -16,26 +16,38 @@ import { MenuProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {Node} props.value The input value, required for a controlled component.
  * @param {boolean} props.disabled disables the selection.
  */
-// export interface MUIPickerProperties extends MenuProperties {
-// 	autoWidth?:boolean,
-// 	classes?:object,
-// 	displayEmpty?:boolean,
-// 	input?:ReactNode,
-// 	MenuProps?:object,
-// 	native?:boolean,
-// 	renderValue?:any,
-// 	value?:any,
-// 	onChange?:any,
-// 	disabled?:boolean
-// }
+export interface MUIPickerProperties extends MenuProperties {
+  autoWidth?: boolean,
+  anchorEl?: object,
+  disableAutoFocusItem?: boolean,
+  MenuListProps?: object,
+  onClose?: () => void
+  onEntered?: () => void
+  onEntering?: () => void
+  onExit?: () => void
+  onExited?: () => void
+  onExiting?: () => void
+  open?: boolean,
+  PopoverClasses?: object,
+  classes?: object,
+  displayEmpty?: boolean,
+  input?: ReactNode,
+  MenuProps?: object,
+  native?: boolean,
+  renderValue?: any,
+  value?: any,
+  onChange?: any,
+  disabled?: boolean,
+  transitionDuration?: { enter?: number, exit?: number }
+}
 
 const BRMenu: React.StatelessComponent<MenuProperties & { open: boolean }> = (props) => (
-	<Menu
-		open={props.open}
-		{...props}
-	>
-		{props.children}
-	</Menu>
+  <Menu
+    open={props.open}
+    {...props}
+  >
+    {props.children}
+  </Menu>
 );
 
 export default BRMenu;
