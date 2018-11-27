@@ -157,11 +157,11 @@
     "ws": "3.3.3"
   },
   "dependencies": {
-    "@blueeast/bluerain-cli": "^4.0.0-beta.1",
     "@blueeast/bluerain-ui-interfaces": "^4.0.0-beta.8",
     "@material-ui/core": "^3.2.2",
-    "@material-ui/icons": "^3.0.1",
     "@material-ui/lab": "^3.0.0-alpha.20",
+    "@material-ui/icons": "^3.0.1",
+    "@blueeast/bluerain-cli": "^4.0.0-beta.1",
     "react-color": "^2.14.1"
   },
   "peerDependencies": {
