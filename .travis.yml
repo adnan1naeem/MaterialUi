@@ -8,13 +8,9 @@ notifications:
 node_js:
   - lts/*
 script:
-  - npm run build
+  - yarn add @blueeast/bluerain-os
+  - yarn lint && yarn test --maxWorkers=2 && yarn build
 after_success:
-  - npm run report-coverage
-  - test $TRAVIS_BRANCH = "master" && npm run deploy-docs
-  - npx semantic-release
-install:
-  - "npm install @blueeast/bluerain-os"
-  - "npm install react"
-  - "npm install react-dom"
-  - "npm install"
+  - yarn report-coverage
+  - test $TRAVIS_BRANCH = "master" && yarn deploy-docs
+  - yarn semantic-release
