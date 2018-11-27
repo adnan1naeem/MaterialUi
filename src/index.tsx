@@ -42,7 +42,8 @@ import { Button, MuiButtonProperties } from './components/Button';
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
 import { WebStepper } from './components/WebStepper';
-
+import { CardViewMedia } from './components/cardViewMedia';
+import { ExpansionPanelComponent } from './components/ExpansionPanel'
 import H1 from './components/H1/H1.component';
 import H2 from './components/H2/H2.component';
 import H3 from './components/H3/H3.component';
@@ -120,8 +121,8 @@ class MaterialUiPlugin extends Plugin {
 		Caption,
 		Overline,
 		WebStepper,
-
-
+		CardViewMedia,
+		'ExpansionPanel': ExpansionPanelComponent
 	};
 
 	// static hooks = {
