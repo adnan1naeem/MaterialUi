@@ -1,5 +1,19 @@
 # Badge
 
+ Badge generates a small badge to the top-right of its child(ren)
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Badge.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -11,27 +25,18 @@
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| color | string |  | The color of the Badge. |
+| color | enum:default , primary ,secondary,error  | default | The color of the Badge. |
+| children | ReactNode |  | The children the Badge. |
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
 const BadgeSample = (props) => (
-    const BR = props.bluerain;
     const Badge = BR.Components.get('Badge');
-    return <Badge badgeContent = {'786'} color = {'primary'}/>;
+    return <Badge badgeContent = {786} color = {'primary'}/>;
 
-export default withBluerain(BadgeSample);
+export default BadgeSample;
 ```
-
-## Storybook
-
-- 1st story of the Badge component in Badge.stories.tsx file is written for Badge with Knobs.
-- 2nd story of the Badge component in Badge.stories.tsx file is written for Badge withOut knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

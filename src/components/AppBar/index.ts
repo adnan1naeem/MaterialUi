@@ -1,4 +1,4 @@
 export {
-	BlueRainAppBar as AppBar,
-	MUIAppBarProperties
+  BlueRainAppBar as AppBar,
+  MUIAppBarProperties
 } from './AppBar.component';

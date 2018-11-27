@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BlueRain, BlueRainConsumer, withBlueRain } from '@blueeast/bluerain-os';
+import { BlueRainConsumer, BlueRain, withBlueRain } from '@blueeast/bluerain-os';
 import { AvatarProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
@@ -27,7 +27,7 @@ export interface MUIAvatarProperties extends AvatarProperties {
 	bluerain?: BlueRain;
 }
 const BlueRainAvatar = (props: MUIAvatarProperties) => {
-	const size = props.size ? props.size : 70;
+	const size = props.size ? props.size : 40;
 	const avatarStyle = [
 		{
 			width: size,
@@ -37,17 +37,27 @@ const BlueRainAvatar = (props: MUIAvatarProperties) => {
 			display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center',
-			fontSize: 0.5 * size
+			// 	fontSize: 0.5 * size
 		},
-    { ...props.style }
+		{ ...props.style }
 	];
-	const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
-	// const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
-	const Image = props.bluerain ? props.bluerain.Components.get('Image') : 'img';
+	// const View = props.bluerain ? props.bluerain.Components.get('View') : 'div';
+	// // const Text = props.bluerain ? props.bluerain.Components.get('Text') : 'div';
+	// const Image = props.bluerain ? props.bluerain.Components.get('Image') : 'img';
 	if (props.children) {
-		return <View style={avatarStyle}>{props.children}</View>;
+    return (
+    <BlueRainConsumer>
+      {(BR:BlueRain) => (
+        <BR.Components.View style={avatarStyle}>{props.children}</BR.Components.View>
+      )}
+    </BlueRainConsumer>);
 	}
-	return <Image source={props.src} style={avatarStyle} />;
+	return (
+  <BlueRainConsumer>
+    {(BR:BlueRain) => (
+      <BR.Components.Image source={props.src} style={avatarStyle} />
+    )}
+  </BlueRainConsumer>);
 };
 
 export default withBlueRain(BlueRainAvatar);

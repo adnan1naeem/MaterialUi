@@ -1,5 +1,19 @@
 # Avatar
 
+Avatars are found throughout material design with uses in everything from tables to dialog menus.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Avatar.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -22,20 +36,17 @@
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
-const Avatar = (props) => (
-    const BR = props.bluerain;
+const AvatarSample = (props) => {
     const Avatar = BR.Components.get('Avatar');
-    return <Avatar alt="Remy Sharp" src="https://material-ui-next.com/static/images/remy.jpg" style={{height:35, width:35}} />;
+    return (
+        <Avatar
+        alt="Remy Sharp"
+        src="https://material-ui-next.com/static/images/remy.jpg"
+        style={{height:35,width:35}}
+        />);
+};
 
-export default withBluerain(Avatar);
+export default AvatarSample;
 ```
-
-## Storybook
-
-- 1st story of the Avatar component in avatar.stories.tsx file is written for Avatar with Knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

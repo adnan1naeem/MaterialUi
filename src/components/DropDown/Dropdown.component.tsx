@@ -1,7 +1,7 @@
-import React,{ ReactNode } from 'react';
-import { MenuItem } from 'material-ui/Menu';
-import  { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
-import Select from 'material-ui/Select';
+import React, { ReactNode } from 'react';
+// import { MenuItem } from 'material-ui/Menu';
+import { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
+import Select from '@material-ui/core/Select';
 
 /**
  * The props of DropDown Component
@@ -18,24 +18,32 @@ import Select from 'material-ui/Select';
  * @param {boolean} props.disabled disables the selection.
  */
 export interface MUIPickerProperties extends PickerProperties {
-	autoWidth?:boolean,
-	classes?:object,
-	displayEmpty?:boolean,
-	input?:ReactNode,
-	MenuProps?:object,
-	native?:boolean,
-	renderValue?:any,
-	value?:any,
-	onChange?:any,
-	disabled?:boolean
+  autoWidth?: boolean,
+  classes?: object,
+  displayEmpty?: boolean,
+  input?: ReactNode,
+  MenuProps?: object,
+  native?: boolean,
+  renderValue?: any,
+  value?: any,
+  onChange?: any,
+  IconComponent?: string,
+  inputprops?: object,
+  disabled?: boolean,
+  onOpen?: (event: object) => void
+  open?: boolean,
+  SelectDisplayProps?: object,
+  variant?: 'standard' | 'outlined' | 'filled'
+
 }
 
-const DropDown : React.StatelessComponent<MUIPickerProperties> =(props) => (
-            <Select
-                onChange={props.onValueChange}
-                value={props.selectedValue}
-                {...props}
-            />
+const DropDown: React.StatelessComponent<MUIPickerProperties> = (props) => (
+  <Select
+    onChange={props.onValueChange}
+    value={props.selectedValue}
+    onSelect={props.selectedValue}
+    {...props}
+  />
 );
 
 export default DropDown;

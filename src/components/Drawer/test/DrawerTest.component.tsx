@@ -1,6 +1,6 @@
 import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 // import { Button } from '../../Button';
-import Button from 'material-ui/Button';
+import Button from '@material-ui/core/Button';
 import { Drawer } from '../../Drawer';
 import { MUIDrawerProperties } from '../Drawer.component';
 import React from 'react';

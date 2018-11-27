@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BadgeProperties } from '@blueeast/bluerain-ui-interfaces';
-import BadgeUi from 'material-ui/Badge';
+import BadgeUi from '@material-ui/core/Badge';
 
 
 /**
@@ -13,15 +13,14 @@ import BadgeUi from 'material-ui/Badge';
  */
 
 export interface MUIBadgeProperties extends BadgeProperties {
-	color?: 'default' | 'primary' | 'accent';
-	children?: Node;
+	color?: 'default' | 'primary' | 'secondary' | 'error';
+	children?: React.ReactNode;
 }
 
 class Badge extends React.Component<MUIBadgeProperties, {}> {
 	render() {
 		return (<BadgeUi badgeContent={this.props.badgeContent} classes={{ ...this.props.style }} {...this.props} color={this.props.color}>{this.props.children}</BadgeUi>);
 	}
-
 }
 
 export default Badge;

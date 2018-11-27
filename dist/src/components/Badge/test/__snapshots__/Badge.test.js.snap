@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component with required fields 1`] = `
+<span
+  className="MuiBadge-root-1"
+>
+  Hello
+  <span
+    className="MuiBadge-badge-2"
+  >
+    123
+  </span>
+</span>
+`;
+
+exports[`Badge component with style 1`] = `
+<span
+  className="MuiBadge-root-1"
+  style={
+    Object {
+      "background-color": "green",
+    }
+  }
+>
+  hello
+  <span
+    className="MuiBadge-badge-2"
+  >
+    123
+  </span>
+</span>
+`;

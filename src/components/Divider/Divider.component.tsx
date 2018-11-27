@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
-import Divider from 'material-ui/Divider';
+import Divider from '@material-ui/core/Divider';
 
 
 /**
@@ -12,15 +12,16 @@ import Divider from 'material-ui/Divider';
  */
 
 export interface MUIDividerProperties extends DividerProperties {
-	component?: React.ReactNode;
-	inset?: boolean;
-	absolute?: boolean;
-	classes?: {};
+  component?: string;
+  inset?: boolean;
+  absolute?: boolean;
+  classes?: {};
+  light?: boolean
 }
 const BlueRainDivider: React.StatelessComponent<MUIDividerProperties> = (props) => {
-	return (
-        <Divider {...props} />
-	);
+  return (
+    <Divider {...props} />
+  );
 };
 
 export default BlueRainDivider;

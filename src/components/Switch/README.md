@@ -1,5 +1,17 @@
 # Switch
 
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️      | ✖            | ✖              |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Switch.png) |    TBD   | TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -14,26 +26,28 @@
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | checked | string or bool |  | Keeps the value unchanged. |
-| classes | object | | classes prop to override styling. |
+| disableRipple | boolean | | boolean prop to set disable/enable switch. |
+| icon | ReactNode | | The icon to display when the component is unchecked. |
+| checkedIcon | ReactNode | | The icon to display when the component is checked. |
+| inputProps | object | | Attributes applied to the input element. |
+| type | string | | The input component property type. |
+| color | object | 'secondary' | The color of the component. It supports those theme colors that make sense for this component. |
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import BR from '@blueeast/bluerain-os';
 
-const Switch = (props) => (
-    const BR = props.bluerain;
+const Switch = (props) => {
     const Switch = BR.Components.get('Switch');
-    return <Switch disabled={false} value={true} onValueChange={console.log('Value is changed!')} />;
-
-export default withBluerain(Switch);
+    return (
+        <Switch
+            disabled={false}
+            value={true}
+            onValueChange={console.log('Value changed!')}
+             />
+    );
+}
+export default Switch;
 ```
-
-## Storybook
-
-- 1st story of the Switch component in Switch.stories.tsx file is written for Switch with Knobs.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

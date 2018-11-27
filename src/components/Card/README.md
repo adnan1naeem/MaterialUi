@@ -1,5 +1,19 @@
 # Card
 
+Cards are surfaces that display content and actions on a single topic.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️     | ✖           | ✖             |
+
+## Screenshots
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :---: | :--------: | :------------: |
+| ![web image](./screenshots/Card.png)  |    TBD   |  TBD |
+
 ## Universal Props
 
 | Name | Type | Default | Description |
@@ -17,9 +31,9 @@
 | elevation | number |  | For shadow of component, can be from 0-24 |
 | square | bool | false | If true, card has no rounded corners. |
 
-# CardHeader
+## CardHeader Component
 
-## Universal Props
+## CardHeader Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -28,7 +42,7 @@
 | title | Node | | title of the CardHeader.|
 | className | string |  | className for styling component with css. |
 
-## Specific Library Props
+## CardHeader Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -37,9 +51,9 @@
 | classes | Object |  | Useful to extend the style applied to components. |
 | avatar | Node |  | The Avatar for the Card Header. |
 
-# CardMedia
+## CardMedia
 
-## Universal Props
+## CardMedia Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -48,9 +62,10 @@
 | className | string |  | className for styling component with css. |
 | height | number | 200 | Height of the image to be given in 'px'. |
 
-# CardBody
+## CardAction Component
 
-## Universal Props
+
+## CardAction Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -58,15 +73,27 @@
 | children | Node | | Children of CardBody component. |
 | className | string |  | className for styling component with css. |
 
-## Specific Library Props
+## CardActionArea Component
+
+## CardActionArea Universal Props
+
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| style | Object |  | style object for CardBody. |
+| children | Node | | Children of CardBody component. |
+| className | string |  | className for styling component with css. |
+
+## CardBody Component
+
+## CardBody Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
 | classes | Object |  | Useful to extend the style applied to components. |
 
-# CardFooter
+## CardFooter Component
 
-## Universal Props
+## CardFooter Universal Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -74,7 +101,7 @@
 | children | Node | | Children of CardFooter component. |
 | className | string |  | className for styling component with css. |
 
-## Specific Library Props
+## CardFooter Specific Library Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
@@ -117,11 +144,3 @@ const myCard = (props) => {
 
 export default withBluerain(myCard);
 ```
-
-## Storybook
-
-- 1st story of the Card component in Card.stories.tsx file is written with knobs to visualize the effects when different props are changed.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.

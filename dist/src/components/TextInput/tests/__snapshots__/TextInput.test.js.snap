@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput component with default values 1`] = `
+<div
+  aria-describedby={undefined}
+  className="MuiFormControl-root-1"
+  style={undefined}
+>
+  <div
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoComplete="Hello World !!"
+      autoFocus={true}
+      className="MuiInputBase-input-28 MuiInput-input-13"
+      defaultValue="nooo"
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder="hello"
+      readOnly={undefined}
+      required={false}
+      rows={undefined}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextInput component with editable true 1`] = `
+<div
+  aria-describedby={undefined}
+  className="MuiFormControl-root-1"
+  editable={false}
+  style={undefined}
+>
+  <div
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-disabled-21 MuiInput-disabled-8 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoComplete="Hello World !!"
+      autoFocus={true}
+      className="MuiInputBase-input-28 MuiInput-input-13 MuiInputBase-disabled-21 MuiInput-disabled-8"
+      defaultValue="nooo"
+      disabled={true}
+      id={undefined}
+      name={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder="hello"
+      readOnly={undefined}
+      required={false}
+      rows={undefined}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextInput component with onChangeText 1`] = `
+<div
+  aria-describedby={undefined}
+  className="MuiFormControl-root-1"
+  editable={false}
+  style={undefined}
+>
+  <div
+    className="MuiInputBase-root-18 MuiInput-root-5 MuiInput-underline-9 MuiInputBase-disabled-21 MuiInput-disabled-8 MuiInputBase-formControl-19 MuiInput-formControl-6"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoComplete="Hello World !!"
+      autoFocus={true}
+      className="MuiInputBase-input-28 MuiInput-input-13 MuiInputBase-disabled-21 MuiInput-disabled-8"
+      defaultValue="nooo"
+      disabled={true}
+      id={undefined}
+      name={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder="hello"
+      readOnly={undefined}
+      required={false}
+      rows={undefined}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;

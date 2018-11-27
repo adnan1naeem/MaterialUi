@@ -1,13 +1,18 @@
-import * as React from 'react';
-import { boolean, number, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
-import Slider from '../../Slider';
-const stories = storiesOf('Slider', module);
-stories.add('Slider with defaultValue 8 and onValueChange, min 1, max 100', () => {
-	return <Slider defaultValue={8} onValueChange={action('Value changed at')} maximumValue={100} minimumValue={1} />;
-});
-stories.add('Slider (default )', () => {
-	return  (
-    <Slider onValueChange={action('Value is changed at')}/>);
-});
+// import * as React from 'react';
+// import { text, withKnobs } from '@storybook/addon-knobs';
+// import { storiesOf } from '@storybook/react';
+// import Slider from './Slider.testComponent';
+// import Typography from '@material-ui/core/Typography';
+
+// storiesOf('Slider', module).addDecorator(withKnobs)
+//   .add('SliderComponent', () =>
+//     <Slider defaultValue={'6'} />);
+// storiesOf('Slider', module).addDecorator(withKnobs)
+//   .add('SliderComponent disabled', () =>
+//     <Slider defaultValue={'6'} disabled={true} />);
+
+
+// storiesOf('Slider', module).addDecorator(withKnobs)
+//   .add('SliderComponent vertical', () =>
+//     <Slider vertical={true} defaultValue={'6'} />);
+

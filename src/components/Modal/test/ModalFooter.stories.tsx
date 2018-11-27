@@ -1,24 +1,40 @@
 import * as React from 'react';
-import { Button } from '../../Button';
+import Button from '@material-ui/core/Button';
 import { storiesOf } from '@storybook/react';
-import  ModalFooter from '../ModalFooter.Component';
+import ModalFooter from '../ModalFooter.Component';
 
-const stories = storiesOf('Modal', module);
+const stories = storiesOf('ModalFooter', module);
+const Handler = () => {
+  alert('clicked');
+};
+stories.add('ModalFooter taking as a children prop', () => {
 
-stories.add('ModalFooter', () => {
-  const Handler =() => {
-	alert('clicked');
-	};
-	return(
-   	<ModalFooter>
-				<Button onPress={Handler} color="primary" >
-					Agree
+  return (
+    <ModalFooter>
+      <Button onClick={Handler} color="primary" >
+        Agree
 				</Button>
-				<Button onPress={Handler} color="primary">
-					Disagree
+      <Button onClick={Handler} color="primary">
+        Disagree
 				</Button>
-		</ModalFooter>
+    </ModalFooter>
 
-	);
+  );
 
+});
+
+
+
+stories.add('ModalFooter  disableTypography prop', () => {
+  return (
+    <ModalFooter disableTypography={true} >
+      <Button onClick={Handler} color="primary" >
+        Agree
+      </Button>
+      <Button onClick={Handler} color="primary">
+        Disagree
+      </Button>
+    </ModalFooter>
+
+  );
 });

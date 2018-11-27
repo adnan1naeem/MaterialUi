@@ -1,43 +1,55 @@
 # AppBar
 
+The top App Bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+
+## Compatibility
+
+| 🌏 Web | 🖥 Electron | 📱 React Native |
+| :----: | :---------: | :-------------: |
+| ✔️     | ✖           | ✖               |
+
+## Screenshots
+
+| 🌏 Web                                 | 🖥 Electron | 📱 React Native |
+| :------------------------------------: | :---------: | :-------------: |
+| ![web image](./screenshots/AppBar.png) | TBD         | TBD             |
+
 ## Universal Props
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| style | Object |  | Get the style object |
-| color | enum: 'inherit', 'primary', 'accent', 'default', undefined | | Background color for AppBar. |
-| children | Node | | Children of AppBar. |
-| position | enum: 'static', 'fixed', 'absolute', undefined | | Position of AppBar. |
-| className | string | | className props to extend styles through CSS for AppBar. |
+| Name  | Type      | Default | Description                        |
+| :---- | :-------- | :------ | :--------------------------------- |
+| left  | ReactNode |         | left prop for AppBar component     |
+| title | string    |         | title prop for AppBar component.   |
+| right | ReactNode |         | right prop for   AppBar component. |
+
+## Props
+
+| Name      | Type                                                      | Default | Description                                              |
+| :-------- | :-------------------------------------------------------- | :------ | :------------------------------------------------------- |
+| style     | Object                                                    |         | Get the style object                                     |
+| color     | enum: 'inherit', 'primary', 'secondary', 'default'        |         | Background color for AppBar.                             |
+| children  | Node                                                      |         | Children of AppBar.                                      |
+| position  | enum: 'static', 'fixed', 'absolute', 'relative', 'sticky' |         | Position of AppBar.                                      |
+| className | string                                                    |         | className props to extend styles through CSS for AppBar. |
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import { withBluerain } from '@blueeast/bluerain-os';
+import { BlueRainConsumer, BlueRain } from '@blueeast/bluerain-os';
 
-const AppBar = (props) => (
-    const BR = props.bluerain;
-    const AppBar = BR.Components.get('AppBar');
-    const Button = BR.Components.get('Button');
-    const Text = BR.Components.get('Text');
-    return(<AppBar position="static" color="default">
-          <Button style={{ backgroundColor:'transparent', boxShadow:'none', border:0 }}>
-            <AssignmentIcon />
-          </Button>
-          <Text style={{ display:'flex', flex: 1 }}>
-            Title
-            </Text>
-          <Button color="default">Login</Button>
-      </AppBar>);
+const AppBarSample = (props) => (
+    <BlueRainConsumer>
+       {(BR:BlueRain) => (
+        <BR.Components.AppBar
+            left={<Button fab={true} style={AppBarStoriesStyle}><Icon name="assignment"/></Button>}
+            title={'Title'}
+            right={<Button color="primary">Login</Button>}
+            position="fixed"
+            color="primary"
+            style={{ backgroundColor: 'red' }}
+        />)}
+    </BlueRainCosumer>);
 
-export default withBluerain(AppBar);
+export default AppBarSample;
 ```
-
-## Storybook
-
-- All stories of the AppBar component in AppBar.stories.tsx file show variants of AppBar.
-
-## Tests
-
-- All the tests through jest are passed and create screenshot.
