@@ -19,7 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <WithStyles(FormControlLabel)
+      "children": <WithStyles(WithFormControlContext(FormControlLabel))
         control={
                 <WithStyles(Checkbox)
                         checked={undefined}
@@ -58,7 +58,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <WithStyles(FormControlLabel)
+        "children": <WithStyles(WithFormControlContext(FormControlLabel))
           control={
                     <WithStyles(Checkbox)
                               checked={undefined}
@@ -131,7 +131,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <WithStyles(FormControlLabel)
+      "children": <WithStyles(WithFormControlContext(FormControlLabel))
         control={
                 <WithStyles(Checkbox)
                         checked={false}
@@ -168,7 +168,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <WithStyles(FormControlLabel)
+        "children": <WithStyles(WithFormControlContext(FormControlLabel))
           control={
                     <WithStyles(Checkbox)
                               checked={false}

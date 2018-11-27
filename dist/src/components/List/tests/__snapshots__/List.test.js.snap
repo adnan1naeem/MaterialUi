@@ -24,15 +24,15 @@ exports[`List component with style props 1`] = `
 
 exports[`ListItem  with children props 1`] = `
 <li
-  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-19"
   disabled={false}
   onClick={undefined}
 >
   <div
-    className="MuiListItemText-root-22"
+    className="MuiListItemText-root-23"
   >
     <span
-      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+      className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
     >
       Hello
     </span>
@@ -42,7 +42,7 @@ exports[`ListItem  with children props 1`] = `
 
 exports[`ListItem with   style props 1`] = `
 <li
-  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-19"
   disabled={false}
   onClick={undefined}
   style={
@@ -55,30 +55,30 @@ exports[`ListItem with   style props 1`] = `
 
 exports[`ListItem with primary props 1`] = `
 <li
-  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-19"
   disabled={false}
   onClick={undefined}
   primary="hello"
 >
   <div
-    className="MuiListItemText-root-22"
+    className="MuiListItemText-root-23"
   >
     <span
-      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+      className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
     >
       hello
     </span>
     <p
-      className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-colorTextSecondary-61 MuiListItemText-secondary-26"
+      className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-colorTextSecondary-62 MuiListItemText-secondary-27"
     >
       
     </p>
   </div>
   <div
-    className="MuiListItemText-root-22"
+    className="MuiListItemText-root-23"
   >
     <span
-      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+      className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
     >
       Hello
     </span>
@@ -88,30 +88,30 @@ exports[`ListItem with primary props 1`] = `
 
 exports[`ListItem with secondary props 1`] = `
 <li
-  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-18"
+  className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-19"
   disabled={false}
   onClick={undefined}
   secondary="Hi"
 >
   <div
-    className="MuiListItemText-root-22"
+    className="MuiListItemText-root-23"
   >
     <span
-      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+      className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
     >
       
     </span>
     <p
-      className="MuiTypography-root-28 MuiTypography-body1-37 MuiTypography-colorTextSecondary-61 MuiListItemText-secondary-26"
+      className="MuiTypography-root-29 MuiTypography-body1-38 MuiTypography-colorTextSecondary-62 MuiListItemText-secondary-27"
     >
       Hi
     </p>
   </div>
   <div
-    className="MuiListItemText-root-22"
+    className="MuiListItemText-root-23"
   >
     <span
-      className="MuiTypography-root-28 MuiTypography-subheading-35 MuiListItemText-primary-25"
+      className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
     >
       Hello
     </span>
