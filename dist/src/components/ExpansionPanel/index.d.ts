@@ -1,1 +1,1 @@
-export { default as ExpansionPanelComponent, ExpansionPanelProps } from './ExpansionPanel.components';
+export { default as ExpansionPanelComponent } from './ExpansionPanel.components';

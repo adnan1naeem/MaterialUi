@@ -4,4 +4,5 @@ export interface ExpansionPanelProps {
     title?: string;
     expandIcon?: React.ReactNode;
 }
-export declare const ExpansionPanelComponent: React.StatelessComponent<any>;
+declare const ExpansionPanelComponent: React.StatelessComponent<ExpansionPanelProps>;
+export default ExpansionPanelComponent;

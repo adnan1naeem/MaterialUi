@@ -1,4 +1,4 @@
-/* import { CardViewMedia } from '../'
+import { CardViewMedia } from '../'
 import renderer from 'react-test-renderer';
 import React from 'react';
 import "jest";
@@ -120,4 +120,4 @@ test('Cardviewmeida component video and  overlay title in bottom right  ', () =>
     ).toJSON();
     expect(cardviewmedia.props.overlayDirection).toEqual('bottomRight');
     expect(cardviewmedia).toMatchSnapshot();
-}); */
+});

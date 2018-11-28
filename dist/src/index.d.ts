@@ -14,7 +14,6 @@ import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 import { MuiButtonProperties } from './components/Button';
 import { CardViewMedia } from './components/cardViewMedia';
-import { ExpansionPanelComponent } from './components/ExpansionPanel';
 import { MUIProps } from './components/Checkbox';
 import { MUISliderProperties } from './components/Slider';
 /**
@@ -102,7 +101,7 @@ declare class MaterialUiPlugin extends Plugin {
         }>;
         WebStepper: React.FunctionComponent<any>;
         CardViewMedia: typeof CardViewMedia;
-        'ExpansionPanel': typeof ExpansionPanelComponent;
+        'ExpansionPanel': React.FunctionComponent<import("./components/ExpansionPanel/ExpansionPanel.components").ExpansionPanelProps>;
     };
 }
 export default MaterialUiPlugin;

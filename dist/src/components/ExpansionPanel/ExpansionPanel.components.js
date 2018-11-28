@@ -7,9 +7,11 @@ const react_1 = __importDefault(require("react"));
 const ExpansionPanel_1 = __importDefault(require("@material-ui/core/ExpansionPanel"));
 const ExpansionPanelSummary_1 = __importDefault(require("@material-ui/core/ExpansionPanelSummary"));
 const ExpansionPanelDetails_1 = __importDefault(require("@material-ui/core/ExpansionPanelDetails"));
-exports.ExpansionPanelComponent = (props) => {
+const ExpandMore_1 = __importDefault(require("@material-ui/icons/ExpandMore"));
+const ExpansionPanelComponent = (props) => {
     return (react_1.default.createElement(ExpansionPanel_1.default, Object.assign({}, props),
-        react_1.default.createElement(ExpansionPanelSummary_1.default, { expandIcon: props.expandIcon }, props.title),
+        react_1.default.createElement(ExpansionPanelSummary_1.default, { expandIcon: react_1.default.createElement(ExpandMore_1.default, null) }, props.title),
         react_1.default.createElement(ExpansionPanelDetails_1.default, null, props.children)));
 };
+exports.default = ExpansionPanelComponent;
 //# sourceMappingURL=ExpansionPanel.components.js.map
