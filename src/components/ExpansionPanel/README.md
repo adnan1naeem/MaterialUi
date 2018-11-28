@@ -1,57 +1,44 @@
-# Stepper
-
-Steppers display progress through a sequence of logical and numbered steps. They may also be used for navigation. Steppers may display a transient feedback message after a step is saved
+# :ExpansionPanel
 
 ## Compatibility
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
-| :----: | :---------: | :-------------: |
-| ✔️      | ✖            | ✖              |
+| :---: | :--------: | :------------: |
+|    ✘ |     ✘     |   ✔  |
 
 ## Screenshots
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
 | :---: | :--------: | :------------: |
-| ![web image](./screenshots/Stepper.png) |    TBD   | TBD |
+|   TBD  |    TBD   |  ![mobile image](./screenShots/AppBar.png)|
 
-## Universal Props
-
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-| activeStep |number|  | Set the active step (zero based index).Defines which dot is highlighted when the variant is 'dots'. |
-| classes | object | | Useful to extend the style applied to components. |
-| style| object | |Useful to extend the style applied to components. |
-| steps | number | | The total steps for stepper |
-
-## Props
+## props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| backButton | ReactNode| | backButton prop for Stepper. |
-| nextButton  |ReactNode| | nextButton prop for Stepper. |
-| position | enum | 'top','bottom'| position for Stepper|
-| type | enum | 'dot','text'| type prop for Stepper|
+| children?:| React.ReactNode;|    |children node in which we can send component|
+|    title?: |string;|  title for expansion panel|             |
+|   expandIcon?:| React.ReactNode;||  expand icon    |
+|  closeIcon?:| React.ReactNode;||  close icon|
+| style?: |object|||
 
 ## How to use
 
 ```JavaScript
 import React from 'react';
-import BR from '@blueeast/bluerain-os';
+import { withBluerain } from '@blueeast/bluerain-os';
 
-const StepperSample = (props) => (
-    const Stepper = BR.Components.get('Stepper');
+const ExpansionPanel = (props) => {
+    const BR = props.bluerain;
+    const ExpansionPanel = BR.Components.get('ExpansionPanel');
     const Button = BR.Components.get('Button');
-    const backButton =<Button>back</Button>;
-    const nextButton =<Button>next</Button>;
-   return (
-     <Stepper
-      type="progress"
-       activeStep={3}
-       backButton={backButton}
-       nextButton={nextButton}
-       steps={6}  
-        />
-     );
+    const Icon = BR.Components.get('Icon');
+    const Text = BR.Components.get('Text');
+    return(<ExpansionPanel title={'Categories'} expandIcon={<BR.Component.Icon name={closearrow}  closeIcon={<BR.Component.Icon name={closearrow}/>}
+        ><View style={{ flexDirection: 'column' }}>
+                <Text>Orient(250)</Text>
+            </View></ExpansionPanel>);
+}
 
-export default StepperSample;
-```
+export default withBluerain(ExpansionPanel);```
+
