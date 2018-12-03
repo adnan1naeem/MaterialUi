@@ -11,13 +11,13 @@ stories.add('with all props', () => {
 
 	return (
 		<>
-			<ExpansionPanelComponent title={'brand'} expandIcon={<ExpandMoreIcon />} >
+			<ExpansionPanelComponent collapsed={false} title={'brand'} expandIcon={<ExpandMoreIcon />} >
 				<Typography>
 					Here will be the render list component
           </Typography>
 			</ExpansionPanelComponent>
 
-			<ExpansionPanelComponent title={'brand'} expandIcon={<ExpandMoreIcon />} >
+			<ExpansionPanelComponent title={'brand'} defaultExpanded={true} collapsed={true} expandIcon={<ExpandMoreIcon />} >
 				<Typography>
 					Here will be the render list component
 	  </Typography>

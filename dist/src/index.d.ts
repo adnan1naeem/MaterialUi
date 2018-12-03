@@ -13,7 +13,7 @@ import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 import { MuiButtonProperties } from './components/Button';
-import { CardViewMedia } from './components/cardViewMedia';
+import { CardViewMedia } from './components/CardViewMedia';
 import { MUIProps } from './components/Checkbox';
 import { MUISliderProperties } from './components/Slider';
 /**
