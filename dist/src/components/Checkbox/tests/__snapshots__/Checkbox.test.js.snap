@@ -19,7 +19,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+<<<<<<< HEAD
       "children": <WithStyles(FormControlLabel)
+=======
+      "children": <WithStyles(WithFormControlContext(FormControlLabel))
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
         control={
                 <WithStyles(Checkbox)
                         checked={undefined}
@@ -58,7 +62,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+<<<<<<< HEAD
         "children": <WithStyles(FormControlLabel)
+=======
+        "children": <WithStyles(WithFormControlContext(FormControlLabel))
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
           control={
                     <WithStyles(Checkbox)
                               checked={undefined}
@@ -131,7 +139,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+<<<<<<< HEAD
       "children": <WithStyles(FormControlLabel)
+=======
+      "children": <WithStyles(WithFormControlContext(FormControlLabel))
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
         control={
                 <WithStyles(Checkbox)
                         checked={false}
@@ -168,7 +180,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+<<<<<<< HEAD
         "children": <WithStyles(FormControlLabel)
+=======
+        "children": <WithStyles(WithFormControlContext(FormControlLabel))
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
           control={
                     <WithStyles(Checkbox)
                               checked={false}

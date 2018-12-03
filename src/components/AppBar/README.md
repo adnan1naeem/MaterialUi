@@ -39,17 +39,16 @@ import React from 'react';
 import { BlueRainConsumer, BlueRain } from '@blueeast/bluerain-os';
 
 const AppBarSample = (props) => (
-   return (
     <BlueRainConsumer>
-    {(BR:BlueRain) => (
-        <AppBar
-     left={<Button fab={true} style={AppBarStoriesStyle}><Icon name="assignment"/></Button>}
-     title={'Title'}
-     right={<Button color="primary">Login</Button>}
-     position="fixed"
-     color="primary"
-     style={{ backgroundColor: 'red' }}/>
-    )}
+       {(BR:BlueRain) => (
+        <BR.Components.AppBar
+            left={<Button fab={true} style={AppBarStoriesStyle}><Icon name="assignment"/></Button>}
+            title={'Title'}
+            right={<Button color="primary">Login</Button>}
+            position="fixed"
+            color="primary"
+            style={{ backgroundColor: 'red' }}
+        />)}
     </BlueRainCosumer>);
 
 export default AppBarSample;

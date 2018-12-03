@@ -5,17 +5,17 @@ import StepLabel from '@material-ui/core/StepLabel';
 import React from 'react';
 
 export interface StepperProps extends StepperProperties {
-  variant: 'text' | 'dots' | 'progress',
-  backButton: any;
-  nextButton: any;
-  position: 'bottom' | 'top' | 'static';
-  children: React.ReactNode;
+  variant?: 'text' | 'dots' | 'progress',
+  backButton?: any;
+  nextButton?: any;
+  position?: 'bottom' | 'top' | 'static';
+  children?: React.ReactNode;
   steps: any;
 }
-export const WebStepper: React.StatelessComponent<any> = (props: StepperProps) => {
-
+export const WebStepper: React.StatelessComponent<StepperProps> = (props) => {
+  console.log('props.steps', props.steps);
   return (
-    <Stepper   {...props} >
+    <Stepper {...props} >
       {
         props.steps.map((label: any) => {
           return (

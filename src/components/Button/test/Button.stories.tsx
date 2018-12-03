@@ -49,132 +49,138 @@ storiesOf('Button', module).add('Primary button with iconLeft prop', () => <Butt
 
 storiesOf('Button', module).add('Transparent Button with icon as child', () => <Button style={{ backgroundColor: 'transparent', boxShadow: 'none', border: 0 }} ><AddIcon /></Button>);
 
-storiesOf('Button', module).add('Contrast button with iconRight prop', () => <Button color='primary' iconRight={<AddIcon />} >Icon Right</Button>);
+storiesOf('Button', module).add('Contrast button with iconRight prop', () => <Button color="primary" iconRight={<AddIcon />} >Icon Right</Button>);
 
 
 storiesOf('Button', module).add('Primary button with round prop and small prop', () => <Button color="primary" rounded small>sm</Button>);
 
-storiesOf('Button', module).add('Accent button with large prop true', () => <Button color="primary" variant={'contained'} large>Large</Button>);
+storiesOf('Button', module).add('Accent button with large prop true', () => <Button color="primary" variant={'contained'} large>Primary</Button>);
+storiesOf('Button', module).add('Success button with success property', () => <Button success={true} style={{color: 'white'}} large>Success</Button>);
+storiesOf('Button', module).add('Warning button with warning property', () => <Button warning={true} style={{color: 'white'}} large>Warning</Button>);
+storiesOf('Button', module).add('Dark button with dark property', () => <Button dark={true} style={{color: 'white'}} large>Dark</Button>);
+storiesOf('Button', module).add('Primary button with primary property', () => <Button primary={true} large>Large</Button>);
+storiesOf('Button', module).add('Danger button with danger property', () => <Button danger={true} style={{color: 'white'}} large>Danger</Button>);
+storiesOf('Button', module).add('Light button with light property', () => <Button light={true} large>Light</Button>);
 
 
 storiesOf('Button', module).add('Text Buttons', () => {
-  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white' }}>
-   <Button >Default</Button>
-      <Button color="primary" >
-        Primary
+  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
+    <Button >Default</Button>
+    <Button color="primary" >
+      Primary
       </Button>
-      <Button color="secondary" >
-        Secondary
+    <Button color="secondary" >
+      Secondary
       </Button>
-      <Button disabled >
-        Disabled
+    <Button disabled >
+      Disabled
       </Button>
-      <Button href="#text-buttons" >
-        Link
+    <Button href="#text-buttons" >
+      Link
       </Button>
   </BR.Components.View>);
 
 });
 storiesOf('Button', module).add('Outlined Button', () => {
-  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white'}}>
-   <Button variant="outlined" >
-        Default
+  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
+    <Button variant="outlined" >
+      Default
       </Button>
-      <Button variant="outlined" color="primary">
-        Primary
+    <Button variant="outlined" color="primary">
+      Primary
       </Button>
-      <Button variant="outlined" color="secondary" >
-        Secondary
+    <Button variant="outlined" color="secondary" >
+      Secondary
       </Button>
-      <Button variant="outlined" disabled >
-        Disabled
+    <Button variant="outlined" disabled >
+      Disabled
       </Button>
-      <Button variant="outlined" href="#outlined-buttons" >
-        Link
+    <Button variant="outlined" href="#outlined-buttons" >
+      Link
       </Button>
   </BR.Components.View>);
 });
 
 storiesOf('Button', module).add('Contained Button', () => {
-  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white'}}>
+  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
     <Button variant="contained" >
-        Default
+      Default
       </Button>
-      <Button variant="contained" color="primary" >
-        Primary
+    <Button variant="contained" color="primary" >
+      Primary
       </Button>
-      <Button variant="contained" color="secondary" >
-        Secondary
+    <Button variant="contained" color="secondary" >
+      Secondary
       </Button>
-      <Button variant="contained" color="secondary" disabled >
-        Disabled
+    <Button variant="contained" color="secondary" disabled >
+      Disabled
       </Button>
-      <Button variant="contained" href="#contained-buttons" >
-        Link
+    <Button variant="contained" href="#contained-buttons" >
+      Link
       </Button>
   </BR.Components.View>);
 });
 
 storiesOf('Button', module).add('Floating Action Buttons', () => {
-  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between',backgroundColor:'white'}}>
+  return (<BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white' }}>
     <Button variant="fab" color="primary" aria-label="Add" >
-        <AddIcon />
+      <AddIcon />
+    </Button>
+    <Button variant="fab" color="secondary" aria-label="Edit" >
+      <Icon>edit_icon</Icon>
+    </Button>
+    <Button variant="extendedFab" aria-label="Delete" >
+      <NavigationIcon style={{ marginRight: 8 }} />
+      Extended
       </Button>
-      <Button variant="fab" color="secondary" aria-label="Edit" >
-        <Icon>edit_icon</Icon>
-      </Button>
-      <Button variant="extendedFab" aria-label="Delete" >
-        <NavigationIcon style={{marginRight:8}} />
-        Extended
-      </Button>
-      <Button variant="fab" disabled aria-label="Delete">
-        <DeleteIcon />
-      </Button>
+    <Button variant="fab" disabled aria-label="Delete">
+      <DeleteIcon />
+    </Button>
   </BR.Components.View>);
 });
 
 storiesOf('Button', module).add('Sizes Buttons', () => {
-  return (<BR.Components.View style={{display:'flex',flexDirection:'column',backgroundColor:'white'}}>
-       <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-       <Button size="small" >
-          Small
+  return (<BR.Components.View style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'white' }}>
+    <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Button size="small" >
+        Small
         </Button>
-        <Button size="medium">
-          Medium
+      <Button size="medium">
+        Medium
         </Button>
-        <Button size="large">
-          Large
+      <Button size="large">
+        Large
         </Button>
-  </BR.Components.View>
-  <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-  <Button variant="outlined" size="small" color="primary" >
-          Small
+    </BR.Components.View>
+    <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Button variant="outlined" size="small" color="primary" >
+        Small
         </Button>
-        <Button variant="outlined" size="medium" color="primary" >
-          Medium
+      <Button variant="outlined" size="medium" color="primary" >
+        Medium
         </Button>
-        <Button variant="outlined" size="large" color="primary" >
-          Large
+      <Button variant="outlined" size="large" color="primary" >
+        Large
         </Button>
-  </BR.Components.View>
-  <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-  <Button variant="contained" size="small" color="primary" >
-          Small
+    </BR.Components.View>
+    <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Button variant="contained" size="small" color="primary" >
+        Small
         </Button>
-        <Button variant="contained" size="medium" color="primary">
-          Medium
+      <Button variant="contained" size="medium" color="primary">
+        Medium
         </Button>
-        <Button variant="contained" size="large" color="primary" >
-          Large
+      <Button variant="contained" size="large" color="primary" >
+        Large
         </Button>
-  </BR.Components.View>
-  <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-  <Button variant="fab" mini color="secondary" aria-label="Add">
-          <AddIcon />
-        </Button>
-        <Button variant="fab" color="secondary" aria-label="Add">
-          <AddIcon />
-        </Button>
-  </BR.Components.View>
+    </BR.Components.View>
+    <BR.Components.View style={{ disply: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Button variant="fab" mini color="secondary" aria-label="Add">
+        <AddIcon />
+      </Button>
+      <Button variant="fab" color="secondary" aria-label="Add">
+        <AddIcon />
+      </Button>
+    </BR.Components.View>
   </BR.Components.View>);
 });

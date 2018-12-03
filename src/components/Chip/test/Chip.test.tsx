@@ -2,14 +2,12 @@ import { Chip } from '../';
 import renderer from 'react-test-renderer';
 import React from 'react';
 import 'jest';
-import console = require('console');
 
 test('Chip component with default values', () => {
   const chip = renderer.create(
     <Chip label={'10 % off'}>
     </Chip>
   ).toJSON();
-  console.log('Chip', chip);
   expect(chip ? chip.props.style : null).toEqual(undefined);
   expect(chip).toMatchSnapshot();
 });

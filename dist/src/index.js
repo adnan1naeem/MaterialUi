@@ -33,6 +33,7 @@ const H5_component_1 = __importDefault(require("./components/H5/H5.component"));
 const H6_component_1 = __importDefault(require("./components/H6/H6.component"));
 const Subtitle1_component_1 = __importDefault(require("./components/Subtitle1/Subtitle1.component"));
 const Subtitle2_component_1 = __importDefault(require("./components/Subtitle2/Subtitle2.component"));
+const Text_1 = require("./components/Text");
 const Body1_component_1 = __importDefault(require("./components/Body1/Body1.component"));
 const Body2_component_1 = __importDefault(require("./components/Body2/Body2.component"));
 const Overline_component_1 = __importDefault(require("./components/Overline/Overline.component"));
@@ -86,6 +87,7 @@ MaterialUiPlugin.components = {
     FormControl: FormControl_1.FormControl,
     FormGroup: FormControl_1.FormGroup,
     TextInput: TextInput_1.TextInput,
+    Text: Text_1.Text,
     H1: H1_component_1.default,
     H2: H2_component_1.default,
     H3: H3_component_1.default,

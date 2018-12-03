@@ -1,8 +1,8 @@
 import { TextInput } from '../';
 import renderer from 'react-test-renderer';
 import React from 'react';
-import "jest";
-function handleTextInputChange () {
+import 'jest';
+function handleTextInputChange() {
 	console.log('I am clicked');
 }
 test('TextInput component with default values', () => {

@@ -1,5 +1,4 @@
 import * as React from 'react';
-declare const Body2: React.StatelessComponent<{
-    style?: object;
-}>;
+import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
+declare const Body2: React.StatelessComponent<TextProperties>;
 export default Body2;

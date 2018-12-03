@@ -5,25 +5,33 @@ import Button from '@material-ui/core/Button';
 export interface MuiButtonProperties extends ButtonProperties {
 
   size?: 'small' | 'medium' | 'large';
-
+  color?: any
 }
 
 export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (props) => {
-
+  const { iconLeft, onPress, transparent, ...others } = props;
   return (
     <Button
-      {...props}
-      color={props.color}
-      style={props.style}
+      {...others}
+      color={props.primary ? 'secondary' : props.color}
+      style={props.success
+        ?
+        { backgroundColor: 'green', ...props.style } : props.dark
+          ?
+          { backgroundColor: 'black', ...props.style } : props.warning
+            ?
+            { backgroundColor: 'yellow', ...props.style } : props.danger
+              ?
+              { backgroundColor: 'red', ...props.style } : props.style}
       disabled={props.disabled}
       href={props.href}
       mini={props.small}
-      onClick={props.onPress}
+      onClick={onPress}
       fullWidth={props.fullWidth}
-      variant={props.rounded ? 'fab' : props.bordered ? 'outlined' : props.variant}
+      variant={props.rounded ? 'fab' : props.bordered ? 'outlined' : props.primary || props.light ? 'contained' : props.variant}
       size={props.small ? 'small' : props.large ? 'large' : props.size}
     >
-      {props.iconLeft ? props.iconLeft : null}{props.title ? props.title : null}{props.children}{props.iconRight ? props.iconRight : null}
+      {iconLeft ? iconLeft : null} {props.title ? props.title : null} {props.children}{props.iconRight ? props.iconRight : null}
     </Button>
   );
 };

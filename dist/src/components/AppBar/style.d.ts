@@ -14,6 +14,7 @@ export declare const styles: {
         paddingLeft: number;
         fontWeight: string;
         fontSize: number;
+        color: string;
         letterSpacing: number;
         alignSelf: string;
     };

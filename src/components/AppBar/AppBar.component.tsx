@@ -3,7 +3,7 @@ import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import BR from '@blueeast/bluerain-os';
+import Typography from '@material-ui/core/Typography';
 import { styles } from './style';
 
 /**
@@ -14,11 +14,11 @@ import { styles } from './style';
  * @extends {AppBarProperties}
  */
 export interface MUIAppBarProperties extends AppBarProperties {
-  color?: 'inherit' | 'primary'  | 'default' | 'secondary' | undefined,
+  color?: 'inherit' | 'primary' | 'default' | 'secondary' | undefined,
 }
 
 export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (props) => {
-  const { position, style, ...others } = props;
+  const { position, style, titleStyle, ...others } = props;
   return (
     <BlueRainConsumer>
       {(BR: BlueRain) => (
@@ -30,7 +30,7 @@ export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (pr
             <BR.Components.View style={styles.container}>
               <BR.Components.View style={styles.titleContainer}>
                 {props.left}
-                <BR.Components.Text style={styles.title}>{props.title}</BR.Components.Text>
+                <Typography variant="h6" style={titleStyle}>{props.title}</Typography>
               </BR.Components.View>
               <BR.Components.View >
                 {props.right}

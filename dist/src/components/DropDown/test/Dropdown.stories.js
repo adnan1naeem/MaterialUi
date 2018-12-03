@@ -12,7 +12,6 @@ const DemoDropdownComponent_1 = __importDefault(require("./DemoDropdownComponent
 const stories = react_1.storiesOf('Dropdown', module);
 let values;
 const onChange = (event) => {
-    console.log(event.target.value);
     values = event.target.value;
 };
 const style = { root: { padding: 20 }, dropdown: { width: 400 } };
@@ -29,12 +28,10 @@ const multiItems = [
     'Kelly Snyder'
 ];
 stories.add(' Dropdown with onchange', () => {
-    console.log('value', values);
     return (react_2.default.createElement(Paper_1.default, { style: style.root },
         react_2.default.createElement(DemoDropdownComponent_1.default, null)));
 });
 stories.add('Dropdown with auoWidth', () => {
-    console.log('value', values);
     return (react_2.default.createElement(Paper_1.default, { style: style.root },
         react_2.default.createElement(index_1.Dropdown, { onValueChange: onChange, value: values ? values : '1', autoWidth: true, style: style.dropdown },
             react_2.default.createElement(index_1.DropdownItem, { value: "1" }, "Item 1 "),

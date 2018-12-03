@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { style } from './style';
-import BR from '@blueeast/bluerain-os';
+import Typography from '@material-ui/core/Typography';
+import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
 
-const Caption:React.StatelessComponent<{style?: object}> = props => {
+const Caption: React.StatelessComponent<TextProperties> = props => {
+  const { style, ...others } = props;
   return (
-        <BR.Components.Text style={{ ...style, ...props.style }}>{props.children}</BR.Components.Text>
+    <Typography style={style} variant="caption" {...others} />
   );
 };
 

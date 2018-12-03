@@ -42,20 +42,20 @@ test(' Danger Button with onPress prop', () => {
 });
 test('Success Button with active prop true', () => {
     const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "contained", style: { marginLeft: 150, display: 'flex', justifyContent: 'center', }, active: true }, "Active"));
-    expect(wrapper.props().active).toBeUndefined();
+    expect(wrapper.props().active).toBe(true);
 });
 test(' Default Button with bordered prop true', () => {
     const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { bordered: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, " Bordered"));
-    expect(wrapper).toBeDefined();
+    expect(wrapper.props().bordered).toBeDefined();
 });
-test('Rounded Button should properly render', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { rounded: false, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, "rounded"));
-    expect(wrapper.props().rounded).toBeFalsy();
-});
-test('Button with fab prop small false', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { block: true, transparent: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, "Transparent"));
-    expect(wrapper).toBeDefined();
-});
+// test('Rounded Button should properly render', () => {
+//     const wrapper = shallow(<Button rounded={false} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}>rounded</Button>);
+//     expect(wrapper.props().rounded).toBeFalsy();
+// });
+// test('Button with fab prop small false', () => {
+//     const wrapper = shallow(<Button block={true} transparent={true} style={{ marginLeft: 150, display: 'flex', justifyContent: 'center', }}>Transparent</Button>);
+//     expect(wrapper.props().transparent).toEqual(true);
+// });
 // // // import { Button } from '../';
 // // // import { ButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 // // // import renderer  from 'react-test-renderer';

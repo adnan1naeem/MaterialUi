@@ -1,5 +1,4 @@
 import * as React from 'react';
-declare const H5: React.StatelessComponent<{
-    style?: object;
-}>;
+import { TextProperties } from '@blueeast/bluerain-ui-interfaces';
+declare const H5: React.StatelessComponent<TextProperties>;
 export default H5;

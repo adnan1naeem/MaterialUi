@@ -31,7 +31,13 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         null,
+<<<<<<< HEAD
         null,
+=======
+        " ",
+        null,
+        " ",
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
         undefined,
         null,
       ],
@@ -56,7 +62,13 @@ ShallowWrapper {
     "ref": null,
     "rendered": Array [
       null,
+<<<<<<< HEAD
       null,
+=======
+      " ",
+      null,
+      " ",
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
       undefined,
       null,
     ],
@@ -70,7 +82,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           null,
+<<<<<<< HEAD
           null,
+=======
+          " ",
+          null,
+          " ",
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
           undefined,
           null,
         ],
@@ -95,7 +113,13 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         null,
+<<<<<<< HEAD
         null,
+=======
+        " ",
+        null,
+        " ",
+>>>>>>> abe0c27cbfbc48ff736e295ad073f2440bae9139
         undefined,
         null,
       ],

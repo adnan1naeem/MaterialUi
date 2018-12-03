@@ -14,6 +14,7 @@ import { MUITextInputProperties } from './components/TextInput';
 import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
 import { MuiButtonProperties } from './components/Button';
 import { CardViewMedia } from './components/CardViewMedia';
+import { MUITypographyProperties } from './components/Text';
 import { MUIProps } from './components/Checkbox';
 import { MUISliderProperties } from './components/Slider';
 /**
@@ -63,6 +64,7 @@ declare class MaterialUiPlugin extends Plugin {
         FormControl: React.FunctionComponent<MUIFormControlProperties>;
         FormGroup: React.FunctionComponent<MUIFormGroupProperties>;
         TextInput: React.FunctionComponent<MUITextInputProperties>;
+        Text: React.FunctionComponent<MUITypographyProperties>;
         H1: React.FunctionComponent<{
             style?: object;
         }>;

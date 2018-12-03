@@ -31,7 +31,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         null,
+        " ",
         null,
+        " ",
         undefined,
         null,
       ],
@@ -40,6 +42,7 @@ ShallowWrapper {
       "fullWidth": undefined,
       "href": undefined,
       "mini": undefined,
+      "muiVariant": "outlined",
       "onClick": undefined,
       "size": undefined,
       "style": Object {
@@ -55,7 +58,9 @@ ShallowWrapper {
     "ref": null,
     "rendered": Array [
       null,
+      " ",
       null,
+      " ",
       undefined,
       null,
     ],
@@ -69,7 +74,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           null,
+          " ",
           null,
+          " ",
           undefined,
           null,
         ],
@@ -78,6 +85,7 @@ ShallowWrapper {
         "fullWidth": undefined,
         "href": undefined,
         "mini": undefined,
+        "muiVariant": "outlined",
         "onClick": undefined,
         "size": undefined,
         "style": Object {
@@ -93,7 +101,9 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         null,
+        " ",
         null,
+        " ",
         undefined,
         null,
       ],
@@ -116,8 +126,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

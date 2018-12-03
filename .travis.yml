@@ -1,4 +1,4 @@
-` language: node_js
+language: node_js
 cache:
   yarn: true
   directories:
@@ -8,13 +8,9 @@ notifications:
 node_js:
   - lts/*
 script:
-  - yarn build
+  - yarn add @blueeast/bluerain-os
+  - yarn lint && yarn test --maxWorkers=2 && yarn build
 after_success:
   - yarn report-coverage
   - test $TRAVIS_BRANCH = "master" && yarn deploy-docs
   - yarn semantic-release
-install:
-  - yarn add @blueeast/bluerain-os
-  - yarn add react
-  - yarn add react-dom
-  - yarn

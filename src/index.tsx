@@ -52,6 +52,7 @@ import H5 from './components/H5/H5.component';
 import H6 from './components/H6/H6.component';
 import Subtitle1 from './components/Subtitle1/Subtitle1.component';
 import Subtitle2 from './components/Subtitle2/Subtitle2.component';
+import { Text, MUITypographyProperties } from './components/Text';
 import Body1 from './components/Body1/Body1.component';
 import Body2 from './components/Body2/Body2.component';
 import Overline from './components/Overline/Overline.component';
@@ -108,6 +109,7 @@ class MaterialUiPlugin extends Plugin {
 		FormControl,
 		FormGroup,
 		TextInput,
+		Text,
 		H1,
 		H2,
 		H3,

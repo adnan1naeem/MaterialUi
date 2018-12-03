@@ -15,7 +15,7 @@ export interface MUISliderProperties extends SliderProperties {
     onDragEnd?: () => void;
     onDragStart?: () => void;
     step?: number;
-    thumb?: Node;
+    thumb?: React.ReactElement<any>;
     value?: number;
     vertical?: boolean;
     defaultValue?: any;
