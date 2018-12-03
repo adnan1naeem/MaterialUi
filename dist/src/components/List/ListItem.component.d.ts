@@ -23,6 +23,8 @@ export interface MUIListItemProperties extends ListItemProperties {
     avatarSize?: number;
     divider?: boolean;
     selected?: boolean;
+    ListItemStyle?: object;
+    ListItemTextStyle?: object;
 }
 declare const BlueRainListItem: React.StatelessComponent<MUIListItemProperties>;
 export default BlueRainListItem;

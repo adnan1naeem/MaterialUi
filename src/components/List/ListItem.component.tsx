@@ -29,15 +29,18 @@ export interface MUIListItemProperties extends ListItemProperties {
     avatarSize?: number,
     divider?: boolean,
     selected?: boolean,
+    ListItemStyle?: object,
+    ListItemTextStyle?: object
 }
 
 const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props) => {
-    const { active, onPress, action, ...others } = props;
+    const { active, onPress, action, style, ListItemStyle, ListItemTextStyle, ...others } = props;
 
     return (
         <ListItem
             button={active}
             onClick={onPress}
+            style={props.ListItemStyle ? props.ListItemStyle : props.style}
             {...others}
         >
             {
@@ -46,6 +49,7 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
                     <Avatar
                         src={props.avatar}
                         size={props.avatarSize ? props.avatarSize : 40}
+
                     />
                     :
                     props.avatar
@@ -55,11 +59,16 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
                     <ListItemText
                         primary={props.primary ? props.primary : ''}
                         secondary={props.secondary ? props.secondary : ''}
+                        style={props.ListItemTextStyle ? props.ListItemTextStyle : {}}
+
                     /> : null
             }
             {
                 props.children ?
-                    <ListItemText primary={props.children} />
+                    <ListItemText
+                        primary={props.children}
+                        style={props.ListItemTextStyle ? props.ListItemTextStyle : {}}
+                    />
                     : null
             }
             {
