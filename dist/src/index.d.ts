@@ -78,7 +78,7 @@ declare class MaterialUiPlugin extends Plugin {
         Body2: React.FunctionComponent<interfaces.TextProperties>;
         Caption: React.FunctionComponent<interfaces.TextProperties>;
         Overline: React.FunctionComponent<interfaces.TextProperties>;
-        WebStepper: React.FunctionComponent<import("src/components/WebStepper/Stepper.components").StepperProps>;
+        WebStepper: React.FunctionComponent<import("./components/WebStepper/Stepper.components").StepperProps>;
     };
 }
 export default MaterialUiPlugin;
