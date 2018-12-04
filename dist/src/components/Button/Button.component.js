@@ -23,7 +23,7 @@ const React = __importStar(require("react"));
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
 exports.BlueRainButton = (props) => {
     const { iconLeft, onPress, transparent } = props, others = __rest(props, ["iconLeft", "onPress", "transparent"]);
-    return (React.createElement(Button_1.default, Object.assign({}, others, { color: props.primary ? 'secondary' : props.color, style: props.success
+    return (React.createElement(Button_1.default, Object.assign({}, others, { color: props.primary ? 'primary' : props.color, style: props.success
             ? Object.assign({ backgroundColor: 'green' }, props.style) : props.dark
             ? Object.assign({ backgroundColor: 'black' }, props.style) : props.warning
             ? Object.assign({ backgroundColor: 'yellow' }, props.style) : props.danger

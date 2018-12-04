@@ -13,7 +13,7 @@ export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (pr
   return (
     <Button
       {...others}
-      color={props.primary ? 'secondary' : props.color}
+      color={props.primary ? 'primary' : props.color}
       style={props.success
         ?
         { backgroundColor: 'green', ...props.style } : props.dark
