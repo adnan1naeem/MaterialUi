@@ -9,7 +9,7 @@ const ExpansionPanelSummary_1 = __importDefault(require("@material-ui/core/Expan
 const ExpansionPanelDetails_1 = __importDefault(require("@material-ui/core/ExpansionPanelDetails"));
 const ExpansionPanelComponent = (props) => {
     return (react_1.default.createElement(ExpansionPanel_1.default, Object.assign({}, props),
-        react_1.default.createElement(ExpansionPanelSummary_1.default, { expandIcon: props.expandIcon }, props.title),
+        react_1.default.createElement(ExpansionPanelSummary_1.default, { expanded: props.collapsed, expandIcon: props.expandIcon }, props.title),
         react_1.default.createElement(ExpansionPanelDetails_1.default, null, props.children)));
 };
 exports.default = ExpansionPanelComponent;

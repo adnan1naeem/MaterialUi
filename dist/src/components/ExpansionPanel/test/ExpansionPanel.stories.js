@@ -18,9 +18,9 @@ const ExpandMore_1 = __importDefault(require("@material-ui/icons/ExpandMore"));
 const stories = react_1.storiesOf('ExpansionPanelComponent', module);
 stories.add('with all props', () => {
     return (React.createElement(React.Fragment, null,
-        React.createElement(__1.ExpansionPanelComponent, { title: 'brand', expandIcon: React.createElement(ExpandMore_1.default, null) },
+        React.createElement(__1.ExpansionPanelComponent, { collapsed: false, title: 'brand', expandIcon: React.createElement(ExpandMore_1.default, null) },
             React.createElement(Typography_1.default, null, "Here will be the render list component")),
-        React.createElement(__1.ExpansionPanelComponent, { title: 'brand', expandIcon: React.createElement(ExpandMore_1.default, null) },
+        React.createElement(__1.ExpansionPanelComponent, { title: 'brand', defaultExpanded: true, collapsed: true, expandIcon: React.createElement(ExpandMore_1.default, null) },
             React.createElement(Typography_1.default, null, "Here will be the render list component"))));
 });
 //# sourceMappingURL=ExpansionPanel.stories.js.map

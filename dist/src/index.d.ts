@@ -65,43 +65,21 @@ declare class MaterialUiPlugin extends Plugin {
         FormGroup: React.FunctionComponent<MUIFormGroupProperties>;
         TextInput: React.FunctionComponent<MUITextInputProperties>;
         Text: React.FunctionComponent<MUITypographyProperties>;
-        H1: React.FunctionComponent<{
-            style?: object;
-        }>;
-        H2: React.FunctionComponent<{
-            style?: object;
-        }>;
-        H3: React.FunctionComponent<{
-            style?: object;
-        }>;
-        H4: React.FunctionComponent<{
-            style?: object;
-        }>;
-        H5: React.FunctionComponent<{
-            style?: object;
-        }>;
-        H6: React.FunctionComponent<{
-            style?: object;
-        }>;
-        Subtitle1: React.FunctionComponent<{
-            style?: object;
-        }>;
-        Subtitle2: React.FunctionComponent<{
-            style?: object;
-        }>;
+        H1: React.FunctionComponent<interfaces.TextProperties>;
+        H2: React.FunctionComponent<interfaces.TextProperties>;
+        H3: React.FunctionComponent<interfaces.TextProperties>;
+        H4: React.FunctionComponent<interfaces.TextProperties>;
+        H5: React.FunctionComponent<interfaces.TextProperties>;
+        H6: React.FunctionComponent<interfaces.TextProperties>;
+        Subtitle1: React.FunctionComponent<interfaces.TextProperties>;
+        Subtitle2: React.FunctionComponent<interfaces.TextProperties>;
         Body1: React.FunctionComponent<{
             style?: object;
         }>;
-        Body2: React.FunctionComponent<{
-            style?: object;
-        }>;
-        Caption: React.FunctionComponent<{
-            style?: object;
-        }>;
-        Overline: React.FunctionComponent<{
-            style?: object;
-        }>;
-        WebStepper: React.FunctionComponent<any>;
+        Body2: React.FunctionComponent<interfaces.TextProperties>;
+        Caption: React.FunctionComponent<interfaces.TextProperties>;
+        Overline: React.FunctionComponent<interfaces.TextProperties>;
+        WebStepper: React.FunctionComponent<import("./components/WebStepper/Stepper.components").StepperProps>;
         CardViewMedia: typeof CardViewMedia;
         'ExpansionPanel': React.FunctionComponent<import("./components/ExpansionPanel/ExpansionPanel.components").ExpansionPanelProps>;
     };
