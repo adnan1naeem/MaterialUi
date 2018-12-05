@@ -9,14 +9,10 @@ import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
  */
 export interface MUISliderProperties extends SliderProperties {
     classes?: object;
-    max?: number;
-    min?: number;
     onChange?: (event: any, value: any) => void;
     onDragEnd?: () => void;
     onDragStart?: () => void;
-    step?: number;
     thumb?: React.ReactElement<any>;
-    value?: number;
     vertical?: boolean;
     defaultValue?: any;
 }

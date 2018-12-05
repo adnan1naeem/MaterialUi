@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
-import { Avatar } from '../Avatar';
-import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import { Avatar } from '../Avatar';
+import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItem Component
@@ -29,18 +29,17 @@ export interface MUIListItemProperties extends ListItemProperties {
     avatarSize?: number,
     divider?: boolean,
     selected?: boolean,
-    listItemStyle?: object,
     listItemTextStyle?: object
 }
 
 const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props) => {
-    const { active, onPress, action, style, listItemStyle, listItemTextStyle, ...others } = props;
+    const { active, onPress, action, listItemStyle, listItemTextStyle, ...others } = props;
 
     return (
         <ListItem
             button={active}
             onClick={onPress}
-            style={props.listItemStyle ? props.listItemStyle : props.style}
+            style={props.style}
             {...others}
         >
             {
