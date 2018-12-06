@@ -9,7 +9,6 @@ import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
  */
 export interface MUISliderProperties extends SliderProperties {
     classes?: object;
-    onChange?: (event: any, value: any) => void;
     onDragEnd?: () => void;
     onDragStart?: () => void;
     thumb?: React.ReactElement<any>;
