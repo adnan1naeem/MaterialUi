@@ -20,12 +20,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const Avatar_1 = require("../Avatar");
-const ListItemText_1 = __importDefault(require("@material-ui/core/ListItemText"));
 const ListItem_1 = __importDefault(require("@material-ui/core/ListItem"));
+const ListItemText_1 = __importDefault(require("@material-ui/core/ListItemText"));
+const Avatar_1 = require("../Avatar");
 const BlueRainListItem = (props) => {
-    const { active, onPress, action, style, listItemStyle, listItemTextStyle } = props, others = __rest(props, ["active", "onPress", "action", "style", "listItemStyle", "listItemTextStyle"]);
-    return (React.createElement(ListItem_1.default, Object.assign({ button: active, onClick: onPress, style: props.listItemStyle ? props.listItemStyle : props.style }, others),
+    const { active, onPress, action, listItemStyle, listItemTextStyle } = props, others = __rest(props, ["active", "onPress", "action", "listItemStyle", "listItemTextStyle"]);
+    return (React.createElement(ListItem_1.default, Object.assign({ button: active, onClick: onPress, style: props.style }, others),
         typeof props.avatar === 'string'
             ?
                 React.createElement(Avatar_1.Avatar, { src: props.avatar, size: props.avatarSize ? props.avatarSize : 40 })
