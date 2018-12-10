@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
+import { ButtonProperties } from '@blueeast/bluerain-ui-interfaces';
 
 export interface MuiButtonProperties extends ButtonProperties {
 
@@ -34,9 +34,7 @@ export const BlueRainButton: React.StatelessComponent<MuiButtonProperties> = (pr
                                     { backgroundColor: 'red', ...props.style } : props.style}
                     disabled={props.disabled}
                     href={props.href}
-                    mini={props.small}
                     onClick={onPress}
-                    fullWidth={props.fullWidth}
                     variant="extended"
                     size={props.small ? 'small' : props.large ? 'large' : props.size}>
 
