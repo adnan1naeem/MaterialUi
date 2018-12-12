@@ -41,6 +41,14 @@ import { Avatar } from './components/Avatar';
 import { Button, MuiButtonProperties } from './components/Button';
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
+import { Table } from './components/Table';
+import { TableHead } from './components/TableHead';
+import { TableFooter } from './components/TableFooter';
+import { TablePagination } from './components/TablePagination';
+import { TableBody } from './components/TableBody';
+import { TableRow } from './components/TableRow';
+import { TableCell } from './components/TableCell';
+import { TableSortLabel } from './components/TableSortLabel';
 import { WebStepper } from './components/WebStepper';
 
 import H1 from './components/H1/H1.component';
@@ -122,8 +130,14 @@ class MaterialUiPlugin extends Plugin {
 		Caption,
 		Overline,
 		WebStepper,
-
-
+		Table,
+		TableHead,
+		TableFooter,
+		TableCell,
+		TableRow,
+		TableBody,
+		TablePagination,
+		TableSortLabel
 	};
 
 	// static hooks = {

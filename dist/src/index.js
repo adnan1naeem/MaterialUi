@@ -22,6 +22,14 @@ const Avatar_1 = require("./components/Avatar");
 const Button_1 = require("./components/Button");
 // import { Notification } from './components/Notification';
 const Stepper_1 = require("./components/Stepper");
+const Table_1 = require("./components/Table");
+const TableHead_1 = require("./components/TableHead");
+const TableFooter_1 = require("./components/TableFooter");
+const TablePagination_1 = require("./components/TablePagination");
+const TableBody_1 = require("./components/TableBody");
+const TableRow_1 = require("./components/TableRow");
+const TableCell_1 = require("./components/TableCell");
+const TableSortLabel_1 = require("./components/TableSortLabel");
 const WebStepper_1 = require("./components/WebStepper");
 const H1_component_1 = __importDefault(require("./components/H1/H1.component"));
 const H2_component_1 = __importDefault(require("./components/H2/H2.component"));
@@ -99,6 +107,14 @@ MaterialUiPlugin.components = {
     Caption: Caption_component_1.default,
     Overline: Overline_component_1.default,
     WebStepper: WebStepper_1.WebStepper,
+    Table: Table_1.Table,
+    TableHead: TableHead_1.TableHead,
+    TableFooter: TableFooter_1.TableFooter,
+    TableCell: TableCell_1.TableCell,
+    TableRow: TableRow_1.TableRow,
+    TableBody: TableBody_1.TableBody,
+    TablePagination: TablePagination_1.TablePagination,
+    TableSortLabel: TableSortLabel_1.TableSortLabel
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

@@ -79,6 +79,14 @@ declare class MaterialUiPlugin extends Plugin {
         Caption: React.FunctionComponent<interfaces.TextProperties>;
         Overline: React.FunctionComponent<interfaces.TextProperties>;
         WebStepper: React.FunctionComponent<import("./components/WebStepper/Stepper.components").StepperProps>;
+        Table: React.FunctionComponent<import("./components/Table/Table.component").MUITableProperties>;
+        TableHead: React.FunctionComponent<import("./components/TableHead/TableHead.component").MUITableHeadProperties>;
+        TableFooter: React.FunctionComponent<import("./components/TableFooter/TableFooter.component").MUITableFooterProperties>;
+        TableCell: React.FunctionComponent<import("./components/TableCell/TableCell.component").MUITableCellProperties>;
+        TableRow: React.FunctionComponent<import("./components/TableRow/TableRow.component").MUITableRowProperties>;
+        TableBody: React.FunctionComponent<import("./components/TableBody/TableBody.component").MUITableBodyProperties>;
+        TablePagination: React.FunctionComponent<import("./components/TablePagination/TablePagination.component").TablePaginationProps>;
+        TableSortLabel: React.FunctionComponent<import("./components/TableSortLabel/TableSortLabel.component").MUITableSortLabelProperties>;
     };
 }
 export default MaterialUiPlugin;
