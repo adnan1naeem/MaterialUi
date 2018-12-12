@@ -38,6 +38,6 @@ BR.Components.set('IconEnhanced', () => null);
 BR.Components.set('Redirect', () => null);
 BR.Components.set('Divider', () => null);
 
-export const BluerainBoot = () => {
+export const BluerainBoot:any = () => {
   return BR.boot({ platform: [ReactNative], renderApp: false });
 };

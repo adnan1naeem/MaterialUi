@@ -5,9 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const bluerain_1 = __importDefault(require("../common/bluerain"));
 const deepmerge_1 = __importDefault(require("deepmerge"));
-// TODO: Only for evaluation, remove this
 const sample_1 = __importDefault(require("./sample"));
 const src_1 = __importDefault(require("../../src"));
+// TODO: Only for evaluation, remove this
 /**
  * Add your platform specific configs here.
  * We keep all the universal (cross platform) configs in

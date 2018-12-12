@@ -1,10 +1,10 @@
-import { BootOptions } from '@blueeast/bluerain-os';
 import commonBootOptions from '../common/bluerain';
 import deepmerge from 'deepmerge';
-
-// TODO: Only for evaluation, remove this
 import DummyPlugin from './sample';
 import MaterialUI from '../../src';
+import { BootOptions } from '@blueeast/bluerain-os';
+
+// TODO: Only for evaluation, remove this
 
 /**
  * Add your platform specific configs here.
@@ -28,4 +28,4 @@ const bootOptions: BootOptions = {
 	}
 };
 
-export default deepmerge(commonBootOptions, bootOptions);
+export default deepmerge(commonBootOptions, bootOptions) as any;

@@ -1,6 +1,6 @@
-import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 import Card from '@material-ui/core/Card';
 import React from 'react';
+import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of Card Component
@@ -28,7 +28,7 @@ const BlueRainCard: React.StatelessComponent<MUICardProperties> = props => {
       {...props}
       raised={props.raised}
       style={props.style}
-      component={typeof props.tag === 'string' ? props.tag : 'div'}
+      // component={typeof props.tag === 'string' ? props.tag : 'div'}
       className={props.className}
     >
       {props.children}

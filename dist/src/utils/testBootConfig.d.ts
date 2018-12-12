@@ -1,2 +1,1 @@
-/// <reference types="react" />
-export declare const BluerainBoot: () => import("react").ComponentType<any>;
+export declare const BluerainBoot: any;

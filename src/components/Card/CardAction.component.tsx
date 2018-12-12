@@ -21,4 +21,5 @@ export interface ActionProperties {
 const BlueRainCardAction: React.StatelessComponent<ActionProperties> = props => {
   return <CardAction {...props}>{props.children}</CardAction>;
 };
+
 export default BlueRainCardAction;

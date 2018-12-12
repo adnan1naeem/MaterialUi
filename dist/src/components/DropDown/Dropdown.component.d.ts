@@ -24,7 +24,6 @@ export interface MUIPickerProperties extends PickerProperties {
     renderValue?: any;
     value?: any;
     onChange?: any;
-    IconComponent?: string;
     inputprops?: object;
     disabled?: boolean;
     onOpen?: (event: object) => void;

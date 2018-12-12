@@ -1,7 +1,7 @@
-
-import React, { ReactNode } from 'react';
 import BR from '@blueeast/bluerain-os';
+import React from 'react';
 import { Checkbox } from '../';
+
 
 
 class BlueRainCheckbox extends React.Component<{}, { checked: boolean }> {

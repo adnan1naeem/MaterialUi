@@ -14,7 +14,7 @@ export interface MUIFormControlProperties extends FormControlProperties {
     fullWidth?: boolean;
     margin?: 'none' | 'dense' | 'normal';
     required?: boolean;
-    component?: string;
+    component?: string | object | any;
 }
 declare const BlueRainFormControl: React.StatelessComponent<MUIFormControlProperties>;
 export default BlueRainFormControl;

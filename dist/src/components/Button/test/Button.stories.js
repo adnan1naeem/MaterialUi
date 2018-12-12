@@ -50,7 +50,7 @@ react_1.storiesOf('Button', module).add('Accent button with large prop true', ()
 react_1.storiesOf('Button', module).add('Success button with success property', () => React.createElement(Button_1.Button, { success: true, style: { color: 'white' }, large: true }, "Success"));
 react_1.storiesOf('Button', module).add('Warning button with warning property', () => React.createElement(Button_1.Button, { warning: true, style: { color: 'white' }, large: true }, "Warning"));
 react_1.storiesOf('Button', module).add('Dark button with dark property', () => React.createElement(Button_1.Button, { dark: true, style: { color: 'white' }, large: true }, "Dark"));
-react_1.storiesOf('Button', module).add('Primary button with primary property', () => React.createElement(Button_1.Button, { primary: true, large: true }, "Large"));
+react_1.storiesOf('Button', module).add('Primary button with primary property', () => React.createElement(Button_1.Button, { primary: true, style: { color: 'white' } }, "Large"));
 react_1.storiesOf('Button', module).add('Danger button with danger property', () => React.createElement(Button_1.Button, { danger: true, style: { color: 'white' }, large: true }, "Danger"));
 react_1.storiesOf('Button', module).add('Light button with light property', () => React.createElement(Button_1.Button, { light: true, large: true }, "Light"));
 react_1.storiesOf('Button', module).add('Text Buttons', () => {
