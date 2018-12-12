@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React from 'react';
 declare class SimpleSelect extends React.Component<any, any> {
     constructor(props: any);

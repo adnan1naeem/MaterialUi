@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -8,7 +9,6 @@ import { DividerProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.inset if true, Divider is generated indented.
  */
 export interface MUIDividerProperties extends DividerProperties {
-    component?: string;
     inset?: boolean;
     absolute?: boolean;
     classes?: {};

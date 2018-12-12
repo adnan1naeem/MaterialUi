@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { ModalHeaderProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
 export interface ModalHeaderProps extends ModalHeaderProperties {

@@ -1,21 +1,25 @@
-import React from 'react';
-import { MUIAppBarProperties } from './components/AppBar';
-import { Plugin } from '@blueeast/bluerain-os';
+/// <reference types="react" />
 import interfaces from '@blueeast/bluerain-ui-interfaces';
-import { MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties, ActionProperties } from './components/Card';
-import { ColorPicker } from './components/ColorPicker';
+import React from 'react';
+import { ActionProperties, MUICardBodyProperties, MUICardFooterProperties, MUICardHeaderProperties, MUICardProperties } from './components/Card';
+import { MUIAppBarProperties } from './components/AppBar';
 import { Badge } from './components/Badge';
+import { MuiButtonProperties } from './components/Button';
+import { MUIProps } from './components/Checkbox';
+import { ChipMUIProperties } from './components/Chip';
+import { ColorPicker } from './components/ColorPicker';
 import { MUIDividerProperties } from './components/Divider';
 import { MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
 import { MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
 import { MUIListItemProperties, MUIListProperties } from './components/List';
+import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
+import { MUISliderProperties } from './components/Slider';
 import { MUISwitchProperties } from './components/Switch';
 import { MUITextInputProperties } from './components/TextInput';
-import { MenuItemProperties, MenuListprops, MenuPopperprops } from './components/Menu';
-import { MuiButtonProperties } from './components/Button';
 import { MUITypographyProperties } from './components/Text';
-import { MUIProps } from './components/Checkbox';
-import { MUISliderProperties } from './components/Slider';
+import { Plugin } from '@blueeast/bluerain-os';
+import { StepperProps } from './components/Stepper';
+import { WebStepperProps } from './components/WebStepper';
 /**
  * Material UI Plugin
  * @property {string} pluginName "MaterialUiPlugin"
@@ -36,7 +40,7 @@ declare class MaterialUiPlugin extends Plugin {
         CardFooter: React.FunctionComponent<MUICardFooterProperties>;
         CardActionArea: React.FunctionComponent<{}>;
         CardAction: React.FunctionComponent<ActionProperties>;
-        Chip: React.FunctionComponent<interfaces.ChipProperties>;
+        Chip: React.FunctionComponent<ChipMUIProperties>;
         Checkbox: (props: MUIProps) => JSX.Element;
         ColorPicker: typeof ColorPicker;
         Divider: React.FunctionComponent<MUIDividerProperties>;
@@ -59,7 +63,7 @@ declare class MaterialUiPlugin extends Plugin {
         ListItem: React.FunctionComponent<MUIListItemProperties>;
         Switch: React.FunctionComponent<MUISwitchProperties>;
         Slider: React.FunctionComponent<MUISliderProperties>;
-        Stepper: React.FunctionComponent<any>;
+        Stepper: React.FunctionComponent<StepperProps>;
         FormControl: React.FunctionComponent<MUIFormControlProperties>;
         FormGroup: React.FunctionComponent<MUIFormGroupProperties>;
         TextInput: React.FunctionComponent<MUITextInputProperties>;
@@ -73,12 +77,12 @@ declare class MaterialUiPlugin extends Plugin {
         Subtitle1: React.FunctionComponent<interfaces.TextProperties>;
         Subtitle2: React.FunctionComponent<interfaces.TextProperties>;
         Body1: React.FunctionComponent<{
-            style?: object;
+            style?: object | undefined;
         }>;
         Body2: React.FunctionComponent<interfaces.TextProperties>;
         Caption: React.FunctionComponent<interfaces.TextProperties>;
         Overline: React.FunctionComponent<interfaces.TextProperties>;
-        WebStepper: React.FunctionComponent<import("./components/WebStepper/Stepper.components").StepperProps>;
+        WebStepper: React.FunctionComponent<WebStepperProps>;
     };
 }
 export default MaterialUiPlugin;

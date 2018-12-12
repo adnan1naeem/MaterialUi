@@ -38,6 +38,5 @@ stories.add('Divider with inset Prop true', () => {
 
 
 stories.add('Divider with component prop', () => {
-  const comp = () => 'Divider';
   return <div style={{ padding: 20, backgroundColor: 'white' }}><Divider component={'Divider'} /></div>;
 });

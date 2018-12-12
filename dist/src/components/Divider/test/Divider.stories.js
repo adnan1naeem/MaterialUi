@@ -38,7 +38,6 @@ stories.add('Divider with inset Prop true', () => {
         React.createElement(Divider_1.Divider, { inset: true }));
 });
 stories.add('Divider with component prop', () => {
-    const comp = () => 'Divider';
     return React.createElement("div", { style: { padding: 20, backgroundColor: 'white' } },
         React.createElement(Divider_1.Divider, { component: 'Divider' }));
 });

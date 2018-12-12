@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIModalProperties extends ModalProperties {
@@ -19,7 +20,6 @@ export interface MUIModalProperties extends ModalProperties {
     open?: boolean;
     PaperProps?: object;
     scroll?: 'body' | 'paper';
-    TransitionComponent?: string;
     transitionDuration?: {
         enter?: number;
         exit?: number;

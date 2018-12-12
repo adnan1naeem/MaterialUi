@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 import { TextInputProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -18,9 +19,7 @@ export interface MUITextInputProperties extends TextInputProperties {
     id?: string;
     label?: ReactNode | string;
     className?: any;
-    margin?: 'none' | //
-    'dense' | //
-    'normal';
+    margin?: 'none' | 'dense' | 'normal';
     required?: boolean;
     error?: boolean;
     type?: string;

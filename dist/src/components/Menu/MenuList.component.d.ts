@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 /**
  * The props of DropDown Component

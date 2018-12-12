@@ -14,38 +14,38 @@ require("jest");
 const enzyme_adapter_react_16_1 = __importDefault(require("enzyme-adapter-react-16"));
 const React = __importStar(require("react"));
 const enzyme_1 = require("enzyme");
-const __1 = require("../");
+const _1 = require("../");
 enzyme_1.configure({ adapter: new enzyme_adapter_react_16_1.default() });
 it('renders correctly', () => {
-    const tree = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "outlined", style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }));
+    const tree = enzyme_1.shallow(React.createElement(_1.Button, { muiVariant: "outlined", style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }));
     expect(tree).toMatchSnapshot();
 });
 test('if Button renders correctly ', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { title: "button title" }));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { title: "button title" }));
     expect(wrapper).toBeDefined();
 });
 test('Dark Button with label in Child should have child count > 0 ', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }, "Dark "));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }, "Dark "));
     expect(wrapper.props().children).toBeDefined();
 });
 test('Secondary Button with style prop should be rendered correctly', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "contained", style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }, "Custom"));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { muiVariant: "contained", style: { marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' } }, "Custom"));
     expect(wrapper.props().style).toEqual({ marginLeft: 150, backgroundColor: 'purple', borderColor: 'black', width: 100, justifyContent: 'center', display: 'flex' });
 });
 test(' Warning Button with disabled prop true should properly render', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "contained", disabled: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, " Disabled"));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { muiVariant: "contained", disabled: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, " Disabled"));
     expect(wrapper.props().disabled).toBeTruthy();
 });
 test(' Danger Button with onPress prop', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "contained", fullWidth: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, "FullWidth"));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { muiVariant: "contained", fullWidth: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, "FullWidth"));
     expect(wrapper).toBeDefined();
 });
 test('Success Button with active prop true', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { muiVariant: "contained", style: { marginLeft: 150, display: 'flex', justifyContent: 'center', }, active: true }, "Active"));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { muiVariant: "contained", style: { marginLeft: 150, display: 'flex', justifyContent: 'center', }, active: true }, "Active"));
     expect(wrapper.props().active).toBe(true);
 });
 test(' Default Button with bordered prop true', () => {
-    const wrapper = enzyme_1.shallow(React.createElement(__1.Button, { bordered: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, " Bordered"));
+    const wrapper = enzyme_1.shallow(React.createElement(_1.Button, { bordered: true, style: { marginLeft: 150, display: 'flex', justifyContent: 'center', } }, " Bordered"));
     expect(wrapper.props().bordered).toBeDefined();
 });
 // test('Rounded Button should properly render', () => {

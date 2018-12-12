@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -17,7 +18,6 @@ import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIListItemProperties extends ListItemProperties {
     className?: string;
     button?: boolean;
-    component?: string;
     href?: string;
     disabled?: boolean;
     avatarSize?: number;

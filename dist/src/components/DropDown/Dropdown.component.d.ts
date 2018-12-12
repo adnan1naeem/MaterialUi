@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import React, { ReactNode } from 'react';
 import { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -24,7 +25,6 @@ export interface MUIPickerProperties extends PickerProperties {
     renderValue?: any;
     value?: any;
     onChange?: any;
-    IconComponent?: string;
     inputprops?: object;
     disabled?: boolean;
     onOpen?: (event: object) => void;

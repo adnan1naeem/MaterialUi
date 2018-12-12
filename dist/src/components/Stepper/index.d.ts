@@ -1,1 +1,1 @@
-export { Stepper } from './Stepper.components';
+export { Stepper, StepperProps } from './Stepper.components';

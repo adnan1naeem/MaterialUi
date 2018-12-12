@@ -1,6 +1,6 @@
-import { StepperProperties } from '@blueeast/bluerain-ui-interfaces';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import React from 'react';
+import { StepperProperties } from '@blueeast/bluerain-ui-interfaces';
 
 export interface StepperProps extends StepperProperties {
   variant: 'text' | 'dots' | 'progress',
@@ -8,7 +8,7 @@ export interface StepperProps extends StepperProperties {
   nextButton: any;
   position: 'bottom' | 'top' | 'static'
 }
-export const Stepper: React.StatelessComponent<any> = (props: StepperProps) => {
+export const Stepper: React.StatelessComponent<StepperProps> = (props) => {
 
   return (
     <MobileStepper   {...props} />

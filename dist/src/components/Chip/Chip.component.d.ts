@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -10,6 +11,9 @@ import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
-declare const Chip: React.StatelessComponent<ChipProperties>;
+export interface ChipMUIProperties extends ChipProperties {
+    component?: React.ReactType<any> | any;
+}
+declare const Chip: React.StatelessComponent<ChipMUIProperties>;
 export default Chip;
 export { ChipProperties };

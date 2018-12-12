@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { FormControlProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
@@ -14,7 +15,7 @@ export interface MUIFormControlProperties extends FormControlProperties {
     fullWidth?: boolean;
     margin?: 'none' | 'dense' | 'normal';
     required?: boolean;
-    component?: string;
+    component?: string | object | any;
 }
 declare const BlueRainFormControl: React.StatelessComponent<MUIFormControlProperties>;
 export default BlueRainFormControl;

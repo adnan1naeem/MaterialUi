@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-// import { MenuItem } from 'material-ui/Menu';
-import { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
 import Select from '@material-ui/core/Select';
+import { PickerProperties } from '@blueeast/bluerain-ui-interfaces';
+// import { MenuItem } from 'material-ui/Menu';
 
 /**
  * The props of DropDown Component
@@ -27,7 +27,6 @@ export interface MUIPickerProperties extends PickerProperties {
   renderValue?: any,
   value?: any,
   onChange?: any,
-  IconComponent?: string,
   inputprops?: object,
   disabled?: boolean,
   onOpen?: (event: object) => void

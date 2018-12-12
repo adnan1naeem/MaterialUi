@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
 import ChipUi from '@material-ui/core/Chip';
+import { ChipProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The universal props of Chip Component
@@ -12,11 +12,14 @@ import ChipUi from '@material-ui/core/Chip';
  * @param {ReactNode} props.deleteIcon Custom delete icon element. Will be shown only if onDelete is set.
  * @param {ReactNode} props.onClick Function when clicked on chip.
  */
+export interface ChipMUIProperties extends ChipProperties {
+  component?: React.ReactType<any> | any;
+}
 
-const Chip: React.StatelessComponent<ChipProperties> = (props) => (
+const Chip: React.StatelessComponent<ChipMUIProperties> = (props) => (
   <ChipUi
-    {...props}
-    classes={{ ...props.style }}
+  {...props}
+  classes={{ ...props.style }}
   />
 );
 export default Chip;

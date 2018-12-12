@@ -11,7 +11,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const __1 = require("../");
+const _1 = require("../");
 const bluerain_os_1 = require("@blueeast/bluerain-os");
 require("jest");
 const enzyme_adapter_react_16_1 = __importDefault(require("enzyme-adapter-react-16"));
@@ -23,17 +23,17 @@ beforeEach(() => {
 });
 test('Avatar component with size props', () => {
     const wrapper = enzyme_1.mount(React.createElement(bluerain_os_1.BlueRainProvider, null,
-        React.createElement(__1.Avatar, { size: 100, style: { width: 100, height: 100 } })));
+        React.createElement(_1.Avatar, { size: 100, style: { width: 100, height: 100 } })));
     expect(wrapper.props().children.props.style).toEqual({ width: 100, height: 100 });
 });
 test('Avatar component with style', () => {
     const wrapper = enzyme_1.mount(React.createElement(bluerain_os_1.BlueRainProvider, null,
-        React.createElement(__1.Avatar, { size: 100, style: { backgroundColor: 'green' } })));
+        React.createElement(_1.Avatar, { size: 100, style: { backgroundColor: 'green' } })));
     expect(wrapper.props().children.props.style).toEqual({ backgroundColor: 'green' });
 });
 test('Avatar component with src props', () => {
     const wrapper = enzyme_1.mount(React.createElement(bluerain_os_1.BlueRainProvider, null,
-        React.createElement(__1.Avatar, { src: "https://material-ui-next.com/static/images/remy.jpg" })));
+        React.createElement(_1.Avatar, { src: "https://material-ui-next.com/static/images/remy.jpg" })));
     expect(wrapper.props().children.props.src).toEqual('https://material-ui-next.com/static/images/remy.jpg');
 });
 // test('Avatar component with src and size props', () => {

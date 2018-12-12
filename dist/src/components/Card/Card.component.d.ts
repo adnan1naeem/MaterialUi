@@ -1,5 +1,6 @@
-import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
+/// <reference types="react" />
 import React from 'react';
+import { CardProperties } from '@blueeast/bluerain-ui-interfaces';
 /**
  * The props of Card Component
  * @param {Node} props.children Children to be passed for card component.

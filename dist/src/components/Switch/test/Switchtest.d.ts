@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 /**
  * The universal props of Avatar Component
