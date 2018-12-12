@@ -60,7 +60,7 @@ declare class MaterialUiPlugin extends Plugin {
         ListItem: React.FunctionComponent<MUIListItemProperties>;
         Switch: React.FunctionComponent<MUISwitchProperties>;
         Slider: React.FunctionComponent<MUISliderProperties>;
-        Stepper: React.FunctionComponent<import("./components/Stepper/Stepper.components").StepperProps>;
+        Stepper: React.FunctionComponent<import("src/components/Stepper/Stepper.components").StepperProps>;
         FormControl: React.FunctionComponent<MUIFormControlProperties>;
         FormGroup: React.FunctionComponent<MUIFormGroupProperties>;
         TextInput: React.FunctionComponent<MUITextInputProperties>;
@@ -79,15 +79,17 @@ declare class MaterialUiPlugin extends Plugin {
         Body2: React.FunctionComponent<interfaces.TextProperties>;
         Caption: React.FunctionComponent<interfaces.TextProperties>;
         Overline: React.FunctionComponent<interfaces.TextProperties>;
-        WebStepper: React.FunctionComponent<import("./components/WebStepper/WebStepper.components").WebStepperProps>;
-        Table: React.FunctionComponent<import("./components/Table/Table.component").MUITableProperties>;
-        TableHead: React.FunctionComponent<import("./components/TableHead/TableHead.component").MUITableHeadProperties>;
-        TableFooter: React.FunctionComponent<import("./components/TableFooter/TableFooter.component").MUITableFooterProperties>;
-        TableCell: React.FunctionComponent<import("./components/TableCell/TableCell.component").MUITableCellProperties>;
-        TableRow: React.FunctionComponent<import("./components/TableRow/TableRow.component").MUITableRowProperties>;
-        TableBody: React.FunctionComponent<import("./components/TableBody/TableBody.component").MUITableBodyProperties>;
-        TablePagination: React.FunctionComponent<import("./components/TablePagination/TablePagination.component").TablePaginationProps>;
-        TableSortLabel: React.FunctionComponent<import("./components/TableSortLabel/TableSortLabel.component").MUITableSortLabelProperties>;
+        WebStepper: React.FunctionComponent<import("src/components/WebStepper/WebStepper.components").WebStepperProps>;
+        Tab: React.FunctionComponent<import("src/components/Tab/Tab.component").TabProps>;
+        Table: React.FunctionComponent<import("src/components/Table/Table.component").MUITableProperties>;
+        TableHead: React.FunctionComponent<import("src/components/TableHead/TableHead.component").MUITableHeadProperties>;
+        TableFooter: React.FunctionComponent<import("src/components/TableFooter/TableFooter.component").MUITableFooterProperties>;
+        TableCell: React.FunctionComponent<import("src/components/TableCell/TableCell.component").MUITableCellProperties>;
+        TableRow: React.FunctionComponent<import("src/components/TableRow/TableRow.component").MUITableRowProperties>;
+        TableBody: React.FunctionComponent<import("src/components/TableBody/TableBody.component").MUITableBodyProperties>;
+        TablePagination: React.FunctionComponent<import("src/components/TablePagination/TablePagination.component").TablePaginationProps>;
+        TableSortLabel: React.FunctionComponent<import("src/components/TableSortLabel/TableSortLabel.component").MUITableSortLabelProperties>;
+        Tabs: React.FunctionComponent<import("src/components/Tabs/Tabs.component").TabsProps>;
     };
 }
 export default MaterialUiPlugin;

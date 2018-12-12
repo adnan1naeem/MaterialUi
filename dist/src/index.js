@@ -45,6 +45,8 @@ const TableBody_1 = require("./components/TableBody");
 const TableRow_1 = require("./components/TableRow");
 const TableCell_1 = require("./components/TableCell");
 const TableSortLabel_1 = require("./components/TableSortLabel");
+const Tabs_1 = require("./components/Tabs");
+const Tab_1 = require("./components/Tab");
 const WebStepper_1 = require("./components/WebStepper");
 /**
  * Material UI Plugin
@@ -107,6 +109,7 @@ MaterialUiPlugin.components = {
     Caption: Caption_component_1.default,
     Overline: Overline_component_1.default,
     WebStepper: WebStepper_1.WebStepper,
+    Tab: Tab_1.Tab,
     Table: Table_1.Table,
     TableHead: TableHead_1.TableHead,
     TableFooter: TableFooter_1.TableFooter,
@@ -114,7 +117,8 @@ MaterialUiPlugin.components = {
     TableRow: TableRow_1.TableRow,
     TableBody: TableBody_1.TableBody,
     TablePagination: TablePagination_1.TablePagination,
-    TableSortLabel: TableSortLabel_1.TableSortLabel
+    TableSortLabel: TableSortLabel_1.TableSortLabel,
+    Tabs: Tabs_1.Tabs
 };
 exports.default = MaterialUiPlugin;
 //# sourceMappingURL=index.js.map

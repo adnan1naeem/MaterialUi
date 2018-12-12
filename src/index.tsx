@@ -87,6 +87,8 @@ import { TableBody } from './components/TableBody';
 import { TableRow } from './components/TableRow';
 import { TableCell } from './components/TableCell';
 import { TableSortLabel } from './components/TableSortLabel';
+import { Tabs} from './components/Tabs';
+import { Tab } from './components/Tab';
 import { WebStepper } from './components/WebStepper';
 
 
@@ -152,6 +154,7 @@ class MaterialUiPlugin extends Plugin {
 		Caption,
 		Overline,
 		WebStepper,
+		Tab,
 		Table,
 		TableHead,
 		TableFooter,
@@ -159,7 +162,8 @@ class MaterialUiPlugin extends Plugin {
 		TableRow,
 		TableBody,
 		TablePagination,
-		TableSortLabel
+		TableSortLabel,
+		Tabs
 	};
 
 	// static hooks = {
