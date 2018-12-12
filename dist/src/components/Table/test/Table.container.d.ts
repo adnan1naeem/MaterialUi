@@ -12,7 +12,7 @@ export interface TableStates {
     orderBy?: any;
     selected: any;
     data?: any;
-    page?: number;
+    page?: any;
     rowsPerPage: number;
 }
 declare class EnhancedTable extends React.Component<any, TableStates> {

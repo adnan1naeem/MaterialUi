@@ -115,7 +115,8 @@
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jasmine": "^2.8.9",
     "@types/jest": "^23.3.5",
-    "@types/node": "10.9.4",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.7.13",
     "@types/react-color": "^2.13.6",
     "@types/react-test-renderer": "^16.0.2",
     "@types/storybook__addon-actions": "^3.4.1",
@@ -158,11 +159,10 @@
   },
   "dependencies": {
     "@blueeast/bluerain-cli": "^4.0.0-beta.1",
-    "@blueeast/bluerain-ui-interfaces": "4.0.0-beta.8",
+    "@blueeast/bluerain-ui-interfaces": "^4.0.0-beta.8",
     "@material-ui/core": "^3.2.2",
     "@material-ui/icons": "^3.0.1",
     "@material-ui/lab": "^3.0.0-alpha.20",
-    "@types/react": "16.7.13",
     "react-color": "^2.14.1"
   },
   "peerDependencies": {

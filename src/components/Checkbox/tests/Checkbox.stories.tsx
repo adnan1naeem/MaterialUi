@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
-import BR from '@blueeast/bluerain-os';
-import { Checkbox } from '../../Checkbox';
 import BlueRainCheckbox from './Checkboxtest';
-import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import BR from '@blueeast/bluerain-os';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import { action } from '@storybook/addon-actions';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { Checkbox } from '../../Checkbox';
+import { storiesOf } from '@storybook/react';
 
 storiesOf('Checkbox', module).addDecorator(withKnobs).add('label disabled value props with knobs',
     () => <Checkbox

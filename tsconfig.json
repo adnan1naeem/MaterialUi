@@ -18,7 +18,7 @@
     "strict": true /* Enable all strict type-checking options. */,
     /* Strict Type-Checking Options */
     // "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
-    "strictNullChecks": false /* Enable strict null checks. */,
+    // "strictNullChecks": true /* Enable strict null checks. */,
     // "strictFunctionTypes": true /* Enable strict checking of function types. */,
     // "strictPropertyInitialization": true /* Enable strict checking of property initialization in classes. */,
     // "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
@@ -27,7 +27,7 @@
     "noUnusedLocals": false /* Report errors on unused locals. */,
     "noUnusedParameters": false /* Report errors on unused parameters. */,
     "noImplicitReturns": false /* Report error when not all code paths in function return a value. */,
-    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    "noFallthroughCasesInSwitch": false /* Report errors for fallthrough cases in switch statement. */,
     /* Debugging Options */
     "traceResolution": false /* Report module resolution log messages. */,
     "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
@@ -42,8 +42,7 @@
       "dom"
     ],
     "types": [
-      "node",
-      "jest"
+      "node"
     ],
     "typeRoots": [
       "node_modules/@types"
@@ -58,8 +57,8 @@
     "node_modules",
     "dist",
     "build",
-    "**/*.test.ts",
-    "src/**/*.test.ts"
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
   ],
   "compileOnSave": false
 }

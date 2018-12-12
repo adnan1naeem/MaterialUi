@@ -19,7 +19,6 @@ export interface MUIModalProperties extends ModalProperties {
     open?: boolean;
     PaperProps?: object;
     scroll?: 'body' | 'paper';
-    TransitionComponent?: string;
     transitionDuration?: {
         enter?: number;
         exit?: number;

@@ -1,44 +1,82 @@
-
-import React from 'react';
-import { AppBar, MUIAppBarProperties } from './components/AppBar';
-import { Plugin } from '@blueeast/bluerain-os';
+import Body1 from './components/Body1/Body1.component';
+import Body2 from './components/Body2/Body2.component';
+import Caption from './components/Caption/Caption.component';
+import H1 from './components/H1/H1.component';
+import H2 from './components/H2/H2.component';
+import H3 from './components/H3/H3.component';
+import H4 from './components/H4/H4.component';
+import H5 from './components/H5/H5.component';
+import H6 from './components/H6/H6.component';
 import interfaces from '@blueeast/bluerain-ui-interfaces';
-
+import Overline from './components/Overline/Overline.component';
+import React from 'react';
+import Subtitle1 from './components/Subtitle1/Subtitle1.component';
+import Subtitle2 from './components/Subtitle2/Subtitle2.component';
 import {
+	ActionProperties,
 	Card,
+	CardAction,
+	CardActionArea,
 	CardBody,
 	CardFooter,
 	CardHeader,
 	CardMedia,
-	CardActionArea,
-	CardAction,
 	MUICardBodyProperties,
 	MUICardFooterProperties,
 	MUICardHeaderProperties,
-	MUICardProperties,
-	ActionProperties
-} from './components/Card';
-import { Chip, ChipProperties } from './components/Chip';
-import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
+	MUICardProperties
+	} from './components/Card';
+import { AppBar, MUIAppBarProperties } from './components/AppBar';
+import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
-
+import { Button, MuiButtonProperties } from './components/Button';
+import { Checkbox, MUIProps } from './components/Checkbox';
+import { Chip, ChipMUIProperties } from './components/Chip';
+import { ColorPicker, ColorPickerProperties } from './components/ColorPicker';
 import { Divider, MUIDividerProperties } from './components/Divider';
 import { Drawer, MUIDrawerProperties } from './components/Drawer';
-import { Dropdown, DropdownItem, MUIDropdownItem, MUIPickerProperties } from './components/DropDown';
-import { FormControl, FormGroup, MUIFormControlProperties, MUIFormGroupProperties } from './components/FormControl';
+import {
+	Dropdown,
+	DropdownItem,
+	MUIDropdownItem,
+	MUIPickerProperties
+	} from './components/DropDown';
+import {
+	FormControl,
+	FormGroup,
+	MUIFormControlProperties,
+	MUIFormGroupProperties
+	} from './components/FormControl';
 import {
 	List,
-	ListSubheader,
 	ListItem,
+	ListSubheader,
 	MUIListItemProperties,
 	MUIListProperties
-} from './components/List';
+	} from './components/List';
+import {
+	Menu,
+	MenuItem,
+	MenuItemProperties,
+	MenuList,
+	MenuListprops,
+	MenuPopper,
+	MenuPopperprops,
+	MenuProperties
+	} from './components/Menu';
+import {
+	Modal,
+	ModalBody,
+	ModalBodyText,
+	ModalFooter,
+	ModalHeader
+	} from './components/Modal';
+import { MUISliderProperties, Slider } from './components/Slider';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
-import { Menu, MenuItem, MenuItemProperties, MenuProperties, MenuPopper, MenuListprops, MenuPopperprops, MenuList } from './components/Menu';
-import { Modal, ModalBody, ModalFooter, ModalHeader, ModalBodyText } from './components/Modal';
-import { Avatar } from './components/Avatar';
-import { Button, MuiButtonProperties } from './components/Button';
+import { MUITypographyProperties, Text } from './components/Text';
+import { Plugin } from '@blueeast/bluerain-os';
+
 // import { Notification } from './components/Notification';
 import { Stepper } from './components/Stepper';
 import { Table } from './components/Table';
@@ -51,22 +89,7 @@ import { TableCell } from './components/TableCell';
 import { TableSortLabel } from './components/TableSortLabel';
 import { WebStepper } from './components/WebStepper';
 
-import H1 from './components/H1/H1.component';
-import H2 from './components/H2/H2.component';
-import H3 from './components/H3/H3.component';
-import H4 from './components/H4/H4.component';
-import H5 from './components/H5/H5.component';
-import H6 from './components/H6/H6.component';
-import Subtitle1 from './components/Subtitle1/Subtitle1.component';
-import Subtitle2 from './components/Subtitle2/Subtitle2.component';
-import { Text, MUITypographyProperties } from './components/Text';
-import Body1 from './components/Body1/Body1.component';
-import Body2 from './components/Body2/Body2.component';
-import Overline from './components/Overline/Overline.component';
-import Caption from './components/Caption/Caption.component';
-import { Checkbox, MUIProps } from './components/Checkbox';
 
-import { Slider, MUISliderProperties } from './components/Slider';
 
 /**
  * Material UI Plugin
@@ -78,7 +101,6 @@ class MaterialUiPlugin extends Plugin {
 	static pluginName = 'MaterialUiPlugin';
 	static slug = 'material-ui';
 	static components = {
-
 		AppBar,
 		Avatar,
 		Badge,

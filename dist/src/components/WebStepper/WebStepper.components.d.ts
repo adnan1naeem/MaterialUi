@@ -1,6 +1,6 @@
-import { StepperProperties } from '@blueeast/bluerain-ui-interfaces';
 import React from 'react';
-export interface StepperProps extends StepperProperties {
+import { StepperProperties } from '@blueeast/bluerain-ui-interfaces';
+export interface WebStepperProps extends StepperProperties {
     variant?: 'text' | 'dots' | 'progress';
     backButton?: any;
     nextButton?: any;
@@ -8,4 +8,4 @@ export interface StepperProps extends StepperProperties {
     children?: React.ReactNode;
     steps: any;
 }
-export declare const WebStepper: React.StatelessComponent<StepperProps>;
+export declare const WebStepper: React.StatelessComponent<WebStepperProps>;

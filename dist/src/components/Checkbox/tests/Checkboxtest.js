@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
 const bluerain_os_1 = __importDefault(require("@blueeast/bluerain-os"));
+const react_1 = __importDefault(require("react"));
 const __1 = require("../");
 class BlueRainCheckbox extends react_1.default.Component {
     constructor(props) {
