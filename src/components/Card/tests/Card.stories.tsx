@@ -1,15 +1,20 @@
 import * as React from 'react';
-import { Card, CardBody, CardFooter, CardHeader, CardMedia } from '../../Card';
-import { text, withKnobs } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import Avatar from '@material-ui/core/Avatar';
 import BR from '@blueeast/bluerain-os';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardMedia
+  } from '../../Card';
+import { storiesOf } from '@storybook/react';
+import { text, withKnobs } from '@storybook/addon-knobs';
 // import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 // import SkipNextIcon from 'material-ui-icons/SkipNext';
 // import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
-import Typography from '@material-ui/core/Typography';
 
 storiesOf('Card', module).addDecorator(withKnobs).add('Card with style, className and raised props', () =>
   <Card raised style={{ backgroundColor: 'brown' }} className="bg-main">{text('label', 'Raised')}</Card>);

@@ -20,21 +20,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const Avatar_1 = require("../Avatar");
-const ListItemText_1 = __importDefault(require("@material-ui/core/ListItemText"));
 const ListItem_1 = __importDefault(require("@material-ui/core/ListItem"));
+const ListItemText_1 = __importDefault(require("@material-ui/core/ListItemText"));
+const Avatar_1 = require("../Avatar");
 const BlueRainListItem = (props) => {
-    const { active, onPress, action } = props, others = __rest(props, ["active", "onPress", "action"]);
-    return (React.createElement(ListItem_1.default, Object.assign({ button: active, onClick: onPress }, others),
+    const { active, onPress, action, listItemStyle, listItemTextStyle } = props, others = __rest(props, ["active", "onPress", "action", "listItemStyle", "listItemTextStyle"]);
+    return (React.createElement(ListItem_1.default, Object.assign({ button: active, onClick: onPress, style: props.style }, others),
         typeof props.avatar === 'string'
             ?
                 React.createElement(Avatar_1.Avatar, { src: props.avatar, size: props.avatarSize ? props.avatarSize : 40 })
             :
                 props.avatar,
         (props.primary || props.secondary) ?
-            React.createElement(ListItemText_1.default, { primary: props.primary ? props.primary : '', secondary: props.secondary ? props.secondary : '' }) : null,
+            React.createElement(ListItemText_1.default, { primary: props.primary ? props.primary : '', secondary: props.secondary ? props.secondary : '', style: props.listItemTextStyle ? props.listItemTextStyle : {} }) : null,
         props.children ?
-            React.createElement(ListItemText_1.default, { primary: props.children })
+            React.createElement(ListItemText_1.default, { primary: props.children, style: props.listItemTextStyle ? props.listItemTextStyle : {} })
             : null,
         action
             ?

@@ -1,1 +1,1 @@
-export { WebStepper } from './Stepper.components';
+export { WebStepper, WebStepperProps } from './WebStepper.components';

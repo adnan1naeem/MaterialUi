@@ -17,12 +17,12 @@ import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 export interface MUIListItemProperties extends ListItemProperties {
     className?: string;
     button?: boolean;
-    component?: string;
     href?: string;
     disabled?: boolean;
     avatarSize?: number;
     divider?: boolean;
     selected?: boolean;
+    listItemTextStyle?: object;
 }
 declare const BlueRainListItem: React.StatelessComponent<MUIListItemProperties>;
 export default BlueRainListItem;
