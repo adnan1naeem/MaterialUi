@@ -6,6 +6,7 @@ coverage
 .vscode
 .idea
 compiled
+dist
 .awcache
 test/__snapshots__/
 package-lock.json

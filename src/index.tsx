@@ -73,13 +73,21 @@ import {
 	} from './components/Modal';
 import { MUISliderProperties, Slider } from './components/Slider';
 import { MUISwitchProperties, Switch } from './components/Switch';
+import { MUITableBodyProperties, TableBody } from './components/TableBody';
+import { MUITableCellProperties, TableCell } from './components/TableCell';
+import { MUITableFooterProperties, TableFooter } from './components/TableFooter';
+import { MUITableHeadProperties, TableHead } from './components/TableHead';
+import { MUITableProperties, Table } from './components/Table';
+import { MUITableRowProperties, TableRow } from './components/TableRow';
+import { MUITableSortLabelProperties, TableSortLabel } from './components/TableSortLabel';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { MUITypographyProperties, Text } from './components/Text';
 import { Plugin } from '@blueeast/bluerain-os';
 import { Stepper, StepperProps } from './components/Stepper';
+import { Tab, TabProps } from './components/Tab';
+import { TablePagination, TablePaginationProps } from './components/TablePagination';
+import { Tabs, TabsProps } from './components/Tabs';
 import { WebStepper, WebStepperProps } from './components/WebStepper';
-
-
 
 // import { Notification } from './components/Notification';
 
@@ -146,6 +154,16 @@ class MaterialUiPlugin extends Plugin {
 		Caption,
 		Overline,
 		WebStepper,
+		Tab,
+		Table,
+		TableHead,
+		TableFooter,
+		TableCell,
+		TableRow,
+		TableBody,
+		TablePagination,
+		TableSortLabel,
+		Tabs
 	};
 
 	// static hooks = {
