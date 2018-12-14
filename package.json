@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "author": "BlueEast Team <code@blueeast.com>",
   "repository": {
     "type": "git",
@@ -18,10 +22,6 @@
     "branch": "master",
     "dryRun": false,
     "debug": true
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=6.0.0"
   },
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx' 'test/**/*.ts'",
