@@ -1,1 +1,4 @@
-export { default as TableFooter } from './TableFooter.component';
+export {
+	default as TableFooter,
+	MUITableFooterProperties
+} from './TableFooter.component';

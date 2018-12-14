@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
-import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import { AppBarProperties } from '@blueeast/bluerain-ui-interfaces';
+import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 import { styles } from './style';
 
 /**
@@ -15,6 +15,7 @@ import { styles } from './style';
  */
 export interface MUIAppBarProperties extends AppBarProperties {
   color?: 'inherit' | 'primary' | 'default' | 'secondary' | undefined,
+  title?: string | any; 
 }
 
 export const BlueRainAppBar: React.StatelessComponent<MUIAppBarProperties> = (props) => {

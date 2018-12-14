@@ -1,1 +1,4 @@
-export { default as TableBody } from './TableBody.component';
+export {
+	default as TableBody,
+	MUITableBodyProperties
+} from './TableBody.component';

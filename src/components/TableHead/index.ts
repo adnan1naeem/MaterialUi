@@ -1,1 +1,4 @@
-export { default as TableHead } from './TableHead.component';
+export {
+	default as TableHead,
+	MUITableHeadProperties
+} from './TableHead.component';

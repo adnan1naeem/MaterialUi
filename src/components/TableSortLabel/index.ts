@@ -1,1 +1,4 @@
-export { default as TableSortLabel } from './TableSortLabel.component';
+export {
+	default as TableSortLabel,
+	MUITableSortLabelProperties
+} from './TableSortLabel.component';

@@ -1,10 +1,10 @@
 import * as React from 'react';
+import Adapter from 'enzyme-adapter-react-16';
 import Button from '@material-ui/core/Button';
-import { AppBar } from '../index';
 import renderer from 'react-test-renderer';
-import  Adapter from 'enzyme-adapter-react-16';
-import { configure, mount, shallow, } from 'enzyme';
+import { AppBar } from '../index';
 import 'jest';
+import { configure, mount, shallow, } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 

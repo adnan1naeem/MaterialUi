@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { AppBar } from '../../AppBar';
-// import { Button } from '../../Button';
+import Badge from '@material-ui/core/Badge';
 import Button from '@material-ui/core/Button';
-import { text, withKnobs } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
+import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
+import { AppBar } from '../../AppBar';
+import { storiesOf } from '@storybook/react';
+import { text, withKnobs } from '@storybook/addon-knobs';
+// import { Button } from '../../Button';
 
 const stories = storiesOf('AppBar', module);
 const AppBarStoriesStyle = {
@@ -100,36 +100,3 @@ stories.add('AppBar with color="secondary" & position="absolute"', () => {
 		<AppBar color="secondary" position="absolute" left={<Button style={AppBarStoriesStyle}><MenuIcon /></Button>} right={<Button color="primary">Login</Button>} />
 	);
 });
-
-
-// stories.add('AppBar with left ,right and title approach', () => {
-// 	return (
-// 		<AppBar
-// 			left={<Button transparent><ArrowBack/></Button>}
-// 			title="appbar"
-// 			right={<Button transparent>Cancel</Button>}
-// 		/>
-// 	);
-// });
-// stories.add('AppBar with position approach', () => {
-// 	return (
-// 		<AppBar
-// 			position="fixed"
-// 			left={<Button transparent><ArrowBack/></Button>}
-// 			title="appbar"
-// 			right={<Button transparent>Cancel</Button>}
-// 		/>
-// 	);
-// });
-// stories.add('AppBar with style object', () => {
-// 	return (<AppBar style={{ backgroundColor: 'red' }} />);
-// });
-// stories.add('AppBar with only left node', () => {
-// 	return (<AppBar left={<Button transparent><ArrowBack /></Button>} />);
-// });
-// stories.add('AppBar with only right node', () => {
-// 	return (<AppBar right={<Button transparent>Cancel</Button>} />);
-// });
-// stories.add('AppBar with only title', () => {
-// 	return (<AppBar title="appbar" />);
-// });

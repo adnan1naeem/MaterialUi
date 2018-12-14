@@ -1,1 +1,4 @@
-export { default as TableRow } from './TableRow.component';
+export {
+	default as TableRow,
+	MUITableRowProperties
+} from './TableRow.component';
