@@ -32,6 +32,7 @@ const styles = (theme) => ({
 });
 const MUIDrawer = (props) => {
     const { side, tweenDuration, variant } = props, others = __rest(props, ["side", "tweenDuration", "variant"]);
+    console.log('drawer', props);
     return (React.createElement(Drawer_1.default, Object.assign({}, others, { anchor: side, classes: { paperAnchorDockedLeft: props.classes.paparBorder,
             paperAnchorDockedRight: props.classes.paparBorder,
             paperAnchorDockedTop: props.classes.paparBorder,

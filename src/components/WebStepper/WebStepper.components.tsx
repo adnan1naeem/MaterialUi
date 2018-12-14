@@ -13,7 +13,6 @@ export interface WebStepperProps extends StepperProperties {
   steps: any;
 }
 export const WebStepper: React.StatelessComponent<WebStepperProps> = (props) => {
-  console.log('props.steps', props.steps);
   return (
     <Stepper {...props} >
       {

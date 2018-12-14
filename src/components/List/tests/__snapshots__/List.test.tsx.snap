@@ -27,9 +27,11 @@ exports[`ListItem  with children props 1`] = `
   className="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-gutters-19"
   disabled={false}
   onClick={undefined}
+  style={undefined}
 >
   <div
     className="MuiListItemText-root-23"
+    style={Object {}}
   >
     <span
       className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
@@ -59,9 +61,11 @@ exports[`ListItem with primary props 1`] = `
   disabled={false}
   onClick={undefined}
   primary="hello"
+  style={undefined}
 >
   <div
     className="MuiListItemText-root-23"
+    style={Object {}}
   >
     <span
       className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
@@ -76,6 +80,7 @@ exports[`ListItem with primary props 1`] = `
   </div>
   <div
     className="MuiListItemText-root-23"
+    style={Object {}}
   >
     <span
       className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
@@ -92,9 +97,11 @@ exports[`ListItem with secondary props 1`] = `
   disabled={false}
   onClick={undefined}
   secondary="Hi"
+  style={undefined}
 >
   <div
     className="MuiListItemText-root-23"
+    style={Object {}}
   >
     <span
       className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"
@@ -109,6 +116,7 @@ exports[`ListItem with secondary props 1`] = `
   </div>
   <div
     className="MuiListItemText-root-23"
+    style={Object {}}
   >
     <span
       className="MuiTypography-root-29 MuiTypography-subheading-36 MuiListItemText-primary-26"

@@ -11,15 +11,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const AppBar_1 = require("../../AppBar");
-// import { Button } from '../../Button';
+const Badge_1 = __importDefault(require("@material-ui/core/Badge"));
 const Button_1 = __importDefault(require("@material-ui/core/Button"));
-const addon_knobs_1 = require("@storybook/addon-knobs");
-const react_1 = require("@storybook/react");
+const IconButton_1 = __importDefault(require("@material-ui/core/IconButton"));
 const Menu_1 = __importDefault(require("@material-ui/icons/Menu"));
 const Notifications_1 = __importDefault(require("@material-ui/icons/Notifications"));
-const IconButton_1 = __importDefault(require("@material-ui/core/IconButton"));
-const Badge_1 = __importDefault(require("@material-ui/core/Badge"));
+const AppBar_1 = require("../../AppBar");
+const react_1 = require("@storybook/react");
+const addon_knobs_1 = require("@storybook/addon-knobs");
+// import { Button } from '../../Button';
 const stories = react_1.storiesOf('AppBar', module);
 const AppBarStoriesStyle = {
     backgroundColor: 'transparent',
@@ -67,35 +67,4 @@ stories.add('AppBar with color="secondary" & position="absolute"', () => {
     return (React.createElement(AppBar_1.AppBar, { color: "secondary", position: "absolute", left: React.createElement(Button_1.default, { style: AppBarStoriesStyle },
             React.createElement(Menu_1.default, null)), right: React.createElement(Button_1.default, { color: "primary" }, "Login") }));
 });
-// stories.add('AppBar with left ,right and title approach', () => {
-// 	return (
-// 		<AppBar
-// 			left={<Button transparent><ArrowBack/></Button>}
-// 			title="appbar"
-// 			right={<Button transparent>Cancel</Button>}
-// 		/>
-// 	);
-// });
-// stories.add('AppBar with position approach', () => {
-// 	return (
-// 		<AppBar
-// 			position="fixed"
-// 			left={<Button transparent><ArrowBack/></Button>}
-// 			title="appbar"
-// 			right={<Button transparent>Cancel</Button>}
-// 		/>
-// 	);
-// });
-// stories.add('AppBar with style object', () => {
-// 	return (<AppBar style={{ backgroundColor: 'red' }} />);
-// });
-// stories.add('AppBar with only left node', () => {
-// 	return (<AppBar left={<Button transparent><ArrowBack /></Button>} />);
-// });
-// stories.add('AppBar with only right node', () => {
-// 	return (<AppBar right={<Button transparent>Cancel</Button>} />);
-// });
-// stories.add('AppBar with only title', () => {
-// 	return (<AppBar title="appbar" />);
-// });
 //# sourceMappingURL=AppBar.stories.js.map
