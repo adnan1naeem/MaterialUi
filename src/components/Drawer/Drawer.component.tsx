@@ -29,6 +29,7 @@ const styles = (theme: any) => ({
 });
 const MUIDrawer = (props: MUIDrawerProperties & { children?: React.ReactNode }) => {
 	const { side, tweenDuration, variant, ...others } = props;
+	console.log('drawer',props);
 	return (
 		<Drawer
 			{...others}

@@ -1,1 +1,4 @@
-export { default as TablePagination } from './TablePagination.component';
+export {
+	default as TablePagination,
+	TablePaginationProps
+} from './TablePagination.component';

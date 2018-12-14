@@ -73,23 +73,23 @@ import {
 	} from './components/Modal';
 import { MUISliderProperties, Slider } from './components/Slider';
 import { MUISwitchProperties, Switch } from './components/Switch';
+import { MUITableBodyProperties, TableBody } from './components/TableBody';
+import { MUITableCellProperties, TableCell } from './components/TableCell';
+import { MUITableFooterProperties, TableFooter } from './components/TableFooter';
+import { MUITableHeadProperties, TableHead } from './components/TableHead';
+import { MUITableProperties, Table } from './components/Table';
+import { MUITableRowProperties, TableRow } from './components/TableRow';
+import { MUITableSortLabelProperties, TableSortLabel } from './components/TableSortLabel';
 import { MUITextInputProperties, TextInput } from './components/TextInput';
 import { MUITypographyProperties, Text } from './components/Text';
 import { Plugin } from '@blueeast/bluerain-os';
+import { Stepper, StepperProps } from './components/Stepper';
+import { Tab, TabProps } from './components/Tab';
+import { TablePagination, TablePaginationProps } from './components/TablePagination';
+import { Tabs, TabsProps } from './components/Tabs';
+import { WebStepper, WebStepperProps } from './components/WebStepper';
 
 // import { Notification } from './components/Notification';
-import { Stepper } from './components/Stepper';
-import { Table } from './components/Table';
-import { TableHead } from './components/TableHead';
-import { TableFooter } from './components/TableFooter';
-import { TablePagination } from './components/TablePagination';
-import { TableBody } from './components/TableBody';
-import { TableRow } from './components/TableRow';
-import { TableCell } from './components/TableCell';
-import { TableSortLabel } from './components/TableSortLabel';
-import { Tabs} from './components/Tabs';
-import { Tab } from './components/Tab';
-import { WebStepper } from './components/WebStepper';
 
 
 

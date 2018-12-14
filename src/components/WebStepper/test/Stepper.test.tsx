@@ -1,10 +1,10 @@
-import { WebStepper } from '../';
-import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
+import { configure, mount, shallow } from 'enzyme';
+import { WebStepper } from '../WebStepper.components';
 
 configure({ adapter: new Adapter() });
 
-import React from 'react';
 
 test('render correctly', () => {
 	const wrapper = mount(

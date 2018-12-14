@@ -1,1 +1,4 @@
-export { default as TableCell } from './TableCell.component';
+export {
+	default as TableCell,
+	MUITableCellProperties
+} from './TableCell.component';

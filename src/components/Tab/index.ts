@@ -1,1 +1,1 @@
-export { default as Tab } from './Tab.component';
+export { default as Tab, TabProps } from './Tab.component';
