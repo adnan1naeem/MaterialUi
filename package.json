@@ -1,6 +1,6 @@
 {
   "name": "@blueeast/bluerain-plugin-material-ui",
-  "version": "2.2.7",
+  "version": "3.1.0",
   "keywords": [],
   "description": "Adds [Material UI](http://www.material-ui.com/#/) theme Provider to BlueRain. Components of material-ui have been developed using a common interface. [https://blueeast.gitbook.io/bluerain-plugin-material-ui](https://blueeast.gitbook.io/bluerain-plugin-material-ui)",
   "main": "dist/src/index.js",
@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "author": "BlueEast Team <code@blueeast.com>",
   "repository": {
     "type": "git",
@@ -18,10 +22,6 @@
     "branch": "master",
     "dryRun": false,
     "debug": true
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=6.0.0"
   },
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'src/**/*.tsx' 'test/**/*.ts'",
