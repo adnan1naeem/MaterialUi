@@ -7,6 +7,8 @@ export interface ExpansionPanelProps {
     onChange?: () => void;
     styles?: object;
     defaultExpanded?: boolean;
+    detailStyle?: object;
+    summeryStyle?: object;
 }
 declare const ExpansionPanelComponent: React.StatelessComponent<ExpansionPanelProps>;
 export default ExpansionPanelComponent;

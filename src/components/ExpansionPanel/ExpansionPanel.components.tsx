@@ -12,15 +12,17 @@ export interface ExpansionPanelProps {
   onChange?: () => void;
   styles?: object;
   defaultExpanded?: boolean;
+  detailStyle?: object;
+  summeryStyle?: object;
 }
 const ExpansionPanelComponent: React.StatelessComponent<ExpansionPanelProps> = (props) => {
 
   return (
-    <ExpansionPanel    {...props} >
-      <ExpansionPanelSummary expanded={props.collapsed} expandIcon={props.expandIcon} >
+    <ExpansionPanel  {...props} >
+      <ExpansionPanelSummary style={props.summeryStyle} expanded={props.collapsed} expandIcon={props.expandIcon} >
         {props.title}
       </ExpansionPanelSummary>
-      <ExpansionPanelDetails>
+      <ExpansionPanelDetails style={props.detailStyle}>
         {props.children}
       </ExpansionPanelDetails>
     </ExpansionPanel>
