@@ -25,7 +25,7 @@ import {
 	MUICardFooterProperties,
 	MUICardHeaderProperties,
 	MUICardProperties
-	} from './components/Card';
+} from './components/Card';
 import { AppBar, MUIAppBarProperties } from './components/AppBar';
 import { Avatar } from './components/Avatar';
 import { Badge } from './components/Badge';
@@ -40,20 +40,20 @@ import {
 	DropdownItem,
 	MUIDropdownItem,
 	MUIPickerProperties
-	} from './components/DropDown';
+} from './components/DropDown';
 import {
 	FormControl,
 	FormGroup,
 	MUIFormControlProperties,
 	MUIFormGroupProperties
-	} from './components/FormControl';
+} from './components/FormControl';
 import {
 	List,
 	ListItem,
 	ListSubheader,
 	MUIListItemProperties,
 	MUIListProperties
-	} from './components/List';
+} from './components/List';
 import {
 	Menu,
 	MenuItem,
@@ -63,14 +63,14 @@ import {
 	MenuPopper,
 	MenuPopperprops,
 	MenuProperties
-	} from './components/Menu';
+} from './components/Menu';
 import {
 	Modal,
 	ModalBody,
 	ModalBodyText,
 	ModalFooter,
 	ModalHeader
-	} from './components/Modal';
+} from './components/Modal';
 import { MUISliderProperties, Slider } from './components/Slider';
 import { MUISwitchProperties, Switch } from './components/Switch';
 import { MUITableBodyProperties, TableBody } from './components/TableBody';
@@ -90,6 +90,10 @@ import { Tabs, TabsProps } from './components/Tabs';
 import { WebStepper, WebStepperProps } from './components/WebStepper';
 
 // import { Notification } from './components/Notification';
+
+import { CardViewMedia } from './components/CardViewMedia';
+import { ExpansionPanelComponent } from './components/ExpansionPanel'
+
 
 
 
@@ -154,6 +158,8 @@ class MaterialUiPlugin extends Plugin {
 		Caption,
 		Overline,
 		WebStepper,
+		CardViewMedia,
+		'ExpansionPanel': ExpansionPanelComponent,
 		Tab,
 		Table,
 		TableHead,
