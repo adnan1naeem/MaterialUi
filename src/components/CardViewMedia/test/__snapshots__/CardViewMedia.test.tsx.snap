@@ -1,0 +1,637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly CardMedia with overlay title in bottom left 1`] = `
+<View
+  style={
+    Object {
+      "height": 250,
+      "width": 250,
+    }
+  }
+>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "height": 250,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 250,
+      }
+    }
+  >
+    <ExponentVideo
+      nativeResizeMode="mock"
+      onErrorNative={[Function]}
+      onFullscreenUpdateNative={[Function]}
+      onLoadNative={[Function]}
+      onLoadStartNative={[Function]}
+      onReadyForDisplayNative={[Function]}
+      onStatusUpdateNative={[Function]}
+      resizeMode="cover"
+      shouldPlay={true}
+      source={
+        Object {
+          "overridingExtension": null,
+          "uri": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+        }
+      }
+      status={
+        Object {
+          "shouldPlay": true,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "height": 250,
+        "justifyContent": "flex-end",
+        "width": 250,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaytitle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaySubTiltle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlayOverline
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly CardMedia with overlay title in top bottom right 1`] = `
+<View
+  style={
+    Object {
+      "height": 250,
+      "width": 250,
+    }
+  }
+>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "height": 250,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 250,
+      }
+    }
+  >
+    <ExponentVideo
+      nativeResizeMode="mock"
+      onErrorNative={[Function]}
+      onFullscreenUpdateNative={[Function]}
+      onLoadNative={[Function]}
+      onLoadStartNative={[Function]}
+      onReadyForDisplayNative={[Function]}
+      onStatusUpdateNative={[Function]}
+      resizeMode="cover"
+      shouldPlay={true}
+      source={
+        Object {
+          "overridingExtension": null,
+          "uri": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+        }
+      }
+      status={
+        Object {
+          "shouldPlay": true,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flexDirection": "column",
+        "height": 250,
+        "justifyContent": "flex-end",
+        "width": 250,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaytitle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaySubTiltle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlayOverline
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly CardMedia with overlay title in top left position 1`] = `
+<View
+  style={
+    Object {
+      "height": 250,
+      "width": 250,
+    }
+  }
+>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "height": 250,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 250,
+      }
+    }
+  >
+    <ExponentVideo
+      nativeResizeMode="mock"
+      onErrorNative={[Function]}
+      onFullscreenUpdateNative={[Function]}
+      onLoadNative={[Function]}
+      onLoadStartNative={[Function]}
+      onReadyForDisplayNative={[Function]}
+      onStatusUpdateNative={[Function]}
+      resizeMode="cover"
+      shouldPlay={true}
+      source={
+        Object {
+          "overridingExtension": null,
+          "uri": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+        }
+      }
+      status={
+        Object {
+          "shouldPlay": true,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "height": 250,
+        "justifyContent": "flex-start",
+        "width": 250,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaytitle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaySubTiltle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlayOverline
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly CardMedia with overlay title in top left right 1`] = `
+<View
+  style={
+    Object {
+      "height": 250,
+      "width": 250,
+    }
+  }
+>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "height": 250,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 250,
+      }
+    }
+  >
+    <ExponentVideo
+      nativeResizeMode="mock"
+      onErrorNative={[Function]}
+      onFullscreenUpdateNative={[Function]}
+      onLoadNative={[Function]}
+      onLoadStartNative={[Function]}
+      onReadyForDisplayNative={[Function]}
+      onStatusUpdateNative={[Function]}
+      resizeMode="cover"
+      shouldPlay={true}
+      source={
+        Object {
+          "overridingExtension": null,
+          "uri": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+        }
+      }
+      status={
+        Object {
+          "shouldPlay": true,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flexDirection": "column",
+        "height": 250,
+        "justifyContent": "flex-start",
+        "width": 250,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaytitle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlaySubTiltle
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        overlayOverline
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly Cardviewmedia without any prop 1`] = `
+<View
+  style={
+    Object {
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "height": undefined,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": undefined,
+      }
+    }
+  >
+    <ExponentVideo
+      nativeResizeMode="mock"
+      onErrorNative={[Function]}
+      onFullscreenUpdateNative={[Function]}
+      onLoadNative={[Function]}
+      onLoadStartNative={[Function]}
+      onReadyForDisplayNative={[Function]}
+      onStatusUpdateNative={[Function]}
+      resizeMode="cover"
+      shouldPlay={true}
+      source={null}
+      status={
+        Object {
+          "shouldPlay": true,
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 4,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
