@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
-import { Avatar } from '../Avatar';
-import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import { Avatar } from '../Avatar';
+import { ListItemProperties } from '@blueeast/bluerain-ui-interfaces';
 
 /**
  * The props of ListItem Component
@@ -23,21 +23,22 @@ import ListItem from '@material-ui/core/ListItem';
 export interface MUIListItemProperties extends ListItemProperties {
     className?: string,
     button?: boolean,
-    component?: string,
     href?: string,
     disabled?: boolean,
     avatarSize?: number,
     divider?: boolean,
     selected?: boolean,
+    listItemTextStyle?: object
 }
 
 const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props) => {
-    const { active, onPress, action, ...others } = props;
+    const { active, onPress, action, listItemStyle, listItemTextStyle, ...others } = props;
 
     return (
         <ListItem
             button={active}
             onClick={onPress}
+            style={props.style}
             {...others}
         >
             {
@@ -46,6 +47,7 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
                     <Avatar
                         src={props.avatar}
                         size={props.avatarSize ? props.avatarSize : 40}
+
                     />
                     :
                     props.avatar
@@ -55,11 +57,16 @@ const BlueRainListItem: React.StatelessComponent<MUIListItemProperties> = (props
                     <ListItemText
                         primary={props.primary ? props.primary : ''}
                         secondary={props.secondary ? props.secondary : ''}
+                        style={props.listItemTextStyle ? props.listItemTextStyle : {}}
+
                     /> : null
             }
             {
                 props.children ?
-                    <ListItemText primary={props.children} />
+                    <ListItemText
+                        primary={props.children}
+                        style={props.listItemTextStyle ? props.listItemTextStyle : {}}
+                    />
                     : null
             }
             {

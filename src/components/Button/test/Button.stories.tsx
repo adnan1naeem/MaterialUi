@@ -58,7 +58,7 @@ storiesOf('Button', module).add('Accent button with large prop true', () => <But
 storiesOf('Button', module).add('Success button with success property', () => <Button success={true} style={{color: 'white'}} large>Success</Button>);
 storiesOf('Button', module).add('Warning button with warning property', () => <Button warning={true} style={{color: 'white'}} large>Warning</Button>);
 storiesOf('Button', module).add('Dark button with dark property', () => <Button dark={true} style={{color: 'white'}} large>Dark</Button>);
-storiesOf('Button', module).add('Primary button with primary property', () => <Button primary={true} large>Large</Button>);
+storiesOf('Button', module).add('Primary button with primary property', () => <Button primary={true} style={{color: 'white'}}>Large</Button>);
 storiesOf('Button', module).add('Danger button with danger property', () => <Button danger={true} style={{color: 'white'}} large>Danger</Button>);
 storiesOf('Button', module).add('Light button with light property', () => <Button light={true} large>Light</Button>);
 

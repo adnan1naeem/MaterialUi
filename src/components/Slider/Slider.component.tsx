@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
 import Slider from '@material-ui/lab/Slider';
+import { SliderProperties } from '@blueeast/bluerain-ui-interfaces';
 
 
 /**
@@ -13,21 +13,23 @@ import Slider from '@material-ui/lab/Slider';
 
 export interface MUISliderProperties extends SliderProperties {
   classes?: object,
-  max?: number,
-  min?: number,
-  onChange?: (event: any, value: any) => void,
-  onDragEnd?: () => void,
   onDragStart?: () => void,
-  step?: number,
   thumb?: React.ReactElement<any>,
-  value?: number,
   vertical?: boolean,
   defaultValue?: any
 
 }
 const BlueRainSlider: React.StatelessComponent<MUISliderProperties> = (props) => {
+  const { maximumValue, minimumValue, onValueChange, onSlidingComplete, step, ...others } = props;
   return (
-    <Slider value={props.defaultValue} {...props} />
+    <Slider
+      max={maximumValue}
+      min={minimumValue}
+      onChange={onValueChange}
+      onDragEnd={onSlidingComplete}
+      step={step}
+      {...others} 
+    />
   );
 };
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import { DrawerProperties } from '@blueeast/bluerain-ui-interfaces';
 import Drawer from '@material-ui/core/Drawer';
+import { DrawerProperties } from '@blueeast/bluerain-ui-interfaces';
+import { withStyles } from '@material-ui/core/styles';
 
 /**
  * An interface that extends the DrawerProperties interface
@@ -29,6 +29,7 @@ const styles = (theme: any) => ({
 });
 const MUIDrawer = (props: MUIDrawerProperties & { children?: React.ReactNode }) => {
 	const { side, tweenDuration, variant, ...others } = props;
+	console.log('drawer',props);
 	return (
 		<Drawer
 			{...others}

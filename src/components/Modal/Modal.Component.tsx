@@ -1,7 +1,7 @@
-
+import Dialog from '@material-ui/core/Dialog';
 import React, { ReactNode } from 'react';
 import { ModalProperties } from '@blueeast/bluerain-ui-interfaces';
-import Dialog from '@material-ui/core/Dialog';
+
 
 export interface MUIModalProperties extends ModalProperties {
   fullScreen?: boolean,
@@ -22,7 +22,6 @@ export interface MUIModalProperties extends ModalProperties {
   open?: boolean,
   PaperProps?: object,
   scroll?: 'body' | 'paper',
-  TransitionComponent?: string
   transitionDuration?: { enter?: number, exit?: number },
   TransitionProps?: object,
   children: ReactNode;
